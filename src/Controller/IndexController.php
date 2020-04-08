@@ -5,13 +5,13 @@ namespace App\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Translation\TranslatorInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class IndexController extends AbstractController {
 
   public function __construct() {}
   // TranslatorInterface $translator
-  public function index(Request $request) {
+  public function index(Request $request, TranslatorInterface $translator) {
     // $slides = [];
     // for ($i = 1; $i < 2; $i++) {
     //   if ($translator->trans("{$provider}.home.slider.slide{$i}.background_image_name") ==
@@ -43,6 +43,8 @@ class IndexController extends AbstractController {
     //     'nav_item_label'        => "{$provider}.home.slider.slide{$i}.nav_item_label",
     //   ]);
     // }
+    
+    // $translator = $translator->trans("header");
 
     
     $route = $request->attributes->get('_route');
@@ -51,6 +53,7 @@ class IndexController extends AbstractController {
     return $this->render("pages/index.html.twig", [
       'route'     => $route,
       'uri'       => $uri,
+      'translator' => $translator,
     ]);
   }
 }
