@@ -23,5 +23,15 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    # NOT USED YET  
+    # App\Service\ProductService:
+    #     class: App\Service\ProductService
+    #     arguments: ["@request_stack", "%kernel.project_dir%"]
+
+    ## Deactivate function getSubscribedEvents() of this Listener 
+    ## to avoid redirections to /es when another language is matched
+    # App\EventListener\LocaleListener:
+    # class: App\EventListener\LocaleListener
+    # arguments: ["@router","%languages%","%locale%"]
+    # tags:
+    #     - { name: kernel.event_subscriber }

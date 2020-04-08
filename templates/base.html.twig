@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>{% block title %}Bienvenid@!{% endblock %}</title>
+    {% block meta_description %}{% endblock %}  
+
+    {% block before_tag_manager_script %}
+        <script>var dataLayer = [];</script>
+    {% endblock %}
+    {# {% set provider = provider_service.getProvider(app.request.getHost()) %}
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-57x57.png')}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-60x60.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-76x76.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-114x114.png')}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-120x120.png')}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-144x144.png')}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-152x152.png')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('build/images/favicon_'~provider~'.ico/apple-icon-180x180.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('build/images/favicon_'~provider~'.ico/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/images/favicon_'~provider~'.ico/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('build/images/favicon_'~provider~'.ico/favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('build/images/favicon_'~provider~'.ico/favicon-16x16.png')}}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset('build/images/favicon_'~provider~'.ico/ms-icon-144x144.png')}}"> #}
+    <meta name="theme-color" content="#ffffff">
+      
+    <link rel="alternate" hreflang="es-es" href="window.location.hostname" />
+    <link rel="alternate" hreflang="es-eu" href="window.location.hostname" />
+    <link rel="alternate" hreflang="x-default" href="window.location.hostname"/>
+
+    {% block tag_manager_script %}
+        {# <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-57JFMCF');</script> #}
+    {% endblock %}
+
+    {% block head_style %}
+        {# {{ encore_entry_link_tags('main-euskaltel') }} #}
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block header %}
+      {{ render(controller( 'App\\Controller\\HeaderController::index' )) }}
+    {% endblock %}
+
+    {% block c2cPopup %}
+      {{ render(controller( 'App\\Controller\\C2CController::index', {}, {}))
+      }}
+    {% endblock %}
+
+    {% block body %}
+      <main class="main">
+        {% block content %}
+        {% endblock %}
+      </main>
+      {% block body_end_before_js %}{% endblock %}
+    {% endblock %}
+
+    {% block cookies %}
+      {% include 'components/cookies/cookies.html.twig' %}
+    {% endblock %}
+
+    {% block footer %}
+      {{ render(controller( 'App\\Controller\\FooterController::index' )) }}
+    {% endblock %}
+
+    {% block javascripts %}
+      {{ encore_entry_script_tags('bysidecar') }}
+      {{ encore_entry_script_tags('md5') }}
+    {% endblock %}
+
+    {% block noscript %}    
+        {# NOT USED YET #}
+        {# <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57JFMCF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> #}
+    {% endblock %}
+
+  </body>
 </html>

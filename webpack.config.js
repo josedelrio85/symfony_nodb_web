@@ -35,6 +35,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('bysidecar', './assets/js/bysidecar.js')
+    .addEntry('md5', './assets/js/md5.js')
     
     .enableSingleRuntimeChunk()
 

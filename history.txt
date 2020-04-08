@@ -1,0 +1,3858 @@
+    1  vi ~/.zshrc
+    2  ls
+    3  mkdir Code
+    4  cd Code
+    5  ls
+    6  ls -la
+    7  ssh-keygen -t rsa -b 4096 -C "josedelrio85@gmail.com"
+    8  eval "$(ssh-agent -s)"
+    9  ssh-add ~/.ssh/id_rsa
+   10  sudo apt-get install xclip
+   11  xclip -sel clip < ~/.ssh/id_rsa
+   12  xclip -sel clip < ~/.ssh/id_rsa.pub
+   13  mkdir github.com
+   14  cd github.com
+   15  mkdir
+   16  mkdir Bysidecar
+   17  cd Bysidecar
+   18  git clone git@github.com:BySidecar/grav.git
+   19  cd grav
+   20  git pull
+   21  git status
+   22  sudo apt update
+   23  sudo apt install snap
+   24  sudo snap install code --classic
+   25  snap install code --classic
+   26  ls
+   27  sudo snap install code --classic
+   28  echo $PATH
+   29  export PATH="$PATH:/snap/bin"
+   30  echo $PATH
+   31  snap install code --classic
+   32  vi ~./zshrc
+   33  vi ~/.zshrc
+   34  snap find code
+   35  sudo apt install snapd
+   36  snap find code
+   37  sudo snap install code --classic
+   38  code .
+   39  sudo apt-get install powerline-fonts
+   40  fc-cache -vf
+   41  echo $ZSH_CUSTOM
+   42  vi ./zshrc
+   43  vi ~/.zshrc
+   44  vim ~/.zshrc
+   45  code ~/.zshrc
+   46  sudo apt install fonts-powerline
+   47  \n\nsudo apt-get install curl php5-cli git
+   48  sudo apt-get install curl
+   49  sudo apt-get install git
+   50  \n\ncurl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+   51  php -v
+   52  sudo apt install php
+   53  php -v
+   54  \n\ncurl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+   55  composer 
+   56  composer -v
+   57  composer --version
+   58  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+   59  sudo apt-get install -y nodejs
+   60  node --version
+   61  npm --version
+   62  sudo apt-get update
+   63  sudo apt-get remove docker docker-engine docker.io
+   64  sudo apt-get install \\n    apt-transport-https \\n    ca-certificates \\n    curl \\n    gnupg-agent \\n    software-properties-common\n
+   65  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   66  sudo apt-key fingerprint 0EBFCD88
+   67  lsb_release -cs
+   68  sudo add-apt-repository \\n   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \\n   $(lsb_release -cs) \\n   stable"
+   69  sudo add-apt-repository \\n   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \\n   bionic \\n   stable"
+   70  sudo apt-add-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+   71  sudo apt-get update
+   72  sudo apt-get install docker-ce
+   73  sudo docker -v
+   74  sudo docker run hello-world
+   75  docker image ls -a
+   76  sudo docker image ls -a
+   77  sudo docker system prune -a
+   78  sudo usermod -aG docker ${USER}
+   79  su - ${USER}
+   80  id -nG
+   81  docker -v
+   82  ls
+   83  pwd
+   84  cd Code
+   85  ls
+   86  cd github.com/Bysidecar/
+   87  ls -la
+   88  mkdir test
+   89  cd ..
+   90  ls 
+   91  cd Bysidecar
+   92  rm test
+   93  rm -r test
+   94  ls
+   95  cd grav
+   96  git pull
+   97  ssh-add -l
+   98  sudo ssh-add -l
+   99  eval `ssh-agent -s`
+  100  ssh-add -L
+  101  ssh-add -K ~/.ssh/id_rsa
+  102  ssh-add -k ~/.ssh/id_rsa
+  103  git pull
+  104  curl -sLf https://spacevim.org/install.sh | bash
+  105  ls -la
+  106  vim Dockerfile
+  107  vim -v
+  108  neovim -v
+  109  sudo apt-get install vim
+  110  vim Dockerfile
+  111  git status
+  112  git branch
+  113  git checkout -b prueba
+  114  git branch
+  115  git branch -d prueba
+  116  git checkout master
+  117  git checkout prueba
+  118  git checkout master
+  119  code .
+  120  cd /usr/local
+  121  sudo wget https://dl.google.com/go/go1.14.linux-amd64.tar.gz
+  122  sudo tar xzvf go1.14.linux-amd64.tar.gz
+  123  ls
+  124  mv go1.14.linux-amd64.tar.gz /home/jose/Descargas
+  125  sudo mv go1.14.linux-amd64.tar.gz /home/jose/Descargas
+  126  ls
+  127  sudo vim ~/.bashrc
+  128  source ~/.bashrc
+  129  :q
+  130  sudo vim ~/.bashrc
+  131  sudo nano ~/.bashrc
+  132  pwd
+  133  ls
+  134  cd /home/jose
+  135  ls
+  136  cd Code
+  137  mkdir go
+  138  ls -la
+  139  sudo nano ~/.bashrc
+  140  source ~/.bashrc
+  141  go -v
+  142  source ~/.bashrc
+  143  sudo source ~/.bashrc
+  144  go version
+  145  go -v
+  146  go version
+  147  go verison
+  148  go version
+  149  vim ~/.bashrc
+  150  vim ./profile
+  151  vim ~/.profile
+  152  source ~/.profile
+  153  go version
+  154  go env
+  155  cd go
+  156  ls
+  157  mkdir test
+  158  cd test && touch main.go
+  159  vim main.go
+  160  ls
+  161  vim main.go
+  162  go run main.go
+  163  go version
+  164  vim ~/.profile
+  165  source ~/.profile
+  166  go version
+  167  go run main.go
+  168  vim main.go
+  169  go run main.go
+  170  code .
+  171  go run main.go
+  172  code .
+  173  go run main.go
+  174  source ~/.bashrc
+  175  vim ~/.bashrc
+  176  vim ~/.profile
+  177  vim ~/.zshrc
+  178  source ~/.zshrc
+  179  go version
+  180  code .
+  181  go version
+  182  go run main.go
+  183  git clone https://github.com/abertsch/Menlo-for-Powerline.git
+  184  sudo mv "Menlo for Powerline.ttf" /usr/share/fonts/
+  185  ls
+  186  cd Menlo-for-Powerline
+  187  ls
+  188  sudo mv "Menlo for Powerline.ttf" /usr/share/fonts/
+  189  sudo fc-cache -vf /usr/share/fonts/
+  190  code .
+  191  ls
+  192  cd ..
+  193  ls
+  194  cd ..
+  195  ls
+  196  sudo mv -r Menlo-for-Powerline/* /usr/share/fonts
+  197  sudo mv  Menlo-for-Powerline/* /usr/share/fonts
+  198  sudo fc-cache -vf /usr/share/fonts
+  199  ls
+  200  cd Menlo-for-Powerline
+  201  ls
+  202  ls -la
+  203  cd /usr/share/fonts
+  204  ls -la
+  205  cd /home/jose/Code
+  206  ls
+  207  cd go
+  208  ls
+  209  cd bin
+  210  ls
+  211  cd ..
+  212  cd pkg
+  213  ls
+  214  cd ..
+  215  cd test
+  216  ls
+  217  cd ..
+  218  rm test
+  219  rm -r test
+  220  sudo rm -r test
+  221  ls
+  222  sudo apt-get update
+  223  sudo apt-get install ppa-purge
+  224  ls /etc/apt/sources.list.d/
+  225  software-properties-gtk
+  226  sudo software-properties-gtk
+  227  sudo apt-get install software-properties-gtk
+  228  sudo software-properties-gtk
+  229  sudo apt-get update
+  230  go version
+  231  cd ..
+  232  cd github.com
+  233  ls
+  234  cd Bysidecar
+  235  ls
+  236  cd grav
+  237  git pull
+  238  ls -la
+  239  composer run-script install
+  240  composer run-script custom
+  241  php --ini
+  242  vim /etc/php/7.2/cli/php.ini
+  243  sudo vim /etc/php/7.2/cli/php.ini 
+  244  composer run-script custom
+  245  sudo apt-get install php-curl
+  246  composer run-script custom
+  247  sudo apt-get install php-mbstring
+  248  composer run-script custom
+  249  sudo vim /etc/php/7.2/cli/php.ini 
+  250  composer run-script custom
+  251  sudo apt-get install php-zip
+  252  sudo apt-get install php-dom
+  253  composer run-script custom
+  254  sudo apt-get install php-gd
+  255  composer run-script custom
+  256  ^[[200~php -S localhost:8000 system/router.php
+  257  ~^[[200~php -S localhost:8000 system/router.php
+  258  php -S localhost:8000 system/router.php
+  259  php -S localhost:8000 system/router.php\n
+  260  cd grav
+  261  ls
+  262  ls -la
+  263  php -S localhost:8000 system/router.php\n
+  264  cd grav
+  265  php -S localhost:8000 system/router.php\n
+  266  cd user/themes/mytheme && npm run dev
+  267  cd Code/github.com/Bysidecar/grav/grav
+  268  ls
+  269  cd ..
+  270  ls
+  271  cd docker
+  272  docker image build -t grav_template .
+  273  docker image ls -a
+  274  docker container run -d --name grav_template -p 8090:80 grav_template
+  275  docker container ls  -a
+  276  docker logs 7a7
+  277  docker container exec -it grav_template /bin/bash
+  278  docker container stop grav_template
+  279  docker container rm grav_template
+  280  docker image rm grav_template
+  281  cd ..
+  282  cd grav
+  283  docker image build -t grav_template .
+  284  docker container run -d --name grav_template -p 8090:80 grav_template
+  285  vim ~/.ssh/config
+  286  chmod 600 ~/.ssh/config
+  287  git status
+  288  git add .
+  289  git commit -m "updated run-script names"
+  290  git config --global user.email "josedelrio85@gmail.com"
+  291  git config --global user.name "Jose del Río"
+  292  git commit -m "updated run-script names"
+  293  git status
+  294  git add .
+  295  git commit -m "updated run-script names"
+  296  ls
+  297  git add .
+  298  git push
+  299  git pull
+  300  ls ~/.ssh
+  301  vim ~/.ssh/config
+  302  ls -la ~/.ssh
+  303  vim ~/.ssh/config
+  304  git pull
+  305  ls -la ~/.ssh
+  306  vim ~/.ssh/config
+  307  ls -la ~/.ssh
+  308  vim ~/.zshrc
+  309  git pull
+  310  sudo find / |grep "\.pem"
+  311  ssh-add ~/.ssh/id_rsa
+  312  sudo rm -r ~/.ssh/config
+  313  vim ~/.zshrc
+  314  ls
+  315  cd ..
+  316  ls -la
+  317  vim README.md
+  318  cd ..
+  319  ls
+  320  cd ..
+  321  ls
+  322  cd ..
+  323  ls
+  324  cd go
+  325  ls
+  326  docker-compser -v
+  327  docker-compse -v
+  328  docker-compose -v
+  329  uname -s
+  330  uname -m
+  331  sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  332  sudo chmod +x /usr/local/bin/docker-compose
+  333  docker-compose --version
+  334  vim ~/.zshrc
+  335  sudo curl -L https://raw.githubusercontent.com/docker/machine/v0.16.0/contrib/completion/bash/docker-machine.bash -o /etc/bash_completion.d/docker-machine
+  336  mkdir ~/.zsh/completion
+  337  sudo mkdir ~/.zsh/completion
+  338  mkdir -p ~/.zsh/completion
+  339  curl -L https://raw.githubusercontent.com/docker/machine/v0.16.0/contrib/completion/zsh/_docker-machine > ~/.zsh/completion/_docker-machine
+  340  vim ~/.zshrc
+  341  autoload -Uz compinit && compinit -i
+  342  exec $SHELL -l
+  343  docker container ls
+  344  ls ~/.zsh/completion
+  345  echo $fpath
+  346  vim ~/.zshrc
+  347  cd ..
+  348  ls
+  349  docker container ls
+  350  docker container stop b05
+  351  cd github.com/Bysidecar/grav/grav
+  352  ls
+  353  cd ..
+  354  ls
+  355  cd docker
+  356  ls
+  357  docker-compose up -d
+  358  sudo apt-get upgrade
+  359  cd ..
+  360  ls
+  361  mkdir josedelrio85 && cd josedelrio85 
+  362  git clone git@github.com:josedelrio85/LigalFrontend.git
+  363  ls
+  364  code LigalFrontend
+  365  ls
+  366  ls -la
+  367  rm -R LigalFrontend
+  368  rm -Rf LigalFrontend
+  369  ls
+  370  ls -la
+  371  cd ..
+  372  sudo apt-get upgrade
+  373  sudo apt-add-repository ppa:jtaylor/keepass
+  374  sudo apt-get install keepass2
+  375  keepass
+  376  ls ~/.ssh
+  377  ssh -v
+  378  ls -lah ~/.ssh
+  379  ssh -T git@github.com
+  380  vim ~/.zshrc
+  381  source ~/.zshrc
+  382  ls
+  383  cd Bysidecar
+  384  ls
+  385  cd grav
+  386  git pull
+  387  git stash
+  388  git pull
+  389  git branch -a
+  390  git branch -d prueba
+  391  git branch
+  392  git pull
+  393  vim ~/.zshrc
+  394  git pull
+  395  cd /
+  396  cd home/jose
+  397  sudo apt install openvpn
+  398  cd /etc/openvpn
+  399  ls
+  400  ls la
+  401  ls -la
+  402  cd client
+  403  ls
+  404  ls -la
+  405  cd ..
+  406  cd server
+  407  ls
+  408  cd ..
+  409  vim update-resolv-conf
+  410  cd /
+  411  cd home/jose/Descargas
+  412  ls -la
+  413  cd .kube
+  414  ls -la
+  415  ls -la ~/.kube
+  416  kube config view
+  417  kubectl --version
+  418  sudo apt-get update && sudo apt-get install -y apt-transport-https
+  419  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  420  echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+  421  sudo apt-get update
+  422  sudo apt-get install -y kubectl
+  423  kubectl --version
+  424  kubectl -v
+  425  kubectl version
+  426  cd %USERPROFILE%
+  427  cd /
+  428  ls
+  429  ls -la
+  430  cd ~
+  431  ls
+  432  ls -la
+  433  cd .kube
+  434  mkdir .kube
+  435  cd .kube
+  436  New-Item config -type file
+  437  pwd
+  438  cd Descargas
+  439  cd .kube
+  440  ls
+  441  cp config ~/.kube
+  442  kubectl version
+  443  kubectl -n bysidecar-pre get pods
+  444  ls -la
+  445  cd ..
+  446  ls -la
+  447  rm -R .kube
+  448  ls -la
+  449  kubectl -n bysidecar-pre get pods
+  450  kubectl -n bysidecar-pre logs livelead-pre-f4d58767c-6nhbf
+  451  mysql -v
+  452  ping www.google.es
+  453  sudo apt-get update
+  454  sudo apt install mysql-workbench
+  455  ping www.google.es
+  456  cd ..
+  457  ls
+  458  ls -la
+  459  cd Documentos
+  460  ls
+  461  ls -la
+  462  cd ..
+  463  ls
+  464  mv Descargas/Bysidecar /home/jose/Bysidecar
+  465  ls -la
+  466  pwd
+  467  ls
+  468  cd Bysidecar
+  469  ls
+  470  mv /home/jose/Descargas/allvariables.txt /home/jose/Bysidecar
+  471  ls -la
+  472  vim allvariables.txt
+  473  sudo snap install slack --classic
+  474  sudo dpkg -i overgrive_3.0.9_all.deb
+  475  sudo add-apt-repository ppa:alessandro-strada/ppa
+  476  sudo apt-get update
+  477  sudo apt-get install google-drive-ocamlfuse
+  478  google-drive-ocamlfuse
+  479  cd ..
+  480  mkdir /home/jose/googledrive
+  481  google-drive-ocamlfuse /home/jose/googledrive
+  482  ls
+  483  cd googledrive
+  484  ls
+  485  ls -la
+  486  fuserumount -u /home/jose/googledrive
+  487  fusermount -u /home/jose/googledrive 
+  488  sudo fusermount -u /home/jose/googledrive 
+  489  cd ..
+  490  sudo fusermount -u /home/jose/googledrive 
+  491  ls
+  492  cd Bysidecar
+  493  ls
+  494  cd /home/jose/Descargas
+  495  ls 
+  496  ls -la
+  497  mv tips-20200313T120908Z-001.zip /home/jose/Bysidecar
+  498  mv tareas_desarrollo.xlsx /home/jose/Bysidecar
+  499  mv Postman-20200313T120746Z-001.zip /home/jose/Bysidecar
+  500  cd ..
+  501  cd Bysidecar
+  502  ls
+  503  unzip Postman-20200313T120746Z-001.zip
+  504  ls
+  505  rm Postman-20200313T120746Z-001.zip
+  506  unzip tips-20200313T120908Z-001.zip
+  507  ls
+  508  rm tips-20200313T120908Z-001.zip
+  509  ls la
+  510  ls -la
+  511  open tareas_desarrollo.xlsx
+  512  sudo snap install libreoffice --candidate
+  513  ls
+  514  libreoffice tareas_desarrollo.xlsx
+  515  cd /home/jose
+  516  ls
+  517  ping www.google.es
+  518  sudo snap install spotify
+  519  cd Bysidecar
+  520  ls
+  521  sudo openvpn --config /home/jose/bysidecar/bysidecar.ovpn
+  522  sudo openvpn --config /home/jose/Bysidecar/bysidecar.ovpn
+  523  ping www.google.es
+  524  openvpn --help
+  525  ls -la
+  526  touch login.conf
+  527  vim login.conf
+  528  ls
+  529  vim bysidecar.ovpn
+  530  sudo openvpn --config /home/jose/Bysidecar/bysidecar.ovpn
+  531  cd ..
+  532  ls -la
+  533  rm -R googledrive
+  534  cd Bysidecar
+  535  ls
+  536  mkdir vpn
+  537  mv bysidecar.ovpn vpn
+  538  mv login.conf vpn
+  539  cd vpn
+  540  touch command
+  541  vim command
+  542  tail command
+  543  cd Code
+  544  cd github.com
+  545  cd Bysidecar
+  546  ls
+  547  git clone git@github.com:BySidecar/euskaltel-kinkon-web.git
+  548  code euskaltel-kinkon-web
+  549  php -v
+  550  composer version
+  551  composer install
+  552  npm install 
+  553  yarn encore dev --watch
+  554  npm run-script watch
+  555  php bin/console server:run
+  556  ls
+  557  cd Bysidecar
+  558  ls
+  559  libreoffice tareas_desarrollo.xlsx
+  560  cd euskaltel-kinkon-web/
+  561  git pull
+  562  git stash
+  563  git pull
+  564  cd ..
+  565  cd Descargas
+  566  ls
+  567  sudo dpkg -i anydesk_5.5.4-1_amd64.deb
+  568  sudo apt install anydesk_5.5.4-1_amd64.deb
+  569  sudo apt-get install -f
+  570  ls
+  571  rm y2mate.com\ -\ opinion_sobre_iker_casillas_de_los_vecinos_de_mostoles_njYNixkaksI.mp3
+  572  cd ..
+  573  cd Code
+  574  cd github.com/Bysidecar/euskaltel-kinkon-web
+  575  cd ..
+  576  cd euskaltel-kinkon-web/k
+  577  code euskaltel-kinkon-web
+  578  ^[[200~php bin/console server:run
+  579  php -S localhost:8000 system/router.php
+  580  composer install
+  581  composer require server --dev
+  582  php -S localhost:8000 system/router.php
+  583  ls -la
+  584  cd euskaltel-kinkon-web
+  585  ls -la
+  586  sudo php -S localhost:8000 system/router.php
+  587  cd ..
+  588  cd grav
+  589  ls -la
+  590  php bin/console server:run\n
+  591  php --ini
+  592  vim /etc/php/7.2/cli/php.ini
+  593  sudo vim /etc/php/7.2/cli/php.ini
+  594  php bin/console server:run\n
+  595  kubectl -n bysidecar get pods
+  596  kubectl -n bysidecar logs leads-667445b89d-45z6j
+  597  kubectl -n bysidecar logs leads-667445b89d-45z6j -f
+  598  kubectl -n bysidecar get pods
+  599  kubectl -n bysidecar-pre get pods
+  600  kubectl -n bysidecar logs rueiro-7dbd5df99d-slff8
+  601  clear
+  602  cd ~/.oh-my-zsh/themes
+  603  ls
+  604  vim ~/.zshrc
+  605  find agnoster.zsh-theme
+  606  ls -la
+  607  vim agnoster.zsh-theme
+  608  source ~/.zshrc
+  609  pwd
+  610  cd ..
+  611  ls
+  612  cd Code/github.com/Bysidecar/euskaltel-kinkon-web
+  613  clear
+  614  git status
+  615  screen
+  616  cd ..
+  617  d ..
+  618  cd ..
+  619  ls
+  620  cd Bysidecar
+  621  ls
+  622  cd tips
+  623  ls
+  624  vim chuleta_kubernetes.txt
+  625  code .
+  626  kubectl -n euskaltel set image deployments/euskaltel-kinkon-web euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pro:1006b6700ec002056dab4790e4dd379af39feec4
+  627  kubectl -n bysidecar get pods -w
+  628  kubectl -n euskaltel get pods -w
+  629  kubectl -n euskalte get ingress
+  630  kubectl -n euskaltle get ingress
+  631  kubectl -n euskaltel get ingress
+  632  cd ..
+  633  cd down
+  634  cd ..
+  635  cd Downloads
+  636  ls
+  637  ls -la
+  638  cd ..
+  639  cd Descargas
+  640  ls
+  641  unzip code.zip
+  642  ls
+  643  mv AWS-EKS-Udemy-master /home/jose/Documentos/Udeymy
+  644  ls
+  645  mv code.zip /home/jose/Documentos/Udeymy
+  646  ls
+  647  cd ..
+  648  cd Documentos/Udeymy
+  649  ls
+  650  mkdir AWS-EKS-Udemy-master
+  651  mv a-prerequisites/ AWS-EKS-Udemy-master
+  652  mv b-prepare-local-environment AWS-EKS-Udemy-master
+  653  ls
+  654  mv c-EKS-Setup AWS-EKS-Udemy-master
+  655  mv d-cluster-operations AWS-EKS-Udemy-master
+  656  ls
+  657  mv cloudwatch-integration AWS-EKS-Udemy-master
+  658  mv fargate-integration AWS-EKS-Udemy-master
+  659  mv kubernetes-dashboard AWS-EKS-Udemy-master
+  660  mv prometheus-and-grafana AWS-EKS-Udemy-master
+  661  mv RBAC-for-iam-users AWS-EKS-Udemy-master
+  662  mv sample-stateless-app AWS-EKS-Udemy-master
+  663  mv stateful-app AWS-EKS-Udemy-master
+  664  mv Wordpress-on-EFS AWS-EKS-Udemy-master
+  665  ls
+  666  mv * AWS-EKS-Udemy-master
+  667  ls
+  668  cd AWS-EKS-Udemy-master
+  669  ls
+  670  ls -la
+  671  cd a-prerequisites
+  672  ls -la
+  673  cd ..
+  674  code .
+  675  pip 
+  676  sudo apt-get install pip
+  677  aws --version
+  678  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  679  ls
+  680  pwd
+  681  mv awscliv2.zip /home/jose/Descargas
+  682  pwd
+  683  cd Descargas
+  684  unzip awscliv2.zip
+  685  sudo ./aws/install
+  686  aws --version
+  687  aws login
+  688  vim ~/.aws
+  689  cd ~/.aws
+  690  ls -la
+  691  cd aws
+  692  ls
+  693  cd ..
+  694  cd .aws
+  695  ls
+  696  which aws
+  697  ls -l /usr/local/bin/aws
+  698  sudo rm /usr/local/bin/aws
+  699  sudo rm /usr/local/bin/aws_completer
+  700  sudo rm -rf /usr/local/aws-cli
+  701  ls
+  702  cd ..
+  703  rm .aws
+  704  rm -rf .aws
+  705  ls
+  706  cd aws
+  707  ls
+  708  cd ..
+  709  mv aws /home/jose
+  710  cd ..
+  711  ls
+  712  ls -la
+  713  ls
+  714  rm -rf aws
+  715  ls
+  716  cd Descargas
+  717  ls
+  718  mv awscliv2.zip /home/jose
+  719  cd ..
+  720  ls
+  721  unzip awscliv2.zip
+  722  ls
+  723  sudo ./aws/install
+  724  aws --version
+  725  rm -rf aws*
+  726  ls -la
+  727  ls
+  728  cd ./aws
+  729  aws --version
+  730  ls -la
+  731  ls -l /usr/local/bin/aws
+  732  sudo rm /usr/local/bin/aws\nsudo rm /usr/local/bin/aws2_completer
+  733  sudo rm /usr/local/bin/aws
+  734  which aws
+  735  aws --version
+  736  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"\nunzip awscliv2.zip\nsudo ./aws/install
+  737  ls
+  738  aws --version
+  739  ls -l /usr/local/bin/aws
+  740  sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+  741  aws --version
+  742  sudo ./aws/install
+  743  sudo ./aws/install --update
+  744  aws --version
+  745  which aws
+  746  cd /usr/local/bin/
+  747  ls -la
+  748  sudo rm aws_completer
+  749  cd /home/jose
+  750  sudo rm -rf /usr/local/aws-cli
+  751  sudo ./aws/install
+  752  aws --versiono
+  753  aws --version
+  754  ls -la
+  755  cd aws
+  756  ls
+  757  cd ..
+  758  rm awscliv2.zip
+  759  ls ~/.kube
+  760  vim ~/.kube
+  761  vim ~/.kube/config
+  762  kubectl get cluster
+  763  kubectl get nodegroup
+  764  sudo apt-get update
+  765  sudo apt-get upgrade
+  766  kubectl get nodes
+  767  clear
+  768  cd ,,
+  769  pwd
+  770  cd /home/jose/Code/go
+  771  ls
+  772  cd pkg
+  773  ls
+  774  cd ..
+  775  mkdir src
+  776  cd src
+  777  mkdir test
+  778  cd test
+  779  touch main.go
+  780  code main.go
+  781  cd ..
+  782  cd Code/go/src/test
+  783  ls
+  784  go run main.go
+  785  cd ~
+  786  ls
+  787  cd Bysidecar
+  788  ls
+  789  unrar aws
+  790  unzip aws.rar
+  791  touch cosas_por_hacer.txt
+  792  vim cosas_por_hacer.txt
+  793  cd ..
+  794  cd Code
+  795  cd github.com/Bysidecar
+  796  ls
+  797  git clone git@github.com:BySidecar/dynamodb_test.git
+  798  ls
+  799  cd dynamodb_test
+  800  ls
+  801  go run cmd/main.go
+  802  cd ..
+  803  mv ~/Code/go/pkg
+  804  mv ~/Code/go/pkg dynamodb_test
+  805  mv dynamodb_test ~/Code/go/pkg
+  806  ls
+  807  cd ..
+  808  cd go
+  809  cd pkg
+  810  ls
+  811  cd dynamodb_test
+  812  cd ..
+  813  ls
+  814  cd ..
+  815  ls
+  816  mv pkg/dynamodb_test src
+  817  cd src
+  818  ls
+  819  cd ..
+  820  code src
+  821  cd dynamodb_test/n
+  822  cd dynamodb_test/
+  823  go run cmd/main.go
+  824  go mod init
+  825  go mod vendor
+  826  go run cmd/main.go
+  827  ls
+  828  cd src
+  829  ls -la
+  830  rm -rf dynamodb_test
+  831  cd ..
+  832  git clone git@github.com:BySidecar/dynamodb_test.git
+  833  cd dynamodb_test
+  834  go run cmd/main.go
+  835  go mod 
+  836  go mod init
+  837  go vendor init
+  838  go mod vendor
+  839  ls la
+  840  ls .la
+  841  ls -la
+  842  go run cmd/main.go
+  843  cd ..
+  844  git clone git@github.com:BySidecar/leads.git
+  845  cd leads
+  846  ls 
+  847  go run main.go
+  848  cd ..
+  849  git clone git@github.com:BySidecar/voalarm.git
+  850  cd leads
+  851  go run main.go
+  852  cat ~/.ssh/config
+  853  ls ~/.ssh
+  854  ls -la ~/.ssh
+  855  cat ~/.ssh/environment-Trapogrado
+  856  cat ~/.gitconfig
+  857  vim ~/.gitconfig
+  858  sudo vim ~/.gitconfig
+  859  go run main.go
+  860  cd ..
+  861  ls
+  862  cd dynamodb_test
+  863  go run cmd/main.go
+  864  cd ..
+  865  ls
+  866  cd src
+  867  mkdir github.com
+  868  ls
+  869  ls -la
+  870  cd ..
+  871  mv /src/* /src/github.com
+  872  mv src/* src/github.com
+  873  ls
+  874  cd src
+  875  ls
+  876  cd github.com
+  877  ls
+  878  cd dynamodb_test
+  879  go run cmd/main.go
+  880  cd ..
+  881  ls
+  882  mkdir bysidecar
+  883  cd ..
+  884  ls
+  885  mv github.com/* github.com/bysidecar
+  886  cd github.com
+  887  ls
+  888  cd bysidecar
+  889  ls
+  890  cd dynamodb_test
+  891  go run cmd/main.go
+  892  pwd
+  893  go mod init
+  894  go vendor init
+  895  go mod vendor
+  896  cd dynamodb_test
+  897  go get github.com/aws/aws-sdk-go/aws
+  898  go get github.com/aws/aws-sdk-go
+  899  go mod vendor
+  900  go mod init
+  901  go mod vendor
+  902  go run cmd/main.go
+  903  cd ..
+  904  pwd
+  905  cd ~/Code/go/src/github.com/bysidecar
+  906  ls
+  907  git clone git@github.com:BySidecar/dynamodb_test.git
+  908  cd dynamodb_test
+  909  go run cmd/main.go
+  910  go get ./...
+  911  go mod init
+  912  ls -la
+  913  rm -rf go.*
+  914  ls -l-a
+  915  ls -la
+  916  rm -rf vendor
+  917  go mod init
+  918  pwd
+  919  go mod init
+  920  cd ..
+  921  ls
+  922  cd dynamodb_test
+  923  ls -la
+  924  go mod init
+  925  go mod vendor
+  926  echo %GOPATH%
+  927  ls
+  928  cd go
+  929  printenv GOPATH
+  930  vim ~/.zshrc
+  931  go -v
+  932  go --version
+  933  go version
+  934  vim ~/.zshrc
+  935  printenv GOPATH
+  936  cd $GOPATH
+  937  ls
+  938  cd src
+  939  ls
+  940  cd dynamodb_test
+  941  go test ./...
+  942  go mod vendor
+  943  rm -r go.mod
+  944  go vendor init
+  945  go mod init
+  946  go mod vendor
+  947  go run main.go
+  948  go mod --help
+  949  go help mod
+  950  go mod tidy
+  951  go mod why
+  952  go run main.go
+  953  go mod vendor
+  954  go mod init
+  955  go mod vendor
+  956  go run main.go
+  957  ls
+  958  cd github.com
+  959  cd bysidecar
+  960  ls
+  961  cd dynamodb_test
+  962  go run main.go
+  963  cd /home/jose/Code/go/src/github.com/dynamodb_test/pkg 
+  964  cd /home/jose/Code/go/src/github.com/dynamodb_test/
+  965  cd /home/jose/Code/go/src/github.com/
+  966  go run main.go
+  967  go run cmd/main.go
+  968  cd /home/jose/Code/go/src/github.com/dynamodb_test/pkg 
+  969  go run cmd/main.go
+  970  go run main.go
+  971  go mod init
+  972  go mod vendor
+  973  ls
+  974  cd bysidecar
+  975  ls
+  976  git clone git@github.com:BySidecar/untraceable.git
+  977  cd ..
+  978  cd untraceable
+  979  go run cmd/main.go
+  980  cd dynamodb_test
+  981  go run main.go
+  982  go mod init
+  983  go mod version
+  984  go mod vendor
+  985  gsettings set io.elementary.files.preferences single-click false
+  986  cd ~
+  987  cd Bysidecar
+  988  cd inf_nat2/
+  989  ls
+  990  wget -mk https://www.influencersnaturales.es/
+  991  ls
+  992  rar x www.influencersnaturales.es
+  993  ls
+  994  rar a -r influencersnaturales.rar www.influencersnaturales.es
+  995  ls
+  996  cd ..
+  997  rm -rf inf_nat
+  998  clear
+  999  pwd
+ 1000  go mod vendor
+ 1001  cd ..
+ 1002  cd test
+ 1003  ls
+ 1004  go test ./...
+ 1005  go mod init
+ 1006  go mod vendor
+ 1007  go run main.go
+ 1008  cd ..
+ 1009  cd test
+ 1010  go get gihtub.com/bysidecar/voalarm
+ 1011  go get gihtub.com/bysidecar/voalarm@v1.0.1
+ 1012  cd test
+ 1013  ls
+ 1014  go run main.go
+ 1015  export GO111MODULE=on
+ 1016  go run main.go
+ 1017  go fmt ./...
+ 1018  cd ..
+ 1019  go fmt ./...
+ 1020  cd test
+ 1021  go version
+ 1022  go env
+ 1023  export GO111MODULE="on"
+ 1024  go env
+ 1025  go mod init
+ 1026  go mod vendor
+ 1027  ls ~/.git
+ 1028  cd ~
+ 1029  ls
+ 1030  ls -la
+ 1031  ls ~/.gitconfig
+ 1032  vim ~/.gitconfig
+ 1033  git config --global url."ssh://git@github.com".insteadOf "https://github.com"
+ 1034  vim ~/.gitconfig
+ 1035  git mod init
+ 1036  git vendor init
+ 1037  go mod init
+ 1038  go mod vendor
+ 1039  cd Bysidecar
+ 1040  ls -la
+ 1041  unrar aws.rar
+ 1042  unrar e aws.rar
+ 1043  ls
+ 1044  unrar x aws.rar
+ 1045  ls
+ 1046  ls -la
+ 1047  cd .aws
+ 1048  ls
+ 1049  vim config
+ 1050  cd ..
+ 1051  rm -rf .aws
+ 1052  ls
+ 1053  cd ..
+ 1054  cd Des
+ 1055  cd Descargas
+ 1056  ls -la
+ 1057  sudo dpkg -i teamviewer_15.3.2682_amd64.deb
+ 1058  ls
+ 1059  sudo apt-get -f install
+ 1060  env MY_GIT_TOKEN
+ 1061  env GOROOT
+ 1062  set GOROOT
+ 1063  set GOPATH
+ 1064  set |
+ 1065  printenv
+ 1066  cd ..
+ 1067  cd dynamodb_test
+ 1068  git pull
+ 1069  git status
+ 1070  ls
+ 1071  go run main.go
+ 1072  cd ..
+ 1073  ls
+ 1074  rm -rf dynamodb_test
+ 1075  git clone git@github.com:BySidecar/dynamodb_test.git
+ 1076  cd dynamodb_test
+ 1077  git status
+ 1078  ls
+ 1079  go run cmd/main.go
+ 1080  cd ..
+ 1081  cd test
+ 1082  go run main.go
+ 1083  git config \\n  --global \\n  url."https://josedelrio85:48121a8a7af8aa7b954a8a4241eacc8b653da3a1@github.com".insteadOf \\n  "https://github.com"
+ 1084  git status
+ 1085  go mod vendor
+ 1086  cd ..
+ 1087  cd dynamodb_test
+ 1088  go mod vendor
+ 1089  vim ~/.gitconfig
+ 1090  git config --list
+ 1091  ls -la
+ 1092  cd ..
+ 1093  cd Bysidecar
+ 1094  ls
+ 1095  rm inf_nat
+ 1096  rm inf_nat.html
+ 1097  cd ..
+ 1098  cd Bysidecar
+ 1099  clear
+ 1100  ls ~/Descargas
+ 1101  mv ~/Descargas/Proyectos-20200316T165106Z-001.zip ~/Bysidecar
+ 1102  ls
+ 1103  mkdir teletrabajo
+ 1104  mv allvariables.txt teletrabajo
+ 1105  mv aws.rar teletrabajo
+ 1106  mv conmysql.zip teletrabajo
+ 1107  mv kube.rar teletrabajo
+ 1108  mv vpn teletrabajo
+ 1109  ls -la
+ 1110  mkdir tareas
+ 1111  mv tare* tareas/
+ 1112  ls -la
+ 1113  mv Carga\ de\ trabajo\ 16.03\ .xlsx tareas
+ 1114  ls
+ 1115  unzip Proyectos-20200316T165106Z-001.zip
+ 1116  ls
+ 1117  rm Proyectos-20200316T165106Z-001.zip
+ 1118  cd Proyectos
+ 1119  ls
+ 1120  cd cla
+ 1121  LS
+ 1122  ls
+ 1123  ls -la
+ 1124  cd Promoción\ interlayer\ II
+ 1125  ls
+ 1126  touch analisis_horas.txt
+ 1127  code analisis_horas.txt
+ 1128  ls ~/Descargas
+ 1129  ls ~/Downloads
+ 1130  ls ~/Downloads/download
+ 1131  ls
+ 1132  cd ..
+ 1133  ls
+ 1134  pwd
+ 1135  ls la
+ 1136  ls -la
+ 1137  cd ..
+ 1138  ls
+ 1139  cd tareas
+ 1140  ls
+ 1141  mkdir carga
+ 1142  mv carga Carga\ de\ trabajo\ 16.03\ .xlsx carga/
+ 1143  ls
+ 1144  cd ..
+ 1145  ls
+ 1146  cd Proyectos
+ 1147  ls
+ 1148  cd tareas_semanales
+ 1149  ls
+ 1150  cd ..
+ 1151  mv 'Carga de trabajo 09.03.xlsx' tareas_semanales
+ 1152  ls 
+ 1153  mv tareas_desarrollo.xlsx tareas_semanales
+ 1154  cd ..
+ 1155  ls
+ 1156  mv Proyectos/tareas tareas
+ 1157  ls
+ 1158  cd tareas
+ 1159  ls
+ 1160  cd ..
+ 1161  ls
+ 1162  pwd
+ 1163  mysql -h leads.c848y92oajny.eu-west-1.rds.amazonaws.com -u leads -p -D leads\n
+ 1164  mysql -h leads-pre.c848y92oajny.eu-west-1.rds.amazonaws.com -u leads -p -D leads
+ 1165  pwd
+ 1166  ls
+ 1167  pwd
+ 1168  cd ..
+ 1169  ls
+ 1170  cd github.com
+ 1171  ls
+ 1172  cd Bysidecar/
+ 1173  ls
+ 1174  cd Bysidecar
+ 1175  ls
+ 1176  cd teletrabajo
+ 1177  ls
+ 1178  cd vpn
+ 1179  ls
+ 1180  vim command
+ 1181  code command
+ 1182  tail command
+ 1183  eval $(tail command)
+ 1184  sudo openvpn --config /home/jose/Bysidecar/bysidecar.ovpn\n
+ 1185  code command
+ 1186  pwd
+ 1187  eval $(tail command)
+ 1188  cd Descargas
+ 1189  ls
+ 1190  sudo apt install /home/jose/Descargas/teams_1.3.00.958_amd64.deb
+ 1191  sudo apt-get install -f
+ 1192  ping www.google.es
+ 1193  clear
+ 1194  cd euskaltel-kinkon-web
+ 1195  git status
+ 1196  cd ..
+ 1197  git clone git@github.com:BySidecar/SIRA.git
+ 1198  git branch
+ 1199  git checkout -b feature/kinkon_reports
+ 1200  php -S localhost:8000 system/router.php
+ 1201  ls
+ 1202  eval $(command)
+ 1203  eval $(tail command)
+ 1204  ls
+ 1205  cd privateBySidecar
+ 1206  pwd
+ 1207  ls
+ 1208  composer install
+ 1209  php -S localhost:8000 system/router.php
+ 1210  php -S localhost:8000
+ 1211  cd ..
+ 1212  php --ini > phpinfo.txt
+ 1213  code phpinfo.txt
+ 1214  php -i > phpinfo.txt
+ 1215  code phpinfo.txt
+ 1216  sudo apt-get install php-mysql
+ 1217  php -i > phpinfo.txt
+ 1218  code phpinfo.txt
+ 1219  php -S localhost:8000
+ 1220  tail privateBySidecar/ini.ini
+ 1221  cat privateBySidecar/ini.ini
+ 1222  sudo apt install php-xdebug\n
+ 1223  sudo nano /etc/php/7.2/mods-available/xdebug.ini
+ 1224  sudo systemctl restart php7.0-fpm\n
+ 1225  sudo systemctl restart php7.2-fpm\n
+ 1226  php -S localhost:8000
+ 1227  php -i > phpinfo.txt
+ 1228  sudo nano /etc/php/7.2/mods-available/xdebug.ini
+ 1229  php -i > phpinfo.txt
+ 1230  code phpinfo.txt
+ 1231  apt-get install php-dev autoconf automake
+ 1232  sudo sudo nano /etc/php/7.2/mods-available/xdebug.ini
+ 1233  sudo apt-get install php-dev autoconf automake
+ 1234  tar -xvzf xdebug-2.9.3.tgz
+ 1235  ls
+ 1236  cd xdebug-2.9.3
+ 1237  phpize
+ 1238  ./configure
+ 1239  make
+ 1240  make test
+ 1241  cp modules/xdebug.so /usr/lib/php/20170718
+ 1242  sudo cp modules/xdebug.so /usr/lib/php/20170718
+ 1243  nano /etc/php/7.2/cli/php.ini 
+ 1244  sudo sudo nano /etc/php/7.2/mods-available/xdebug.ini
+ 1245  php -S localhost:8000
+ 1246  php --ini
+ 1247  php -S localhost:8888 index.php -c /etc/php/7.2/cli/php.ini
+ 1248  php -S localhost:8000 -c /etc/php/7.2/cli/php.ini
+ 1249  cd ...
+ 1250  cd SIRA
+ 1251  ls
+ 1252  cd core
+ 1253  cd server
+ 1254  cd rest
+ 1255  ls -la
+ 1256  nano dispatcherRest.php
+ 1257  cd ..
+ 1258  ls
+ 1259  pwd
+ 1260  cd core
+ 1261  cd ..
+ 1262  php -S localhost:8888 index.php -c /etc/php/7.2/cli/php.ini
+ 1263  php -S localhost:8000 -c /etc/php/7.2/cli/php.ini
+ 1264  ls -la
+ 1265  cd core
+ 1266  ls
+ 1267  cd server
+ 1268  ls -la
+ 1269  cd class
+ 1270  ls -la
+ 1271  cd ..
+ 1272  cd rest
+ 1273  ls -la
+ 1274  cd ..
+ 1275  ls
+ 1276  cd ..
+ 1277  ls
+ 1278  cd ..
+ 1279  ls
+ 1280  cd SIRA
+ 1281  cd ..
+ 1282  mkdir logs_sira
+ 1283  ls
+ 1284  rm -rf logs_sira
+ 1285  cd SIRA
+ 1286  mkdir logs_sira
+ 1287  sudo apt-get upgrade
+ 1288  sudo apt-get update
+ 1289  composer --version
+ 1290  cd ..
+ 1291  ls
+ 1292  git clone git@github.com:BySidecar/grav.git
+ 1293  cd grav
+ 1294  ls
+ 1295  git pull
+ 1296  php -S localhost:8000 -c /etc/php/7.2/cli/php.ini
+ 1297  eval $(tail command)
+ 1298  php -S localhost:8000 -c /etc/php/7.2/cli/php.ini
+ 1299  git push
+ 1300  git push --set-upstream origin feature/kinkon_reports
+ 1301  eval $(tail command)
+ 1302  git push
+ 1303  sudo apt install openssh-client
+ 1304  ssh root@192.168.50.21
+ 1305  put --help
+ 1306  sftp root@192.168.50.21
+ 1307  cd ..
+ 1308  cd SIRA
+ 1309  cd custom/modules
+ 1310  ls -la
+ 1311  pwd
+ 1312  cd ultimaCatRcable
+ 1313  ls
+ 1314  cd ..
+ 1315  cd core/server/rest
+ 1316  ls
+ 1317  ls -la
+ 1318  pwd
+ 1319  ls
+ 1320  cd ..
+ 1321  ls
+ 1322  cd ..
+ 1323  ls
+ 1324  cd ..
+ 1325  ls
+ 1326  cd ..
+ 1327  ls
+ 1328  cd Bysidecar
+ 1329  ls
+ 1330  cd tareas
+ 1331  ls
+ 1332  libreoffice tareas_desarrollo.xlsx
+ 1333  sudo apt-get upgrade
+ 1334  sudo apt-get update
+ 1335  cd workload
+ 1336  go run cmd/main.go
+ 1337  cd workload
+ 1338  go get github.com/go-sql-driver/mysql
+ 1339  go get github.com/jinzhu/gorm/dialects/mysql
+ 1340  Go: Install/Update Tools
+ 1341  go env
+ 1342  go version
+ 1343  export GO111MODULE=on
+ 1344  go env
+ 1345  go mod init
+ 1346  go mod vendor
+ 1347  cd Bysidecar
+ 1348  ls
+ 1349  cd teletrabajo
+ 1350  ls
+ 1351  nano allvariables.txt
+ 1352  code allvariables.txt
+ 1353  printenv
+ 1354  echo GO111MODULE
+ 1355  env GO111MODULE
+ 1356  echo LESS
+ 1357  echo "LESS\n"
+ 1358  echo "LESS"\n"\n\n
+ 1359  ls /etc/environment
+ 1360  nano /etc/environment
+ 1361  nano /etc/profile
+ 1362  nano ~/.bashrc
+ 1363  nano ~/.zshrc
+ 1364  source ~/.zshrc
+ 1365  printenv
+ 1366  echo $GOPATH
+ 1367  echo $DB_HOST
+ 1368  env
+ 1369  grep -rl VARNAME /etc $HOME
+ 1370  sudo grep -rl VARNAME /etc $HOME
+ 1371  go run cmd/main.go
+ 1372  go mod vendor
+ 1373  echo $GO111MODULE
+ 1374  sudo grep -rl PANTHEON_TERMINAL /etc $HOME
+ 1375  non ~/.zsh_history
+ 1376  nano ~/.zsh_history
+ 1377  nano ~/.giconfig
+ 1378  nano ~/.gitconfig
+ 1379  git config --global url.git@github.com:.insteadOf https://github.com
+ 1380  nano ~/.gitconfig
+ 1381  go get github.com/bysidecar/voalarm
+ 1382  go get github.com/bysidecar/voalarm@v1.0.0
+ 1383  go get github.com/BySidecar/voalarm@v1.0.0
+ 1384  go get github.com/BySidecar/leads
+ 1385  pwd
+ 1386  cd /home/jose/Code/go/src/github.com/bysidecar/workload
+ 1387  nano ~/.gitconfig
+ 1388  go get github.com/BySidecar/leads
+ 1389  ls ~/.ssh
+ 1390  ls -al ~/.ssh
+ 1391  ssh-add ~/.ssh/id_rsa
+ 1392  go get github.com/BySidecar/leads
+ 1393  go get github.com/bysidecar/leads
+ 1394  clip < ~/.ssh/id_rsa.pub
+ 1395  sudo apt-get install clip
+ 1396  sudo apt-get install xclip
+ 1397  clip < ~/.ssh/id_rsa.pub
+ 1398  xclip < ~/.ssh/id_rsa.pub
+ 1399  nano ~/.ssh/id_rsa.pub
+ 1400  code ~/.ssh/id_rsa.pub
+ 1401  go get github.com/bysidecar/leads
+ 1402  go mod vendor
+ 1403  cd ..
+ 1404  ls
+ 1405  go mod tidy
+ 1406  go get -u
+ 1407  go get -u=patch
+ 1408  go mod vendor
+ 1409  cd workload
+ 1410  clear
+ 1411  docker image build -t workload:v0.1 .
+ 1412  go mod vendor
+ 1413  cd ..
+ 1414  cd leads
+ 1415  go mod vendor
+ 1416  git add .
+ 1417  git commit -m "updated vendors"
+ 1418  git push
+ 1419  cd ..
+ 1420  cd workload
+ 1421  ^[[200~ENV GO111MODULE=on
+ 1422  echo $GO111MODULE
+ 1423  go mod init
+ 1424  go mod vendor
+ 1425  cd ..
+ 1426  cd voalarm
+ 1427  git pull
+ 1428  cd ..
+ 1429  cd workload
+ 1430  ls
+ 1431  go mod vendor
+ 1432  go run cmd/main.go
+ 1433  pwd
+ 1434  go run cmd/main.go
+ 1435  go get \tgithub.com/gorilla/mux\n
+ 1436  go get \tgithub.com/rs/cors\n
+ 1437  go run cmd/main.go
+ 1438  env GO111MODULE=off
+ 1439  echo $GO111MODULE
+ 1440  set GO111MODULE=off
+ 1441  echo $GO111MODULE
+ 1442  set $GO111MODULE=off
+ 1443  echo $GO111MODULE
+ 1444  export GO111MODULE=off
+ 1445  echo $GO111MODULE
+ 1446  go run cmd/main.go
+ 1447  echo $GO111MODULE
+ 1448  go run cmd/main.go
+ 1449  go get -u
+ 1450  go run cmd/main.go
+ 1451  cd ..
+ 1452  ls
+ 1453  cd jinzhu
+ 1454  ls
+ 1455  cd ..
+ 1456  cd bysidecar
+ 1457  ls
+ 1458  cd workload
+ 1459  export GO111MODULE=on
+ 1460  go run cmd/main.go
+ 1461  go mod init
+ 1462  go mod vendor
+ 1463  go env -w GOPRIVATE=github.com/bysidecar
+ 1464  go env
+ 1465  go env -w GO111MODULE=on
+ 1466  go env
+ 1467  go mod init
+ 1468  go mod vendor
+ 1469  go run cmd/main.go
+ 1470  env
+ 1471  printenv
+ 1472  sudo -H nano /etc/environment
+ 1473  sudo nano ~/.zshrc
+ 1474  source ~/.zshrc
+ 1475  echo $DB_PORT
+ 1476  go run cmd/main.go
+ 1477  pwd
+ 1478  go run cmd/main.go
+ 1479  echo $DB_PORT
+ 1480  source ~/.zshrc
+ 1481  sudo nano ~/.zshrc
+ 1482  sudo code ~/.zshrc
+ 1483  code ~/.zshrc
+ 1484  source ~/.zshrc
+ 1485  go run cmd/main.go
+ 1486  docker-compose up -f dev/mysql/docker-compose.yml 
+ 1487  cd dev/mysql && docker-compose up
+ 1488  cd Code/go/src/github.com/bysidecar/workload
+ 1489  ls
+ 1490  mysql -u root -p root_bsc
+ 1491  mysql -uroot
+ 1492  docker container ls
+ 1493  mysql -hlocalhost -uroot -p -P3306
+ 1494  docker volumes ls
+ 1495  docker volume ls
+ 1496  mysql -hmysql -uroot -p -P3306
+ 1497  mysql -hmysql_workload -uroot -p -P3306
+ 1498  docker ps
+ 1499  docker-machine ip mysql_workload
+ 1500  docker-compose down
+ 1501  cd dev/mysql && docker-compose down
+ 1502  cd dev/mysql && docker-compose up -d
+ 1503  cd  ..
+ 1504  docker-compose -f dev/mysql/docker-compose.yml up -d
+ 1505  mysql -hmysql_workload -uroot -p -P3306
+ 1506  mysql -uroot -p -P3306
+ 1507  docker container ls
+ 1508  docker-compose exec mysql_workload /bin/bash
+ 1509  cd dev/mysql
+ 1510  docker-compose exec mysql_workload /bin/bash
+ 1511  docker-compose ls
+ 1512  docker container ls
+ 1513  docker container exec -it 760 /bin/bash
+ 1514  docker-compose down
+ 1515  docker-compose up
+ 1516  mysql -uroot
+ 1517  mysql
+ 1518  mysql -hmysql_workload -P3306 -uroot -p
+ 1519  mysql -hmysql -P3306 -uroot -p
+ 1520  mysql  -P3306 -uroot -p
+ 1521  docker-compose up
+ 1522  mysql -P 3309 -u root -p
+ 1523  docker-compose up
+ 1524  mysql -P 3309 -u root -p
+ 1525  docker-compose down
+ 1526  docker-compose up -d
+ 1527  mysql -P 3309 -u root_wp -p
+ 1528  docker container ls -la
+ 1529  docker container rm -f b33
+ 1530  docker container ls -a
+ 1531  docker system prune -a
+ 1532  docker-compose up
+ 1533  mysql -P 3309 -u root_wp -p
+ 1534  mysql -h mysql_workload -P 3309 -u root_wp -p
+ 1535  mysql -h mysql -P 3309 -u root_wp -p
+ 1536  mysql -h localhost -P 3309 -u root_wp -p
+ 1537  docker container ls
+ 1538  docker container ls -w
+ 1539  docker container ls -la
+ 1540  docker-compose down
+ 1541  docker-compose up
+ 1542  docker container ls -la
+ 1543  docker logs -f 89e
+ 1544  docker logs -f mysql_workload
+ 1545  docker logs mysql_workload
+ 1546  docker-compose down
+ 1547  docker-compose up -d
+ 1548  docker container ls -a
+ 1549  docker-compose down
+ 1550  cd ..
+ 1551  cd ~
+ 1552  clear
+ 1553  eval $(tail command)
+ 1554  ssh root@192.168.20.51
+ 1555  ssh root@192.168.50.21
+ 1556  php -S localhost:8000 -c /etc/php/7.2/cli/php.ini
+ 1557  sftp root@192.168.50.21
+ 1558  ls
+ 1559  cd /home/jose/Code/github.com/Bysidecar/SIRA/custom/attrs/
+ 1560  sftp root@192.168.50.21
+ 1561  ls
+ 1562  cd kinkonSources
+ 1563  sftp root@192.168.50.21
+ 1564  ssh root@192.168.50.21
+ 1565  git push
+ 1566  ^[[200~ npm run-script watch
+ 1567  ~npm run-script watch
+ 1568  npm run-script watch
+ 1569  php bin/console server:run
+ 1570  git branch
+ 1571  git checkout -b feature/contents_18-03-2020
+ 1572  git push
+ 1573  git push --set-upstream origin feature/contents_18-03-2020
+ 1574  eval $(tail command)
+ 1575  kubectl -n euskaltel-pre set image deployments/euskaltel-kinkon-web-pre euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pre:b37db6cbe4bc576f39deac7154fbc4a777e83b6a
+ 1576  kubectl -n bysidecar-pre get pods -w
+ 1577  kubectl -n euskaltel-pre get pods -w
+ 1578  kubectl -n euskaltel-pre get pods
+ 1579  php -S localhost:8000 -c /etc/php/7.2/cli/php.ini
+ 1580  git push
+ 1581  sftp root@192.168.50.21
+ 1582  pwd
+ 1583  cd sir
+ 1584  ls
+ 1585  cd /home/jose/Code/github.com/Bysidecar/
+ 1586  ls
+ 1587  cd SIRA
+ 1588  wpd
+ 1589  pwd
+ 1590  sftp root@192.168.50.21
+ 1591  ssh root@192.168.50.21
+ 1592  git checkout dev
+ 1593  git pull
+ 1594  ls
+ 1595  pwd
+ 1596  cd ..
+ 1597  cd..
+ 1598  cd /home/jose/Code/github.com/Bysidecar/euskaltel-kinkon-web
+ 1599  git checkout dev
+ 1600  git pull
+ 1601  git branch
+ 1602  git branch -d feature/contents_18-03-2020
+ 1603  kubectl -n euskaltel set image deployments/euskaltel-kinkon-web euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pro:e4912426569f69179217bda6e91b34b32e664954
+ 1604  kubectl -n euskaltel get pods -w
+ 1605  kubectl -n euskaltel get pods
+ 1606  clear
+ 1607  cd ..
+ 1608  pwd
+ 1609  ls
+ 1610  git clone
+ 1611  git clone git@github.com:BySidecar/virgin_blog.git
+ 1612  code
+ 1613  cd virgin_blog
+ 1614  git branch
+ 1615  git branch --all
+ 1616  git checkout --track origin/feature/home
+ 1617  git branch
+ 1618  code .
+ 1619  cd user/themes/mytheme
+ 1620  code .
+ 1621  php -S localhost:8000 system/router.php
+ 1622  cd ..
+ 1623  php -S localhost:8000 system/router.php
+ 1624  php bin/grav install
+ 1625  php -S localhost:8000 system/router.php
+ 1626  cd user/themes/mytheme
+ 1627  npm run dev
+ 1628  npm install
+ 1629  npm run dev
+ 1630  sudo npm run dev
+ 1631  ls -la
+ 1632  npm -v
+ 1633  npm update
+ 1634  npm run dev
+ 1635  npm run build
+ 1636  cd ..
+ 1637  cd .
+ 1638  cd ..
+ 1639  npm run dev
+ 1640  cd user/themes/mytheme
+ 1641  npm run dev
+ 1642  code /home/jose/.npm/_logs/2020-03-20T16_53_29_365Z-debug.log\n
+ 1643  webpack --mode development --progress --watch
+ 1644  cd ..
+ 1645  npm install
+ 1646  composer install
+ 1647  npm run dev
+ 1648  ls -la
+ 1649  code .
+ 1650  composer install
+ 1651  cd user/themes/mytheme
+ 1652  npm run dev
+ 1653  webpack-dev-server --mode development --open
+ 1654  webpack --mode development --progress --watch
+ 1655  npm install --global webpack 
+ 1656  sudo npm install --global webpack 
+ 1657  sudo npm install --save-dev webpack-cli
+ 1658  webpack --mode development --progress --watch
+ 1659  sudo webpack --mode development --progress --watch
+ 1660  webpack --mode development --progress --watch
+ 1661  sudo npm install --save-dev webpack-cli
+ 1662  webpack --mode development --progress --watch
+ 1663  npm run dev
+ 1664  npm i webpack
+ 1665  webpack -v
+ 1666  webpack --v
+ 1667  webpack --version
+ 1668  npm install --save-dev webpack
+ 1669  webpack -v
+ 1670  npm i webpack-cli
+ 1671  webpack -v
+ 1672  npm i webpack-cli --save-dev
+ 1673  npm install
+ 1674  npm run dev
+ 1675  cd ..
+ 1676  ls
+ 1677  clear
+ 1678  ls
+ 1679  cd grav
+ 1680  ls -la
+ 1681  rm -rf grav
+ 1682  composer run-script gravinstall
+ 1683  composer run-script custom
+ 1684  ls
+ 1685  mv /grav /home/jose/Code/github.com/Bysidecar/other_grav
+ 1686  mv grav /home/jose/Code/github.com/Bysidecar/other_grav
+ 1687  ls
+ 1688  cd ..
+ 1689  cd other_grav
+ 1690  ls
+ 1691  code .
+ 1692  cd user/themes/mytheme
+ 1693  npm run dev
+ 1694  php -S localhost:8000 system/router.php
+ 1695  php -S localhost:8000 -c /etc/php/7.2/cli/php.ini
+ 1696  cd ..
+ 1697  php -S localhost:8000 system/router.php
+ 1698  code .
+ 1699  php -S localhost:8000 system/router.php
+ 1700  cd user/themes/mytheme
+ 1701  npm run dev
+ 1702  cd ..
+ 1703  cd other_grav
+ 1704  git init
+ 1705  git add .
+ 1706  git commit -m "test"
+ 1707  git status
+ 1708  git remote add origin git@github.com:BySidecar/test.git
+ 1709  git push -u origin dev
+ 1710  git push -u origin master
+ 1711  git status
+ 1712  git push
+ 1713  git rm -r --cached ..
+ 1714  git rm -r --cached .
+ 1715  git status
+ 1716  git add .
+ 1717  git status
+ 1718  git push
+ 1719  git status
+ 1720  cd ..
+ 1721  cd virgin_blog
+ 1722  ls -la
+ 1723  cd ..
+ 1724  rm -r virgin_blog
+ 1725  rm -rf virgin_blog
+ 1726  ls
+ 1727  git clone git@github.com:BySidecar/virgin_blog.git
+ 1728  cd virgin_blog
+ 1729  code .
+ 1730  ls -la
+ 1731  code .
+ 1732  pwd
+ 1733  composer install
+ 1734  cd user/themes/mytheme
+ 1735  npm install -y
+ 1736  npm run dev
+ 1737  ^[[200~php -S localhost:8000 system/router.php~
+ 1738  php -S localhost:8000 system/router.php
+ 1739  cd user/themes/mytheme
+ 1740  npm run dev
+ 1741  git rm -r --cached .
+ 1742  git push
+ 1743  git rm -r --cached .
+ 1744  git add .
+ 1745  git rm -r --cached .
+ 1746  git add .
+ 1747  git rm -r --cached .
+ 1748  git add .
+ 1749  git commit -m "commit"
+ 1750  git rm -r --cached .
+ 1751  git add .
+ 1752  git branch
+ 1753  git checkout --track origin/feature/home
+ 1754  ls -la
+ 1755  rm -rf vendor
+ 1756  ls -la user/themes/mytheme
+ 1757  rm -rf user/themes/mytheme/node_modules
+ 1758  ls -la
+ 1759  composer install
+ 1760  ls -la
+ 1761  cd user/themes/mytheme && npm install -y
+ 1762  php -S localhost:8000 system/router.php
+ 1763  cd user/themes/mytheme
+ 1764  npm install -y
+ 1765  npm run dev
+ 1766  git rm -r --cached .
+ 1767  git push
+ 1768  git rm -r --cached .
+ 1769  git add .
+ 1770  git rm -r --cached .
+ 1771  git add .
+ 1772  git commit -m "restructuring ignored files"
+ 1773  git push
+ 1774  npm run build
+ 1775  git add .
+ 1776  git commit -m "test"
+ 1777  git add .
+ 1778  git commit -m "test"
+ 1779  cd ..
+ 1780  git add .
+ 1781  git commit -m "test"
+ 1782  git push
+ 1783  git add .
+ 1784  git commit -m "Changed readme with instructions to start to work when cloning this repo"
+ 1785  git push
+ 1786  clear
+ 1787  kubectl -n bysidecar-pre get pods
+ 1788  kubectl get namespaces
+ 1789  kubectl -n test get pods
+ 1790  pwd
+ 1791  cd ..
+ 1792  git clone git@github.com:BySidecar/virgin_test.git
+ 1793  cd virgin_test
+ 1794  code .
+ 1795  kubectl -n test
+ 1796  kubectl -n test get pods
+ 1797  kubectl -n test get ingress
+ 1798  kubectl -n test describe ingress/my-ingress
+ 1799  kubectl -n test describe my-ingress
+ 1800  kubectl get ingress
+ 1801  kubectl -n test describe ingress my-ingress
+ 1802  kubectl -n bysidecar-pre get ingress
+ 1803  kubectl -n bysidecar-pre describe ingerss eventorama-pre
+ 1804  kubectl -n bysidecar-pre describe ingress eventorama-pre
+ 1805  kubectl version
+ 1806  kubectl -n bysidecar-pre get pods
+ 1807  kubectl -n bysidecar get pods
+ 1808  kubectl -n test get pods
+ 1809  kubectl -n test get svc
+ 1810  source <(kubectl completion zsh)
+ 1811  echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc
+ 1812  kubectl -n test get pods
+ 1813  kubectl -n test delete pod kinkon-deployment-6c8b47498d-p4lnl
+ 1814  kubectl -n test get deployment
+ 1815  kubectl -n test delete deployment virgin-blog-pre
+ 1816  kubectl -n test delete deployment virgin-web-pre 
+ 1817  kubectl -n test get deployment
+ 1818  kubectl -n test delete deployment kinkon-deployment
+ 1819  kubectl -n test get pods
+ 1820  kubectl -n test get svc
+ 1821  kubectl -n test delete svc virgin-web-pre
+ 1822  kubectl -n test delete svc virgin-blog-pre
+ 1823  kubectl -n test delete svc kinkon
+ 1824  kubectl -n test get ingress
+ 1825  kubectl -n test delete ingress my-ingress
+ 1826  kubectl -n test get rs
+ 1827  kubectl -n test get deploy
+ 1828  kubectl -n test get pod
+ 1829  cd ..
+ 1830  ls -la
+ 1831  rm -r other_grav
+ 1832  rm -rf other_grav
+ 1833  docker image build -t virgin_blog:0.1
+ 1834  docker image build -t virgin_blog:0.1 .
+ 1835  ls
+ 1836  cd virgin_
+ 1837  cd virgin_blog
+ 1838  ls
+ 1839  git pull
+ 1840  git checkout -b feature/circleci
+ 1841  docker image build -t virgin_blog:0.1 .
+ 1842  docker image ls -la
+ 1843  docker image ls
+ 1844  docker container run -d --name virgin_blog -p 8080:80 virgin_blob:0.1
+ 1845  docker container run -d --name virgin_blog -p 8080:80 virgin_blog:0.1
+ 1846  php -S localhost:8000 system/router.php
+ 1847  bin/grav install
+ 1848  php bin/grav install
+ 1849  git push
+ 1850  git push --set-upstream origin feature/circleci
+ 1851  git add README.md
+ 1852  git commit -m "added readme.md"
+ 1853  git push
+ 1854  clear
+ 1855  kubectl -n bysidecar-pre apply k8s/deployment-definition.yml
+ 1856  kubectl -n bysidecar-pre apply -f k8s/deployment-definition.yml
+ 1857  kubectl -n bysidecar-pre apply -f k8s/service-definition.yml
+ 1858  kubectl -n bysidecar-pre get pods -w
+ 1859  kubectl -n bysidecar-pre get svc
+ 1860  kubectl -n bysidecar-pre apply -f k8s/ingress-definition.yml
+ 1861  kubectl -n bysidecar-pre get ingress
+ 1862  kubectl -n bysidecar-pre get ingress -w
+ 1863  kubectl -n bysidecar-pre get ingress
+ 1864  docker image build -t virgin_blog:0.2 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog
+ 1865  aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email
+ 1866  aws ecr get-login --region eu-west-1 --no-include-email
+ 1867  sudo apt-get -y install awscli
+ 1868  aws ecr get-login --region eu-west-1 --no-include-email
+ 1869  aws ecr get-login-password --region eu-west-1 --no-include-email
+ 1870  aws ecr get-login-passwor --region eu-west-1
+ 1871  aws ecr get-login-password --region eu-west-1
+ 1872  cp -r /home/jose/Bysidecar/teletrabajo/aws
+ 1873  cp -r /home/jose/Bysidecar/teletrabajo/aws /home/jose
+ 1874  ls -la
+ 1875  mv aws .aws
+ 1876  ls -la
+ 1877  aws ecr get-login-password --region eu-west-1
+ 1878  aws ecr get-login --region eu-west-1 --no-include-email
+ 1879  aws ecr get-login-password \\n    --region <region> \\n| docker login \\n    --username AWS \\n    --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 1880  aws ecr get-login-password  --region <region> | docker login  --username AWS  --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 1881  aws ecr get-login-password  --region eu-west-1 | docker login  --username AWS  --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 1882  docker image build -t virgin_blog:0.2 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog
+ 1883  docker image build -t virgin_blog:0.2 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1884  docker pull 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1885  ls
+ 1886  docker image ls
+ 1887  docker image build -t virgin_blog:0.2 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog
+ 1888  docker image build -t virgin_blog:0.2 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1889  docker image build -t virgin_blog:0.2 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog
+ 1890  cd Descargas
+ 1891  ls -la
+ 1892  sudo apt install zoom_amd64.deb
+ 1893  sudo apt install ~/Descargas/zoom_amd64.deb
+ 1894  sudo apt-get install -f
+ 1895  docker image ls -la
+ 1896  docker image ls -a
+ 1897  docker image build -t test 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1898  docker image build -t test virgin_blog:0.1
+ 1899  docker container run -d --name virgin_blog:0.2 -p 8090:80 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1900  docker container run -d --name virgin_blog_0.2 -p 8090:80 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1901  docker container ls -a
+ 1902  docker container stop 6fe ea4
+ 1903  docker image ls -a
+ 1904  docker image rm cc1
+ 1905  docker image rm -f cc1
+ 1906  docker image ls -a
+ 1907  docker image rm -f cce
+ 1908  docker image ls -a
+ 1909  docker system prune --all
+ 1910  docker image ls -a
+ 1911  ls -la
+ 1912  code .
+ 1913  composer --version
+ 1914  docker container ls -a
+ 1915  docker image ls -a
+ 1916  docker image build -t virgin_blog:0.1 .
+ 1917  docker image ls -a
+ 1918  docker container run -d --name virgi_blog:0.1 -p 8090:80 virgin_blog:0.1
+ 1919  docker container run -d --name virgin_blogv0.1 -p 8090:80 virgin_blog:0.1
+ 1920  git push
+ 1921  docker container ls
+ 1922  docker container stop eac
+ 1923  nano ~/.zshrc
+ 1924  echo $ZHS
+ 1925  echo $ZSH
+ 1926  LS $ZSH/plugins
+ 1927  ls $ZSH/plugins
+ 1928  ls $ZSH/plugins/docker
+ 1929  nano ~/.zshrc
+ 1930  source ~/.zshrc
+ 1931  kubectl -n bysidecar-pre get pods
+ 1932  kubectl -n bysidecar-pre get deploy
+ 1933  kubectl -n bysidecar-pre describe deploy virgin-blog-pre
+ 1934  kubectl -n bysidecar-pre set image deployments/virgin-blog-pre virgin-blog=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:6a45ff6269661ae40bd97e4d902514ef41e5654b\n
+ 1935  kubectl -n bysidecar-pre get pods -w
+ 1936  kubectl -n bysidecar-pre get pods
+ 1937  kubectl -n bysidecar-pre get ingress
+ 1938  kubectl -n bysidecar-pre logs virgin-blog-pre-759989b58f-2rpd9
+ 1939  kubectl -n bysidecar-pre logs virgin-blog-pre-759989b58f-2rpd9 -f
+ 1940  docker pull 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog
+ 1941  docker pull 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1942  aws ecr get-login-password \\n    --region <region> \\n| docker login \\n    --username AWS \\n    --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 1943  aws ecr get-login-password \\n    --region <region> | docker login \\n    --username AWS \\n    --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 1944  aws ecr get-login-password  --region <region> | docker login  --username AWS --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 1945  aws ecr get-login-password \\n    --region eu-west-1 \\n| docker login \\n    --username AWS \\n    --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 1946  docker pull 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1947  docker imagae ls -a
+ 1948  docker image ls 
+ 1949  docker container run -d --name=virgin_blogv0.2 -p 8091:80 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1950  docker container ls -a
+ 1951  docker container exec -it 252 /bin/bash
+ 1952  git push
+ 1953  kubectl -n bysidecar-pre set image deployments/virgin-blog-pre virgin-blog=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:e13c0f9a79b0956037f40550cdbd0c1686e77fd6
+ 1954  kubectl -n bysidecar-pre get pods -w
+ 1955  kubectl -n bysidecar-pre get pods
+ 1956  kubectl -n bysidecar-pre logs virgin-blog-pre-759465c794-gdwdf
+ 1957  docker pull 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1958  docker container run -d --name=virgin_blogv0.3 -p 8093:80 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:latest
+ 1959  kubectl -n bysidecar-pre logs virgin-blog-pre-759465c794-gdwdf
+ 1960  kubectl -n bysidecar-pre logs virgin-blog-pre-759465c794-gdwdf -f
+ 1961  ls
+ 1962  ls k8s
+ 1963  kubectl apply -f k8s/ingress-definition
+ 1964  kubectl apply -f k8s/ingress-definition.yml
+ 1965  kubectl -n bysidecar-pre get ingress
+ 1966  kubectl -n bysidecar-pre get ingress -w
+ 1967  git push
+ 1968  docker container ls
+ 1969  docker container stop 001 252
+ 1970  docker container ls -a
+ 1971  docker container stop 011 252 eac d1c
+ 1972  docker container rm 011 252 eac d1c
+ 1973  docker container ls -a
+ 1974  docker image ls 
+ 1975  docker image rm cf1 bb9
+ 1976  docker image rm 18c
+ 1977  ls -la
+ 1978  docker image ls
+ 1979  kubectl -n euskaltel get ingress
+ 1980  kubectl -n euskaltel describe ingress/euskaltel-kinkon-web
+ 1981  kubectl -n euskaltel describe ingress euskaltel-kinkon-web
+ 1982  kubectl describe ingress euskaltel-kinkon-web
+ 1983  kubectl --version
+ 1984  kubectl version
+ 1985  kubectl -n euskaltel get ingress -o yaml
+ 1986  kubectl -n euskaltel get ingress -o yaml > ~/Code/github.com/Bysidecar/virgin_blog/ingress_output.yaml
+ 1987  git clone git@github.com:BySidecar/googlehook.git
+ 1988  kubectl -n euskaltel get certificate
+ 1989  kubectl -n euskaltel get certificate -o yaml
+ 1990  kubectl -n euskaltel get certificate -o yaml > ~/Code/github.com/Bysidecar/virgin_blog/output_certificate.yaml
+ 1991  kubectl -n euskaltel get certificate -o yaml
+ 1992  kubectl -n euskaltel get certificate
+ 1993  kubectl -n euskaltel get secret
+ 1994  kubectl -n euskaltel describe secret tls-www-ofertastelecable-es
+ 1995  ls -la
+ 1996  kubectl -n bysidecar-pre apply -f k8s/certificate-definition.yaml
+ 1997  kubectl -n bysidecar-pre get certificates
+ 1998  kubectl -n bysidecar-pre describe certificates virgin-pre
+ 1999  kubectl -n bysidecar-pre apply k8s/ingress-definition.yml
+ 2000  kubectl -n bysidecar-pre apply -f k8s/ingress-definition.yml
+ 2001  kubectl -n bysidecar-pre get ingress -f
+ 2002  kubectl -n bysidecar-pre get ingress -w
+ 2003  kubectl -n bysidecar-pre get ingress virgin-pre -o yaml
+ 2004  kubectl -n bysidecar-pre get secrets
+ 2005  kubectl -n bysidecar-pre get certificate
+ 2006  kubectl -n bysidecar-pre describe certificate virgin-pre
+ 2007  kubectl -n bysidecar-pre delete certificates virgin-pre
+ 2008  kubectl apply k8s/certificate-definition.yaml
+ 2009  kubectl apply k8s/certificate-definition.yaml -f
+ 2010  kubectl apply -f k8s/certificate-definition.yaml
+ 2011  kubectl -n bysidecar-pre get certificate
+ 2012  kubectl -n bysidecar-pre delete certificates virgin-pre
+ 2013  kubectl apply -f k8s/certificate-definition.yaml
+ 2014  kubectl -n bysidecar-pre get certificate
+ 2015  kubectl -n bysidecar-pre get ingress
+ 2016  git push
+ 2017  kubectl -n bysidecar-pre get certificates
+ 2018  kubectl -n bysidecar-pre describe certificates tls-virgin-pre-bysidecar-me 
+ 2019  kubectl -n bysidecar-pre describe secrets tls-virgin-pre-bysidecar-me
+ 2020  kubectl -n bysidecar-pre get secrets tls-virgin-pre-bysidecar-me -o jsonpath="<{.data.<DATA>}" | base64 --decode
+ 2021  kubectl -n bysidecar-pre get secrets tls-virgin-pre-bysidecar-me -o yaml
+ 2022  ls
+ 2023  cd Code/github.com/Bysidecar/
+ 2024  ls
+ 2025  git clone ^[[200~git@github.com:BySidecar/devops.git~
+ 2026  git clone git@github.com:BySidecar/devops.git
+ 2027  git push
+ 2028  clear
+ 2029  kubectl -n euskatel get ingress
+ 2030  kubectl -n euskaltel get ingress
+ 2031  kubectl -n euskaltel get ingress euskaltel-kinkon-web -o yaml
+ 2032  clear
+ 2033  ls -la
+ 2034  sudo apt install ~/Descargas/steam_latest.db
+ 2035  sudo apt install ~/Descargas/steam_latest.deb
+ 2036  sudo apt-get install -f
+ 2037  sudo apt-get upgrade
+ 2038  sudo apt-get update
+ 2039  mkdir cla_wp
+ 2040  eval $(tail command)
+ 2041  cd /home/jose/Code/go/src/github.com/bysidecar/workload
+ 2042  git status
+ 2043  ls -la
+ 2044  ls dev
+ 2045  ls -la dev/mysql
+ 2046  mysql --version
+ 2047  mysql -v
+ 2048  ls /var/run
+ 2049  ls -la /var/run
+ 2050  docker-compose up -f dev/mysql -d
+ 2051  docker-compose images
+ 2052  docker-compose help
+ 2053  docker-compose -f dev/mysql/docker-compose.yml up -d
+ 2054  docker container ls -a
+ 2055  docker container logs fafbcf7b34b8
+ 2056  docker logs fafbcf7b34b8
+ 2057  docker-compose -f dev/mysql/docker-compose.yml up
+ 2058  docker container ls -a
+ 2059  docker-compose down
+ 2060  docker-compose -f dev/mysql/docker-compose.yml down
+ 2061  docker-compose -f dev/mysql/docker-compose.yml up
+ 2062  docker-container ls -a
+ 2063  docker container ls -a
+ 2064  docker container exec -it b12 /bin/bash
+ 2065  docker-compose up
+ 2066  docker container ls -a
+ 2067  mysql -uuser -P 3306 -p
+ 2068  mysql -h db -u user -P 3306
+ 2069  mysql -h 127.0.0.1 -P 3306 -u user -p
+ 2070  mysql -h 127.0.0.1 -u user
+ 2071  mysql -h 127.0.0.1 -u user -p
+ 2072  docker-compose down
+ 2073  pwd
+ 2074  docker-compose down
+ 2075  docker-compose -f dev/mysql/docker-compose.yml up
+ 2076  docker container ls -a
+ 2077  docker container ls -a 
+ 2078  docker-compose -f dev/mysql/docker-compose.yml down
+ 2079  docker-compose -f dev/mysql/docker-compose.yml up
+ 2080  docker-compose -f dev/mysql/docker-compose.yml down
+ 2081  docker container ls
+ 2082  docker container ls -a
+ 2083  docker-compose -f dev/mysql/docker-compose.yml up
+ 2084  docker image ls
+ 2085  docker image rm 4b3b6b994512
+ 2086  docker image ls
+ 2087  docker-compose -f dev/mysql/docker-compose.yml up
+ 2088  docker container ls -a
+ 2089  docker-compose -f dev/mysql/docker-compose.yml down
+ 2090  docker container ls -a
+ 2091  docker container rm -f bdd
+ 2092  docker container ls -a
+ 2093  docker-compose -f dev/mysql/docker-compose.yml up
+ 2094  docker-compose -f dev/mysql/docker-compose.yml down
+ 2095  docker-compose -f dev/mysql/docker-compose.yml up
+ 2096  docker-compose -f dev/mysql/docker-compose.yml down
+ 2097  docker-compose -f dev/mysql/docker-compose.yml up
+ 2098  docker-compose -f dev/mysql/docker-compose.yml down
+ 2099  docker-compose -f dev/mysql/docker-compose.yml up
+ 2100  mysql -h 127.0.0.1 -u root_bsc -p
+ 2101  echo $DB_HOST
+ 2102  echo $DB_USER
+ 2103  echo $DB_PASS
+ 2104  echo $DB_NAME
+ 2105  docker-compose -f dev/mysql/docker-compose.yml down
+ 2106  docker-compose -f dev/mysql/docker-compose.yml up
+ 2107  mysql -h 127.0.0.1 -u root -p
+ 2108  cd workload
+ 2109  go run cmd/main.go
+ 2110  curl -X POST -H "Content-type: application/json" http://localhost:9001/workload/projects
+ 2111  git push
+ 2112  git checkout feature/home
+ 2113  git pull
+ 2114  php -S localhost:8000 system/router.php
+ 2115  cd user/themes/mytheme
+ 2116  npm run dev
+ 2117  curl -X POST -H "Content-type: application/json" http://localhost:9001/workload/projects
+ 2118  go run cmd/main.go
+ 2119  npm run dev
+ 2120  go run cmd/main.go
+ 2121  curl -X POST -H "Content-type: application/json" http://localhost:9001/workload/projects
+ 2122  curl -X GET http://localhost:9001/workload/projects
+ 2123  go run cmd/main.go
+ 2124  curl -X GET http://localhost:9001/workload/projects
+ 2125  go run cmd/main.go
+ 2126  curl -X GET http://localhost:9001/workload/projects
+ 2127  go run cmd/main.go
+ 2128  curl -X GET http://localhost:9001/workload/projects
+ 2129  go run cmd/main.go
+ 2130  curl -X GET http://localhost:9001/workload/projects
+ 2131  go run cmd/main.go
+ 2132  curl -X GET http://localhost:9001/workload/projects
+ 2133  go run cmd/main.go
+ 2134  curl -X GET http://localhost:9001/workload/projects
+ 2135  go run cmd/main.go
+ 2136  curl -X GET http://localhost:9001/workload/projects
+ 2137  go run cmd/main.go
+ 2138  curl -X GET http://localhost:9001/workload/projects
+ 2139  go run cmd/main.go
+ 2140  docker container ls
+ 2141  docker container ls -a
+ 2142  docker-compose start
+ 2143  docker-compose -f dev/mysql/docker-compose.yml start
+ 2144  mysql -h 127.0.0.1 -u root -p
+ 2145  eval $(tail command)
+ 2146  cd ~
+ 2147  cd Code/github.com/Bysidecar
+ 2148  ls
+ 2149  git clone git@github.com:BySidecar/evo-hipotecas.git
+ 2150  cd evo-hipotecas/
+ 2151  code .
+ 2152  gulp
+ 2153  npm install
+ 2154  gulp
+ 2155  node -v
+ 2156  npm -v
+ 2157  npm install -g gulp-cli
+ 2158  sudo npm install -g gulp-cli
+ 2159  gulp --version
+ 2160  gulp
+ 2161  git branch
+ 2162  eval $(tail command)
+ 2163  git pull
+ 2164  cd user/themes/mytheme
+ 2165  php -S localhost:8000 system/router.php
+ 2166  npm run dev
+ 2167  git checkout master
+ 2168  git pull
+ 2169  npm run dev
+ 2170  git status
+ 2171  git rm -r --cached .
+ 2172  git push
+ 2173  git branch -d feature/home
+ 2174  git branch -d feature/circleci
+ 2175  git push origin --delete feature/circleci
+ 2176  git push origin --delete feature/home
+ 2177  gulp
+ 2178  kubectl -n bysidecar-pre set image deployments/virgin-blog-pre virgin-blog=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:44207e9c032cb4faeb62fbc4e730b431ae0dc047
+ 2179  kubectl -n bysidecar-pre get pods -w
+ 2180  kubectl -n bysidecar-pre get pods
+ 2181  php -S localhost:8000 system/router.php
+ 2182  npm run dev
+ 2183  cd ..
+ 2184  cd virgin_
+ 2185  cd virgin_blog
+ 2186  ls
+ 2187  ls -la
+ 2188  docker container ls -a
+ 2189  docker image ls
+ 2190  aws ecr get-login-password \\n    --region eu-west-1 \\n| docker login \\n    --username AWS \\n    --password-stdin 952729869933.dkr.ecr.eu-west-1.amazonaws.com
+ 2191  docker pull 52729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:44207e9c032cb4faeb62fbc4e730b431ae0dc047
+ 2192  docker pull 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:44207e9c032cb4faeb62fbc4e730b431ae0dc047
+ 2193  docker image ls
+ 2194  docker container run -d --name test -p 8099:80 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:44207e9c032cb4faeb62fbc4e730b431ae0dc047
+ 2195  docker container ls 
+ 2196  docker container exec -it a10 /bin/bash
+ 2197  docker container ls -a
+ 2198  docker container exec -it a10 /bin/bash
+ 2199  git push
+ 2200  docker container ls
+ 2201  docker containr rm -f a10
+ 2202  docker container rm -f a10
+ 2203  docker image ls
+ 2204  docker image rm 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog
+ 2205  docker image rm 952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:44207e9c032cb4faeb62fbc4e730b431ae0dc047
+ 2206  docker image ls
+ 2207  kubectl -n bysidecar-pre set image deployments/virgin-blog-pre virgin-blog=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:ac233465741d42273a07bbd17047f68670eab93d
+ 2208  kubectl -n bysidecar-pre get pods -w
+ 2209  kubectl -n bysidecar-pre get pods
+ 2210  git branch
+ 2211  gulp
+ 2212  eval $(tail command)
+ 2213  cd ..
+ 2214  ls
+ 2215  cd Code/go/src/github.com/bysidecar/
+ 2216  ls
+ 2217  git clone git@github.com:BySidecar/go_components.git
+ 2218  ssh root@192.168.50.20
+ 2219  cd nivo
+ 2220  ls
+ 2221  cd go_components/nivoriacomp
+ 2222  ls
+ 2223  go run main.go
+ 2224  pwd
+ 2225  ls
+ 2226  cd Code
+ 2227  ls
+ 2228  cd github.com
+ 2229  ls
+ 2230  cd Bysidecar
+ 2231  ls
+ 2232  cd privateBySidecar
+ 2233  pwd
+ 2234  ls
+ 2235  tail ini.ini
+ 2236  cat ini.ini
+ 2237  go run main.go
+ 2238  cd ..
+ 2239  clear
+ 2240  git checkout --track origin/feature/blog
+ 2241  git pull
+ 2242  git checkout --track origin/feature/blog
+ 2243  ^[[200~php -S localhost:8000 system/router.php  
+ 2244  ~^?php -S localhost:8000 system/router.php  
+ 2245  php -S localhost:8000 system/router.php  
+ 2246  cd user/themes/mytheme 
+ 2247  npm run dev
+ 2248  cd user/themes/mytheme && npm run dev
+ 2249  cd ..
+ 2250  cd user/themes/mytheme && npm run dev
+ 2251  git push
+ 2252  pwd
+ 2253  ls
+ 2254  git clone git@github.com:BySidecar/kinkon_empresas.git
+ 2255  code kinkon_empresas
+ 2256  gulp
+ 2257  sudo gulp
+ 2258  kubectl -n euskaltel get ingress -o yaml
+ 2259  kubectl -n bysidecar-pre get ingress
+ 2260  kubectl -n bysidecar-pre get ingress -o yaml
+ 2261  kubectl -n default get logs
+ 2262  kubectl -n default get pods
+ 2263  kubect get pods
+ 2264  kubectl get pods
+ 2265  kubectl get --allnamespaces
+ 2266  kubectl get namespace
+ 2267  kubectl -n default get pods
+ 2268  kubectl -n kube-ingress get pods
+ 2269  kubectl -n kube-public get pods
+ 2270  kubectl -n kube-system get pods
+ 2271  kubectl -n kube-system describe pod cert-manager-756d6d885d-j7wdt
+ 2272  clear
+ 2273  git pull
+ 2274  cd virgin_blog
+ 2275  ls -la
+ 2276  kubectl -n bysidecar-pre apply -f k8s/ingress-definition.yml
+ 2277  kubectl -n bysidecar-pre get ingress virgin-pre
+ 2278  kubectl -n bysidecar-pre get ingress virgin-pre -o yaml
+ 2279  kubectl -n bysiecar-pre get certificates
+ 2280  kubectl -n bysidecar-pre get certificates
+ 2281  kubectl  -n bysidecar-pre apply -f k8s/certificate_ofertasvirgin-definition.yaml
+ 2282  kubectl -n bysidecar-pre get certificates
+ 2283  kubectl -n bysidecar get certificates
+ 2284  kubectl -n euskaltel get certificates
+ 2285  kubectl -n euskaltel get ingress -o yaml
+ 2286  kubectl -n bysidecar-pre get secrets
+ 2287  kubectl -n bysidecar-pre get certificates
+ 2288  kubectl -n bysidecar-pre describe certificates tls-virgin-pre-bysidecar-me
+ 2289  kubectl -n bysidecar-pre describe certificates www.ofertasvirgin.es
+ 2290  kubectl -n bysidecar-pre get certificates
+ 2291  kubectl -n bysidecar-pre get secret
+ 2292  kubectl -n euskatel get ingress -o yaml
+ 2293  kubectl -n euskatel get ingress
+ 2294  kubectl -n euskaltel get ingress 
+ 2295  kubectl -n euskaltel get ingress euskaltel-kinkon-web -o yaml
+ 2296  kubectl  -n bysidecar-pre apply -f k8s/certificate_ofertasvirgin-definition.yaml
+ 2297  kubectl -n bysidecar-pre describe certificates www-ofertasvirgin-es
+ 2298  kubectl -n euskaltel describe secret tls-www-euskaltelofertas-com
+ 2299  git checkout -b feature/helm
+ 2300  clear
+ 2301  helm create helm-package
+ 2302  curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3\n: 1585067705:0;curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+ 2303  chmod 700 get_helm.sh
+ 2304  ./get_helm.sh
+ 2305  ls -la
+ 2306  tail login.conf
+ 2307  rm get_helm.sh
+ 2308  helm create helm-package
+ 2309  helm ls --all
+ 2310  clear
+ 2311  kubectl -n bysidecar-pre delete svc virgin-blog-pre
+ 2312  kubectl -n bysidecar-pre delete deploy virgin-blog-pre
+ 2313  kubectl -n bysidecar-pre get ingresses.extensions
+ 2314  kubectl -n bysidecar-pre get ingress
+ 2315  kubectl -n bysidecar-pre delete ingress virgin-pre
+ 2316  kubectl -n bysidecar-pre get secret
+ 2317  kubectl -n bysidecar-pre delete secret tls-virgin-pre
+ 2318  kubectl -n bysidecar-pre delete secret tls-virgin-pre-bysidecar-me
+ 2319  kubectl -n bysidecar-pre get pods 
+ 2320  kubectl -n bysidecar-pre get svc
+ 2321  kubectl -n bysidecar-pre get deploy
+ 2322  kubectl -n bysidecar-pre get ingress
+ 2323  ls -la
+ 2324  helm install --dry-run --debug --namespace bysidecar-pre helm-package
+ 2325  helm install --dry-run --debug --namespace bysidecar-pre --name virgin helm-package
+ 2326  helm install --dry-run --debug --namespace bysidecar-pre helm-package
+ 2327  helm install --dry-run --debug --namespace bysidecar-pre helm-package -f helm-package/values-pre.yaml
+ 2328  helm install --dry-run --debug --namespace bysidecar-pre helm-package -f helm-package/values-pre.yaml --generate-name
+ 2329  helm install --dry-run --debug --namespace bysidecar-pre helm-package -f helm-package/values-pre.yaml 
+ 2330  helm install --help
+ 2331  helm install --name virgin --namespace bysidecar-pre helm-package/ -f helm-package/values-pre.yaml
+ 2332  helm install virgin --namespace bysidecar-pre helm-package/ -f helm-package/values-pre.yaml
+ 2333  helm ls --all
+ 2334  helm ls
+ 2335  helm lint helm-package
+ 2336  helm delete virgin
+ 2337  helm template helm-package
+ 2338  cd ..
+ 2339  git clone git@github.com:BySidecar/livelead.git
+ 2340  helm template helm-package
+ 2341  helm install virgin --namespace bysidecar-pre helm-package/ -f helm-package/values-pre.yaml
+ 2342  helm ls
+ 2343  helm ls -a
+ 2344  helm ls --all
+ 2345  helm --help
+ 2346  helm history
+ 2347  helm status virgin
+ 2348  helm version
+ 2349  helm install virgin --namespace bysidecar-pre helm-package/ -f helm-package/values-pre.yaml
+ 2350  kubectl -n bysidecar-pre get pods
+ 2351  kubectl -n bysidecar-pre get deploy
+ 2352  helm delete virgin
+ 2353  helm -n bysidecar-pre ls
+ 2354  helm -n bysidecar-pre delete virgin
+ 2355  helm template helm-package
+ 2356  helm template ci
+ 2357  helm template helm-package
+ 2358  kubectl get serviceaccounts
+ 2359  helm install virgin-pre --namespace bysidecar-pre helm-package/ -f helm-package/values-pre.yaml
+ 2360  helm -n bysidecar-pre get pods
+ 2361  helm -n bysidecar-pre ls
+ 2362  kubectl -n bysidecar-pre get pods 
+ 2363  kubectl -n bysidecar-pre describe pod virgin-pre-5ccd6cd5b8-k5tjz
+ 2364  helm -n bysidecar-pre delete virgin-pre
+ 2365  helm install virgin-pre --namespace bysidecar-pre helm-package/ -f helm-package/values-pre.yaml
+ 2366  kubectl -n bysidecar-pre get pods 
+ 2367  kubectl -n bysidecar-pre get ingress
+ 2368  kubectl -n bysidecar-pre get ingress -o yaml
+ 2369  kubectl -n bysidecar-pre get secrets
+ 2370  helm install virgin --namespace bysidecar helm-package/ -f helm-package/values-pro.yaml
+ 2371  helm -n bysidecar ls
+ 2372  kubectl -n bysidecar get pods
+ 2373  kubectl -n bysidecar get certificates
+ 2374  kubectl -n bysidecar get secrets
+ 2375  kubectl -n bysidecar get ingress
+ 2376  kubectl -n bysidecar get pods
+ 2377  helm -n bysidecar delete virgin
+ 2378  kubectl -n bysidecar get pods
+ 2379  gulp
+ 2380  filezilla
+ 2381  git push
+ 2382  exit
+ 2383  shutdown
+ 2384  sudo apt-get upgrade
+ 2385  sudo apt-get update
+ 2386  kubectl -n euskaltel get certificates
+ 2387  kubectl -n bysidecar get certificates
+ 2388  ls
+ 2389  ls -la
+ 2390  helm -n bysidecar-pre ls
+ 2391  helm -n bysidecar ls
+ 2392  helm install virgin --namespace bysidecar helm-package/ -f helm-package/values-pro.yaml
+ 2393  kubectl -n bysidecar get pods
+ 2394  kubectl -n bysidecar get certificate
+ 2395  kubectl -n bysidecar get svc
+ 2396  kubectl -n bysidecar get deploy
+ 2397  kubectl -n bysidecar get certificates
+ 2398  kubectl -n bysidecar get secret
+ 2399  kubectl -n bysidecar describe secret virgin-token-ntz5w
+ 2400  kubectl -n bysidecar get pods
+ 2401  kubectl -n bysidecar describe pod virgin-7d5d8f6995-s9mk5
+ 2402  kubectl -n bysidecar get ingress virgin 
+ 2403  kubectl -n bysidecar get ingress virgin -o yaml
+ 2404  kubectl -n bysidecar get secret
+ 2405  kubectl -n bysidecar get certificates
+ 2406  kubectl -n euskaltel get secret
+ 2407  kubectl -n euskaltel describe secret tls-www-euskaltelofertas-com
+ 2408  kubectl -n euskaltel get secret
+ 2409  kubectl -n euskaltel get certificates
+ 2410  ls
+ 2411  cd k8s
+ 2412  ls
+ 2413  cd ..
+ 2414  kubectl -n euskaltel apply -f k8s/certificate_ofertasvirgin-definition.yaml
+ 2415  kubectl -n bysidecar apply -f k8s/certificate_ofertasvirgin-definition.yaml
+ 2416  kubectl -n bysidecar get certificates
+ 2417  kubectl -n bysidecar describe certificates www-ofertasvirgin-es 
+ 2418  kubectl -n bysidecar delete certificates www-ofertasvirgin-es 
+ 2419  ls
+ 2420  cd ~/Code/github.com/Bysidecar/virgin_blog
+ 2421  mv ~/Descargas/48656185_www.ofertasvirgin.es.key k8s
+ 2422  mv ~/Descargas/48656185_www.ofertasvirgin.es.cert k8s
+ 2423  kubectl -n euskaltel get secret
+ 2424  kubectl -n euskaltel get certificate
+ 2425  cd k8s
+ 2426  ls -la
+ 2427  kubectl -n bysidecar create secret tls tls-www-ofertasvirgin-es --cert=48656185_www.ofertasvirgin.es.cert --key=48656185_www.ofertasvirgin.es.key
+ 2428  kubectl -n euskaltel get secret
+ 2429  kubectl -n bysidecar get secret
+ 2430  cd ..
+ 2431  helm -n bysidecar virgin helm-package/ -f helm-package/values-pro.yaml
+ 2432  helm install virgin -n bysidecar helm-package/ -f helm-package/values-pro.yaml
+ 2433  helm -n bysidecar ls
+ 2434  helm -n bysidecar delete virgin
+ 2435  helm install virgin -n bysidecar helm-package/ -f helm-package/values-pro.yaml
+ 2436  kubectl -n bysidecar get certificates
+ 2437  kubectl -n bysidecar get secrets
+ 2438  kubectl -n bysidecar get ingress virgin -o yaml
+ 2439  kubectl -n bysidecar get svc
+ 2440  kubectl -n bysidecar get deploy
+ 2441  kubectl -n bysidecar get pod
+ 2442  kubectl -n bysidecar describe pod virgin-7d5d8f6995-xlg52
+ 2443  kubectl -n bysidecar get ingress virgin -o yaml
+ 2444  kubectl -n bysidecar describe deploy virgin
+ 2445  kubectl -n bysidecar describe ingress virgin -o yaml
+ 2446  kubectl -n bysidecar get ingress virgin -o yaml
+ 2447  curl http://www.ofertasvirgin.es
+ 2448  curl https://www.ofertasvirgin.es
+ 2449  curl http://virgin-pre.bysidecar.me
+ 2450  curl https://virgin-pre.bysidecar.me
+ 2451  ls
+ 2452  cd Bysidecar/teletrabajo/vpn
+ 2453  eval $(tail command)
+ 2454  git branch
+ 2455  git add .
+ 2456  git commit -m "working on it, this changes are temporary"
+ 2457  git checkout dev
+ 2458  git branch
+ 2459  git checkout feature/blog
+ 2460  git pull
+ 2461  php -S localhost:8000 system/router.php
+ 2462  cd user/themes/mytheme && npm run dev
+ 2463  bin/gpm install admin
+ 2464  php bin/gpm install admin
+ 2465  cd ..
+ 2466  bin/gpm install admin
+ 2467  php bin/grav install
+ 2468  sudo php bin/grav install
+ 2469  php bin/grav install admin
+ 2470  bin/gpm install admin
+ 2471  php bin/gpm install admin
+ 2472  git rm -r --cached .
+ 2473  git add .
+ 2474  git commit -m "updated gitignore"
+ 2475  git push
+ 2476  git status
+ 2477  kubectl -n bysidecar-pre get pod
+ 2478  kubectl -n bysidecar-pre get deploy
+ 2479  kubectl -n bysidecar-pre describe pod virgin-pre-5857799fd7-kmk6n
+ 2480  kubectl -n bysidecar-pre set image deployments/virgin-pre virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:4d59e737eeca1672c0f8120046f645dc7f7f8f22
+ 2481  kubectl -n bysidecar-pre get pod
+ 2482  kubectl -n bysidecar-pre get pod -w
+ 2483  kubectl -n bysidecar-pre get pod
+ 2484  kubectl -n bysidecar-pre get pod virgin-pre-5857799fd7-kmk6n
+ 2485  kubectl -n bysidecar-pre get pods
+ 2486  git checkout dev
+ 2487  git checkout master
+ 2488  git pull
+ 2489  git status
+ 2490  git branch -d feature/blog
+ 2491  git checkout feature/helm
+ 2492  clear
+ 2493  git status
+ 2494  eval $(tail command)
+ 2495  clear
+ 2496  ls
+ 2497  cd ..
+ 2498  git clone git@github.com:BySidecar/capsa_symfony_docker.git
+ 2499  code capsa_symfony_docker
+ 2500  rm -rf capsa_symfony_docker
+ 2501  clear
+ 2502  kubectl get namespaces
+ 2503  kubectl -n test get --all
+ 2504  kubectl -n test get pods
+ 2505  kubectl -n test get svc
+ 2506  kubectl -n test get deploy
+ 2507  kubectl -n test get ingress
+ 2508  kubectl -n test get secret
+ 2509  kubectl -n test get certificates
+ 2510  clear
+ 2511  pwd
+ 2512  cd letsencrypt_test
+ 2513  ls
+ 2514  kubectl -n test apply -f configmap_def.yml
+ 2515  kubectl -n test apply -f deploy_def.yml
+ 2516  kubectl -n test apply -f service-def.yml
+ 2517  kubectl -n test get pods | grep nginx | awk '{print $1}'
+ 2518  POD=$(kubectl -n test get pods | grep nginx | awk '{print $1}')
+ 2519  kubectl -n test exec $POD -it bash
+ 2520  kubectl -n test get pod
+ 2521  kubectl -n test get svc
+ 2522  kubectl -n test get deployments.
+ 2523  kubectl -n test apply -f configmap_def.yml
+ 2524  kubectl -n test apply -f deploy_def.yml
+ 2525  kubectl -n test apply -f service-def.yml
+ 2526  POD=$(kubectl -n test get pods | grep nginx | awk '{print $1}')
+ 2527  kubectl -n test exec $POD -it bash
+ 2528  kubectl -n test apply -f deploy_def.yml
+ 2529  kubectl -n test apply -f service-def.yml
+ 2530  kubectl -n test apply -f ingress_def.yml
+ 2531  kubectl -n test get pod
+ 2532  kubectl -n test logs nginx-685689fd8-n2p7v
+ 2533  kubectl -n test apply -f configmap_def.yml
+ 2534  kubectl -n test get pod
+ 2535  kubectl -n test get pod -w
+ 2536  kubectl -n test delete pod nginx-685689fd8-n2p7v
+ 2537  kubectl -n test apply -f configmap_def.yml
+ 2538  kubectl -n test get pod -w
+ 2539  kubectl -n test get pod
+ 2540  kubectl -n test describe pod nginx-685689fd8-6cwmf
+ 2541  kubectl -n test apply -f deploy_def.yml
+ 2542  kubectl -n test get pod
+ 2543  kubectl -n test describe pod nginx-59fc6765dd-pxgj7
+ 2544  kubectl -n test get deployments.
+ 2545  kubectl -n test describe deployments.
+ 2546  kubectl -n test get svc
+ 2547  kubectl -n test describe svc nginx
+ 2548  POD=$(kubectl -n test get pods | grep nginx | awk '{print $1}')
+ 2549  kubectl exec $POD -it bash
+ 2550  kubectl -n test get pods | grep nginx | awk '{print $1}'
+ 2551  kubectl -n test get pods
+ 2552  POD=$(kubectl -n test get pods | grep nginx | awk '{print $1}')
+ 2553  echo $POD
+ 2554  kubectl -n test exec -it $POD /bin/bash
+ 2555  helm -n bysidecar delete helm-package
+ 2556  ls
+ 2557  helm -n bysidecar delete virgin
+ 2558  kubectl -n test describe deployments nginx
+ 2559  kubectl -n test describe ingress kube-demo-app-ingress-service
+ 2560  kubectl -n test get ingresses.extensions
+ 2561  kubectl -n test get ingresses.extensions kube-demo-app-ingress-service -o yaml
+ 2562  kubectl -n test apply -f job_def.yml
+ 2563  kubectl -n test apply -f service_job_def.yml
+ 2564  kubectl -n test get svc
+ 2565  kubectl -n test apply -f secret_def.yml
+ 2566  kubectl -n test get pods
+ 2567  kubectl -n test describe pod letsencrypt-job-
+ 2568  kubectl -n test describe pod letsencrypt-job-44x28
+ 2569  kubectl -n test get pods
+ 2570  kubectl -n test describe pod letsencrypt-job-bv5dd
+ 2571  kubectl -n test log letsencrypt-job-bv5dd
+ 2572  kubectl -n test logs letsencrypt-job-bv5dd
+ 2573  kubectl -n test get job
+ 2574  kubectl -n test apply -f job_def.yml
+ 2575  kubectl -n test delete job letsencrypt-job
+ 2576  kubectl -n test apply -f job_def.yml
+ 2577  kubectl -n test get pods
+ 2578  kubectl -n test get pods -w
+ 2579  kubectl -n test get pods
+ 2580  kubectl -n test logs letsencrypt-job-dzmh4
+ 2581  kubectl -n test delete job letsencrypt-job
+ 2582  kubectl -n test apply -f job_def.yml
+ 2583  kubectl -n test get pods -w
+ 2584  kubectl -n test get pods
+ 2585  kubectl -n test logs letsencrypt-job-kkfgc
+ 2586  kubectl -n test get ingresses.extensions
+ 2587  kubectl -n test delete ingress kube-demo-app-ingress-service
+ 2588  kubectl -n test get svc
+ 2589  kubectl -n test delete svc nginx
+ 2590  kubectl -n test delete svc letsencrypt
+ 2591  kubectl -n test get deploy
+ 2592  kubectl -n test delete deploy nginx
+ 2593  kubectl -n test get pods
+ 2594  kubectl -n test get job
+ 2595  kubectl -n test delete job letsencrypt-job
+ 2596  kubectl -n test get configmaps
+ 2597  kubectl -n test delete configmaps nginx-config
+ 2598  kubectl -n test get pods
+ 2599  kubectl -n test get secrets
+ 2600  kubectl -n test delete secrets letsencrypt-certs
+ 2601  kubectl -n test get certificates
+ 2602  kubectl -n euskaltel
+ 2603  kubectl -n euskaltel get pods
+ 2604  kubectl get namespaces
+ 2605  kubectl -n abanca get pdos
+ 2606  kubectl -n abanca get pods
+ 2607  kubectl -n default get pods
+ 2608  kubectl -n euskaltel-pre
+ 2609  kubectl -n euskaltel-pre get pods
+ 2610  kubectl get namespaces
+ 2611  kubectl -n kube-ingress get pods
+ 2612  kubectl -n kube-public get pods
+ 2613  kubectl -n kube-system get pods
+ 2614  arch ; uname -a
+ 2615  cd ..
+ 2616  ls
+ 2617  cd devops/
+ 2618  ls
+ 2619  cd helm/bysidecar
+ 2620  ls
+ 2621  cd ..
+ 2622  cd ~
+ 2623  cd Des
+ 2624  cd Descargas
+ 2625  ls
+ 2626  ls -la
+ 2627  mv bysidecar bysidecar.pem
+ 2628  ssh -i bysidecar.pem admin@ec2-34-245-183-95.eu-west-1.compute.amazonaws.com
+ 2629  ssh -i bysidecar.pem admin@c2-34-244-128-18.eu-west-1.compute.amazonaws.com
+ 2630  ssh -i bysidecar.pem admin@ec2-34-244-128-18.eu-west-1.compute.amazonaws.com
+ 2631  ls -la
+ 2632  chmod 0400 bysidecar.pem
+ 2633  ssh -i bysidecar.pem admin@ec2-34-244-128-18.eu-west-1.compute.amazonaws.com
+ 2634  cd ..
+ 2635  cd virgin_blog
+ 2636  cd ..
+ 2637  cd devops
+ 2638  cd helm/bysidecar
+ 2639  ls
+ 2640  cd letsencrypt
+ 2641  ls
+ 2642  cd ..
+ 2643  helm -n test install letsencrypt
+ 2644  helm letsencrypt -n test install letsencrypt/
+ 2645  helm -n test letsencrypt install letsencrypt/
+ 2646  helm -n test letsencrypt letsencrypt/
+ 2647  helm -n test install --name letsencrypt  letsencrypt/
+ 2648  helm -n test install  letsencrypt/
+ 2649  helm -n test install  letsencrypt/ --generate-name
+ 2650  curl   http://api.bysidecar.com/.well-known/acme-challenge/9-noudz5OBr6tFD9k9JLeVSY3mZ61PCUeSlgtJtjV5M\n
+ 2651  helm -n test install  letsencrypt/ --generate-name
+ 2652  helm -n test ls
+ 2653  helm -n test delete letsencrypt-1585163303
+ 2654  helm -n test install  letsencrypt/ --generate-name
+ 2655  helm -n test ls
+ 2656  helm -n test delete letsencrypt-1585163484
+ 2657  helm -n test install  letsencrypt/ --generate-name
+ 2658  curl   http://www.ofertasvirgin.es/.well-known/acme-challenge/
+ 2659  curl   http://www.ofertasvirgin.es/.well-known/acme-challenge/ad
+ 2660  helm -n test ls
+ 2661  helm -n test delete letsencrypt-1585164251
+ 2662  helm -n test install  letsencrypt/ --generate-name
+ 2663  curl   http://www.ofertasvirgin.es/.well-known/acme-challenge/\n
+ 2664  ls
+ 2665  ssh -i bysidecar.pem admin@ec2-34-244-128-18.eu-west-1.compute.amazonaws.com
+ 2666  eval $(tail command)
+ 2667  cd go_components/nivoriacomp
+ 2668  go run main.go
+ 2669  sudo snap install postman
+ 2670  go run main.go
+ 2671  eval $(tail command)
+ 2672  go run main.go
+ 2673  clear
+ 2674  go run  main.go
+ 2675  git branch
+ 2676  git checkout feature/blo
+ 2677  git checkout feature/blog
+ 2678  ^[[200~php -S localhost:8000 system/router.php  
+ 2679  php -S localhost:8000 system/router.php  \n
+ 2680  cd user/themes/mytheme
+ 2681  npm run dev
+ 2682  php -f bin/plugin login newuser
+ 2683  php -S localhost:8000 system/router.php  \n
+ 2684  php -f bin/plugin login --help
+ 2685  php -f bin/plugin list
+ 2686  php -f bin/plugin list test
+ 2687  php -f bin/plugin login list
+ 2688  php -f bin/plugin login change-password list
+ 2689  php -f bin/plugin login change-password -u acarbia -p acarbia_Grav00
+ 2690  git push
+ 2691  git checkout master
+ 2692  git pull
+ 2693  git branch -d feature/blog
+ 2694  git branch
+ 2695  kubectl -n bysidecar-pre set image deployments/virgin-pre virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:30629a2c5dbc2a8e623c6ac1e219034019709024
+ 2696  kubectl -n bysidecar-pre get pods -w
+ 2697  kubectl -n bysidecar-pre get pods
+ 2698  go run  main.go
+ 2699  ls
+ 2700  pwd
+ 2701  cd ..
+ 2702  cd kinkon_empresas
+ 2703  ls
+ 2704  kubectl -n euskaltel-pre
+ 2705  kubectl -n euskaltel-pre get pods
+ 2706  helm -n euskaltel install --set name=kinkon-empresas-pre ci/helm-package/ -f ci/helm-package/values-pre.yaml
+ 2707  helm -n euskaltel install kinkon-empresas-pre ci/helm-package/ -f ci/helm-package/values-pre.yaml
+ 2708  kubectl -n euskaltel-pre get pods
+ 2709  helm ls
+ 2710  helm -n euskaltel ls
+ 2711  helm -n euskaltel delete kinkon-empresas-pre
+ 2712  helm -n euskaltel-pre install kinkon-empresas-pre ci/helm-package/ -f ci/helm-package/values-pre.yaml
+ 2713  kubectl -n euskaltelk-pre get pos
+ 2714  kubectl -n euskaltelk-pre get pods
+ 2715  kubectl -n euskaltel-pre get pods
+ 2716  kubectl -n euskaltel-pre get pods -w
+ 2717  kubectl -n euskaltel-pre get pods
+ 2718  kubectl -n euskaltel-pre get ingress
+ 2719  clear
+ 2720  kubectl -n euskaltel-pre get ingress
+ 2721  kubectl -n euskaltel-pre get secrets
+ 2722  kubectl -n euskaltel-pre get certificates
+ 2723  kubectl -n euskaltel-pre get secrets
+ 2724  kubectl -n euskaltel-pre describe secrets sh.helm.release.v1.kinkon-empresas-pre.v1
+ 2725  kubectl -n bysidecar-pre get secrets
+ 2726  kubectl -n bysidecar-pre get certificate
+ 2727  kubectl -n bysidecar-pre describe certificate googlehook-pre-bysidecar-me
+ 2728  helm -n test ls
+ 2729  helm -n test delete letsencrypt-1585164307
+ 2730  helm -n euskaltel-pre ls
+ 2731  helm -n euskaltel-pre delete kinkon-empresas-pre
+ 2732  helm -n euskaltel-pre install kinkon-empresas-pre ci/helm-package/ -f ci/helm-package/values-pre.yaml
+ 2733  kubectl -n euskaltel-pre get secrets
+ 2734  kubectl -n euskaltel-pre describe secrets sh.helm.release.v1.kinkon-empresas-pre.v1
+ 2735  kubectl -n euskaltel-pre describe secrets tls-euskaltel-pre-bysidecar-me
+ 2736  kubectl -n bysidecar-pre get certificates
+ 2737  kubectl -n bysidecar-pre describe certificates googlehook-pre-bysidecar-me
+ 2738  kubectl -n bysidecar-pre get secrets
+ 2739  kubectl -n bysidecar-pre describe secrets tls-googlehook-pre
+ 2740  pwd
+ 2741  kubectl -n euskaltel-pre apply -f ci/k8s/cert-k-def.yml
+ 2742  kubectl -n euskaltel-pre get secret
+ 2743  kubectl -n euskaltel-pre get certificates
+ 2744  kubectl -n euskaltel-pre describe certificates k-empresas-pre-bysidecar-me
+ 2745  kubectl -n euskaltel-pre describe certificates k-empresas-pre-bysidecar-me -w
+ 2746  kubectl -n euskaltel-pre describe certificates k-empresas-pre-bysidecar-me -v
+ 2747  kubectl -n euskaltel-pre describe certificates k-empresas-pre-bysidecar-me --help
+ 2748  kubectl -n euskaltel-pre describe certificates k-empresas-pre-bysidecar-me
+ 2749  kubectl -n euskaltel-pre apply -f ci/k8s/cert-r-def.yml
+ 2750  kubectl -n euskaltel-pre apply -f ci/k8s/cert-t-def.yml
+ 2751  kubectl -n euskaltel-pre describe certificates r-empresas-pre-bysidecar-me
+ 2752  kubectl -n euskaltel-pre get secret
+ 2753  kubectl -n euskaltel-pre describe secret tls-k-empresas-pre-bysidecar-me -o yaml
+ 2754  kubectl -n euskaltel-pre describe secret tls-k-empresas-pre-bysidecar-me
+ 2755  kubectl -n euskaltel-pre describe secret tls-k-empresas-pre-bysidecar-me -o yaml | ksd
+ 2756  kubectl -n euskaltel-pre get secret tls-k-empresas-pre-bysidecar-me -o yaml | ksd
+ 2757  kubectl -n euskaltel-pre get secret tls-k-empresas-pre-bysidecar-me  -o 'go-template={{index .data "username"}} | base64 -D-
+ 2758  kubectl -n euskaltel-pre get secret tls-k-empresas-pre-bysidecar-me  -o yaml
+ 2759  kubectl -n euskaltel-pre get certificates
+ 2760  git push
+ 2761  kubectl -n euskaltel get certificate
+ 2762  kubectl -n euskaltel get secret
+ 2763  kubectl -n euskaltel-pre get secret
+ 2764  kubectl -n euskaltel-pre get certificates
+ 2765  kubectl -n euskaltel get certificates
+ 2766  kubectl -n euskaltel describe certificates euskaltel-bysidecar-me
+ 2767  kubectl -n test get pod
+ 2768  kubectl -n bysidecar-pre get pod
+ 2769  kubectl -n bysidecar-pre get certificates
+ 2770  kubectl -n bysidecar-pre describe certificates www-ofertasvirgin-es
+ 2771  cd go_components/nivoriacomp
+ 2772  go run main.go
+ 2773  kubectl -n bysidecar-pre get certificates
+ 2774  kubectl -n bysidecar-pre delete certificates www-ofertasvirgin-es
+ 2775  kubectl -n bysidecar-pre delete certificates www.ofertasvirgin.es
+ 2776  kubectl -n bysidecar-pre get certificates
+ 2777  go run main.go
+ 2778  git branch
+ 2779  gulp
+ 2780  git push
+ 2781  go run main.go
+ 2782  eval $(tail command)
+ 2783  sudo apt-get upgrade
+ 2784  sudo apt-get update
+ 2785  cd go_components/nivoriacomp
+ 2786  go run main.go
+ 2787  kubectl -n euskaltel-pre get secret
+ 2788  kubectl -n euskaltel-pre get certificates
+ 2789  clear
+ 2790  kubectl -n kube-system get pods
+ 2791  kubectl -n kube-system describe pod cert-manager-756d6d885d-j7wdt
+ 2792  kubectl -n kube-system get pods
+ 2793  sudo apt-get install certbot python-certbot-nginx
+ 2794  sudo certbot certonly --manual -d www.ofertasvirgin.org
+ 2795  ls
+ 2796  cd helm/bysidecar/letsencrypt
+ 2797  cd ..
+ 2798  cd namespaces
+ 2799  kubectl apply -f virgin.yml
+ 2800  kubectl apply -f virgin-pre.yml
+ 2801  kubectl get namespaces
+ 2802  ls -la
+ 2803  helm -n virgin install virgin letsencrypt
+ 2804  kubectl -n virgin get pods
+ 2805  kubectl -n virgin get ingress
+ 2806  ls -la /etc/letsencrypt/live
+ 2807  cd /etc/letsencrypt
+ 2808  ls
+ 2809  cd live
+ 2810  sudo cd live
+ 2811  cd live
+ 2812  ls -la
+ 2813  sudo cd live
+ 2814  kubectl -n virgin create secret tls tls-www-ofertasvirgin-org --key /etc/letsencrypt/live/www.ofertasvirgin.org/privkey.pem --cert /etc/letsencrypt/live/www.ofertasvirgin.org/fullchain.pem
+ 2815  sudo kubectl -n virgin create secret tls tls-www-ofertasvirgin-org --key /etc/letsencrypt/live/www.ofertasvirgin.org/privkey.pem --cert /etc/letsencrypt/live/www.ofertasvirgin.org/fullchain.pem
+ 2816  kubectl -n virgin get secret
+ 2817  kubectl -n virgin get secret -o yaml
+ 2818  git checkout feature/helm
+ 2819  ls
+ 2820  helm -n virgin install virgin helm-package/ -f helm-package/values-pro.yml
+ 2821  helm -n virgin install virgin helm-package/ -f helm-package/values-pro.yaml
+ 2822  helm -n virgin ls
+ 2823  helm -n virgin install virgin-org helm-package/ -f helm-package/values-pro.yaml
+ 2824  kubectl -n virgin get pods -w
+ 2825  kubectl -n virgin get ingress
+ 2826  kubectl -n virgin get certificates
+ 2827  kubectl -n virgin get secret
+ 2828  go run main.go
+ 2829  kubectl -n virgin ls
+ 2830  helm -n virgin ls
+ 2831  helm -n virgin delete virgin
+ 2832  sudo certbot certonly --manual -d www.ofertasvirgin.es
+ 2833  pwd
+ 2834  cd ~/Code/github.com/Bysidecar/devops/helm/bysidecar
+ 2835  ls
+ 2836  ls letsencrypt
+ 2837  helm -n virgin install virgin-nginx-cert letsencrypt/\n
+ 2838  kubectl -n virgin get pod
+ 2839  kubectl -n virgin get ingress
+ 2840  sudo kubectl -n virgin create secret tls tls-www-ofertasvirgin-es --key /etc/letsencrypt/live/www.ofertasvirgin.es/privkey.pem --cert /etc/letsencrypt/live/www.ofertasvirgin.es/fullchain.pem\n
+ 2841  ls
+ 2842  cd Code/github.com/Bysidecar/virgin_
+ 2843  cd Code/github.com/Bysidecar/virgin_blog
+ 2844  ls
+ 2845  helm -n virgin install virgin helm-package/ -f helm-package/values-pro.yaml
+ 2846  kubectl -n virgin get pods -w
+ 2847  kubectl -n virgin get ingress
+ 2848  kubectl -n virgin get secrets
+ 2849  kubectl -n virgin get certificates
+ 2850  kubectl -n virgin describe pod virgin-7d5d8f6995-cc7st
+ 2851  helm -n virgin ls
+ 2852  helm -n virgin delete --purge virgin-nginx-cert
+ 2853  helm -n virgin delete
+ 2854  helm -n virgin delete --help
+ 2855  helm -n virgin delete virgin-nginx-cert
+ 2856  helm -n virgin delete virgin-org
+ 2857  helm -n virgin ls
+ 2858  kubectl -n virgin get pods
+ 2859  kubectl -n virgin get svc
+ 2860  kubectl -n virgin get deploy
+ 2861  kubectl -n virgin get ingress
+ 2862  kubectl -n virgin logs virgin-7d5d8f6995-cc7st
+ 2863  kubectl -n virgin exec virgin-7d5d8f6995-cc7st /bin/bash
+ 2864  kubectl -n virgin exec virgin-7d5d8f6995-cc7st -- /bin/bash
+ 2865  kubectl kubectl -n virgin exec virgin-7d5d8f6995-cc7st -- /bin/bash
+ 2866  kubectl -n virgin get pods
+ 2867  kubectl -n virgin exec -it virgin-7d5d8f6995-cc7st -- /bin/bash
+ 2868  git push
+ 2869  git checkout dev
+ 2870  git checkout master
+ 2871  git pull
+ 2872  git status
+ 2873  git push
+ 2874  git branch -d feature/helm
+ 2875  git push
+ 2876  kubectl -n virgin get pods
+ 2877  kubectl -n virgin describe pod virgin-7d5d8f6995-cc7st
+ 2878  clear
+ 2879  kubectl -n virgin set image deployments/virgin virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:e3f45c67b58474096588eb460dbf88ccbffc51f1
+ 2880  kubectl -n virgin get pods -w
+ 2881  kubectl -n virgin get pods
+ 2882  cd go_components/nivoriacomp
+ 2883  go run main.go
+ 2884  cd user/themes/mytheme && npm run dev 
+ 2885  php -S localhost:8000 system/router.php
+ 2886  git checkout
+ 2887  git chekout -b feature/new_content_27_03
+ 2888  git checkout -b feature/new_content_27_03
+ 2889  git add .
+ 2890  git commit -m "added new content and renamed page folder 1 and 2"
+ 2891  git add .
+ 2892  git commit -m "added new content and renamed page folder 1 and 2"
+ 2893  git push
+ 2894  git push --set-upstream origin feature/new_content_27_03
+ 2895  eval $(tail command)
+ 2896  kube -n bysidecar-pre get pods
+ 2897  kubectl -n bysidecar-pre get pods
+ 2898  kubectl -n bysidecar-pre exec -it virgin-pre-5484578f99-49gd7 /bin/bash
+ 2899  kubectl -n bysidecar-pre cp virgin-pre-5484578f99-49gd7:/user/pages /home/jose/Descargas/test
+ 2900  kubectl -n bysidecar-pre cp virgin-pre-5484578f99-49gd7:user/pages /home/jose/Descargas/test
+ 2901  cd Descargas
+ 2902  ls -la
+ 2903  cd test
+ 2904  ls
+ 2905  git push
+ 2906  kubectl -n virgin-pre
+ 2907  kubectl -n virgin-pre get pods
+ 2908  clear
+ 2909  kubectl -n virgin-pre get pods
+ 2910  cd ..
+ 2911  ls
+ 2912  cd devops/namespaces
+ 2913  ls
+ 2914  kubectl apply virgin-pre.yml
+ 2915  kubectl apply -f virgin-pre.yml
+ 2916  kubectl -n virgin-pre get pods
+ 2917  cd ..
+ 2918  cd virgin_blog
+ 2919  lls
+ 2920  ls
+ 2921  helm -n bysidecar-pre ls
+ 2922  helm -n bysidecar-pre delete virgin-pre
+ 2923  helm -n virgin-pre install virgin-pre helm-package -f helm-package/values-pre.yaml
+ 2924  kubectl -n virgin-pre get pods
+ 2925  kubectl -n virgin-pre get pods -w
+ 2926  kubectl -n virgin-pre get ingress
+ 2927  kubectl -n virgin-pre get secret
+ 2928  kubectl -n bysidecar-pre get secret
+ 2929  kubectl -n bysidecar-pre get certificate
+ 2930  cd Code/github.com/Bysidecar/devops
+ 2931  ls
+ 2932  cd ssl/ 
+ 2933  ls
+ 2934  cd certs
+ 2935  ls
+ 2936  cd bysidecar
+ 2937  ls
+ 2938  cat virgin-pre-bysidecar-me.yaml
+ 2939  nano virgin-pre-bysidecar-me.yaml
+ 2940  kubectl -n bysidecar-pre get certificates
+ 2941  kubectl -n bysidecar-pre delete certificates tls-virgin-pre-bysidecar-me
+ 2942  kubectl -n bysidecar-pre get secrets
+ 2943  kubectl -n bysidecar-pre delete secret tls-virgin-pre-bysidecar-me
+ 2944  nano virgin-pre-bysidecar-me.yaml
+ 2945  kubectl -n virgin-pre apply -f virgin-pre-bysidecar-me.yaml
+ 2946  kubectl -n virgin-pre get certificates
+ 2947  kubectl -n virgin-pre get secrets
+ 2948  kubectl -n virgin-pre get ingresses virgin-pre -o yaml
+ 2949  kubectl -n virgin-pre get ingresses virgin-pre
+ 2950  kubectl -n virgin-pre describe deployments virgin-pre
+ 2951  kubectl -n virgin-pre set image deployments/virgin-pre virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:164662d7bc3788d31cf4150f35e5f459078ec476
+ 2952  kubectl -n virgin-pre get pods
+ 2953  kubectl -n virgin-pre get pods -w
+ 2954  kubectl -n virgin-pre get pods
+ 2955  kubectl -n virgin set image deployments/virgin virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:164662d7bc3788d31cf4150f35e5f459078ec476
+ 2956  kubectl -n virgin get pods -w
+ 2957  git push
+ 2958  git checkout master
+ 2959  git pull
+ 2960  git push
+ 2961  go run main.go
+ 2962  gulp
+ 2963  git push
+ 2964  gulp
+ 2965  git push
+ 2966  cd ..
+ 2967  cd evo-hipotecas
+ 2968  docker image build -t evo_noscss:v1 .
+ 2969  docker container run -d --name evo_noscss -p 8088:80 evo_noscss:v1
+ 2970  \t\t\t\tdocker container ls
+ 2971  docker container rm -rf 091
+ 2972  docker container -f 091
+ 2973  docker container rm --help
+ 2974  docker container rm -f evo_noscss
+ 2975  docker container ls
+ 2976  docker image ls
+ 2977  docker image rm evo_noscss
+ 2978  docker image rm evo_noscss:v1
+ 2979  clear
+ 2980  cd ..
+ 2981  clear
+ 2982  cd ..
+ 2983  ls
+ 2984  cd Bysidecar/Proyectos/evo-hipotecas
+ 2985  rar --help
+ 2986  rar -h
+ 2987  zip --help
+ 2988  zip man
+ 2989  zip help
+ 2990  zip -h
+ 2991  zip -r evo-hipotecas:v1.6 evo-hipotecas
+ 2992  zip -r evo-hipotecas_v1.6 evo-hipotecas:v1.6
+ 2993  ls
+ 2994  ls la
+ 2995  ls -la
+ 2996  zip -r evo-hipotecas_v1.6.zip evo-hipotecas:v1.6
+ 2997  ls -la
+ 2998  pwd
+ 2999  cd /home/jose/Code/go/src/github.com/bysidecar/go_components/nivoriacomp
+ 3000  ls -la
+ 3001  clear
+ 3002  ls -la
+ 3003  go run main.go
+ 3004  ls -la
+ 3005  cat nivoriacomp_log
+ 3006  clear
+ 3007  code .
+ 3008  ls -la
+ 3009  git push
+ 3010  cd ..
+ 3011  ls -la
+ 3012  ls
+ 3013  cd workload
+ 3014  ls
+ 3015  docker-compose -f dev/mysql/docker-compose.yml start
+ 3016  mysql -h 127.0.0.1 -u root -p
+ 3017  clear
+ 3018  go test ./...
+ 3019  go run cmd/main.go
+ 3020  curl -X POST -H "Content-type: application/json" --data '{"type":"1", "project": [{"id": "99","name": "Test"}]}' http://localhost:9001/workload/get
+ 3021  curl -X POST -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 99,"name": "Test"}]}' http://localhost:9001/workload/get
+ 3022  curl -X POST -H "Content-type: application/json" --data '{"type":1}' http://localhost:9001/workload/get
+ 3023  go test ./...
+ 3024  go run cmd/main.go
+ 3025  curl -X PUT -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 99,"name": "Test"}]}' http://localhost:9001/workload/create
+ 3026  go test ./...
+ 3027  go run cmd/main.go
+ 3028  curl -X PUT -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 99,"name": "Test"}]}' http://localhost:9001/workload/create
+ 3029  go test ./...
+ 3030  curl -X PUT -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 99,"name": "Test"}]}' http://localhost:9001/workload/create
+ 3031  go run cmd/main.go
+ 3032  curl -X PUT -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 99,"name": "Test"}]}' http://localhost:9001/workload/create
+ 3033  eval $(tail command)
+ 3034  cd go_components
+ 3035  cd nivoriacomp
+ 3036  go build
+ 3037  ls -la
+ 3038  pwd
+ 3039  ssh root@192.168.50.20
+ 3040  clear
+ 3041  cd ..
+ 3042  cd dynamodb_test
+ 3043  git push
+ 3044  git branch
+ 3045  ^[[200~npm run-script watch
+ 3046  php -S localhost:8000 system/router.php
+ 3047  php bin/console server:run
+ 3048  npm runs-script watch
+ 3049  npm run-script watch
+ 3050  composer install
+ 3051  npm install
+ 3052  php bin/console server:run
+ 3053  npm run-script watch
+ 3054  git push
+ 3055  kubectl -n euskaltel-pre get pods
+ 3056  kubectl -n euskaltel-pre describe pod kinkon-empresas-pre-7f9bc6dbdf-lmfd5 
+ 3057  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:20c368455de2979e4d35ea9c33b26109c31b4575
+ 3058  kubectl -n euskaltel-pre get pods -w
+ 3059  kubectl -n euskaltel-pre get pods
+ 3060  git checkout -b feature/contents
+ 3061  npm run-script watch
+ 3062  php bin/console server:run
+ 3063  npm run-script watch
+ 3064  php bin/console server:run
+ 3065  npm run-script watch
+ 3066  git push
+ 3067  kubectl -n euskaltel-pre set image deployments/euskaltel-kinkon-web-pre euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pre:0659239374bed352a66c9ac476f49f844ba7f06c
+ 3068  kubectl -n euskaltel-pre get pods -w
+ 3069  kubectl -n euskaltel-pre get pods
+ 3070  eval $(tail command)
+ 3071  cd untraceable
+ 3072  git status
+ 3073  git branch
+ 3074  git push
+ 3075  git checkout -b feature/sms_limit
+ 3076  go test ./...
+ 3077  echo &DB_HOST
+ 3078  ECHO $DB_HOST
+ 3079  echo $DB_HOST
+ 3080  docker container ls -a
+ 3081  mysql -h 127.0.0.1 -u root -p
+ 3082  echo $DB_PASS
+ 3083  echo $DB_USER
+ 3084  go test ./...
+ 3085  go run cmd/main.go
+ 3086  go test ./...
+ 3087  go run cmd/main.go
+ 3088  go test ./...
+ 3089  go run cmd/main.go
+ 3090  echo $LEAD_LEONTEL_ENDPOINT
+ 3091  ECHO $200~LLEIDANET_ENDPOINT
+ 3092  nano ~/.zshrc
+ 3093  go test ./...
+ 3094  go run cmd/main.go
+ 3095  source ~/.zshrc
+ 3096  go run cmd/main.go
+ 3097  echo $LLEIDANET_ENDPOINT
+ 3098  kubectl -n bysidecar-pre get pods
+ 3099  kubectl -n bysidecar-pre get secrets
+ 3100  kubectl -n bysidecar-pre create secret generic lleidanet --from-literal=user=bysidecar --from-literal=pass=wwvkys
+ 3101  kubectl -n bysidecar-pre get secrets
+ 3102  kubectl -n bysidecar-pre describe secrets lleidanet-api-auth
+ 3103  kubectl -n bysidecar-pre describe secrets lleidanet
+ 3104  kubectl -n bysidecar-pre delete secret lleidanet-api-auth
+ 3105  git push
+ 3106  kubectl -n bysidecar-pre get jobs
+ 3107  kubectl -n bysidecar-pre delete job/untraceable-job
+ 3108  kubectl -n bysidecar-pre get jobs
+ 3109  kubectl -n bysidecar-pre apply -f ci/job-definition.yml
+ 3110  kubectl -n bysidecar-pre get jobs
+ 3111  clear
+ 3112  kubectl -n bysidecar-pre get job
+ 3113  kubectl -n bysidecar-pre describe job untraceable-job
+ 3114  kubectl -n bysidecar-pre logs untraceable-job
+ 3115  kubectl -n bysidecar-pre get job
+ 3116  kubectl -n bysidecar-pre logs job/untraceable-job
+ 3117  kubectl -n bysidecar-pre get cronjobs.batch
+ 3118  kubectl -n bysidecar-pre describe cronjobs.batch untraceable-cronjob
+ 3119  kubectl -n bysidecar-pre describe cronjobs.batch untraceable-cronjob -o yaml
+ 3120  kubectl -n bysidecar-pre describe cronjobs.batch untraceable-cronjob
+ 3121  kubectl -n bysidecar-pre get jobs.batch
+ 3122  kubectl -n bysidecar-pre delete jobs.batch untraceable-*
+ 3123  kubectl -n bysidecar-pre delete jobs.batch untraceable-cronjob-1585299840
+ 3124  kubectl -n bysidecar-pre delete jobs.batch untraceable-cronjob-1585645440
+ 3125  kubectl -n bysidecar-pre delete jobs.batch untraceable-cronjob-1585559040
+ 3126  kubectl -n bysidecar-pre delete jobs.batch untraceable-job
+ 3127  kubectl -n bysidecar-pre get jobs.batch
+ 3128  kubectl -n bysidecar-pre get cronjobs.batch
+ 3129  kubectl -n bysidecar-pre describe cronjobs.batch untraceable-cronjob
+ 3130  kubectl -n bysidecar-pre delete cronjobs.batch untraceable-cronjob
+ 3131  kubectl -n bysidecar-pre apply -f ci/cronjob-definition.yml
+ 3132  kubectl -n bysidecar-pre get cronjobs.batch
+ 3133  kubectl -n euskaltel logs euskaltel-kinkon-web-5d8cbc646f-hkwdr
+ 3134  git push
+ 3135  ^[[200~kubectl -n bysidecar-pre apply -f ci/job-definition.yml
+ 3136  kubectl -n bysidecar-pre apply -f ci/cronjob-definition.yml
+ 3137  clear
+ 3138  kubectl -n bysidecar-pre get cronjobs.batch
+ 3139  ^[[200~npm run-script watch
+ 3140  npm run-script watch\n
+ 3141  php bin/console server:run
+ 3142  npm run-script watch\n
+ 3143  ping www.google.es
+ 3144  npm run-script watch\n
+ 3145  cd kinkon_empresas
+ 3146  git status
+ 3147  git add assets/js/euskaltel.js
+ 3148  git commit -m "fixed error host"
+ 3149  code 
+ 3150  git status
+ 3151  git push
+ 3152  clear
+ 3153  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:4a4b67404b5f7b32c1cb6529b8240fdb90dd81db
+ 3154  kubectl -n euskaltel-pre get pods -w
+ 3155  kubectl -n euskaltel-pre get pods
+ 3156  npm run-script watch
+ 3157  ^M
+ 3158  php bin/console server:run
+ 3159  shutdown
+ 3160  sudo shutdown
+ 3161  cd untraceable
+ 3162  git push
+ 3163  eval $(tail command)
+ 3164  ssh root@192.168.50.20
+ 3165  ssh root@192.168.20.50
+ 3166  ssh root@192.168.50.20
+ 3167  clear
+ 3168  kubectl -n bysidecar-pre get cronjobs.batch
+ 3169  kubectl -n bysidecar-pre logs cronjob untraceable-cronjob
+ 3170  kubectl -n bysidecar-pre describe cronjob untraceable-cronjob
+ 3171  kubectl -n bysidecar-pre logs cronjobs/untraceable-job
+ 3172  kubectl -n bysidecar-pre logs cronjobs/untraceable-cronjob
+ 3173  kubectl -n bysidecar-pre logs cron/untraceable-cronjob
+ 3174  kubectl -n bysidecar-pre logs job/untraceable-cronjob
+ 3175  kubectl -n bysidecar-pre get pods
+ 3176  kubectl -n bysidecar-pre logs untraceable-cronjob-1585724640-pb8q7
+ 3177  git push
+ 3178  [200~php bin/console server:run
+ 3179  php bin/console server:run
+ 3180  npm run-script watch\n
+ 3181  clear
+ 3182  git branch
+ 3183  git branch -d feature/new_content_27_03
+ 3184  git checkout -b chore/seo_plugin
+ 3185  php -S localhost:8000 system/router.php
+ 3186  php -S localhost:8080 system/router.php
+ 3187  cd user/themes/mytheme
+ 3188  npm run dev
+ 3189  git status
+ 3190  git push
+ 3191  php -S localhost:8080 system/router.php  \n
+ 3192  cd user/themes/mytheme
+ 3193  npm run dev
+ 3194  kubectl -n virgin-pre get pods
+ 3195  kubectl -n virgin-pre describe pods virgin-pre-6d56b964db-9s8b4
+ 3196  kubectl -n virgin-pre exec -it pods virgin-pre-6d56b964db-9s8b4 /bin/bash
+ 3197  kubectl -n virgin-pre exec -it pods virgin-pre-6d56b964db-9s8b4 -- /bin/bash
+ 3198  kubectl -n virgin-pre exec -it virgin-pre-6d56b964db-9s8b4 -- /bin/bash
+ 3199  cd user/themes/mytheme
+ 3200  npm run dev
+ 3201  cd ..
+ 3202  php -S localhost:8080 system/router.php  \n
+ 3203  git push
+ 3204  ps aux | grep monitor
+ 3205  ps aux
+ 3206  kill -9 24910
+ 3207  watch "ps aux | sort -nrk 3,3 | head -n 5"\n
+ 3208  kubectl get namespaces
+ 3209  kubectl -n kube-system
+ 3210  kubectl -n kube-system get pods
+ 3211  kubectl get namespaces
+ 3212  kubectl -n default get pods
+ 3213  kubectl -n bysidecar get pods
+ 3214  kubectl -n kube-public get pods
+ 3215  clear
+ 3216  curl https://sira.bysidecar.me/
+ 3217  curl http://sira.bysidecar.me/
+ 3218  clear
+ 3219  cd Descargas
+ 3220  ls -la
+ 3221  mv bysidecar bysidecar.pem
+ 3222  ssh -i bysidecar.pem admin@ec2-34-243-64-130.eu-west-1.compute.amazonaws.com
+ 3223  chmod 400 bysidecar.pem
+ 3224  ssh -i bysidecar.pem admin@ec2-34-243-64-130.eu-west-1.compute.amazonaws.com
+ 3225  chmod 0400 bysidecar.pem
+ 3226  ssh -i bysidecar.pem admin@ec2-34-243-64-130.eu-west-1.compute.amazonaws.com
+ 3227  ls /etc/ssh
+ 3228  cd /etc/ssh
+ 3229  ls -la
+ 3230  nano ssh_config
+ 3231  sudo nano ssh_config
+ 3232  service ssh restart
+ 3233  sudo service sshd restart
+ 3234  sudo ssh -i ~/Descargas/bysidecar.pem admin@ec2-34-243-64-130.eu-west-1.compute.amazonaws.com
+ 3235  sudo ssh -i ~/Descargas/bysidecar.pem admin@ec2-34-245-183-95.eu-west-1.compute.amazonaws.com
+ 3236  ^[[200~php bin/console server:run
+ 3237  ~php bin/console server:run\n
+ 3238  php bin/console server:run\n
+ 3239  npm run-script watch\n
+ 3240  clear
+ 3241  ls
+ 3242  nano ssh_config
+ 3243  sudo nano ssh_config
+ 3244  ssh-keygen -t rsa
+ 3245  sudo ssh-keygen -t rsa
+ 3246  ssh-keygen -t rsa
+ 3247  ls
+ 3248  pwd
+ 3249  cd /home/jose/.ssh
+ 3250  ls
+ 3251  ls -la
+ 3252  nano metabase
+ 3253  nano metabase.pub
+ 3254  code metabase.pub
+ 3255  ssh-keygen -y -f metabase
+ 3256  ls -la
+ 3257  ssh -i metabase ec2-user@ec2-52-215-222-69.eu-west-1.compute.amazonaws.com
+ 3258  ssh -i ~/.ssh/metabase ec2-user@ec2-52-215-222-69.eu-west-1.compute.amazonaws.com
+ 3259  ssh -i ~/.ssh/metabase ec2-user@ec2-34-245-87-45.eu-west-1.compute.amazonaws.com
+ 3260  ls
+ 3261  cd Bysidecar/teletrabajo
+ 3262  ls
+ 3263  cd vpn
+ 3264  eval $(tail command)
+ 3265  ssh root@192.168.50.20
+ 3266  clear
+ 3267  git status
+ 3268  git push
+ 3269  git checout dev
+ 3270  git checkout dev
+ 3271  git pull
+ 3272  git branch -d feature/contents
+ 3273  clear
+ 3274  git status
+ 3275  git branch
+ 3276  git checkout dev
+ 3277  git pull
+ 3278  git branch -d chore/seo_plugin
+ 3279  git checkout dev
+ 3280  git pull
+ 3281  git checkout master
+ 3282  git pull
+ 3283  git branch -d chore/seo_plugin
+ 3284  git branch
+ 3285  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:ee82c91694dbb870528acb6b0d581fbecf1ac3d9
+ 3286  kubectl -n euskaltel-pre get pods -w
+ 3287  kubectl -n euskaltel-pre get pods
+ 3288  kubectl -n virgin-pre set image deployments/virgin-pre virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:ca759f0fce454c0558dd7316f242ece83f491b55
+ 3289  kubectl -n virgin-pre get pods -w
+ 3290  kubectl -n virgin-pre get pods
+ 3291  git checkout
+ 3292  npm run dev
+ 3293  php bin/console server:run\n
+ 3294  cd untraceable
+ 3295  go test ./...
+ 3296  git push
+ 3297  git branch
+ 3298  git checkout dev
+ 3299  git pull
+ 3300  git branch -d feature/sms_limit
+ 3301  git checkout --track origin/feature/tests
+ 3302  git rebase dev
+ 3303  git status
+ 3304  git push
+ 3305  git pull
+ 3306  git status
+ 3307  git push
+ 3308  git pull
+ 3309  git commit -m "rebasing from dev"
+ 3310  git push
+ 3311  git status
+ 3312  cd untraceable
+ 3313  go test ./...
+ 3314  git status
+ 3315  git push
+ 3316  git checkout dev
+ 3317  git status
+ 3318  kubectl -n bysidecar-pre apply -f ci/cronjob-definition.yml
+ 3319  kubectl -n bysidecar-pre get cronjobs.batch
+ 3320  kubectl -n bysidecar-pre get pod
+ 3321  kubectl -n bysidecar-pre delete cronjobs.batch untraceable-cronjob
+ 3322  clear
+ 3323  kubectl -n bysidecar-pre get pod
+ 3324  kubectl -n bysidecar-pre get job
+ 3325  kubectl -n bysidecar-pre get cronjob
+ 3326  kubectl -n bysidecar-pre get pod
+ 3327  git push
+ 3328  php bin/console server:run
+ 3329  npm run-script watch
+ 3330  php bin/console server:run\n
+ 3331  npm run watch
+ 3332  npm run build
+ 3333  symfony cc
+ 3334  php bin/console cache:clear
+ 3335  encore dev-server
+ 3336  npm run-script dev-server
+ 3337  php bin/console server:run\n
+ 3338  npm run build
+ 3339  npm run dev
+ 3340  php bin/console assets:install web --symlink
+ 3341  php bin/console assets:install assets --symlink
+ 3342  php bin/console assetic:dump
+ 3343  npm run dev
+ 3344  npm encore dev --watch
+ 3345  npm audit fix
+ 3346  npm encore --watch
+ 3347  npm encore dev --watch
+ 3348  encore dev --watch
+ 3349  npm run encore dev --watch
+ 3350  npm run encore --dev
+ 3351  npm run encore dev-server
+ 3352  npm run-script watch
+ 3353  php bin/console server:run\n
+ 3354  npm run-script watch
+ 3355  eval $(tail command)
+ 3356  mysql -h leads.c848y92oajny.eu-west-1.rds.amazonaws.com -u leads -p -D leads
+ 3357  pwd
+ 3358  cd Code/github.com/Bysidecar
+ 3359  ls
+ 3360  git clone git@github.com:BySidecar/landing-commander.git
+ 3361  git branch
+ 3362  git tag
+ 3363  git checkout -b feature/add_sources
+ 3364  git push
+ 3365  git checkout dev
+ 3366  git push
+ 3367  git branch -d feature/add_sources
+ 3368  git push
+ 3369  git pull
+ 3370  git push
+ 3371  git branch
+ 3372  npm run build
+ 3373  npm install
+ 3374  npm run build
+ 3375  npm update
+ 3376  git push
+ 3377  git checkout master
+ 3378  npm install
+ 3379  npm update
+ 3380  git status
+ 3381  git tag -a v1.0.27 -m "added new sources"
+ 3382  git push origin v1.0.27
+ 3383  npm publish
+ 3384  npm login
+ 3385  npm publish
+ 3386  cd ~
+ 3387  ls -la
+ 3388  nano .pmrc
+ 3389  nano .npmrc
+ 3390  cd .npm
+ 3391  ls
+ 3392  cd ..
+ 3393  nano .npmrc
+ 3394  clear
+ 3395  kubectl -n bysidecar-pre
+ 3396  kubectl -n bysidecar-pre get pods
+ 3397  kubectl -n bysidecar-pre get cronjobs.batch
+ 3398  kubectl -n bysidecar-pre get job
+ 3399  kubectl -n euskaltel-pre get job
+ 3400  kubectl -n euskaltel-pre get cronjobs.batch
+ 3401  ls -la
+ 3402  cd Code/go/src/github.com/bysidecar/untraceable
+ 3403  ls -la
+ 3404  kubectl apply -f ci/cronjob-definition.yml
+ 3405  kubectl -n bysidecar-pre get cronjobs.batch
+ 3406  kubectl -n bysidecar-pre get pods
+ 3407  kubectl -n bysidecar-pre get cronjobs.batch
+ 3408  clear
+ 3409  git push
+ 3410  npm run-script watch
+ 3411  php bin/console server:run
+ 3412  git push
+ 3413  kubectl -n euskaltel-pre set image deployments/euskaltel-kinkon-web-pre euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pre:41286b5a91d0b390006462372825d19faae500d6
+ 3414  kubectl -n euskaltel-pre get pods -w
+ 3415  kubectl -n euskaltel-pre get pods
+ 3416  npm run-script watch
+ 3417  php bin/console server:run
+ 3418  git push
+ 3419  git status
+ 3420  kubectl -n euskaltel-pre set image deployments/euskaltel-kinkon-web-pre euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pre:8151d882345521e98426e0fff3d78c91d20d766b
+ 3421  kubectl -n euskaltel-pre get pods -w
+ 3422  kubectl -n euskaltel-pre get pods
+ 3423  git checkout
+ 3424  git branch
+ 3425  npm install
+ 3426  npm install @bysidecar/landing_commander@1.0.27
+ 3427  ^[[200~php bin/console server:run
+ 3428  ~
+ 3429  npm run-script watch\n
+ 3430  pwd
+ 3431  cd Code/github.com/Bysidecar/kinkon_empresas
+ 3432  npm run-script watch\n
+ 3433  cd /home/jose/Code/github.com/Bysidecar/kinkon_empresas
+ 3434  php bin/console server:run
+ 3435  cd leads
+ 3436  git status
+ 3437  git checkout -b feature/kinkon_empresas
+ 3438  go test ./...
+ 3439  go run main.go
+ 3440  go test ./pkg/leads/api_test.go
+ 3441  go test ./pkg/leads/hook_duplicated_time_test.go
+ 3442  go test ./...
+ 3443  go run main.go
+ 3444  git status
+ 3445  git checkout dev
+ 3446  git pull
+ 3447  go run main.go
+ 3448  echo $CHECK_LEAD_REDIS
+ 3449  echo $DB_NAME
+ 3450  go run main.go
+ 3451  docker image build -t leads_test .
+ 3452  docker image ls -a
+ 3453  docker container run -d --name leads_test -p 4000:4000 leads_test
+ 3454  docker container ls -a
+ 3455  docker logs leads_test
+ 3456  docker container rm -f cbb
+ 3457  docker system prune
+ 3458  docker container ls -a
+ 3459  docker image ls -a
+ 3460  docker image rm -f leads_test
+ 3461  docker image ls -a
+ 3462  go run main.go
+ 3463  go test ./...
+ 3464  go run main.go
+ 3465  git reset --soft HEAD~1
+ 3466  git status
+ 3467  git checkout feature/kinkon_empresas
+ 3468  git stash
+ 3469  git checkout feature/kinkon_empresas
+ 3470  git stash pop
+ 3471  git status
+ 3472  git test ./...
+ 3473  go test ./...
+ 3474  git push
+ 3475  kubectl -n bysidecar-pre set image deployments/leads-pre leads=952729869933.dkr.ecr.eu-west-1.amazonaws.com/leads:1985624c6ab211a424f159afad53e29eac4a8dbf
+ 3476  kubectl -n bysidecar-pre get pods -w
+ 3477  kubectl -n bysidecar-pre get pods
+ 3478  kubectl -n bysidecar-pre logs leads-pre-5cbfb85967-ksq7v
+ 3479  kubectl -n bysidecar-pre get pods
+ 3480  kubectl -n bysidecar-pre get deploy
+ 3481  kubectl -n bysidecar-pre describe deployments leads-pre
+ 3482  kubectl -n bysidecar-pre set image deployments/leads-pre leads=952729869933.dkr.ecr.eu-west-1.amazonaws.com/leads:2cfc0093d389eb4be47d7e8cfb84bc3b91664f16\n
+ 3483  kubectl -n bysidecar-pre get pods -w
+ 3484  kubectl -n bysidecar-pre get pods
+ 3485  eval $(tail command)
+ 3486  git push
+ 3487  npm run-script watch\n
+ 3488  npm run-script watch
+ 3489  npm run watch
+ 3490  npm run encore
+ 3491  npm run watch
+ 3492  encore dev --watch
+ 3493  composer require symfony/webpack-encore-bundle
+ 3494  clear
+ 3495  git clone git@github.com:BySidecar/rueiro.git
+ 3496  git status
+ 3497  cd ..
+ 3498  cd rueiro
+ 3499  git branch
+ 3500  git checkout -b feature/add_kinkon_empresas
+ 3501  npm run watch
+ 3502  npm run dev
+ 3503  encore dev --watch
+ 3504  composer install
+ 3505  sudo composer install
+ 3506  npm install @symfony/webpack-encore --save-dev
+ 3507  npm run-script watch
+ 3508  encore dev --watch
+ 3509  npm clear cache
+ 3510  npm cache clear
+ 3511  npm cache --help
+ 3512  npm cache clean
+ 3513  php bin/console cache:clear
+ 3514  npm run encore
+ 3515  npm run encore dev --watch
+ 3516  php bin/console server:run
+ 3517  ./node_modules/.bin/encore dev --watch
+ 3518  npm run watch
+ 3519  echo $EUSKALTEL_URL
+ 3520  echo $MUNDO_URL
+ 3521  echo $MUNDO_USER
+ 3522  echo $MUNDO_PASS
+ 3523  nano ~/.zshrc
+ 3524  sources ~/.zshrc
+ 3525  source ~/.zshrc
+ 3526  echo $MUNDO_URL
+ 3527  git push
+ 3528  git add .
+ 3529  git commit -m "updated instruction to install aws cli in circleci checkout step"
+ 3530  git push
+ 3531  kubectl -n bysidecar-pre set image deployments/rueiro-pre rueiro=952729869933.dkr.ecr.eu-west-1.amazonaws.com/rueiro:2278567cf505db7aec46d764842124d229ad8990
+ 3532  kubectl -n bysidecar-pre get pods -w
+ 3533  kubectl -n bysidecar-pre get pods 
+ 3534  clear
+ 3535  sudo certbot certonly --manual -d www.empresasrcable.es -d empresasrcable.es --expand
+ 3536  cd /home/jose/Code/github.com/Bysidecar/devops/helm/bysidecar
+ 3537  helm -n euskaltel install kinkon_empresas letsencrypt
+ 3538  helm -n euskaltel install cert-v1 letsencrypt
+ 3539  kubectl -n euskaltel get pods -w
+ 3540  kubectl -n euskaltel get ingress
+ 3541  ls /etc/letsencrypt
+ 3542  ls /etc/letsencrypt/live
+ 3543  cd /etc/letsencrypt/live
+ 3544  ls -la /etc/letsencrypt
+ 3545  ls -la /etc/letsencrypt/live
+ 3546  sudo ls -la /etc/letsencrypt/live
+ 3547  sudo certbot certonly --manual -d www.empresasrcable.es
+ 3548  helm ls
+ 3549  helm -n euskaltel ls
+ 3550  helm -n euskaltel delete cert-v1
+ 3551  helm -n euskaltel install cert-v1 letsencrypt
+ 3552  sudo kubectl -n euskaltel create secret tls tls-www-empresas-r-cable-es --key /etc/letsencrypt/live/www.empresasrcable.es/privkey.pem --cert /etc/letsencrypt/live/www.empresasrcable.es/fullchain.pem
+ 3553  kubectl -n euskaltel get pods
+ 3554  ./node_modules/.bin/encore dev --watch
+ 3555  php bin/console server:run
+ 3556  npm cache clear
+ 3557  npm cache clean
+ 3558  npm cache clean --force
+ 3559  php bin/console cache:clear
+ 3560  ./node_modules/.bin/encore dev --watch
+ 3561  php bin/console server:run
+ 3562  npm run dev
+ 3563  npm run watch
+ 3564  sudo ./node_modules/.bin/encore dev --watch
+ 3565  eval $(tail command)
+ 3566  cd Code/github.com/Bysidecar/kinkon_empresas
+ 3567  git push
+ 3568  git status
+ 3569  git push
+ 3570  kubectl -n euskaltel get pod
+ 3571  helm -n euskaltel delete cert-v1
+ 3572  kubectl -n bysidecar-pre get pods
+ 3573  kubectl -n bysidecar-pre logs untraceable-cronjob-1585904640-hnrld
+ 3574  clear
+ 3575  kubectl -n bysidecar-pre logs untraceable-cronjob-1585724640-pb8q7
+ 3576  kubectl -n bysidecar-pre get pods
+ 3577  kubectl -n bysidecar-pre logs untraceable-cronjob-1585904640-hnrld
+ 3578  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:02cb59b0e942e38608b51c14ddbdc5f537828582
+ 3579  kubectl -n euskaltel-pre get pod
+ 3580  git branch
+ 3581  clear
+ 3582  sudo certbot certonly --manual -d www.empresastelecable.es
+ 3583  helm -n euskaltel install cert-v2 letsencrypt
+ 3584  helm -n euskaltel delete cert-v2
+ 3585  helm -n euskaltel install cert-v2 letsencrypt
+ 3586  sudo kubectl -n euskaltel create secret tls tls-www-empresas-telecable-es --key /etc/letsencrypt/live/www.empresastelecable.es/privkey.pem --cert /etc/letsencrypt/live/www.empresastelecable.es/fullchain.pem
+ 3587  helm -n euskaltel delete cert-v2
+ 3588  sudo certbot certonly --manual -d www.empresaseuskaltel.es
+ 3589  helm -n euskaltel delete cert-v2
+ 3590  helm -n euskaltel install cert-v3 letsencrypt
+ 3591  sudo kubectl -n euskaltel create secret tls tls-www-empresas-euskaltel-es --key /etc/letsencrypt/live/www.empresaseuskaltel.es/privkey.pem --cert /etc/letsencrypt/live/www.empresaseuskaltel.es/fullchain.pem
+ 3592  kubectl -n euskaltel get secrets
+ 3593  helm -n euskaltel delete cert-v3
+ 3594  ls
+ 3595  git push
+ 3596  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:dc2f001e92e97a35f60abc5ec5785f24ee61ffc2
+ 3597  kubectl -n euskaltel-pre get pods -w
+ 3598  kubectl -n euskaltel-pre get pods
+ 3599  echo $GOPATH
+ 3600  gopls bug
+ 3601  go get golang.org/x/tools/gopls@latest
+ 3602  go mod vendor
+ 3603  cd workload
+ 3604  go mod vendor
+ 3605  go run cmd/main.go
+ 3606  curl -X POST -H "Content-type: application/json" http://localhost:9001/workload/projects\n
+ 3607  curl -X POST -H "Content-type: application/json" http://localhost:9001/workload/get\n
+ 3608  curl -X POST -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 99,"name": "Test"}]}' http://localhost:9001/workload/get\n
+ 3609  curl -X POST -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 1,"name": "Test"}]}' http://localhost:9001/workload/get\n
+ 3610  go test ./...
+ 3611  go run cmd/main.go
+ 3612  curl -X POST -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 1,"name": "Test"}]}' http://localhost:9001/workload/get\n
+ 3613  go test ./...
+ 3614  go run cmd/main.go
+ 3615  curl -X POST -H "Content-type: application/json" --data '{"type":1, "project": [{"id": 1,"name": "Test"}]}' http://localhost:9001/workload/get\n
+ 3616  ^[[200~curl -X POST -H "Content-type: application/json" http://localhost:9001/workload/projects
+ 3617  curl -X POST -H "Content-type: application/json" http://localhost:9001/workload/get --data '{"type":1}'\n
+ 3618  cd workload
+ 3619  go run cmd/main.go
+ 3620  go test ./...
+ 3621  go run cmd/main.go
+ 3622  cd workload
+ 3623  go run cmd/main.go
+ 3624  cd untraceable
+ 3625  git push
+ 3626  eval $(tail command)
+ 3627  pwd
+ 3628  ^[[200~kubectl -n bysidecar-pre delete cronjob/untraceable-cronjob
+ 3629  kubectl -n bysidecar-pre get cronjob
+ 3630  kubectl -n bysidecar-pre get pod
+ 3631  kubectl -n bysidecar-pre logs untraceable-cronjob-1585904640-hnrld untraceable 
+ 3632  kubectl -n bysidecar-pre get pod
+ 3633  kubectl -n bysidecar-pre delete cronjob/untraceable-cronjob\n\n
+ 3634  kubectl -n bysidecar-pre apply -f ci/cronjob-definition.yml\n
+ 3635  kubectl -n bysidecar-pre get cronjob
+ 3636  kubectl -n bysidecar-pre get pod
+ 3637  kubectl -n bysidecar-pre get pod -w
+ 3638  kubectl -n bysidecar-pre set image deployments/rueiro-pre rueiro=952729869933.dkr.ecr.eu-west-1.amazonaws.com/rueiro:2278567cf505db7aec46d764842124d229ad8990
+ 3639  kubectl -n bysidecar-pre get pods -w
+ 3640  kubectl -n bysidecar-pre get pod
+ 3641  kubectl -n bysidecar-pre set image deployments/rueiro-pre rueiro=952729869933.dkr.ecr.eu-west-1.amazonaws.com/rueiro:2278567cf505db7aec46d764842124d229ad8990
+ 3642  kubectl -n bysidecar-pre get pods 
+ 3643  kubectl -n bysidecar get pod
+ 3644  kubectl -n bysidecar get deploy
+ 3645  kubectl -n bysidecar describe pod rueiro-7dbd5df99d-slff8 
+ 3646  kubectl -n bysidecar set image deployments/rueiro rueiro=952729869933.dkr.ecr.eu-west-1.amazonaws.com/rueiro:2278567cf505db7aec46d764842124d229ad8990
+ 3647  kubectl -n bysidecar get pod -w
+ 3648  kubectl -n bysidecar get pod
+ 3649  kubectl -n bysidecar set image deployments/leads leads=952729869933.dkr.ecr.eu-west-1.amazonaws.com/leads:3b15ec492be7fa7a345c4c249af13ce4bc3aec48
+ 3650  kubectl -n bysidecar get pods -w
+ 3651  php bin/console server:run\n
+ 3652  git push
+ 3653  php bin/console server:run\n
+ 3654  npm run-script watch\n
+ 3655  sudo npm run-script watch\n
+ 3656  git push
+ 3657  kubectl -n euskaltel-pre set image deployments/euskaltel-kinkon-web-pre euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pre:4d386e052e8d1b275ad3e96a9823a4ddde54e227
+ 3658  kubectl -n euskaltel-pre get pods -w
+ 3659  kubectl -n euskaltel-pre get pods
+ 3660  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:cf2561f3ae1b40404b8d6d166308ffd60d1e3848
+ 3661  kubectl -n euskaltel-pre get pods -w
+ 3662  kubectl -n euskaltel-pre get pods
+ 3663  git push
+ 3664  git branch
+ 3665  git checkout --track origin/feature/posts
+ 3666  git fetch origin
+ 3667  git checkout -b feature/posts origin/feature/posts
+ 3668  cd user/themes/mytheme
+ 3669  npm run dev
+ 3670  php -S localhost:8000 system/router.php  \n
+ 3671  php -S localhost:8001 system/router.php  \n
+ 3672  git push
+ 3673  git pull
+ 3674  git status
+ 3675  git push
+ 3676  kubectl -n euskaltel-pre set image deployments/euskaltel-kinkon-web-pre euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pre:cd6f2639ad260f7e70537e280471f7fe447d4adb
+ 3677  kubectl -n euskaltel-pre get pods -w
+ 3678  kubectl -n euskaltel-pre get pods
+ 3679  git checkout master
+ 3680  git pull
+ 3681  git branch -d feature/posts
+ 3682  git branch
+ 3683  kubectl -n virgin-pre set image deployments/virgin-pre virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:9890d1730907d4dc6786a9ce3f45350fed00ca14
+ 3684  kubectl -n virgin-pre get pods -w
+ 3685  kubectl -n virgin-pre get pods
+ 3686  kubectl -n euskaltel set image deployments/euskaltel-kinkon-web euskaltel-kinkon-web=952729869933.dkr.ecr.eu-west-1.amazonaws.com/euskaltel-kinkon-web-pro:cd6f2639ad260f7e70537e280471f7fe447d4adb
+ 3687  kubectl -n euskaltel get pods -w
+ 3688  kubectl -n euskaltel get pods
+ 3689  clear
+ 3690  kubectl -n euskaltel get secret
+ 3691  ls
+ 3692  git branch
+ 3693  helm -n euskaltel-pre ls
+ 3694  helm -n euskaltel install kinkon-empresas ci/helm-package -f ci/helm-package/values-pro.yaml
+ 3695  kubectl -n euskaltel get pods -w
+ 3696  kubectl -n euskaltel get pods
+ 3697  kubectl -n euskaltel describe deployments.apps kinkon-empresas
+ 3698  kubectl -n euskaltel describe ingresses.extensions
+ 3699  kubectl -n euskaltel get ingresses.extensions
+ 3700  kubectl -n euskaltel describe pod kinkon-empresas-66ff8897b6-fqmk5
+ 3701  clear
+ 3702  git checkout dev
+ 3703  npm run dev
+ 3704  npm install
+ 3705  npm run dev
+ 3706  npm run build
+ 3707  git push
+ 3708  git checkout master
+ 3709  git push
+ 3710  git tag -a v1.0.28 -m "fixed rueiro prod URL"
+ 3711  git push origin v1.0.28
+ 3712  npm publish
+ 3713  clear
+ 3714  npm login --registry=https://npm.pkg.github.com
+ 3715  printenv
+ 3716  npm login --registry=https://npm.pkg.github.com
+ 3717  nano ~/.zshrc
+ 3718  npm login --registry=https://npm.pkg.github.com
+ 3719  npm publish
+ 3720  npm install
+ 3721  npm install @bysidecar/landing_commander@1.0.28
+ 3722  php bin/console server:run\n
+ 3723  npm install
+ 3724  npm install @bysidecar/landing_commander@1.0.2
+ 3725  npm install
+ 3726  npm install @bysidecar/landing_commander@1.0.28
+ 3727  git push
+ 3728  cd Code/github.com/Bysidecar/virgin_blog
+ 3729  git pull
+ 3730  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:23ac211bf0e6c033e788f168f79c73b80355414b
+ 3731  kubectl -n euskaltel-pre get pods
+ 3732  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:cf2561f3ae1b40404b8d6d166308ffd60d1e3848
+ 3733  kubectl -n euskaltel-pre get pods -w
+ 3734  kubectl -n virgin-pre set image deployments/virgin-pre virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:23ac211bf0e6c033e788f168f79c73b80355414b
+ 3735  kubectl -n virgin-pre get pods -w
+ 3736  kubectl -n euskaltel-pre get pods
+ 3737  cd leads
+ 3738  go run main.go
+ 3739  git push
+ 3740  go test ./...
+ 3741  eval $(tail command)
+ 3742  kubectl -n bysidecar-pre set image deployments/leads-pre leads=952729869933.dkr.ecr.eu-west-1.amazonaws.com/leads:c9d6e5b992564fe4392d2594b6003494aa140bbe\n
+ 3743  kubectl -n bysidecar-pre get pods
+ 3744  kubectl -n bysidecar-pre get pods -w
+ 3745  kubectl -n bysidecar-pre logs untraceable-cronjob-1586
+ 3746  kubectl -n bysidecar-pre get pods
+ 3747  kubectl -n bysidecar-pre logs untraceable-cronjob-1586243520-gnwtk
+ 3748  cd ..
+ 3749  cd Code/go/src/github.com/bysidecar
+ 3750  ls
+ 3751  cd rueiro
+ 3752  git checkout dev
+ 3753  git pull
+ 3754  git branch -d feature/add_kinkon_empresas
+ 3755  git branch
+ 3756  code
+ 3757  composer --version
+ 3758  eval $(tail command)
+ 3759  php bin/console server:run\n
+ 3760  npm run-script watch\n
+ 3761  sudo npm run-script watch\n
+ 3762  php -S localhost:8000 system/router.php  
+ 3763  php -S localhost:8001 system/router.php  
+ 3764  git checkout -b feature/contents_07-04-2020
+ 3765  git push
+ 3766  npm run dev
+ 3767  php -S localhost:8001 system/router.php  
+ 3768  kubectl -n virgin-pre set image deployments/virgin-pre virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:10d478aa783373e869578e2a8bcc1c77bbdaa992
+ 3769  kubectl -n virgin-pre get pods -w
+ 3770  git checkout master
+ 3771  git pull
+ 3772  git branch -d feature/contents_07-04-2020
+ 3773  php bin/console server:run\n
+ 3774  sudo npm run-script watch\n
+ 3775  kubectl -n virgin set image deployments/virgin virgin=952729869933.dkr.ecr.eu-west-1.amazonaws.com/virgin_blog:38798810ea186365d4f73a917b803c5ab60fc9ab
+ 3776  kubectl -n virgin get pods
+ 3777  kubectl -n virgin get pods -w
+ 3778  php -S localhost:8001 system/router.php  
+ 3779  npm run dev
+ 3780  git checkout -b chore/details
+ 3781  cd leads
+ 3782  git push
+ 3783  git pull
+ 3784  git checkout dev
+ 3785  git pull
+ 3786  git branch -d feature/kinkon_empresas
+ 3787  git branch
+ 3788  kubectl -n bysidecar set image deployments/leads leads=952729869933.dkr.ecr.eu-west-1.amazonaws.com/leads:028ad8d8b2abb9fbb4681d9a0c81eafdc5605aa0
+ 3789  kubectl -n bysidecar get pods -w
+ 3790  kubectl -n bysidecar get pods
+ 3791  cd ..
+ 3792  cd untraceable
+ 3793  git push
+ 3794  sudo snap install gmail-desktop
+ 3795  sudo snap uninstall gmail-desktop
+ 3796  snap --help
+ 3797  sudo snap remove gmail-desktop
+ 3798  php bin/console server:run\n
+ 3799  sudo npm run-script watch\n
+ 3800  git push
+ 3801  eval $(tail command)
+ 3802  npm run dev
+ 3803  sudo npm run dev
+ 3804  php bin/console server:run\n
+ 3805  sudo npm run watch
+ 3806  git push
+ 3807  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:2df95125be9219755395a6e0b3d2a70c892bd55a
+ 3808  kubectl -n euskaltel-pre get pods -w
+ 3809  git status
+ 3810  git push
+ 3811  kubectl -n euskaltel-pre set image deployments/kinkon-empresas-pre kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pre:3655eb72ac73e69a902f99ac586a255947862a13
+ 3812  kubectl -n euskaltel-pre get pods -w
+ 3813  kubectl -n euskaltel-pre get pods
+ 3814  kubectl -n euskaltel set image deployments/kinkon-empresas kinkon-empresas=952729869933.dkr.ecr.eu-west-1.amazonaws.com/kinkon-empresas-pro:3655eb72ac73e69a902f99ac586a255947862a13\n
+ 3815  kubectl -n euskaltel get pods
+ 3816  kubectl -n euskaltel get pods -w
+ 3817  kubectl -n euskaltel get pods
+ 3818  git status
+ 3819  cd ..
+ 3820  ls -la
+ 3821  mkdir adeslas-web
+ 3822  cd adeslas-web
+ 3823  wget https://get.symfony.com/cli/installer -O - | bash
+ 3824  symfony
+ 3825  /home/jose/.symfony/bin/symfony new adeslas-web --full\n
+ 3826  ls
+ 3827  mv adeslas-web /home/jose/Code/github.com/Bysidecar/adeslas-web
+ 3828  mv adeslas-web/* /home/jose/Code/github.com/Bysidecar/adeslas-web
+ 3829  ls -la
+ 3830  rm adeslas-web
+ 3831  rm -r adeslas-web
+ 3832  rm -rf adeslas-web
+ 3833  ls -la
+ 3834  git init
+ 3835  git status
+ 3836  git add .
+ 3837  git commit -m "first commit"
+ 3838  git status
+ 3839  npm init
+ 3840  npm install
+ 3841  npm run dev
+ 3842  npm install
+ 3843  npm run dev
+ 3844  npm run-script dev
+ 3845  npm run watch
+ 3846  npm run-script watch\n
+ 3847  php bin/console server:run\n
+ 3848  composer require symfony/webpack-encore-bundle
+ 3849  sudo composer require symfony/webpack-encore-bundle
+ 3850  php bin/console server:run\n
+ 3851  php bin/console --version
+ 3852  php bin/console cache:clear
+ 3853  php bin/console --version
+ 3854  php bin/console server:run\n
+ 3855  composer require symfony/web-server-bundle --dev
+ 3856  symfony server:start
+ 3857  /home/jose/.symfony/bin/symfony server:start\n
+ 3858  history

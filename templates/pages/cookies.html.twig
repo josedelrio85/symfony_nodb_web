@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Política de Cookies{% endblock %}
+{% block meta_description %}<meta name="description" content="{{ "cookies.meta_description" | trans }}">{% endblock %}
+
+{% block c2cPopup %}
+{% endblock %}
+
+{% block body %}
+  {% include 'components/page-header/page-header.html.twig' with {
+    title:           "cookies.title"        | trans,
+    subtitle:        "cookies.subtitle"     | trans,
+    backgroundImage: "cookies.bg_image_top" | trans,
+  } %}
+  <section class="">
+  {{ "cookies.content" | trans | raw }}
+  </section>
+{% endblock %}
+
+
+{% block javascripts %}
+  {{ parent() }}
+{% endblock %}
