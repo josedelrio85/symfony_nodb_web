@@ -2,17 +2,10 @@
 
 ## Installation
 
-### Install composer depenencies
-
-Execute composer install to install the project locally.
-
-```bash
-php composer install
-```
-
 ### Install Symfony CLI
 
-Execute composer install to install the project locally.
+Install symfony cli and add it tho the path. Check the succesful message to do it in your system.
+[Check this link](https://github.com/symfony/symfony-installer)
 
 ```bash
 wget https://get.symfony.com/cli/installer -O - | bash
@@ -21,6 +14,22 @@ wget https://get.symfony.com/cli/installer -O - | bash
 Add symfony to your user path
 
 ```bash
+# Use it as a local file:
+/home/[your_user]/.symfony/bin/symfony
+
+#Or add the following line to your shell configuration file:
+export PATH="$HOME/.symfony/bin:$PATH"
+
+#Or install it globally on your system:
+mv /home/jose/.symfony/bin/symfony /usr/local/bin/symfony
+```
+
+### Install composer depenencies
+
+Execute composer install to install the project locally.
+
+```bash
+php composer install
 ```
 
 ### Install webpack dependencies
@@ -40,7 +49,7 @@ Use the following command to use Symfony's `symfony/web-server-bundle`.
 
 ```bash
 # Starts a local development server on the 8000 port
-/home/jose/.symfony/bin/symfony server:start --no-tls
+symfony server:start --no-tls
 ```
 
 Execute encore to update imports of js files and functions.
