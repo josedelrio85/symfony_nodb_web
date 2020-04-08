@@ -1,0 +1,49 @@
+{
+  "name": "adeslas-web",
+  "version": "1.0.0",
+  "description": "Adeslas web project",
+  "main": "bysidecar.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "encore": "encore",
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "adeslas-web"
+  },
+  "keywords": [
+    "adeslas",
+    "c2c",
+    "landing",
+    "bysidecar"
+  ],
+  "author": "Bysidecar",
+  "license": "ISC",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.27.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^7.0.0-beta.3",
+    "core-js": "^3.4.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^7.3.1",
+    "webpack-notifier": "^1.6.0"
+  },
+  "dependencies": {
+    "@bysidecar/landing_commander": "^1.0.28",
+    "dotenv": "^8.2.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "navigator.sendbeacon": "0.0.19"
+  }
+}
