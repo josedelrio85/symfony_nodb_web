@@ -17,7 +17,7 @@ class IndexController extends AbstractController {
   public function __construct(ProductService $prodserv) {
     $this->prodserv = $prodserv;
   }
-  // TranslatorInterface $translator
+
   public function index(Request $request, TranslatorInterface $translator) {
 
     $products = $this->prodserv->getProducts();

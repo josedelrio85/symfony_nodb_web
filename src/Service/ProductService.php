@@ -56,7 +56,6 @@ class ProductService {
               // $output[$ch['name']][] = $r['name'];
               $output[$ch['name']][$r['name']]['name'] = $r['name'];
               $output[$ch['name']][$r['name']]['path'] = $r['path'];
-
             }
           }
         }

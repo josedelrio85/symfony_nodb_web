@@ -74,12 +74,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   })
 
-  // document.getElementsByClassName('launch').addEventListener('click', (event) => {
   let launch = document.querySelectorAll('.launch');
   launch.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
-      let id = event.target.id;
-      console.log(event);
+      // let id = event.target.id;
+      // console.log(event);
+      
+      // TODO decide what to do when a element with path is clicked. href?
     });
   });
 
