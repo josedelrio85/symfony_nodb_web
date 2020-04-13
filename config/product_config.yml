@@ -1,0 +1,56 @@
+products:
+  salud:
+    name: 'salud'
+    children:
+      familia:
+        name: 'familia'
+        children:
+          individual:
+            name: 'individual'
+            path: 'individual'
+          familiar:
+            name: 'familiar'
+            path: 'familiar'
+          mayores:
+            name: 'mayores'
+            path: 'mayores'
+          embarazada:
+            name: 'embarazada'
+            path: 'embarazada'
+      negocio:
+        name: 'negocio'
+        children:
+          autonomo:
+            name: 'autonomo'
+            path: 'autonomo'
+          menos5:
+            name: 'menos5'
+            path: 'menos5'
+          mas5:
+            name: 'mas5'
+            path: 'mas5'
+  dental:
+    name: 'dental'
+    children:
+      cobdental:
+        name: 'cobdental'
+        path: 'cobdental'
+        children:
+      dentalysalud:
+        name: 'dentalysalud'
+        path: 'dentalysalud'
+        children:
+  mascotas:
+    name: 'mascotas'
+    children:
+      mascotas:
+        name: 'mascotas'
+        path: 'mascotas'
+        children:
+  decesos:
+    name: 'decesos'
+    children:
+      decesos:
+        name: 'decesos'
+        path: 'decesos'
+        children:

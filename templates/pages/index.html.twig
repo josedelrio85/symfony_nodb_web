@@ -6,14 +6,22 @@
 
 {% block body %}
 
-  <h1>{{ "header.text1" | trans | raw }}</h1>
+  {# <h1>{{ "header.text1" | trans | raw }}</h1>
   <h2>{{ "header.text2" | trans | raw }}</h2>
   <h3>{{ "header.text3" | trans | raw }}</h3>
   <h4>{{ "header.text4" | trans | raw }}</h4>
 
 
   <h1>{{ "test.test1" | trans | raw }}</h1>
-  <h2>{{ "test.test2" | trans | raw }}</h2>
+  <h2>{{ "test.test2" | trans | raw }}</h2> #}
   {# {% include 'components/hero-slider/hero-slider.html.twig' %} #}
+
+  
+  {% include 'components/product-selector/product-selector.html.twig' with {
+    mainelements: mainelements,
+    firstchildrens: firstchildrens,
+    secondChildrens: secondChildrens
+   }
+  %}
 
 {% endblock %}
