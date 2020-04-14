@@ -23,10 +23,11 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
+    App\Service\ProductService:
+        class: App\Service\ProductService
+        arguments: ["@request_stack", "%kernel.project_dir%"]
+
     # NOT USED YET  
-    # App\Service\ProductService:
-    #     class: App\Service\ProductService
-    #     arguments: ["@request_stack", "%kernel.project_dir%"]
 
     ## Deactivate function getSubscribedEvents() of this Listener 
     ## to avoid redirections to /es when another language is matched
