@@ -1,0 +1,9 @@
+form:
+  title: 'Te informamos sin compromiso'
+  fields:
+    name: 'Nombre y apellidos'
+    phone: 'Tu teléfono'
+  privacy: 'Acepto la política de privacidad'
+  ddi:
+    text: 'O si lo prefieres, llámanos:'
+    timetable: 'Horario de L-D de 9 a 21h'

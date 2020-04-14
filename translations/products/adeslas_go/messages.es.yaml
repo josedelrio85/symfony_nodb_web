@@ -1,0 +1,90 @@
+#adeslas_go_product
+go:
+  title: 'Adeslas GO. El seguro ideal para cuidarte y poder ir al médico que necesites sin esperas'
+  subtitle1: 'La asistencia médica ambulatoria con mejores coberturas sin cuestionario médico.'
+  subtitle2: 'Acceso a los mejores especialistas cuando y como quieras'
+  text2: 'Con Adeslas GO te ofrecemos un chequeo anual completo adaptado a las necesidades médicas de tu edad y sexo para que conozcas en todo momento tu estado de salud. Podrás acceder a las consultas con especialistas que necesites cuando quieras, sin listas de espera y al horario que mejor te convenga. Y con un amplio abanico de coberturas.'
+  services:
+    suptitle: '2 Catálogo de servicios'
+    list:
+      - 'Chequeo médico anual'
+      - 'Medicina General y Pediatría'
+      - 'Urgencias ambulatorias'
+      - 'Especialistas'
+      - 'Pruebas diagnósticas en consulta'
+      - 'Psicoterapia'
+      - 'Preparación al Parto'
+      - 'Podología (12 sesiones/año), etc.'
+    properties:
+      prop1:
+        text: 'Inmediatez'
+        title: 'Con Adeslas GO tendrás acceso a tus servicios de forma inmediata, sin cuestionario médico previo y podrás concertar tus citas con los especialistas que desees sin esperas.'
+      prop2:
+        text: 'Precio'
+        title: 'Adeslas GO tiene una prima de 18 €/mes por asegurado entre los 0 y los 54 años y de 30€, de los 55 a los 70. A partir del segundo asegurado tendrás un descuento del 10%.'
+      prop3:
+        text: 'Calidad'
+        title: 'Adeslas cuenta con el mejor y más completo cuadro médico de España, con más de 43.000 profesionales a tu servicio, 1.200 centros de atención médico-asistencial, 61 delegaciones, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud a tu servicio.'
+      prop4:
+        text: 'Bonificación en copagos'
+        title: 'Cada año tus 3 primeros copagos de hasta 16 € serán gratuitos y a partir del segundo año te reduciremos un 25% los precios de todos los copagos. Si tienes menos de 55 años, nunca pagarás más de 260 € al año en copagos, uses los servicios que uses.'
+      prop5:
+        text: 'Pago mensual y con descuentos'
+        title: 'Adeslas GO te ofrece flexibilidad para pagar tu prima como desees. Puedes hacerlo cada mes. Si pagas por trimestre, tendrás un 2% de descuento; un 4%, por semestre y un 6% con el pago anual'
+  info:
+    suptitle: '3 Más información sobre este producto'
+    title: 'Una cobertura médica llena de ventajas'
+    text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria y un servicio ideal para quien busca un seguro complementario para prevenir y aumentar las posibilidades de detectar y tratar rápidamente cualquier problema de salud. Podrás consultar con cualquier especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida con los servicios más frecuentemente utilizados'
+    list:
+      - 'Pruebas prenatales y preparación al parto'
+      - 'Psicoterapia'
+      - 'Podología'
+      - 'Medicina general y especialidades'
+      - 'Medios de diagnóstico de alta tecnología'
+      - 'Test de ADN fetal en sangre materna'
+      - 'DIU: Dispositivo y colocación'
+      - 'Orientación y segunda opinión médica'
+    text2: 'Cuando contrates tu póliza tendrás acceso a un chequeo médico anual adaptado a las necesidades de tu edad con las siguientes pruebas:'
+    table:
+      column1:
+        title: 'De 18 a 30 años'
+        rows:
+          - 'Historia clínica y exploración general'
+          - 'Analítica'
+          - 'Electrocardiograma'
+          - 'Radiografía del tórax'
+          - 'Examen ginecológico con citología vaginal'
+          - 'Agudeza visual'
+          - 'Audiometría y espirometría'
+      column2:
+        title: ''
+        rows:
+          - ''
+          - ''
+          - ''
+          - ''
+          - ''
+      column3:
+        title: ''
+        rows:
+          - ''
+          - ''
+          - ''
+          - ''
+          - ''
+  hiring:
+    suptitle: '5 POR QUÉ CONTRATAR ESTE PRODUCTO'
+    title: 'Adeslas GO, mucho más que un seguro médico'
+    elements:
+      elem1:
+        title: '¿Para quién es Adeslas GO?'
+        text: 'Para personas o familias que deseen disfrutar de las comodidades de un seguro médico privado con asistencia ambulatoria, sin hospitalización, y al mejor precio. Personas que se preocupen por llevar un control de su estado de salud y acudan a algún especialista al año. La contratación de Adeslas Go te da acceso a los Servicios Adeslas Es Más, exclusivo de los asegurados Adeslas, como por ejemplo: - Criopreservación. - Medicinas Alternativas: Homeopatía, Osteopatía y Acupuntura - Orientación a embarazadas.'
+      elem2:
+        title: '¿Hay límite de edad para contratar Adeslas GO?'
+        text: '-Adeslas GO se puede contratar hasta los 70 años, aunque puede incluirse a personas mayores de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.-¿Y los menores? ¿Puedo contratar este servicio sólo para mis hijos?-Sí. Adeslas GO ofrece mejores tarifas a partir de 2 asegurados pero tiene una prima muy ventajosa para una persona sola, que puede ser un menor siempre que el tomador sea mayor de 18 años.'
+      elem3:
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: 'Adeslas GO permite el acceso a la asistencia ambulatoria desde el primer día y sin cuestionarios médicos. Existen carencias reducidas (de 3 meses) para pruebas diagnósticas de la más alta tecnología.'
+      elem4:
+        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
+        text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'

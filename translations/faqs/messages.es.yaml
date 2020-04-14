@@ -1,0 +1,19 @@
+faqs:
+  suptitle: 'FAQ''s'
+  title: 'Diccionario'
+  elems:
+    elem1:
+      title: '¿Qué es un copago?'
+      text: ''
+    elem2:
+      title: '¿Qué es el test médico previo?'
+      text: ''
+    elem3:
+      title: 'Qué son las carencias'
+      text: ''
+    elem4:
+      title: '¿Qué es una poliza? ¿Y una prima?'
+      text: ''
+    elem5:
+      title: '¿Puedo contratar una póliza si no tengo DNI o NIE?'
+      text: ''

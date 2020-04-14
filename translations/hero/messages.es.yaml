@@ -1,0 +1,15 @@
+hero:
+  slide1:
+    image: image.png
+    title: 'Salud'
+    text: 'Accede a más de 43.000 especialistas con la fórmula que mejor se adapte a lo que buscas'
+    cta:
+      text: 'Saber más'
+      path: '/algo'
+  slide2:
+    image: image.png
+    title: 'Salud'
+    text: 'Accede a más de 43.000 especialistas con la fórmula que mejor se adapte a lo que buscas'
+    cta:
+      text: 'Saber más'
+      path: '/algo'

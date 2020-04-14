@@ -29,6 +29,9 @@ products:
           mas5:
             name: 'mas5'
             path: 'mas5'
+          mas100:
+            name: 'mas100'
+            path: 'mas100'
   dental:
     name: 'dental'
     children:
