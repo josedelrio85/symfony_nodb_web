@@ -1,8 +1,26 @@
 import '../css/app.css';
 import 'bootstrap';
+import Swiper from 'swiper';
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
 document.addEventListener("DOMContentLoaded", function(event) {
+
+  // Swiper test
+  var mySwiper = new Swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
 
   let mainelements = document.getElementById('mainelements');
   let firstchildrens = document.getElementById('firstchildrens');
