@@ -2,10 +2,26 @@
 go:
   title: 'Adeslas GO. El seguro ideal para cuidarte y poder ir al médico que necesites sin esperas'
   subtitle1: 'La asistencia médica ambulatoria con mejores coberturas sin cuestionario médico.'
-  subtitle2: 'Acceso a los mejores especialistas cuando y como quieras'
-  text2: 'Con Adeslas GO te ofrecemos un chequeo anual completo adaptado a las necesidades médicas de tu edad y sexo para que conozcas en todo momento tu estado de salud. Podrás acceder a las consultas con especialistas que necesites cuando quieras, sin listas de espera y al horario que mejor te convenga. Y con un amplio abanico de coberturas.'
-  services:
-    suptitle: '2 Catálogo de servicios'
+  subtitle2: ''
+  #text2: 'Con Adeslas GO te ofrecemos un chequeo anual completo adaptado a las necesidades médicas de tu edad y sexo para que conozcas en todo momento tu estado de salud. Podrás acceder a las consultas con especialistas que necesites cuando quieras, sin listas de espera y al horario que mejor te convenga. Y con un amplio abanico de coberturas.'
+  price:
+    pre: 'Desde'
+    quantity: '16,50'
+    currency: '€'
+    period: '/mes'
+  bullets:
+    bullet1:
+      text: ''
+      subtext: ''
+    bullet2:
+      text: ''
+      subtext: ''
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  characteristics:
+    suptitle: 'Adeslas Go'
+    title: 'Acceso a los mejores especialistas cuando y como quieras'
     list:
       - 'Chequeo médico anual'
       - 'Medicina General y Pediatría'
@@ -32,7 +48,7 @@ go:
         text: 'Pago mensual y con descuentos'
         title: 'Adeslas GO te ofrece flexibilidad para pagar tu prima como desees. Puedes hacerlo cada mes. Si pagas por trimestre, tendrás un 2% de descuento; un 4%, por semestre y un 6% con el pago anual'
   info:
-    suptitle: '3 Más información sobre este producto'
+    suptitle: ''
     title: 'Una cobertura médica llena de ventajas'
     text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria y un servicio ideal para quien busca un seguro complementario para prevenir y aumentar las posibilidades de detectar y tratar rápidamente cualquier problema de salud. Podrás consultar con cualquier especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida con los servicios más frecuentemente utilizados'
     list:
@@ -73,7 +89,7 @@ go:
           - ''
           - ''
   hiring:
-    suptitle: '5 POR QUÉ CONTRATAR ESTE PRODUCTO'
+    suptitle: ''
     title: 'Adeslas GO, mucho más que un seguro médico'
     elements:
       elem1:

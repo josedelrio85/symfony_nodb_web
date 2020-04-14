@@ -1,0 +1,89 @@
+#adeslas_senior
+senior:
+  title: 'Adeslas Seniors. El único seguro médico para mayores de 65 con asesoría personalizada'
+  subtitle1: 'Plan de prevención adaptado a tu edad y copagos limitados '
+  subtitle2: ''
+  price:
+    pre: 'Desde'
+    quantity: '60'
+    currency: '€'
+    period: '/mes'
+  bullets:
+    bullet1:
+      text: 'Ahora Seguro Dental'
+      subtext: 'con 15% de descuento'
+    bullet2:
+      text: '10% de descuento'
+      subtext: 'a partir de 3 asegurados'
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  characteristics:
+    suptitle: ''
+    title: 'Un asesor personal de salud para cuidarte'
+    text: 'Adeslas Seniors es el único seguro diseñado para mayores de 65 años del mercado con una atención personalizada, amplias coberturas, adaptadas a tu edad y con copagos limitados. Desde el primer día tendrás un Asesor Personal en Salud, que en una primera visita te realizará un plan de acción personalizado para evaluar tu estado de salud. A partir de ahí, te asesorará para asegurarte la mejor atención con especialistas.'
+    properties:
+      prop0:
+        text: ''
+        title: 'Amplia cartera de servicios'
+      prop1:
+        text: ''
+        title: 'Descuentos'
+      prop2:
+        text: ''
+        title: 'Copagos limitados'
+      prop3:
+        text: ''
+        title: 'Calidad'
+      prop4:
+        text: ''
+        title: 'Flexibilidad en el pago y descuentos'
+      prop5:
+        text: ''
+        title: 'Tranquilidad, vayas donde vayas'
+  info:
+    suptitle: ''
+    title: 'Un plan a largo plazo para cuidarte'
+    text: 'Adeslas Seniors te ofrece un plan a largo plazo para ayudar a cuidar de tu salud y a vivir una jubilación tranquila y activa en la que no tengas que preocuparte de nada más. Accederás a todas las especialidades y tratamientos que necesites, como:'
+    list:
+      - 'Asistencia ambulatoria de todas las especialidades médicas.'
+      - 'Cirugía (General, Vascular para el tratamiento de varices, Urológica, etc.)'
+      - 'Hospitalización en habitación individual con cama para el acompañante'
+      - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
+      - 'Implantes y prótesis (internas) cardiovasculares, osteoarticulares y oftalmológicas.'
+      - 'Oncología'
+  hiring:
+    suptitle: ''
+    title: 'El seguro más completo y flexible'
+    elements:
+      elem1:
+        title: '¿Para quién es Adeslas Seniors?'
+        text: ''
+      elem2:
+        title: '¿Hay límite de edad para contratar Adeslas Seniors?'
+        text: ''
+      elem3:
+        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
+        text: ''
+      elem4:
+        title: '¿Por qué contratar un seguro médico Adeslas?'
+        text: ''
+      elem5: 
+        title: '¿Y si sufro un imprevisto y no puedo hacer frente a mi prima?'
+        text: ''
+  faqs: # solo si no va en particulares
+    suptitle: 'FAQ''s'
+    title: 'Términos de interés'
+    elems:
+      elem1:
+        title: 'Copagos'
+        text: ''
+      elem2:
+        title: 'Cuestionario Médico'
+        text: ''
+      elem3:
+        title: 'Carencias'
+        text: ''
+      elem4:
+        title: 'Poliza y prima'
+        text: ''
