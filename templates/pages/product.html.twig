@@ -16,7 +16,7 @@
   <h2>{{ "test.test2" | trans | raw }}</h2> #}
   {# {% include 'components/hero-slider/hero-slider.html.twig' %} #}
 
-  
+
   {# {% include 'components/product-selector/product-selector.html.twig' with {
     mainelements: mainelements,
     firstchildrens: firstchildrens,
@@ -24,47 +24,247 @@
    }
   %} #}
 
-    <div class="container mb-2">
-      <div class="row">
-        <div class="col-12">
-          <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <img class="w-100" src="https://via.placeholder.com/1920x500"/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-100" src="https://via.placeholder.com/1920x500"/>
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-100" src="https://via.placeholder.com/1920x500"/>
-                  </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
+  {# TODO: extraer todos los componentes a ficheros separados #}
+
+  {# Hero product component #}
+  <div class="container-fluid mb-5 px-0">
+    <div class="row">
+      <div class="col-12">
+        <img src="https://via.placeholder.com/1920x500" class="img-fluid" alt="Cabecera seguro embarazadas">
+      </div>
+    </div>
+  </div>
+  {# Hero product component #}
+
+  {# SupertitleTitleSubtitle component #}
+  <div class="container mb-2">
+    <div class="row">
+      <div class="col-12">
+        <p class="h6 text-primary text-left">
+          ADESLAS EMBARAZADAS
+        </p>
+        <h2 class="h1 text-left font-weight-bold">
+          La asistencia más cercana y profesional para que todo vaya bien
+        </h2>
+        <p>
+          Un seguro privado que cubre todas tus necesidades para que tu familia crezca de forma segura.
+        </p>
+      </div>
+    </div>
+  </div>
+  {# SupertitleTitleSubtitle component #}
+
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-6">
+        {# Minicard component #}
+        <div class="card">
+          <div class="card-body">
+            <p class="h1 text-primary font-weight-bold">2</p>
+            <p class="h5 text-primary font-weight-bold">Meses Gratis</p>
+            <p>Si contratas Dental.</p>
+          </div>
+        </div>
+        {# Minicard component #}
+      </div>
+      <div class="col-6">
+        {# Minicard component #}
+        <div class="card">
+          <div class="card-body">
+            <div class="card-body">
+            <p class="h1 text-primary font-weight-bold">10%</p>
+            <p class="h5 text-primary font-weight-bold">De Descuento</p>
+            <p>En pólizas con 4 o más asegurados.</p>
+          </div>
+          </div>
+        </div>
+        {# Minicard component #}
+      </div>
+    </div>
+  </div>
+
+  {# SupertitleTitleSubtitle component #}
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <p class="h6 text-primary text-left">
+          ADESLAS EMBARAZADAS
+        </p>
+        <h2 class="h1 text-left font-weight-bold">
+          Elige la fórmula que mejor se adapta a ti:
+        </h2>
+        <p>
+          Con Adeslas Plena y Adeslas Plena Vital tendrás una cobertura completa para 
+          todo aquello que puedas necesitar si estás pensando en tener familia, 
+          incluida la hospitalización en habitación individual con cama para el acompañante. 
+          Elige la fórmula que más te satisface:
+        </p>
+      </div>
+    </div>
+  </div>
+  {# SupertitleTitleSubtitle component #}
+
+  {# Product card component #}
+  <style>.list-group-item {border-bottom:0px;} .list-group-item i {color: #0097D7;} .transparent-button, .transparent-button:focus, .transparent-button:active {box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0);;background: transparent!important; color: #0097D7!important; border-color: transparent!important;}</style>
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="h1 font-weight-bold">Adeslas Plena Vital</h2>
+            <p class="h5 text-primary">Desde <span>35€</span>/mes</p>
+            <div class="border-top my-3"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0"><i class="icon icon-checkmark mx-2"></i>Todo lo relacionado con embarazo y parto</li>
+              <li class="list-group-item px-0"><i class="icon icon-checkmark mx-2"></i>Reproducción Asistida en condiciones especiales</li>
+              <li class="list-group-item px-0"><i class="icon icon-checkmark mx-2"></i>Habitación individual con cama para acompañante</li>
+            </ul>
+            <button type="button" class="btn btn-primary btn-lg btn-block mt-4 font-weight-bold">Llamadme</button>
+            {# <button type="button" class="btn btn-outline-secondary btn-lg btn-block font-weight-bold transparent-button">Saber más</button> #}
+            <a href="#"><p class="text-center py-4 font-weight-bold h5">Saber más</p></a>
           </div>
         </div>
       </div>
+    </div>
   </div>
+  {# Product card component #}
 
-  <div class="container mt-1 py-5">
+  {# Selector component #}
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <p class="h6 text-primary text-left">
+          DESTACADO
+        </p>
+        <h2 class="h1 text-left font-weight-bold">
+          Consulta nuestro cuadro médico
+        </h2>
+        <select class="form-control form-control-lg mt-3">
+          <option>Selecciona provincia</option>
+          <option>A Coruña</option>
+          <option>Lugo</option>
+          <option>Ourense</option>
+          <option>Pontevedra</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  {# Selector component #}
+
+  {# Divider line component #}
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="border-top"></div>
+      </div>
+    </div>
+  </div>
+  {# Divider line component #}
+
+  {# SupertitleTitleSubtitle component #}
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <p class="h6 text-primary text-left">
+
+        </p>
+        <h2 class="h1 text-left font-weight-bold">
+          ¿Quieres elegir a tu Ginecólogo o Pediatra?
+        </h2>
+        <p>
+          A los servicios previstos en Adeslas Plena y Adeslas Plena Plus podrás añadirle mejoras con nuestro módulo
+          complementario <a href="#">Plus Ginecología y pediatría</a> y <a href="#">obtener el reembolso del 80% del coste.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {# SupertitleTitleSubtitle component #}
+
+
+  {# FAQs component #}
+  <style>
+  .bg-grey {
+    background: #FAFAFA;
+  }
+  .accordion .card {
+    border: 0px;
+  }
+  .accordion .card-header:after {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    content: "\ea15";
+    float: right;
+    color: #0097D7;
+  }
+  .accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\ea14"; 
+  }
+
+
+</style>
+  <div class="container-fluid px-0 bg-grey py-5">
+    <div class="container mb-5">
       <div class="row">
-        <div class="col-12 col-md-6 p-3">
-          <h1 class="text-primary text-center">
-            <span class="icon icon-cart"></span> Header 1
-          </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac diam aliquet magna porttitor iaculis at vel massa. Mauris elit nisl, rhoncus vestibulum tellus quis, pretium mollis nunc. Curabitur suscipit sed quam id tempus. Cras ullamcorper faucibus leo non pulvinar. Aenean mollis orci velit, nec ultricies enim ultricies quis. Aliquam feugiat, est sit amet porta placerat, turpis dui suscipit metus, in vestibulum lorem mauris sed ante. Nam in ligula porttitor, placerat quam vel, maximus arcu. Integer auctor vel lacus et gravida.</p>
-          <p>Proin rutrum, mi nec sodales porta, sapien felis dapibus justo, et ultricies ex leo in elit. Duis interdum orci sit amet laoreet pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse non mauris elit. Donec lacinia nisi in ligula bibendum rhoncus. Donec ac augue eget ligula aliquet commodo. Donec quis facilisis mauris. Quisque in velit gravida, auctor sapien sed, vestibulum massa. Ut maximus, orci a mollis consequat, sapien nunc accumsan felis, quis congue felis libero laoreet elit. Morbi molestie eleifend pellentesque. Etiam quis consequat lectus, ut tempor urna.</p>
-        </div>
-        <div class="col-12 col-md-6 p-3">
-          <h1 class="text-info text-center">
-            <span class="icon icon-cart"></span> Header 2
-          </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac diam aliquet magna porttitor iaculis at vel massa. Mauris elit nisl, rhoncus vestibulum tellus quis, pretium mollis nunc. Curabitur suscipit sed quam id tempus. Cras ullamcorper faucibus leo non pulvinar. Aenean mollis orci velit, nec ultricies enim ultricies quis. Aliquam feugiat, est sit amet porta placerat, turpis dui suscipit metus, in vestibulum lorem mauris sed ante. Nam in ligula porttitor, placerat quam vel, maximus arcu. Integer auctor vel lacus et gravida.</p>
-          <p>Proin rutrum, mi nec sodales porta, sapien felis dapibus justo, et ultricies ex leo in elit. Duis interdum orci sit amet laoreet pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse non mauris elit. Donec lacinia nisi in ligula bibendum rhoncus. Donec ac augue eget ligula aliquet commodo. Donec quis facilisis mauris. Quisque in velit gravida, auctor sapien sed, vestibulum massa. Ut maximus, orci a mollis consequat, sapien nunc accumsan felis, quis congue felis libero laoreet elit. Morbi molestie eleifend pellentesque. Etiam quis consequat lectus, ut tempor urna.</p>
+        <div class="col-12">
+          <p class="h6 text-primary text-left">
+            FAQ's
+          </p>
+          <h2 class="h1 text-left font-weight-bold">
+            Diccionario
+          </h2>
+          <div id="accordion" class="accordion">
+            <div class="card mb-0">
+              <div class="card-header collapsed py-4 bg-grey px-0" data-toggle="collapse" href="#collapse1">
+                <a class="card-title font-weight-bold h5"> ¿Qué es un copago?</a>
+              </div>
+              <div id="collapse1" class="card-body bg-grey collapse" data-parent="#accordion">
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
+              </div>
+              <div class="border-top my-0 bg-grey"></div>
+              <div class="card-header collapsed py-4 bg-grey px-0" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                <a class="card-title font-weight-bold h5"> ¿Qué es el test médico previo? </a>
+              </div>
+              <div id="collapse2" class="card-body bg-grey collapse" data-parent="#accordion">
+                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
+              </div>
+              <div class="border-top my-0 bg-grey"></div>
+              <div class="card-header collapsed py-4 bg-grey px-0" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                <a class="card-title font-weight-bold h5"> ¿Qué son las carencias? </a>
+              </div>
+              <div id="collapse3" class="collapse" data-parent="#accordion">
+                <div class="card-body bg-grey">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS. </div>
+              </div>
+              <div class="border-top my-0 bg-grey"></div>
+              <div class="card-header collapsed py-4 bg-grey px-0" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                <a class="card-title font-weight-bold h5"> ¿Qué es una póliza? ¿Y una prima? </a>
+              </div>
+              <div id="collapse4" class="collapse" data-parent="#accordion">
+                <div class="card-body bg-grey">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS. </div>
+              </div>
+              <div class="border-top my-0 bg-grey"></div>
+              <div class="card-header collapsed py-4 bg-grey px-0" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                <a class="card-title font-weight-bold h5"> ¿Puedo contratar una póliza si no tengo DNI o NIE? </a>
+              </div>
+              <div id="collapse5" class="collapse" data-parent="#accordion">
+                <div class="card-body bg-grey">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS. </div>
+              </div>
+              <div class="border-top my-0 bg-grey"></div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
   </div>
+  {# FAQs component #}
 
 {% endblock %}
