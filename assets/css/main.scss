@@ -1,8 +1,6 @@
-// import here scss resources
-.test{
-  background:red;
-}
-
-.hidden {
-  display: none;
-}
+@import "fonts/icomoon";
+@import "fonts/apex";
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+// @import "type";
+@import "~swiper/css/swiper.min";
