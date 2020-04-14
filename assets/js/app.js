@@ -1,4 +1,5 @@
 import '../css/app.css';
+import 'bootstrap';
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
 document.addEventListener("DOMContentLoaded", function(event) {
