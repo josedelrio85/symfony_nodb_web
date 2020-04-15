@@ -111,6 +111,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         cv.classList.add('d-none');
       }
     });
+
+    scdivs.forEach((cv, ci, listObj) => {
+      if (!cv.classList.contains('d-none')){
+        cv.classList.add('d-none');
+      }
+    });
   }
 
   // let launch = document.querySelectorAll('.launch');
