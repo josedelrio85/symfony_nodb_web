@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
 
-  document.querySelector('.product-button').addEventListener('click', (event) => {
-    fullScreenConfig.classList.add('active');
-  });
+  document.querySelectorAll('.product-button').forEach(item => {
+    item.addEventListener('click', event => {
+      fullScreenConfig.classList.add('active');
+    })
+  })
 
   closeButton.addEventListener('click', (event) => {
     fullScreenConfig.classList.remove('active');
