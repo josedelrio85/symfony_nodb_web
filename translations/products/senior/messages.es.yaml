@@ -28,7 +28,7 @@ senior:
     title: 'Un asesor personal de salud para cuidarte'
     text: 'Adeslas Seniors es el único seguro diseñado para mayores de 65 años del mercado con una atención personalizada, amplias coberturas, adaptadas a tu edad y con copagos limitados. Desde el primer día tendrás un Asesor Personal en Salud, que en una primera visita te realizará un plan de acción personalizado para evaluar tu estado de salud. A partir de ahí, te asesorará para asegurarte la mejor atención con especialistas.'
     drop:
-      drop1:
+      drop0:
         text: ''
         title: 'Amplia cartera de servicios'
       drop1:

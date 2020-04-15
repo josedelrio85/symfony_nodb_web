@@ -22,7 +22,7 @@ plena_extra:
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Atención plena, vayas donde vayas'
     text: 'Adeslas Plena Extra te abre la puerta a los mejores servicios de un seguro médico privado de calidad. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas de alta tecnología y asistencia a domicilio tanto en España como en cualquier país del extranjero  Entre ellos:'
-    list: ''
+    list:
       - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular, Oncológica).'
       - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
       - 'Planes de Prevención en Pediatría, Obstetricia y Ginecología, Cardiología o Urología.'

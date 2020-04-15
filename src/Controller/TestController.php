@@ -15,12 +15,12 @@ class TestController extends AbstractController {
     // $test = $translator->trans("go");
     // dump($test);die();
 
-    // $product = "tuputamadre";
-    $product = "go";
+    $product = "plena";
+    // $product = "go";
 
     return $this->render('pages/test.html.twig', [
       'translator' => $translator,
-      'key' => $product,
+      'product' => $product,
       // 'pepe' => $test,
     ]);
   }
