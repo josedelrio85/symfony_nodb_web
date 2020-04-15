@@ -1,0 +1,115 @@
+#adeslas_plena_extra
+plena_extra:
+  hero:
+    title: 'Adeslas Plena Extra 150. Asistencia médica de altas prestaciones para escoger a quién te cuida'
+    subtitle: 'Libre elección de especialista en cualquier parte del mundo '
+  price_with_details:
+    price:
+      pre: 'Desde'
+      quantity: '79'
+      currency: '€'
+      period: '/mes'
+    bullets:
+      bullet1:
+        text: '2 meses gratis'
+        subtext: 'con Dental'
+      bullet2:
+        text: '10% de descuento'
+        subtext: 'a partir de 4 asegurados'
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  bullets:
+    suptitle: 'Atención plena, vayas donde vayas'
+    text: 'Adeslas Plena Extra te abre la puerta a los mejores servicios de un seguro médico privado de calidad. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas de alta tecnología y asistencia a domicilio tanto en España como en cualquier país del extranjero  Entre ellos:'
+    list: ''
+      - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular, Oncológica).'
+      - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
+      - 'Planes de Prevención en Pediatría, Obstetricia y Ginecología, Cardiología o Urología.'
+      - 'Asistencia para trasplantes.'
+      - 'Implantes y prótesis (internas) cardiovasculares, osteoarticulares y oftalmológicas.'
+      - 'Tratamientos especiales (Laserterapia, logopedia y foniatría, tratamiento del dolor, ondas de choque).'
+      - 'Pruebas prenatales, preparación y asistencia del parto y recuperación postparto.'
+      - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
+      - 'Tratamiento quirúrgico por láser de hiperplasia benigna de próstata (láser verde). Acelerador lineal de partículas.'
+      - 'Cirugía Quimioterápica.'
+      - 'Litotricia Renal y diálisis'
+  des_with_dropdown:
+    suptitle: ''
+    title: 'Los más amplios servicios de salud, a tu alcance'
+    text: 'Adeslas Plena Extra 150 es mucho más que un seguro médico privado, es un traje a medida. Con esta póliza  podrás elegir entre la cobertura global del cuadro médico Adeslas, el mejor y más amplio del país, con 43.000 profesionales o elegir con absoluta libertad al profesional que desees consultar en cualquier país del mundo. '
+    drop:
+      drop0:
+        text: ''
+        title: 'Total flexibilidad'
+      drop1:
+        text: ''
+        title: 'Descuentos'
+      drop2:
+        text: ''
+        title: 'Calidad'
+      drop3:
+        text: ''
+        title: 'Copagos limitados'
+      drop4:
+        text: ''
+        title: 'Pago mensual y descuentos'
+      drop5:
+        text: ''
+        title: 'Pruebas sin autorización'
+  desc_with_bullets:
+    suptitle: ''
+    title: ''
+    text: ''
+    list: null
+  desc:
+    title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
+    text: 'Además de todas las coberturas incluidas en Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
+  dropdown:
+    suptitle: ''
+    title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
+    text: 'Además de todas las coberturas incluidas en Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
+    drop:
+      drop1:
+        title: '¿Para quién es Adeslas Plena Extra 150?'
+        text: ''
+      drop2:
+        title: '¿Hay límite de edad para contratar Adeslas Plena Extra 150?'
+        text: ''
+      drop3:
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: ''
+      drop4:
+        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
+        text: ''
+      drop5: 
+        title: '¿Puedo contratar este servicio sólo para mis hijos?'
+        text: ''
+      drop6:
+        title: '¿Qué cobertura tengo si estoy embarazada?'
+        text: ''
+      drop7:
+        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
+        text:
+      drop8:
+        title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
+        text: ''
+      drop9: 
+        title: '¿Existen límites económicos para Adeslas Plena Extra 150?'
+        text: ''
+  faq:    # solo si no va en particulares
+    suptitle: 'FAQ''s'
+    title: 'Términos de interés'
+    elems:
+      faq1:
+        title: 'Copagos'
+        text: ''
+      faq2:
+        title: 'Cuestionario Médico'
+        text: ''
+      faq3:
+        title: 'Carencias'
+        text: ''
+      faq4:
+        title: 'Poliza y prima'
+        text: ''

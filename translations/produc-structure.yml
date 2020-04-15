@@ -1,0 +1,66 @@
+# - hero
+# - price_with_details
+# - bullets (bullets only)
+# - des_with_dropdown (desc + dropdowns)
+# - desc_with_bullets (desc + bullets)
+# - desc
+# - dropdowns
+# - faq's
+
+algo:
+  hero:
+    title: ''
+    subtitle: ''
+  price_with_details:
+    price:
+      pre: 'Desde'
+      quantity: ''
+      currency: '€'
+      period: '/mes'
+    bullets:
+      bullet1:
+        text: ''
+        subtext: ''
+      bullet2:
+        text: ''
+        subtext: ''
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  bullets:
+    suptitle: ''
+    title: ''
+    list: 
+      - ''
+  des_with_dropdown:
+    suptitle: ''
+    title: ''
+    text: ''
+    drop:
+      drop1:
+        title: ''
+        text: ''
+  desc_with_bullets:
+    suptitle: ''
+    title: ''
+    text: ''
+    list:
+      -
+  desc:
+    title: ''
+    text: ''
+  dropdown:
+    suptitle: ''
+    title: ''
+    text: ''
+    drop:
+      drop1:
+        title: ''
+        text: ''
+  faq:    # solo si no va en particulares
+    suptitle: ''
+    title: ''
+    elems:
+      faq1:
+        title: ''
+        text: ''

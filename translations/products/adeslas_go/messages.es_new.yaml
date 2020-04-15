@@ -1,0 +1,109 @@
+#adeslas_go_product
+go:
+  hero:
+    title: 'Adeslas GO. El seguro ideal para cuidarte y poder ir al médico que necesites sin esperas'
+    subtitle: 'La asistencia médica ambulatoria con mejores coberturas sin cuestionario médico.'
+  price_with_details:
+    price:
+      pre: 'Desde'
+      quantity: '16,50'
+      currency: '€'
+      period: '/mes'
+    bullets:
+      bullet1:
+        text: ''
+        subtext: ''
+      bullet2:
+        text: ''
+        subtext: ''
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  bullets:
+    suptitle: 'Adeslas Go'
+    title: 'Acceso a los mejores especialistas cuando y como quieras'
+    list:
+      - 'Chequeo médico anual'
+      - 'Medicina General y Pediatría'
+      - 'Urgencias ambulatorias'
+      - 'Especialistas'
+      - 'Pruebas diagnósticas en consulta'
+      - 'Psicoterapia'
+      - 'Preparación al Parto'
+      - 'Podología (12 sesiones/año), etc.'
+  des_with_dropdown:
+    suptitle: ''
+    title: ''
+    text: ''
+    drop:
+      drop1:
+        title: ''
+        text: ''
+  desc_with_bullets:
+    suptitle: ''
+    title: 'Una cobertura médica llena de ventajas'
+    text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria y un servicio ideal para quien busca un seguro complementario para prevenir y aumentar las posibilidades de detectar y tratar rápidamente cualquier problema de salud. Podrás consultar con cualquier especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida con los servicios más frecuentemente utilizados'
+    list:
+      - 'Pruebas prenatales y preparación al parto'
+      - 'Psicoterapia'
+      - 'Podología'
+      - 'Medicina general y especialidades'
+      - 'Medios de diagnóstico de alta tecnología'
+      - 'Test de ADN fetal en sangre materna'
+      - 'DIU: Dispositivo y colocación'
+      - 'Orientación y segunda opinión médica'
+  desc:
+    title: ''
+    text: 'Cuando contrates tu póliza tendrás acceso a un chequeo médico anual adaptado a las necesidades de tu edad con las siguientes pruebas:'
+  dropdown:
+    suptitle: ''
+    title: ''
+    text: ''
+    drop:
+      drop1:
+        title: '¿Para quién es Adeslas GO?'
+        text: 'Para personas o familias que deseen disfrutar de las comodidades de un seguro médico privado con asistencia ambulatoria, sin hospitalización, y al mejor precio. Personas que se preocupen por llevar un control de su estado de salud y acudan a algún especialista al año. La contratación de Adeslas Go te da acceso a los Servicios Adeslas Es Más, exclusivo de los asegurados Adeslas, como por ejemplo: - Criopreservación. - Medicinas Alternativas: Homeopatía, Osteopatía y Acupuntura - Orientación a embarazadas.'
+      drop2:
+        title: '¿Hay límite de edad para contratar Adeslas GO?'
+        text: '-Adeslas GO se puede contratar hasta los 70 años, aunque puede incluirse a personas mayores de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.-¿Y los menores? ¿Puedo contratar este servicio sólo para mis hijos?-Sí. Adeslas GO ofrece mejores tarifas a partir de 2 asegurados pero tiene una prima muy ventajosa para una persona sola, que puede ser un menor siempre que el tomador sea mayor de 18 años.'
+      drop3:
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: 'Adeslas GO permite el acceso a la asistencia ambulatoria desde el primer día y sin cuestionarios médicos. Existen carencias reducidas (de 3 meses) para pruebas diagnósticas de la más alta tecnología.'
+      drop4:
+        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
+        text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'
+  faq:    # solo si no va en particulares
+    suptitle: ''
+    title: ''
+    elems:
+      faq1:
+        title: ''
+        text: ''
+  extra:
+    table:
+      column1:
+        title: 'De 18 a 30 años'
+        rows:
+          - 'Historia clínica y exploración general'
+          - 'Analítica'
+          - 'Electrocardiograma'
+          - 'Radiografía del tórax'
+          - 'Examen ginecológico con citología vaginal'
+          - 'Agudeza visual'
+          - 'Audiometría y espirometría'
+      column2:
+        title: ''
+        rows:
+          - ''
+          - ''
+          - ''
+          - ''
+          - ''
+      column3:
+        title: ''
+        rows:
+          - ''
+          - ''
+          - ''
+          - ''
+          - ''

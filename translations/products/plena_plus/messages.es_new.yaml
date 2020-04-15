@@ -1,0 +1,139 @@
+#plena_plus_embarazadas
+plena_plus:
+  hero:
+    title: 'Adeslas Plena Plus'
+    subtitle1: 'Un cuadro médico con 43.000 especialistas a tu disposición sin copagos'
+  price_with_details:
+    price:
+      pre: 'Desde'
+      quantity: '55'
+      currency: '€'
+      period: '/mes'
+    bullets:
+      bullet1:
+        text: '2 meses gratis'
+        subtext: 'con Dental'
+      bullet2:
+        text: '10% de descuento'
+        subtext: 'a partir de 4 asegurados'
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  bullets:
+    suptitle: 'Adeslas Plena Plus'
+    title: 'Caracteristicas'
+    list_embarazadas:
+      - 'Pruebas prenatales'
+      - 'Test de ADN fetal en sangre materna'
+      - 'Preparación al parto'
+      - 'Reproducción asistida en condiciones especiales'
+      - 'Asistencia al parto y cuidados postparto'
+      - 'Asistencia en cuidados de puericultura'
+      - 'Revisiones ginecológicas y de obstetricia'
+      - 'Teléfono 24 horas de asistencia a la embarazada'
+      - 'Medicina general, Especialistas y Pediatría'
+      - 'Medios, diagnósticos de Alta Tecnología'
+      - 'Criopresrvación de células madre y embrionarias'
+      - 'Copagos limitados'
+  desc_with_dropdown:
+    suptitle: 'Cobertura Plus'
+    title: 'Garantía Total'
+    text: 'Adeslas Plena Plus es el seguro médico más global ...'
+    drop_embarazadas:
+      drop1:
+        title: 'Descuentos'
+        text: ''
+      drop2:
+        title: 'Sin Copagos'
+        text: 'Pruebas sin autorización'
+      drop3:
+        title: 'Calidad'
+        text:
+      drop4:
+        title: 'flexibilidad en el pago y descuentos'
+        text: ''
+    drop_particulares:
+      drop1:
+        title: 'Descuentos'
+        text: ''
+      drop2:
+        title: 'Sin Copagos'
+        text: ''
+      drop3:
+        title: 'Calidad'
+        text:
+      drop4:
+        title: 'flexibilidad en el pago y descuentos'
+        text: ''
+      drop5:
+        title: 'Pruebas sin autorización'
+        text: ''
+      drop6:
+        title: 'Asistencia inmediata'
+        text: ''
+  desc_with_bullets:
+    suptitle: 'Cobertura Plus'
+    title: 'La mejor fórmula de cuidar la salud de tu familia'
+    text: 'Adeslas Plena Plus te abre la puerta ....'
+    list:
+      - 'Cobertura total del embarazo'
+      - 'Planificación familiar (incluido DIU e implantación)'
+      - 'hospitalización médica, quirúrgica, pediátrica, psiquiátrica, UVI, etc'
+      - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular)'
+      - 'Planes de Medicina Preventiva en Pediatría, Ginecología, Cardiología o Urología'
+      - 'Implantes y prótesis (internas) cardivasculares, osteoarticulares y oftalmológicas'
+      - 'Tratamientos especiales (Laserterapia, logopedia, tratamiento del dolor, etc)'
+      - 'Fisioterapia y podología bajo reembolso de gastos por valor de 500 y 200 euros'
+      - 'Medicina general, Especialistas y Pediatría'
+      - 'Medios, diagnósticos de Alta Tecnología'
+      - 'Criopresrvación de células madre y embrionarias'
+      - 'Copagos limitados'
+    image: image.png
+  desc:
+    title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
+    text: 'Además de todas las coberturas....'
+  dropdown:
+    suptitle: 'Ventajas'
+    title: 'Un seguro cargado de ventajas'
+    text: ''
+    drop:
+      drop1:
+        title: '¿Para quién es Adeslas Plena Plus?'
+        text: ''
+      drop2:
+        title: '¿Hay límite de edad para contratar Adeslas Plena Plus?'
+        text: ''
+      drop3:
+        title: '¿Puedo contratar este servicio solo para mis hijos?'
+        text:
+      drop4:
+        title: '¿Puedo contratar Adeslas Plena si no tengo DNI o NIE?'
+        text: ''
+      drop5:
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: ''
+      drop6:
+        title: 'Cuánto pagaré si contrato mi póliza y un seguro dental?'
+        text: ''
+      drop7:
+        title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
+        text: ''
+    image: image.png
+  faq:
+    # solo si no va en particulares
+    suptitle: 'FAQ''s'
+    title: 'Términos de interés'
+    elems:
+      faq1:
+        title: 'Copagos'
+        text: ''
+      faq2:
+        title: 'Cuestionario Médico'
+        text: ''
+      faq3:
+        title: 'Carencias'
+        text: ''
+      faq4:
+        title: 'Poliza y prima'
+        text: ''
+  
