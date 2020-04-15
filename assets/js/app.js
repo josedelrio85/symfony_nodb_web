@@ -8,91 +8,110 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
 
-  document.querySelectorAll('.product-button').forEach(item => {
-    item.addEventListener('click', event => {
-      fullScreenConfig.classList.add('active');
-    })
-  })
-
-  closeButton.addEventListener('click', (event) => {
-    fullScreenConfig.classList.remove('active');
-  });
-
-  let mainelements = document.querySelector('.fullscreen-product-config #mainelements');
-  let firstchildrens = document.querySelector('.fullscreen-product-config #firstchildrens');
+  let mainelements = document.querySelector('#mainelements');
+  let firstchildrens = document.querySelector('#firstchildrens');
   let secondchildrens = document.getElementById('secondchildrens');
+  let backvalue = null;
 
-  let productdivs = document.querySelectorAll('.product-button');
+  let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
-      // be careful when more elements are added to the card, maybe the id is not caputred properly
-      let id = event.target.parentNode.id;
 
-      // hide mainelements div
-      mainelements.classList.add('d-none');
+      fullScreenConfig.classList.add('active');
 
       // show first childrens div
       firstchildrens.classList.remove('d-none');
 
+      // be careful when more elements are added to the card, maybe the id is not caputred properly
+      let id = null;
+      if(event.target.nodeName === 'H5' || event.target.nodeName === "SPAN") {
+        id = event.target.parentNode.parentNode.id;
+      } else if(event.target.classList.contains('inner')){
+        id = event.target.parentNode.id;
+      } else {
+        id = event.target.id;
+      }
+
       // get id suffix to know what first child must show
       let childrenid = id.replace('product-','');
-      document.querySelector('.fullscreen-product-config ' + '#fc-' + childrenid).classList.remove('d-none');
+      // childrenid = salud | dental | mascotas | decesos
+      document.getElementById('fc-' + childrenid).classList.remove('d-none');
     });
   })
 
-  let fcdivs = document.querySelectorAll('.fullscreen-product-config *[id^="fc-"]');
+  let fcdivs = document.querySelectorAll('*[id^="fc-"]');
   fcdivs.forEach((cv, ci, listObj) => {
-    cv.addEventListener('click', (event) => {
-      // be careful when more elements are added to the card, maybe the id is not caputred properly
+      cv.addEventListener('click', (event) => {
+        // get id of element clicked
+        let idfc = null;
+        if(event.target.nodeName === "H5") {
+          idfc = event.target.parentNode.parentNode.id;
+        } else if(event.target.classList.contains("justify-content-between")){
+          idfc = event.target.parentNode.id;
+        } else {
+          idfc = event.target.id;
+        }
 
-      // get id suffix to know what second child must show
-      let idfc = event.target.parentNode.id;
-      let secondchildrenid = idfc.replace('sc-','');
+        let secondchildrenelement = document.getElementById('sc-' + idfc);
+        // console.log(secondchildrenelement);
+        if(secondchildrenelement != null){
+          // hide firstchildrens div
+          firstchildrens.classList.add('d-none');
+          // show secondchildrens div
+          secondchildrens.classList.remove('d-none');
+          // show elements of secondchildren div too
+          secondchildrenelement.classList.remove('d-none');
+          
+          backvalue = 'sc-' + idfc;
+        }
+    });
+  })
 
-      let secondchildrenelement = document.getElementById('sc-' + secondchildrenid);
-      if(secondchildrenelement != null){
-
-        document.querySelectorAll('.fullscreen-product-config *[id^="fc-"]').classList.add('d-none');
 
 
-        // document.querySelector('.fullscreen-product-config ' + '#fc-' + secondchildrenid).classList.add('d-none');
+  closeButton.addEventListener('click', (event) => {
+    reset();
+  });
 
-        // // hide firstchildrens div
-        // firstchildrens.classList.add('d-none');
+  let scdivs = document.querySelectorAll('*[id^="sc-"]');
 
-        // // show secondchildrens div
-        // secondchildrens.classList.remove('d-none');
+  let back = document.getElementById('back');
+  back.addEventListener('click', (event) => {
 
-        // // show elements of secondchildren div too
-        // secondchildrenelement.classList.remove('d-none');
+    if (backvalue == null){
+      reset();
+      return
+    }
+    // console.log(backvalue);
+
+    if (backvalue.includes('sc-')){
+      // back to firstchildren, hide secondchildren
+      secondchildrens.classList.add('d-none');
+      // hide elements of secondchildren
+      scdivs.forEach((cv, ci, listObj) => {
+        cv.classList.add('d-none');
+      });
+
+      // show firstchildren
+      firstchildrens.classList.remove('d-none');
+
+      backvalue = null;
+    }
+  });
+
+  function reset() {
+    fullScreenConfig.classList.remove('active');
+
+    // hide all elements
+    firstchildrens.classList.add('d-none');
+    secondchildrens.classList.add('d-none');
+
+    fcdivs.forEach((cv, ci, listObj) => {
+      if (!cv.classList.contains('d-none')){
+        cv.classList.add('d-none');
       }
     });
-  })
-
-  // let back = document.querySelectorAll('*[id^="back-"]');
-  // back.forEach((cv, ci, listObj) => {
-  //   cv.addEventListener('click', (event) => {
-
-  //     let parentNode = event.target.parentNode;
-  //     if(parentNode.id === "firstchildrens"){
-  //       // if parentNode is firstchildrens, show mainelements
-  //       mainelements.classList.remove('d-none');
-  //     } else if (parentNode.id === "secondchildrens") {
-  //       // if parentNode is secondchildrens, show firstchildrens
-  //       firstchildrens.classList.remove('d-none');
-  //     }
-
-  //     let test = parentNode.id;
-  //     document.getElementById(test).classList.add('d-none');
-
-  //     // hide all elementos of actual node except back-X
-  //     for (let item of parentNode.children) {
-  //       if(!item.id.includes('back-')){
-  //         item.classList.add('d-none');
-  //       }
-  //     }
-  //   });
-  // })
+  }
 
   // let launch = document.querySelectorAll('.launch');
   // launch.forEach((cv, ci, listObj) => {

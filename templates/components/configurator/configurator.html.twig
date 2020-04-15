@@ -1,37 +1,39 @@
 <div id="product-configuration-section" class="col-12 p-0">
     <div class="row p-0">
-        <div class="col-12 p-3">
-        <h6 class="mini-header">Configurador</h6>
-        <h2 class="text-header">¿Qué tipo de seguro está buscando?</h2>
-        <p>Descubre el seguro que mejor se adapta a tus necesidades</p>
-        </div>
+      <div class="col-12 p-3">
+      <h6 class="mini-header">Configurador</h6>
+      <h2 class="text-header">¿Qué tipo de seguro está buscando?</h2>
+      <p>Descubre el seguro que mejor se adapta a tus necesidades</p>
+      </div>
     </div>
     <div class="col-12 p-0">
-        {% include 'components/product-selector/product-selector.html.twig' with {
-            mainelements: mainelements,
-            firstchildrens: firstchildrens,
-            secondChildrens: secondChildrens
+      {% include 'components/product-selector/product-selector-main.html.twig' with {
+          mainelements: mainelements
         }
-        %}
+      %}
     </div>
 </div>
 
 <div class="fullscreen-product-config">
     <div class="close-button">
-        <span class="icon-cancel-circle h2 m-0"></span>
+      <span class="icon-cancel-circle h2 m-0"></span>
     </div>
+    
+    <div id="back" class="back-button">
+      <span class="icon-cancel-circle h2 m-0">back</span>
+    </div>
+
     <div class="product-config container">
-        <div class="mb-4">
-        <h3 class="mini-header">Salud</h3>
-        <h2 class="text-header">Buscas un seguro de salud para...</h3>
-        </div>
-        <div class="container button-container product-selector p-0">
-            {% include 'components/product-selector/product-selector.html.twig' with {
-                mainelements: mainelements,
-                firstchildrens: firstchildrens,
-                secondChildrens: secondChildrens
-            }
-            %}
-        </div>
-    </div>
+      <div class="mb-4">
+      <h3 class="mini-header">Salud</h3>
+      <h2 class="text-header">Buscas un seguro de salud para...</h3>
+      </div>
+      <div class="container button-container product-selector p-0">
+        {% include 'components/product-selector/product-selector.html.twig' with {
+            firstchildrens: firstchildrens,
+            secondChildrens: secondChildrens
+          }
+        %}
+      </div>
+  </div>
 </div>
