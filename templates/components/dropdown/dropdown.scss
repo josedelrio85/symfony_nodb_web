@@ -1,7 +1,10 @@
-#faqs {
-  &.bg-grey, .card-header, .card-body {
-    background: #FAFAFA;
+#dropdown {
+
+  .header-titles > .row > div {
+    padding-left: 0px;
+    padding-right: 0px;
   }
+
   .accordion .card {
     border: 0px;
   }
@@ -24,4 +27,10 @@
     /* symbol for "collapsed" panels */
     content: "\ea14"; 
   }
+
+
+}
+
+.bg-grey {
+  background: #FAFAFA;
 }

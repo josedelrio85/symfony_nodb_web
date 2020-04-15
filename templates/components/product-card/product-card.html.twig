@@ -1,0 +1,10 @@
+<div class="card product-card mb-4">
+  <div class="card-body">
+    <h2 class="h1 text-primary font-weight-bold">{{ item.product_title }}</h2>
+    <p class="h5 text-primary d-flex price"><span class="price-from mt-2">Desde</span><span class="price-num mx-2">{{ item.product_price }}</span> <span class="euro-symbol"> €</span>/mes</p>
+    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 3, padding_x: 0} %}
+    {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: item.product_features } %}
+    <button type="button" class="btn btn-primary btn-lg btn-block mt-4 font-weight-bold">Llamadme</button>
+    <a href="{{ item.product_url }}"><p class="text-center py-4 font-weight-bold h5">Saber más</p></a>
+  </div>
+</div>
