@@ -1,0 +1,13 @@
+.bullet-list {
+  .list-group-item {
+    border-bottom:0px;
+  }
+  .list-group-item i {
+    color: #0097D7;
+  }
+  .transparent-button, .transparent-button:focus, .transparent-button:active {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0);
+    background: transparent!important; color: #0097D7!important;
+    border-color: transparent!important;
+  }
+}
