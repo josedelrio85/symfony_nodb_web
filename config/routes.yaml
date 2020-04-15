@@ -143,3 +143,6 @@ dental_familia:
 test:
    path: /test
    controller: App\Controller\TestController::index
+single-product:
+   path: single-product
+   controller: App\Controller\SingleProductController::index
