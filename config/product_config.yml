@@ -1,6 +1,7 @@
 products:
   salud:
     name: 'salud'
+    steps: 3
     children:
       familia:
         name: 'familia'
@@ -31,6 +32,7 @@ products:
             path: 'mas5'
   dental:
     name: 'dental'
+    steps: 2
     children:
       cobdental:
         name: 'cobdental'
@@ -42,6 +44,7 @@ products:
         children:
   mascotas:
     name: 'mascotas'
+    steps: 2
     children:
       mascotas:
         name: 'mascotas'
@@ -49,6 +52,7 @@ products:
         children:
   decesos:
     name: 'decesos'
+    steps: 2
     children:
       decesos:
         name: 'decesos'

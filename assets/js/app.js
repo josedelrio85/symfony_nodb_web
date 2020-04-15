@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       // get id suffix to know what first child must show
       let childrenid = id.replace('product-','');
+      let steps = document.getElementById('steps-' + childrenid).value;
+      
       // childrenid = salud | dental | mascotas | decesos
       document.getElementById('fc-' + childrenid).classList.remove('d-none');
     });
