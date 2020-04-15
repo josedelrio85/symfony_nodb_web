@@ -1,0 +1,15 @@
+// Typography styles
+
+.text-header {
+    font-family: $headers-font-family;
+}
+
+.mini-header {
+    color: $primary;
+    font-weight: $mini-header-font-weight;
+    font-family: $font-family-base-apex;
+    font-size: $mini-header-font-size;
+    line-height: $mini-header-line-height;
+    text-transform: $mini-header-text-transform;
+}
+
