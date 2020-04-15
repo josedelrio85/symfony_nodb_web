@@ -8,10 +8,10 @@
 # - faq's
 
 algo:
-  hero:
+  hero: # 1
     title: ''
     subtitle: ''
-  price_with_details:
+  price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
       quantity: ''
@@ -27,12 +27,12 @@ algo:
     cta:
       text: 'Llamadme'
       path: '/path'
-  bullets:
+  bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: ''
     title: ''
     list: 
       - ''
-  des_with_dropdown:
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: ''
     text: ''
@@ -40,16 +40,16 @@ algo:
       drop1:
         title: ''
         text: ''
-  desc_with_bullets:
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: ''
     text: ''
     list:
       -
-  desc:
+  desc: # 6 titulo + descripcion
     title: ''
     text: ''
-  dropdown:
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: ''
     text: ''
@@ -57,7 +57,7 @@ algo:
       drop1:
         title: ''
         text: ''
-  faq:    # solo si no va en particulares
+  faq:    # 8 FAQ'S solo si no va en particulares
     suptitle: ''
     title: ''
     elems:

@@ -1,9 +1,9 @@
 #adeslas_plena
 plena:
-  hero:
+  hero: # 1
     title: 'Adeslas Plena: Disfruta de una asistencia médica completa con copagos reducidos'
     subtitle: ''
-  price_with_details:
+  price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
       quantity: '45'
@@ -19,7 +19,7 @@ plena:
     cta:
       text: 'Llamadme'
       path: '/path'
-  bullets:
+  bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: ''
     title: 'La cobertura global que necesitas para garantizar la salud de tu familia'
     list: 
@@ -31,7 +31,7 @@ plena:
       - 'Urgencias'
       - 'Hospitalización y cirugía'
       - 'Tratamientos especiales'
-  des_with_dropdown:
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: ''
     text: 'Adeslas Plena es un seguro médico que incluye asistencia sanitaria ambulatoria y hospitalaria con acceso a todas las especialidades de Medicina General y Pediatría.Una cobertura completa con el mejor cuadro médico para disfrutar de la vida con la tranquilidad de que tu salud y la de tu familia está en las mejores manos. Adeslas Plena es el seguro privado de salud que te garantiza la asistencia ambulatoria con el acceso a todos los especialistas que necesites y la atención hospitalaria en habitación individual con cama para el acompañante.Incluye entre otros:'
@@ -51,7 +51,7 @@ plena:
       drop5:
         text: 'Pruebas sin autorización'
         title: ''
-  desc_with_bullets:
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
     text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios, con asistencia ambulatoria, hospitalaria e incluso urgencias a domicilio si fuese necesario. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena Vital. Entre ellos:'
@@ -65,10 +65,10 @@ plena:
       - 'Implantes y prótesis (internas) cardiovasculares, osteoarticulares, oftalmológicas.'
       - 'Tratamientos especiales (Laserterapia, logopedia y foniatría, tratamiento del dolor, ondas de choque)'
       - 'Fisioterapia y podología bajo reembolso de gastos por valor de 500 y 200 euros, respectivamente'
-  desc:
+  desc: # 6 titulo + descripcion
     title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
     text: 'Además, a los servicios previstos en Adeslas Plena, podrás añadirle mejoras con nuestro módulo complementario Plus Ginecología y Pediatría y obtener el reembolso del 80% del coste. Y también Plus Clínica Universitaria de Navarra.'
-  dropdown:
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: 'Un seguro médico completo para toda la familia'
     text: ''
@@ -97,7 +97,7 @@ plena:
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: ''
-  faq:    # solo si no va en particulares
+  faq: # 8 FAQ'S solo si no va en particulares
     suptitle: ''
     title: ''
     elems:

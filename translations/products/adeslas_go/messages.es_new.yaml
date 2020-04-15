@@ -1,9 +1,9 @@
 #adeslas_go_product
 go:
-  hero:
+  hero: # 1
     title: 'Adeslas GO. El seguro ideal para cuidarte y poder ir al médico que necesites sin esperas'
     subtitle: 'La asistencia médica ambulatoria con mejores coberturas sin cuestionario médico.'
-  price_with_details:
+  price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
       quantity: '16,50'
@@ -19,7 +19,7 @@ go:
     cta:
       text: 'Llamadme'
       path: '/path'
-  bullets:
+  bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Adeslas Go'
     title: 'Acceso a los mejores especialistas cuando y como quieras'
     list:
@@ -31,7 +31,7 @@ go:
       - 'Psicoterapia'
       - 'Preparación al Parto'
       - 'Podología (12 sesiones/año), etc.'
-  des_with_dropdown:
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: ''
     text: ''
@@ -39,7 +39,7 @@ go:
       drop1:
         title: ''
         text: ''
-  desc_with_bullets:
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Una cobertura médica llena de ventajas'
     text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria y un servicio ideal para quien busca un seguro complementario para prevenir y aumentar las posibilidades de detectar y tratar rápidamente cualquier problema de salud. Podrás consultar con cualquier especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida con los servicios más frecuentemente utilizados'
@@ -52,10 +52,10 @@ go:
       - 'Test de ADN fetal en sangre materna'
       - 'DIU: Dispositivo y colocación'
       - 'Orientación y segunda opinión médica'
-  desc:
+  desc: # 6 titulo + descripcion
     title: ''
     text: 'Cuando contrates tu póliza tendrás acceso a un chequeo médico anual adaptado a las necesidades de tu edad con las siguientes pruebas:'
-  dropdown:
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: ''
     text: ''
@@ -72,7 +72,7 @@ go:
       drop4:
         title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
         text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'
-  faq:    # solo si no va en particulares
+  faq: # 8 FAQ'S solo si no va en particulares
     suptitle: ''
     title: ''
     elems:

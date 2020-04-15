@@ -1,9 +1,9 @@
 #adeslas_plena_extra
 plena_extra:
-  hero:
+  hero: # 1
     title: 'Adeslas Plena Extra 150. Asistencia médica de altas prestaciones para escoger a quién te cuida'
     subtitle: 'Libre elección de especialista en cualquier parte del mundo '
-  price_with_details:
+  price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
       quantity: '79'
@@ -19,7 +19,7 @@ plena_extra:
     cta:
       text: 'Llamadme'
       path: '/path'
-  bullets:
+  bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Atención plena, vayas donde vayas'
     text: 'Adeslas Plena Extra te abre la puerta a los mejores servicios de un seguro médico privado de calidad. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas de alta tecnología y asistencia a domicilio tanto en España como en cualquier país del extranjero  Entre ellos:'
     list: ''
@@ -34,7 +34,7 @@ plena_extra:
       - 'Tratamiento quirúrgico por láser de hiperplasia benigna de próstata (láser verde). Acelerador lineal de partículas.'
       - 'Cirugía Quimioterápica.'
       - 'Litotricia Renal y diálisis'
-  des_with_dropdown:
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: 'Los más amplios servicios de salud, a tu alcance'
     text: 'Adeslas Plena Extra 150 es mucho más que un seguro médico privado, es un traje a medida. Con esta póliza  podrás elegir entre la cobertura global del cuadro médico Adeslas, el mejor y más amplio del país, con 43.000 profesionales o elegir con absoluta libertad al profesional que desees consultar en cualquier país del mundo. '
@@ -57,15 +57,15 @@ plena_extra:
       drop5:
         text: ''
         title: 'Pruebas sin autorización'
-  desc_with_bullets:
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: ''
     text: ''
     list: null
-  desc:
+  desc: # 6 titulo + descripcion
     title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas incluidas en Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
-  dropdown:
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas incluidas en Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
@@ -97,7 +97,7 @@ plena_extra:
       drop9: 
         title: '¿Existen límites económicos para Adeslas Plena Extra 150?'
         text: ''
-  faq:    # solo si no va en particulares
+  faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
     elems:

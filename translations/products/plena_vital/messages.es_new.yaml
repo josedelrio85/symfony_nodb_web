@@ -1,9 +1,9 @@
 #adeslas_plena_vital
 plena_vital:
-  hero:
+  hero: # 1
     title: 'Adeslas Plena Vital: El seguro médico privado con total cobertura y la mejor tarifa'
     subtitle1: ''
-  price_with_details:
+  price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
       quantity: '35'
@@ -19,13 +19,13 @@ plena_vital:
     cta:
       text: 'Llamadme'
       path: '/path'
-  bullets:
+  bullets: # 3 listado de bullets con titulo y supertitulo
     #suptitle: 'Adeslas Plena Vital'
     #title: 'Asistencia médica y hospitalaria completa a precio reducido'
     #text: 'Adeslas Plena Vital es un seguro médico completo, con asistencia sanitaria ambulatoria y hospitalaria y acceso a todas las especialidades de Medicina General y Pediatría. Todos los servicios del mejor cuadro médico para asegurarte una atención de primera y sin esperas.'
     #text2: 'Adeslas Plena Vital es el seguro privado de salud que te garantiza la asistencia ambulatoria con el acceso directo a todos los especialistas que necesites y el ingreso hospitalario en habitación individual con cama para el acompañante. Amplias coberturas como:'
     #list:
-  des_with_dropdown:
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: 'Asistencia médica y hospitalaria completa a precio reducido'
     text: 'Adeslas Plena Vital es un seguro médico completo, con asistencia sanitaria ambulatoria y hospitalaria y acceso a todas las especialidades de Medicina General y Pediatría. Todos los servicios del mejor cuadro médico para asegurarte una atención de primera y sin esperas.'
@@ -55,7 +55,7 @@ plena_vital:
       drop5:
         text: 'Pruebas sin autorización'
         title: ''
-  desc_with_bullets:
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
     text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios, con asistencia ambulatoria, hospitalaria e incluso urgencias a domicilio si fuese necesario. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena Vital. Entre ellos:'
@@ -70,8 +70,10 @@ plena_vital:
       - 'Tratamientos especiales (Laserterapia, logopedia y foniatría, tratamiento del dolor, ondas de choque)'
       - 'Fisioterapia y podología bajo reembolso de gastos por valor de 500 y 200 euros, respectivamente'
       - 'Tratamiento quirúrgico por láser de hiperplasia benigna de próstata (láser verde).'
-  desc:
-  dropdown:
+  desc: # 6 titulo + descripcion
+    title: ''
+    text: ''
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: 'Las ventajas del líder en seguros de salud'
     text: ''
@@ -100,7 +102,7 @@ plena_vital:
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: ''
-  faq: # solo si no va en particulares
+  faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
     elems:

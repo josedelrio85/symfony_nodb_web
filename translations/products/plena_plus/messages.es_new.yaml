@@ -1,9 +1,9 @@
 #plena_plus_embarazadas
 plena_plus:
-  hero:
+  hero: # 1
     title: 'Adeslas Plena Plus'
     subtitle1: 'Un cuadro médico con 43.000 especialistas a tu disposición sin copagos'
-  price_with_details:
+  price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
       quantity: '55'
@@ -19,7 +19,7 @@ plena_plus:
     cta:
       text: 'Llamadme'
       path: '/path'
-  bullets:
+  bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Adeslas Plena Plus'
     title: 'Caracteristicas'
     list_embarazadas:
@@ -35,7 +35,7 @@ plena_plus:
       - 'Medios, diagnósticos de Alta Tecnología'
       - 'Criopresrvación de células madre y embrionarias'
       - 'Copagos limitados'
-  desc_with_dropdown:
+  desc_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Cobertura Plus'
     title: 'Garantía Total'
     text: 'Adeslas Plena Plus es el seguro médico más global ...'
@@ -71,7 +71,7 @@ plena_plus:
       drop6:
         title: 'Asistencia inmediata'
         text: ''
-  desc_with_bullets:
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: 'Cobertura Plus'
     title: 'La mejor fórmula de cuidar la salud de tu familia'
     text: 'Adeslas Plena Plus te abre la puerta ....'
@@ -89,10 +89,10 @@ plena_plus:
       - 'Criopresrvación de células madre y embrionarias'
       - 'Copagos limitados'
     image: image.png
-  desc:
+  desc: # 6 titulo + descripcion
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
     text: 'Además de todas las coberturas....'
-  dropdown:
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: 'Ventajas'
     title: 'Un seguro cargado de ventajas'
     text: ''
@@ -119,8 +119,7 @@ plena_plus:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: ''
     image: image.png
-  faq:
-    # solo si no va en particulares
+  faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
     elems:
