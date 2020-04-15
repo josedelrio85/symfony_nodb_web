@@ -8,12 +8,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
 
-  let mainelements = document.querySelector('#mainelements');
+  // let mainelements = document.querySelector('#mainelements');
   let firstchildrens = document.querySelector('#firstchildrens');
   let secondchildrens = document.getElementById('secondchildrens');
   let backvalue = null;
-  let steps = null;
-  
+  let totalsteps = null;
+  let actualsteps = 1;
+
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
@@ -34,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
 
       // get id suffix to know what first child must show
-      let childrenid = id.replace('product-','');
-      steps = document.getElementById('steps-' + childrenid).value;
-
-      console.log(steps);
-      document.querySelector(".bar").style.width = 100/steps + "%";
-
       // childrenid = salud | dental | mascotas | decesos
+      let childrenid = id.replace('product-','');
+
+      // initialize steps bar and get totalsteps count
+      totalsteps = document.getElementById('steps-' + childrenid).value;
+      fillProgressBar(totalsteps);
+
       document.getElementById('fc-' + childrenid).classList.remove('d-none');
     });
   })
@@ -68,12 +69,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
           // show elements of secondchildren div too
           secondchildrenelement.classList.remove('d-none');
           
+          console.log("b");
+          updateSteps(true);
+
           backvalue = 'sc-' + idfc;
         }
     });
   })
-
-
 
   closeButton.addEventListener('click', (event) => {
     reset();
@@ -101,11 +103,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // show firstchildren
       firstchildrens.classList.remove('d-none');
 
+      console.log("c");
+      updateSteps(false);
+
       backvalue = null;
     }
   });
 
   function reset() {
+    actualsteps = 1;
+
     fullScreenConfig.classList.remove('active');
 
     // hide all elements
@@ -123,6 +130,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
         cv.classList.add('d-none');
       }
     });
+  }
+
+  function updateSteps(go){
+    if (go) {
+      actualsteps++;
+    } else {
+      actualsteps--;
+    }
+    let steps = totalsteps/actualsteps;
+    fillProgressBar(steps);
+  }
+
+  function fillProgressBar(steps) {
+    document.querySelector(".bar").style.width = 100/steps + "%";
+
   }
 
   // let launch = document.querySelectorAll('.launch');
