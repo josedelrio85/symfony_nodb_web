@@ -92,7 +92,7 @@ plena_plus:
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
     text: 'Además de todas las coberturas....'
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
     suptitle: 'Ventajas'
     title: 'Un seguro cargado de ventajas'
     text: ''
