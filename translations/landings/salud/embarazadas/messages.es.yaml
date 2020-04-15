@@ -1,11 +1,14 @@
 embarazadas:
+  home:
+    title: 'Landing embarazadas'
+    meta_description: 'Landing embarazadas'
   hero: # 1
-    title: ''
+    title: 'ALALALALAL'
     subtitle: ''
   minicards: # 2 minicards + title + description
     title: 'La asistencia más cercana y profesional para que todo vaya bien'
     suptitle: 'Adeslas embarazadas'
-    desc: 'Un seguro privado ...'
+    desc: 'Un seguro privado que cubre todas tus necesidades para que tu familia crezca de forma segura.'
     cards:
       card1:
         top: '2'
@@ -18,7 +21,7 @@ embarazadas:
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige la fórmula que mejor se adapta a ti'
     suptitle: 'Adeslas Embarazadas'
-    desc: 'Con Adeslas Plena y Adeslas Plena Vital ...'
+    desc: 'Con Adeslas Plena y Adeslas Plena Vital tendrás una cobertura completa para todo aquello que puedas necesitar si estás pensando en tener familia, incluida la hospitalización en habitación individual con cama para el acompañante. Elige la fórmula que más te satisface:'
     product:
       product1:
         title: 'Adeslas Plena Vital'
@@ -62,14 +65,14 @@ embarazadas:
     select_txt: 'Selecciona provincia'
   desc: # 5 title + description
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
-    text: 'A los servicios previstos ...'
+    text: 'A los servicios previstos en Adeslas Plena y Adeslas Plena Plus podrás añadirle mejoras con nuestro módulo complementario <a href="#">Plus Ginecología y pediatría</a> y <a href="#">obtener el reembolso del 80% del coste.</a>'
   faq:    # 6 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Diccionario'
     elems:
       faq1:
         title: '¿Qué es un copago?'
-        text: ''
+        text: 'Lorem ipsum'
       faq2:
         title: '¿Qué es un copago?'
         text: ''

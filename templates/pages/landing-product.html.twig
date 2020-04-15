@@ -1,91 +1,58 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ "home.title_detail" | trans }}{% endblock %}
+{% block title %}{{ "#{key}.home.title" | trans }}{% endblock %}
 
-{% block meta_description %}<meta name="description" content="{{ "home.meta_description" | trans }}">{% endblock %}
+{% block meta_description %}<meta name="description" content="{{ "#{key}.home.meta_description" | trans }}">{% endblock %}
 
 {% block body %}
 
-  {# <h1>{{ "header.text1" | trans | raw }}</h1>
-  <h2>{{ "header.text2" | trans | raw }}</h2>
-  <h3>{{ "header.text3" | trans | raw }}</h3>
-  <h4>{{ "header.text4" | trans | raw }}</h4>
-
-
-  <h1>{{ "test.test1" | trans | raw }}</h1>
-  <h2>{{ "test.test2" | trans | raw }}</h2> #}
-  {# {% include 'components/hero-slider/hero-slider.html.twig' %} #}
-
-
-  {# {% include 'components/product-selector/product-selector.html.twig' with {
-    mainelements: mainelements,
-    firstchildrens: firstchildrens,
-    secondChildrens: secondChildrens
-   }
-  %} #}
-
   {# Hero product component #}
-    {% include 'components/header-image/header-image.html.twig' %}
-  {# Hero product component #}
+  {% include 'components/header-image/header-image.html.twig' %}
 
   {# SupertitleTitleSubtitle component #}
-    {% include 'components/header-titles/header-titles.html.twig' with {
-      mini_header: 'ADESLAS EMBARAZADAS',
-      text_header: 'La asistencia más cercana y profesional para que todo vaya bien',
-      content_header: 'Un seguro privado que cubre todas tus necesidades para que tu familia crezca de forma segura.'
-    } %}
-  {# SupertitleTitleSubtitle component #}
+  {% include 'components/header-titles/header-titles.html.twig' with {
+    mini_header: "#{key}.minicards.suptitle" | trans,
+    text_header: "#{key}.minicards.title" | trans,
+    content_header: "#{key}.minicards.desc" | trans
+  } %}
 
-
+  {#TODO move this code to a component #}
   <div class="container mb-5">
     <div class="row">
-      <div class="col-6">
-        {# Minicard component #}
-          {% include 'components/product-mini-card/product-mini-card.html.twig' with {
-            title: '2',
-            subtitle: 'Meses Gratis',
-            body: 'Si contratas Dental',
-          } %}
-        {# Minicard component #}
-      </div>
-      <div class="col-6">
-        {# Minicard component #}
-          {% include 'components/product-mini-card/product-mini-card.html.twig' with {
-            title: '10%',
-            subtitle: 'De Descuento',
-            body: 'En pólizas con 4 o más asegurados.',
-          } %}
-        {# Minicard component #}
-      </div>
+      {% for card in cards %}
+        <div class="col-6">
+            {% include 'components/product-mini-card/product-mini-card.html.twig' with {
+              title: card.top,
+              subtitle: card.middle,
+              body: card.bottom,
+            } %}
+        </div>
+        {% endfor %}
     </div>
   </div>
 
   {# SupertitleTitleSubtitle component #}
-    {% include 'components/header-titles/header-titles.html.twig' with {
-      mini_header: 'ADESLAS EMBARAZADAS',
-      text_header: 'Elige la fórmula que mejor se adapta a ti:',
-      content_header: 'Con Adeslas Plena y Adeslas Plena Vital tendrás una cobertura completa para 
-        todo aquello que puedas necesitar si estás pensando en tener familia, 
-        incluida la hospitalización en habitación individual con cama para el acompañante. 
-        Elige la fórmula que más te satisface:'
-    } %}
-  {# SupertitleTitleSubtitle component #}
+  {% include 'components/header-titles/header-titles.html.twig' with {
+    mini_header: "#{key}.product_bullet.suptitle" | trans,
+    text_header: "#{key}.product_bullet.title" | trans,
+    content_header: "#{key}.product_bullet.desc" | trans
+  } %}
 
   {# Example data #}
-    {% set bullet_list_items1 =
-      [
-        {text: 'Bullet list item 1'},
-        {text: 'Bullet list item 2'},
-        {text: 'Bullet list item 3'},
-      ]
-    %}
-    {% set bullet_list_items2 =
-      [
-        {text: 'Bullet list item 4'},
-        {text: 'Bullet list item 5'},
-        {text: 'Bullet list item 6'},
-      ]
-    %}
+  {% set bullet_list_items1 =
+    [
+      {text: 'Bullet list item 1'},
+      {text: 'Bullet list item 2'},
+      {text: 'Bullet list item 3'},
+    ]
+  %}
+  {% set bullet_list_items2 =
+    [
+      {text: 'Bullet list item 4'},
+      {text: 'Bullet list item 5'},
+      {text: 'Bullet list item 6'},
+    ]
+  %}
   {% set products = [
     {
       product_title: 'Adeslas Plena Vital',
@@ -101,18 +68,17 @@
     },
   ]
   %}
-  {# Example data
+
   {# Product card component #}
-    <div class="container mb-5">
-      <div class="row">
-        {% for item in products %}
+  <div class="container mb-5">
+    <div class="row">
+      {% for item in product_bullets %}
         <div class="col-12 col-md-6 mb-4">
           {% include 'components/product-card/product-card.html.twig' with { product: item } %}
         </div>
-        {% endfor %}
-      </div>
+      {% endfor %}
     </div>
-  {# Product card component #}
+  </div>
 
   {# Selector component #}
   {# <div class="container mb-5">
@@ -136,49 +102,27 @@
   {# Selector component #}
 
   {# Simple divider line component #}
-    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
-  {# Divider line component #}
+  {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
 
   {# SupertitleTitleSubtitle component #}
-    {% include 'components/header-titles/header-titles.html.twig' with {
-      mini_header: '',
-      text_header: '¿Quieres elegir a tu Ginecólogo o Pediatra?',
-      content_header: 'A los servicios previstos en Adeslas Plena y Adeslas Plena Plus podrás añadirle mejoras con nuestro módulo
-        complementario <a href="#">Plus Ginecología y pediatría</a> y <a href="#">obtener el reembolso del 80% del coste.</a>'
-    } %}
-  {# SupertitleTitleSubtitle component #}
+  {% include 'components/header-titles/header-titles.html.twig' with {
+    mini_header: '',
+    text_header: "#{key}.desc.title" | trans,
+    content_header: "#{key}.desc.text" | trans
+  } %}
 
   {# SupertitleTitleSubtitle component #}
   <div class="container-fluid bg-grey px-0">
     {% include 'components/header-titles/header-titles.html.twig' with {
-      mini_header: 'FAQ`s',
-      text_header: 'Diccionario',
+      mini_header: "#{key}.faq.suptitle" | trans,
+      text_header:  "#{key}.faq.title" | trans,
       content_header: ''
     } %}
   </div>
-  {# SupertitleTitleSubtitle component #}
 
   {# Dropdown component #}
-
-    {# Example data #}
-    {% set dropdown_items =
-      [
-        {
-          title: 'Título dropdown 1',
-          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare dolor sem, maximus condimentum arcu sollicitudin nec. Phasellus vel venenatis ipsum, non ultrices dolor. Nam lacinia pellentesque metus nec fringilla. Nunc at ex vestibulum, suscipit nunc at, mollis lacus. Aliquam blandit finibus ipsum nec interdum. Etiam interdum, dolor a molestie condimentum, elit risus rutrum ligula, vel vestibulum nisi odio vel felis. Praesent sed aliquam ligula, sagittis finibus dui. Proin vel velit vitae tellus efficitur vestibulum.'
-        },
-        {
-          title: 'Título dropdown 2',
-          body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare dolor sem, maximus condimentum arcu sollicitudin nec. Phasellus vel venenatis ipsum, non ultrices dolor. Nam lacinia pellentesque metus nec fringilla. Nunc at ex vestibulum, suscipit nunc at, mollis lacus. Aliquam blandit finibus ipsum nec interdum. Etiam interdum, dolor a molestie condimentum, elit risus rutrum ligula, vel vestibulum nisi odio vel felis. Praesent sed aliquam ligula, sagittis finibus dui. Proin vel velit vitae tellus efficitur vestibulum.'
-        }
-      ]
-    %}
-    {# Example data #}
-
-    {% include 'components/dropdown/dropdown.html.twig' with {
-      dropdown_items: dropdown_items
-    } %}
-
-  {# Dropdown component #}
+  {% include 'components/dropdown/dropdown.html.twig' with {
+    dropdown_items: dropdown
+  } %}
 
 {% endblock %}

@@ -20,63 +20,51 @@ class ProductController extends AbstractController {
 
   public function index(Request $request, TranslatorInterface $translator) {
 
-    // $products = $this->prodserv->getProducts();
-    // $mainelements = $this->prodserv->getMain();
-    // dump($mainelements);
-    // $firstchildrens = $this->prodserv->getFirstChildren();
-    // dump($firstchildrens);
+    $key = "embarazadas";
+    // dump($translator->trans("{$key}.minicards.title"));
 
-    // $secondChildrens = $this->prodserv->getSecondChildren();
-    // dump($secondChildrens);
-    // // die();
-    // $route = $request->attributes->get('_route');
-    // $uri = $request->server->get('REQUEST_URI');
+    $cards = [];
+    for($i=1; $i <= 2; $i++){
+      array_push($cards, [
+        'top' => "{$key}.minicards.cards.card{$i}.top",
+        'middle' => "{$key}.minicards.cards.card{$i}.middle",
+        'bottom' => "{$key}.minicards.cards.card{$i}.bottom",
+      ]);
+    }
+
+    $product_bullets = [];
+    for($i=1; $i <= 2; $i++){
+      array_push($product_bullets, [
+        'title' => "{$key}.product_bullet.product.product{$i}.title",
+        'price_pre' => "{$key}.product_bullet.product.product{$i}.price.pre",
+        'price_quantity' => "{$key}.product_bullet.product.product{$i}.price.quantity",
+        'price_currency' => "{$key}.product_bullet.product.product{$i}.price.currency",
+        'price_period' => "{$key}.product_bullet.product.product{$i}.price.period",
+        'cta_text' => "{$key}.product_bullet.product.product{$i}.cta.text",
+        'cta_path' => "{$key}.product_bullet.product.product{$i}.cta.path",
+        'more_info_text' => "{$key}.product_bullet.product.product{$i}.more_info.text",
+        'more_info_path' => "{$key}.product_bullet.product.product{$i}.more_info.path",
+        'bullets' => "{$key}.product_bullet.product.product{$i}.bullets",
+      ]);
+    }
+
+    $dropdown = [];
+    for($i=1; $i <= 5; $i++){
+      array_push($dropdown, [
+        'title' => "{$key}.faq.elems.faq{$i}.title",
+        'desc' => "{$key}.faq.elems.faq{$i}.text",
+      ]);
+    }
+
+    // die(dump($dropdown));
+
 
     return $this->render("pages/landing-product.html.twig", [
-      // 'route'     => $route,
-      // 'uri'       => $uri,
-      // 'translator' => $translator,
-      // 'mainelements' => $mainelements,
-      // 'firstchildrens' => $firstchildrens,
-      // 'secondChildrens' => $secondChildrens,
+      'key' => $key,
+      'translator' => $translator,
+      'cards' => $cards,
+      'product_bullets' => $product_bullets,
+      'dropdown' => $dropdown,
     ]);
   }
-
-  // public function getFirstChildren(Request $request) {
-  //   $element = $request->request->get('element');
-  //   $fc = $this->prodserv->getFirstChildren($element);
-
-  //   $response = array( 
-  //     "code" => 200,
-  //     "response" => $this->render('components/product-selector/product-card.html.twig', [
-  //       'fc' => $fc
-  //     ])->getContent() 
-  //   );
-  //   return new JsonResponse($response);
-  // }
-
-  // public function test() {
-  //   $products = $this->prodserv->getProducts();
-  //   $mainelements = $this->prodserv->getMain();
-  //   dump($mainelements);
-  //   $firstchildrens = $this->prodserv->getFirstChildren();
-  //   dump($firstchildrens);
-
-  //   $secondChildrens = $this->prodserv->getSecondChildren();
-  //   dump($secondChildrens);
-  //   // die();
-  //   $route = $request->attributes->get('_route');
-  //   $uri = $request->server->get('REQUEST_URI');
-
-  //   return $this->render("pages/index.html.twig", [
-  //     'route'     => $route,
-  //     'uri'       => $uri,
-  //     'translator' => $translator,
-  //     'mainelements' => $mainelements,
-  //     'firstchildrens' => $firstchildrens,
-  //     'secondChildrens' => $secondChildrens,
-  //   ]);
-
-  // }
-
 }

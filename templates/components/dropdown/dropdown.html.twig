@@ -6,10 +6,10 @@
           <div class="card mb-0">
             {% for item in dropdown_items %}
               <div class="card-header collapsed py-4 bg-grey px-0" data-toggle="collapse" href="#collapse{{ loop.index }}">
-                <a class="card-title font-weight-bold h5">{{ item.title }}</a>
+                <a class="card-title font-weight-bold h5">{{ item.title | trans | raw}}</a>
               </div>
               <div id="collapse{{ loop.index }}" class="card-body bg-grey collapse px-0" data-parent="#accordion">
-                <p>{{ item.body | raw }}</p>
+                <p>{{ item.desc | trans | raw }}</p>
               </div>
               <div class="border-top my-0 bg-grey"></div>
             {% endfor %}
