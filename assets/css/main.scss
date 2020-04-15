@@ -2,5 +2,9 @@
 @import "fonts/apex";
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
-// @import "type";
+@import "modals";
+@import "type";
+@import "animations";
+@import "components/fullscreen-product-config.scss";
 @import "~swiper/css/swiper.min";
+@import "../../templates/components/product-selector/product-selector";

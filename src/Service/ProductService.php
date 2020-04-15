@@ -26,7 +26,10 @@ class ProductService {
     $elements = $this->productConfig['products'];
     $output = [];
     foreach($elements as $el) {
-      $output[] = $el['name'];
+      // $output[] = $el['name'];
+      $output[$el['name']]['name'] = $el['name'];
+      $output[$el['name']]['steps'] = $el['steps'];
+
     }
     return $output;
   }
