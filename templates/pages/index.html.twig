@@ -17,36 +17,8 @@
 
   <div class="container-fluid">
     <div class="container">
-        <!-- Component -->
-        <div id="product-configuration-section" class="col-12 p-0">
-            <div class="row p-0">
-              <div class="col-12 p-3">
-                <h6 class="mini-header">Configurador</h6>
-                <h2 class="text-header">¿Qué tipo de seguro está buscando?</h2>
-                <p>Descubre el seguro que mejor se adapta a tus necesidades</p>
-              </div>
-            </div>
-          <div class="col-12 p-0">
-            {% include 'components/product-selector/product-selector.html.twig' with {
-              mainelements: mainelements,
-              firstchildrens: firstchildrens,
-              secondChildrens: secondChildrens
-            }
-            %}
-          </div>
-        </div>
+         {% include 'components/configurator/configurator.html.twig' with {} %}
       </div>
     </div>
   </div>
-
-  <div class="fullscreen-product-config">
-    <div class="close-button">
-      <span class="icon-cancel-circle h2 m-0"></span>
-    </div>
-    <div class="product-config container">
-      <h1>Configurador</h1>
-      <p>Este es el configurador de producto a toda pantalla</p>
-    </div>
-  </div>
-
 {% endblock %}

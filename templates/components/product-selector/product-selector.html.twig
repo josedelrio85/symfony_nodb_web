@@ -3,7 +3,7 @@
 
   <div id="mainelements" class="row">
     {% for product in mainelements %}
-      <div id="product-{{product}}" class="col-12 col-md-6 mb-3">
+      <div id="product-{{product}}" class="col-12 col-md-6 mb-3 product-button">
         <div class="inner d-flex justify-content-between bg-primary align-items-center p-4">
           <h5 class="text-light m-0 name">{{product}}</h5>
           <span class="icon icon-heart text-light h5 mb-0"></span>
@@ -12,27 +12,36 @@
     {% endfor %}
   </div>
 
-  <div id="firstchildrens" class="d-none">
-    <p id="back-0">atras</p>
+  <div id="firstchildrens" class="d-none container">
+    <div  class="row">
+      <p id="back-0">atras</p>
+      <div  class="container">
 
-    {% for key, product in firstchildrens %}
-      <div id="fc-{{key}}" class="d-none col-12 col-md-6">
-        <h2>firstchildrens - {{key}}</h2>
 
-        {% for child in product %}
-          <div id="{{child.name}}" class="">
-            {% set path = null %}
-            {% if child.path is defined %}
-              {% set path = child.path %}
-            {% endif %}
-            <h5 class="text-light m-0 name launch {{path}}">{{child.name}}</h5>
-          </div>
-        {% endfor %}
+            {% for key, product in firstchildrens %}
+              <div id="fc-{{key}}" class="d-none row">
+
+                {# <h2>firstchildrens - {{key}}</h2> #}
+                {% for child in product %}
+                  <div id="{{child.name}}" class="inner col-12 col-md-6 product-button">
+                    <div class="inner justify-content-between bg-primary align-items-center p-4">
+                      {% set path = null %}
+                      {% if child.path is defined %}
+                        {% set path = child.path %}
+                      {% endif %}
+                      <h5 class="text-light m-0 name launch {{path}}">{{child.name}}</h5>
+                    </div>
+                  </div>
+                {% endfor %}
+
+              </div>
+            {% endfor %}
+
       </div>
-    {% endfor %}
+    </div>
   </div>
 
-  <div id="secondchildrens" class="d-none">
+  <div id="secondchildrens" class="d-none row">
     <p id="back-1">atras</p>
 
     {% for key, product in secondChildrens %}
