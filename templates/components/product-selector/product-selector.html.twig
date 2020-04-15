@@ -8,7 +8,7 @@
           <div id="fc-{{key}}" class="d-none row">
             {% for child in product %}
               <div id="{{child.name}}" class="inner col-12 col-md-6 product-btn">
-                <div class="inner justify-content-between bg-primary align-items-center p-4">
+                <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3">
                   {% set path = null %}
                   {% if child.path is defined %}
                     {% set path = child.path %}
@@ -29,7 +29,7 @@
       <div id="sc-{{key}}" class="d-none row">
         {% for child in product %}
           <div id="{{child.name}}" class="inner col-12 col-md-6 product-btn mb-2">
-            <div class="inner justify-content-between bg-primary align-items-center p-4">
+            <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3">
               <h5 class="text-light m-0 name launch {{child.path}}">{{child.name}}</h5>
             </div>
           </div>
