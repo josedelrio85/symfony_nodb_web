@@ -7,7 +7,7 @@
         {% for key, product in firstchildrens %}
           <div id="fc-{{key}}" class="d-none row">
             {% for child in product %}
-              <div id="{{child.name}}" class="inner col-12 col-md-6">
+              <div id="{{child.name}}" class="inner col-12 col-md-6 product-btn">
                 <div class="inner justify-content-between bg-primary align-items-center p-4">
                   {% set path = null %}
                   {% if child.path is defined %}
@@ -23,12 +23,12 @@
     </div>
   </div>
 
-  <div id="secondchildrens" class="d-none row">
+  <div id="secondchildrens" class="d-none container">
     {# <p id="back-1">atras</p> #}
     {% for key, product in secondChildrens %}
       <div id="sc-{{key}}" class="d-none row">
         {% for child in product %}
-          <div id="{{child.name}}" class="inner col-12 col-md-6 product-button">
+          <div id="{{child.name}}" class="inner col-12 col-md-6 product-btn mb-2">
             <div class="inner justify-content-between bg-primary align-items-center p-4">
               <h5 class="text-light m-0 name launch {{child.path}}">{{child.name}}</h5>
             </div>

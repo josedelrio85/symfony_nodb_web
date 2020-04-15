@@ -21,4 +21,11 @@
     &.active {
         transform: translateY(0);
     }
+
+    .back-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
 }
