@@ -1,0 +1,14 @@
+footer:
+  legal:
+    text: 'Aviso legal'
+    path: '/legal'
+  privacy:
+    text: 'Política de privacidad'
+    path: '/legal'
+  cookies:
+    text: 'Política de Cookies'
+    path: '/cookies'
+  conditions:
+    text: 'Condiciones de la promoción'
+    path: '/conditions'
+  text: 'Global Insurance, Agente exclusivo Adeslas [código]'
