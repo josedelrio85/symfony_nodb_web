@@ -1,0 +1,51 @@
+configurator:
+  salud:
+    text: 'Salud'
+    icon: salud.png
+  dental:
+    text: 'Dental'
+    icon: dental.png
+  mascotas:
+    text: 'Mascotas'
+    icon: mascotas.png
+  decesos:
+    text: 'Decesos'
+    icon: decesos.png
+  familia:
+    text: 'familia'
+    icon: algo.png
+  negocio:
+    text: 'negocios'
+    icon: negocios.png
+  familiar:
+    text: 'familiar'
+    icon: familia.png
+  individual:
+    text: 'individual'
+    icon: individual.png
+  mayores:
+    text: 'mayores de 65'
+    icon: mayores.png
+  embarazada:
+    text: 'Quedarme embarazada'
+    icon: embarazada.png
+  autonomo:
+    text: 'Soy autónomo'
+    icon: autonomo.png
+  menos5:
+    text: 'Una empresa con menos de 5 trabajadores'
+    icon: menos5.png
+  mas5:
+    text: 'Una empresa de 5 o más trabajadores'
+    icon: mas5.png
+  mas100:
+    text: 'Una empresa con más de 100 empleados'
+    icon: mas100.png
+  cobdental:
+    text: 'Sólo cobertura Dental'
+    icon: cobdental.png
+  dentalysalud:
+    text: 'Cobertura Dental y Salud'
+    icon: dentalysalud.png
+            
+

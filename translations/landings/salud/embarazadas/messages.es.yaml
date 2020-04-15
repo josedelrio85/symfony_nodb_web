@@ -1,0 +1,84 @@
+embarazadas:
+  hero: # 1
+    title: ''
+    subtitle: ''
+  minicards: # 2 minicards + title + description
+    title: 'La asistencia más cercana y profesional para que todo vaya bien'
+    suptitle: 'Adeslas embarazadas'
+    desc: 'Un seguro privado ...'
+    cards:
+      card1:
+        top: '2'
+        middle: 'meses'
+        bottom: 'gratis'
+      card2:
+        top: '10%'
+        middle: 'De Descuento'
+        bottom: 'En pólizas con 4 o más asegurados'
+  product_bullet: # 3 products with bullets + title + description
+    title: 'Elige la fórmula que mejor se adapta a ti'
+    suptitle: 'Adeslas Embarazadas'
+    desc: 'Con Adeslas Plena y Adeslas Plena Vital ...'
+    product:
+      product1:
+        title: 'Adeslas Plena Vital'
+        price:
+          pre: 'Desde'
+          quantity: '35'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/path'
+        more_info:
+          text: 'Saber más'
+          path: '/path'
+        bullets:
+          - 'Todo lo relacionado con embarazo y parto'
+          - 'Reproducción Asistida en condiciones especiales'
+          - 'Habitación individual con cama para acompañante'
+      product2:
+        title: 'Adeslas Plena Plus'
+        price:
+          pre: 'Desde'
+          quantity: '55'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/path'
+        more_info:
+          text: 'Saber más'
+          path: '/path'
+        bullets:
+          - 'Sin Copagos'
+          - 'Todo lo relacionado con el embarazo y parto'
+          - 'Reproducción Asistida en condiciones especiales'
+          - 'Habitación individual con cama para acompañante'
+          - 'Teléfono 24 horas de asistencia a la embarazada'
+  select: # 4 selector + title
+    title: 'Consulta nuestro cuadro médio'
+    suptitle: 'Destacado'
+    select_txt: 'Selecciona provincia'
+  desc: # 5 title + description
+    title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
+    text: 'A los servicios previstos ...'
+  faq:    # 6 FAQ'S solo si no va en particulares
+    suptitle: 'FAQ''s'
+    title: 'Diccionario'
+    elems:
+      faq1:
+        title: '¿Qué es un copago?'
+        text: ''
+      faq2:
+        title: '¿Qué es un copago?'
+        text: ''
+      faq3:
+        title: '¿Qué es un copago?'
+        text: ''
+      faq4:
+        title: '¿Qué es un copago?'
+        text: ''
+      faq5:
+        title: '¿Qué es un copago?'
+        text: ''

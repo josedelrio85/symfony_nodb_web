@@ -1,0 +1,49 @@
+.fullscreen-product-config {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    transform: translateY(+100%);
+    transition: all .4s ease-out;
+
+    .close-button {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    &.active {
+        transform: translateY(0);
+    }
+
+    .back-button {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: $gray-600;
+
+        .bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            // width: 33.333333333%;
+            height: 100%;
+            background: $primary;
+        }
+    }
+}

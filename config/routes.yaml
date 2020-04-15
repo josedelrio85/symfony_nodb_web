@@ -4,3 +4,6 @@ index:
 product:
    path: /product
    controller: App\Controller\ProductController::index
+test:
+   path: /test
+   controller: App\Controller\TestController::index

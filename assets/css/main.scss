@@ -2,12 +2,18 @@
 @import "fonts/apex";
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
+
 @import "type";
 @import "~swiper/css/swiper.min";
+@import "modals";
+@import "type";
+@import "animations";
 
 //Components scss files
+@import "../../templates/components/product-selector/product-selector";
 @import "../../templates/components/dropdown/dropdown.scss";
 @import "../../templates/components/simple-divider-line/simple-divider-line.scss";
 @import "../../templates/components/product-card/product-card.scss";
 @import "../../templates/components/product-mini-card/product-mini-card.scss";
 @import "../../templates/components/bullet-list/bullet-list.scss";
+@import "components/fullscreen-product-config.scss";

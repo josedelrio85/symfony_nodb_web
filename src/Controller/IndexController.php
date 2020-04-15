@@ -20,25 +20,25 @@ class IndexController extends AbstractController {
 
   public function index(Request $request, TranslatorInterface $translator) {
 
-    // $products = $this->prodserv->getProducts();
-    // $mainelements = $this->prodserv->getMain();
-    // dump($mainelements);
-    // $firstchildrens = $this->prodserv->getFirstChildren();
-    // dump($firstchildrens);
+    $products = $this->prodserv->getProducts();
+    $mainelements = $this->prodserv->getMain();
+    dump($mainelements);
+    $firstchildrens = $this->prodserv->getFirstChildren();
+    dump($firstchildrens);
 
-    // $secondChildrens = $this->prodserv->getSecondChildren();
-    // dump($secondChildrens);
-    // // die();
-    // $route = $request->attributes->get('_route');
-    // $uri = $request->server->get('REQUEST_URI');
+    $secondChildrens = $this->prodserv->getSecondChildren();
+    dump($secondChildrens);
+    // die();
+    $route = $request->attributes->get('_route');
+    $uri = $request->server->get('REQUEST_URI');
 
     return $this->render("pages/index.html.twig", [
-      // 'route'     => $route,
-      // 'uri'       => $uri,
-      // 'translator' => $translator,
-      // 'mainelements' => $mainelements,
-      // 'firstchildrens' => $firstchildrens,
-      // 'secondChildrens' => $secondChildrens,
+      'route'     => $route,
+      'uri'       => $uri,
+      'translator' => $translator,
+      'mainelements' => $mainelements,
+      'firstchildrens' => $firstchildrens,
+      'secondChildrens' => $secondChildrens,
     ]);
   }
 
@@ -78,5 +78,4 @@ class IndexController extends AbstractController {
     ]);
 
   }
-
 }

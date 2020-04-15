@@ -1,0 +1,17 @@
+.product-selector {
+    
+    .product-btn {
+        cursor: pointer;
+
+        .inner {
+            box-shadow: $box-shadow-gen;
+            border-radius: $border-radius-gen;
+        }
+    }
+
+    .name {
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+}

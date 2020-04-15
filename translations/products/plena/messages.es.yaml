@@ -1,0 +1,115 @@
+#adeslas_plena
+plena:
+  hero: # 1
+    title: 'Adeslas Plena: Disfruta de una asistencia médica completa con copagos reducidos'
+    subtitle: ''
+  price_with_details: # 2 caja con precio y bullets
+    price:
+      pre: 'Desde'
+      quantity: '45'
+      currency: '€'
+      period: '/mes'
+    bullets:
+      bullet1:
+        text: '2 meses gratis'
+        subtext: 'con Dental'
+      bullet2:
+        text: '10% de descuento'
+        subtext: 'a partir de 4 asegurados'
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  bullets: # 3 listado de bullets con titulo y supertitulo
+    suptitle: ''
+    title: 'La cobertura global que necesitas para garantizar la salud de tu familia'
+    list: 
+      - 'Medicina General y Especialidades'
+      - 'Pediatría y Puericultura'
+      - 'Enfermería'
+      - 'Especialistas'
+      - 'Pruebas diagnósticas de alta tecnología'
+      - 'Urgencias'
+      - 'Hospitalización y cirugía'
+      - 'Tratamientos especiales'
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
+    suptitle: ''
+    title: ''
+    text: 'Adeslas Plena es un seguro médico que incluye asistencia sanitaria ambulatoria y hospitalaria con acceso a todas las especialidades de Medicina General y Pediatría.Una cobertura completa con el mejor cuadro médico para disfrutar de la vida con la tranquilidad de que tu salud y la de tu familia está en las mejores manos. Adeslas Plena es el seguro privado de salud que te garantiza la asistencia ambulatoria con el acceso a todos los especialistas que necesites y la atención hospitalaria en habitación individual con cama para el acompañante.Incluye entre otros:'
+    drop:
+      drop1:
+        text: 'Descuentos'
+        title: ''
+      drop2:
+        text: 'Calidad'
+        title: ''
+      drop3:
+        text: 'Copagos limitados'
+        title: ''
+      drop4:
+        text: 'Pago mensual y descuentos'
+        title: ''
+      drop5:
+        text: 'Pruebas sin autorización'
+        title: ''
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
+    suptitle: ''
+    title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
+    text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios, con asistencia ambulatoria, hospitalaria e incluso urgencias a domicilio si fuese necesario. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena Vital. Entre ellos:'
+    list:
+      - 'Medicina Preventiva en Pediatría, Obstetricia y Ginecología, Cardiología, Urología'
+      - 'Pruebas prenatales, preparación y asistencia al parto'
+      - 'Planificación familiar (incluido DIU e implantación)'
+      - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular.)'
+      - 'Pruebas diagnósticas, incluidas las de alta tecnología'
+      - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
+      - 'Implantes y prótesis (internas) cardiovasculares, osteoarticulares, oftalmológicas.'
+      - 'Tratamientos especiales (Laserterapia, logopedia y foniatría, tratamiento del dolor, ondas de choque)'
+      - 'Fisioterapia y podología bajo reembolso de gastos por valor de 500 y 200 euros, respectivamente'
+  desc: # 6 titulo + descripcion
+    title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
+    text: 'Además, a los servicios previstos en Adeslas Plena, podrás añadirle mejoras con nuestro módulo complementario Plus Ginecología y Pediatría y obtener el reembolso del 80% del coste. Y también Plus Clínica Universitaria de Navarra.'
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
+    suptitle: ''
+    title: 'Un seguro médico completo para toda la familia'
+    text: ''
+    drop:
+      drop1:
+        title: '¿Para quién es Adeslas Plena Vital?'
+        text: ''
+      drop2:
+        title: '¿Hay límite de edad para contratar Adeslas Plena Vital?'
+        text: ''
+      drop3:
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: ''
+      drop4:
+        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
+        text: ''
+      drop5: 
+        title: '¿Puedo contratar este servicio sólo para mis hijos?'
+        text: ''
+      drop6:
+        title: '¿Qué cobertura tengo si estoy embarazada?'
+        text: ''
+      drop7:
+        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
+        text:
+      drop8:
+        title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
+        text: ''
+  faq: # 8 FAQ'S solo si no va en particulares
+    suptitle: ''
+    title: ''
+    elems:
+      faq1:
+        title: 'Copagos'
+        text: ''
+      faq2:
+        title: 'Cuestionario Médico'
+        text: ''
+      faq3:
+        title: 'Carencias'
+        text: ''
+      faq4:
+        title: 'Poliza y prima'
+        text: ''
