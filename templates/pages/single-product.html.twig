@@ -15,10 +15,26 @@
 
 
   {# Header titles #}
+    {% include 'components/header-titles/header-titles.html.twig' with {
+      mini_header: 'ADESLAS PLENA PLUS',
+      text_header: 'Características',
+      content_header: '',
+    } %}
   {# Header titles #}
 
 
   {# Bullet list #}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include 'components/bullet-list/bullet-list.html.twig' with {
+          bullet_list_items: [
+            {text: 'hue'},
+          ],
+        } %}
+      </div>
+    </div>
+  </div>
   {# Bullet list #}
 
 
@@ -27,18 +43,51 @@
 
 
   {# Header titles #}
+    {% include 'components/header-titles/header-titles.html.twig' with {
+      mini_header: 'COBERTURA PLUS',
+      text_header: 'Garantía total',
+      content_header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante ante, pharetra ut rutrum suscipit, lacinia ac turpis. Duis venenatis accumsan odio, id suscipit est. Nam cursus sed felis sed maximus. Sed lobortis enim sem, ac gravida est varius at. Fusce in purus eu libero consectetur tincidunt. Vivamus vitae commodo tellus. Vivamus tortor velit, tincidunt a leo at, scelerisque tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis metus congue, interdum est ac, sagittis risus.',
+    } %}
   {# Header titles #}
 
 
   {# Dropdown content #}
+    {% include 'components/dropdown/dropdown.html.twig' with {
+      dropdown_items: [
+        {
+          title: 'Title',
+          body: 'Body body body',
+        },
+        {
+          title: 'Title 2',
+          body: 'Body body body 2',
+        }
+      ]
+    } %}  
   {# Dropdown content #}
 
 
   {# Header titles #}
+    {% include 'components/header-titles/header-titles.html.twig' with {
+      mini_header: 'COBERTURA PLUS',
+      text_header: 'La mejor fórmula de cuidar la salud de tu familia',
+      content_header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante ante, pharetra ut rutrum suscipit, lacinia ac turpis. Duis venenatis accumsan odio, id suscipit est. Nam cursus sed felis sed maximus. Sed lobortis enim sem, ac gravida est varius at. Fusce in purus eu libero consectetur tincidunt. Vivamus vitae commodo tellus. Vivamus tortor velit, tincidunt a leo at, scelerisque tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis metus congue, interdum est ac, sagittis risus.',
+    } %}
   {# Header titles #}
 
 
   {# Bullet list #}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include 'components/bullet-list/bullet-list.html.twig' with {
+          bullet_list_items: [
+            {text: 'hue'},
+          ],
+        } %}
+      </div>
+    </div>
+  </div>
   {# Bullet list #}
 
 
@@ -47,14 +96,38 @@
 
 
   {# Header titles #}
+  <div class="container-fluid bg-grey">
+    {% include 'components/header-titles/header-titles.html.twig' with {
+      mini_header: '',
+      text_header: '¿Quieres elegir a tu Ginecólogo o Pediatra?',
+      content_header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante ante, pharetra ut rutrum suscipit, lacinia ac turpis. Duis venenatis accumsan odio, id suscipit est. Nam cursus sed felis sed maximus. Sed lobortis enim sem, ac gravida est varius at. Fusce in purus eu libero consectetur tincidunt. Vivamus vitae commodo tellus. Vivamus tortor velit, tincidunt a leo at, scelerisque tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis metus congue, interdum est ac, sagittis risus.',
+    } %}  
+  </div>
   {# Header titles #}
 
 
   {# Header titles #}
+    {% include 'components/header-titles/header-titles.html.twig' with {
+      mini_header: 'VENTAJAS',
+      text_header: 'La mejor fórmula de cuidar la salud de tu familia',
+      content_header: '',
+    } %}  
   {# Header titles #}
 
 
   {# Dropdown content #}
+    {% include 'components/dropdown/dropdown.html.twig' with {
+      dropdown_items: [
+        {
+          title: 'Title',
+          body: 'Body body body',
+        },
+        {
+          title: 'Title 2',
+          body: 'Body body body 2',
+        }
+      ]
+    } %}  
   {# Dropdown content #}
 
 
@@ -63,10 +136,27 @@
 
 
   {# Header titles #}
+    {% include 'components/header-titles/header-titles.html.twig' with {
+      mini_header: 'FAQ`s',
+      text_header: 'Términos de interés',
+      content_header: '',
+    } %}  
   {# Header titles #}
 
 
   {# Dropdown content #}
+    {% include 'components/dropdown/dropdown.html.twig' with {
+      dropdown_items: [
+        {
+          title: 'Title',
+          body: 'Body body body',
+        },
+        {
+          title: 'Title 2',
+          body: 'Body body body 2',
+        }
+      ]
+    } %}  
   {# Dropdown content #}
 
 
