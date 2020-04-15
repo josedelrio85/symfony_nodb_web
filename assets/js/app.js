@@ -52,14 +52,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let secondchildrenelement = document.getElementById('sc-' + secondchildrenid);
       if(secondchildrenelement != null){
 
-        // hide firstchildrens div
-        firstchildrens.classList.add('d-none');
+        document.querySelectorAll('.fullscreen-product-config *[id^="fc-"]').classList.add('d-none');
 
-        // show secondchildrens div
-        secondchildrens.classList.remove('d-none');
 
-        // show elements of secondchildren div too
-        secondchildrenelement.classList.remove('d-none');
+        // document.querySelector('.fullscreen-product-config ' + '#fc-' + secondchildrenid).classList.add('d-none');
+
+        // // hide firstchildrens div
+        // firstchildrens.classList.add('d-none');
+
+        // // show secondchildrens div
+        // secondchildrens.classList.remove('d-none');
+
+        // // show elements of secondchildren div too
+        // secondchildrenelement.classList.remove('d-none');
       }
     });
   })
