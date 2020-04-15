@@ -1,51 +1,51 @@
-<h1> product-selector.html.twig</h1>
+<div class="product-selector">
+  {# <h1> product-selector.html.twig</h1> #}
 
-<div id="mainelements" class="">
-  {% for product in mainelements %}
-    <div id="product-{{product}}" class="">
-      <h3>{{product}}</h3>
-    </div>
-  {% endfor %}
--------------------------------------------
-</div>
-
-<div id="firstchildrens" class="hidden">
-  <p id="back-0">atras</p>
-
-  {% for key, product in firstchildrens %}
-    <div id="fc-{{key}}" class="hidden">
-      <h2>firstchildrens - {{key}}</h2>
-
-      {% for child in product %}
-        <div id="{{child.name}}" class="">
-          {% set path = null %}
-          {% if child.path is defined %}
-            {% set path = child.path %}
-          {% endif %}
-          <h3 class="launch {{path}}">{{child.name}}</h3>
+  <div id="mainelements" class="row">
+    {% for product in mainelements %}
+      <div id="product-{{product}}" class="col-12 col-md-6 mb-3">
+        <div class="inner d-flex justify-content-between bg-primary align-items-center p-4">
+          <h5 class="text-light m-0 name">{{product}}</h5>
+          <span class="icon icon-heart text-light h5 mb-0"></span>
         </div>
-      {% endfor %}
-    </div>
-  {% endfor %}
--------------------------------------------
+      </div>
+    {% endfor %}
+  </div>
 
+  <div id="firstchildrens" class="d-none">
+    <p id="back-0">atras</p>
+
+    {% for key, product in firstchildrens %}
+      <div id="fc-{{key}}" class="d-none col-12 col-md-6">
+        <h2>firstchildrens - {{key}}</h2>
+
+        {% for child in product %}
+          <div id="{{child.name}}" class="">
+            {% set path = null %}
+            {% if child.path is defined %}
+              {% set path = child.path %}
+            {% endif %}
+            <h5 class="text-light m-0 name launch {{path}}">{{child.name}}</h5>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div id="secondchildrens" class="d-none">
+    <p id="back-1">atras</p>
+
+    {% for key, product in secondChildrens %}
+
+      <div id="sc-{{key}}" class="d-none">
+        <h2>secondchildrens - {{key}}</h2>
+
+        {% for child in product %}
+          <div id="{{child.name}}" class="">
+            <h5 class="text-light m-0 name launch {{child.path}}">{{child.name}}</h5>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
-
-<div id="secondchildrens" class="hidden">
-  <p id="back-1">atras</p>
-
-  {% for key, product in secondChildrens %}
-
-    <div id="sc-{{key}}" class="hidden">
-      <h2>secondchildrens - {{key}}</h2>
-
-      {% for child in product %}
-        <div id="{{child.name}}" class="">
-          <h3 class="launch {{child.path}}">{{child.name}}</h3>
-        </div>
-      {% endfor %}
-    </div>
-  {% endfor %}
--------------------------------------------
-</div>
-
