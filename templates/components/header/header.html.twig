@@ -2,7 +2,10 @@
     <div class="container py-1">
         <div class="inner d-flex justify-content-between align-items-center">
             <div class="logo-container">
-                <img class="w-100" src="https://via.placeholder.com/150x70" alt="Adeslas"/>
+                {# <img class="w-100" src="https://via.placeholder.com/150x70" alt="Adeslas"/> #}
+                <div class="img w-100">
+                    {{ source('@public_path'~asset('build/images/adeslas_logo_desktop.svg')) }}
+                </div>                
             </div>
             <div class="left-block d-flex align-items-center">
                 <div class="nav-desktop d-none d-md-block">
