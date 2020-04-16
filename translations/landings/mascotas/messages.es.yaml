@@ -1,4 +1,7 @@
 mascotas:
+  home:
+    title: 'Landing mascotas'
+    meta_description: 'Landing mascotas'
   hero: # 1
     title: ''
     subtitle: ''
