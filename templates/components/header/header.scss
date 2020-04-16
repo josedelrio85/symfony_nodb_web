@@ -1,0 +1,36 @@
+.header {
+    height: 65px;
+    background-color: $white;
+
+    a {
+        font-family: $font-family-sans-serif;
+    }
+
+    .ddi-button {
+        span:not([class*="border-radius"]) {
+            font-family: $font-family-sans-serif;
+        }
+    }
+
+    .logo-container {
+        img {
+            max-width: 120px; 
+        }
+    }
+
+    .inner {
+        display: flex;
+    }
+
+    .nav-desktop {
+        ul {
+            list-style: none;
+
+            li {
+                padding: 0 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
