@@ -103,7 +103,7 @@ negocios:
  
 #negocios_extra
 negocios_extra:
-   path: /seguro/adeslas-negocios_extra
+   path: /seguro/adeslas-negocios-extra
    controller: App\Controller\ProductController::index
 
 #empresa

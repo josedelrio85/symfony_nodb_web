@@ -13,6 +13,7 @@ class i18nRepository{
 
   public function __construct(string $rootPath) {
     $basedir = $rootPath .DIRECTORY_SEPARATOR.'translations';
+    // $basedir = $rootPath .DIRECTORY_SEPARATOR.'translations'.DIRECTORY_SEPARATOR.'landings';
     $landings = $basedir.DIRECTORY_SEPARATOR.'landings'.DIRECTORY_SEPARATOR;
     $products = $basedir.DIRECTORY_SEPARATOR.'products'.DIRECTORY_SEPARATOR;
 
@@ -33,18 +34,30 @@ class i18nRepository{
       $products.'mascotas',
       // TODO add products for negocio and dental
     ];
+    // $arr = [
+    //   $basedir.DIRECTORY_SEPARATOR.'salud',
+    //   $basedir.DIRECTORY_SEPARATOR.'dental',
+    //   $basedir.DIRECTORY_SEPARATOR.'decesos',
+    //   $basedir.DIRECTORY_SEPARATOR.'mascotas',
+    // ];
 
     $iterator = $finder->files()->in($arr);
     foreach ($iterator as $file) {
       $path = $file->getRealpath();
       $key = str_replace($basedir, '', $path);
       $exploded = explode(DIRECTORY_SEPARATOR, $key);
+      // dump($exploded);
 
       if(count($exploded) > 2){
-        $mainfolder = $exploded[1];
+        $mf = $exploded[1];
+        $sf = $exploded[2];
         $data = Yaml::parseFile($path);
         $fk = array_key_first($data);
-        $z[$mainfolder][$fk] = $data[$fk];
+        if(count($exploded) > 4){
+          $z[$mf][$sf][$fk] = $data[$fk];
+        } else {
+          $z[$mf][$fk] = $data[$fk];
+        }
         $this->productConfig = $z;
       }
     }
@@ -56,12 +69,24 @@ class i18nRepository{
     return $this->productConfig;
   }
 
-  public function getKeyData($landing, $product, $key){
-    if (array_key_exists($landing, $this->productConfig)){
-      if (array_key_exists($product, $this->productConfig[$landing])){
-        if (array_key_exists($key, $this->productConfig[$landing][$product])){
-          return $this->productConfig[$landing][$product][$key];
+  public function getKeyDataLandings($landing, $product, $key){
+    $alldata = $this->productConfig['landings'];
+    if (array_key_exists($landing, $alldata)){
+      if (array_key_exists($product, $alldata[$landing])){
+        if (array_key_exists($key, $alldata[$landing][$product])){
+          return $alldata[$landing][$product][$key];
         }
+      }
+    }
+    return [];
+  }
+
+
+  public function getKeyDataProducts($product, $key){
+    $alldata = $this->productConfig['products'];
+    if (array_key_exists($product, $alldata)){
+      if (array_key_exists($key, $alldata[$product])){
+        return $alldata[$product][$key];
       }
     }
     return [];
