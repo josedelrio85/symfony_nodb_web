@@ -4,6 +4,14 @@ import Swiper from 'swiper';
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
 document.addEventListener("DOMContentLoaded", function(event) {
+
+
+  // Fullscreen menu
+  $(".close-menu").click(function(){
+    $(".fullscreen-navigation").hide();
+  });
+
+
   
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');

@@ -44,6 +44,17 @@
     background: #fff;
     z-index: 9;
 
+    .inner {
+        height: 100%;
+    }
+
+    .close-menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
     ul {
         list-style: none;
         padding: 0;
