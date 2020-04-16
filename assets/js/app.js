@@ -11,9 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeC2cDeskop = document.querySelector('.click-to-call-desktop .close-c2c');
   let closeC2cMbile = document.querySelector('.click-to-call-mobile .close-c2c');
   let C2cSide = document.querySelector('.click-to-call-btn');
-
   let C2cMobileHeader = document.querySelector('.click-to-call-mobile .click-to-call--header');
-
 
   closeC2cDeskop.addEventListener('click', (event) => {
     C2cDeskop.classList.add('c2c-collapsed');
@@ -32,12 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       C2cMobile.classList.add('c2c-mobile-open');
       document.querySelector('.click-to-call-mobile .close-c2c').classList.remove('d-none');
     }
-
-
   });
-
-
-
 
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
