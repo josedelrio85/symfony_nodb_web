@@ -19,11 +19,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
 
-      fullScreenConfig.classList.add('active');
-
-      // show first childrens div
-      firstchildrens.classList.remove('d-none');
-
       // be careful when more elements are added to the card, maybe the id is not caputred properly
       let id = null;
       if(event.target.nodeName === 'H5' || event.target.nodeName === "SPAN") {
@@ -33,16 +28,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         id = event.target.id;
       }
+      console.log(id);
+      // if element has href attribute let's navigate
+      let element = document.getElementById(id);
+      if (element.getAttribute('href') !== null) {
+        setTimeout((out) => {
+          reset();
+          window.location.href = element.getAttribute('href');
+        }, 1000);
+      } else {
 
-      // get id suffix to know what first child must show
-      // childrenid = salud | dental | mascotas | decesos
-      let childrenid = id.replace('product-','');
+        fullScreenConfig.classList.add('active');
 
-      // initialize steps bar and get totalsteps count
-      totalsteps = document.getElementById('steps-' + childrenid).value;
-      fillProgressBar(totalsteps);
-
-      document.getElementById('fc-' + childrenid).classList.remove('d-none');
+        // show first childrens div
+        firstchildrens.classList.remove('d-none');
+  
+        // get id suffix to know what first child must show
+        // childrenid = salud | dental | mascotas | decesos
+        let childrenid = id.replace('product-','');
+  
+        // initialize steps bar and get totalsteps count
+        totalsteps = document.getElementById('steps-' + childrenid).value;
+        fillProgressBar(totalsteps);
+  
+        document.getElementById('fc-' + childrenid).classList.remove('d-none');
+      }
     });
   })
 
@@ -58,9 +68,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         idfc = event.target.id;
       }
+      
+      // if element has href attribute let's navigate
+      let element = document.getElementById(idfc);
+      if (element.getAttribute('href') !== null) {
+        updateSteps(true);
+
+        setTimeout((out) => {
+          // close telon
+          fullScreenConfig.classList.remove('active');
+        }, 500);
+
+        setTimeout((out) => {
+          reset();
+          window.location.href = element.getAttribute('href');
+        }, 1000);
+      }
 
       let secondchildrenelement = document.getElementById('sc-' + idfc);
-      // console.log(secondchildrenelement);
       if(secondchildrenelement != null){
         // hide firstchildrens div
         firstchildrens.classList.add('d-none');
@@ -69,17 +94,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // show elements of secondchildren div too
         secondchildrenelement.classList.remove('d-none');
         
-        console.log("b");
         updateSteps(true);
 
         backvalue = 'sc-' + idfc;
       }
     });
   })
-
-  closeButton.addEventListener('click', (event) => {
-    reset();
-  });
 
   let scdivs = document.querySelectorAll('*[id^="sc-"]');
   scdivs.forEach((cv, ci, listObj) => {
@@ -98,17 +118,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
           idsc = event.target.id;
         }
         
+        // if element has href attribute let's navigate
         let element = document.getElementById(idsc);
-        
         setTimeout((out) => {
+          // close telon
           fullScreenConfig.classList.remove('active');
         }, 500);
 
         setTimeout((out) => {
+          reset();
           window.location.href = element.getAttribute('href');
         }, 1000);
       });
     });
+  });
+
+  closeButton.addEventListener('click', (event) => {
+    reset();
   });
 
   let back = document.getElementById('back');
@@ -131,7 +157,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // show firstchildren
       firstchildrens.classList.remove('d-none');
 
-      console.log("c");
       updateSteps(false);
 
       backvalue = null;
@@ -173,16 +198,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   function fillProgressBar(steps) {
     document.querySelector(".bar").style.width = 100/steps + "%";
   }
-
-  // let launch = document.querySelectorAll('.launch');
-  // launch.forEach((cv, ci, listObj) => {
-  //   cv.addEventListener('click', (event) => {
-  //     // let id = event.target.id;
-  //     // console.log(event);
-      
-  //     // TODO decide what to do when a element with path is clicked. href?
-  //   });
-  // });
 
   // function getData(id) {
   //   const urlEndPoint = '/first-children';
