@@ -23,19 +23,17 @@
   {# Header titles #}
 
 
+  {# Example data #}
+  {% set item = {
+    bullets: [
+      'sadasdas',
+      'sadasdas'
+  ]} %}
   {# Bullet list #}
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {% include 'components/bullet-list/bullet-list.html.twig' with {
-          bullet_list_items: [
-            {text: 'Característica producto 1'},
-            {text: 'Característica producto 2'},
-            {text: 'Característica producto 3'},
-            {text: 'Característica producto 4'},
-            {text: 'Característica producto 5'},
-          ],
-        } %}
+        {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: item.bullets } %}
       </div>
     </div>
   </div>
@@ -86,11 +84,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {% include 'components/bullet-list/bullet-list.html.twig' with {
-          bullet_list_items: [
-            {text: 'hue'},
-          ],
-        } %}
+        {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: item.bullets } %}
       </div>
     </div>
   </div>
