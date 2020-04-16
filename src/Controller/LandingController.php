@@ -23,19 +23,18 @@ class LandingController extends AbstractController {
 
   public function index(Request $request, TranslatorInterface $translator) {
 
-    $originalRoute = $request->attributes->get('_route');
-    $packID = $request->attributes->get('_route_params')['landing'];
+    $landing = $request->attributes->get('_route');
+    $area = $this->prodserv->getArea($landing);
+    // dump($area); dump($landing); die();
 
-    $key = "embarazadas";
-    // dump($translator->trans("{$key}.minicards.title"));
-    // $messages = $this->repo->getMessages();
-    // $cards = $messages['salud'][$key]['minicards'];
-
-    $cards = $this->repo->getKeyData('salud',$key,'minicards');
-    $product_bullets = $this->repo->getKeyData('salud',$key,'product_bullet');
+    $cards = $this->repo->getKeyData($area, $landing, 'minicards');
+    $a = $this->repo->getMessages(); 
+    // dump($a); die();
+    // dump($cards); die();
+    $product_bullets = $this->repo->getKeyData($area, $landing,'product_bullet');
 
     return $this->render("pages/landing-product.html.twig", [
-      'key' => $key,
+      'landing' => $landing,
       'translator' => $translator,
       'cards' => $cards['cards'],
       'product_bullets' => $product_bullets['product']
