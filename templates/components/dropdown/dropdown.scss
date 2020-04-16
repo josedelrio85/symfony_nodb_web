@@ -1,4 +1,8 @@
-#dropdown {
+.dropdown {
+
+  .card-header {
+    background: #ffffff;
+  }
 
   .header-titles > .row > div {
     padding-left: 0px;
@@ -28,9 +32,9 @@
     content: "\ea14"; 
   }
 
+  &.bg-grey, &.bg-grey .card-header, &.bg-grey .card-body, &.bg-grey .dd-divider {
+    background: #FAFAFA;
+  }
 
 }
 
-.bg-grey {
-  background: #FAFAFA;
-}
