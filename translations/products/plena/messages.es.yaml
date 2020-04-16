@@ -55,7 +55,6 @@ plena:
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
     text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena:'
     list:
-      - '' 
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
     text: 'Puedes añadir a tu seguro mejoras con nuestro módulo complementario Plus Ginecología y Pediatría con un reembolso del 80% del coste. ¡Y también Plus Clínica Universitaria de Navarra!.'
@@ -84,7 +83,7 @@ plena:
         text: 'Adeslas Plena permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia: De los 3 meses, para pruebas diagnósticas de la más alta tecnología y hasta los 10 meses, para cirugías y hospitalizaciones, como el parto.'
       drop7:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text:'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar sólo 3,55€/mes por persona.'
+        text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar sólo 3,55€/mes por persona.'
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: 'Los seguros de Adeslas Plena están cubiertos con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'

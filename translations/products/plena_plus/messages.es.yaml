@@ -60,7 +60,6 @@ plena_plus:
     title: 'La mejor forma de cuidar de tu familia sin sorpresas'
     text: 'Adeslas Plena Plus te da la bienvenida a los mejores servicios de un seguro médico privado de calidad sin copagos. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas y asistencia a domicilio siempre con la misma tarifa.'
     list:
-      - ''
     image: image.png
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'

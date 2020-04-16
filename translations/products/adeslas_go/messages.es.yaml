@@ -39,16 +39,16 @@ go:
       drop1:
         title: 'Inmediatez'
         text: 'Con Adeslas GO tendrás acceso a tus servicios de forma inmediata, sin cuestionario médico previo, y a las consultas con los especialistas que desees sin esperas.'
-       drop2:
+      drop2:
         title: 'Precio'
         text: 'Adeslas GO tiene una prima de 18 €/mes por asegurado entre los 0 y los 54 años. A partir del segundo asegurado tendrás un descuento del 10%.'
-       drop3:
+      drop3:
         title: 'Calidad'
         text: 'Adeslas cuenta con el mejor y más completo cuadro médico de España, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud a tu servicio.'
-       drop4:
+      drop4:
         title: 'Bonificación en copagos'
         text: 'Cada año tus 3 primeros copagos de hasta 16 € serán gratuitos y a partir del segundo año te reduciremos un 25% los precios de todos los copagos. Si tienes menos de 55 años, nunca pagarás más de 260 € al año en copagos, uses los servicios que uses'
-       drop5:
+      drop5:
         title: 'Pago mensual y con descuentos'
         text: 'Puedes pagar tu prima de Adeslas GO cada mes. Si pagas por trimestre, tendrás un 2% de descuento; un 4%, al semestre y un 6% si el pago es anual'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
@@ -56,7 +56,6 @@ go:
     title: 'Una cobertura médica llena de ventajas'
     text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria para quien busca un seguro complementario con el que prevenir y tratar con rapidez cualquier problema de salud. Podrás consultar con un especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida y acceder a los siguientes servicios:'
     list:
-      - ''
   desc: # 6 titulo + descripcion
     title: ''
     text: 'Cuando contrates tu póliza tendrás acceso a un chequeo médico anual adaptado a tu edad con las siguientes pruebas:'
@@ -77,7 +76,7 @@ go:
       drop4:
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
         text: 'Adeslas GO da acceso a la asistencia médica desde el primer día y sin cuestionarios médicos. Existen carencias reducidas (de 3 meses) para pruebas diagnósticas de la más alta tecnología.'
-      drop4:
+      drop5:
         title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
         text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'
   faq: # 8 FAQ'S solo si no va en particulares
