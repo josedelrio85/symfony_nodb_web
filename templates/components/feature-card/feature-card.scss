@@ -1,0 +1,12 @@
+.feature-card {
+    .inner {
+        box-shadow: $box-shadow-gen;
+        border-radius: $border-radius-gen;
+    }
+    .divider {
+        width: 35px;
+        height: 2px;
+        background: $primary;
+        margin: 1rem 0
+    }
+}
