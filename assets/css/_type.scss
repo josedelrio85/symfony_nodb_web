@@ -1,5 +1,9 @@
 // Typography styles
 
+.font-sans-serif {
+    font-family: $font-family-sans-serif !important;
+}
+
 .text-header {
     font-family: $headers-font-family;
 }

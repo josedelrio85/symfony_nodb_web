@@ -9,13 +9,16 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 use App\Service\ProductService;
+use App\Repository\i18nRepository;
 
 class IndexController extends AbstractController {
 
   private $prodserv;
+  private $repo;
 
-  public function __construct(ProductService $prodserv) {
+  public function __construct(i18nRepository $repo, ProductService $prodserv) {
     $this->prodserv = $prodserv;
+    $this->repo = $repo;
   }
 
   public function index(Request $request, TranslatorInterface $translator) {
@@ -28,7 +31,7 @@ class IndexController extends AbstractController {
 
     $secondChildrens = $this->prodserv->getSecondChildren();
     dump($secondChildrens);
-    // die();
+
     $route = $request->attributes->get('_route');
     $uri = $request->server->get('REQUEST_URI');
 
@@ -42,40 +45,16 @@ class IndexController extends AbstractController {
     ]);
   }
 
-  public function getFirstChildren(Request $request) {
-    $element = $request->request->get('element');
-    $fc = $this->prodserv->getFirstChildren($element);
+  // public function getFirstChildren(Request $request) {
+  //   $element = $request->request->get('element');
+  //   $fc = $this->prodserv->getFirstChildren($element);
 
-    $response = array( 
-      "code" => 200,
-      "response" => $this->render('components/product-selector/product-card.html.twig', [
-        'fc' => $fc
-      ])->getContent() 
-    );
-    return new JsonResponse($response);
-  }
-
-  public function test() {
-    $products = $this->prodserv->getProducts();
-    $mainelements = $this->prodserv->getMain();
-    dump($mainelements);
-    $firstchildrens = $this->prodserv->getFirstChildren();
-    dump($firstchildrens);
-
-    $secondChildrens = $this->prodserv->getSecondChildren();
-    dump($secondChildrens);
-    // die();
-    $route = $request->attributes->get('_route');
-    $uri = $request->server->get('REQUEST_URI');
-
-    return $this->render("pages/index.html.twig", [
-      'route'     => $route,
-      'uri'       => $uri,
-      'translator' => $translator,
-      'mainelements' => $mainelements,
-      'firstchildrens' => $firstchildrens,
-      'secondChildrens' => $secondChildrens,
-    ]);
-
-  }
+  //   $response = array( 
+  //     "code" => 200,
+  //     "response" => $this->render('components/product-selector/product-card.html.twig', [
+  //       'fc' => $fc
+  //     ])->getContent() 
+  //   );
+  //   return new JsonResponse($response);
+  // }
 }

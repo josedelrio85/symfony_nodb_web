@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fspat8');
-  src:  url('fonts/icomoon.eot?fspat8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fspat8') format('truetype'),
-    url('fonts/icomoon.woff?fspat8') format('woff'),
-    url('fonts/icomoon.svg?fspat8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3av4ov');
+  src:  url('fonts/icomoon.eot?3av4ov#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3av4ov') format('truetype'),
+    url('fonts/icomoon.woff?3av4ov') format('woff'),
+    url('fonts/icomoon.svg?3av4ov#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,95 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-adeslas_icon_atencion:before {
+  content: "\eb09";
+  color: #0097d7;
+}
+.icon-adeslas_icon_prevencion:before {
+  content: "\eb0a";
+  color: #0097d7;
+}
+.icon-adeslas_icon_tranquilidad:before {
+  content: "\eb0b";
+  color: #0097d7;
+}
+.icon-adeslas_icon_ventajas:before {
+  content: "\eb0c";
+  color: #0097d7;
+}
+.icon-adeslas_icon_bullet:before {
+  content: "\eb0d";
+}
+.icon-adeslas_icon_close:before {
+  content: "\eb0e";
+}
+.icon-adeslas_icon_desp_less:before {
+  content: "\eb0f";
+  color: #0097d7;
+}
+.icon-adeslas_icon_desp_plus:before {
+  content: "\eb10";
+  color: #0097d7;
+}
+.icon-adeslas_icon_phone_rounded .path1:before {
+  content: "\eb11";
+  color: rgb(255, 255, 255);
+  opacity: 0.9999;
+}
+.icon-adeslas_icon_phone_rounded .path2:before {
+  content: "\eb12";
+  margin-left: -1em;
+  color: rgb(0, 151, 215);
+}
+.icon-adeslas_icon_phone_white:before {
+  content: "\eb13";
+  color: #fff;
+}
+.icon-adeslas_icon_65:before {
+  content: "\eb14";
+}
+.icon-adeslas_icon_-5_empleados:before {
+  content: "\eb15";
+}
+.icon-adeslas_icon_5-99_empleados:before {
+  content: "\eb16";
+}
+.icon-adeslas_icon_autonomos:before {
+  content: "\eb17";
+}
+.icon-adeslas_icon_decesos:before {
+  content: "\eb18";
+}
+.icon-adeslas_icon_dental:before {
+  content: "\eb19";
+}
+.icon-adeslas_icon_embarazadas:before {
+  content: "\eb1a";
+}
+.icon-adeslas_icon_famila:before {
+  content: "\eb1b";
+}
+.icon-adeslas_icon_gran_empresa:before {
+  content: "\eb1c";
+}
+.icon-adeslas_icon_individual:before {
+  content: "\eb1d";
+}
+.icon-adeslas_icon_mascotas:before {
+  content: "\eb1e";
+}
+.icon-adeslas_icon_negocios:before {
+  content: "\eb1f";
+}
+.icon-adeslas_icon_no_viajo:before {
+  content: "\eb20";
+}
+.icon-adeslas_icon_salud:before {
+  content: "\eb21";
+}
+.icon-adeslas_icon_viajo:before {
+  content: "\eb22";
+}
 .icon-icon_crema_de_cafe:before {
   content: "\eb01";
 }

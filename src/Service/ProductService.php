@@ -26,10 +26,11 @@ class ProductService {
     $elements = $this->productConfig['products'];
     $output = [];
     foreach($elements as $el) {
-      // $output[] = $el['name'];
       $output[$el['name']]['name'] = $el['name'];
       $output[$el['name']]['steps'] = $el['steps'];
-
+      if(array_key_exists('path', $el)){
+        $output[$el['name']]['path'] = $el['path'];
+      }
     }
     return $output;
   }
@@ -37,7 +38,8 @@ class ProductService {
   public function getFirstChildren(){
     $elements = $this->productConfig['products'];
     $output = [];
-      foreach($elements as $el) {
+    foreach($elements as $el) {
+      if(!is_null($el['children'])){
         foreach($el['children'] as $ch) {
           // $output[$el['name']][] = $ch['name'];
           $output[$el['name']][$ch['name']]['name'] = $ch['name'];
@@ -45,6 +47,7 @@ class ProductService {
             $output[$el['name']][$ch['name']]['path'] = $ch['path'];
           }
         }
+      }
     }
     return $output;
   }
@@ -52,7 +55,8 @@ class ProductService {
   public function getSecondChildren(){
     $elements = $this->productConfig['products'];
     $output = [];
-      foreach($elements as $el) {
+    foreach($elements as $el) {
+      if(!is_null($el['children'])){
         foreach($el['children'] as $ch) {
           if(!is_null($ch['children'])){
             foreach($ch['children'] as $r){
@@ -62,7 +66,35 @@ class ProductService {
             }
           }
         }
+      }
     }
     return $output;
+  }
+
+  public function getArea($sc) {
+    $elements = $this->productConfig['products'];
+    $output = [];
+    foreach($elements as $el) {
+      if(!is_null($el['children'])){
+        foreach($el['children'] as $ch) {
+          if(!is_null($ch['children'])){
+            foreach($ch['children'] as $r){
+              // print $sc."<br>"; print $r['name']."<br>"; print "-----<br>";
+              if ($sc === $r['name']) {
+                return $el['name'];
+              }
+            }
+          } else {
+            if ($sc === $ch['name']) {
+              return $el['name'];
+            }
+          }
+        }
+      } else {
+          if ($sc === $el['name']) {
+          return $el['name'];
+        }
+      }
+    }
   }
 }

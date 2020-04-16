@@ -3,7 +3,7 @@ embarazadas:
     title: 'Landing embarazadas'
     meta_description: 'Landing embarazadas'
   hero: # 1
-    title: 'ALALALALAL'
+    title: ''
     subtitle: ''
   minicards: # 2 minicards + title + description
     title: 'La asistencia más cercana y profesional para que todo vaya bien'
@@ -66,22 +66,3 @@ embarazadas:
   desc: # 5 title + description
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
     text: 'A los servicios previstos en Adeslas Plena y Adeslas Plena Plus podrás añadirle mejoras con nuestro módulo complementario <a href="#">Plus Ginecología y pediatría</a> y <a href="#">obtener el reembolso del 80% del coste.</a>'
-  faq:    # 6 FAQ'S solo si no va en particulares
-    suptitle: 'FAQ''s'
-    title: 'Diccionario'
-    elems:
-      faq1:
-        title: '¿Qué es un copago?'
-        text: 'Lorem ipsum'
-      faq2:
-        title: '¿Qué es un copago?'
-        text: ''
-      faq3:
-        title: '¿Qué es un copago?'
-        text: ''
-      faq4:
-        title: '¿Qué es un copago?'
-        text: ''
-      faq5:
-        title: '¿Qué es un copago?'
-        text: ''

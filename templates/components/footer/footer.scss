@@ -1,0 +1,35 @@
+.footer {
+    padding: 3rem .5rem;
+    color: $white;
+    background: rgba(5,36,62,1);
+    background: -moz-linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(5,36,62,1)), color-stop(100%, rgba(1,142,203,1)));
+    background: -webkit-linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
+    background: linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05243e', endColorstr='#018ecb', GradientType=1 );
+
+    a {
+        color: $white;
+    }
+
+    .footer-logo {
+        max-width: 85px;
+    }
+    
+    .link {
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .footer-divider {
+        display: block;
+        clear:  both;
+        width: 100%;
+        max-width: 300px;
+        margin: 1.25rem auto;
+        height: 1px;
+        background: rgba($white, 0.2);
+    }
+}

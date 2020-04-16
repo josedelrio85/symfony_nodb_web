@@ -1,9 +1,145 @@
 index:
    path: /
    controller: App\Controller\IndexController::index
-product:
-   path: /product
+
+####### LANDINGS #######
+
+# salud - familia
+embarazadas:
+   path: /seguros-salud-embarazadas
+   controller: App\Controller\LandingController::index
+
+familiar:
+   path: /seguros-salud-familias
+   controller: App\Controller\LandingController::index
+
+individual:
+   path: /seguros-salud-individual
+   controller: App\Controller\LandingController::index
+
+mayores65:
+   path: /seguros-salud-senior
+   controller: App\Controller\LandingController::index
+
+# salud - negocios
+autonomo:
+   path: /seguros-salud-autonomos
+   controller: App\Controller\LandingController::index
+
+menos5:
+   path: /seguros-salud-empresa
+   controller: App\Controller\LandingController::index
+
+mas5:
+   path: /seguros-salud-empresa-extra
+   controller: App\Controller\LandingController::index
+
+mas100:
+   path: /seguros-salud-gran-empresa
+   controller: App\Controller\LandingController::index
+
+# dental
+cobdental:
+   path: /seguros-dentales
+   controller: App\Controller\LandingController::index
+
+dentalysalud:
+   path: /seguros-dentales
+   controller: App\Controller\LandingController::index
+
+# mascotas
+mascotas:
+   path: /seguros-mascotas
+   controller: App\Controller\LandingController::index
+
+# decesos
+decesos:
+   path: /seguros-decesos
+   controller: App\Controller\LandingController::index
+
+########################
+
+
+####### PRODUCTS #######
+
+# salud - familia
+
+#adeslas_go
+go:
+   path: /seguro/adeslas-go
    controller: App\Controller\ProductController::index
+ 
+#plena
+plena:
+   path: /seguro/adeslas-plena
+   controller: App\Controller\ProductController::index
+ 
+#plena_extra
+plena_extra:
+   path: /seguro/adeslas-plena-extra
+   controller: App\Controller\ProductController::index
+ 
+#plena_vital
+plena_vital:
+   path: /seguro/adeslas-plena-vital
+   controller: App\Controller\ProductController::index
+ 
+#plena_plus
+plena_plus:
+   path: /seguro/adeslas-plena-plus
+   controller: App\Controller\ProductController::index
+ 
+#senior
+senior:
+   path: /seguro/adeslas-senior
+   controller: App\Controller\ProductController::index
+
+# salud - negocios
+
+#negocios
+negocios:
+   path: /seguro/adeslas-negocios
+   controller: App\Controller\ProductController::index
+ 
+#negocios_extra
+negocios_extra:
+   path: /seguro/adeslas-negocios_extra
+   controller: App\Controller\ProductController::index
+
+#empresa
+empresa:
+   path: /seguro/adeslas-empresa
+   controller: App\Controller\ProductController::index
+
+#empresa_extra
+empresa_extra:
+   path: /seguro/adeslas-empresa_extra
+   controller: App\Controller\ProductController::index
+
+
+#decesos
+# decesos:
+#   path: /seguro/adeslas-decesos
+#   controller: App\Controller\ProductController::index
+
+
+#mascotas
+# mascotas:
+#   path: /seguro/adeslas-mascotas
+#   controller: App\Controller\ProductController::index
+
+
+# dental 
+dental_max:
+   path: /seguro/adeslas-dental-max
+   controller: App\Controller\ProductController::index
+
+dental_familia:
+   path: /seguro/adeslas-dental-familia
+   controller: App\Controller\ProductController::index
+
+#####################
+
 test:
    path: /test
    controller: App\Controller\TestController::index
