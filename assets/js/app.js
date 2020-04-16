@@ -10,11 +10,20 @@ ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
-
-
 document.addEventListener("DOMContentLoaded", function(event) {
 
+  // Slider home
+  var sliderHome = new Swiper('.swiper-home', {
+      speed: 400,
+      spaceBetween: 100,
+      pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+      }
+  });
 
+  
   if(document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();
     var scene = new ScrollMagic.Scene({
