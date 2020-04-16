@@ -1,62 +1,62 @@
 <div class="click-to-call-btn bg-primary p-3 d-none d-md-block">
-    <div class="text-center">
-        <span class="h4 icon icon-phone text-light d-block"></span>
-        <span class="h6 text-header text-light m-0">¿Hablamos?</span>
-    </div>
+  <div class="text-center">
+    <span class="h4 icon icon-phone text-light d-block"></span>
+    <span class="h6 text-header text-light m-0">¿Hablamos?</span>
+  </div>
 </div>
 
 <div class="click-to-call click-to-call-desktop d-none d-md-block">
-    <div class="click-to-call--header d-flex align-items-center justify-content-between align-items-center bg-primary px-3 py-2">
-        <div class="d-flex align-items-center">
-            <span class="h4 icon icon-phone mr-3 text-light"></span>
-            <span class="h6 text-header text-light m-0">Te llamamos gratis</span>
-        </div>
-        <div class="close-c2c">
-            <span class="icon icon-cancel-circle text-white"></span>
-        </div>
+  <div class="click-to-call--header d-flex align-items-center justify-content-between align-items-center bg-primary px-3 py-2">
+    <div class="d-flex align-items-center">
+      <span class="h4 icon icon-phone mr-3 text-light"></span>
+      <span class="h6 text-header text-light m-0">{{ "form.header" | trans | raw }}</span>
     </div>
-    <div class="click-to-call--body text-center p-3">
-        <img class="mx-auto mb-4" src="https://via.placeholder.com/150x70">
-        <h4 class="text-header">¿Quieres saber más?</h4>
-        <p>Si tienes alguna duda, te llamamos gratis<br>lunes a viernes de 9 a 21h</p>
-        <form>
-            <div class="form-group text-left">
-                <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Tu teléfono">
-            </div>
-            <div class="form-check text-left d-flex">
-                <input type="checkbox" class="form-check-input" id="legalCheck">
-                <label class="form-check-label small" for="legalCheck">He leído y acepto la <a href="#">política de privacidad</a></label>
-            </div>
-            <button type="submit" class="btn btn-primary mt-4 btn-block">Llamadme</button>
-        </form>
+    <div class="close-c2c">
+      <span class="icon icon-cancel-circle text-white"></span>
     </div>
+  </div>
+  <div class="click-to-call--body text-center p-3">
+    <img class="mx-auto mb-4" src="https://via.placeholder.com/150x70">
+    <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
+    <p>{{ "form.desc" | trans | raw }}</p>
+    <form>
+      <div class="form-group text-left">
+        <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
+      </div>
+      <div class="form-check text-left d-flex">
+        <input type="checkbox" class="form-check-input" id="legalCheck">
+        <label class="form-check-label small" for="legalCheck">{{ "form.fields.privacy" | trans | raw }}</label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4 btn-block">{{ "form.cta.text" | trans | raw }}</button>
+    </form>
+  </div>
 </div>
 
 <div class="click-to-call click-to-call-mobile d-block d-md-none">
-    <div class="click-to-call--header d-flex align-items-center justify-content-between align-items-center bg-primary px-3 py-2">
-        <div class="d-flex align-items-center">
-            <span class="h4 icon icon-phone mr-3 text-light"></span>
-            <span class="h6 text-header text-light m-0">Te llamamos gratis</span>
-        </div>
-        <div class="close-c2c d-none">
-            <span class="icon icon-cancel-circle text-white"></span>
-        </div>
+  <div class="click-to-call--header d-flex align-items-center justify-content-between align-items-center bg-primary px-3 py-2">
+    <div class="d-flex align-items-center">
+      <span class="h4 icon icon-phone mr-3 text-light"></span>
+      <span class="h6 text-header text-light m-0">{{ "form.header" | trans | raw }}</span>
     </div>
-    <div class="click-to-call--body text-center p-3">
-        <img class="mx-auto mb-4" src="https://via.placeholder.com/150x70">
-        <h4 class="text-header">¿Quieres saber más?</h4>
-        <p>Si tienes alguna duda, te llamamos gratis<br>lunes a viernes de 9 a 21h</p>
-        <form>
-            <div class="form-group text-left">
-                <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Tu teléfono">
-            </div>
-            <div class="form-check text-left d-flex">
-                <input type="checkbox" class="form-check-input" id="legalCheck">
-                <label class="form-check-label small" for="legalCheck">He leído y acepto la <a href="#">política de privacidad</a></label>
-            </div>
-            <button type="submit" class="btn btn-primary mt-4 btn-block">Llamadme</button>
-        </form>
+    <div class="close-c2c d-none">
+      <span class="icon icon-cancel-circle text-white"></span>
     </div>
+  </div>
+  <div class="click-to-call--body text-center p-3">
+    <img class="mx-auto mb-4" src="https://via.placeholder.com/150x70">
+    <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
+    <p>{{ "form.desc" | trans | raw }}</p>
+    <form>
+      <div class="form-group text-left">
+        <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
+      </div>
+      <div class="form-check text-left d-flex">
+        <input type="checkbox" class="form-check-input" id="legalCheck">
+        <label class="form-check-label small" for="legalCheck">{{ "form.fields.privacy" | trans | raw }}</label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4 btn-block">{{ "form.cta.text" | trans | raw }}</button>
+    </form>
+  </div>
 </div>
 
 
