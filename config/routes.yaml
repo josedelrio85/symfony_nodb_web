@@ -9,7 +9,7 @@ embarazadas:
    path: /seguros-salud-embarazadas
    controller: App\Controller\LandingController::index
 
-familia:
+familiar:
    path: /seguros-salud-familias
    controller: App\Controller\LandingController::index
 

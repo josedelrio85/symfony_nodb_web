@@ -10,8 +10,8 @@ products:
             name: 'individual'
             path: 'individual'
           familiar:
-            name: 'familia'
-            path: 'familia'
+            name: 'familiar'
+            path: 'familiar'
           mayores:
             name: 'mayores65'
             path: 'mayores65'
@@ -48,16 +48,18 @@ products:
   mascotas:
     name: 'mascotas'
     steps: 2
+    path: 'mascotas'
     children:
-      mascotas:
-        name: 'mascotas'
-        path: 'mascotas'
-        children:
+      # mascotas:
+      #   name: 'mascotas'
+      #   path: 'mascotas'
+      #   children:
   decesos:
     name: 'decesos'
     steps: 2
+    path: 'decesos'
     children:
-      decesos:
-        name: 'decesos'
-        path: 'decesos'
-        children:
+      # decesos:
+      #   name: 'decesos'
+      #   path: 'decesos'
+      #   children:
