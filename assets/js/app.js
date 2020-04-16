@@ -5,14 +5,15 @@ import { landingCommander } from '../../node_modules/@bysidecar/landing_commande
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-
   // Fullscreen menu
   $(".close-menu").click(function(){
-    $(".fullscreen-navigation").hide();
+    $(".fullscreen-navigation").fadeOut(300);
   });
 
+  $(".nav-mobile").click(function(){
+    $(".fullscreen-navigation").fadeIn(300);
+  });
 
-  
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
 
