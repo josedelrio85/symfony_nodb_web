@@ -2,18 +2,13 @@
 
   <div id="firstchildrens" class="d-none container">
     <div  class="row">
-      {# <p id="back-0">atras</p> #}
       <div  class="container">
         {% for key, product in firstchildrens %}
           <div id="fc-{{key}}" class="d-none row">
             {% for child in product %}
               <div id="{{child.name}}" class="inner col-12 col-md-6 product-btn" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
                 <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3">
-                  {% set path = null %}
-                  {% if child.path is defined %}
-                    {% set path = child.path %}
-                  {% endif %}
-                  <h5 class="text-light m-0 name launch">{{child.name}}</h5>
+                  <h5 class="text-light m-0 name">{{child.name}}</h5>
                 </div>
               </div>
             {% endfor %}
@@ -24,13 +19,12 @@
   </div>
 
   <div id="secondchildrens" class="d-none container">
-    {# <p id="back-1">atras</p> #}
     {% for key, product in secondChildrens %}
       <div id="sc-{{key}}" class="d-none row">
         {% for child in product %}
           <div id="{{child.name}}" class="inner col-12 col-md-6 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
             <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3">
-              <h5 class="text-light m-0 name launch">{{child.name}}</h5>
+              <h5 class="text-light m-0 name">{{child.name}}</h5>
             </div>
           </div>
         {% endfor %}
