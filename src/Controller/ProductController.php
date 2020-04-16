@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Service\ProductService;
 use App\Repository\i18nRepository;
 
-class LandingController extends AbstractController {
+class ProductController extends AbstractController {
 
   private $prodserv;
   private $repo;
@@ -24,13 +24,17 @@ class LandingController extends AbstractController {
   public function index(Request $request, TranslatorInterface $translator) {
 
     $landing = $request->attributes->get('_route');
-    $area = $this->prodserv->getArea($landing);
-    dump($landing); dump($area); 
-    $a = $this->repo->getMessages(); 
-    dump($a); die();
-    $cards = $this->repo->getKeyData($area, $landing, 'minicards');
+    // dump($landing);  die();
+
+    // $area = $this->prodserv->getArea($landing);
+    // dump($landing); dump($area); die();
+    // $a = $this->repo->getMessages(); 
+    // dump($a); die();
+    // $cards = $this->repo->getKeyData($area, $landing, 'minicards');
     // dump($cards); die();
-  
+
+    dump($this->repo->getMessages());
+    die();
     $product_bullets = $this->repo->getKeyData($area, $landing,'product_bullet');
 
     return $this->render("pages/landing-product.html.twig", [
