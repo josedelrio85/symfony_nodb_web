@@ -17,8 +17,8 @@ class i18nRepository{
     $arr = [
       $basedir.DIRECTORY_SEPARATOR.'salud',
       $basedir.DIRECTORY_SEPARATOR.'dental',
-      // $basedir.DIRECTORY_SEPARATOR.'decesos',
-      // $basedir.DIRECTORY_SEPARATOR.'mascotas',
+      $basedir.DIRECTORY_SEPARATOR.'decesos',
+      $basedir.DIRECTORY_SEPARATOR.'mascotas',
     ];
     $iterator = $finder->files()->in($arr);
     foreach ($iterator as $file) {
