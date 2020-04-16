@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   scdivs.forEach((cv, ci, listObj) => {
     cv.childNodes.forEach((e, f, g) => {
       e.addEventListener('click', (event) => {
+
+        updateSteps(true);
+
         // get id of element clicked
         let idsc = null;
         if(event.target.nodeName === "H5") {
@@ -96,9 +99,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         
         let element = document.getElementById(idsc);
-        // TODO timeout, hide telon and window.location
-        window.location.href = element.getAttribute('href');
+        
+        setTimeout((out) => {
+          fullScreenConfig.classList.remove('active');
+        }, 500);
 
+        setTimeout((out) => {
+          window.location.href = element.getAttribute('href');
+        }, 1000);
       });
     });
   });
