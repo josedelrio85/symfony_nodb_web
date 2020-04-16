@@ -21,15 +21,16 @@
   <div class="container-fluid d-none d-lg-block mb-4 h-50 product-single-hero-desktop ">
     <div class="container h-50">
       <div class="row">
-        <div class="col-8 text-white">
+        <div class="col-lg-7 col-xl-8 text-white">
           {% include 'components/header-titles/header-titles.html.twig' with {
             mini_header: '',
             text_header: 'ADESLAS PLENA PLUS',
             content_header: 'Un cuadro médico con 43.000 especialistas a tu disposición <strong>sin copagos</strong>',
           } %}
         </div>
-        <div class="col-4  my-3">
-          <div>
+        <div class="col-lg-5 col-xl-4 my-3">
+          <div id="triggerpincard"></div>
+          <div id="pincard">
             {% include 'components/product-single-card/product-single-card.html.twig' %}
           </div>
         </div>

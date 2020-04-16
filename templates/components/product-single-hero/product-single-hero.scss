@@ -12,4 +12,9 @@
     background-size: cover;
     background-position: center;
   }
+
+  #pincard {
+    top:initial!important ;
+    transition: top 1s;
+  }
 }

@@ -15,19 +15,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var controller = new ScrollMagic.Controller();
 
   var scene = new ScrollMagic.Scene({
-      triggerElement: '#mainelements',
-      triggerHook: 1,
+      triggerElement: '#triggerpincard',
+      triggerHook: 0,
       offset: 0.5
   })
-      .setClassToggle("body", "active")
-      .on('start', function () {
-          console.log("passed trigger");
-      })
-      .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" });
+    .setClassToggle("body", "pinactive")
+    .on('start', function () {
+        // console.log("passed trigger");
+    })
+    // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
+    .setPin("#pincard");
 
-  controller.addScene(scene);
-
-
+    controller.addScene(scene);
 
 
 
