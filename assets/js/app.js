@@ -1,10 +1,45 @@
 import '../css/app.css';
 import 'bootstrap';
 import Swiper from 'swiper';
+
+import { TweenMax, TimelineMax } from '../../node_modules/gsap/src/all.js';
+import * as ScrollMagic from 'ScrollMagic';
+import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
+import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
+
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
+
+
 document.addEventListener("DOMContentLoaded", function(event) {
-  
+
+
+  if(document.getElementById('pincard')) {
+    var controller = new ScrollMagic.Controller();
+    var scene = new ScrollMagic.Scene({
+        triggerElement: '#triggerpincard',
+        triggerHook: 0,
+        offset: 0.5
+    })
+      .setClassToggle("body", "pinactive")
+      .on('start', function () {
+          // console.log("passed trigger");
+      })
+      // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
+      .setPin("#pincard");
+
+    controller.addScene(scene);
+
+    //Recalculate pin position on resize device screen
+    window.onresize = function() {
+      scene.removePin(true);
+      scene.setPin('#pincard');
+      scene.refresh();
+    }
+  }
+
+
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
 

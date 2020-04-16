@@ -1,0 +1,40 @@
+<div id="product-single-hero">
+  {# Hero section mobile #}
+  <div class="d-block d-lg-none mb-4">
+    <div class="container-fluid product-single-hero-mobile">
+      <div class="container px-0 pt-5">
+        <div class="row">
+          <div class="col-12 p-0 text-white mt-3">
+            {% include 'components/header-titles/header-titles.html.twig' with {
+              mini_header: '',
+              text_header: 'Adeslas Plena Plus',
+              content_header: 'Un cuadro médico con 43.000 especialistas a tu disposción <b>sin copagos</b>',
+            } %}
+            {% include 'components/product-single-card/product-single-card.html.twig' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {# Hero section desktop #}
+  <div class="container-fluid d-none d-lg-block mb-4 h-50 product-single-hero-desktop ">
+    <div class="container h-50">
+      <div class="row">
+        <div class="col-lg-7 col-xl-8 text-white">
+          {% include 'components/header-titles/header-titles.html.twig' with {
+            mini_header: '',
+            text_header: 'ADESLAS PLENA PLUS',
+            content_header: 'Un cuadro médico con 43.000 especialistas a tu disposición <strong>sin copagos</strong>',
+          } %}
+        </div>
+        <div class="col-lg-5 col-xl-4 my-3">
+          <div id="triggerpincard"></div>
+          <div id="pincard">
+            {% include 'components/product-single-card/product-single-card.html.twig' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

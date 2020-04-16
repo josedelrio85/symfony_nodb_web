@@ -1,0 +1,162 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "home.title_detail" | trans }}{% endblock %}
+
+{% block meta_description %}<meta name="description" content="{{ "home.meta_description" | trans }}">{% endblock %}
+
+{% block body %}
+
+  {% include 'components/product-single-hero/product-single-hero.html.twig' %}
+
+  <div class="container-fluid container-lg">
+    <div class="row">
+      <div class="col-12 col-lg-8 p-0">
+        {# Header titles #}
+          {% include 'components/header-titles/header-titles.html.twig' with {
+            mini_header: 'ADESLAS PLENA PLUS',
+            text_header: 'Características',
+            content_header: '',
+          } %}
+        {# Header titles #}
+
+        {# Example data #}
+        {% set item = {
+          bullets: [
+            'Bullet item 1',
+            'Bullet item 2'
+        ]} %}
+        {# Bullet list #}
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: item.bullets } %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      {# Simple line divider #}
+        {% include 'components/simple-divider-line/simple-divider-line.html.twig' with { padding_x: 3, margin_y: 5 } %}
+
+      {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          mini_header: 'COBERTURA PLUS',
+          text_header: 'Garantía total',
+          content_header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante ante, pharetra ut rutrum suscipit, lacinia ac turpis. Duis venenatis accumsan odio, id suscipit est. Nam cursus sed felis sed maximus. Sed lobortis enim sem, ac gravida est varius at. Fusce in purus eu libero consectetur tincidunt. Vivamus vitae commodo tellus. Vivamus tortor velit, tincidunt a leo at, scelerisque tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis metus congue, interdum est ac, sagittis risus.',
+        } %}
+
+      {# Dropdown content #}
+        {% include 'components/dropdown/dropdown.html.twig' with {
+          bg_grey: false,
+          dropdown_items: [
+            {
+              title: 'Title',
+              desc: 'Body body body',
+            },
+            {
+              title: 'Title 2',
+              desc: 'Body body body 2',
+            }
+          ]
+        } %}
+
+      {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          mini_header: 'COBERTURA PLUS',
+          text_header: 'La mejor fórmula de cuidar la salud de tu familia',
+          content_header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante ante, pharetra ut rutrum suscipit, lacinia ac turpis. Duis venenatis accumsan odio, id suscipit est. Nam cursus sed felis sed maximus. Sed lobortis enim sem, ac gravida est varius at. Fusce in purus eu libero consectetur tincidunt. Vivamus vitae commodo tellus. Vivamus tortor velit, tincidunt a leo at, scelerisque tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis metus congue, interdum est ac, sagittis risus.',
+        } %}
+
+      {# Bullet list #}
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: item.bullets } %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {# Image divider #}
+        {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
+          image: 'https://via.placeholder.com/1920x500'
+        } %}
+
+      {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          bg_grey: true,
+          mini_header: '',
+          text_header: '¿Quieres elegir a tu Ginecólogo o Pediatra?',
+          content_header: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ante ante, pharetra ut rutrum suscipit, lacinia ac turpis. Duis venenatis accumsan odio, id suscipit est. Nam cursus sed felis sed maximus. Sed lobortis enim sem, ac gravida est varius at. Fusce in purus eu libero consectetur tincidunt. Vivamus vitae commodo tellus. Vivamus tortor velit, tincidunt a leo at, scelerisque tincidunt ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis metus congue, interdum est ac, sagittis risus.',
+        } %}
+
+      {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          bg_grey: true,
+          mini_header: 'VENTAJAS',
+          text_header: 'La mejor fórmula de cuidar la salud de tu familia',
+          content_header: '',
+        } %}
+
+      {# Dropdown content #}
+        {% include 'components/dropdown/dropdown.html.twig' with {
+          bg_grey: true,
+          dropdown_items: [
+            {
+              title: 'Title',
+              desc: 'Body body body',
+            },
+            {
+              title: 'Title 2',
+              desc: 'Body body body 2',
+            }
+          ]
+        } %}
+
+      {# Image divider #}
+        {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
+          image: 'https://via.placeholder.com/1920x500'
+        } %}
+
+      {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          bg_grey: true,
+          mini_header: 'FAQ`s',
+          text_header: 'Términos de interés',
+          content_header: '',
+        } %}
+
+      {# Dropdown content #}
+        {% include 'components/dropdown/dropdown.html.twig' with {
+          bg_grey: true,
+          dropdown_items: [
+            {
+              title: 'Title',
+              desc: 'Body body body',
+            },
+            {
+              title: 'Title 2',
+              desc: 'Body body body 2',
+            }
+          ]
+        } %}
+
+      </div>
+
+      {# TODO: borrar esto si Andres confirma que la tarjeta queda donde está #}
+      {# <div class="col-4 d-none d-lg-block">
+        <div class="fixed-top container">
+          <div class="row">
+            <div class="col-4 offset-8 mt-3">
+              {% include 'components/product-single-card/product-single-card.html.twig' %}
+            </div>
+          </div>
+        </div>
+      {# </div> #}
+    </div>
+  </div>
+  {# Hero section desktop #}
+
+{% endblock %}
