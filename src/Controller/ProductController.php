@@ -23,25 +23,24 @@ class ProductController extends AbstractController {
 
   public function index(Request $request, TranslatorInterface $translator) {
 
-    $landing = $request->attributes->get('_route');
-    // dump($landing);  die();
+    $productid = $request->attributes->get('_route');
+    // dump($this->repo->getMessages());
+    $bullets = $this->repo->getKeyDataProducts($productid,'bullets');
+    $des_with_dropdown = $this->repo->getKeyDataProducts($productid,'des_with_dropdown');
+    $desc_with_bullets = $this->repo->getKeyDataProducts($productid,'desc_with_bullets');
+    dump($bullets);
+    dump($des_with_dropdown);
+    dump($desc_with_bullets);die();
 
-    // $area = $this->prodserv->getArea($landing);
-    // dump($landing); dump($area); die();
-    // $a = $this->repo->getMessages(); 
-    // dump($a); die();
-    // $cards = $this->repo->getKeyData($area, $landing, 'minicards');
-    // dump($cards); die();
 
-    dump($this->repo->getMessages());
-    die();
-    $product_bullets = $this->repo->getKeyData($area, $landing,'product_bullet');
-
-    return $this->render("pages/landing-product.html.twig", [
+    return $this->render("pages/product.html.twig", [
       'landing' => $landing,
       'translator' => $translator,
       'cards' => $cards['cards'],
-      'product_bullets' => $product_bullets['product']
+      // 'product_bullets' => $product_bullets['product']
+      'bullets_list' => $bullets['list'],
+      'des_with_dropdown_list' => $des_with_dropdown['drop'],
+      'desc_with_bullets_list' => $desc_with_bullets['list'],
     ]);
   }
 }
