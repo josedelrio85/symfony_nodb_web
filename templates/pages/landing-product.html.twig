@@ -38,37 +38,6 @@
     content_header: "#{key}.product_bullet.desc" | trans
   } %}
 
-  {# Example data #}
-  {% set bullet_list_items1 =
-    [
-      {text: 'Bullet list item 1'},
-      {text: 'Bullet list item 2'},
-      {text: 'Bullet list item 3'},
-    ]
-  %}
-  {% set bullet_list_items2 =
-    [
-      {text: 'Bullet list item 4'},
-      {text: 'Bullet list item 5'},
-      {text: 'Bullet list item 6'},
-    ]
-  %}
-  {% set products = [
-    {
-      product_title: 'Adeslas Plena Vital',
-      product_price: '35',
-      product_features: bullet_list_items1,
-      product_url: 'https://www.google.com',
-    },
-    {
-      product_title: 'Adeslas Plena Vital 2',
-      product_price: '35',
-      product_features: bullet_list_items2,
-      product_url: 'https://www.google.com',
-    },
-  ]
-  %}
-
   {# Product card component #}
   <div class="container mb-5">
     <div class="row">
@@ -121,8 +90,8 @@
   </div>
 
   {# Dropdown component #}
-  {% include 'components/dropdown/dropdown.html.twig' with {
+  {# {% include 'components/dropdown/dropdown.html.twig' with {
     dropdown_items: dropdown
-  } %}
+  } %} #}
 
 {% endblock %}
