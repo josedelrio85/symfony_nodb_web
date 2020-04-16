@@ -48,32 +48,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   let fcdivs = document.querySelectorAll('*[id^="fc-"]');
   fcdivs.forEach((cv, ci, listObj) => {
-      cv.addEventListener('click', (event) => {
-        // get id of element clicked
-        let idfc = null;
-        if(event.target.nodeName === "H5") {
-          idfc = event.target.parentNode.parentNode.id;
-        } else if(event.target.classList.contains("justify-content-between")){
-          idfc = event.target.parentNode.id;
-        } else {
-          idfc = event.target.id;
-        }
+    cv.addEventListener('click', (event) => {
+      // get id of element clicked
+      let idfc = null;
+      if(event.target.nodeName === "H5") {
+        idfc = event.target.parentNode.parentNode.id;
+      } else if(event.target.classList.contains("justify-content-between")){
+        idfc = event.target.parentNode.id;
+      } else {
+        idfc = event.target.id;
+      }
 
-        let secondchildrenelement = document.getElementById('sc-' + idfc);
-        // console.log(secondchildrenelement);
-        if(secondchildrenelement != null){
-          // hide firstchildrens div
-          firstchildrens.classList.add('d-none');
-          // show secondchildrens div
-          secondchildrens.classList.remove('d-none');
-          // show elements of secondchildren div too
-          secondchildrenelement.classList.remove('d-none');
-          
-          console.log("b");
-          updateSteps(true);
+      let secondchildrenelement = document.getElementById('sc-' + idfc);
+      // console.log(secondchildrenelement);
+      if(secondchildrenelement != null){
+        // hide firstchildrens div
+        firstchildrens.classList.add('d-none');
+        // show secondchildrens div
+        secondchildrens.classList.remove('d-none');
+        // show elements of secondchildren div too
+        secondchildrenelement.classList.remove('d-none');
+        
+        console.log("b");
+        updateSteps(true);
 
-          backvalue = 'sc-' + idfc;
-        }
+        backvalue = 'sc-' + idfc;
+      }
     });
   })
 
@@ -82,6 +82,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   let scdivs = document.querySelectorAll('*[id^="sc-"]');
+  scdivs.forEach((cv, ci, listObj) => {
+    cv.childNodes.forEach((e, f, g) => {
+      e.addEventListener('click', (event) => {
+        // get id of element clicked
+        let idsc = null;
+        if(event.target.nodeName === "H5") {
+          idsc = event.target.parentNode.parentNode.id;
+        } else if(event.target.classList.contains("justify-content-between")){
+          idsc = event.target.parentNode.id;
+        } else {
+          idsc = event.target.id;
+        }
+        
+        let element = document.getElementById(idsc);
+        // TODO timeout, hide telon and window.location
+        window.location.href = element.getAttribute('href');
+
+      });
+    });
+  });
 
   let back = document.getElementById('back');
   back.addEventListener('click', (event) => {
@@ -144,7 +164,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function fillProgressBar(steps) {
     document.querySelector(".bar").style.width = 100/steps + "%";
-
   }
 
   // let launch = document.querySelectorAll('.launch');
