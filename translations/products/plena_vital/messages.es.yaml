@@ -20,11 +20,10 @@ plena_vital:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    #suptitle: 'Adeslas Plena Vital'
-    #title: 'Asistencia médica y hospitalaria completa a precio reducido'
-    #text: 'Adeslas Plena Vital es un seguro médico completo, con asistencia sanitaria ambulatoria y hospitalaria y acceso a todas las especialidades de Medicina General y Pediatría. Todos los servicios del mejor cuadro médico para asegurarte una atención de primera y sin esperas.'
-    #text2: 'Adeslas Plena Vital es el seguro privado de salud que te garantiza la asistencia ambulatoria con el acceso directo a todos los especialistas que necesites y el ingreso hospitalario en habitación individual con cama para el acompañante. Amplias coberturas como:'
-    #list:
+    suptitle: 'Adeslas Plena Vital'
+    title: 'Asistencia médica y hospitalaria completa a precio reducido'
+    list:
+      - 'esto es un texto de <strong>prueba</strong>'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: 'Asistencia médica y hospitalaria completa a precio reducido'
