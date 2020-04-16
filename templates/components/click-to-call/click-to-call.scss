@@ -1,5 +1,6 @@
 .click-to-call,
-.click-to-call-btn {
+.click-to-call-btn,
+.click-to-call-mobile {
     transition: all ease .3s;
 }
 
@@ -27,7 +28,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    transform: translateY(calc(+100% - 41px));
+    transform: translateY(calc(100% - 49px));
+
+    &.c2c-mobile-open {
+        transform: translateY(0);
+    }
 }
 
 .click-to-call-btn {

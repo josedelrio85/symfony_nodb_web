@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeC2cMbile = document.querySelector('.click-to-call-mobile .close-c2c');
   let C2cSide = document.querySelector('.click-to-call-btn');
 
+  let C2cMobileHeader = document.querySelector('.click-to-call-mobile .click-to-call--header');
+
+
   closeC2cDeskop.addEventListener('click', (event) => {
     C2cDeskop.classList.add('c2c-collapsed');
     C2cSide.classList.add('c2c-size-open');
@@ -20,7 +23,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     C2cDeskop.classList.remove('c2c-collapsed');
     C2cSide.classList.remove('c2c-size-open');
   });
+  C2cMobileHeader.addEventListener('click', (event) => {
 
+    if(C2cMobile.classList.contains('c2c-mobile-open')) {
+      C2cMobile.classList.remove('c2c-mobile-open');
+      document.querySelector('.click-to-call-mobile .close-c2c').classList.add('d-none');
+    } else {
+      C2cMobile.classList.add('c2c-mobile-open');
+      document.querySelector('.click-to-call-mobile .close-c2c').classList.remove('d-none');
+    }
+
+
+  });
 
 
 
