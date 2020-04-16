@@ -16,5 +16,6 @@
   #pincard {
     top:initial!important ;
     transition: top 1s;
+    z-index: 99;
   }
 }
