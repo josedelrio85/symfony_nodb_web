@@ -22,14 +22,14 @@
     line-height: 1;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
-    content: "\ea15";
+    -moz-osx-font-smoothing: grayscale;
+    content: "\eb0f";
     float: right;
     color: #0097D7;
   }
   .accordion .card-header.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\ea14"; 
+    content: "\eb10";
   }
 
   &.bg-grey, &.bg-grey .card-header, &.bg-grey .card-body, &.bg-grey .dd-divider {
