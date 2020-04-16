@@ -4,7 +4,27 @@ import Swiper from 'swiper';
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  
+
+  // Click to call
+  let C2cDeskop = document.querySelector('.click-to-call-desktop');
+  let C2cMobile = document.querySelector('.click-to-call-mobile');
+  let closeC2cDeskop = document.querySelector('.click-to-call-desktop .close-c2c');
+  let closeC2cMbile = document.querySelector('.click-to-call-mobile .close-c2c');
+  let C2cSide = document.querySelector('.click-to-call-btn');
+
+  closeC2cDeskop.addEventListener('click', (event) => {
+    C2cDeskop.classList.add('c2c-collapsed');
+    C2cSide.classList.add('c2c-size-open');
+  });
+  C2cSide.addEventListener('click', (event) => {
+    C2cDeskop.classList.remove('c2c-collapsed');
+    C2cSide.classList.remove('c2c-size-open');
+  });
+
+
+
+
+
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
 

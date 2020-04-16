@@ -1,0 +1,48 @@
+.click-to-call,
+.click-to-call-btn {
+    transition: all ease .3s;
+}
+
+.click-to-call {
+    position: fixed;
+    z-index: 99;
+    background: white;
+
+    .close-c2c {
+        cursor: pointer;
+    }
+}
+
+.click-to-call-desktop {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    &.c2c-collapsed {
+        transform: translate(100%, -50%);
+    }
+}
+
+.click-to-call-mobile {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(calc(+100% - 41px));
+}
+
+.click-to-call-btn {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 100;
+    transform: translate(100%, -50%);
+    border-top-left-radius: $border-radius-gen;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: $border-radius-gen;
+
+    &.c2c-size-open {
+        transform: translate(0, -50%);
+    }
+}
