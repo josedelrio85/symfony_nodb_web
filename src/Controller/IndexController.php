@@ -9,13 +9,16 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 use App\Service\ProductService;
+use App\Repository\i18nRepository;
 
 class IndexController extends AbstractController {
 
   private $prodserv;
+  private $repo;
 
-  public function __construct(ProductService $prodserv) {
+  public function __construct(i18nRepository $repo, ProductService $prodserv) {
     $this->prodserv = $prodserv;
+    $this->repo = $repo;
   }
 
   public function index(Request $request, TranslatorInterface $translator) {
@@ -28,7 +31,7 @@ class IndexController extends AbstractController {
 
     $secondChildrens = $this->prodserv->getSecondChildren();
     dump($secondChildrens);
-    // die();
+
     $route = $request->attributes->get('_route');
     $uri = $request->server->get('REQUEST_URI');
 
