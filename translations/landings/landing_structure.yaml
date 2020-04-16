@@ -57,10 +57,3 @@ algo:
   desc: # 5 title + description
     title: ''
     text: ''
-  faq:    # 6 FAQ'S solo si no va en particulares
-    suptitle: ''
-    title: ''
-    elems:
-      faq1:
-        title: ''
-        text: ''
