@@ -2,7 +2,7 @@
 plena_plus:
   hero: # 1
     title: 'Adeslas Plena Plus'
-    subtitle1: 'Un cuadro médico con 43.000 especialistas a tu disposición sin copagos'
+    subtitle1: 'La mejor oferta de seguro médico privado sin copagos'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
@@ -21,103 +21,78 @@ plena_plus:
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Adeslas Plena Plus'
-    title: 'Caracteristicas'
+    title: 'Cobertura total'
     list_embarazadas:
-      - 'Pruebas prenatales'
-      - 'Test de ADN fetal en sangre materna'
-      - 'Preparación al parto'
+      - 'Cobertura total del embarazo y parto'
+      - 'Planes de Prevención en Pediatría, Ginecología, Cardiología o Urología'
       - 'Reproducción asistida en condiciones especiales'
-      - 'Asistencia al parto y cuidados postparto'
-      - 'Asistencia en cuidados de puericultura'
-      - 'Revisiones ginecológicas y de obstetricia'
-      - 'Teléfono 24 horas de asistencia a la embarazada'
-      - 'Medicina general, Especialistas y Pediatría'
-      - 'Medios, diagnósticos de Alta Tecnología'
-      - 'Criopresrvación de células madre y embrionarias'
-      - 'Copagos limitados'
+      - 'Hospitalización médica, quirúrgica, pediátrica, psiquiátrica, UVI, etc'
+      - 'Medios diagnósticos de Alta Tecnología'
+      - 'Cirugía, implantes y prótesis internas'
+      - 'Planificación familiar (incluido DIU e implantación)'
+      - 'Fisioterapia y podología bajo reembolso de gastos'
+      - 'Tratamientos especiales'
   desc_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: 'Cobertura Plus'
-    title: 'Garantía Total'
-    text: 'Adeslas Plena Plus es el seguro médico más global ...'
-    drop_embarazadas:
+    suptitle: ''
+    title: 'Condiciones Plus'
+    text: ''
+    drop:
       drop1:
-        title: 'Descuentos'
-        text: ''
-      drop2:
-        title: 'Sin Copagos'
-        text: 'Pruebas sin autorización'
-      drop3:
-        title: 'Calidad'
-        text:
-      drop4:
-        title: 'flexibilidad en el pago y descuentos'
-        text: ''
-    drop_particulares:
-      drop1:
-        title: 'Descuentos'
-        text: ''
-      drop2:
-        title: 'Sin Copagos'
-        text: ''
-      drop3:
-        title: 'Calidad'
-        text:
-      drop4:
-        title: 'flexibilidad en el pago y descuentos'
-        text: ''
-      drop5:
-        title: 'Pruebas sin autorización'
-        text: ''
-      drop6:
         title: 'Asistencia inmediata'
-        text: ''
+        text: 'Adeslas Plena Plus es el seguro ideal para cuidarte porque te garantiza una atención inmediata ante cualquier problema de salud. Y en todas las hospitalizaciones disfrutarás de una habitación individual con cama para el acompañante.'
+      drop2:
+        title: 'Descuentos'
+        text: 'Con Adeslas Plena Plus accedes a todas las coberturas del catálogo de servicios Adeslas desde sólo 55 €/mes. Con una póliza familiar de 4 o más asegurados tendrás un 10% de descuento por persona. Y si contratas Dental, tu seguro médico <strong>2 meses gratis</strong>'
+      drop3:
+        title: 'Sin copagos'
+        text: 'En Adeslas Plena Plus te aseguras que pagarás lo mismo cada mes, el importe de tu prima mensual, sin copagos ni gastos extra, vayas al médico las veces que vayas y pidas cuantas pruebas necesites.'
+      drop4:
+        title: 'Pruebas sin autorización'
+        text: 'Con Adeslas Plena Vital, podrás someterte a la mayoría de pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas'
+      drop5:
+        title: 'Calidad'
+        text: 'Adeslas dispone del mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud a tu servicio.'
+      drop6:
+        title: 'Pago mensual y descuentos'
+        text: 'En Adeslas Plena Plus podrás pagar tu prima cada mes o si lo prefieres, beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: 'Cobertura Plus'
-    title: 'La mejor fórmula de cuidar la salud de tu familia'
-    text: 'Adeslas Plena Plus te abre la puerta ....'
+    title: 'La mejor forma de cuidar de tu familia sin sorpresas'
+    text: 'Adeslas Plena Plus te da la bienvenida a los mejores servicios de un seguro médico privado de calidad sin copagos. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas y asistencia a domicilio siempre con la misma tarifa.'
     list:
-      - 'Cobertura total del embarazo'
-      - 'Planificación familiar (incluido DIU e implantación)'
-      - 'hospitalización médica, quirúrgica, pediátrica, psiquiátrica, UVI, etc'
-      - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular)'
-      - 'Planes de Medicina Preventiva en Pediatría, Ginecología, Cardiología o Urología'
-      - 'Implantes y prótesis (internas) cardivasculares, osteoarticulares y oftalmológicas'
-      - 'Tratamientos especiales (Laserterapia, logopedia, tratamiento del dolor, etc)'
-      - 'Fisioterapia y podología bajo reembolso de gastos por valor de 500 y 200 euros'
-      - 'Medicina general, Especialistas y Pediatría'
-      - 'Medios, diagnósticos de Alta Tecnología'
-      - 'Criopresrvación de células madre y embrionarias'
-      - 'Copagos limitados'
     image: image.png
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
-    text: 'Además de todas las coberturas....'
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
+    text: 'Además de todas las coberturas, puedes contratar nuestro módulo complementario de Ginecología y Pediatría y obtener el reembolso del 80% de los gastos. ¡Y también el Plus Clínica Universitaria de Navarra!'
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: 'Ventajas'
     title: 'Un seguro cargado de ventajas'
     text: ''
     drop:
       drop1:
         title: '¿Para quién es Adeslas Plena Plus?'
-        text: ''
+        text: 'Adeslas Plena plus está pensado para personas o familias que acuden al médico con cierta frecuencia o quieren asegurarse no hacer frente a pagos extraordinarios si necesitan atención. Este seguro incluye Adeslas Es Más, un servicio exclusivo de los asegurados Adeslas, que da acceso al área privada y servicios adicionales como: Orientación telefónica 24 horas a embarazadas y postparto, Cirugía refractiva en condiciones especiales, Reproducción asistida con tarifas especiales, Psicoterapia, etc.'
       drop2:
-        title: '¿Hay límite de edad para contratar Adeslas Plena Plus?'
-        text: ''
+        title: '¿Puedo contratar este servicio sólo para mis hijos?'
+        text: 'Sí. Adeslas Plena Plus puede contratarse para una única persona, que puede ser menor de edad siempre que el tomador supere los 18 años.'
       drop3:
-        title: '¿Puedo contratar este servicio solo para mis hijos?'
-        text:
+        title: '¿Qué cobertura tengo si estoy embarazada?'
+        text: 'Adeslas Plena Plus te ofrece la más amplia cobertura de tus necesidades durante el embarazo y el parto; pruebas prenatales, test de ADN en sangre materna, preparación y asistencia al parto y postparto, tanto para ti como para tu bebé. Todo en una póliza asequible y sin copagos. El parto es una hospitalización más, por lo que tiene una carencia de 10 meses desde la contratación de la póliza'
       drop4:
         title: '¿Puedo contratar Adeslas Plena si no tengo DNI o NIE?'
-        text: ''
+        text: 'Sí, puedes contratar tu seguro médico con Adeslas Plena Plus. Sólo te hará falta el pasaporte.'
       drop5:
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: ''
+        text: 'Adeslas Plena Plus permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para intervenciones quirúrgicas y hospitalizaciones.'
       drop6:
         title: 'Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text: ''
+        text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar hasta 3,55 €/mes por persona.'
       drop7:
+        title: '¿Hay límite de edad para contratar Adeslas Plena Plus?'
+        text: 'Adeslas Plena Plus se puede contratar hasta los 70 años, aunque puede incluirse a personas mayores de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.'
+      drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
-        text: ''
+        text: 'Los seguros de Adeslas Plena Plus están cubiertos por un plan de protección de pagos, en los que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
     image: image.png
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
@@ -125,14 +100,14 @@ plena_plus:
     elems:
       faq1:
         title: 'Copagos'
-        text: ''
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos. En Adeslas Plena Plus no hay copagos.'
       faq2:
         title: 'Cuestionario Médico'
-        text: ''
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena Plus está sujeto a cuestionario médico previo.'
       faq3:
         title: 'Carencias'
-        text: ''
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura tras la contratación. En Adeslas Plena Plus existen carencias para pruebas diagnósticas de alta tecnología, cirugía y hospitalización y son de 6 meses para acceder a los servicios de reproducción asistida.'
       faq4:
-        title: 'Poliza y prima'
-        text: ''
+        title: 'Póliza y prima'
+        text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
   

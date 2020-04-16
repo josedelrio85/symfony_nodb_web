@@ -12,14 +12,28 @@ class i18nRepository{
   protected $index;
 
   public function __construct(string $rootPath) {
-    $basedir = $rootPath .DIRECTORY_SEPARATOR.'translations'.DIRECTORY_SEPARATOR.'landings';
+    $basedir = $rootPath .DIRECTORY_SEPARATOR.'translations';
+    $landings = $basedir.DIRECTORY_SEPARATOR.'landings'.DIRECTORY_SEPARATOR;
+    $products = $basedir.DIRECTORY_SEPARATOR.'products'.DIRECTORY_SEPARATOR;
+
     $finder = new Finder();
     $arr = [
-      $basedir.DIRECTORY_SEPARATOR.'salud',
-      $basedir.DIRECTORY_SEPARATOR.'dental',
-      $basedir.DIRECTORY_SEPARATOR.'decesos',
-      $basedir.DIRECTORY_SEPARATOR.'mascotas',
+      $landings.'salud',
+      $landings.'dental',
+      $landings.'decesos',
+      $landings.'mascotas',
+
+      $products.'adeslas_go',
+      $products.'plena',
+      $products.'plena_extra',
+      $products.'plena_plus',
+      $products.'plena_vital',
+      $products.'senior',
+      $products.'decesos',
+      $products.'mascotas',
+      // TODO add products for negocio and dental
     ];
+
     $iterator = $finder->files()->in($arr);
     foreach ($iterator as $file) {
       $path = $file->getRealpath();
