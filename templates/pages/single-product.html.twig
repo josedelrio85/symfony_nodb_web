@@ -110,14 +110,14 @@
         } %}
 
         {% if table is defined %}
-        <div class="container-fluid">
-          <div class="container py-4">
+        <div class="container-fluid bg-grey p-md-0">
+          <div class="container py-4 px-md-0">
             {% include 'components/product-features-table/product-features-table.html.twig' with {
               array: null,
             } %}
           </div>
-      </div>
-      {% endif %}
+        </div>
+        {% endif %}
 
       </div>
 
