@@ -12,6 +12,22 @@
     .close-c2c {
         cursor: pointer;
     }
+
+    .icon-phone-container {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        border-radius: 99px;
+        margin-right: 1rem;
+        background: white;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 .click-to-call--header {
