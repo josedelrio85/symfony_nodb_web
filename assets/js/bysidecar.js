@@ -139,24 +139,17 @@ class bysidecar {
       gclid,
       microsite: this.getProvider().includes(window.location.host) ? window.location.host : 'adeslas.contratar.es',
     };
-    // console.log(options);
 
     this.landcom.getDDI(options)
       .then((response) => {
         // this.printOut(response);
 
         document.querySelectorAll('.ddi').forEach((ddi) => {
-          // console.log(ddi);
           ddi.innerHTML = response.data.TELEFONO;
-          if (ddi.href === '#ddi') {
-            ddi.href = `tel:${response.data.TELEFONO}`;
-          }
         });
 
-        document.querySelectorAll('.ddi-link').forEach((ddi) => {
-          ddi.innerHTML = response.data.TELEFONO;
-          ddi.href = `tel:${response.data.TELEFONO}`;
-        });
+        let hreftel = "tel:" + response.data.TELEFONO;
+        document.querySelector('.ddi-mobile').setAttribute('href', hreftel)
       })
       .catch(e => this.throwError(e));
   }
