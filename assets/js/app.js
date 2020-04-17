@@ -89,10 +89,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
-        setTimeout((out) => {
-          reset();
-          window.location.href = element.getAttribute('href');
-        }, 1000);
+        reset();
+        window.location.href = element.getAttribute('href');
       } else {
 
         fullScreenConfig.classList.add('active');
