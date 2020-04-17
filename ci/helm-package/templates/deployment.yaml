@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "helm-pakcage.fullname" . }}
+  name: {{ include "helm-package.fullname" . }}
   labels:
-    {{- include "helm-pakcage.labels" . | nindent 4 }}
+    {{- include "helm-package.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "helm-pakcage.selectorLabels" . | nindent 6 }}
+      {{- include "helm-package.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       labels:
-        {{- include "helm-pakcage.selectorLabels" . | nindent 8 }}
+        {{- include "helm-package.selectorLabels" . | nindent 8 }}
     spec:
     {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-      serviceAccountName: {{ include "helm-pakcage.serviceAccountName" . }}
+      serviceAccountName: {{ include "helm-package.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:

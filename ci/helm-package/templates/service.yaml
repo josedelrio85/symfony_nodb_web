@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "helm-pakcage.fullname" . }}
+  name: {{ include "helm-package.fullname" . }}
   labels:
-    {{- include "helm-pakcage.labels" . | nindent 4 }}
+    {{- include "helm-package.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "helm-pakcage.selectorLabels" . | nindent 4 }}
+    {{- include "helm-package.selectorLabels" . | nindent 4 }}
