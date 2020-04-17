@@ -5,15 +5,16 @@ embarazadas:
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_embarazo.png'
   minicards: # 2 minicards + title + description
-    title: 'La asistencia más cercana y profesional para que todo vaya bien'
+    title: 'La mejor oferta de seguros médicos para embarazo y parto'
     suptitle: 'Adeslas embarazadas'
-    desc: 'Un seguro privado que cubre todas tus necesidades para que tu familia crezca de forma segura.'
+    desc: 'Las más completas coberturas a embarazadas a la medida de tus necesidades.'
     cards:
       card1:
         top: '2'
-        middle: 'meses'
-        bottom: 'gratis'
+        middle: 'meses gratis'
+        bottom: 'si contratas Dental'
       card2:
         top: '10%'
         middle: 'De Descuento'
@@ -21,7 +22,7 @@ embarazadas:
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige la fórmula que mejor se adapta a ti'
     suptitle: 'Adeslas Embarazadas'
-    desc: 'Con Adeslas Plena y Adeslas Plena Vital tendrás una cobertura completa para todo aquello que puedas necesitar si estás pensando en tener familia, incluida la hospitalización en habitación individual con cama para el acompañante. Elige la fórmula que más te satisface:'
+    desc: 'Con Adeslas Plena y Adeslas Plena Vital te aseguras una asistencia completa para el embarazo, parto y postparto, y hospitalización en habitación individual con cama para el acompañante. Elige tu póliza ideal:'
     product:
       product1:
         title: 'Adeslas Plena Vital'
@@ -32,14 +33,15 @@ embarazadas:
           period: '/mes'
         cta:
           text: 'Llamadme'
-          path: '/path'
+          path: '/seguro/adeslas-plena-vital'
         more_info:
           text: 'Saber más'
           path: '/path'
         bullets:
-          - 'Todo lo relacionado con embarazo y parto'
+          - 'Asistencia global de embarazo y parto'
           - 'Reproducción Asistida en condiciones especiales'
           - 'Habitación individual con cama para acompañante'
+          - 'Copagos limitados'
       product2:
         title: 'Adeslas Plena Plus'
         price:
@@ -49,20 +51,20 @@ embarazadas:
           period: '/mes'
         cta:
           text: 'Llamadme'
-          path: '/path'
+          path: '/seguro/adeslas-plena-plus'
         more_info:
           text: 'Saber más'
           path: '/path'
         bullets:
-          - 'Sin Copagos'
-          - 'Todo lo relacionado con el embarazo y parto'
+          - '<strong>Sin Copagos</strong>'
+          - 'Atención integral de embarazo y parto'
           - 'Reproducción Asistida en condiciones especiales'
           - 'Habitación individual con cama para acompañante'
           - 'Teléfono 24 horas de asistencia a la embarazada'
   select: # 4 selector + title
     title: 'Consulta nuestro cuadro médio'
-    suptitle: 'Destacado'
-    select_txt: 'Selecciona provincia'
+    suptitle: ''
+    select_txt: 'Selecciona tu provincia'
   desc: # 5 title + description
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
-    text: 'A los servicios previstos en Adeslas Plena y Adeslas Plena Plus podrás añadirle mejoras con nuestro módulo complementario <a href="#">Plus Ginecología y pediatría</a> y <a href="#">obtener el reembolso del 80% del coste.</a>'
+    text: 'Puedes añadir mejoras a Adeslas Plena Vital y Adeslas Plena PLus con nuestro módulo complementario <a href="#">Plus Ginecología y pediatría</a> y <a href="#">obtener el reembolso del 80% del coste.</a>'

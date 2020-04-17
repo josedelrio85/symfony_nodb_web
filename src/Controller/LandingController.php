@@ -29,6 +29,7 @@ class LandingController extends AbstractController {
     $cards = $this->repo->getKeyDataLandings($area, $landing, 'minicards');
     // dump($cards); die();¡
     $product_bullets = $this->repo->getKeyDataLandings($area, $landing,'product_bullet');
+    // dump($product_bullets); die();
 
     return $this->render("pages/landing-product.html.twig", [
       'landing' => $landing,

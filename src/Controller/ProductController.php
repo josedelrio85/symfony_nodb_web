@@ -34,7 +34,7 @@ class ProductController extends AbstractController {
     $table = $this->repo->getKeyDataProducts($productid,'extra');
     // dump($price_bullets);die();
     // dump($bullets);die();
-    // dump($des_with_dropdown);
+    // dump($des_with_dropdown);die();
     // dump($desc_with_bullets);die();
     // dump($dropdown);die();
     // dump($table);  die();
@@ -43,15 +43,13 @@ class ProductController extends AbstractController {
     return $this->render("pages/single-product.html.twig", [
       'product' => $productid,
       'translator' => $translator,
-      // 'cards' => $cards['cards'],
-      // 'product_bullets' => $product_bullets['product']
       'price_bullets' => $price_bullets['bullets'],
       'bullets_list' => $bullets,
       'des_with_dropdown_list' => $des_with_dropdown,
       'desc_with_bullets_list' => $desc_with_bullets,
       'dropdown_last' => $dropdown,
       'faq' => $faq,
-      'table' => $table['table'],
+      'table' => !empty($table) ? $table['table'] : null,
     ]);
   }
 }

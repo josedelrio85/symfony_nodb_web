@@ -22,7 +22,8 @@ plena_plus:
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Adeslas Plena Plus'
     title: 'Cobertura total'
-    list_embarazadas:
+    # list_embarazadas:
+    list:
       - 'Cobertura total del embarazo y parto'
       - 'Planes de Prevención en Pediatría, Ginecología, Cardiología o Urología'
       - 'Reproducción asistida en condiciones especiales'
@@ -32,7 +33,7 @@ plena_plus:
       - 'Planificación familiar (incluido DIU e implantación)'
       - 'Fisioterapia y podología bajo reembolso de gastos'
       - 'Tratamientos especiales'
-  desc_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: 'Condiciones Plus'
     text: ''

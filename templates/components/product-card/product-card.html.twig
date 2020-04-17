@@ -11,7 +11,9 @@
     {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: item.bullets } %}
   </div>
   <div class="d-flex flex-column">
-    <button type="button" class=" btn btn-primary btn-lg btn-block mt-4 font-weight-bold">{{ item.cta.text | trans}}</button>
+    <a href="{{ item.cta.path | trans }}">
+      <button type="button" class=" btn btn-primary btn-lg btn-block mt-4 font-weight-bold">{{ item.cta.text | trans}}</button>
+    </a>
     <a href="{{ item.more_info.path | trans }}"><p class="text-center py-4 font-weight-bold h5">{{ item.more_info.text | trans}}</p></a>
   </div>
   </div>
