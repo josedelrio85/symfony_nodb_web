@@ -20,7 +20,7 @@ jobs:
             echo 'export IMAGE_PRE_LATEST="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPOSITORY_PRE}:latest"'         >> $BASH_ENV
             echo 'export IMAGE_PRO_LATEST="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPOSITORY_PRO}:latest"'         >> $BASH_ENV
       - run:
-          name: Build PRE image
+          name: Build PRE images
           command: |
             eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
             docker build -t $IMAGE_PRE_COMMIT --build-arg env=pre .
