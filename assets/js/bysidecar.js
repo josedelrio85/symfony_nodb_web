@@ -4,7 +4,6 @@
 /* eslint no-prototype-builtins: "error" */
 /* eslint-disable import/prefer-default-export */
 
-import * as moment from 'moment';
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 import { responseC2C } from './response_c2c';
 
@@ -14,9 +13,7 @@ class bysidecar {
     const locale = this.getLocale();
     this.landcom.setLanguage(locale);
     this.response = new responseC2C();
-                    
-    // TODO
-    // this.getDDI();
+    this.getDDI();
   }
 
   getLocale = () => {
@@ -140,14 +137,16 @@ class bysidecar {
     const options = {
       utm_source,
       gclid,
-      microsite: this.getProvider().includes(window.location.host) ? window.location.host : 'adelasloquesa.es',
+      microsite: this.getProvider().includes(window.location.host) ? window.location.host : 'adeslas.contratar.es',
     };
+    // console.log(options);
 
     this.landcom.getDDI(options)
       .then((response) => {
-        // this.printOut(response);
+        this.printOut(response);
 
         document.querySelectorAll('.ddi').forEach((ddi) => {
+          console.log(ddi);
           ddi.innerHTML = response.data.TELEFONO;
           if (ddi.href === '#ddi') {
             ddi.href = `tel:${response.data.TELEFONO}`;
@@ -177,13 +176,11 @@ class bysidecar {
 
   getProvider = () => {
     const adeslas = [
-      'k-empresas-pre.bysidecar.me',
-      'empresaseuskaltel.es',
-      'www.empresaseuskaltel.es',
+      'adeslas-pre.bysidecar.me',
+      'adeslas.bysidecar.me',
+      'adeslas.contratar.es',
+      'www.adeslas.contratar.es',
     ];
-    if(!process.env.PRODUCTION){
-      adeslas.push('127.0.0.1:8000');
-    }
     return adeslas;
   }
 }
