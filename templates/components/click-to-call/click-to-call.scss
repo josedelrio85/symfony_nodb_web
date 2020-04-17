@@ -66,9 +66,15 @@
     right: 0;
     transform: translateY(-50%);
     width: 305px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: $box-shadow-gen;
 
     &.c2c-collapsed {
         transform: translate(100%, -50%);
+    }
+
+    .click-to-call--header {
+        border-radius: 10px 0 0 0;
     }
 }
 
@@ -103,6 +109,7 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: $border-radius-gen;
+    box-shadow: $box-shadow-gen;
 
     &.c2c-size-open {
         transform: translate(0, -50%);
@@ -131,6 +138,7 @@
         background-color: white;
         width: 90%;
         border-radius: 10px !important;
+        box-shadow: $box-shadow-gen;
 
         @include media-breakpoint-up(md) {
             width: 600px;
