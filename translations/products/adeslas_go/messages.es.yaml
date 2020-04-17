@@ -1,8 +1,8 @@
 #adeslas_go_product
 go:
   hero: # 1
-    title: 'Adeslas GO. El seguro médico para ir al especialista que necesites sin esperas'
-    subtitle: 'Sin cuestionario previo.'
+    title: 'Adeslas GO'
+    subtitle: 'El seguro médico para ir al especialista que necesites sin esperas. Sin cuestionario previo.'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'

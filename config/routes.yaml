@@ -39,13 +39,13 @@ mas100:
    controller: App\Controller\LandingController::index
 
 # dental
-cobdental:
+dental:
    path: /seguros-dentales
    controller: App\Controller\LandingController::index
 
-dentalysalud:
-   path: /seguros-dentales
-   controller: App\Controller\LandingController::index
+# dentalysalud:
+#    path: /seguros-dentales
+#    controller: App\Controller\LandingController::index
 
 # mascotas
 mascotas:

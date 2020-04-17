@@ -11,7 +11,13 @@
                 <a class="card-title font-weight-bold h5">{{ item.title | trans | raw}}</a>
               </div>
               <div id="collapse{{ accordionid }}{{ loop.index }}" class="card-body collapse px-0" data-parent="#accordion{{ accordionid }}">
-                <p>{{ item.desc | trans | raw }}</p>
+                {% if item.desc is defined %}
+                  <p>{{ item.desc | trans | raw }}</p>
+                {% endif %}
+                {# TODO quick fix because in some drops are 'desc' keys and other are 'text' keys#}
+                {% if item.text is defined %}
+                <p>{{ item.text | trans | raw }}</p>
+                {% endif %}
               </div>
               <div class="border-top my-0 dd-divider"></div>
             {% endfor %}
