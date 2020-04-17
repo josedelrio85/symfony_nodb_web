@@ -3,6 +3,8 @@ senior:
   hero: # 1
     title: 'Adeslas Seniors. El único seguro médico para mayores de 65 con asesoría personalizada'
     subtitle: 'Plan de prevención adaptado a tu edad y copagos limitados'
+    images: 
+      image1: 'adeslas_hero_large_ficha_senior.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'

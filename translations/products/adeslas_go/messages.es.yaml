@@ -3,6 +3,9 @@ go:
   hero: # 1
     title: 'Adeslas GO. El seguro médico para ir al especialista que necesites sin esperas'
     subtitle: 'Sin cuestionario previo.'
+    images: 
+      image1: 'adeslas_hero_large_ficha_familia_go.jpg'
+      image2: 'adeslas_hero_large_ficha_individual_go.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
