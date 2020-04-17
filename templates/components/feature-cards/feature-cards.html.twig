@@ -1,39 +1,17 @@
 <div class="container">
-    <div class="row">
-        <h2 class="text-header h3 px-3 mb-4">Adeslas es Más</h2>
-    </div>
-    <div class="feature-cards row">
-        <div class="feature-card col-12 col-sm-6 col-lg-3">
-            <div class="inner  p-3">
-                <span class="icon icon-adeslas_icon_prevencion h2"></span>
-                <h3 class="text-header h5 my-3">Más Prevención</h3>
-                <div class="divider"></div>
-                <p>Más ventajas que ponemos a tu servicio para mejorar tu bienestar y tu calidad de vida.</p>
-            </div>
+  <div class="row">
+    <h2 class="text-header h3 px-3 mb-4">{{cards.title}}</h2>
+  </div>
+  <div class="feature-cards row">
+    {% for card in cards.list %}
+      <div class="feature-card col-12 col-sm-6 col-lg-3">
+        <div class="inner  p-3">
+          <span class="icon {{card.icon}} h2"></span>
+          <h3 class="text-header h5 my-3">{{card.title}}</h3>
+          <div class="divider"></div>
+          <p>{{card.desc}}</p>
         </div>
-        <div class="feature-card col-12 col-sm-6 col-lg-3">
-            <div class="inner  p-3">
-                <span class="icon icon-adeslas_icon_atencion h2"></span>
-                <h3 class="text-header h5 my-3">Más Atención</h3>
-                <div class="divider"></div>
-                <p>Orientación médica telefónica para dudas sobre enfermedades, medicamentos, informes.</p>
-            </div>
-        </div>
-        <div class="feature-card col-12 col-sm-6 col-lg-3">
-            <div class="inner  p-3">
-                <span class="icon icon-adeslas_icon_tranquilidad h2"></span>
-                <h3 class="text-header h5 my-3">Más Tranquilidad</h3>
-                <div class="divider"></div>
-                <p>Protección de pagos por desempleo: podrás mantener tu seguro médico hasta 12 meses.</p>
-            </div>
-        </div>
-        <div class="feature-card col-12 col-sm-6 col-lg-3">
-            <div class="inner  p-3">
-                <span class="icon icon-adeslas_icon_ventajas h2"></span>
-                <h3 class="text-header h5 my-3">Más Ventajas</h3>
-                <div class="divider"></div>
-                <p>Descuentos y ventajas en más de 100 establecimientos de cuidado personal, deporte, ocio...</p>
-            </div>
-        </div>        
-    </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>

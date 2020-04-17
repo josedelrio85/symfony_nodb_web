@@ -32,6 +32,7 @@ class IndexController extends AbstractController {
     // dump($secondChildrens);
 
     $hero = $this->repo->getSimpleData('hero');
+    $cards = $this->repo->getSimpleData('cards');
 
     $route = $request->attributes->get('_route');
     $uri = $request->server->get('REQUEST_URI');
@@ -44,6 +45,7 @@ class IndexController extends AbstractController {
       'firstchildrens' => $firstchildrens,
       'secondChildrens' => $secondChildrens,
       'hero' => $hero,
+      'cards' => $cards,
     ]);
   }
 
