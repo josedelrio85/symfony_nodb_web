@@ -10,14 +10,16 @@
               <div class="card-header collapsed py-4 px-0" data-toggle="collapse" href="#collapse{{ accordionid }}{{ loop.index }}">
                 <a class="card-title font-weight-bold h5">{{ item.title | trans | raw}}</a>
               </div>
-              <div id="collapse{{ accordionid }}{{ loop.index }}" class="card-body collapse px-0" data-parent="#accordion{{ accordionid }}">
-                {% if item.desc is defined %}
-                  <p>{{ item.desc | trans | raw }}</p>
-                {% endif %}
-                {# TODO quick fix because in some drops are 'desc' keys and other are 'text' keys#}
-                {% if item.text is defined %}
-                <p>{{ item.text | trans | raw }}</p>
-                {% endif %}
+              <div class="card-body px-0 p-0">
+                <div id="collapse{{ accordionid }}{{ loop.index }}" class="collapse" data-parent="#accordion{{ accordionid }}">
+                  {% if item.desc is defined %}
+                    <p>{{ item.desc | trans | raw }}</p>
+                  {% endif %}
+                  {# TODO quick fix because in some drops are 'desc' keys and other are 'text' keys#}
+                  {% if item.text is defined %}
+                  <p>{{ item.text | trans | raw }}</p>
+                  {% endif %}
+                </div>
               </div>
               <div class="border-top my-0 dd-divider"></div>
             {% endfor %}
