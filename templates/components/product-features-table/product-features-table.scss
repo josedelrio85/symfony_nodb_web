@@ -1,0 +1,19 @@
+#product-features-table {
+  thead th, tbody td {
+    vertical-align: middle;
+  }
+  .icon-checkmark {
+    color: #6DD400;
+  }
+  .icon-cross {
+    color: #E02020;
+  }
+  thead th:first-child {
+    width: 40%;
+  }
+  @include media-breakpoint-up(lg) {
+    thead th:first-child {
+      width: initial;
+    }
+  }
+}

@@ -96,7 +96,7 @@ go:
         title: '¿Qué es la póliza? ¿Y la prima?'
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
   extra:
-    table:
+    table2:
       column1:
         title: 'De 18 a 30 años'
         rows:
@@ -122,3 +122,59 @@ go:
           - 'Ecografía prostática'
           - ''
           - ''
+    table:
+      rows:
+        - 'Historia clínica y exploración general'
+        - 'Analítica'
+        - 'Electrocardiograma'
+        - 'Radiografía del tórax'
+        - 'Examen ginecológico con citología vaginal'
+        - 'Agudeza visual, audiometría y espirometría'
+        - 'Ecografía mamaria y mamografía según criterio médico'
+        - 'Ecografía abdominal'
+        - 'Analítica por estudio PSA, HDL, fosfatasa alcalina y hemorragias ocultas'
+        - 'Ecografía ginecológica'
+        - 'Ecografía prostática'
+      columns:
+        column1:
+          title: '18 a 30 <br/>años'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - false
+            - false
+            - false
+            - false
+            - false       
+        column2:
+          title: '31 a 45 <br/>años'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - false
+            - false
+            - false
+        column3:
+          title: '+46 <br/>años'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true

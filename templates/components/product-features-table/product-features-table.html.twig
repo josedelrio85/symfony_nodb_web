@@ -1,0 +1,101 @@
+    {# Data example . Delete after tests #}
+    {%
+      set array = {
+        rows: [
+          'Historia clínica y exploración general',
+          'Analítica',
+          'Electrocardiograma',
+          'Radiografía del tórax',
+          'Examen ginecológico con citología vaginal',
+          'Agudeza visual, audiometría y espirometría',
+          'Ecografía mamaria y mamografía según criterio médico',
+          'Ecografía abdominal',
+          'Analítica por estudio PSA, HDL, fosfatasa alcalina y hemorragias ocultas',
+          'Ecografía ginecológica',
+          'Ecografía prostática',
+        ],
+        columns: {
+          column1: {
+            title: '18 a 30 <br/>años',
+            values: [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+              false,
+              false,
+            ]
+          },
+          column2: {
+            title: '31 a 45 </br>años',
+            values: [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              false,
+              false,
+              false,
+            ]
+          },
+          column3: {
+            title: '+46 <br/>años',
+            values: [
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+            ]
+          }
+        }
+      }
+    %}
+
+
+ <table class="table table-striped table-bordered" id="product-features-table">
+  <thead>
+    <tr>
+      <th scope="col" class="text-primary h4 font-weight-bold">Tabla Adeslas</th>
+      {# Loop trough cols headers #}
+      {% for col in array.columns %}
+        <th scope="col" class="text-center text-primary">{{col.title | trans | raw}}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {# Loop trough rows #}
+    {% for row in array.rows %}
+    {% set rowIndex = loop.index %}
+      <tr>
+        <th scope="row">{{ row }}</th>
+        {# Loop trough cols using current row index #}
+        {% for i in 1 .. array.columns|length %}
+        {% set colIndex = loop.index %}
+          <td class="text-center">
+            {% if array.columns['column' ~ colIndex].values[rowIndex - 1] == true %}
+              <i class="icon-checkmark" />
+            {% else %}
+              <i class="icon-cross" />
+            {% endif %}
+          </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
