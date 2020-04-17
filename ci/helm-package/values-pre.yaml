@@ -43,13 +43,13 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: adeslas-web-pre.bysidecar.me
+    - host: adeslas-pre.bysidecar.me
       paths: 
         - /
   tls:
-   - secretName: tls-adeslas-web-pre-bysidecar-me
+   - secretName: tls-adeslas-pre-bysidecar-me
      hosts:
-       - adeslas-web-pre.bysidecar.me
+       - adeslas-pre.bysidecar.me
 
 env:
 - name: APP_ENV
