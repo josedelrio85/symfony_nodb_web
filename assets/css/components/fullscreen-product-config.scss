@@ -11,22 +11,37 @@
     transform: translateY(+100%);
     transition: all .4s ease-out;
 
-    .close-button {
+    .close-button,
+    .back-button {
         position: fixed;
-        right: 10px;
-        top: 10px;
+        cursor: pointer;
+        background: $gray-300;
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .close-button {
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .back-button {
+        top: 20px;
+        left: 20px;
         cursor: pointer;
     }
 
     &.active {
         transform: translateY(0);
-    }
-
-    .back-button {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        cursor: pointer;
     }
 
     .progress-bar {
