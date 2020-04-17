@@ -70,9 +70,11 @@ class bysidecar {
       adeslas: null,
     };    
     this.compareObjects(obj, lead);
+    
+    // this.printOut(lead);
+    // this.printOut(urlEndPoint);
 
-    this.printOut(lead);
-    this.printOut(urlEndPoint);
+    this.response.showPopup(false);
 
     landingCommander.makePostRequest(lead, urlEndPoint)
       .then((result) => {
@@ -85,36 +87,34 @@ class bysidecar {
                 this.landcom.getWeekByCampaign(lead.sou_id)
                   .then((bsnHours) => {
                     const bh = this.landcom.printBusinessHours(bsnHours);
-                    console.log(bh);
-                    // TODO
-                    // this.response.handleBusinessHoursInfo(bh);
+                    this.response.handleBusinessHoursInfo(bh);
                   })
                   .catch(e => this.throwError(e));
               }
 
               // we are on time, let's show info about the call phone to the user or other stuff
               if (onTime && result.smartcenter) {
-                // TODO
-                // this.response.showPopup(false);
+                this.response.showPopup(false);
                 this.landcom.callStateTracking(lead.phone, (state) => {
                   const message = this.landcom.getMessageStateCall(state);
-                  // TODO
-                  // this.response.handleStateCallMessage(state, message);
+                  console.log(message);
+                  this.response.handleStateCallMessage(state, message);
                 });
               } else {
-                // TODO
-                // this.response.responseWeWontCall();
+                this.response.responseWeWontCall();
               }
             })
             .catch(e => this.throwError(e));
-        
 
           dataLayer.phoneHash = window.md5(lead.phone);
           dataLayer.idLead =  result.message;
           this.printOut(dataLayer);
           this.populateDatalayer(dataLayer);
       })
-      .catch(e => this.throwError(e));
+      .catch(e => {
+        this.response.responseWeWontCall();
+        this.throwError(e)
+       });
   }
 
   getLandingCommander = () => this.landcom
@@ -142,7 +142,7 @@ class bysidecar {
 
     this.landcom.getDDI(options)
       .then((response) => {
-        this.printOut(response);
+        // this.printOut(response);
 
         document.querySelectorAll('.ddi').forEach((ddi) => {
           ddi.innerHTML = response.data.TELEFONO;

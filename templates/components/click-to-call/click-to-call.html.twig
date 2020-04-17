@@ -74,6 +74,8 @@
   </div>
 </div>
 
+{# .call-me-now-popup--opened al #call-me-later-pop-up #}
+
 <!-- Click to call popup -->
 <div id="call-me-later-pop-up" class="call-me-now-popup">
   <div class="call-me-now-popup__overlay">
@@ -81,7 +83,7 @@
       <div class="call-me-now-popup__content-layer">
         <div class="call-me-now-popup__content">
           <div class="call-me-now-popup__header">
-            <p class="r-text h4 text-header m-0">bienvenido al servicio de&nbsp;<br>contratación online de R</p>
+            <p class="r-text h4 text-header m-0">{{ "form.state_call.title" | trans | raw }}</p>
           </div>
           <div class="call-me-now-popup__body">
             <div class="call-me-now-status call-me-now-status--on-call my-3">
@@ -119,10 +121,10 @@
               <div class="lds-dual-ring"></div>
             </div>
             <div class="call-me-now-popup__title">
-              <p class="h5 text-header">¿en qué te podemos ayudar?</p>
+              <p class="h5 text-header">{{ "form.state_call.helper_mes1" | trans | raw }}</p>
             </div>
             <div class="call-me-now-popup__sub-title">
-              <p>uno de nuestros asesores comerciales se pondrá en contacto contigo</p>
+              <p>{{ "form.state_call.subtitle" | trans | raw }}</p>
             </div>
           </div>
         </div>
@@ -130,3 +132,5 @@
     </div>
   </div>
 </div>
+
+{% include 'components/click-to-call/response_messages.html.twig' %}

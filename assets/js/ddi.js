@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+
   let ddi = document.querySelector('.ddi-desktop');
   console.log(ddi);
   ddi.addEventListener('click', (e) => {
