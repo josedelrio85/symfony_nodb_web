@@ -1,6 +1,6 @@
 apiVersion: v2
-name: helm-pakcage
-description: A Helm chart for Kubernetes
+name: adeslas-web
+description: Adeslas wep E2E project
 
 # A chart can be either an 'application' or a 'library' chart.
 #
