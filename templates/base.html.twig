@@ -50,8 +50,8 @@
     {% endblock %}
 
     {% block c2cPopup %}
-      {{ render(controller( 'App\\Controller\\C2CController::index', {}, {}))
-      }}
+      {{ render(controller( 'App\\Controller\\C2CController::index', {}, {})) }}
+      {{ render(controller( 'App\\Controller\\C2CPopupController::index', {}, {})) }}
     {% endblock %}
 
     {% block body %}
