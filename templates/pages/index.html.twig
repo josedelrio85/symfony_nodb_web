@@ -18,4 +18,9 @@
     </div>
   </div>
 
+  <div class="container-fluid">
+      {% include 'components/feature-cards/feature-cards.html.twig' with {
+        cards: cards,
+      } %}
+  </div>
 {% endblock %}
