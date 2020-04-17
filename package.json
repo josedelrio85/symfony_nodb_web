@@ -43,10 +43,12 @@
     "@bysidecar/landing_commander": "^1.0.28",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
+    "gsap": "^3.2.6",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "navigator.sendbeacon": "0.0.19",
     "popper.js": "^1.16.1",
+    "scrollmagic": "^2.0.7",
     "scrollmagic-plugin-gsap": "^1.0.4",
     "swiper": "^5.3.7"
   }

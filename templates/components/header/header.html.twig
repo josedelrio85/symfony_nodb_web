@@ -1,0 +1,43 @@
+<div class="header">
+    <div class="container py-1">
+        <div class="inner d-flex justify-content-between align-items-center">
+            <div class="logo-container">
+                {# <img class="w-100" src="https://via.placeholder.com/150x70" alt="Adeslas"/> #}
+                <a href="/">
+                  <div class="img d-block mx-auto" >
+                      <div class="logo-desktop" >{{ source('@public_path'~asset('build/images/adeslas_logo_desktop.svg')) }}</div>
+                      <div class="logo-mobile" >{{ source('@public_path'~asset('build/images/adeslas_logo_mob.svg')) }}</div>
+                  </div>
+                </a>
+            </div>
+            <div class="left-block d-flex align-items-center">
+                {# <div class="nav-desktop d-none d-md-block">
+                    <ul class="d-flex p-0 m-0 mr-4">
+                        <li><a href="#">Menú 1</a></li>
+                        <li><a href="#">Menú 2</a></li>
+                        <li><a href="#">Menú 3</a></li>
+                    </ul>
+                </div> #}
+                <a role="button" class="ddi-button btn btn-info">{# href="tel:904567326" #}
+                    <span class="icon icon-phone"></span> <span class="phone ddi">904567326</span>
+                </a>
+                {# <div class="nav-mobile d-md-none ml-4">
+                    <span class="h3 icon icon-menu text-primary"></span>
+                </div> #}
+            </div>
+        </div>
+    </div>
+</div>
+
+{# <div class="fullscreen-navigation">
+    <div class="inner d-flex align-items-center justify-content-center bg-primary">
+        <div class="close-menu p-2">
+            <span class="icon icon-adeslas_icon_close text-white"></span>
+        </div>
+        <ul class="d-flex flex-column">
+            <li><a class="text-header h3 text-decoration-none text-white" href="#">Menú 1</a></li>
+            <li><a class="text-header h3 text-decoration-none text-white" href="#">Menú 2</a></li>
+            <li><a class="text-header h3 text-decoration-none text-white" href="#">Menú 3</a></li>
+        </ul>
+    </div>
+</div> #}

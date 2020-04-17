@@ -4,11 +4,14 @@ footer:
     path: '/legal'
   privacy:
     text: 'Política de privacidad'
-    path: '/legal'
+    path: '/privacidad'
   cookies:
     text: 'Política de Cookies'
     path: '/cookies'
   conditions:
     text: 'Condiciones de la promoción'
-    path: '/conditions'
-  text: 'Global Insurance, Agente exclusivo Adeslas [código]'
+    path: '/condiciones'
+  other:
+    field1: 'Global Insurance'
+    field2: 'Agente exclusivo Adeslas'
+    field3: '[código]'

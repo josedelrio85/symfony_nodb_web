@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ "#{key}.home.title" | trans }}{% endblock %}
+{% block title %}{{ "#{landing}.home.title" | trans }}{% endblock %}
 
-{% block meta_description %}<meta name="description" content="{{ "#{key}.home.meta_description" | trans }}">{% endblock %}
+{% block meta_description %}<meta name="description" content="{{ "#{landing}.home.meta_description" | trans }}">{% endblock %}
 
 {% block body %}
 
@@ -11,9 +11,9 @@
 
   {# SupertitleTitleSubtitle component #}
   {% include 'components/header-titles/header-titles.html.twig' with {
-    mini_header: "#{key}.minicards.suptitle" | trans,
-    text_header: "#{key}.minicards.title" | trans,
-    content_header: "#{key}.minicards.desc" | trans
+    mini_header: "#{landing}.minicards.suptitle" | trans,
+    text_header: "#{landing}.minicards.title" | trans,
+    content_header: "#{landing}.minicards.desc" | trans
   } %}
 
   {#TODO move this code to a component #}
@@ -33,41 +33,10 @@
 
   {# SupertitleTitleSubtitle component #}
   {% include 'components/header-titles/header-titles.html.twig' with {
-    mini_header: "#{key}.product_bullet.suptitle" | trans,
-    text_header: "#{key}.product_bullet.title" | trans,
-    content_header: "#{key}.product_bullet.desc" | trans
+    mini_header: "#{landing}.product_bullet.suptitle" | trans,
+    text_header: "#{landing}.product_bullet.title" | trans,
+    content_header: "#{landing}.product_bullet.desc" | trans
   } %}
-
-  {# Example data #}
-  {% set bullet_list_items1 =
-    [
-      {text: 'Bullet list item 1'},
-      {text: 'Bullet list item 2'},
-      {text: 'Bullet list item 3'},
-    ]
-  %}
-  {% set bullet_list_items2 =
-    [
-      {text: 'Bullet list item 4'},
-      {text: 'Bullet list item 5'},
-      {text: 'Bullet list item 6'},
-    ]
-  %}
-  {% set products = [
-    {
-      product_title: 'Adeslas Plena Vital',
-      product_price: '35',
-      product_features: bullet_list_items1,
-      product_url: 'https://www.google.com',
-    },
-    {
-      product_title: 'Adeslas Plena Vital 2',
-      product_price: '35',
-      product_features: bullet_list_items2,
-      product_url: 'https://www.google.com',
-    },
-  ]
-  %}
 
   {# Product card component #}
   <div class="container mb-5">
@@ -99,7 +68,6 @@
       </div>
     </div>
   </div> #}
-  {# Selector component #}
 
   {# Simple divider line component #}
   {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
@@ -107,22 +75,22 @@
   {# SupertitleTitleSubtitle component #}
   {% include 'components/header-titles/header-titles.html.twig' with {
     mini_header: '',
-    text_header: "#{key}.desc.title" | trans,
-    content_header: "#{key}.desc.text" | trans
+    text_header: "#{landing}.desc.title" | trans,
+    content_header: "#{landing}.desc.text" | trans
   } %}
 
   {# SupertitleTitleSubtitle component #}
-  <div class="container-fluid bg-grey px-0">
+  {# <div class="container-fluid bg-grey px-0">
     {% include 'components/header-titles/header-titles.html.twig' with {
-      mini_header: "#{key}.faq.suptitle" | trans,
-      text_header:  "#{key}.faq.title" | trans,
+      mini_header: "#{landing}.faq.suptitle" | trans,
+      text_header:  "#{landing}.faq.title" | trans,
       content_header: ''
     } %}
-  </div>
+  </div> #}
 
   {# Dropdown component #}
-  {% include 'components/dropdown/dropdown.html.twig' with {
+  {# {% include 'components/dropdown/dropdown.html.twig' with {
     dropdown_items: dropdown
-  } %}
+  } %} #}
 
 {% endblock %}

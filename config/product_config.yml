@@ -13,11 +13,11 @@ products:
             name: 'familiar'
             path: 'familiar'
           mayores:
-            name: 'mayores'
-            path: 'mayores'
+            name: 'mayores65'
+            path: 'mayores65'
           embarazada:
-            name: 'embarazada'
-            path: 'embarazada'
+            name: 'embarazadas'
+            path: 'embarazadas'
       negocio:
         name: 'negocio'
         children:
@@ -36,28 +36,31 @@ products:
   dental:
     name: 'dental'
     steps: 2
+    path: 'dental'
     children:
-      cobdental:
-        name: 'cobdental'
-        path: 'cobdental'
-        children:
-      dentalysalud:
-        name: 'dentalysalud'
-        path: 'dentalysalud'
-        children:
+      # cobdental:
+      #   name: 'cobdental'
+      #   path: 'cobdental'
+      #   children:
+      # dentalysalud:
+      #   name: 'dentalysalud'
+      #   path: 'dentalysalud'
+      #   children:
   mascotas:
     name: 'mascotas'
     steps: 2
+    path: 'mascotas'
     children:
-      mascotas:
-        name: 'mascotas'
-        path: 'mascotas'
-        children:
+      # mascotas:
+      #   name: 'mascotas'
+      #   path: 'mascotas'
+      #   children:
   decesos:
     name: 'decesos'
     steps: 2
+    path: 'decesos'
     children:
-      decesos:
-        name: 'decesos'
-        path: 'decesos'
-        children:
+      # decesos:
+      #   name: 'decesos'
+      #   path: 'decesos'
+      #   children:

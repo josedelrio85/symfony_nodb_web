@@ -9,62 +9,49 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 use App\Service\ProductService;
+use App\Repository\i18nRepository;
 
 class ProductController extends AbstractController {
 
   private $prodserv;
+  private $repo;
 
-  public function __construct(ProductService $prodserv) {
+  public function __construct(i18nRepository $repo, ProductService $prodserv) {
     $this->prodserv = $prodserv;
+    $this->repo = $repo;
   }
 
   public function index(Request $request, TranslatorInterface $translator) {
 
-    $key = "embarazadas";
-    // dump($translator->trans("{$key}.minicards.title"));
-
-    $cards = [];
-    for($i=1; $i <= 2; $i++){
-      array_push($cards, [
-        'top' => "{$key}.minicards.cards.card{$i}.top",
-        'middle' => "{$key}.minicards.cards.card{$i}.middle",
-        'bottom' => "{$key}.minicards.cards.card{$i}.bottom",
-      ]);
-    }
-
-    $product_bullets = [];
-    for($i=1; $i <= 2; $i++){
-      array_push($product_bullets, [
-        'title' => "{$key}.product_bullet.product.product{$i}.title",
-        'price_pre' => "{$key}.product_bullet.product.product{$i}.price.pre",
-        'price_quantity' => "{$key}.product_bullet.product.product{$i}.price.quantity",
-        'price_currency' => "{$key}.product_bullet.product.product{$i}.price.currency",
-        'price_period' => "{$key}.product_bullet.product.product{$i}.price.period",
-        'cta_text' => "{$key}.product_bullet.product.product{$i}.cta.text",
-        'cta_path' => "{$key}.product_bullet.product.product{$i}.cta.path",
-        'more_info_text' => "{$key}.product_bullet.product.product{$i}.more_info.text",
-        'more_info_path' => "{$key}.product_bullet.product.product{$i}.more_info.path",
-        'bullets' => "{$key}.product_bullet.product.product{$i}.bullets",
-      ]);
-    }
-
-    $dropdown = [];
-    for($i=1; $i <= 5; $i++){
-      array_push($dropdown, [
-        'title' => "{$key}.faq.elems.faq{$i}.title",
-        'desc' => "{$key}.faq.elems.faq{$i}.text",
-      ]);
-    }
-
-    // die(dump($dropdown));
+    $productid = $request->attributes->get('_route');
+    // dump($this->repo->getMessages());
+    $price_bullets = $this->repo->getKeyDataProducts($productid,'price_with_details');
+    $bullets = $this->repo->getKeyDataProducts($productid,'bullets');
+    $des_with_dropdown = $this->repo->getKeyDataProducts($productid,'des_with_dropdown');
+    $desc_with_bullets = $this->repo->getKeyDataProducts($productid,'desc_with_bullets');
+    $dropdown = $this->repo->getKeyDataProducts($productid,'dropdown');
+    $faq = $this->repo->getKeyDataProducts($productid,'faq');
+    $table = $this->repo->getKeyDataProducts($productid,'extra');
+    // dump($price_bullets);die();
+    // dump($bullets);die();
+    // dump($des_with_dropdown);
+    // dump($desc_with_bullets);die();
+    // dump($dropdown);die();
+    // dump($table);  die();
 
 
-    return $this->render("pages/landing-product.html.twig", [
-      'key' => $key,
+    return $this->render("pages/single-product.html.twig", [
+      'product' => $productid,
       'translator' => $translator,
-      'cards' => $cards,
-      'product_bullets' => $product_bullets,
-      'dropdown' => $dropdown,
+      // 'cards' => $cards['cards'],
+      // 'product_bullets' => $product_bullets['product']
+      'price_bullets' => $price_bullets['bullets'],
+      'bullets_list' => $bullets,
+      'des_with_dropdown_list' => $des_with_dropdown,
+      'desc_with_bullets_list' => $desc_with_bullets,
+      'dropdown_last' => $dropdown,
+      'faq' => $faq,
+      'table' => $table['table'],
     ]);
   }
 }

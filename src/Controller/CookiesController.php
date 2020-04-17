@@ -8,7 +8,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
 class CookiesController extends AbstractController {
-  private $providerServ;
 
   public function __construct() {}
 
