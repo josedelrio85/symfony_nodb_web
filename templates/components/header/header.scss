@@ -103,6 +103,10 @@
 
         li {
             margin: 1rem 0;
+
+            a {
+                font-family: $font-family-sans-serif;
+            }
         }
     }
 }
