@@ -1,30 +1,34 @@
 individual:
+  home:
+    title: 'Landing individual'
+    meta_description: 'Landing individual'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_individual.png'
   minicards: # 2 minicards + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    title: 'La mejor oferta de seguros médicos privados para cuidarte como mereces'
+    suptitle: 'Adeslas individual'
+    desc: 'Descubre la protección Adeslas que va con tu ritmo de vida'
     cards:
       card1:
-        top: ''
-        middle: ''
+        top: 'Desde'
+        middle: '16,50 €/mes'
         bottom: ''
       card2:
         top: ''
         middle: ''
         bottom: ''
   product_bullet: # 3 products with bullets + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    title: 'Coberturas a tu medida'
+    suptitle: 'Adeslas individual'
+    desc: 'Cuida tu salud con la garantía de la compañía líder y la póliza que mejor se adapta a tus necesidades'
     product:
       product1:
-        title: ''
+        title: 'Adeslas GO'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '16,50'
           currency: '€'
           period: '/mes'
         cta:
@@ -32,14 +36,15 @@ individual:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-go'
         bullets:
-          -
+          - 'Asistencia médica ambulatoria'
+          - 'Sin cuestionario médico previo' 
       product2:
-        title: ''
+        title: 'Adeslas Plena Vital'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '35'
           currency: '€'
           period: '/mes'
         cta:
@@ -47,13 +52,62 @@ individual:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-plena-vital'
         bullets:
-          -
+          - 'Asistencia ambulatoria y hospitalaria'
+          - 'Copagos limitados'
+      product3:
+        title: 'Adeslas Plena'
+        price:
+          pre: 'Desde'
+          quantity: '45'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/path'
+        more_info:
+          text: 'Saber más'
+          path: '/seguro/adeslas-plena'
+        bullets:
+          - 'Asistencia médica y especialidades'
+          - 'Copagos reducidos'    
+      product4:
+        title: 'Adeslas Plena Plus'
+        price:
+          pre: 'Desde'
+          quantity: '55'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/path'
+        more_info:
+          text: 'Saber más'
+          path: '/seguro/adeslas-plena-plus'
+        bullets:
+          - 'Asistencia ambulatoria y hospitalaria'
+          - '<strong>Sin copagos</strong>'    
+      product5:
+        title: 'Adeslas Plena Extra 150'
+        price:
+          pre: 'Desde'
+          quantity: '79'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/path'
+        more_info:
+          text: 'Saber más'
+          path: '/seguro/adeslas-plena-extra'
+        bullets:
+          - 'Libre elección de médico'
+          - 'Cobertura dentro y fuera de España'
   select: # 4 selector + title
-    title: ''
+    title: 'Consulta el Cuadro Médico Adeslas'
     suptitle: ''
-    select_txt: ''
+    select_txt: 'Selecciona tu provincia'
   desc: # 5 title + description
     title: ''
     text: ''

@@ -2,7 +2,9 @@
 senior:
   hero: # 1
     title: 'Adeslas Seniors. El único seguro médico para mayores de 65 con asesoría personalizada'
-    subtitle: 'Plan de prevención adaptado a tu edad y copagos limitados '
+    subtitle: 'Plan de prevención adaptado a tu edad y copagos limitados'
+    images: 
+      image1: 'adeslas_hero_large_ficha_senior.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
@@ -20,79 +22,82 @@ senior:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: ''
-    title: ''
-    list: null
+    suptitle: 'Coberturas Sénior'
+    title: 'Amplio catálogo de servicios'
+    list:
+      - 'Medicina General y Especialidades'
+      - 'Urgencias y atención hospitalaria en habitación individual'
+      - 'Atención médica y de enfermería a domicilio'
+      - 'Planes de prevención en cardiología, ginecología y urología'
+      - 'Pruebas diagnósticas de alta tecnología'
+      - 'Prótesis internas y prótesis quirúrgicas'
+      - 'Trasplantes de córnea y autotrasplantes de médula'
+      - 'Tratamiento del dolor'
+      - 'Ondas de Choque para Calcificaciones Musculotendinosas'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: ''
+    suptitle: 'Condiciones Sénior'
     title: 'Un asesor personal de salud para cuidarte'
-    text: 'Adeslas Seniors es el único seguro diseñado para mayores de 65 años del mercado con una atención personalizada, amplias coberturas, adaptadas a tu edad y con copagos limitados. Desde el primer día tendrás un Asesor Personal en Salud, que en una primera visita te realizará un plan de acción personalizado para evaluar tu estado de salud. A partir de ahí, te asesorará para asegurarte la mejor atención con especialistas.'
+    text: 'Adeslas Seniors es el único seguro diseñado para mayores de 65 años del mercado, con una atención personalizada, amplias coberturas, adaptadas a tu edad y con copagos limitados. Desde el primer día tendrás un Asesor Personal en Salud, que diseñará un plan de acción personalizado para evaluar tu estado de salud y asesorará para asegurarte la mejor atención con especialistas.'
     drop:
-      drop0:
-        text: ''
-        title: 'Amplia cartera de servicios'
       drop1:
-        text: ''
-        title: 'Descuentos'
+        title: 'Amplia cartera de servicios'
+        text: 'Con Adeslas Seniors accederás a planes de prevención y de seguimiento dirigidos por tu Asesor Personal de Salud para aprovechar el mejor cuadro médico, con 43.000 profesionales de la sanidad privada sin apenas copagos'
       drop2:
-        text: ''
-        title: 'Copagos limitados'
+        title: 'Descuentos'
+        text: 'Tendrás una atención médica adecuada a tu edad con coberturas Adeslas desde 60 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 3 o más asegurados. Y si quieres un seguro Dental, tendrás un 15% de  descuento.'
       drop3:
-        text: ''
-        title: 'Calidad'
+        title: 'Copagos limitados'
+        text: 'Con Adeslas Seniors no pagarás copagos por muchos de los actos médicos a los que te derive tu Asesor Personal de Salud, pero siempre estarán limitados a 260 euros al año. Si quieres acudir al especialista sin prescripción previa, podrás hacerlo con copagos estándar.'
       drop4:
-        text: ''
-        title: 'Flexibilidad en el pago y descuentos'
+        title: 'Calidad'
+        text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas a tu servicio.'
       drop5:
-        text: ''
+        title: 'Pago mensual'
+        text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
+      drop6:
         title: 'Tranquilidad, vayas donde vayas'
+        text: 'Con Adeslas Seniors tendrás asegurada la asistencia médica si sufres una enfermedad o accidente cuando estés de viaje en el extranjero. Cubriremos tus gastos hasta 12.000 euros'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Un plan a largo plazo para cuidarte'
-    text: 'Adeslas Seniors te ofrece un plan a largo plazo para ayudar a cuidar de tu salud y a vivir una jubilación tranquila y activa en la que no tengas que preocuparte de nada más. Accederás a todas las especialidades y tratamientos que necesites, como:'
+    text: 'Adeslas Seniors te ofrece un plan a largo plazo para ayudar a cuidar de tu salud y a vivir una jubilación tranquila y activa en la que no tengas que preocuparte de nada más. Accederás a todas las especialidades y tratamientos que necesites.'
     list:
-      - 'Asistencia ambulatoria de todas las especialidades médicas.'
-      - 'Cirugía (General, Vascular para el tratamiento de varices, Urológica, etc.)'
-      - 'Hospitalización en habitación individual con cama para el acompañante'
-      - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
-      - 'Implantes y prótesis (internas) cardiovasculares, osteoarticulares y oftalmológicas.'
-      - 'Oncología'
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
-    suptitle: ''
+    suptitle: 'Ventajas Sénior'
     title: 'El seguro más completo y flexible'
     text: ''
     drop:
       drop1:
         title: '¿Para quién es Adeslas Seniors?'
-        text: ''
+        text: 'Adeslas Seniors fue el primer seguro del mercado para mayores de 65 y sigue siendo el que ofrece mejores prestaciones porque está orientado a satisfacer las necesidades de personas de tu edad con un plan de salud a largo plazo. Con Adeslas Seniors disfrutarás de Adeslas Es Más, un servicio exclusivo de los asegurados Adeslas, que da acceso al área privada y tratamientos especiales, además de a descuentos y ventajas en más de 100 establecimientos de cuidado personal, deporte, ocio, etc.'
       drop2:
         title: '¿Hay límite de edad para contratar Adeslas Seniors?'
-        text: ''
+        text: 'Adeslas Seniors se puede contratar desde los 55 hasta los 84 años.'
       drop3:
         title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
-        text: ''
+        text: 'Sí, puedes contratar tu seguro médico con Adeslas Seniors. Sólo te hará falta el pasaporte.'
       drop4:
-        title: '¿Por qué contratar un seguro médico Adeslas?'
-        text: ''
+        title: '¿Por qué contratar mi seguro con Adeslas?'
+        text: 'Adeslas tiene el mejor y más amplio cuadro médico con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. Adeslas es la compañía líder en seguros de salud con más de 5 millones de asegurados y las encuestas de satisfacción de nuestros clientes nos dan una puntuación media de un 8,13 sobre 10.'
       drop5: 
         title: '¿Y si sufro un imprevisto y no puedo hacer frente a mi prima?'
-        text: ''
+        text: 'Adeslas Seniors está cubierto por un plan de protección de pagos, con el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
     elems:
       faq1:
         title: 'Copagos'
-        text: ''
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los servicios médicos de tu seguro. En Adeslas Sénior el esquema de copagos depende de si acudes al médico por indicación de tu Asesor Personal en Salud, con copagos ambulatorios reducidos y que nunca superarán los 260 €/año. Si amplías tu cuadro médico, pagarás copagos estándar. Por la asistencia hospitalaria, pagarás un máximo de 700€/año en el cuadro Adeslas y 2.000€ con otro proveedor.'
       faq2:
         title: 'Cuestionario Médico'
-        text: ''
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Seniors está sujeto a cuestionario médico previo.'
       faq3:
         title: 'Carencias'
-        text: ''
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura. En Adeslas Seniors existen carencias de entre 3 meses para pruebas diagnósticas de alta tecnología, cirugía y 10 meses para hospitalización, como en el resto de pólizas de salud.'
       faq4:
-        title: 'Poliza y prima'
-        text: ''
+        title: 'Póliza y prima'
+        text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'

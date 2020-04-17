@@ -1,18 +1,21 @@
 #adeslas_go_product
 go:
   hero: # 1
-    title: 'Adeslas GO'
-    subtitle: 'El seguro médico para ir al especialista que necesites sin esperas. Sin cuestionario previo.'
+    title: 'Adeslas GO. El seguro médico para ir al especialista que necesites sin esperas'
+    subtitle: 'Sin cuestionario previo.'
+    images: 
+      image1: 'adeslas_hero_large_ficha_familia_go.jpg'
+      image2: 'adeslas_hero_large_ficha_individual_go.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: '16,50'
+      quantity: '16,20'
       currency: '€'
       period: '/mes'
     bullets:
       bullet1:
-        text: ''
-        subtext: ''
+        text: '3 primeros'
+        subtext: 'copagos gratis'
       bullet2:
         text: ''
         subtext: ''
@@ -20,7 +23,7 @@ go:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: 'Adeslas Go'
+    suptitle: 'Adeslas GO'
     title: 'Acceso a los mejores especialistas cuando y como quieras'
     list:
       - 'Chequeo médico anual'
@@ -30,10 +33,10 @@ go:
       - 'Pruebas diagnósticas en consulta'
       - 'Psicoterapia'
       - 'Preparación al Parto'
-      - 'Podología (12 sesiones/año), etc.'
+      - 'Podología (12 sesiones/año).'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: ''
-    title: ''
+    suptitle: 'Adeslas GO'
+    title: 'Condiciones GO'
     text: ''
     drop:
       drop1:
@@ -52,16 +55,16 @@ go:
         title: 'Pago mensual y con descuentos'
         text: 'Puedes pagar tu prima de Adeslas GO cada mes. Si pagas por trimestre, tendrás un 2% de descuento; un 4%, al semestre y un 6% si el pago es anual'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
-    suptitle: ''
+    suptitle: 'Adeslas GO'
     title: 'Una cobertura médica llena de ventajas'
-    text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria para quien busca un seguro complementario con el que prevenir y tratar con rapidez cualquier problema de salud. Podrás consultar con un especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida y acceder a los siguientes servicios:'
+    text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria para quien busca un seguro complementario con el que prevenir y tratar con rapidez cualquier problema de salud. Podrás consultar con un especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida.'
     list:
-  desc: # 6 titulo + descripcion
-    title: ''
+  desc: # 6 titulo + descripcion+ tabla
+    title: 'Chequeo anual'
     text: 'Cuando contrates tu póliza tendrás acceso a un chequeo médico anual adaptado a tu edad con las siguientes pruebas:'
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
-    suptitle: ''
-    title: 'Adeslas GO, mucho más que un seguro médico'
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
+    suptitle: 'Adeslas GO'
+    title: 'Mucho más que un seguro médico'
     text: ''
     drop:
       drop1:
@@ -95,86 +98,89 @@ go:
       faq4:
         title: '¿Qué es la póliza? ¿Y la prima?'
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
-  extra:
-    table2:
-      column1:
-        title: 'De 18 a 30 años'
-        rows:
-          - 'Historia clínica y exploración general'
-          - 'Analítica'
-          - 'Electrocardiograma'
-          - 'Radiografía del tórax'
-          - 'Examen ginecológico con citología vaginal'
-          - 'Agudeza visual, audiometría y espirometría '    
-      column2:
-        title: 'De 31 a 45 años'
-        rows:
-          - 'Ecografía mamaria y mamografía'
-          - 'Ecografía abdominal'
-          - ''
-          - ''
-          - ''
-      column3:
-        title: 'Desde 46 años'
-        rows:
-          - 'Analítica por estudio de PSA (próstata), HDL, fosfatasa alcalina y hemorragias ocultas'
-          - 'Ecografía ginecológica'
-          - 'Ecografía prostática'
-          - ''
-          - ''
-    table:
-      rows:
-        - 'Historia clínica y exploración general'
-        - 'Analítica'
-        - 'Electrocardiograma'
-        - 'Radiografía del tórax'
-        - 'Examen ginecológico con citología vaginal'
-        - 'Agudeza visual, audiometría y espirometría'
-        - 'Ecografía mamaria y mamografía según criterio médico'
-        - 'Ecografía abdominal'
-        - 'Analítica por estudio PSA, HDL, fosfatasa alcalina y hemorragias ocultas'
-        - 'Ecografía ginecológica'
-        - 'Ecografía prostática'
-      columns:
-        column1:
-          title: '18 a 30 <br/>años'
-          values:
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - false
-            - false
-            - false
-            - false
-            - false       
-        column2:
-          title: '31 a 45 <br/>años'
-          values:
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - false
-            - false
-            - false
-        column3:
-          title: '+46 <br/>años'
-          values:
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
-            - true
+  # extra:
+  #   table:
+  #     column1:
+  #       title: 'De 18 a 30 años'
+  #       rows:
+  #         - 'Historia clínica y exploración general'
+  #         - 'Analítica'
+  #         - 'Electrocardiograma'
+  #         - 'Radiografía del tórax'
+  #         - 'Examen ginecológico con citología vaginal'
+  #         - 'Agudeza visual, audiometría y espirometría '
+  #         - 'Ecografía mamaria y mamografía'
+  #         - 'Ecografía abdominal'
+          
+  #     column2:
+  #       title: 'De 31 a 45 años'
+  #       rows:
+  #         - 'Historia clínica y exploración general'
+  #         - 'Analítica'
+  #         - 'Electrocardiograma'
+  #         - 'Radiografía del tórax'
+  #         - 'Examen ginecológico con citología vaginal'
+  #         - 'Agudeza visual, audiometría y espirometría '
+  #         - 'Ecografía mamaria y mamografía'
+  #         - 'Ecografía abdominal'
+  #         - 'Analítica por estudio de PSA (próstata), HDL, fosfatasa alcalina y hemorragias ocultas'
+  #         - 'Ecografía ginecológica'
+  #         - 'Ecografía prostática'
+  #         - ''
+  #     column3:
+  #       title: 'Desde 46 años'
+  #       rows:
+  #         - 'Historia clínica y exploración general'
+  #         - 'Analítica'
+  #         - 'Electrocardiograma'
+  #         - 'Radiografía del tórax'
+  #         - 'Examen ginecológico con citología vaginal'
+  #         - 'Agudeza visual, audiometría y espirometría '
+  #         - 'Ecografía mamaria y mamografía'
+  #         - 'Ecografía abdominal'
+  #         - 'Analítica por estudio de PSA (próstata), HDL, fosfatasa alcalina y hemorragias ocultas'
+  #         - 'Ecografía ginecológica'
+  #         - 'Ecografía prostática'
+  #     columns:
+  #       column1:
+  #         title: '18 a 30 <br/>años'
+  #         values:
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - false
+  #           - false
+  #           - false
+  #           - false
+  #           - false       
+  #       column2:
+  #         title: '31 a 45 <br/>años'
+  #         values:
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - false
+  #           - false
+  #           - false
+  #       column3:
+  #         title: '+46 <br/>años'
+  #         values:
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true
+  #           - true

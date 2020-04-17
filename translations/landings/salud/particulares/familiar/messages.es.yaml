@@ -1,30 +1,34 @@
 familiar:
+  home:
+    title: 'Landing familia'
+    meta_description: 'Landing familia'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_familia.png'
   minicards: # 2 minicards + title + description
-    title: ''
-    suptitle: ''
+    title: 'Un seguro médico para cuidar de tu familia y pagar sólo por lo que necesitas'
+    suptitle: 'Adeslas familias'
     desc: ''
     cards:
       card1:
-        top: ''
-        middle: ''
+        top: 'Desde'
+        middle: '16,50 €/mes'
         bottom: ''
       card2:
         top: ''
         middle: ''
         bottom: ''
   product_bullet: # 3 products with bullets + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    title: 'Elige el seguro que mejor se adapta a tu familia'
+    suptitle: 'Adeslas familias'
+    desc: 'En Adeslas te ofrecemos la mejor asistencia médica y distintas ofertas a la medida de todo tipo de familias'
     product:
       product1:
-        title: ''
+        title: 'Adeslas GO'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '16,50'
           currency: '€'
           period: '/mes'
         cta:
@@ -32,14 +36,14 @@ familiar:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-go'
         bullets:
-          -
+          - 'Sin cuestionario médico'
       product2:
-        title: ''
+        title: 'Adeslas Plena Vital'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '35'
           currency: '€'
           period: '/mes'
         cta:
@@ -47,13 +51,58 @@ familiar:
           path: '/path'
         more_info:
           text: 'Saber más'
+          path: '/seguro/adeslas-plena-vital'
+        bullets:
+          - 'Copagos limitados'
+      product3:
+        title: 'Adeslas Plena'
+        price:
+          pre: 'Desde'
+          quantity: '45'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/path'
+        more_info:
+          text: 'Saber más'
+          path: '/seguro/adeslas-plena'
+        bullets:
+          - 'Copagos reducidos'
+      product4:
+        title: 'Adeslas Plena Plus'
+        price:
+          pre: 'Desde'
+          quantity: '55'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/path'
+        more_info:
+          text: 'Saber más'
+          path: '/seguro/adeslas-plena-plus'
+        bullets:
+          - 'Sin copagos'
+      product5:
+        title: 'Adeslas Plena Extra 150'
+        price:
+          pre: 'Desde'
+          quantity: '79'
+          currency: '€'
+          period: '/mes'
+        cta:
+          text: 'Llamadme'
+          path: '/seguro/adeslas-plena-extra'
+        more_info:
+          text: 'Saber más'
           path: '/path'
         bullets:
-          -
+          - 'Libre elección de médico'
   select: # 4 selector + title
-    title: ''
+    title: 'Consulta el Cuadro Médico Adeslas'
     suptitle: ''
-    select_txt: ''
+    select_txt: 'Selecciona tu provincia'
   desc: # 5 title + description
     title: ''
     text: ''

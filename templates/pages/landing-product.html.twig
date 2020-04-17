@@ -7,7 +7,9 @@
 {% block body %}
 
   {# Hero product component #}
-  {% include 'components/header-image/header-image.html.twig' %}
+  {% include 'components/header-image/header-image.html.twig' with {
+    image: "#{landing}.hero.image" | trans
+  } %}
 
   {# SupertitleTitleSubtitle component #}
   {% include 'components/header-titles/header-titles.html.twig' with {

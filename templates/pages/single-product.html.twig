@@ -10,27 +10,32 @@
 
   <div class="container-fluid container-lg px-0">
     <div class="row">
-      <div class="col-12 col-lg-8">
-        {# Header titles #}
-        {% include 'components/header-titles/header-titles.html.twig' with {
-          mini_header: bullets_list.suptitle,
-          text_header: bullets_list.title,
-          content_header: '',
-        } %}
+      <div class="col-12 col-lg-8 p-0">
+        {% if  bullets_list is not null %}
+          {# Header titles #}
+          {% include 'components/header-titles/header-titles.html.twig' with {
+            mini_header: bullets_list.suptitle,
+            text_header: bullets_list.title,
+            content_header: '',
+          } %}
 
-        {# Bullet list #}
-        <div class="container-fluid px-0">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: bullets_list.list } %}
+          {# Bullet list #}
+          <div class="container-fluid">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  {% include 'components/bullet-list/bullet-list.html.twig' with { 
+                    bullet_list_items: bullets_list.list 
+                  } %}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+  
+          {# Simple line divider #}
+          {% include 'components/simple-divider-line/simple-divider-line.html.twig' with { padding_x: 3, margin_y: 5 } %}
 
-        {# Simple line divider #}
-        {% include 'components/simple-divider-line/simple-divider-line.html.twig' with { padding_x: 3, margin_y: 4 } %}
+        {% endif %}
 
         {# Header titles #}
         {% include 'components/header-titles/header-titles.html.twig' with {
@@ -109,14 +114,14 @@
           dropdown_items: faq.elems,
         } %}
 
-        {% if table is defined %}
-        <div class="container-fluid bg-grey p-md-0">
-          <div class="container py-4 px-md-0">
-            {% include 'components/product-features-table/product-features-table.html.twig' with {
-              array: null,
-            } %}
+        {% if table is not empty %}
+          <div class="container-fluid">
+            <div class="container">
+              {% include 'components/product-features-table/product-features-table.html.twig' with {
+                array: null,
+              } %}
+            </div>
           </div>
-        </div>
         {% endif %}
 
       </div>

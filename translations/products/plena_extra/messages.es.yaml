@@ -1,8 +1,11 @@
 #adeslas_plena_extra
 plena_extra:
   hero: # 1
-    title: 'Adeslas Plena Extra 150. Asistencia médica de altas prestaciones para escoger a quién te cuida'
-    subtitle: 'Libre elección de especialista en cualquier parte del mundo '
+    title: 'Adeslas Plena Extra 150. Un seguro médico para escoger a quién te cuida'
+    subtitle: 'Libre elección de especialista en todo el mundo'
+    images: 
+      image1: 'adeslas_hero_large_ficha_familia_extra.jpg'
+      image2: 'adeslas_hero_large_ficha_individual_extra.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
@@ -20,96 +23,90 @@ plena_extra:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: 'Atención plena, vayas donde vayas'
+    suptitle: 'Coberturas Extra'
+    title: 'Atención plena, vayas donde vayas'
     text: 'Adeslas Plena Extra te abre la puerta a los mejores servicios de un seguro médico privado de calidad. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas de alta tecnología y asistencia a domicilio tanto en España como en cualquier país del extranjero  Entre ellos:'
     list:
-      - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular, Oncológica).'
+      - 'Planes de Prevención en Pediatría, Ginecología, Cardiología o Urología.'
       - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
-      - 'Planes de Prevención en Pediatría, Obstetricia y Ginecología, Cardiología o Urología.'
+      - 'Cirugía, implantes y prótesis internas.'
+      - 'Asistencia global a embarazo, parto y posparto.'
       - 'Asistencia para trasplantes.'
-      - 'Implantes y prótesis (internas) cardiovasculares, osteoarticulares y oftalmológicas.'
-      - 'Tratamientos especiales (Laserterapia, logopedia y foniatría, tratamiento del dolor, ondas de choque).'
-      - 'Pruebas prenatales, preparación y asistencia del parto y recuperación postparto.'
-      - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
-      - 'Tratamiento quirúrgico por láser de hiperplasia benigna de próstata (láser verde). Acelerador lineal de partículas.'
+      - 'Tratamientos especiales.'
+      - 'Pruebas diagnósticas, incluidas de alta tecnología.'
+      - 'Acelerador lineal de partículas.'
       - 'Cirugía Quimioterápica.'
-      - 'Litotricia Renal y diálisis'
+      - 'Litotricia Renal y diálisis.'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: ''
+    suptitle: 'Condiciones Extra'
     title: 'Los más amplios servicios de salud, a tu alcance'
-    text: 'Adeslas Plena Extra 150 es mucho más que un seguro médico privado, es un traje a medida. Con esta póliza  podrás elegir entre la cobertura global del cuadro médico Adeslas, el mejor y más amplio del país, con 43.000 profesionales o elegir con absoluta libertad al profesional que desees consultar en cualquier país del mundo. '
+    text: 'Adeslas Plena Extra 150 es mucho más que un seguro médico privado, es un traje a medida. Podrás disfrutar de la cobertura global del cuadro médico Adeslas o elegir con total libertad al profesional que desees consultar en cualquier país del mundo.'
     drop:
       drop0:
-        text: ''
         title: 'Total flexibilidad'
+        text: 'Adeslas Plena Extra 150 es el seguro ideal para las familias que quieren escoger a su especialista. Siempre podrás acogerte a la asistencia de calidad del cuadro médico Adeslas con una cobertura completa sin copagos o combinar ambos modelos con un reembolso del 80% de los gastos de libre elección.'
       drop1:
-        text: ''
         title: 'Descuentos'
+        text: 'Con Adeslas Plena Extra accedes a un enorme abanico de posibilidades y coberturas desde 79 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 4 o más asegurados. Y si contratas con Dental, tendrás tu seguro médico privado 2 meses gratis.'
       drop2:
-        text: ''
         title: 'Calidad'
+        text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees con total libertad.'
       drop3:
-        text: ''
-        title: 'Copagos limitados'
+        title: 'Sin Copagos'
+        text: 'En Adeslas Plena Extra pagarás lo mismo cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'
       drop4:
-        text: ''
-        title: 'Pago mensual y descuentos'
-      drop5:
-        text: ''
         title: 'Pruebas sin autorización'
+        text: 'Con Adeslas Plena Extra, podrás someterte a la mayoría de pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas, una vez cumplido el periodo de carencia.'
+      drop5:
+        title: 'Pago mensual y descuentos'
+        text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: ''
     text: ''
     list: null
   desc: # 6 titulo + descripcion
-    title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
-    text: 'Además de todas las coberturas incluidas en Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
+    title: '¿Quieres acudir a la Clínica Universitaria de Navarra?'
+    text: 'Además de todas las coberturas de Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
-    suptitle: ''
-    title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
-    text: 'Además de todas las coberturas incluidas en Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
+    suptitle: 'Ventajas Extra'
+    title: 'El mejor seguro a la carta en todo el mundo'
+    text: ''
     drop:
       drop1:
         title: '¿Para quién es Adeslas Plena Extra 150?'
-        text: ''
+        text: 'Adeslas Plena Extra 150 está pensado para personas o familias que demandan una atención de máxima calidad y absoluta confianza con libertad de elegir o que pasan largos periodos del año en el extranjero y desean un seguro con la misma calidad en cualquier parte del mundo. Con Adeslas Plena Extra disfrutarás de Adeslas Es Más, un servicio exclusivo de los asegurados Adeslas, que da acceso al área privada para la gestión telemática de todos tus trámites y servicios adicionales'
       drop2:
-        title: '¿Hay límite de edad para contratar Adeslas Plena Extra 150?'
-        text: ''
-      drop3:
-        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: ''
-      drop4:
-        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
-        text: ''
-      drop5: 
         title: '¿Puedo contratar este servicio sólo para mis hijos?'
-        text: ''
-      drop6:
-        title: '¿Qué cobertura tengo si estoy embarazada?'
-        text: ''
-      drop7:
-        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text:
-      drop8:
-        title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
-        text: ''
-      drop9: 
+        text: 'Sí. Adeslas Plena Extra 150 puede contratarse para una única persona,incluso para un menor de edad siempre que el tomador supere los 18 años'
+      drop3:
+        title: '¿Hay límite de edad para contratar Adeslas Plena Extra 150?'
+        text: 'Adeslas Plena Extra 150 se puede contratar hasta los 64 años, aunque puede incluirse a personas mayores de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años'
+      drop4:
         title: '¿Existen límites económicos para Adeslas Plena Extra 150?'
-        text: ''
+        text: 'Adeslas Plena Extra 150 tiene límites a los gastos cubiertos por reembolso hasta un total de 150.000 euros y con sublímites, de los que te informaremos cuando quieras sin compromiso. La asistencia ambulatoria y quirúrgica tiene como límite los 40.000 euros al año y el parto, 5.000 €.'
+      drop5: 
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: 'Adeslas Plena Extra 150 permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para intervenciones quirúrgicas y hospitalizaciones.'
+      drop6:
+        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
+        text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluyas en tu póliza, con lo que podrías acceder a descuentos adicionales.'
+      drop7:
+        title: '¿Y si sufro un imprevisto y no puedo hacer frente a mi prima?'
+        text: 'Adeslas Plena Extra 150 está cubierto con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
     elems:
       faq1:
         title: 'Copagos'
-        text: ''
+        text: 'Es un complemento que pagas cada vez que utilizas algunos actos médicos cubiertos por la póliza de un seguro médico. En Adeslas Plena Extra 150 no existen copagos.'
       faq2:
         title: 'Cuestionario Médico'
-        text: ''
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos,etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena Extra 150 está sujeto a cuestionario médico.'
       faq3:
         title: 'Carencias'
-        text: ''
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura. En Adeslas Plena Extra 150 existen carencias para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
       faq4:
-        title: 'Poliza y prima'
-        text: ''
+        title: 'Póliza y prima'
+        text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
