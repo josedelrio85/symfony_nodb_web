@@ -6,25 +6,19 @@
 
 {% block body %}
 
-  {# <h1>{{ "header.text1" | trans | raw }}</h1>
-  <h2>{{ "header.text2" | trans | raw }}</h2>
-  <h3>{{ "header.text3" | trans | raw }}</h3>
-  <h4>{{ "header.text4" | trans | raw }}</h4>
-
-  <h1>{{ "test.test1" | trans | raw }}</h1>
-  <h2>{{ "test.test2" | trans | raw }}</h2> #}
-  {# {% include 'components/hero-slider/hero-slider.html.twig' %} #}
+  <div class="container-fluid p-0">
+    {% include 'components/slider-home/slider-home.html.twig' with {
+      slides: hero,
+    } %}
+  </div>
 
   <div class="container-fluid">
     <div class="container">
-         {% include 'components/configurator/configurator.html.twig' with {} %}
-      </div>
+      {% include 'components/configurator/configurator.html.twig' with {} %}
     </div>
   </div>
 
   <div class="container-fluid">
       {% include 'components/feature-cards/feature-cards.html.twig' with {} %}
   </div>
-
-
 {% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "home.title_detail" | trans }}{% endblock %}
+
+{% block meta_description %}<meta name="description" content="{{ "home.meta_description" | trans }}">{% endblock %}
+
+{% block body %}
+
+  {% include 'components/product-single-hero/product-single-hero.html.twig' %}
+
+  <div class="container-fluid container-lg">
+    <div class="row">
+      <div class="col-12 col-lg-8 p-0">
+        {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          mini_header: bullets_list.suptitle,
+          text_header: bullets_list.title,
+          content_header: '',
+        } %}
+
+        {# Bullet list #}
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: bullets_list.list } %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {# Simple line divider #}
+        {% include 'components/simple-divider-line/simple-divider-line.html.twig' with { padding_x: 3, margin_y: 5 } %}
+
+        {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          mini_header: des_with_dropdown_list.suptitle,
+          text_header: des_with_dropdown_list.title,
+          content_header: des_with_dropdown_list.text,
+        } %}
+
+        {# Dropdown content #}
+        {% include 'components/dropdown/dropdown.html.twig' with {
+          bg_grey: false,
+          dropdown_items: des_with_dropdown_list.drop,
+        } %}
+
+        {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+            mini_header: desc_with_bullets_list.suptitle,
+            text_header: desc_with_bullets_list.title,
+            content_header: desc_with_bullets_list.text,
+        } %}
+
+        {# Bullet list #}
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: desc_with_bullets_list.list } %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {# Image divider #}
+        {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
+          image: 'https://via.placeholder.com/1920x500'
+        } %}
+
+        {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          bg_grey: true,
+          mini_header: '',
+          text_header: "#{product}.desc.title" | trans | raw,
+          content_header: "#{product}.desc.text" | trans | raw,
+        } %}
+
+        {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          bg_grey: true,
+            mini_header: dropdown_last.suptitle,
+            text_header: dropdown_last.title,
+            content_header: dropdown_last.text,
+        } %}
+
+        {# Dropdown content #}
+        {% include 'components/dropdown/dropdown.html.twig' with {
+          bg_grey: true,
+          dropdown_items: dropdown_last.drop,
+        } %}
+
+        {# Image divider #}
+        {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
+          image: 'https://via.placeholder.com/1920x500'
+        } %}
+
+        {# Header titles #}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          bg_grey: true,
+          mini_header: faq.suptitle,
+          text_header: faq.title,
+          content_header: '',
+        } %}
+
+      {# Dropdown content #}
+        {% include 'components/dropdown/dropdown.html.twig' with {
+          bg_grey: true,
+          dropdown_items: faq.elems,
+        } %}
+
+      </div>
+
+      {# TODO: borrar esto si Andres confirma que la tarjeta queda donde está #}
+      {# <div class="col-4 d-none d-lg-block">
+        <div class="fixed-top container">
+          <div class="row">
+            <div class="col-4 offset-8 mt-3">
+              {% include 'components/product-single-card/product-single-card.html.twig' %}
+            </div>
+          </div>
+        </div>
+      {# </div> #}
+    </div>
+  </div>
+  {# Hero section desktop #}
+
+{% endblock %}

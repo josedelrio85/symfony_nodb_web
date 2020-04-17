@@ -1,0 +1,57 @@
+<div id="product-single-hero">
+  {# Hero section mobile #}
+  <div class="d-block d-lg-none mb-4">
+    <div class="container-fluid product-single-hero-mobile">
+      <div class="container px-0 pt-5">
+        <div class="row">
+          <div class="col-12 p-0 text-white mt-3">
+            {% include 'components/header-titles/header-titles.html.twig' with {
+              mini_header: '' | trans,
+              text_header: "#{product}.hero.title" | trans,
+              content_header: "#{product}.hero.subtitle" | trans,
+
+            } %}
+            {% include 'components/product-single-card/product-single-card.html.twig' with {
+              price_pre: "#{product}.price_with_details.price.pre" | trans | raw,
+              price_quantity: "#{product}.price_with_details.price.quantity" | trans | raw,
+              price_currency: "#{product}.price_with_details.price.currency" | trans | raw,
+              price_period: "#{product}.price_with_details.price.period" | trans | raw,
+              price_bullets: price_bullets,
+              cta_text: "#{product}.price_with_details.cta.text" | trans | raw,
+              cta_path: "#{product}.price_with_details.cta.path" | trans | raw
+            } %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {# Hero section desktop #}
+  <div class="container-fluid d-none d-lg-block mb-4 h-50 product-single-hero-desktop ">
+    <div class="container h-50">
+      <div class="row">
+        <div class="col-lg-7 col-xl-8 text-white">
+          {% include 'components/header-titles/header-titles.html.twig' with {
+              mini_header: '' | trans,
+              text_header: "#{product}.hero.title" | trans,
+              content_header: "#{product}.hero.subtitle" | trans,
+          } %}
+        </div>
+        <div class="col-lg-5 col-xl-4 my-3">
+          <div id="triggerpincard"></div>
+          <div id="pincard">
+            {% include 'components/product-single-card/product-single-card.html.twig' with {
+              price_pre: "#{product}.price_with_details.price.pre" | trans | raw,
+              price_quantity: "#{product}.price_with_details.price.quantity" | trans | raw,
+              price_currency: "#{product}.price_with_details.price.currency" | trans | raw,
+              price_period: "#{product}.price_with_details.price.period" | trans | raw,
+              price_bullets: price_bullets,
+              cta_text: "#{product}.price_with_details.cta.text" | trans | raw,
+              cta_path: "#{product}.price_with_details.cta.path" | trans | raw
+            } %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

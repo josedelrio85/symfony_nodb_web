@@ -1,0 +1,21 @@
+#product-single-hero {
+  .product-single-hero-mobile {
+    background-image: url('https://via.placeholder.com/2000x500');
+    background-position-y: -200px;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .product-single-hero-desktop {
+    background: url(https://via.placeholder.com/1920x500);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #pincard {
+    top:initial!important ;
+    transition: top 1s;
+    z-index: 99;
+  }
+}

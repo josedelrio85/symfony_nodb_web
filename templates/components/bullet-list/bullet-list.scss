@@ -10,4 +10,21 @@
     background: transparent!important; color: #0097D7!important;
     border-color: transparent!important;
   }
+
+  li:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    content: "\ea1a";
+    color: #0097D7;
+    margin-right: 8px;
+  }
+
 }
