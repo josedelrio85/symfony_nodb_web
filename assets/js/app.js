@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   ////////////////////// C2C ////////////////////////////////////////////
+
   let C2cDeskop = document.querySelector('.click-to-call-desktop');
   let C2cMobile = document.querySelector('.click-to-call-mobile');
   let closeC2cDeskop = document.querySelector('.click-to-call-desktop .close-c2c');
@@ -90,6 +91,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   let c2c = new bysidecar();
   let phone = null;
+  let smartcenter = process.env.PRODUCTION;
+  let souid = process.env.SOUID;
 
   let c2cpopup_desktop = document.querySelector('.click-to-call--body.c2cdesktop .call-me-now');
   c2cpopup_desktop.onclick = (e) => {
@@ -97,11 +100,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     if(validationFields(".click-to-call--body.c2cdesktop")){
       const dataLead = {
-        sou_id: 15,
+        sou_id: souid,
         phone: phone,
-        smartcenter: false,
+        smartcenter: smartcenter,
       };
-      console.log(dataLead);
 
       const dataLayer = {
         eventCategory: "cmb",
@@ -120,9 +122,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     if(validationFields(".click-to-call--body.c2cmobile")){
       const dataLead = {
-        sou_id: 78,
+        sou_id: souid,
         phone: phone,
-        smartcenter: false,
+        smartcenter: smartcenter,
       };
 
       const dataLayer = {
@@ -142,11 +144,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     if(validationFields(".click-to-call--body.c2cmodal")){
       const dataLead = {
-        sou_id: 15,
+        sou_id: souid,
         phone: phone,
-        smartcenter: false,
+        smartcenter: smartcenter,
       };
-      console.log(dataLead);
 
       const dataLayer = {
         eventCategory: "cmb",
@@ -162,8 +163,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function validationFields(parent) {
     // dev
-    document.querySelector(parent +' .form-control').value = '665932355';
-    document.querySelector(parent +' .form-check-input').checked = true;
+    // document.querySelector(parent +' .form-control').value = '665932355';
+    // document.querySelector(parent +' .form-check-input').checked = true;
 
     let text = document.querySelector(parent +' .call-me-now-validation-error');
     if(!c2c.getLandingCommander().checkPhone(document.querySelector(parent +' .form-control').value)){
