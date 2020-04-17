@@ -11,10 +11,22 @@ ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
-
-
 document.addEventListener("DOMContentLoaded", function(event) {
 
+  // Slider home
+  var sliderHome = new Swiper('.swiper-home', {
+      speed: 400,
+      pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  });
+  
   // Fullscreen menu (decomment when we turn on menu links on header menu)
   // if($(".close-menu").length) {
   //   $(".close-menu").click(function(){
@@ -24,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //     $(".fullscreen-navigation").fadeIn(200);
   //   });
   // }
+
   if(document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();
     var scene = new ScrollMagic.Scene({

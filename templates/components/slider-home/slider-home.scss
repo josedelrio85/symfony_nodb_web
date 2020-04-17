@@ -1,0 +1,107 @@
+.swiper-home {
+
+    height: 450px;
+
+    @include media-breakpoint-up(md) {
+        height: 550px;
+    }
+
+    .inner {
+        padding: 3rem 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+
+        &:after {
+            font-size: 1.5rem;
+        }
+    }
+
+    .slider-bg {
+        // position: relative;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(50, 50, 50, 0.3);
+        }
+    }
+
+    .swiper-slide {
+        .container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            z-index: 20;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $primary;
+    }
+
+    .swiper-pagination-bullet {
+        background: $white;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $primary;
+        transform: scale(1.5);
+    }
+
+    .swiper-pagination {
+        text-align: left;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 540px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include media-breakpoint-up(md) {
+            max-width: 720px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 960px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: 1140px;
+        }
+    }
+
+    .swiper-container-horizontal {
+        &>.swiper-pagination-bullets {
+            bottom: 7%;
+        }
+    }
+
+    .description {
+        max-width: 400px;
+    }
+
+    .btn {
+        padding: 0.5rem 2rem;
+    }
+
+}
