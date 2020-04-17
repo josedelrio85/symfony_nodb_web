@@ -3,8 +3,9 @@ import 'bootstrap';
 import Swiper from 'swiper';
 
 import { TweenMax, TimelineMax } from '../../node_modules/gsap/src/all.js';
-import * as ScrollMagic from 'ScrollMagic';
-import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
+// import * as ScrollMagic from 'ScrollMagic';
+// import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
+import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
@@ -13,7 +14,6 @@ import { landingCommander } from '../../node_modules/@bysidecar/landing_commande
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
-
 
   if(document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();
