@@ -87,7 +87,7 @@ Encore
        if (Encore.isProduction()) {
         options['process.env'] = {
           LEADS_URL:               JSON.stringify(process.env.LEADS_URL),
-          SOU_ID:            JSON.stringify(process.env.SOU_ID),
+          SOUID:                   JSON.stringify(process.env.SOUID),
           PRODUCTION:              process.env.PRODUCTION,
         };
        }
@@ -100,7 +100,7 @@ Encore
 
         options['process.env'] = {
           LEADS_URL:               JSON.stringify(env.parsed.LEADS_URL),
-          SOU_ID:            JSON.stringify(env.parsed.SOU_ID),
+          SOUID:                   JSON.stringify(env.parsed.SOUID),
           PRODUCTION:              env.parsed.PRODUCTION,
         };
       }
