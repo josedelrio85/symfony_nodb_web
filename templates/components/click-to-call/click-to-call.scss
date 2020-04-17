@@ -118,11 +118,16 @@
 
 #call-me-later-pop-up {
     position: fixed;
+    // display: none !important;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 99;
+
+    // &.call-me-now-popup--opened {
+    //     display: block !important;
+    // }
 
     .call-me-now-popup__overlay {
         background-color: rgba(0, 0, 0, .5);
@@ -151,7 +156,7 @@
     }
 
     .call-me-now-popup__header {
-        border-radius: 5px 5px 0 0 !important;
+        border-radius: 10px 10px 0 0 !important;
         background: #0097d7;
         color: white;
     }
