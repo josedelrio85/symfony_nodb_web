@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           el: '.swiper-pagination',
           type: 'bullets',
           clickable: true
-      }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
   });
   
   // Fullscreen menu (decomment when we turn on menu links on header menu)
