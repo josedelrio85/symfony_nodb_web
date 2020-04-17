@@ -7,7 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
-class CookiesController extends AbstractController {
+class ConditionsController extends AbstractController {
 
   public function __construct() {}
 
@@ -15,7 +15,7 @@ class CookiesController extends AbstractController {
     $route = $request->attributes->get('_route');
     $uri = $request->server->get('REQUEST_URI');
 
-    return $this->render("pages/cookies.html.twig", [
+    return $this->render("pages/conditions.html.twig", [
       'route' => $route,
       'uri' => $uri,
     ]);

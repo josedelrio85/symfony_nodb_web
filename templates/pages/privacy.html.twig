@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "privacy.title_detail" | trans }}{% endblock %}
+{% block meta_description %}<meta name="description" content="{{ "privacy.meta_description" | trans }}">{% endblock %}
+
+{% block c2cPopup %}
+{% endblock %}
+
+{% block body %}
+  {# {% include 'components/page-header/page-header.html.twig' with {
+    title:           "privacy.title"        | trans,
+    subtitle:        "privacy.subtitle"     | trans,
+    backgroundImage: "privacy.bg_image_top" | trans,
+  } %} #}
+  <section class="">
+  {{ "privacy.content" | trans | raw }}
+  </section>
+{% endblock %}
+
+
+{% block javascripts %}
+  {{ parent() }}
+{% endblock %}

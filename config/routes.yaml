@@ -140,9 +140,29 @@ dental_familia:
 
 #####################
 
+##################### FOOTER #####################
+legal:
+   path: /legal
+   controller: App\Controller\LegalController::index
+
+privacidad:
+   path: /privacidad
+   controller: App\Controller\PrivacyController::index
+
+cookies:
+   path: /cookies
+   controller: App\Controller\CookiesController::index
+
+condiciones:
+   path: /condiciones
+   controller: App\Controller\ConditionsController::index
+
+##################### DEV #####################
+
 test:
    path: /test
    controller: App\Controller\TestController::index
+
 single-product:
    path: single-product
    controller: App\Controller\SingleProductController::index

@@ -3,10 +3,12 @@
         <div class="inner d-flex justify-content-between align-items-center">
             <div class="logo-container">
                 {# <img class="w-100" src="https://via.placeholder.com/150x70" alt="Adeslas"/> #}
-                <div class="img d-block mx-auto">
-                    <div class="logo-desktop">{{ source('@public_path'~asset('build/images/adeslas_logo_desktop.svg')) }}</div>
-                    <div class="logo-mobile">{{ source('@public_path'~asset('build/images/adeslas_logo_mob.svg')) }}</div>
-                </div>
+                <a href="/">
+                  <div class="img d-block mx-auto" >
+                      <div class="logo-desktop" >{{ source('@public_path'~asset('build/images/adeslas_logo_desktop.svg')) }}</div>
+                      <div class="logo-mobile" >{{ source('@public_path'~asset('build/images/adeslas_logo_mob.svg')) }}</div>
+                  </div>
+                </a>
             </div>
             <div class="left-block d-flex align-items-center">
                 {# <div class="nav-desktop d-none d-md-block">
@@ -16,8 +18,8 @@
                         <li><a href="#">Menú 3</a></li>
                     </ul>
                 </div> #}
-                <a href="tel:904567326" role="button" class="ddi-button btn btn-info">
-                    <span class="icon icon-phone"></span> <span class="phone">904567326</span>
+                <a role="button" class="ddi-button btn btn-info">{# href="tel:904567326" #}
+                    <span class="icon icon-phone"></span> <span class="phone ddi">904567326</span>
                 </a>
                 {# <div class="nav-mobile d-md-none ml-4">
                     <span class="h3 icon icon-menu text-primary"></span>
