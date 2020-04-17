@@ -1,17 +1,25 @@
-<div class="container-fluid bg-grey pt-0 pb-2 px-0" id="dropdown">
+<div class="container-fluid {% if bg_grey is defined and bg_grey == true %}bg-grey{% endif %} pt-2 pb-2 px-3 dropdown" id="dropdown">
   <div class="container mb-5">
     <div class="row">
       <div class="col-12">
-        <div id="accordion" class="accordion">
+        {# Random var to fix problems when there are multiple dropdown elements in the same page #}
+        {% set accordionid = random() %}
+        <div id="accordion{{ accordionid }}" class="accordion">
           <div class="card mb-0">
             {% for item in dropdown_items %}
-              <div class="card-header collapsed py-4 bg-grey px-0" data-toggle="collapse" href="#collapse{{ loop.index }}">
+              <div class="card-header collapsed py-4 px-0" data-toggle="collapse" href="#collapse{{ accordionid }}{{ loop.index }}">
                 <a class="card-title font-weight-bold h5">{{ item.title | trans | raw}}</a>
               </div>
-              <div id="collapse{{ loop.index }}" class="card-body bg-grey collapse px-0" data-parent="#accordion">
+              <div id="collapse{{ accordionid }}{{ loop.index }}" class="card-body collapse px-0" data-parent="#accordion{{ accordionid }}">
+                {% if item.desc is defined %}
+                  <p>{{ item.desc | trans | raw }}</p>
+                {% endif %}
+                {# TODO quick fix because in some drops are 'desc' keys and other are 'text' keys#}
+                {% if item.text is defined %}
                 <p>{{ item.text | trans | raw }}</p>
+                {% endif %}
               </div>
-              <div class="border-top my-0 bg-grey"></div>
+              <div class="border-top my-0 dd-divider"></div>
             {% endfor %}
           </div>
         </div>

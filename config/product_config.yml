@@ -36,15 +36,16 @@ products:
   dental:
     name: 'dental'
     steps: 2
+    path: 'dental'
     children:
-      cobdental:
-        name: 'cobdental'
-        path: 'cobdental'
-        children:
-      dentalysalud:
-        name: 'dentalysalud'
-        path: 'dentalysalud'
-        children:
+      # cobdental:
+      #   name: 'cobdental'
+      #   path: 'cobdental'
+      #   children:
+      # dentalysalud:
+      #   name: 'dentalysalud'
+      #   path: 'dentalysalud'
+      #   children:
   mascotas:
     name: 'mascotas'
     steps: 2

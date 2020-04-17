@@ -39,13 +39,13 @@ mas100:
    controller: App\Controller\LandingController::index
 
 # dental
-cobdental:
+dental:
    path: /seguros-dentales
    controller: App\Controller\LandingController::index
 
-dentalysalud:
-   path: /seguros-dentales
-   controller: App\Controller\LandingController::index
+# dentalysalud:
+#    path: /seguros-dentales
+#    controller: App\Controller\LandingController::index
 
 # mascotas
 mascotas:
@@ -103,7 +103,7 @@ negocios:
  
 #negocios_extra
 negocios_extra:
-   path: /seguro/adeslas-negocios_extra
+   path: /seguro/adeslas-negocios-extra
    controller: App\Controller\ProductController::index
 
 #empresa
@@ -143,3 +143,6 @@ dental_familia:
 test:
    path: /test
    controller: App\Controller\TestController::index
+single-product:
+   path: single-product
+   controller: App\Controller\SingleProductController::index

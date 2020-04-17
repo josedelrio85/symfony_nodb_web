@@ -1,7 +1,7 @@
 #adeslas_plena_vital
 plena_vital:
   hero: # 1
-    title: 'Adeslas Plena Vital: El seguro médico privado con total cobertura y la mejor tarifa'
+    title: 'Adeslas Plena Vital: El seguro médico privado con cobertura total y la mejor tarifa'
     subtitle1: ''
   price_with_details: # 2 caja con precio y bullets
     price:
@@ -20,100 +20,89 @@ plena_vital:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: 'Adeslas Plena Vital'
-    title: 'Asistencia médica y hospitalaria completa a precio reducido'
-    list:
-      - 'esto es un texto de <strong>prueba</strong>'
+    #suptitle: 'Adeslas Plena Vital'
+    #title: 'Coberturas'
+    #text: ''
+    #text2: ''
+    #list:
+    #   - 'Programas de Prevención en Pediatría, Ginecología, Cardiología o Urología'
+    #   - 'Embarazo y parto'
+    #   - 'Planificación familiar (incl. DIU e implantación)'
+    #   - 'Pruebas diagnósticas, también de alta tecnología'
+    #   - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica.'
+    #   - 'Cirugía, implantes y prótesis internas
+    #   - 'Fisioterapia y podología'
+    #   - 'Tratamientos especiales'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
-    title: 'Asistencia médica y hospitalaria completa a precio reducido'
-    text: 'Adeslas Plena Vital es un seguro médico completo, con asistencia sanitaria ambulatoria y hospitalaria y acceso a todas las especialidades de Medicina General y Pediatría. Todos los servicios del mejor cuadro médico para asegurarte una atención de primera y sin esperas.'
-    # text2: 'Adeslas Plena Vital es el seguro privado de salud que te garantiza la asistencia ambulatoria con el acceso directo a todos los especialistas que necesites y el ingreso hospitalario en habitación individual con cama para el acompañante. Amplias coberturas como:'
-    # list:
-    #   - 'Medicina General y Especialidades'
-    #   - 'Pediatría y Puericultura'
-    #   - 'Enfermería'
-    #   - 'Especialistas'
-    #   - 'Pruebas diagnósticas de alta tecnología'
-    #   - 'Urgencias'
-    #   - 'Hospitalización y cirugía'
-    #   - 'Tratamientos especiales'
+    title: 'Condiciones Plena Vital'
+    text: 'Adeslas Plena Vital es un seguro médico privado que te garantiza la mejor asistencia médica y hospitalaria con acceso directo a todos los especialistas y el ingreso hospitalario en habitación individual con cama para el acompañante.'
     drop:
       drop1:
-        title: 'Descuentos'
-        text: ''
+        title: 'Tarifas'
+        text: 'Adeslas Plena ofrece el más amplio catálogo de actos médicos desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
       drop2:
-        text: 'Calidad'
-        title: ''
+        title: 'Calidad'
+        text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud.'
       drop3:
-        text: 'Copagos limitados'
-        title: ''
+        title: 'Copagos limitados'
+        text: 'En Adeslas Plena Vital pagarás una tarifa reducida al mes y copagos por algunas de tus coberturas de una media de 14,50€, pero nunca pagarás más de 300€ al año'
       drop4:
         text: 'Pago mensual y descuentos'
-        title: ''
+        title: 'En Adeslas podrás pagar tu prima cada mes pero puedes obtener descuentos por pago trimestral (2%), semestral (4%) o anual (6%).'
       drop5:
         text: 'Pruebas sin autorización'
-        title: ''
+        title: 'Con Adeslas Plena Vital, podrás someterte a pruebas diagnósticas de alta tecnología que tu médico solicite sin autorizaciones previas.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
     text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios, con asistencia ambulatoria, hospitalaria e incluso urgencias a domicilio si fuese necesario. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena Vital. Entre ellos:'
     list:
-      - 'Programas de Medicina Preventiva en Pediatría, Obstetricia y Ginecología, Cardiología o Urología'
-      - 'Pruebas prenatales, preparación y asistencia del parto y recuperación postparto'
-      - 'Planificación familiar (incluido DIU e implantación)'
-      - 'Pruebas diagnósticas, incluidas las de alta tecnología'
-      - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
-      - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular.)'
-      - 'Implantes y prótesis (internas) cardiovasculares, osteoarticulares y oftalmológicas.'
-      - 'Tratamientos especiales (Laserterapia, logopedia y foniatría, tratamiento del dolor, ondas de choque)'
-      - 'Fisioterapia y podología bajo reembolso de gastos por valor de 500 y 200 euros, respectivamente'
-      - 'Tratamiento quirúrgico por láser de hiperplasia benigna de próstata (láser verde).'
   desc: # 6 titulo + descripcion
-    title: ''
-    text: ''
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
+    title: '¿Quieres elegir Pediatra o Ginecólogo?'
+    text: 'Además de todas las coberturas incluidas en Adeslas Plena Plus, puedes contratar nuestro módulo complementario Plus Ginecología y Pediatría y obtener el reembolso del 80% de los gastos. ¡Y también el Plus Clínica Universitaria de Navarra!'
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
     suptitle: ''
     title: 'Las ventajas del líder en seguros de salud'
     text: ''
     drop:
       drop1:
         title: '¿Para quién es Adeslas Plena Vital?'
-        text: ''
+        text: 'Adeslas Plena Vital está pensado para personas o familias con buena salud que buscan un seguro médico al que acudir ante cualquier necesidad sin asumir un gran coste al mes. Con Adeslas Plena tendrás acceso a Adeslas Es Más, un servicio exclusivo de los asegurados Adeslas, que da acceso al área privada y servicios adicionales como <strong>Criopreservación de células madre</strong> embrionarias, <strong>reproducción asistida</strong> con tarifas especiales.'
       drop2:
         title: '¿Hay límite de edad para contratar Adeslas Plena Vital?'
-        text: ''
+        text: 'Adeslas Plena se puede contratar hasta los 70 años, aunque puedes incluir a personas de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.'
       drop3:
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: ''
+        text: 'Sí. Adeslas Plena Vital puede contratarse para una única persona, que puede ser un menor siempre que el tomador sea mayor de 18 años'
       drop4:
-        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
-        text: ''
-      drop5: 
-        title: '¿Puedo contratar este servicio sólo para mis hijos?'
-        text: ''
-      drop6:
         title: '¿Qué cobertura tengo si estoy embarazada?'
-        text: ''
-      drop7:
+        text: 'Con Adeslas Plena Vital tendrás cubiertas todas tus necesidades; las pruebas prenatales, el test de ADN en sangre materna, la preparación y asistencia al parto y postparto, tanto para ti como para tu bebé. El <strong>parto</strong> es una hospitalización más, por lo que tiene una <strong>carencia de 10 meses</strong> desde la contratación de la póliza.'
+      drop5: 
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: 'Adeslas Plena Vital permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia.'
+      drop6:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text:
+        text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar hasta 3,55€/mes por persona.'
+      drop7:
+        title: '¿Puedo contratar Adeslas Plena Vital si no tengo DNI o NIE?'
+        text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
-        text: ''
+        text: 'Adeslas Plena Vital está cubierto con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses por fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
-    title: 'Términos de interés'
+    title: 'Términos frecuentes'
     elems:
       faq1:
-        title: 'Términos de interés'
-        text: ''
+        title: 'Copago'
+        text: 'Es un complemento que pagas cada vez que utilizas algunos actos médicos. En Adeslas Plena Vital los copagos tienen un precio reducido, de una media de 14,50 euros, pero están limitados a 300€/ año.'
       faq2:
         title: 'Cuestionario Médico'
-        text: ''
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc.que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena Vital está sujeto a cuestionario médico previo.'
       faq3:
         title: 'Carencias'
-        text: ''
+        text: 'Son los períodos en los que todavía no se puede disfrutar de algunas cobertura tras contratar tu seguro. En Adeslas Plena Vital existen carencias que van de los 3 meses en pruebas diagnósticas de alta tecnología, hasta los 10 meses en cirugías hospitalarias y hospitalización.'
       faq4:
-        title: 'Poliza y prima'
-        text: ''
+        title: 'Póliza y prima'
+        text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
