@@ -31,11 +31,13 @@ class ProductController extends AbstractController {
     $desc_with_bullets = $this->repo->getKeyDataProducts($productid,'desc_with_bullets');
     $dropdown = $this->repo->getKeyDataProducts($productid,'dropdown');
     $faq = $this->repo->getKeyDataProducts($productid,'faq');
+    $table = $this->repo->getKeyDataProducts($productid,'extra');
     // dump($price_bullets);die();
     // dump($bullets);die();
     // dump($des_with_dropdown);
     // dump($desc_with_bullets);die();
     // dump($dropdown);die();
+    // dump($table);  die();
 
 
     return $this->render("pages/single-product.html.twig", [
@@ -49,6 +51,7 @@ class ProductController extends AbstractController {
       'desc_with_bullets_list' => $desc_with_bullets,
       'dropdown_last' => $dropdown,
       'faq' => $faq,
+      'table' => $table['table'],
     ]);
   }
 }

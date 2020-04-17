@@ -103,11 +103,21 @@
           content_header: '',
         } %}
 
-      {# Dropdown content #}
+        {# Dropdown content #}
         {% include 'components/dropdown/dropdown.html.twig' with {
           bg_grey: true,
           dropdown_items: faq.elems,
         } %}
+
+        {% if table is defined %}
+        <div class="container-fluid">
+          <div class="container">
+            {% include 'components/product-features-table/product-features-table.html.twig' with {
+              array: null,
+            } %}
+          </div>
+      </div>
+      {% endif %}
 
       </div>
 
