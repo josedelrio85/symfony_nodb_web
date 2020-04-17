@@ -1,6 +1,31 @@
 .header {
-    height: 65px;
+    height: 70px;
     background-color: $white;
+
+    .container,
+    .inner {
+        height: 100%;
+    }
+
+    .logo-mobile {
+        svg {
+
+            @include media-breakpoint-up(md) {
+                display: none !important;
+            }
+        }
+    }
+
+    .logo-desktop {
+        svg {
+            display: none !important;
+
+            @include media-breakpoint-up(md) {
+                display: block !important;
+            }
+        }
+    }
+
 
     a {
         font-family: $font-family-sans-serif;
@@ -13,8 +38,12 @@
     }
 
     .logo-container {
-        width: 170px;
-        
+        width: 85px;
+
+        @include media-breakpoint-up(md) {
+            width: 170px;
+        }
+
         img {
             max-width: 120px;
         }
