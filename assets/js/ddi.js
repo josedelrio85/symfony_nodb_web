@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   let ddi = document.querySelector('.ddi-button');
-  console.log(ddi);
+  // console.log(ddi);
   ddi.addEventListener('click', (e) => {
-    console.log('clicked ddi');
+    // console.log('clicked ddi');
   });
 });

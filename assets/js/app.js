@@ -97,11 +97,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     if(validationFields(".click-to-call--body")){
       const dataLead = {
-        sou_id: 15,
+        sou_id: 78,
         phone: phone,
         smartcenter: false,
       };
-      console.log(dataLead);
 
       const dataLayer = {
         eventCategory: "cmb",
@@ -115,6 +114,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   } 
 
   function validationFields(parent) {
+    // dev
+    document.querySelector(parent +' .form-control').value = '665932355';
+    document.querySelector(parent +' .form-check-input').checked = true;
+
     let text = document.querySelector(parent +' .call-me-now-validation-error');
     if(!c2c.getLandingCommander().checkPhone(document.querySelector(parent +' .form-control').value)){
       text.classList.remove('d-none');

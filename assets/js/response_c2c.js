@@ -20,9 +20,9 @@ class responseC2C {
     const mes4 = $('#helper_mes4').val();
     let outtimemes = bh.toLowerCase();
     outtimemes = outtimemes.charAt(0).toUpperCase() + outtimemes.slice(1)
-    const mes2 = outtimemes + '. ' + mes4;
+    // const mes2 = outtimemes + '. ' + mes4;
     this.showPopup(true);
-    this.setMessagePopup(mes1, mes2);
+    this.setMessagePopup(mes1, outtimemes);
   }
 
   responseWeWontCall = () => {
@@ -39,10 +39,6 @@ class responseC2C {
   }
 
   showPopup = (close) => {
-    const div = document.getElementById('call-me-now-pop-up');
-    const clone = div.cloneNode(true); // clone element
-    clone.id = 'call-me-later-pop-up';// change id
-    document.body.appendChild(clone);
     document.getElementById('call-me-later-pop-up').classList.add('call-me-now-popup--opened');
 
     if (close) {
@@ -53,7 +49,7 @@ class responseC2C {
 
   closePopup = () => {
     setTimeout(() => {
-      document.getElementById('call-me-later-pop-up').remove();
+      document.getElementById('call-me-later-pop-up').classList.remove('call-me-now-popup--opened');
     }, 6000);
   }
 
