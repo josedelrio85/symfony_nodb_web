@@ -37,6 +37,7 @@ Encore
     .addEntry('main', './assets/css/main.scss')
     .addEntry('bysidecar', './assets/js/bysidecar.js')
     .addEntry('app', './assets/js/app.js')
+    .addEntry('ddi', './assets/js/ddi.js')
     .addEntry('md5', './assets/js/md5.js')
     
     .enableSingleRuntimeChunk()
