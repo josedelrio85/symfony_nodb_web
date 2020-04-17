@@ -5,15 +5,15 @@ import { landingCommander } from '../../node_modules/@bysidecar/landing_commande
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-  // Fullscreen menu
-  if($(".close-menu").length) {
-    $(".close-menu").click(function(){
-      $(".fullscreen-navigation").fadeOut(200);
-    });
-    $(".nav-mobile").click(function(){
-      $(".fullscreen-navigation").fadeIn(200);
-    });
-  }
+  // Fullscreen menu (decomment when we turn on menu links on header menu)
+  // if($(".close-menu").length) {
+  //   $(".close-menu").click(function(){
+  //     $(".fullscreen-navigation").fadeOut(200);
+  //   });
+  //   $(".nav-mobile").click(function(){
+  //     $(".fullscreen-navigation").fadeIn(200);
+  //   });
+  // }
 
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
