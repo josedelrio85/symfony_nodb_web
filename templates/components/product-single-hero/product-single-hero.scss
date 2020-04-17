@@ -20,6 +20,13 @@
   }
 
   .product-single-card {
-    margin: auto!important;
+    margin: auto;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .product-single-card {
+      margin: initial;
+      margin-left: auto;
+    }
   }
 }
