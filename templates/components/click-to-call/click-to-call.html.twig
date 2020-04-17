@@ -17,14 +17,14 @@
       <span class="icon icon-cancel-circle text-white"></span>
     </div>
   </div>
-  <div class="click-to-call--body text-center px-3 py-4">
+  <div class="click-to-call--body c2cdesktop text-center px-3 py-4">
     <img class="img-call mx-auto mb-3" srcset="{{ asset('build/images/adeslas_simple_logo_blue.svg') }}">
     <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
       <div class="form-group text-left label-in-block">
         <label for="phone">Tu teléfono</label>
-        <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
+        <input type="phone" class="form-control" id="phone" maxlength="9" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
       </div>
 
       <p class="call-me-now-validation-error d-none"></p>
@@ -50,14 +50,14 @@
       <span class="icon icon-cancel-circle text-white"></span>
     </div>
   </div>
-  <div class="click-to-call--body text-center px-3 py-4">
+  <div class="click-to-call--body c2cmobile text-center px-3 py-4">
     <img class="img-call mx-auto mb-3" srcset="{{ asset('build/images/adeslas_simple_logo_blue.svg') }}">
     <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
       <div class="form-group text-left label-in-block">
         <label for="phone">Tu teléfono</label>
-        <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
+        <input type="phone" class="form-control" id="phone" maxlength="9" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
       </div>
       
       <p class="call-me-now-validation-error d-none"></p>
