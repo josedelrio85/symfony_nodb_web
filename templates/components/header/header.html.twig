@@ -2,7 +2,6 @@
     <div class="container py-1">
         <div class="inner d-flex justify-content-between align-items-center">
             <div class="logo-container">
-                {# <img class="w-100" src="https://via.placeholder.com/150x70" alt="Adeslas"/> #}
                 <a href="/">
                   <div class="img d-block mx-auto" >
                       <div class="logo-desktop" >{{ source('@public_path'~asset('build/images/adeslas_logo_desktop.svg')) }}</div>
@@ -18,8 +17,11 @@
                         <li><a href="#">Menú 3</a></li>
                     </ul>
                 </div> #}
-                <a role="button" class="ddi-button btn btn-info">{# href="tel:904567326" #}
-                    <span class="icon icon-phone"></span> <span class="phone ddi">904567326</span>
+                <a role="button" class="ddi-button ddi-desktop btn btn-info font-weight-bold d-none d-md-block">
+                    <span class="icon icon-phone"></span> <span class="phone ddi"></span>
+                </a>
+                <a role="button" class="ddi-button ddi-mobile btn btn-info font-weight-bold d-md-none">
+                    <span class="icon icon-phone"></span> <span class="phone ddi"></span>
                 </a>
                 {# <div class="nav-mobile d-md-none ml-4">
                     <span class="h3 icon icon-menu text-primary"></span>

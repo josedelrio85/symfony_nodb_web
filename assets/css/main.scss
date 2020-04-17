@@ -4,6 +4,8 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import "type";
+@import "forms";
+
 @import "~swiper/css/swiper.min";
 @import "modals";
 @import "type";
@@ -28,3 +30,4 @@
 @import "../../templates/components/product-single-hero/product-single-hero.scss";
 @import "../../templates/components/slider-home/slider-home.scss";
 @import "../../templates/components/product-features-table/product-features-table.scss";
+@import "../../templates/components/click-to-call-popup/click-to-call-popup.scss";

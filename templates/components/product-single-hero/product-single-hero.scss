@@ -18,4 +18,15 @@
     transition: top 1s;
     z-index: 99;
   }
+
+  .product-single-card {
+    margin: auto;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .product-single-card {
+      margin: initial;
+      margin-left: auto;
+    }
+  }
 }

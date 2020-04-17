@@ -1,3 +1,4 @@
+<!-- Click to call button -->
 <div class="click-to-call-btn bg-primary p-3 d-none d-md-block">
   <div class="text-center">
     <span class="h4 icon icon-phone text-light d-block"></span>
@@ -5,6 +6,7 @@
   </div>
 </div>
 
+<!-- Click to call desktop -->
 <div class="click-to-call click-to-call-desktop d-none d-md-block">
   <div class="click-to-call--header d-flex align-items-center justify-content-between align-items-center bg-primary px-3 py-2">
     <div class="d-flex align-items-center">
@@ -14,20 +16,20 @@
       <span class="h6 text-light m-0">{{ "form.header" | trans | raw }}</span>
     </div>
     <div class="close-c2c">
-      <span class="icon icon-cancel-circle text-white"></span>
+      <span class="icon-adeslas_icon_close text-white"></span>
     </div>
   </div>
-  <div class="click-to-call--body text-center px-3 py-4">
+  <div class="click-to-call--body c2cdesktop text-center px-3 py-4">
     <img class="img-call mx-auto mb-3" srcset="{{ asset('build/images/adeslas_simple_logo_blue.svg') }}">
     <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
       <div class="form-group text-left label-in-block">
         <label for="phone">Tu teléfono</label>
-        <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
+        <input type="phone" class="form-control" id="phone" maxlength="9" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
       </div>
 
-      <p class="call-me-now-validation-error d-none"></p>
+      <p class="call-me-now-validation-error text-danger small d-none"></p>
 
       <div class="form-check text-left d-flex">
         <input type="checkbox" class="form-check-input" id="legalCheck">
@@ -38,6 +40,7 @@
   </div>
 </div>
 
+<!-- Click to call mobile -->
 <div class="click-to-call click-to-call-mobile d-block d-md-none">
   <div class="click-to-call--header d-flex align-items-center justify-content-between align-items-center bg-primary px-3 py-2">
     <div class="d-flex align-items-center">
@@ -47,20 +50,20 @@
       <span class="h6 text-light m-0">{{ "form.header" | trans | raw }}</span>
     </div>
     <div class="close-c2c d-none">
-      <span class="icon icon-cancel-circle text-white"></span>
+      <span class="icon-adeslas_icon_close text-white"></span>      
     </div>
   </div>
-  <div class="click-to-call--body text-center px-3 py-4">
+  <div class="click-to-call--body c2cmobile text-center px-3 py-4">
     <img class="img-call mx-auto mb-3" srcset="{{ asset('build/images/adeslas_simple_logo_blue.svg') }}">
     <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
       <div class="form-group text-left label-in-block">
         <label for="phone">Tu teléfono</label>
-        <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
+        <input type="phone" class="form-control" id="phone" maxlength="9" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
       </div>
       
-      <p class="call-me-now-validation-error d-none"></p>
+      <p class="call-me-now-validation-error text-danger small d-none"></p>
 
       <div class="form-check text-left d-flex">
         <input type="checkbox" class="form-check-input" id="legalCheck">
@@ -71,4 +74,63 @@
   </div>
 </div>
 
+{# .call-me-now-popup--opened al #call-me-later-pop-up #}
 
+<!-- Click to call popup -->
+<div id="call-me-later-pop-up" class="call-me-now-popup">
+  <div class="call-me-now-popup__overlay">
+    <div class="call-me-now-popup__contents">
+      <div class="call-me-now-popup__content-layer">
+        <div class="call-me-now-popup__content">
+          <div class="call-me-now-popup__header">
+            <p class="r-text h4 text-header m-0">{{ "form.state_call.title" | trans | raw }}</p>
+          </div>
+          <div class="call-me-now-popup__body">
+            <div class="call-me-now-status call-me-now-status--on-call my-3">
+              {# <div class="call-me-now-status__loader">
+                <div class="call-me-now-status__loader-layer"></div>
+                <div class="call-me-now-status__loader-layer"></div>
+                <div class="call-me-now-status__loader-layer"></div>
+                <div class="call-me-now-status__loader-layer"></div>
+                <div class="call-me-now-status__loader-icon">
+                  <svg class="icon " viewBox="0 0 64 64">
+                    <path class="icon__glyph icon__glyph--primary" d="M38,2 c13.255,0,24,10.745,24,24"></path>
+                    <path class="icon__glyph icon__glyph--secondary" d="M50,62 C23.49,62,2,40.51,2,14L12,4l14,14L16,28l20,20l10-10l14,14L50,62z"></path>
+                    <path class="icon__glyph icon__glyph--primary" d="M50,26 c0-6.627-5.373-12-12-12"></path>
+                  </svg>
+                  <svg class="icon icon--active" viewBox="0 0 64 64">
+                    <polyline class="icon__glyph icon__glyph--primary" points=" 18,34 26,42 46,22"></polyline>
+                    <circle class="icon__glyph icon__glyph--secondary" cx="32" cy="32" r="30"></circle>
+                  </svg>
+                  <svg class="icon " viewBox="0 0 64 64">
+                    <path class="icon__glyph icon__glyph--secondary" d="M4,32C4,16.536,16.536,4,32,4 c11.285,0,21.129,6.972,25.561,16.59"></path>
+                    <polyline class="icon__glyph icon__glyph--secondary" points="59.784,4 57.561,20.59 40.972,18.367"></polyline>
+                    <path class="icon__glyph icon__glyph--primary" d="M60,32c0,15.464-12.536,28-28,28 c-11.285,0-21.129-6.972-25.561-16.59"></path>
+                    <polyline class="icon__glyph icon__glyph--primary" points=" 4.216,60 6.439,43.41 23.028,45.633"></polyline>
+                  </svg>
+                  <svg class="icon " viewBox="0 0 64 64">
+                    <circle class="icon__glyph icon__glyph--secondary" cx="32" cy="32" r="30"></circle>
+                    <polyline class="icon__glyph icon__glyph--primary" points=" 20,16 32,32 44,32"></polyline>
+                  </svg>
+                  <svg class="icon " viewBox="0 0 64 64">
+                    <line class="icon__glyph icon__glyph--secondary" x1="54" x2="10" y1="10" y2="54"></line>
+                    <line class="icon__glyph icon__glyph--secondary" x1="54" x2="10" y1="54" y2="10"></line>
+                  </svg>
+                </div>
+              </div> #}
+              <div class="lds-dual-ring"></div>
+            </div>
+            <div class="call-me-now-popup__title">
+              <p class="h5 text-header">{{ "form.state_call.helper_mes1" | trans | raw }}</p>
+            </div>
+            <div class="call-me-now-popup__sub-title">
+              <p>{{ "form.state_call.subtitle" | trans | raw }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'components/click-to-call/response_messages.html.twig' %}

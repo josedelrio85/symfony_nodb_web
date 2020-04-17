@@ -122,8 +122,8 @@ $grid-breakpoints: (
 );
 
 // Box shaadows
-$box-shadow-gen: 0px 0px 11px 5px rgba(240,240,240,1);
-
+// $box-shadow-gen: 0px 0px 11px 5px rgba(240,240,240,1);
+$box-shadow-gen: 0 4px 14px rgba(0,0,0,0.1), 0 1px 10px rgba(0,0,0,0.1);
 
 // Border radius
 $border-radius-gen: 5px;

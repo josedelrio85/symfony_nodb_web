@@ -9,3 +9,11 @@ form:
   cta:
     text: 'Llamadme'
     path: ''
+  state_call:
+    title: 'Bienvenido al servicion de contratación de Adeslas'
+    subtitle: 'uno de nuestros asesores comerciales se pondrá en contacto contigo'
+    form_error: 'por favor, intenta introducir de nuevo tu número de teléfono más tarde.'
+    helper_mes1: '¿en qué podemos ayudarte?'
+    helper_mes2: 'fuera de horario'
+    helper_mes3: ''
+    helper_mes4: 'Uno de nuestros agentes se pondrá en contacto contigo lo antes posible.'
