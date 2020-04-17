@@ -14,17 +14,11 @@
       <span class="h6 text-light m-0">{{ "form.header" | trans | raw }}</span>
     </div>
     <div class="close-c2c">
-      <span class="icon-adeslas_icon_close"></span>
+      <span class="icon icon-cancel-circle text-white"></span>
     </div>
   </div>
-  <div class="click-to-call--body text-center p-3">
-    <img class="mx-auto mb-4" src="https://via.placeholder.com/150x70">
-
-      {# <div class="img">
-          {{ source('@public_path'~asset('build/images/adeslas_simple_logo_blue.svg')) }}
-      </div> #}
-
-
+  <div class="click-to-call--body text-center px-3 py-4">
+    <img class="img-call mx-auto mb-3" srcset="{{ asset('build/images/adeslas_simple_logo_blue.svg') }}">
     <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
@@ -47,19 +41,22 @@
 <div class="click-to-call click-to-call-mobile d-block d-md-none">
   <div class="click-to-call--header d-flex align-items-center justify-content-between align-items-center bg-primary px-3 py-2">
     <div class="d-flex align-items-center">
-      <span class="h4 icon icon-phone mr-3 text-light"></span>
+      <div class="icon-phone-container">
+        <span class="h5 icon icon-phone mr-3 text-primary"></span>
+      </div>
       <span class="h6 text-light m-0">{{ "form.header" | trans | raw }}</span>
     </div>
     <div class="close-c2c d-none">
       <span class="icon icon-cancel-circle text-white"></span>
     </div>
   </div>
-  <div class="click-to-call--body text-center p-3">
-    <img class="mx-auto mb-4" src="https://via.placeholder.com/150x70">
+  <div class="click-to-call--body text-center px-3 py-4">
+    <img class="img-call mx-auto mb-3" srcset="{{ asset('build/images/adeslas_simple_logo_blue.svg') }}">
     <h4 class="text-header">{{ "form.title" | trans | raw }}</h4>
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
-      <div class="form-group text-left">
+      <div class="form-group text-left label-in-block">
+        <label for="phone">Tu teléfono</label>
         <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
       </div>
       
