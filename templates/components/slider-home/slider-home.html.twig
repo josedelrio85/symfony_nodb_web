@@ -1,47 +1,28 @@
 <!-- Slider main container -->
 <div class="swiper-home swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-            <div class="container h-100">
-                <div class="inner">
-                    <h2 class="display-4 text-header text-white">Salud</h2>
-                    <p class="description text-white">Accede a más de 43.000 especialistas con la fórmula que mejor se adapte a lo que buscas</p>
-                    <a class="btn btn-primary mt-2 font-weight-bold" href="#" role="button">Saber más</a>
-                </div>
-            </div>
-            <div class="slider-bg" style="background-image:url({{ asset('build/images/slider-01.jpg') }})"></div>
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {% for slide in slides %}
+    <div class="swiper-slide">
+      <div class="container h-100">
+        <div class="inner">
+          <h2 class="display-4 text-header text-white">{{slide.title}}</h2>
+          <p class="description text-white">{{slide.text}}</p>
+          <a class="btn btn-primary mt-2 font-weight-bold" href="{{slide.cta.path}}" role="button">{{slide.cta.text}}</a>
         </div>
-        
-        <div class="swiper-slide">
-            <div class="container h-100">
-                <div class="inner">
-                    <h2 class="display-4 text-header text-white">Salud</h2>
-                    <p class="description text-white">Accede a más de 43.000 especialistas con la fórmula que mejor se adapte a lo que buscas</p>
-                    <a class="btn btn-primary mt-2 font-weight-bold" href="#" role="button">Saber más</a>
-                </div>
-            </div>
-            <div class="slider-bg" style="background-image:url({{ asset('build/images/slider-01.jpg') }})"></div>
-        </div>
-
-        <div class="swiper-slide">
-            <div class="container h-100">
-                <div class="inner">
-                    <h2 class="display-4 text-header text-white">Salud</h2>
-                    <p class="description text-white">Accede a más de 43.000 especialistas con la fórmula que mejor se adapte a lo que buscas</p>
-                    <a class="btn btn-primary mt-2 font-weight-bold" href="#" role="button">Saber más</a>
-                </div>
-            </div>
-            <div class="slider-bg" style="background-image:url({{ asset('build/images/slider-01.jpg') }})"></div>
-        </div>
+      </div>
+      <div class="slider-bg" style="background-image:url({{ asset('build/images/'~ "#{slide.image}") }})"></div>
+      {# srcset="{{ asset('build/images/'~ "#{provider}.packs.#{pack_id}.image_pack_mobile" | trans) }}"> #}
     </div>
+    {% endfor %}
+  </div>
 
-    <!-- Bullets -->
-    <div class="swiper-pagination"></div>
+  <!-- Bullets -->
+  <div class="swiper-pagination"></div>
 
-    <!-- Arrows -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+  <!-- Arrows -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
     
 </div>

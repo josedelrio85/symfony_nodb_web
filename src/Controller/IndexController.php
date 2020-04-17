@@ -25,12 +25,13 @@ class IndexController extends AbstractController {
 
     $products = $this->prodserv->getProducts();
     $mainelements = $this->prodserv->getMain();
-    dump($mainelements);
     $firstchildrens = $this->prodserv->getFirstChildren();
-    dump($firstchildrens);
-
     $secondChildrens = $this->prodserv->getSecondChildren();
-    dump($secondChildrens);
+    // dump($mainelements);
+    // dump($firstchildrens);
+    // dump($secondChildrens);
+
+    $hero = $this->repo->getSimpleData('hero');
 
     $route = $request->attributes->get('_route');
     $uri = $request->server->get('REQUEST_URI');
@@ -42,6 +43,7 @@ class IndexController extends AbstractController {
       'mainelements' => $mainelements,
       'firstchildrens' => $firstchildrens,
       'secondChildrens' => $secondChildrens,
+      'hero' => $hero,
     ]);
   }
 
