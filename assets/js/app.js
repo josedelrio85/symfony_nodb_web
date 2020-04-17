@@ -91,11 +91,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let c2c = new bysidecar();
   let phone = null;
 
-  let c2cpopup = document.querySelector('.click-to-call--body .call-me-now');
-  c2cpopup.onclick = (e) => {
+  let c2cpopup_desktop = document.querySelector('.click-to-call--body.c2cdesktop .call-me-now');
+  c2cpopup_desktop.onclick = (e) => {
     e.preventDefault();
-    
-    if(validationFields(".click-to-call--body")){
+
+    if(validationFields(".click-to-call--body.c2cdesktop")){
       const dataLead = {
         sou_id: 15,
         phone: phone,
@@ -112,7 +112,54 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       c2c.launchC2C(dataLead, dataLayer);
     }
-  } 
+  }
+
+  let c2cpopup_mobile = document.querySelector('.click-to-call--body.c2cmobile .call-me-now');
+  c2cpopup_mobile.onclick = (e) => {
+    e.preventDefault();
+
+    if(validationFields(".click-to-call--body.c2cmobile")){
+      const dataLead = {
+        sou_id: 15,
+        phone: phone,
+        smartcenter: false,
+      };
+      console.log(dataLead);
+
+      const dataLayer = {
+        eventCategory: "cmb",
+        eventAction: "click",
+        eventLabel: "ClickToCall",
+        event: "cmb",
+      }
+
+      c2c.launchC2C(dataLead, dataLayer);
+    }
+  }
+
+  let c2cpopup_modal = document.querySelector('.click-to-call--body.c2cmodal .call-me-now');
+  c2cpopup_modal.onclick = (e) => {
+    e.preventDefault();
+
+    if(validationFields(".click-to-call--body.c2cmodal")){
+      const dataLead = {
+        sou_id: 15,
+        phone: phone,
+        smartcenter: false,
+      };
+      console.log(dataLead);
+
+      const dataLayer = {
+        eventCategory: "cmb",
+        eventAction: "click",
+        eventLabel: "ClickToCall",
+        event: "cmb",
+      }
+
+      c2c.launchC2C(dataLead, dataLayer);
+    }
+  }
+
 
   function validationFields(parent) {
     let text = document.querySelector(parent +' .call-me-now-validation-error');
