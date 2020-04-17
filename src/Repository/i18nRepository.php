@@ -9,9 +9,11 @@ use Symfony\Component\Finder\Finder;
 class i18nRepository{
   protected $productConfig = [];
   protected $z = [];
-  protected $index;
+  protected $rootPath;
 
   public function __construct(string $rootPath) {
+    $this->rootPath = $rootPath;
+
     $basedir = $rootPath .DIRECTORY_SEPARATOR.'translations';
     // $basedir = $rootPath .DIRECTORY_SEPARATOR.'translations'.DIRECTORY_SEPARATOR.'landings';
     $landings = $basedir.DIRECTORY_SEPARATOR.'landings'.DIRECTORY_SEPARATOR;
@@ -88,6 +90,19 @@ class i18nRepository{
       if (array_key_exists($key, $alldata[$product])){
         return $alldata[$product][$key];
       }
+    }
+    return [];
+  }
+
+  public function getSimpleData($key) {
+    $basedir = $this->rootPath .DIRECTORY_SEPARATOR.'translations';
+    $dir = $basedir.DIRECTORY_SEPARATOR.$key;
+    $finder = new Finder();
+    $iterator = $finder->files()->in([$dir]);
+    foreach ($iterator as $file) {
+      $path = $file->getRealpath();
+      $data = Yaml::parseFile($path);
+      return $data[$key];
     }
     return [];
   }
