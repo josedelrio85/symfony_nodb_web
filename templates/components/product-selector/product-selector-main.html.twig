@@ -1,7 +1,7 @@
 <div class="product-selector">
   <div id="mainelements" class="row">
     {% for product in mainelements %}
-      <div id="product-{{product.name}}" class="col-12 col-md-6 mb-3 product-btn" {% if product.path is defined %} href="{{ path(product.path) }}" {% endif %}>
+      <div id="product-{{product.name}}" class="col-12 col-sm-6 col-md-3 mb-3 product-btn" {% if product.path is defined %} href="{{ path(product.path) }}" {% endif %}>
         <div class="inner d-flex justify-content-between bg-primary align-items-center p-4">
           <h5 class="text-light m-0 name">{{product.name}}</h5>
           <span class="icon icon-heart text-light h5 mb-0"></span>
