@@ -3,8 +3,9 @@ import 'bootstrap';
 import Swiper from 'swiper';
 
 import { TweenMax, TimelineMax } from '../../node_modules/gsap/src/all.js';
-import * as ScrollMagic from 'ScrollMagic';
-import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
+// import * as ScrollMagic from 'ScrollMagic';
+// import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
+import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
@@ -21,8 +22,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
           clickable: true
       }
   });
-
   
+  // Fullscreen menu (decomment when we turn on menu links on header menu)
+  // if($(".close-menu").length) {
+  //   $(".close-menu").click(function(){
+  //     $(".fullscreen-navigation").fadeOut(200);
+  //   });
+  //   $(".nav-mobile").click(function(){
+  //     $(".fullscreen-navigation").fadeIn(200);
+  //   });
+  // }
+
   if(document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();
     var scene = new ScrollMagic.Scene({
