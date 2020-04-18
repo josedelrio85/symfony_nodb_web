@@ -1,8 +1,21 @@
 mas100:
+  home:
+    title: 'Landing Grandes Empresas'
+    meta_description: 'Landing Grandes Empresas'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_gran_empresa.png'
   minicards: # 2 minicards + title + description
+  product_bullet: # 3 products with bullets + title + description
+  select: # 4 selector + title
+    title: ''
+    suptitle: ''
+    select_txt: ''
+  desc: # 5 title + description
+    title: ''
+    text: ''
+  bullets_extra: # bullets + title + description
     title: 'Un seguro a la medida de las grandes empresas'
     suptitle: 'Adeslas Colectividades'
     desc: 'Dinos qué necesitas y te haremos la mejor oferta que incluya:'
@@ -12,54 +25,3 @@ mas100:
       - 'Asistencia en el Cuadro Médico Adeslas o con libre elección en todo el mundo'
       - 'Gastos médicos y hospitalarios en el extranjero'
       - 'Amplios descuentos con seguro dental y por forma de pago'
-    cards:
-      card1:
-        top: ''
-        middle: ''
-        bottom: ''
-      card2:
-        top: ''
-        middle: ''
-        bottom: ''
-  product_bullet: # 3 products with bullets + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
-    product:
-      product1:
-        title: ''
-        price:
-          pre: 'Desde'
-          quantity: ''
-          currency: '€'
-          period: '/mes'
-        cta:
-          text: 'Llamadme'
-          path: '/path'
-        more_info:
-          text: 'Saber más'
-          path: '/path'
-        bullets:
-          -
-      product2:
-        title: ''
-        price:
-          pre: 'Desde'
-          quantity: ''
-          currency: '€'
-          period: '/mes'
-        cta:
-          text: 'Llamadme'
-          path: '/path'
-        more_info:
-          text: 'Saber más'
-          path: '/path'
-        bullets:
-          -
-  select: # 4 selector + title
-    title: ''
-    suptitle: ''
-    select_txt: ''
-  desc: # 5 title + description
-    title: ''
-    text: ''

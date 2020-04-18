@@ -1,7 +1,11 @@
 autonomo:
+  home:
+    title: 'Landing Autónomos'
+    meta_description: 'Landing Autónomos'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_autonomos.png'
   minicards: # 2 minicards + title + description
     title: 'Elige el seguro médico que cubre tus necesidades como autónomo'
     suptitle: 'Adeslas Autónomos'
@@ -32,7 +36,7 @@ autonomo:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-negocios'
         bullets:
           - 'Cobertura global <strong>Sin Copagos</strong>'
           - 'Ahora 2 meses gratis con Dental'
@@ -48,7 +52,7 @@ autonomo:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-negocios-extra'
         bullets:
           - 'Libre elección de médico'
           - 'Cobertura dentro y fuera de España'

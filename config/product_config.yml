@@ -14,7 +14,7 @@ products:
             path: 'familiar'
           mayores:
             name: 'mayores65'
-            path: 'mayores65'
+            path: 'senior'
           embarazada:
             name: 'embarazadas'
             path: 'embarazadas'

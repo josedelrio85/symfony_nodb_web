@@ -1,7 +1,11 @@
 mas5:
+  home:
+    title: 'Landing Empresas'
+    meta_description: 'Landing Empresas'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_99_empleados.png'
   minicards: # 2 minicards + title + description
     title: 'Las ofertas de seguro médico que cubren las necesidades de tu empresa'
     suptitle: 'Adeslas Empresas'
@@ -32,7 +36,7 @@ mas5:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-empresa'
         bullets:
            - 'Cobertura completa con Cuadro Médico Adeslas Sin Copagos'
            - 'Sin carencias a partir de 12 asegurados'
@@ -48,7 +52,7 @@ mas5:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-negocios-extra'
         bullets:
           - 'Libre elección de médico en todo el mundo'
           - 'Tarifa única, sea cual sea la edad de tus empleados'

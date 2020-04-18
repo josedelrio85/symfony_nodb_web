@@ -1,7 +1,11 @@
 menos5:
+  home:
+    title: 'Landing Pymes'
+    meta_description: 'Landing Pymes'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_5_empleados.png'
   minicards: # 2 minicards + title + description
     title: 'La mejor oferta en seguros médicos para pymes'
     suptitle: 'Adeslas Pymes'
@@ -32,7 +36,7 @@ menos5:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-negocios'
         bullets:
           - 'La más amplia cobertura <strong>sin Copagos</strong>'
       product2:
@@ -47,7 +51,7 @@ menos5:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-negocios-extra'
         bullets:
           - 'Cobertura total con Cuadro Médico'
           - 'O libre elección de médico en todo el mundo'

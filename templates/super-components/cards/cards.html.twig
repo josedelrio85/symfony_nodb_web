@@ -1,0 +1,19 @@
+{% include 'components/header-titles/header-titles.html.twig' with {
+  mini_header:cards.suptitle,
+  text_header:cards.title,
+  content_header:cards.desc
+} %}
+
+<div class="container mb-5">
+  <div class="row">
+    {% for item in cards.cards %}
+      <div class="col-6">
+        {% include 'components/product-mini-card/product-mini-card.html.twig' with {
+          top: item.top,
+          middle: item.middle,
+          bottom: item.bottom,
+        } %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

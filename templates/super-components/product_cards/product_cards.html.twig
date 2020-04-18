@@ -1,0 +1,16 @@
+{# {{dump(product_cards)}} #}
+{% include 'components/header-titles/header-titles.html.twig' with {
+  mini_header: product_cards.suptitle,
+  text_header: product_cards.title,
+  content_header: product_cards.desc
+} %}
+
+<div class="container mb-5">
+  <div class="row">
+    {% for item in product_cards.product %}
+      <div class="col-12 col-md-6 mb-4">
+        {% include 'components/product-card/product-card.html.twig' with { product: item } %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
