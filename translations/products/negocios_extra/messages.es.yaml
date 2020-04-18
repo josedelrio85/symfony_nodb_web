@@ -1,58 +1,101 @@
 #adeslas_negocios_extra
 negocios_extra:
   hero: # 1
-    title: ''
-    subtitle: ''
+    title: 'Adeslas Extra Negocios. El seguro médico para el autónomo que viaja al extranjero'
+    subtitle: 'Tú escoges a quien te cuida en cualquier parte del mundo'
+    images: 
+      image1: 'adeslas_hero_large_ficha_5_empleados_extra_negocio.jpg'
+      image2: 'adeslas_hero_large_ficha_autonomos_extra_negocio.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: ''
+      quantity: '79'
       currency: '€'
       period: '/mes'
     bullets:
       bullet1:
-        text: ''
-        subtext: ''
+        text: 'Ahora, 2 meses gratis'
+        subtext: 'con dental'
       bullet2:
-        text: ''
-        subtext: ''
+        text: 'Sin Copagos'
+        subtext: 'en el cuadro Adeslas'
     cta:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: ''
-    title: ''
+    suptitle: 'Extra Coberturas'
+    title: 'Atención plena, vayas donde vayas'
     list: 
-      - ''
+      - 'Planes de Prevención en Pediatría,  Ginecología, Cardiología o Urología.'
+      - 'Hospitalización médica, quirúrgica, psiquiátrica, UVI, etc.'
+      - 'Cirugía y laserterapia hiperplasia benigna de próstata.'
+      - 'Cobertura integral de embarazo y parto.'
+      - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
+      - 'Asistencia para trasplantes.'
+      - 'Implantes y prótesis (internas).'
+      - 'Tratamientos especiales.'
+      - 'Acelerador lineal de partículas.'
+      - 'Cirugía Quimioterapia.'
+      - 'Litotricia Renal y diálisis'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: ''
-    title: ''
-    text: ''
+    suptitle: 'Condiciones Extra'
+    title: 'Amplios servicios adaptados a tus necesidades'
+    text: 'Adeslas Extra Negocios es el mejor seguro médico para los autónomos que hacen negocios en el extranjero porque ofrece cobertura total sin copagos en el cuadro médico Adeslas o elegir con absoluta libertad al médico que desees consultar en todo el mundo.'
     drop:
       drop1:
-        title: ''
-        text: ''
-  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
-    suptitle: ''
-    title: ''
-    text: ''
-    list:
-      -
+        title: 'Total flexibilidad'
+        text: 'Con Adeslas Extra Negocios puedes elegir en todo momento quien cuida de tu salud. Un seguro a la carta hecho a tu medida.'
+      drop2:
+        title: 'Calidad'
+        text: 'Adeslas dispone del mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees.'
+      drop3:
+        title: '3 modelos en una única póliza'
+        text: 'Si prefieres elegir a tu médico, te reembolsaremos el 80% de tu factura. También puedes combinar el cuadro médico y la libre elección en mismo acto médico. Por ejemplo, una cirugía en un hospital Adeslas y un especialista de tu confianza.'
+      drop4:
+        title: 'Descuentos'
+        text: 'Adeslas Extra Negocios tienes una tarifa de 79 €/mes, pero si contratas un seguro dental tendrás tu seguro 2 meses gratis y un 15% de descuento en dental. Puedes pagar tu prima al mes o disfrutar de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
+      drop5:
+        title: 'Sin Copagos'
+        text: 'En Adeslas Extra Negocios pagarás lo mismo cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
+    image: image.png
   desc: # 6 titulo + descripcion
-    title: ''
+    title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
+    text: 'Además de todas las coberturas incluidas en Adeslas Extra Negocios, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra para someterte a algún tratamiento especial.'
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
+    suptitle: 'Extra Ventajas'
+    title: 'El mejor seguro a la carta en todo el mundo'
     text: ''
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
-    suptitle: ''
-    title: ''
-    text: ''
+    image: image.png
     drop:
       drop1:
-        title: ''
-        text: ''
+        title: '¿Para quién es Adeslas Extra Negocios?'
+        text: 'Adeslas Extra Negocios está pensado para profesionales que desean una atención de máxima calidad y absoluta confianza con libertad de elección o para quienes viajan a menudo al extranjero por trabajo y necesitan una asistencia con la misma calidad en cualquier parte del mundo. Disfrutarás además de Adeslas Es Más, un servicio exclusivo que da acceso al área privada para la gestión telemática de todos tus trámites y a servicios adicionales.'
+      drop2:
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: 'Adeslas Extra Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para cirugías y hospitalizaciones.'
+      drop3:
+        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
+        text: 'El precio de tu seguro dental es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluyas en tu póliza dental, con lo que podrías acceder a descuentos adicionales.'
+      drop4:
+        title: '¿Hay límite de edad para contratar Adeslas Extra Negocios?'
+        text: 'Adeslas Extra Negocios se puede contratar hasta los 70 años.'
+      drop5:
+        title: '¿Existen límites económicos para Adeslas Extra Negocios?'
+        text: 'Adeslas Extra Negocios tiene límites a los gastos cubiertos por reembolso hasta 150.000 euros al año y límites parciales de los que te informaremos cuando quieras sin compromiso.' 
   faq:    # 8 FAQ'S solo si no va en particulares
-    suptitle: ''
-    title: ''
+    suptitle: 'FAQ''s'
+    title: 'Términos de interés'
     elems:
       faq1:
-        title: ''
-        text: ''
+        title: 'Copagos'
+        text: 'Es un complemento que pagas cada vez que utilizas determinados actos médicos de un seguro. En Adeslas Extra Negocios no existen copagos, sólo pagarás el 20% de los servicios médicos de tu elección, dentro de la opción de reembolso.'
+      faq2:
+        title: 'Cuestionario Médico'
+        text: 'Es un cuestionario  vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida o antecedentes médicos, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Extra Negocios está sujeto a cuestionario médico previo.'  
+      faq3:
+        title: 'Carencias'
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura desde la contratación. En Adeslas Extra Negocios existen algunas carencias para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
+      faq4:
+        title: 'Póliza y Prima'
+        text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'

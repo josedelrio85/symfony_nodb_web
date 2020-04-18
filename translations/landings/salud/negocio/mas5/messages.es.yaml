@@ -41,7 +41,7 @@ mas5:
            - 'Cobertura completa con Cuadro Médico Adeslas Sin Copagos'
            - 'Sin carencias a partir de 12 asegurados'
       product2:
-        title: 'Adeslas Extra Negocios'
+        title: 'Adeslas Extra Empresas'
         price:
           pre: 'Desde'
           quantity: '63,50'
@@ -52,7 +52,7 @@ mas5:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/seguro/adeslas-negocios-extra'
+          path: '/seguro/adeslas-empresa_extra'
         bullets:
           - 'Libre elección de médico en todo el mundo'
           - 'Tarifa única, sea cual sea la edad de tus empleados'
