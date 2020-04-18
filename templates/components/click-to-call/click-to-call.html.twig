@@ -2,7 +2,7 @@
 <div class="click-to-call-btn bg-primary p-3 d-none d-md-block">
   <div class="text-center">
     <span class="h4 icon icon-phone text-light d-block"></span>
-    <span class="h6 text-light m-0">¿Hablamos?</span>
+    <span class="h6 text-light m-0">{{ "form.previous" | trans | raw }}</span>
   </div>
 </div>
 
@@ -25,7 +25,7 @@
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
       <div class="form-group text-left label-in-block">
-        <label for="phone">Tu teléfono</label>
+        <label for="phone">{{ "form.fields.phone" | trans | raw }}</label>
         <input type="phone" class="form-control" id="phone" maxlength="9" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
       </div>
 
@@ -59,7 +59,7 @@
     <p>{{ "form.desc" | trans | raw }}</p>
     <form>
       <div class="form-group text-left label-in-block">
-        <label for="phone">Tu teléfono</label>
+        <label for="phone">{{ "form.fields.phone" | trans | raw }}</label>
         <input type="phone" class="form-control" id="phone" maxlength="9" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
       </div>
       

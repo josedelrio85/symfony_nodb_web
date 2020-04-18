@@ -64,13 +64,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let C2cDeskop = document.querySelector('.click-to-call-desktop');
   let C2cMobile = document.querySelector('.click-to-call-mobile');
   let closeC2cDeskop = document.querySelector('.click-to-call-desktop .close-c2c');
-  let closeC2cMbile = document.querySelector('.click-to-call-mobile .close-c2c');
+  // let closeC2cMbile = document.querySelector('.click-to-call-mobile .close-c2c');
   let C2cSide = document.querySelector('.click-to-call-btn');
   let C2cMobileHeader = document.querySelector('.click-to-call-mobile .click-to-call--header');
 
+  // close c2cDesktop when calling modalC2C
+  $('#click-to-call-popup').on('shown.bs.modal', function (e) {
+    closeC2C();
+  })
+
   closeC2cDeskop.addEventListener('click', (event) => {
-    C2cDeskop.classList.add('c2c-collapsed');
-    C2cSide.classList.add('c2c-size-open');
+    closeC2C();
   });
 
   C2cSide.addEventListener('click', (event) => {
@@ -88,11 +92,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   });
 
+  function closeC2C() {
+    C2cDeskop.classList.add('c2c-collapsed');
+    C2cSide.classList.add('c2c-size-open');
+  }
 
   let c2c = new bysidecar();
   let phone = null;
   let smartcenter = process.env.PRODUCTION;
-  let souid = process.env.SOUID;
+  let souid = parseInt(process.env.SOUID, 10);
+
+  const dataLayer = {
+    event: "event",
+    eventCategory: "cmb",
+    eventAction: "click",
+    eventLabel: window.location.pathname === '/' ? 'index' : window.location.pathname ,
+  }
 
   let c2cpopup_desktop = document.querySelector('.click-to-call--body.c2cdesktop .call-me-now');
   c2cpopup_desktop.onclick = (e) => {
@@ -104,13 +119,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         phone: phone,
         smartcenter: smartcenter,
       };
-
-      const dataLayer = {
-        eventCategory: "cmb",
-        eventAction: "click",
-        eventLabel: "ClickToCall",
-        event: "cmb",
-      }
 
       c2c.launchC2C(dataLead, dataLayer);
     }
@@ -127,13 +135,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         smartcenter: smartcenter,
       };
 
-      const dataLayer = {
-        eventCategory: "cmb",
-        eventAction: "click",
-        eventLabel: "ClickToCall",
-        event: "cmb",
-      }
-
       c2c.launchC2C(dataLead, dataLayer);
     }
   }
@@ -148,13 +149,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         phone: phone,
         smartcenter: smartcenter,
       };
-
-      const dataLayer = {
-        eventCategory: "cmb",
-        eventAction: "click",
-        eventLabel: "ClickToCall",
-        event: "cmb",
-      }
 
       c2c.launchC2C(dataLead, dataLayer);
     }

@@ -41,8 +41,8 @@ class bysidecar {
   }
 
   getGaClientId = () => {
-    // let tracker = ga.getAll()[0];
-    // return tracker.get('clientId');    
+    let tracker = ga.getAll()[0];
+    return tracker.get('clientId');    
   }
 
   launchC2C = (obj, dataLayer) => {
@@ -66,6 +66,7 @@ class bysidecar {
       dni: '',
       smartcenter: false,
       observations: '',
+      // TODO uncomment when gtm script is activated
       // ga_client_id: this.getGaClientId(),
       adeslas: null,
     };    
@@ -78,7 +79,6 @@ class bysidecar {
 
     landingCommander.makePostRequest(lead, urlEndPoint)
       .then((result) => {
-        this.printOut(result);
           this.landcom.isOnTime(lead.sou_id)
             .then((onTime) => {
 
@@ -98,7 +98,6 @@ class bysidecar {
                 this.response.showPopup(false);
                 this.landcom.callStateTracking(lead.phone, (state) => {
                   const message = this.landcom.getMessageStateCall(state);
-                  console.log(message);
                   this.response.handleStateCallMessage(state, message);
                 });
               } else {
@@ -109,7 +108,6 @@ class bysidecar {
 
           dataLayer.phoneHash = window.md5(lead.phone);
           dataLayer.idLead =  result.message;
-          this.printOut(dataLayer);
           this.populateDatalayer(dataLayer);
       })
       .catch(e => {
@@ -165,7 +163,9 @@ class bysidecar {
       phoneHash: data.phoneHash,
       idLead: data.idLead,
     });
-    this.printOut(window.dataLayer);
+    if(!process.env.PRODUCTION){
+      this.printOut(window.dataLayer);
+    }
   }
 
   getProvider = () => {

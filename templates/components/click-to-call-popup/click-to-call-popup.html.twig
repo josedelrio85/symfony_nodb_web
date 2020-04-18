@@ -3,15 +3,17 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="text-header">Te llamamos</h4>
+        <h4 class="text-header">{{ "form.header" | trans | raw }}</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span class="icon icon-cancel-circle text-white"></span>
         </button>
       </div>
       <div class="modal-body click-to-call--body c2cmodal">
+        <h4 class="text-header" style="text-align:center;">{{ "form.title" | trans | raw }}</h4>
+        <p style="text-align:center;">{{ "form.desc" | trans | raw }}</p>
         <form>
           <div class="form-group text-left label-in-block">
-            <label for="phone">Tu teléfono</label>
+            <label for="phone">{{ "form.fields.phone" | trans | raw }}</label>
             <input type="phone" class="form-control" id="phone" maxlength="9" aria-describedby="phoneHelp" placeholder="{{ "form.fields.phone" | trans | raw }}">
           </div>
           <p class="call-me-now-validation-error d-none"></p>
