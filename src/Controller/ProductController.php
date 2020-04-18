@@ -102,6 +102,8 @@ class ProductController extends AbstractController {
             break;
           }
         break;
+        default:
+          $img = 'image1';
       }
       $hero_image = $hero['images'][$img];
     }
