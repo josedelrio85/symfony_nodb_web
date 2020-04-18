@@ -2,43 +2,53 @@ products:
   salud:
     name: 'salud'
     steps: 3
-    icon: 'icon-heart'
+    icon: 'icon-adeslas_icon_salud'
     active: true
     children:
       familia:
         name: 'familia'
+        icon: 'icon-adeslas_icon_individual'
         children:
           individual:
             name: 'individual'
             path: 'individual'
+            icon: 'icon-adeslas_icon_individual'
           familiar:
             name: 'familiar'
             path: 'familiar'
+            icon: 'icon-adeslas_icon_famila'
           mayores:
             name: 'mayores65'
             path: 'senior'
+            icon: 'icon-adeslas_icon_65'
           embarazada:
             name: 'embarazadas'
             path: 'embarazadas'
+            icon: 'icon-adeslas_icon_embarazadas'
       negocio:
         name: 'negocio'
+        icon: 'icon-adeslas_icon_gran_empresa'
         children:
           autonomo:
             name: 'autonomo'
             path: 'autonomo'
+            icon: 'icon-adeslas_icon_autonomos'
           menos5:
             name: 'menos5'
             path: 'menos5'
+            icon: 'icon-adeslas_icon_-5_empleados'
           mas5:
             name: 'mas5'
             path: 'mas5'
+            icon: 'icon-adeslas_icon_5-99_empleados'
           mas100:
             name: 'mas100'
             path: 'mas100'
+            icon: 'icon-adeslas_icon_gran_empresa'
   dental:
     name: 'dental'
     steps: 2
-    icon: 'icon-heart'
+    icon: 'icon-adeslas_icon_dental'
     path: 'dental'
     active: true
     children:
@@ -53,14 +63,14 @@ products:
   mascotas:
     name: 'mascotas'
     steps: 2
-    icon: 'icon-heart'
+    icon: 'icon-adeslas_icon_mascotas'
     path: 'mascotas'
     active: false
     children:
   decesos:
     name: 'decesos'
     steps: 2
-    icon: 'icon-heart'
+    icon: 'icon-adeslas_icon_decesos'
     path: 'decesos'
     active: false
     children:

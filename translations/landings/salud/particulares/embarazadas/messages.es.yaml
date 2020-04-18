@@ -9,7 +9,7 @@ embarazadas:
   minicards: # 2 minicards + title + description
     title: 'La mejor oferta de seguros médicos para embarazo y parto'
     suptitle: 'Adeslas embarazadas'
-    desc: 'Las más completas coberturas a embarazadas a la medida de tus necesidades.'
+    desc: 'Las más completas coberturas para embarazadas a la medida de tus necesidades.'
     cards:
       card1:
         top: '2'
@@ -17,8 +17,8 @@ embarazadas:
         bottom: 'si contratas Dental'
       card2:
         top: '10%'
-        middle: 'De Descuento'
-        bottom: 'En pólizas con 4 o más asegurados'
+        middle: 'de descuento'
+        bottom: 'en pólizas con 4 o más asegurados'
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige la fórmula que mejor se adapta a ti'
     suptitle: 'Adeslas Embarazadas'
@@ -62,9 +62,9 @@ embarazadas:
           - 'Habitación individual con cama para acompañante'
           - 'Teléfono 24 horas de asistencia a la embarazada'
   select: # 4 selector + title
-    title: 'Consulta nuestro cuadro médio'
+    title: 'Consulta nuestro cuadro médico'
     suptitle: ''
     select_txt: 'Selecciona tu provincia'
   desc: # 5 title + description
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
-    text: 'Puedes añadir mejoras a Adeslas Plena Vital y Adeslas Plena PLus con nuestro módulo complementario <a href="#">Plus Ginecología y pediatría</a> y <a href="#">obtener el reembolso del 80% del coste.</a>'
+    text: 'Puedes añadir mejoras a Adeslas Plena Vital y Adeslas Plena PLus con nuestro módulo complementario Plus Ginecología y pediatría y obtener el reembolso del 80% del coste.'

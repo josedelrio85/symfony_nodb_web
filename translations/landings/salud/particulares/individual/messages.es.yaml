@@ -13,8 +13,8 @@ individual:
     cards:
       card1:
         top: 'Desde'
-        middle: '16,50 €/mes'
-        bottom: ''
+        middle: '16,20 €/mes'
+        bottom: 'y descuentos en Dental'
   product_bullet: # 3 products with bullets + title + description
     title: 'Coberturas a tu medida'
     suptitle: 'Adeslas individual'
@@ -24,7 +24,7 @@ individual:
         title: 'Adeslas GO'
         price:
           pre: 'Desde'
-          quantity: '16,50'
+          quantity: '16,20'
           currency: '€'
           period: '/mes'
         cta:

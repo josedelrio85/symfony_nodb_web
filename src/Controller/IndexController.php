@@ -33,7 +33,8 @@ class IndexController extends AbstractController {
 
     $route = $request->attributes->get('_route');
     $uri = $request->server->get('REQUEST_URI');
-
+    // dump($mainelements); dump($firstchildrens); dump($secondChildrens);die();
+    
     return $this->render("pages/index.html.twig", [
       'route'     => $route,
       'uri'       => $uri,

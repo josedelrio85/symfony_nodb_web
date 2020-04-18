@@ -49,6 +49,7 @@ class ProductService {
         foreach($el['children'] as $ch) {
           // $output[$el['name']][] = $ch['name'];
           $output[$el['name']][$ch['name']]['name'] = $ch['name'];
+          $output[$el['name']][$ch['name']]['icon'] = $ch['icon'];
           if(array_key_exists('path', $ch)){
             $output[$el['name']][$ch['name']]['path'] = $ch['path'];
           }
@@ -69,6 +70,7 @@ class ProductService {
               // $output[$ch['name']][] = $r['name'];
               $output[$ch['name']][$r['name']]['name'] = $r['name'];
               $output[$ch['name']][$r['name']]['path'] = $r['path'];
+              $output[$ch['name']][$r['name']]['icon'] = $r['icon'];
             }
           }
         }

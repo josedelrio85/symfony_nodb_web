@@ -13,10 +13,10 @@ familiar:
     cards:
       card1:
         top: 'Desde'
-        middle: '16,50 €/mes'
-        bottom: ''
+        middle: '16,20 €/mes'
+        bottom: 'por asegurado'
   product_bullet: # 3 products with bullets + title + description
-    title: 'Elige el seguro que mejor se adapta a tu familia'
+    title: 'Elige el seguro que mejor se adapta a vosotros'
     suptitle: 'Adeslas familias'
     desc: 'En Adeslas te ofrecemos la mejor asistencia médica y distintas ofertas a la medida de todo tipo de familias'
     product:
@@ -24,7 +24,7 @@ familiar:
         title: 'Adeslas GO'
         price:
           pre: 'Desde'
-          quantity: '16,50'
+          quantity: '16,20'
           currency: '€'
           period: '/mes'
         cta:
@@ -92,9 +92,9 @@ familiar:
           path: '/seguro/adeslas-plena-extra'
         more_info:
           text: 'Saber más'
-          path: '/seguro/adeslas-plena-plus'
+          path: '/seguro/adeslas-plena-extra'
         bullets:
-          - 'Libre elección de médico'
+          - 'Libre elección de médico en todo el mundo'
   select: # 4 selector + title
     title: 'Consulta el Cuadro Médico Adeslas'
     suptitle: ''

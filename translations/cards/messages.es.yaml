@@ -2,13 +2,13 @@ cards:
   title: 'Adeslas es más'
   list:
     card1:
-      title: 'Más Prevención'
+      title: 'Más prevención'
       icon: icon-adeslas_icon_prevencion
       desc: 'Más ventajas que ponemos a tu servicio para mejorar tu bienestar y tu calidad de vida.'
     card2:
       title: 'Más atención'
       icon: icon-adeslas_icon_tranquilidad
-      desc: 'Orientación médica telefónica para dudas sobre enfermedades, medicamentos, informes.'
+      desc: 'Orientación médica telefónica para dudas sobre enfermedades, medicamentos e informes.'
     card3:
       title: 'Más tranquilidad'
       icon: icon-adeslas_icon_tranquilidad
