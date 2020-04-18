@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="row">
+  <div class="row text-md-center">
     <h2 class="text-header h3 px-3 mb-4">{{cards.title}}</h2>
   </div>
   <div class="feature-cards row">
     {% for card in cards.list %}
-      <div class="feature-card col-12 col-sm-6 col-lg-3">
-        <div class="inner  p-3">
+      <div class="feature-card col-12 col-sm-6 col-lg-3 mb-4 fade-in">
+        <div class="inner p-3 h-100 bg-white">
           <span class="icon {{card.icon}} h2"></span>
           <h3 class="text-header h5 my-3">{{card.title}}</h3>
           <div class="divider"></div>

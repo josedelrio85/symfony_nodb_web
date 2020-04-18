@@ -1,6 +1,11 @@
 .header {
     height: 60px;
     background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 
     .container,
     .inner {
@@ -57,7 +62,11 @@
     }
 
     .logo-container {
-        width: 85px;
+        width: 65px;
+
+        @include media-breakpoint-up(sm) {
+            width: 85px;
+        }
 
         @include media-breakpoint-up(md) {
             width: 170px;
