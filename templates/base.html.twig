@@ -31,6 +31,8 @@
       {{ render(controller( 'App\\Controller\\HeaderController::index' )) }}
     {% endblock %}
 
+    <div class="header-separator"></div>
+
     {% block c2cPopup %}
       {{ render(controller( 'App\\Controller\\C2CController::index', {}, {})) }}
       {{ render(controller( 'App\\Controller\\C2CPopupController::index', {}, {})) }}

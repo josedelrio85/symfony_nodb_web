@@ -59,7 +59,7 @@ env:
 - name: LEADS_URL
   value: https://leads-pre.bysidecar.me/lead/store/
 - name: SOUID
-  value: "78"
+  value: "77"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

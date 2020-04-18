@@ -136,7 +136,8 @@ class bysidecar {
     const options = {
       utm_source,
       gclid,
-      microsite: this.getProvider().includes(window.location.host) ? window.location.host : 'adeslas.contratar.es',
+      // microsite: this.getProvider().includes(window.location.host) ? window.location.host : 'adeslas.contratar.es',
+      microsite: 'adeslas.contratar.es',
     };
 
     this.landcom.getDDI(options)
