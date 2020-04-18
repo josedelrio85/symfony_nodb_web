@@ -2,10 +2,18 @@
 <div class="container-fluid container-lg px-0">
   <div class="row">
     <div class="col-12 col-lg-8 p-0">
+      {% set desc = null %}
+      {% if bullets_extra.desc is defined %}
+        {%  set desc = bullets_extra.desc %}
+      {% endif %}
+      {% if bullets_extra.text is defined %}
+        {%  set desc = bullets_extra.text %}
+      {% endif %}
+
       {% include 'components/header-titles/header-titles.html.twig' with {
         mini_header: bullets_extra.suptitle,
         text_header: bullets_extra.title,
-        content_header: bullets_extra.desc
+        content_header: desc
       } %}
       
       <div class="container mb-5">

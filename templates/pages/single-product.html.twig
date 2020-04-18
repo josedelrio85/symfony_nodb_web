@@ -11,67 +11,38 @@
   <div class="container-fluid container-lg px-0">
     <div class="row">
       <div class="col-12 col-lg-8 p-0">
-        {% if  bullets_list is not null %}
-          {# Header titles #}
-          {% include 'components/header-titles/header-titles.html.twig' with {
-            mini_header: bullets_list.suptitle,
-            text_header: bullets_list.title,
-            content_header: '',
-          } %}
 
-          {# Bullet list #}
-          <div class="container-fluid">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  {% include 'components/bullet-list/bullet-list.html.twig' with { 
-                    bullet_list_items: bullets_list.list 
-                  } %}
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          {# Simple line divider #}
-          {% include 'components/simple-divider-line/simple-divider-line.html.twig' with { padding_x: 3, margin_y: 5 } %}
+        {# bullet lists without description #}
+        {% if bullets_extra is not empty %}
+            {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
+            bullets_extra: bullets_extra,
+          } %}
+        {% endif %}
+
+
+        {# Dropdown + title #}
+        {% if des_with_dropdown is not null %}
+          {% include 'super-components/dropdown/dropdown.html.twig' with {
+            dropdown: des_with_dropdown,
+          } %}
+          {# bg_grey: false, #}
 
         {% endif %}
 
-        {# Header titles #}
-        {% include 'components/header-titles/header-titles.html.twig' with {
-          mini_header: des_with_dropdown_list.suptitle,
-          text_header: des_with_dropdown_list.title,
-          content_header: des_with_dropdown_list.text,
-        } %}
 
-        {# Dropdown content #}
-        {% include 'components/dropdown/dropdown.html.twig' with {
-          bg_grey: false,
-          dropdown_items: des_with_dropdown_list.drop,
-        } %}
 
-        {# Header titles #}
-        {% include 'components/header-titles/header-titles.html.twig' with {
-            mini_header: desc_with_bullets_list.suptitle,
-            text_header: desc_with_bullets_list.title,
-            content_header: desc_with_bullets_list.text,
-        } %}
+        {# bullet lists without description #}
+        {% if desc_with_bullets is not empty %}
+            {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
+              bullets_extra: desc_with_bullets,
+            } %}
 
-        {# Bullet list #}
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: desc_with_bullets_list.list } %}
-              </div>
-            </div>
-          </div>
-        </div>
+            {# Image divider #}
+            {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
+              image: desc_with_bullets.image
+            } %}
+        {% endif %}
 
-        {# Image divider #}
-        {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
-          image: 'https://via.placeholder.com/1920x500'
-        } %}
 
         {# Header titles #}
         {% include 'components/header-titles/header-titles.html.twig' with {
@@ -81,38 +52,28 @@
           content_header: "#{product}.desc.text" | trans | raw,
         } %}
 
-        {# Header titles #}
-        {% include 'components/header-titles/header-titles.html.twig' with {
-          bg_grey: true,
-            mini_header: dropdown_last.suptitle,
-            text_header: dropdown_last.title,
-            content_header: dropdown_last.text,
-        } %}
 
-        {# Dropdown content #}
-        {% include 'components/dropdown/dropdown.html.twig' with {
-          bg_grey: true,
-          dropdown_items: dropdown_last.drop,
-        } %}
 
-        {# Image divider #}
-        {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
-          image: 'https://via.placeholder.com/1920x500'
-        } %}
+        {# Dropdown + title and image divider #}
+        {% if des_with_dropdown is not null %}
+          {% include 'super-components/dropdown/dropdown.html.twig' with {
+            dropdown: dropdown_last,
+          } %}
+          {# bg_grey: true, #}
 
-        {# Header titles #}
-        {% include 'components/header-titles/header-titles.html.twig' with {
-          bg_grey: true,
-          mini_header: faq.suptitle,
-          text_header: faq.title,
-          content_header: '',
-        } %}
+          {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
+            image: dropdown_last.image
+          } %} 
+        {% endif %}
 
-        {# Dropdown content #}
-        {% include 'components/dropdown/dropdown.html.twig' with {
-          bg_grey: true,
-          dropdown_items: faq.elems,
-        } %}
+        {# Dropdown + title (faq) #}
+        {% if des_with_dropdown is not null %}
+          {% include 'super-components/dropdown/dropdown_faq.html.twig' with {
+            dropdown: faq,
+          } %}
+          {# bg_grey: true, #}
+        {% endif %}
+
 
         {% if table is not empty %}
           <div class="container-fluid">
