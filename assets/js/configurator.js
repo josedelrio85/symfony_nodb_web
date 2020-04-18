@@ -1,3 +1,4 @@
+import { analitycs } from './analitycs';
 
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -14,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let titlesection = document.querySelector('.product-config .text-header');
   let previoustext = null;
 
+  let anlt = new analitycs();
+
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
@@ -29,6 +32,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         id = event.target.id;
       }
+      console.log(id);
+
+
+      // TODO launch analitic mainelement
+      let data = {
+        label: id.replace('product-', ''),
+        id: null,
+        name: null,
+        position: null,
+        creative: null,
+      };
+      console.log(data);
+      // anlt.configurator(data);
 
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
