@@ -8,7 +8,7 @@
 
   {% include 'components/product-single-hero/product-single-hero.html.twig' %}
 
-  <div class="container-fluid container-lg px-0">
+  <div class="container-fluid container-lg px-3 px-md-0">
     <div class="row">
       <div class="col-12 col-lg-8 p-0">
         {% if  bullets_list is not null %}
@@ -75,7 +75,7 @@
 
         {# Header titles #}
         {% include 'components/header-titles/header-titles.html.twig' with {
-          bg_grey: true,
+          bg_grey: false,
           mini_header: '',
           text_header: "#{product}.desc.title" | trans | raw,
           content_header: "#{product}.desc.text" | trans | raw,
@@ -83,7 +83,7 @@
 
         {# Header titles #}
         {% include 'components/header-titles/header-titles.html.twig' with {
-          bg_grey: true,
+          bg_grey: false,
             mini_header: dropdown_last.suptitle,
             text_header: dropdown_last.title,
             content_header: dropdown_last.text,
@@ -91,7 +91,7 @@
 
         {# Dropdown content #}
         {% include 'components/dropdown/dropdown.html.twig' with {
-          bg_grey: true,
+          bg_grey: false,
           dropdown_items: dropdown_last.drop,
         } %}
 
