@@ -1,3 +1,4 @@
+import { analitycs } from './analitycs';
 
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -11,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let backvalue = null;
   let totalsteps = null;
   let actualsteps = 1;
+
+  let anlt = new analitycs();
 
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
@@ -31,11 +34,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
         id = event.target.id;
       }
       console.log(id);
+
+
+      // TODO launch analitic mainelement
+      let data = {
+        label: id.replace('product-', ''),
+        id: null,
+        name: null,
+        position: null,
+        creative: null,
+      };
+      console.log(data);
+      // anlt.configurator(data);
+
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
         reset();
-        window.location.href = element.getAttribute('href');
+        // window.location.href = element.getAttribute('href');
       } else {
 
         fullScreenConfig.classList.add('active');
@@ -69,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         idfc = event.target.id;
       }
       
+      // TODO launch analitic firstelement
+
+
       // if element has href attribute let's navigate
       let element = document.getElementById(idfc);
       if (element.getAttribute('href') !== null) {

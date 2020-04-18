@@ -94,6 +94,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let smartcenter = process.env.PRODUCTION;
   let souid = process.env.SOUID;
 
+  const dataLayer = {
+    event: "event",
+    eventCategory: "cmb",
+    eventAction: "click",
+    eventLabel: window.location.pathname,
+  }
+
   let c2cpopup_desktop = document.querySelector('.click-to-call--body.c2cdesktop .call-me-now');
   c2cpopup_desktop.onclick = (e) => {
     e.preventDefault();
@@ -104,13 +111,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         phone: phone,
         smartcenter: smartcenter,
       };
-
-      const dataLayer = {
-        eventCategory: "cmb",
-        eventAction: "click",
-        eventLabel: "ClickToCall",
-        event: "cmb",
-      }
 
       c2c.launchC2C(dataLead, dataLayer);
     }
@@ -127,13 +127,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         smartcenter: smartcenter,
       };
 
-      const dataLayer = {
-        eventCategory: "cmb",
-        eventAction: "click",
-        eventLabel: "ClickToCall",
-        event: "cmb",
-      }
-
       c2c.launchC2C(dataLead, dataLayer);
     }
   }
@@ -148,13 +141,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         phone: phone,
         smartcenter: smartcenter,
       };
-
-      const dataLayer = {
-        eventCategory: "cmb",
-        eventAction: "click",
-        eventLabel: "ClickToCall",
-        event: "cmb",
-      }
 
       c2c.launchC2C(dataLead, dataLayer);
     }

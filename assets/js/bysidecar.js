@@ -108,7 +108,7 @@ class bysidecar {
             .catch(e => this.throwError(e));
 
           dataLayer.phoneHash = window.md5(lead.phone);
-          dataLayer.idLead =  result.message;
+          dataLayer.idLead = result.message;
           this.printOut(dataLayer);
           this.populateDatalayer(dataLayer);
       })
