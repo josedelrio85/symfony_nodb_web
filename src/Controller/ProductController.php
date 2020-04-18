@@ -27,14 +27,19 @@ class ProductController extends AbstractController {
     $productid = $request->attributes->get('_route');
     $hero = $this->repo->getKeyDataProducts($productid, 'hero');
     $previous = $this->getPrevious();
-    dump($previous); 
-    dump($hero); 
-    dump($productid); 
+    $img = null;
+
+    // dump($previous);
+    // dump($hero); 
+    // dump($productid); 
+    // dump($request->getUri());
+    
+    // dump(parse_url($this->request->headers->get('referer'), PHP_URL_PATH));
+    // die();
 
     if(is_null($previous)) {
       $hero_image = $hero['images']['image1'];
     } else {
-      $img = null;
       switch($productid) {
         case 'plena_plus':
           switch($previous) {
@@ -105,14 +110,11 @@ class ProductController extends AbstractController {
         default:
           $img = 'image1';
       }
-      dump($previous); 
-      dump($hero); 
-      dump($productid); 
-      dump($img);
-      die(); 
+      if(is_null($img)){
+        $img = "image1";
+      }
       $hero_image = $hero['images'][$img];
     }
-    // dump($hero_image);die();
 
     $price_bullets = $this->repo->getKeyDataProducts($productid,'price_with_details');
     $bullets = $this->repo->getKeyDataProducts($productid,'bullets');
@@ -145,12 +147,12 @@ class ProductController extends AbstractController {
   }
 
   private function getPrevious() {
-    $host = $this->request->getScheme(). "://" . $this->request->headers->get('host');
+    // $host = $this->request->getScheme(). "://" . $this->request->headers->get('host') .'/';
     $referer = $this->request->headers->get('referer');
 
     if(!empty($referer)) {
-      $previous = str_replace($host, '', $referer);
-      return $previous;
+      // $previous = str_replace($host, '', $referer);
+      return parse_url($referer, PHP_URL_PATH);
     }
     return null;
   }
