@@ -5,92 +5,92 @@
 {% block meta_description %}<meta name="description" content="{{ "#{landing}.home.meta_description" | trans }}">{% endblock %}
 
 {% block body %}
-
   {# Hero image component #}
   {% include 'components/header-image/header-image.html.twig' with {
     image: "#{landing}.hero.image" | trans
   } %}
   
   {# cards with title and description #}
-  {% if cards is not null %}
-    {% include 'super-components/cards/cards.html.twig' with {
-      cards: cards,
-    } %}
-    {# {% include 'components/header-titles/header-titles.html.twig' with {
-      mini_header: "#{landing}.minicards.suptitle" | trans,
-      text_header: "#{landing}.minicards.title" | trans,
-      content_header: "#{landing}.minicards.desc" | trans
-    } %}
+  <div class="container-fluid">
+    {% if cards is not null %}
+      {% include 'super-components/cards/cards.html.twig' with {
+        cards: cards,
+      } %}
+      {# {% include 'components/header-titles/header-titles.html.twig' with {
+        mini_header: "#{landing}.minicards.suptitle" | trans,
+        text_header: "#{landing}.minicards.title" | trans,
+        content_header: "#{landing}.minicards.desc" | trans
+      } %}
 
-    <div class="container mb-5">
+      <div class="container mb-5">
+        <div class="row">
+          {% for card in cards.cards %}
+            <div class="col-6">
+              {% include 'components/product-mini-card/product-mini-card.html.twig' with {
+                title: card.top,
+                subtitle: card.middle,
+                body: card.bottom,
+              } %}
+            </div>
+          {% endfor %}
+        </div>
+      </div> #}
+    {% endif %}
+
+
+    {# bullet lists for gran empresa landing only #}
+    {% if bullets_extra is not empty %}
+        {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
+        bullets_extra: bullets_extra,
+      } %}
+    {% endif %}
+
+
+    {# Product cards  + title + description #}
+    {% if product_cards is not null %}
+        {% include 'super-components/product_cards/product_cards.html.twig' with {
+        product_cards: product_cards,
+      } %}
+    {% endif %}
+
+
+    {# Selector component #}
+    {# <div class="container mb-5">
       <div class="row">
-        {% for card in cards.cards %}
-          <div class="col-6">
-            {% include 'components/product-mini-card/product-mini-card.html.twig' with {
-              title: card.top,
-              subtitle: card.middle,
-              body: card.bottom,
-            } %}
-          </div>
-        {% endfor %}
+        <div class="col-12">
+          {% include 'components/header-titles/header-titles.html.twig' with {
+            mini_header: 'DESTACADO',
+            text_header: 'Consulta nuestro cuadro médico',
+            content_header: ''
+          } %}
+          <select class="form-control form-control-lg mt-3">
+            <option>Selecciona provincia</option>
+            <option>A Coruña</option>
+            <option>Lugo</option>
+            <option>Ourense</option>
+            <option>Pontevedra</option>
+          </select>
+        </div>
       </div>
     </div> #}
-  {% endif %}
 
+    {# Simple divider line component #}
+    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
 
-  {# bullet lists for gran empresa landing only #}
-  {% if bullets_extra is not empty %}
-      {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
-      bullets_extra: bullets_extra,
+    {# SupertitleTitleSubtitle component #}
+    {% include 'components/header-titles/header-titles.html.twig' with {
+      mini_header: '',
+      text_header: "#{landing}.desc.title" | trans,
+      content_header: "#{landing}.desc.text" | trans
     } %}
-  {% endif %}
 
+    {# NOT USED IN LANDINGS #}
+    {# Dropdwon + title + description #}
+    {# {% if dropdown is not null %}
+      {% include 'super-components/dropdown/dropdown.html.twig' with {
+        dropdown: dropdown,
+      } %}
+    {% endif %} #}
 
-  {# Product cards  + title + description #}
-  {% if product_cards is not null %}
-      {% include 'super-components/product_cards/product_cards.html.twig' with {
-      product_cards: product_cards,
-    } %}
-  {% endif %}
-
-
-  {# Selector component #}
-  {# <div class="container mb-5">
-    <div class="row">
-      <div class="col-12">
-        {% include 'components/header-titles/header-titles.html.twig' with {
-          mini_header: 'DESTACADO',
-          text_header: 'Consulta nuestro cuadro médico',
-          content_header: ''
-        } %}
-        <select class="form-control form-control-lg mt-3">
-          <option>Selecciona provincia</option>
-          <option>A Coruña</option>
-          <option>Lugo</option>
-          <option>Ourense</option>
-          <option>Pontevedra</option>
-        </select>
-      </div>
-    </div>
-  </div> #}
-
-  {# Simple divider line component #}
-  {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
-
-  {# SupertitleTitleSubtitle component #}
-  {% include 'components/header-titles/header-titles.html.twig' with {
-    mini_header: '',
-    text_header: "#{landing}.desc.title" | trans,
-    content_header: "#{landing}.desc.text" | trans
-  } %}
-
-  {# NOT USED IN LANDINGS #}
-  {# Dropdwon + title + description #}
-  {# {% if dropdown is not null %}
-    {% include 'super-components/dropdown/dropdown.html.twig' with {
-      dropdown: dropdown,
-    } %}
-  {% endif %} #}
-
-
+  </div>
 {% endblock %}
