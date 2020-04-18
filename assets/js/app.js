@@ -2,10 +2,10 @@ import '../css/app.css';
 import 'bootstrap';
 import Swiper from 'swiper';
 import { bysidecar } from './bysidecar';
+import * as ScrollMagic from 'ScrollMagic';
 import { TweenMax, TimelineMax } from '../../node_modules/gsap/src/all.js';
-// import * as ScrollMagic from 'ScrollMagic';
-// import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
-import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
+// import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
+import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
@@ -52,6 +52,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //     $(".fullscreen-navigation").fadeIn(200);
   //   });
   // }
+
+  if(document.querySelector('.fade-in')) {
+    $('.fade-in').each(function(){
+      var controllerFade = new ScrollMagic.Controller();
+      var sceneFade = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.7,
+        reverse: false
+      })
+      .setClassToggle(this, "show")
+      // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
+      
+      controllerFade.addScene(sceneFade);
+      
+    });
+  }
 
   if(document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();
