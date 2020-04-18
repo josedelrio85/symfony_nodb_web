@@ -22,7 +22,7 @@
       {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 3, padding_x: 0} %}
   </div>
 
-  <div class="container-fluid pt-5">
+  <div class="container-fluid py-5 feature-cards-container mb-n5" style="background-image: url({{ asset('build/images/adeslas_back_services_home.jpg') }})">
       {% include 'components/feature-cards/feature-cards.html.twig' with {
         cards: cards,
       } %}

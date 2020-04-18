@@ -2,7 +2,7 @@ form:
   header: 'Te llamamos gratis'
   title: '¿Quieres saber más?'
   suptitle: 'Adeslas'
-  desc: 'Si tienes alguna duda, te llamamos gratis<br>lunes a viernes de 9 a 21h'
+  desc: 'Si tienes alguna duda, te llamamos gratis<br>de lunes a viernes de 9 a 21h'
   fields:
     phone: 'Tu teléfono'
     privacy: 'He leído y acepto la <a href="/privacidad">política de privacidad</a>'
