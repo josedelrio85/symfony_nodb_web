@@ -27,9 +27,6 @@ class IndexController extends AbstractController {
     $mainelements = $this->prodserv->getMain();
     $firstchildrens = $this->prodserv->getFirstChildren();
     $secondChildrens = $this->prodserv->getSecondChildren();
-    // dump($mainelements);
-    // dump($firstchildrens);
-    // dump($secondChildrens);
 
     $hero = $this->repo->getSimpleData('hero');
     $cards = $this->repo->getSimpleData('cards');
@@ -48,17 +45,4 @@ class IndexController extends AbstractController {
       'cards' => $cards,
     ]);
   }
-
-  // public function getFirstChildren(Request $request) {
-  //   $element = $request->request->get('element');
-  //   $fc = $this->prodserv->getFirstChildren($element);
-
-  //   $response = array( 
-  //     "code" => 200,
-  //     "response" => $this->render('components/product-selector/product-card.html.twig', [
-  //       'fc' => $fc
-  //     ])->getContent() 
-  //   );
-  //   return new JsonResponse($response);
-  // }
 }
