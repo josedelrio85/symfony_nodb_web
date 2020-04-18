@@ -1,11 +1,20 @@
 .product-selector {
-    
+
     .product-btn {
         cursor: pointer;
 
         .inner {
             box-shadow: $box-shadow-gen;
             border-radius: $border-radius-gen;
+        }
+
+        &:hover {
+            h5.name, .icon {
+                color: #ffffff!important;
+            }
+            > div {
+                background: #0097D7;
+            }
         }
     }
 
