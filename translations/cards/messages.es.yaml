@@ -7,7 +7,7 @@ cards:
       desc: 'Más ventajas que ponemos a tu servicio para mejorar tu bienestar y tu calidad de vida.'
     card2:
       title: 'Más atención'
-      icon: icon-adeslas_icon_tranquilidad
+      icon: icon-adeslas_icon_atencion
       desc: 'Orientación médica telefónica para dudas sobre enfermedades, medicamentos, informes.'
     card3:
       title: 'Más tranquilidad'

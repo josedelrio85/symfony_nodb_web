@@ -1,0 +1,19 @@
+{% if mini_header or text_header or content_header %}
+<div class="container-fluid header-page-title {% if bg_grey is defined and bg_grey == true %}bg-grey{% endif %}">
+  <div class="container py-3 px-0">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h6 class="mini-header">
+          {{ mini_header }}
+        </h6>
+        <h1 class="text-header">
+          {{ text_header }}
+        </h1>
+        <p>
+          {{ content_header|raw }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

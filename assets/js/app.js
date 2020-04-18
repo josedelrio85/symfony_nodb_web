@@ -2,10 +2,10 @@ import '../css/app.css';
 import 'bootstrap';
 import Swiper from 'swiper';
 import { bysidecar } from './bysidecar';
+import * as ScrollMagic from 'ScrollMagic';
 import { TweenMax, TimelineMax } from '../../node_modules/gsap/src/all.js';
-// import * as ScrollMagic from 'ScrollMagic';
-// import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
-import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
+// import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
+import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
@@ -24,6 +24,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // C2C on screen resize
+  toggleC2cButton();
+  function toggleC2cButton() {
+    let screenWidth = window.innerWidth;
+
+    if( screenWidth < 1720 ) {
+      document.querySelector('.click-to-call-btn').classList.add('c2c-size-open');
+      document.querySelector('.click-to-call-desktop').classList.add('c2c-collapsed');
+    } else {
+      document.querySelector('.click-to-call-btn').classList.remove('c2c-size-open');
+      document.querySelector('.click-to-call-desktop').classList.remove('c2c-collapsed');
+    }
+  }
+
+  $( window ).resize(function() {
+    toggleC2cButton();
+  });
   
   // Fullscreen menu (decomment when we turn on menu links on header menu)
   // if($(".close-menu").length) {
@@ -34,6 +52,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //     $(".fullscreen-navigation").fadeIn(200);
   //   });
   // }
+
+  if(document.querySelector('.fade-in')) {
+    $('.fade-in').each(function(){
+      var controllerFade = new ScrollMagic.Controller();
+      var sceneFade = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.8,
+        reverse: false
+      })
+      .setClassToggle(this, "show")
+      // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
+      
+      controllerFade.addScene(sceneFade);
+      
+    });
+  }
 
   if(document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();

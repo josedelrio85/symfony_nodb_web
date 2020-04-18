@@ -10,6 +10,7 @@
 @import "modals";
 @import "type";
 @import "animations";
+@import "display";
 
 //Components scss files
 @import "../../templates/components/product-selector/product-selector";
@@ -31,3 +32,5 @@
 @import "../../templates/components/slider-home/slider-home.scss";
 @import "../../templates/components/product-features-table/product-features-table.scss";
 @import "../../templates/components/click-to-call-popup/click-to-call-popup.scss";
+@import "components/header-separator.scss";
+@import "../../templates/components/click-to-call-privacy-modal/click-to-call-privacy-modal.scss";
