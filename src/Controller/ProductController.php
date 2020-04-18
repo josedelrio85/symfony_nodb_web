@@ -105,6 +105,11 @@ class ProductController extends AbstractController {
         default:
           $img = 'image1';
       }
+      dump($previous); 
+      dump($hero); 
+      dump($productid); 
+      dump($img);
+      die(); 
       $hero_image = $hero['images'][$img];
     }
     // dump($hero_image);die();
