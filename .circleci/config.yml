@@ -1,0 +1,46 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    branches: 
+      only: 
+        - master
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          working_directory: /
+          command: |
+            # install awscli to interact with Bysidecar's AWS resources
+            sudo apt-get -y -qq update
+            sudo apt-get -y install awscli
+      - run:
+          name: Set convenience environment variables
+          command: |
+            # set the AWS ECR Image name for the build
+            echo 'export IMAGE_PRE_COMMIT="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPOSITORY_PRE}:${CIRCLE_SHA1}"' >> $BASH_ENV
+            echo 'export IMAGE_PRO_COMMIT="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPOSITORY_PRO}:${CIRCLE_SHA1}"' >> $BASH_ENV
+            echo 'export IMAGE_PRE_LATEST="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPOSITORY_PRE}:latest"'         >> $BASH_ENV
+            echo 'export IMAGE_PRO_LATEST="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPOSITORY_PRO}:latest"'         >> $BASH_ENV
+      - run:
+          name: Build PRE image
+          command: |
+            eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+            docker build -t $IMAGE_PRE_COMMIT --build-arg env=pre .
+            docker tag $IMAGE_PRE_COMMIT $IMAGE_PRE_LATEST
+      - run:
+          name: Build PRO image
+          command: |
+            eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+            docker build -t $IMAGE_PRO_COMMIT --build-arg env=pro .
+            docker tag $IMAGE_PRO_COMMIT $IMAGE_PRO_LATEST
+      - run:
+          name: Push image PRE
+          command: |
+            docker push $IMAGE_PRE_COMMIT
+            docker push $IMAGE_PRE_LATEST
+      - run:
+          name: Push image PRO
+          command: |
+            docker push $IMAGE_PRO_COMMIT
+            docker push $IMAGE_PRO_LATEST
