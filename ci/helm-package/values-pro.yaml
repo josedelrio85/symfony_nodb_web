@@ -43,14 +43,20 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: www.adeslas.contratar.es
+    - host: adeslas.contratar.es
+      paths: 
+        - /
+    - host: adeslas.bysidecar.me
       paths: 
         - /
   tls:
-   - secretName: tls-www-adeslas-contratar-es
-     hosts:
-       - www.adeslas.contratar.es
-
+    - secretName: tls-adeslas-contratar-es
+      hosts:
+        - adeslas.contratar.es
+    - secretName: tls-adeslas-bysidecar-me
+      hosts:
+        - adeslas.bysidecar.me
+  
 env:
 - name: APP_ENV
   value: prod
@@ -59,7 +65,7 @@ env:
 - name: LEADS_URL
   value: https://leads.bysidecar.me/lead/store/
 - name: SOUID
-  value: "78"
+  value: "77"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

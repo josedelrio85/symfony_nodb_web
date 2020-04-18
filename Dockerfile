@@ -23,7 +23,7 @@ ADD ./ci/conf/php.ini /usr/local/etc/php
 ADD ./ci/conf/fpm-pool.conf /usr/local/etc/php-fpm.d/zzz_custom.conf
 ADD ./ci/conf/nginx.conf /etc/nginx/nginx.conf
 
-ENV SOUID 78
+ENV SOUID 77
 ENV PRODUCTION true
 RUN echo "$env"
 RUN if [ "$env" == "pro" ] ; then \
