@@ -5,11 +5,10 @@
       <div class="container px-0 pt-5">
         <div class="row">
           <div class="col-12 p-0 text-white mt-3">
-            {% include 'components/header-titles/header-titles.html.twig' with {
+            {% include 'components/header-page-title/header-page-title.html.twig' with {
               mini_header: '' | trans,
               text_header: "#{product}.hero.title" | trans,
               content_header: "#{product}.hero.subtitle" | trans,
-
             } %}
             {% include 'components/product-single-card/product-single-card.html.twig' with {
               price_pre: "#{product}.price_with_details.price.pre" | trans | raw,
@@ -31,7 +30,7 @@
     <div class="container h-50 px-0">
       <div class="row">
         <div class="col-lg-7 col-xl-8 text-white">
-          {% include 'components/header-titles/header-titles.html.twig' with {
+          {% include 'components/header-page-title/header-page-title.html.twig' with {
               mini_header: '' | trans,
               text_header: "#{product}.hero.title" | trans,
               content_header: "#{product}.hero.subtitle" | trans,
