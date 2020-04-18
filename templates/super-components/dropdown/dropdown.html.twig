@@ -1,0 +1,11 @@
+<div class="container-fluid bg-grey px-0">
+  {% include 'components/header-titles/header-titles.html.twig' with {
+    mini_header: dropdown.suptitle,
+    text_header:  dropdown.title,
+    content_header: dropdown.text,
+  } %}
+</div>
+
+{% include 'components/dropdown/dropdown.html.twig' with {
+  dropdown_items: dropdown.drop
+} %}

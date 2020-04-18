@@ -1,30 +1,34 @@
 autonomo:
+  home:
+    title: 'Landing Autónomos'
+    meta_description: 'Landing Autónomos'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_autonomos.png'
   minicards: # 2 minicards + title + description
-    title: ''
-    suptitle: ''
+    title: 'Elige el seguro médico que cubre tus necesidades como autónomo'
+    suptitle: 'Adeslas Autónomos'
     desc: ''
     cards:
       card1:
-        top: ''
-        middle: ''
+        top: 'Desde'
+        middle: '47 €/mes'
         bottom: ''
       card2:
-        top: ''
-        middle: ''
-        bottom: ''
+        top: 'Hasta'
+        middle: '2 meses gratis'
+        bottom: 'con Dental'
   product_bullet: # 3 products with bullets + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    title: '¿Qué tipo de cobertura quieres?'
+    suptitle: 'Adeslas Autónomos'
+    desc: 'Elige el seguro médico que necesitas'
     product:
       product1:
-        title: ''
+        title: 'Adeslas Negocios'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '47'
           currency: '€'
           period: '/mes'
         cta:
@@ -32,14 +36,15 @@ autonomo:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-negocios'
         bullets:
-          -
+          - 'Cobertura global <strong>Sin Copagos</strong>'
+          - 'Ahora 2 meses gratis con Dental'
       product2:
-        title: ''
+        title: 'Adeslas Extra Negocios'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '79'
           currency: '€'
           period: '/mes'
         cta:
@@ -47,13 +52,14 @@ autonomo:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-negocios-extra'
         bullets:
-          -
+          - 'Libre elección de médico'
+          - 'Cobertura dentro y fuera de España'
   select: # 4 selector + title
-    title: ''
+    title: 'Consulta el Cuadro Médico Adeslas'
     suptitle: ''
-    select_txt: ''
+    select_txt: 'Selecciona tu provincia'
   desc: # 5 title + description
     title: ''
     text: ''

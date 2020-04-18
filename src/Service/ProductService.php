@@ -17,7 +17,9 @@ class ProductService {
   public function getProducts() {
     $children = [];
     foreach($this->productConfig['products'] as $i => $data){
-      $children[$i] = $data['name'];
+      if ($data['active']){
+        $children[$i] = $data['name'];
+      }
     }
     return $children;
   }
@@ -26,12 +28,16 @@ class ProductService {
     $elements = $this->productConfig['products'];
     $output = [];
     foreach($elements as $el) {
-      $output[$el['name']]['name'] = $el['name'];
-      $output[$el['name']]['steps'] = $el['steps'];
-      if(array_key_exists('path', $el)){
-        $output[$el['name']]['path'] = $el['path'];
+      if ($el['active']){
+        $output[$el['name']]['name'] = $el['name'];
+        $output[$el['name']]['steps'] = $el['steps'];
+        $output[$el['name']]['icon'] = $el['icon'];
+        if(array_key_exists('path', $el)){
+          $output[$el['name']]['path'] = $el['path'];
+        }
       }
     }
+    // dump($output);die();
     return $output;
   }
 

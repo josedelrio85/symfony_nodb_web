@@ -36,7 +36,7 @@ embarazadas:
           path: '/seguro/adeslas-plena-vital'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-plena-vital'
         bullets:
           - 'Asistencia global de embarazo y parto'
           - 'Reproducción Asistida en condiciones especiales'
@@ -54,7 +54,7 @@ embarazadas:
           path: '/seguro/adeslas-plena-plus'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-plena-plus'
         bullets:
           - '<strong>Sin Copagos</strong>'
           - 'Atención integral de embarazo y parto'

@@ -15,10 +15,6 @@ individual:
         top: 'Desde'
         middle: '16,50 €/mes'
         bottom: ''
-      card2:
-        top: ''
-        middle: ''
-        bottom: ''
   product_bullet: # 3 products with bullets + title + description
     title: 'Coberturas a tu medida'
     suptitle: 'Adeslas individual'

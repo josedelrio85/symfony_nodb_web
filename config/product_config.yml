@@ -2,6 +2,8 @@ products:
   salud:
     name: 'salud'
     steps: 3
+    icon: 'icon-heart'
+    active: true
     children:
       familia:
         name: 'familia'
@@ -14,7 +16,7 @@ products:
             path: 'familiar'
           mayores:
             name: 'mayores65'
-            path: 'mayores65'
+            path: 'senior'
           embarazada:
             name: 'embarazadas'
             path: 'embarazadas'
@@ -36,7 +38,9 @@ products:
   dental:
     name: 'dental'
     steps: 2
+    icon: 'icon-heart'
     path: 'dental'
+    active: true
     children:
       # cobdental:
       #   name: 'cobdental'
@@ -49,18 +53,14 @@ products:
   mascotas:
     name: 'mascotas'
     steps: 2
+    icon: 'icon-heart'
     path: 'mascotas'
+    active: false
     children:
-      # mascotas:
-      #   name: 'mascotas'
-      #   path: 'mascotas'
-      #   children:
   decesos:
     name: 'decesos'
     steps: 2
+    icon: 'icon-heart'
     path: 'decesos'
+    active: false
     children:
-      # decesos:
-      #   name: 'decesos'
-      #   path: 'decesos'
-      #   children:

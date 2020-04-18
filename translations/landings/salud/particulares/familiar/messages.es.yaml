@@ -15,10 +15,6 @@ familiar:
         top: 'Desde'
         middle: '16,50 €/mes'
         bottom: ''
-      card2:
-        top: ''
-        middle: ''
-        bottom: ''
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige el seguro que mejor se adapta a tu familia'
     suptitle: 'Adeslas familias'
@@ -96,7 +92,7 @@ familiar:
           path: '/seguro/adeslas-plena-extra'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-plena-plus'
         bullets:
           - 'Libre elección de médico'
   select: # 4 selector + title

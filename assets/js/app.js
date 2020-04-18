@@ -189,32 +189,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     return true;
   }
-
-
-
-  // function getData(id) {
-  //   const urlEndPoint = '/first-children';
-  //   console.log(id);
-
-  //   let params = {
-  //     element: id.replace('product-',''),
-  //   }
-
-  //   return new Promise((resolve, reject) => {
-  //     landingCommander.makePostRequestFormData(params, urlEndPoint)
-  //     .then((result) => {
-  //       resolve(result);
-  //     })
-  //     .catch((error) => {reject(error);})
-  //   });
-  // }
-
-  // // getData(id)
-  // //   .then((result) => {
-  // //     console.log(result.response);
-  // //     let mainproducts = document.getElementById('mainproducts');
-  // //     mainproducts.classList.add('d-none');
-  // //     document.getElementById('level2').innerHTML = result.response;
-  // //   })
-  // //   .catch((error) => { console.log(error); });
 });

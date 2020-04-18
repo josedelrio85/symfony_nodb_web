@@ -1,30 +1,26 @@
-mayores65:
+dental:
+  home:
+    title: 'Landing Dental'
+    meta_description: 'Landing Dental'
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_dental.jpg'
   minicards: # 2 minicards + title + description
-    title: ''
-    suptitle: ''
+    title: 'El mejor seguro dental con las tarifas más bajas'
+    suptitle: 'Adeslas Dental'
     desc: ''
     cards:
-      card1:
-        top: ''
-        middle: ''
-        bottom: ''
-      card2:
-        top: ''
-        middle: ''
-        bottom: ''
   product_bullet: # 3 products with bullets + title + description
-    title: ''
-    suptitle: ''
+    title: 'Descubre la fórmula para cuidar tu sonrisa que más te conviene en 1 minuto'
+    suptitle: 'Adeslas Dental'
     desc: ''
     product:
       product1:
-        title: ''
+        title: 'Adeslas Dental MAX'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '8'
           currency: '€'
           period: '/mes'
         cta:
@@ -32,14 +28,14 @@ mayores65:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-dental-max'
         bullets:
-          -
+          - 'Sólo cobertura Dental'
       product2:
-        title: ''
+        title: 'Adeslas Dental Familia'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '3,5'
           currency: '€'
           period: '/mes'
         cta:
@@ -47,9 +43,9 @@ mayores65:
           path: '/path'
         more_info:
           text: 'Saber más'
-          path: '/path'
+          path: '/seguro/adeslas-dental-familia'
         bullets:
-          -
+          - 'Cobertura Dental con Salud'
   select: # 4 selector + title
     title: ''
     suptitle: ''
