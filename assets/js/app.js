@@ -24,6 +24,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // C2C on screen resize
+  toggleC2cButton();
+  function toggleC2cButton() {
+    let screenWidth = window.innerWidth;
+
+    if( screenWidth < 1720 ) {
+      document.querySelector('.click-to-call-btn').classList.add('c2c-size-open');
+      document.querySelector('.click-to-call-desktop').classList.add('c2c-collapsed');
+    } else {
+      document.querySelector('.click-to-call-btn').classList.remove('c2c-size-open');
+      document.querySelector('.click-to-call-desktop').classList.remove('c2c-collapsed');
+    }
+  }
+
+  $( window ).resize(function() {
+    toggleC2cButton();
+  });
   
   // Fullscreen menu (decomment when we turn on menu links on header menu)
   // if($(".close-menu").length) {
