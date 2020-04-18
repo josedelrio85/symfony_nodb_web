@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       var controllerFade = new ScrollMagic.Controller();
       var sceneFade = new ScrollMagic.Scene({
         triggerElement: this,
-        triggerHook: 0.7,
+        triggerHook: 0.8,
         reverse: false
       })
       .setClassToggle(this, "show")
