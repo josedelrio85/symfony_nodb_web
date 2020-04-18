@@ -3,28 +3,28 @@ menos5:
     title: ''
     subtitle: ''
   minicards: # 2 minicards + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    title: 'La mejor oferta en seguros médicos para pymes'
+    suptitle: 'Adeslas Pymes'
+    desc: 'Elige el seguro médico que se adapta mejor a tu empresa'
     cards:
       card1:
-        top: ''
-        middle: ''
-        bottom: ''
+        top: 'Desde'
+        middle: '45 €/mes'
+        bottom: 'por empleado'
       card2:
-        top: ''
-        middle: ''
-        bottom: ''
+        top: 'Con Dental'
+        middle: 'Desde 49,50 €/mes'
+        bottom: 'por trabajador'
   product_bullet: # 3 products with bullets + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    title: 'Un seguro a la medida de tu empresa'
+    suptitle: 'Adeslas Pymes'
+    desc: 'Las mejores ofertas de seguro médico para pymes adaptadas a vuestras necesidades'
     product:
       product1:
-        title: ''
+        title: 'Adeslas Negocios'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '45'
           currency: '€'
           period: '/mes'
         cta:
@@ -34,12 +34,12 @@ menos5:
           text: 'Saber más'
           path: '/path'
         bullets:
-          -
+          - 'La más amplia cobertura <strong>sin Copagos</strong>'
       product2:
-        title: ''
+        title: 'Adeslas Extra Negocios'
         price:
           pre: 'Desde'
-          quantity: ''
+          quantity: '63,50'
           currency: '€'
           period: '/mes'
         cta:
@@ -49,11 +49,12 @@ menos5:
           text: 'Saber más'
           path: '/path'
         bullets:
-          -
+          - 'Cobertura total con Cuadro Médico'
+          - 'O libre elección de médico en todo el mundo'
   select: # 4 selector + title
-    title: ''
-    suptitle: ''
-    select_txt: ''
+    title: 'Consulta el Cuadro Médico Adeslas'
+    suptitle: 'Cobertura'
+    select_txt: 'Selecciona en qué provincia trabajáis'
   desc: # 5 title + description
     title: ''
     text: ''

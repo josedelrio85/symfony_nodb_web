@@ -25,9 +25,10 @@ class LandingController extends AbstractController {
 
     $landing = $request->attributes->get('_route');
     $area = $this->prodserv->getArea($landing);
-    // $a = $this->repo->getMessages(); 
+    $a = $this->repo->getMessages(); 
     $cards = $this->repo->getKeyDataLandings($area, $landing, 'minicards');
-    // dump($cards); die();¡
+    // dump($a); dump($landing); die();
+    // dump($cards); die();
     $product_bullets = $this->repo->getKeyDataLandings($area, $landing,'product_bullet');
     // dump($product_bullets); die();
 
