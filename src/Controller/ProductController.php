@@ -26,8 +26,11 @@ class ProductController extends AbstractController {
     $this->request = $request;
     $productid = $request->attributes->get('_route');
     $hero = $this->repo->getKeyDataProducts($productid, 'hero');
-
     $previous = $this->getPrevious();
+    dump($previous); 
+    dump($hero); 
+    dump($productid); 
+
     if(is_null($previous)) {
       $hero_image = $hero['images']['image1'];
     } else {
@@ -72,12 +75,33 @@ class ProductController extends AbstractController {
           }
         break;
         break;
-        // TODO ADD REST OF PRODUCTS
         case 'senior':
+        case 'dental_familia':
+        case 'dental_max':
           $img = 'image1';
         break;
-        // case 'senior':
-        // break;
+        case 'negocios':
+        case 'negocios_extra':
+          switch($previous) {
+            case '/seguros-salud-empresa':
+              $img = 'image1';
+            break;
+            case '/seguros-salud-autonomos':
+              $img = 'image2';
+            break;
+          }
+        break;
+        case 'empresa':
+        case 'empresa_extra':
+          switch($previous) {
+            case '/seguros-salud-empresa-extra':
+              $img = 'image1';
+            break;
+            case '/seguros-salud-empresa':
+              $img = 'image2';
+            break;
+          }
+        break;
       }
       $hero_image = $hero['images'][$img];
     }

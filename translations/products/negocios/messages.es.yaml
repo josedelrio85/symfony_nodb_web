@@ -1,58 +1,102 @@
 #adeslas_negocios
 negocios:
   hero: # 1
-    title: ''
-    subtitle: ''
+    title: 'Adeslas Negocios. La mejor asistencia médica para autónomos'
+    subtitle: 'Atención ambulatoria y hospitalaria sin límites'
+    images: 
+      image1: 'adeslas_hero_large_ficha_5_empleados_negocio.jpg'
+      image2: 'adeslas_hero_large_ficha_autonomos_negocio.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: ''
+      quantity: '47'
       currency: '€'
       period: '/mes'
     bullets:
       bullet1:
-        text: ''
-        subtext: ''
+        text: '2 meses gratis'
+        subtext: 'con Dental'
       bullet2:
-        text: ''
-        subtext: ''
+        text: 'Sin Copagos'
+        subtext: 'ni sorpresas'
     cta:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: ''
-    title: ''
+    suptitle: 'Coberturas Negocios'
+    title: 'Atención global'
+    text: ''
     list: 
-      - ''
+      - 'Programas de Prevención en Cardiología, Urología y Ginecología.'
+      - 'Hospitalización médica, quirúrgica, psiquiátrica, UVI, etc.'
+      - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular).'
+      - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
+      - 'Fisioterapia y podología'
+      - 'Implantes y prótesis (internas).' 
+      - 'Cobertura de embarazo y parto.'
+      - 'Planificación familiar (incluido DIU e implantación).'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: ''
-    title: ''
-    text: ''
+    suptitle: 'Condiciones'
+    title: 'Un seguro privado para cuidarte sin esperas ni gastos imprevistos'
+    text: 'Con Adeslas Negocios tendrás acceso a la mejor sanidad privada para poder acudir a un médico cuando lo necesites, sin listas de espera y en el horario que mejor le venga a tu negocio. Y si necesitas ingresar en un hospital tendrás una habitación individual con cama para el acompañante.'
     drop:
       drop1:
-        title: ''
-        text: ''
-  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
-    suptitle: ''
-    title: ''
-    text: ''
-    list:
-      -
+        title: 'Mejores profesionales'
+        text: 'Adeslas Negocios te abre la puerta al mejor cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y 27 centros médicos de Adeslas Salud.'
+      drop2: 
+        title: 'La mejor tarifa'
+        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de un trabajador por cuenta propia. Desde sólo 47€/mes. Y ahora si contratas Dental, disfrutarás de tu seguro médico privado <strong>2 meses gratis</strong>.'
+      drop3:
+        title: 'Sin Copagos'
+        text: 'En Adeslas Negocios pagarás lo mismo cada mes, tu prima mensual, sin copagos ni sorpresas, vayas al médico las veces que quieras y pidas cuantas pruebas necesites.'
+      drop4: 
+        title: 'Sin trámites'
+        text: 'Con Adeslas Negocios podrás hacerte pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas. Con tu póliza recibirás acceso al área privada para tramitar lo que necesites desde tu negocio.'  
+      drop5:
+        title: 'Pago flexible y descuentos'
+        text: 'En Adeslas podrás pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
+      drop6:
+        title: '2 meses gratis'
+        text: 'Y si quieres cobertura dental, puedes acceder a ella desde 10,50 €/mes y te ahorrarás las dos primeras primas mensuales de tu seguro de salud.'  
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
+    image: image.png
   desc: # 6 titulo + descripcion
-    title: ''
+    title: 'Completa tu seguro con cobertura por incapacidad temporal con un 30% de descuento'
+    text: 'Además de todas las coberturas incluidas en Adeslas Negocios, puedes contratar nuestro módulo complementario de Incapacidad Temporal para hacer frente a una baja, ahora ¡Con un 30% de descuento!. También puedes acceder a los módulos Plus Ginecología y Pediatría y Plus Clínica Universitaria de Navarra.'
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
+    suptitle: 'Ventajas Negocios'
+    title: 'Asistencia médica de calidad en el horario que necesitas'
     text: ''
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
-    suptitle: ''
-    title: ''
-    text: ''
+    image: image.png
     drop:
       drop1:
-        title: ''
-        text: ''
+        title: '¿Para quién es Adeslas Negocios?'
+        text: 'Adeslas Negocios está pensado para autónomos que buscan una buena asistencia sanitaria, rápida y sin horarios prefijados y quieren asegurarse de no hacer frente a pagos extraordinarios si necesitan atención.'
+      drop2:
+        title: '¿Puedo contratar Adeslas Negocios si no tengo DNI o NIE?'
+        text: 'Sí. Sólo te hará falta el pasaporte, pero tendrás que estar dado de alta en el Régimen Especial de Autónomos.' 
+      drop3: 
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: 'Adeslas Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para cirugías y hospitalizaciones.'
+      drop4:
+        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
+        text: 'Si contratas un seguro dental a la vez que Adeslas Negocios, tendrás dos meses gratis. Generaremos dos pólizas distintas aplicando las bonificaciones a la contratación de ambas. El precio de tu seguro dental dependerá de cuántos beneficiarios tenga esa póliza. Desde 10,50€/mes con un asegurado hasta 25 €/mes con 5 o 6.'
+      drop5:
+        title: '¿Hay límite de edad para contratar Adeslas Negocios?'
+        text: 'Adeslas Negocios se puede contratar hasta los 70 años'   
   faq:    # 8 FAQ'S solo si no va en particulares
-    suptitle: ''
-    title: ''
+    suptitle: 'FAQ''s'
+    title: 'Términos de interés'
     elems:
       faq1:
-        title: ''
-        text: ''
+        title: 'Copagos'
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos de un seguro. Adeslas Negocios no tiene copagos.'
+      faq2:
+        title: 'Cuestionario Médico'
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida o antecedentes médicos, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Negocios está sujeto a cuestionario médico previo.'
+      faq3: 
+        title: 'Carencias'
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura. En Adeslas Negocios existen carencias para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
+      faq4: 
+        title: 'Póliza y prima'
+        text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia. En Adeslas te ofrecemos total transparencia. La prima es la cuota que pagarás por tu seguro y que tendrás clara desde el primer día.'

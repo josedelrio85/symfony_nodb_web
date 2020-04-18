@@ -6,7 +6,9 @@
 
 {% block body %}
 
-  {% include 'components/product-single-hero/product-single-hero.html.twig' %}
+  {% include 'components/product-single-hero/product-single-hero.html.twig' with {
+    image: hero_image
+  } %}
 
   <div class="container-fluid container-lg px-0">
     <div class="row">
@@ -30,14 +32,12 @@
         {% endif %}
 
 
-
         {# bullet lists without description #}
         {% if desc_with_bullets is not empty %}
             {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
               bullets_extra: desc_with_bullets,
             } %}
 
-            {# Image divider #}
             {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
               image: desc_with_bullets.image
             } %}

@@ -1,58 +1,137 @@
 #adeslas_dental_max
 dental_max:
   hero: # 1
-    title: ''
-    subtitle: ''
+    title: 'Adeslas Dental MAX. Un seguro dental completo sin copagos al mejor precio'
+    subtitle: 'Con coberturas que aumentan cada año'
+    images: 
+      image1: 'adeslas_hero_large_ficha_dental_max.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: ''
+      quantity: 8'
       currency: '€'
       period: '/mes'
     bullets:
       bullet1:
-        text: ''
-        subtext: ''
+        text: 'Cada año'
+        subtext: 'Bajamos 1€ tu tarifa'
       bullet2:
-        text: ''
-        subtext: ''
+        text: 'Descuentos'
+        subtext: 'desde 2º asegurado'
     cta:
       text: 'Llamadme'
       path: '/path'
-  bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: ''
-    title: ''
+  bullets: # 3 listado de bullets con titulo y supertitulo (no bullets: tabla)
+    suptitle: 'Adeslas Dental MAX'
+    title: 'Coberturas Max'
     list: 
-      - ''
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: ''
-    title: ''
-    text: ''
+    suptitle: 'Adeslas Dental MAX'
+    title: 'Mejores condiciones'
+    text: 'Un completo plan de salud bucodental independiente sin copagos, carencias ni cuestionario médico previo para cuidar la sonrisa de tu familia desde el primer día.'
     drop:
       drop1:
-        title: ''
-        text: ''
-  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
-    suptitle: ''
-    title: ''
-    text: ''
-    list:
-      -
+        title: 'Más económico'
+        text: 'Cada año de renovación bajamos tu prima 1€ hasta un máximo de 6€ por asegurado al mes y cuantos más asegurados tenga tu póliza, el precio será más bajo.'
+      drop2:
+        title: 'Más coberturas'
+        text: '38 actos médicos incluidos el primer año y nuevas coberturas en Odontopediatría y Periodoncia cada año hasta un total de 49 actos, incluidos medios de diagnóstico de alta tecnología.'
+      drop3:
+        title: 'Máxima calidad'
+        text: 'Más de 4.000 profesionales, 1.600 odontólogos, 190 Clínicas Dentales 100% Adeslas en las que te ofrecemos todos los tratamientos de cualquier especialidad que necesites.'
+      drop4:
+        title: 'Máxima garantía'
+        text: 'Presupuestos personalizados sin compromiso, tarifas públicas y transparentes desglosadas por tratamiento. Calidad y confianza avaladas por nuestros pacientes, con un grado de satisfacción del 97%.'
+      drop5:
+        title: 'Máximas facilidades'
+        text: 'Elige entre pago mensual, bimensual, trimestral y anual y si necesitas tratamientos especiales, disfrutarás de un ahorro de hasta el 50% en precios y de un plan de financiación a tu medida.'  
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (antes tabla)
+    image: image.png
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
-    suptitle: ''
-    title: ''
-    text: ''
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
+    suptitle: 'Dental MAX'
+    title: 'Las ventajas de contratar con una compañía líder'
+    text: 'Adeslas DENTAL MAX incluye una revisión bucodental completa gratis al año, que comprende la consulta, las pruebas diagnósticas necesarias y una limpieza anual. Todo valorado en más de 200€. '
+    image: image.png
     drop:
       drop1:
-        title: ''
-        text: ''
+        title: '¿Qué es Adeslas Dental MAX?'
+        text: 'Un seguro dental privado con amplias coberturas desde el primer día y desde sólo 8€ al mes por asegurado. Con cada año de renovación, te rebajamos 1€ por asegurado al mes y durante los primeros 3 verás aumentadas tus coberturas, hasta un máximo de 49 actos médicos sin coste añadido en las Clínicas Adeslas Dental.'
+      drop2:
+        title: '¿Hay límite de edad para contratar Adeslas Dental MAX?'
+        text: 'No. Adeslas Dental Max está pensado para las familias pero no hay límite de edad para los asegurados, incluso si es un niño, siempre que el tomador del seguro sea una persona mayor de 18 años.'
+      drop3:
+        title: '¿¿Y si quiero asegurar a mi familia? ¿Hay límite de asegurados?'
+        text: 'No, puedes incluir en la misma póliza a 6 asegurados sin límite de edad.'
+      drop4:
+        title: '¿Qué me ofrece Dental MAX si necesito un tratamiento especial?'
+        text: 'En Adeslas Dental MAX existen dos modalidades de franquicia para aquellos tratamientos no cubiertos en la póliza, en función de la clínica que escojas. Franquicia Dental: Los precios tienen hasta un 35% de ahorro respecto a lo que pagarías sin el seguro. Franquicia Dental Óptima: Tu seguro te permite ahorrar hasta un 50%. Este modelo nos  permite no sólo brindarte los tratamientos más profesionales sino también las mejores condiciones económicas del mercado.' 
+      drop5:
+        title: '¿Necesito tener otro seguro  de salud Adeslas para disfrutar de Adeslas Dental MAX?'
+        text: 'No. Adeslas Dental MAX es un seguro independiente que no está vinculado a ningún otro seguro de salud Adeslas.'  
   faq:    # 8 FAQ'S solo si no va en particulares
-    suptitle: ''
-    title: ''
+    suptitle: 'FAQ''s'
+    title: 'Términos frecuentes'
     elems:
       faq1:
-        title: ''
-        text: ''
+        title: '¿Qué es un copago'
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos de un seguro. En Adeslas DENTAL MAX no existen copagos, las coberturas aumentan año a año durante los 3 primeros años.'
+      faq2:
+        title: '¿Qué es una franquicia?'
+        text: 'Es la cantidad que el asegurado debe pagar por acceder a determinados actos médicos derivados de tratamientos especiales. A partir de esa cantidad, la compañía se hace cargo el resto del coste.'
+      faq3:
+        title: '¿Qué es el cuestionario médico previo?'
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas Dental MAX no necesitas cubrir este test para contratar.'    
+      faq4:
+        title: '¿Qué son las carencias?'
+        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura. En Adeslas DENTAL MAX todas tus coberturas están claras desde el principio, sin carencias. Durante el primer año tendrás derecho a hasta 38 tratamientos sin coste añadido. Con tu primera renovación, accederás a un total de 48 servicios incluidos y en el tercer año tendrás 49 actos cubiertos.'
+      faq5:
+        title: '¿Qué es la Póliza? ¿Y la prima?'
+        text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas Dental MAX te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
+  extra:
+    table:
+      rows:
+            - '35 actos médicos'
+            - '3 pruebas diagnósticas'
+            - 'Estudio Radiología 3D:'
+            - 'Estudio Tomográfico (TAC), una arcada'
+            - 'Estudio Tomográfico (TAC), dos arcadas'
+            - '10 actos odontopediátricos'
+            - '1 tratamiento periodontal'
+            - 'Mantenimiento periodontal'  
+      columns: 
+        column1: 
+          title: 'Año 1. Desde 8 €/mes/persona'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - false
+            - false
+            - false
+        column2:   
+          title: 'Año 2. Desde 7€/mes/asegurado'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - false
+            - false
+        column3:
+          title: 'Año 3. Desde 6€/mes/asegurado'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true

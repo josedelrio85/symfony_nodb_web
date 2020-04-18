@@ -62,6 +62,7 @@ senior:
     title: 'Un plan a largo plazo para cuidarte'
     text: 'Adeslas Seniors te ofrece un plan a largo plazo para ayudar a cuidar de tu salud y a vivir una jubilación tranquila y activa en la que no tengas que preocuparte de nada más. Accederás a todas las especialidades y tratamientos que necesites.'
     list:
+    image: image.png
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
@@ -69,6 +70,7 @@ senior:
     suptitle: 'Ventajas Sénior'
     title: 'El seguro más completo y flexible'
     text: ''
+    image: image.png
     drop:
       drop1:
         title: '¿Para quién es Adeslas Seniors?'

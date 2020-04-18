@@ -10,27 +10,31 @@
         {%  set desc = bullets_extra.text %}
       {% endif %}
 
-      {% include 'components/header-titles/header-titles.html.twig' with {
-        mini_header: bullets_extra.suptitle,
-        text_header: bullets_extra.title,
-        content_header: desc
-      } %}
+      {% if bullets_extra.title is defined %}
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          mini_header: bullets_extra.suptitle,
+          text_header: bullets_extra.title,
+          content_header: desc
+        } %}
+      {% endif %}
       
-      <div class="container mb-5">
-        <div class="row">
-            <div class="container-fluid">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12">
-                    {% include 'components/bullet-list/bullet-list.html.twig' with { 
-                      bullet_list_items: bullets_extra.list 
-                    } %}
+      {% if bullets_extra.title is defined %}
+        <div class="container mb-5">
+          <div class="row">
+              <div class="container-fluid">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      {% include 'components/bullet-list/bullet-list.html.twig' with { 
+                        bullet_list_items: bullets_extra.list 
+                      } %}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+          </div>
         </div>
-      </div>
+      {% endif %}
     </div>
   </div>
 </div>

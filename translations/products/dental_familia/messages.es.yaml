@@ -1,58 +1,108 @@
 #adeslas_dental_familia
 dental_familia:
   hero: # 1
-    title: ''
-    subtitle: ''
+    title: 'Adeslas Dental. Asegura la sonrisa de tu familia con los mejores especialistas'
+    subtitle: 'Un plan de salud dental desde el primer día, sin copagos ni carencias'
+    images: 
+      image1: 'adeslas_hero_large_ficha_dental_familia.jpg'
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: ''
+      quantity: '3,55'
       currency: '€'
       period: '/mes'
     bullets:
       bullet1:
-        text: ''
-        subtext: ''
+        text: '15% de descuento'
+        subtext: 'con tu seguro de salud'
       bullet2:
-        text: ''
-        subtext: ''
+        text: 'Una póliza única'
+        subtext: 'con hasta 6 persomas'
     cta:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: ''
-    title: ''
+    suptitle: 'Dental Familia'
+    title: 'Cobertura total'
     list: 
-      - ''
+      - 'Consultas'
+      - 'Urgencias'
+      - 'Limpieza dental por tartrectomía'
+      - 'Sesiones de fluorización'
+      - 'Selladores oclusales'
+      - 'Plan de educación dental'
+      - 'Ortopantomografías'
+      - 'Radiografías Odontológicas'
+      - 'Estudios, revisiones y urgencias de ortodoncia'
+      - 'Periodoncia e implantología'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
-    suptitle: ''
-    title: ''
-    text: ''
+    suptitle: 'Condiciones'
+    title: 'Un plan de prevención bucodental al mejor precio'
+    text: 'Con Adeslas Dental Familia accederás a un plan de prevención y educación bucodental para lo tuyos con los mejores especialistas y las mejores tarifas precios del mercado. Y todo con una prima única que reduce el coste por asegurado hasta los 3,55€/mes'
     drop:
       drop1:
-        title: ''
-        text: ''
-  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
-    suptitle: ''
-    title: ''
-    text: ''
-    list:
-      -
+        title: 'Amplia cobertura'
+        text: 'Con Adeslas Dental Familia tendrás incluida la cobertura gratuita de los actos médicos que más frecuentemente puedes necesitar. Cada año tendrás una revisión dental completa para cada asegurado con los medios de diagnóstico necesarios y una limpieza.'
+      drop2:
+        title: 'Los mejores precios'
+        text: 'Adeslas Dental Familia te ofrece las mejores tarifas del mercado, desde 8,93€ por asegurado si contratas un seguro de salud. El precio por persona es menor cuantos más asegurados incluyas en tu póliza.'
+      drop3:
+        title: 'Sin copagos ni carencias'
+        text: 'Adeslas Dental Familia te recibe con tu plan de salud bucodental sin carencias ni copagos. Podrás acudir a tu clínica Dental Adeslas y pedir tu revisión gratuita el primer día.'
+      drop4:
+        title: 'Tratamientos especiales'
+        text: 'Nuestro sistema de franquicias te permitirá acceder a tratamientos especiales con un hasta un 50% de ahorro en nuestras Clínicas Dentales Adeslas'
+      drop5:
+        title: '100% profesionalidad'
+        text: 'Más de 4.000 profesionales colegiados, 1.600 odontólogos, 190 Clínicas Dentales 100% Adeslas a tu servicio en las que te ofrecemos los tratamientos de cualquier especialidad que necesites.'
+      drop6: 
+        title: 'Transparencia y garantía'
+        text: 'Presupuestos personalizados sin compromiso, tarifas públicas y transparentes desglosadas por tratamiento. Calidad avalada por la compañía líder en seguros de salud y dental y el aval de la satisfacción del 97% de nuestros pacientes'
+      drop7: 
+        title: 'Máximas facilidades'
+        text: 'Elige entre pago mensual o bimensual, trimestral o anual'
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
+    image: image.png
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
-    suptitle: ''
-    title: ''
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
+    suptitle: 'Ventajas Dental'
+    title: 'El aval de la compañía líder'
     text: ''
+    image: image.png
     drop:
       drop1:
-        title: ''
-        text: ''
+        title: '¿Qué es Adeslas Dental Familia?'
+        text: 'Un seguro dental privado con amplias coberturas y condiciones especiales sólo reservadas a las personas que contraten un seguro de salud Adeslas: Un descuento del 15% sobre la tarifa mensual, que va de los 8,93€ al mes con un solo asegurado, hasta los 21,25€ al mes en una prima única para entre 5 y 6 asegurados. Por eso con los descuentos y el número máximo de asegurados, puedes llegar a pagar sólo 3,5€ al mes por asegurado.'
+      drop2:
+        title: '¿Hay algún límite de edad para contratar Adeslas Dental Familia?'
+        text: 'No. Adeslas Dental Familia está pensado para las familias pero no hay límite de edad para los asegurados, incluso si es un niño, siempre que el tomador del seguro sea una persona mayor de 18 años, como alguno de los padres.'  
+      drop3:
+        title: '¿Y si quiero asegurar a mi familia? ¿Hay límite de asegurado?'
+        text: 'No, puedes incluir en la misma póliza hasta a 6 personas.'
+      drop4:
+        title: '¿Qué es Adeslas Dental Familia?'
+        text: 'En Adeslas Dental Familia existen dos modalidades de franquicia que nos permiten no sólo brindarte los tratamientos más profesionales sino también las mejores condiciones económicas del mercado en aquellos actos no cubiertos en la póliza. La Franquicia Dental, con un 35% de ahorro y Franquicia Dental Óptima, con un ahorro del 50% sobre los precios del mercado. Franquicia Dental Óptima: Tu seguro te permite ahorrar hasta un 50% sobre los precios del mercado.'    
+      drop5: 
+        title: 'Necesito tener un seguro de Adeslas para contratar Dental Familia'
+        text: 'Sí. Adeslas Dental Familia es un seguro vinculado a los seguros de salud Adeslas.'
   faq:    # 8 FAQ'S solo si no va en particulares
-    suptitle: ''
-    title: ''
+    suptitle: 'FAQ''s'
+    title: 'Términos frecuentes'
     elems:
       faq1:
-        title: ''
-        text: ''
+        title: '¿Qué es un copago?'
+        text: 'Es un complemento que pagas cada vez que disfrutas de algún acto médico de los seguros. En Adeslas Dental Familia no existen copagos. Si necesitas tratamientos especiales, tendrás un ahorro de hasta el 50%.'
+      faq2:
+        title: '¿Qué es una franquicia?'
+        text: 'Es la cantidad que el asegurado debe pagar por acceder a determinados actos médicos derivados de tratamientos especiales. A partir de esa cantidad, la compañía se hace cargo del resto.' 
+      faq3:
+        title: '¡Qué es el cuestionario médico previo?'
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que se recaban datos del paciente que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas Dental Familia no necesitas cubrir este test para contratar.'
+      faq4:
+        title: '¿Qué son las carencias?'
+        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura. En Adeslas Dental Familia todas tus coberturas están claras desde el principio, sin carencias.'
+      faq5:
+        title: '¿Qué es una póliza? ¿Y la prima?'
+        text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas Dental Familia te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y la tendrás clara desde el primer día.'    

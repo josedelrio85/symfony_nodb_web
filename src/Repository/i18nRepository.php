@@ -34,7 +34,12 @@ class i18nRepository{
       $products.'senior',
       $products.'decesos',
       $products.'mascotas',
-      // TODO add products for negocio and dental
+      $products.'negocios',
+      $products.'negocios_extra',
+      $products.'empresa',
+      $products.'empresa_extra',
+      $products.'dental_familia',
+      $products.'dental_max',
     ];
     // $arr = [
     //   $basedir.DIRECTORY_SEPARATOR.'salud',
