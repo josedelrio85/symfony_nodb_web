@@ -3,15 +3,21 @@
   <div class="container py-3 p-0">
     <div class="row">
       <div class="col-12 col-lg-8">
-        <h6 class="mini-header">
-          {{ mini_header }}
-        </h6>
-        <h2 class="text-header">
-          {{ text_header }}
-        </h2>
-        <p>
-          {{ content_header|raw }}
-        </p>
+        {% if mini_header %}
+          <h6 class="mini-header">
+            {{ mini_header }}
+          </h6>
+        {% endif %}
+        {% if text_header %}
+          <h2 class="text-header">
+            {{ text_header }}
+          </h2>
+        {% endif %}
+        {% if content_header %}
+          <p>
+            {{ content_header|raw }}
+          </p>
+        {% endif %}
       </div>
     </div>
   </div>
