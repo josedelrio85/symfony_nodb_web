@@ -25,6 +25,7 @@
             font-size: .7rem;
             margin-left: .5rem;
             padding: 0 .5rem;
+            cursor: text;
         }
 
         input {
@@ -55,10 +56,6 @@
     .img-call {
         width: 80px;
     }
-}
-
-.click-to-call--header {
-    cursor: pointer;
 }
 
 .click-to-call-desktop {
@@ -95,6 +92,10 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+    }
+
+    .click-to-call--header {
+        cursor: pointer;
     }
 }
 
