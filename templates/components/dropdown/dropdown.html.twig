@@ -7,7 +7,7 @@
         <div id="accordion{{ accordionid }}" class="accordion">
           <div class="card mb-0">
             {% for item in dropdown_items %}
-              <div class="card-header collapsed py-4 px-0" data-toggle="collapse" href="#collapse{{ accordionid }}{{ loop.index }}">
+              <div class="card-header collapsed py-4 px-0 d-flex justify-content-between" data-toggle="collapse" href="#collapse{{ accordionid }}{{ loop.index }}">
                 <a class="card-title font-weight-bold h5">{{ item.title | trans | raw}}</a>
               </div>
               <div class="card-body px-0 p-0">
