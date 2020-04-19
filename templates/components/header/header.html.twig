@@ -2,7 +2,7 @@
     <div class="container py-1">
         <div class="inner d-flex justify-content-between align-items-center">
             <div class="logo-container">
-                <a href="/">
+                <a {{ custom_routes("/") }}>
                   <div class="img d-block mx-auto" >
                       <div class="logo-desktop" >{{ source('@public_path'~asset('build/images/adeslas_logo_desktop.svg')) }}</div>
                       <div class="logo-mobile" >{{ source('@public_path'~asset('build/images/adeslas_logo_mob.svg')) }}</div>

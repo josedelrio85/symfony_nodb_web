@@ -5,10 +5,11 @@
         <div class="img footer-logo d-block mx-auto pb-4">
           {{ source('@public_path'~asset('build/images/adeslas_simple_logo_white.svg')) }}
         </div>
-        <a class="link" href="{{ "footer.legal.path" | trans }}">{{ "footer.legal.text" | trans | raw }}</a> | 
-        <a class="link" href="{{ "footer.privacy.path" | trans }}">{{ "footer.privacy.text" | trans | raw }}</a> | 
-        <a class="link" href="{{ "footer.cookies.path" | trans }}">{{ "footer.cookies.text" | trans | raw }}</a> |
-        <a class="link" href="{{ "footer.conditions.path" | trans }}">{{ "footer.conditions.text" | trans | raw }}</a>
+        {# <a class="link" href="{{ "footer.legal.path" | trans }}">{{ "footer.legal.text" | trans | raw }}</a> |  #}
+        <a class="link" {{ custom_routes("footer.legal.path" | trans) }}>{{ "footer.legal.text" | trans | raw }}</a> | 
+        <a class="link" {{ custom_routes("footer.privacy.path" | trans) }}>{{ "footer.privacy.text" | trans | raw }}</a> | 
+        <a class="link" {{ custom_routes("footer.cookies.path" | trans) }}>{{ "footer.cookies.text" | trans | raw }}</a> |
+        <a class="link" {{ custom_routes("footer.conditions.path" | trans) }}>{{ "footer.conditions.text" | trans | raw }}</a>
         <div class="footer-divider"></div>
         <h6>{{ "footer.other.field1" | trans | raw }}</h6>
         <span class="d-block">{{ "footer.other.field2" | trans | raw }}</span>
