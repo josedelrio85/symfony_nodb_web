@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
 
       c2c.launchC2C(dataLead, dataLayer);
+      $('#click-to-call-popup').modal('hide');
     }
   }
 

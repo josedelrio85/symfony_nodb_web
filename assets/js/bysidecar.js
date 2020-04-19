@@ -71,9 +71,6 @@ class bysidecar {
       adeslas: null,
     };    
     this.compareObjects(obj, lead);
-    
-    // this.printOut(lead);
-    // this.printOut(urlEndPoint);
 
     this.response.showPopup(false);
 
@@ -93,7 +90,6 @@ class bysidecar {
               }
 
               // we are on time, let's show info about the call phone to the user or other stuff
-              console.log(onTime);
               if (onTime && result.smartcenter) {
                 this.response.showPopup(false);
                 this.landcom.callStateTracking(lead.phone, (state) => {
