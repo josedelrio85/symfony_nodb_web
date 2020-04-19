@@ -1,7 +1,7 @@
 {# {{dump(bullets_extra)}} #}
-<div class="container-fluid container-lg px-0">
+<div class="container-fluid container-lg p-0">
   <div class="row">
-    <div class="col-12 col-lg-8 p-0">
+    <div class="col-12">
       {% set desc = null %}
       {% if bullets_extra.desc is defined %}
         {%  set desc = bullets_extra.desc %}
@@ -17,16 +17,16 @@
           content_header: desc
         } %}
       {% endif %}
-      
-      {% if bullets_extra.title is defined %}
+
+      {% if bullets_extra.list is defined and bullets_extra.list is not empty %}
         <div class="container mb-5">
           <div class="row">
-              <div class="container-fluid">
-                <div class="container">
+              <div class="container-fluid p-0">
+                <div class="container p-0">
                   <div class="row">
-                    <div class="col-12">
-                      {% include 'components/bullet-list/bullet-list.html.twig' with { 
-                        bullet_list_items: bullets_extra.list 
+                    <div class="col-12 py-2">
+                      {% include 'components/bullet-list/bullet-list.html.twig' with {
+                        bullet_list_items: bullets_extra.list
                       } %}
                     </div>
                   </div>
