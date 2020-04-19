@@ -7,7 +7,7 @@
         </div>
         {# <a class="link" href="{{ "footer.legal.path" | trans }}">{{ "footer.legal.text" | trans | raw }}</a> |  #}
         <a class="link" {{ custom_routes("footer.legal.path" | trans) }}>{{ "footer.legal.text" | trans | raw }}</a> | 
-        <a class="link" {{ custom_routes("footer.privacy.path" | trans) }}>{{ "footer.privacy.text" | trans | raw }}</a> | 
+        <a class="link" data-toggle="modal" data-target="#c2cTermsModal">{{ "footer.privacy.text" | trans | raw }}</a> | 
         <a class="link" {{ custom_routes("footer.cookies.path" | trans) }}>{{ "footer.cookies.text" | trans | raw }}</a> |
         <a class="link" {{ custom_routes("footer.conditions.path" | trans) }}>{{ "footer.conditions.text" | trans | raw }}</a>
         <div class="footer-divider"></div>
