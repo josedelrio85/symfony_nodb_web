@@ -15,6 +15,7 @@
   <div class="container-fluid container-lg">
     <div class="row">
       <div class="col-12 col-lg-8">
+      
         {# bullet lists without description #}
         {% if bullets_extra is not empty %}
             {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
@@ -22,6 +23,15 @@
           } %}
         {% endif %}
 
+        {% if table is not empty %}
+          <div class="container-fluid">
+            <div class="container">
+              {% include 'components/product-features-table/product-features-table.html.twig' with {
+                array: null,
+              } %}
+            </div>
+          </div>
+        {% endif %}
 
         {# Dropdown + title #}
         {% if des_with_dropdown is not null %}
@@ -95,7 +105,7 @@
           {# bg_grey: true, #}
         {% endif %}
 
-        {% if table is not empty %}
+        {# {% if table is not empty %}
           <div class="container-fluid">
             <div class="container">
               {% include 'components/product-features-table/product-features-table.html.twig' with {
@@ -103,7 +113,7 @@
               } %}
             </div>
           </div>
-        {% endif %}
+        {% endif %} #}
 
       </div>
     </div>
