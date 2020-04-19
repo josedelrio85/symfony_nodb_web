@@ -65,15 +65,21 @@
             image: dropdown_last.image
           } %}
         {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid container-lg px-0">
+    <div class="row">
+      <div class="col-12 col-lg-8 px-4 bg-grey">
 
         {# Dropdown + title (faq) #}
         {% if des_with_dropdown is not null %}
           {% include 'super-components/dropdown/dropdown_faq.html.twig' with {
-            dropdown: faq
+            dropdown: faq,
+            bg_grey: true,
           } %}
           {# bg_grey: true, #}
         {% endif %}
-
 
         {% if table is not empty %}
           <div class="container-fluid">
@@ -86,6 +92,8 @@
         {% endif %}
 
       </div>
+    </div>
+  </div>
 
       {# TODO: borrar esto si Andres confirma que la tarjeta queda donde está #}
       {# <div class="col-4 d-none d-lg-block">
@@ -97,8 +105,7 @@
           </div>
         </div>
       {# </div> #}
-    </div>
-  </div>
+
   {# Hero section desktop #}
 
 {% endblock %}
