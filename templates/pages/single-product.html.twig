@@ -63,13 +63,13 @@
 
           {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
             image: dropdown_last.image
-          } %} 
+          } %}
         {% endif %}
 
         {# Dropdown + title (faq) #}
         {% if des_with_dropdown is not null %}
           {% include 'super-components/dropdown/dropdown_faq.html.twig' with {
-            dropdown: faq,
+            dropdown: faq
           } %}
           {# bg_grey: true, #}
         {% endif %}
