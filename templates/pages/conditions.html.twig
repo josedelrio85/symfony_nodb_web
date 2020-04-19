@@ -3,18 +3,19 @@
 {% block title %}{{ "conditions.title_detail" | trans }}{% endblock %}
 {% block meta_description %}<meta name="description" content="{{ "conditions.meta_description" | trans }}">{% endblock %}
 
-{% block c2cPopup %}
-{% endblock %}
+{# {% block c2cPopup %}
+{% endblock %} #}
 
 {% block body %}
-  {# {% include 'components/page-header/page-header.html.twig' with {
-    title:           "conditions.title"        | trans,
-    subtitle:        "conditions.subtitle"     | trans,
-    backgroundImage: "conditions.bg_image_top" | trans,
-  } %} #}
-  <section class="">
-  {{ "conditions.content" | trans | raw }}
-  </section>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {{ "conditions.content" | trans | raw }}
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
 
 
