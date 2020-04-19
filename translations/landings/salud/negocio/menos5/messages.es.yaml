@@ -9,7 +9,7 @@ menos5:
   minicards: # 2 minicards + title + description
     title: 'La mejor oferta en seguros médicos para pymes'
     suptitle: 'Adeslas Pymes'
-    desc: 'Elige el seguro médico que se adapta mejor a tu empresa'
+    desc: 'Descubre el seguro médico que mejor se adapta a tu empresa'
     cards:
       card1:
         top: 'Desde'
@@ -18,11 +18,11 @@ menos5:
       card2:
         top: 'Con Dental'
         middle: 'Desde 49,50 €/mes'
-        bottom: 'por trabajador'
+        bottom: 'por empleado'
   product_bullet: # 3 products with bullets + title + description
-    title: 'Un seguro a la medida de tu empresa'
+    title: 'Elige la póliza que se adapta a vuestra forma de trabajar'
     suptitle: 'Adeslas Pymes'
-    desc: 'Las mejores ofertas de seguro médico para pymes adaptadas a vuestras necesidades'
+    desc: ''
     product:
       product1:
         title: 'Adeslas Negocios'
