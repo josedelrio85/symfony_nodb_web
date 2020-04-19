@@ -23,4 +23,15 @@
             text-transform: uppercase;
         }
     }
+
+    @include media-breakpoint-up(lg) {
+        .fixed_height {
+            height: 95px;
+        }
+
+        .icon-fixed {
+            font-size: 1.4rem;
+        }
+    }
+
 }

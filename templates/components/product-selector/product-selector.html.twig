@@ -9,7 +9,7 @@
             {% for child in product %}
               {% if child is iterable %}
                 <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
-                  <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex">
+                  <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex fixed_height">
                     <h5 class="text-light m-0 name">{{child.title}}</h5>
                     <span class="icon {{child.icon}} text-light h5 mb-0"></span>
                   </div>
@@ -29,9 +29,9 @@
         {% for child in product %}
           {% if child is iterable %}  
             <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
-              <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex">
+              <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex fixed_height">
                 <h5 class="text-light m-0 name">{{child.title | raw}} </h5>
-                <span class="icon {{child.icon}} text-light h5 mb-0"></span>
+                <span class="icon {{child.icon}} text-light h5 mb-0 icon-fixed"></span>
               </div>
             </div>
           {% endif %}
