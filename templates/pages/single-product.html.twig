@@ -5,6 +5,7 @@
 {% block meta_description %}<meta name="description" content="{{ "home.meta_description" | trans }}">{% endblock %}
 
 {% block body %}
+  <input type="hidden" id="product-value" value="{{product_value}}" />
 
 
   {% include 'components/product-single-hero/product-single-hero.html.twig' with {

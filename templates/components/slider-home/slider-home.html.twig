@@ -9,7 +9,15 @@
         <div class="inner">
           <h2 class="display-4 text-header text-white">{{slide.title}}</h2>
           <p class="description text-white">{{slide.text}}</p>
-          <a class="btn btn-primary mt-2 font-weight-bold" href="{{slide.cta.path}}" role="button">{{slide.cta.text}}</a>
+          <a class="btn btn-primary mt-2 font-weight-bold" style="color:#fff;"
+          id="{{slide.cta.id}}" 
+          {% if slide.cta.path != '' %}
+            href="{{slide.cta.path}}" 
+          {% endif %}
+          {% if slide.cta.action != '' %}
+            data-action="{{slide.cta.action}}" 
+          {% endif %}
+          role="button">{{slide.cta.text}}</a>
         </div>
       </div>
       <div class="slider-bg" style="background-image:url({{ asset('build/images/'~ "#{slide.image}") }})"></div>
