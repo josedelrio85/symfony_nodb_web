@@ -1,5 +1,35 @@
-<ul class="list-group list-group-flush bullet-list">
-  {% for item in bullet_list_items %}
-    <li class="list-group-item px-0">{{ item  | raw }}</li>
-  {% endfor %}
-</ul>
+{% if bullet_list_items|length < 5 %}
+
+  <ul class="list-group list-group-flush bullet-list">
+    {% for item in bullet_list_items %}
+      <li class="list-group-item px-0">{{ item  | raw }}</li>
+    {% endfor %}
+  </ul>
+
+{% else %}
+
+  {% set array_length = bullet_list_items|length %}
+  {% set half_array_length = array_length / 2|round(0, 'ceil') %}
+  {% set half_array_1 = bullet_list_items|slice(0, half_array_length) %}
+  {% set half_array_2 = bullet_list_items|slice(half_array_length, array_length) %}
+
+  <div class="container p-0">
+    <div class="row">
+      {% for item in half_array_1 %}
+        <div class="col-12 col-md-6">
+            <ul class="list-group list-group-flush bullet-list">
+              <li class="list-group-item px-0">{{ item  | raw }}</li>
+            </ul>
+        </div>
+      {% endfor %}
+      {% for item in half_array_2 %}
+        <div class="col-12 col-md-6">
+            <ul class="list-group list-group-flush bullet-list">
+              <li class="list-group-item px-0">{{ item  | raw }}</li>
+            </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+{% endif %}
