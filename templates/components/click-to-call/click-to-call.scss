@@ -58,10 +58,6 @@
     }
 }
 
-.click-to-call--header {
-    cursor: pointer;
-}
-
 .click-to-call-desktop {
     top: 50%;
     right: 0;
@@ -96,6 +92,10 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+    }
+
+    .click-to-call--header {
+        cursor: pointer;
     }
 }
 
