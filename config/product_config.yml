@@ -1,56 +1,72 @@
 products:
   salud:
     name: 'salud'
+    title: 'Salud'
     steps: 3
     icon: 'icon-adeslas_icon_salud'
     active: true
+    suptitle: '¿Qué tipo de seguro estás buscando?'
     children:
       familia:
         name: 'familia'
+        title: 'Mí o mi familia'
         icon: 'icon-adeslas_icon_individual'
+        suptitle: 'Quiero un seguro de salud para...'
         children:
           individual:
             name: 'individual'
+            title: 'Mí'
             path: 'individual'
             icon: 'icon-adeslas_icon_individual'
           familiar:
             name: 'familiar'
+            title: 'Mi familia'
             path: 'familiar'
             icon: 'icon-adeslas_icon_famila'
           mayores:
             name: 'mayores65'
+            title: 'Mayores de 65'
             path: 'senior'
             icon: 'icon-adeslas_icon_65'
           embarazada:
             name: 'embarazadas'
+            title: 'Quiero quedarme embarazada'
             path: 'embarazadas'
             icon: 'icon-adeslas_icon_embarazadas'
       negocio:
         name: 'negocio'
+        title: 'Mi negocio'
         icon: 'icon-adeslas_icon_gran_empresa'
+        suptitle: '¿Cuantos empleados tiene tu negocio?'
         children:
           autonomo:
             name: 'autonomo'
+            title: '1, soy autónomo'
             path: 'autonomo'
             icon: 'icon-adeslas_icon_autonomos'
           menos5:
             name: 'menos5'
+            title: 'Menos de 5 empleados'
             path: 'menos5'
             icon: 'icon-adeslas_icon_-5_empleados'
           mas5:
             name: 'mas5'
+            title: 'Entre 5 y 99 empleados'
             path: 'mas5'
             icon: 'icon-adeslas_icon_5-99_empleados'
           mas100:
             name: 'mas100'
+            title: 'Más de 100 empleados'
             path: 'mas100'
             icon: 'icon-adeslas_icon_gran_empresa'
   dental:
     name: 'dental'
     steps: 2
+    title: 'Dental'
     icon: 'icon-adeslas_icon_dental'
     path: 'dental'
     active: true
+    suptitle: ''
     children:
       # cobdental:
       #   name: 'cobdental'
@@ -63,14 +79,18 @@ products:
   mascotas:
     name: 'mascotas'
     steps: 2
+    title: 'Mascotas'
     icon: 'icon-adeslas_icon_mascotas'
     path: 'mascotas'
     active: false
+    suptitle: ''
     children:
   decesos:
     name: 'decesos'
     steps: 2
+    title: 'Decesos'
     icon: 'icon-adeslas_icon_decesos'
     path: 'decesos'
     active: false
+    suptitle: ''
     children:

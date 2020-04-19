@@ -4,26 +4,34 @@ hero:
     title: 'Salud'
     text: 'El seguro médico privado más completo al precio que necesitas'
     cta:
+      id: 'cta-salud'
       text: 'Saber más'
-      path: '/algo'
+      path: ''
+      action: 'open-conf'
   slide2:
     image: adeslas_hero_large_home_slider_dental.jpg
     title: 'Dental'
     text: 'La garantía de 4.000 profesionales de la salud dental cerca de ti'
     cta:
+      id: 'cta-dental'
       text: 'Saber más'
-      path: '/algo'
+      path: '/seguros-dentales'
+      action: ''
   slide3:
     image: adeslas_hero_large_home_slider_mascotas.jpg
     title: 'Mascotas'
     text: 'La mejor protección para que tu mascota y tú viváis con tranquilidad'
     cta:
+      id: 'cta-mascotas'
       text: 'Saber más'
-      path: '/algo'
+      path: ''
+      action: 'open-c2c'
   slide4:
     image: adeslas_hero_large_home_slider_decesos.jpg
     title: 'Decesos'
     text: 'El respaldo que necesitas para los momentos más delicados'
     cta:
+      id: 'cta-decesos'
       text: 'Saber más'
-      path: '/algo'
+      path: ''
+      action: 'open-c2c'

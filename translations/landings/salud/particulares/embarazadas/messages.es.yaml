@@ -7,9 +7,9 @@ embarazadas:
     subtitle: ''
     image: 'adeslas_hero_small_landing_embarazo.png'
   minicards: # 2 minicards + title + description
-    title: 'La mejor oferta de seguros médicos para embarazo y parto'
+    title: 'La mejor oferta de seguros médicos para el embarazo y el parto'
     suptitle: 'Adeslas embarazadas'
-    desc: 'Las más completas coberturas para embarazadas a la medida de tus necesidades.'
+    desc: 'Las más completas coberturas para embarazadas y adaptadas a tus necesidades.'
     cards:
       card1:
         top: '2'

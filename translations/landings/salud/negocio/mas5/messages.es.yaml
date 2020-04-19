@@ -9,7 +9,7 @@ mas5:
   minicards: # 2 minicards + title + description
     title: 'Las ofertas de seguro médico que cubren las necesidades de tu empresa'
     suptitle: 'Adeslas Empresas'
-    desc: 'La asistencia médica más completa al mejor precio'
+    desc: 'La asistencia médica más profesional al mejor precio'
     cards:
       card1:
         top: 'Desde'

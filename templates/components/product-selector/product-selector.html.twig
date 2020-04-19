@@ -4,14 +4,17 @@
     <div  class="row">
       <div  class="container">
         {% for key, product in firstchildrens %}
+          <input type="hidden" id="fc_suptitle" value="{{product.suptitle}}" />
           <div id="fc-{{key}}" class="d-none row">
             {% for child in product %}
-              <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
-                <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex">
-                  <h5 class=" m-0 name">{{child.name}}</h5>
-                  <span class="icon {{child.icon}} text-primary h5 mb-0"></span>
+              {% if child is iterable %}
+                <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
+                  <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex fixed_height">
+                    <h5 class="text-light m-0 name">{{child.title}}</h5>
+                    <span class="icon {{child.icon}} text-light h5 mb-0"></span>
+                  </div>
                 </div>
-              </div>
+              {% endif %}
             {% endfor %}
           </div>
         {% endfor %}
@@ -21,14 +24,17 @@
 
   <div id="secondchildrens" class="d-none container">
     {% for key, product in secondChildrens %}
-      <div id="sc-{{key}}" class="d-none row">
+      <input type="hidden" id="sc_suptitle_{{key}}" value="{{product.suptitle}}" />
+        <div id="sc-{{key}}" class="d-none row">
         {% for child in product %}
-          <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
-            <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex">
-              <h5 class="m-0 name">{{child.name}}</h5>
-              <span class="icon {{child.icon}} text-primary h5 mb-0"></span>
+          {% if child is iterable %}  
+            <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
+              <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex fixed_height">
+                <h5 class="text-light m-0 name">{{child.title | raw}} </h5>
+                <span class="icon {{child.icon}} text-light h5 mb-0 icon-fixed"></span>
+              </div>
             </div>
-          </div>
+          {% endif %}
         {% endfor %}
       </div>
     {% endfor %}

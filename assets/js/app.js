@@ -217,4 +217,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     return true;
   }
+
+  ////////////////////// SLIDER ////////////////////////////////////////////
+
+  let ctas = document.querySelectorAll('*[id^="cta-"]');
+  ctas.forEach((cv, ci, listObj) => {
+    cv.addEventListener('click', (event) => {
+      let id = event.target.id;
+      console.log(id);
+      let cta = document.getElementById(id);
+      let action = cta.getAttribute('data-action');
+      switch(action) {
+        case 'open-conf':
+          // simulate a click on salud box; amazing!
+          eventFire(document.getElementById('product-salud'), 'click');
+          break;
+        case 'open-c2c':
+          $('#click-to-call-popup').modal('show');
+          closeC2C();
+          break;
+      }
+    })
+  });
 });
+
+
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
