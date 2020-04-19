@@ -1,0 +1,99 @@
+#adeslas_negocios_menos5
+negocios_menos5:
+  hero: # 1
+    title: 'Adeslas Negocios. La mejor asistencia médica para la pyme sin copagos'
+    subtitle: 'La más completa cobertura para ti y tus trabajadores'
+    images: 
+      image1: 'adeslas_hero_large_ficha_5_empleados_negocio.jpg'
+      image2: 'adeslas_hero_large_ficha_autonomos_negocio.jpg'
+  price_with_details: # 2 caja con precio y bullets
+    price:
+      pre: 'Desde'
+      quantity: '45'
+      currency: '€'
+      period: '/mes'
+    bullets:
+      bullet1:
+        text: 'Con Dental'
+        subtext: 'por 49,50 €/mes'
+      bullet2:
+        text: 'Sin Copagos'
+        subtext: 'ni sorpresas'
+    cta:
+      text: 'Llamadme'
+      path: '/path'
+  bullets: # 3 listado de bullets con titulo y supertitulo
+    suptitle: 'Coberturas Pymes'
+    title: 'El seguro más completo'
+    text: ''
+    list: 
+      - 'Programas de Prevención en Cardiología, Urología y Ginecología con revisión anual.'
+      - 'Hospitalización médica, quirúrgica, psiquiátrica, UVI, etc.'
+      - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
+      - 'Cirugía, implantes y prótesis internas.'
+      - 'Fisioterapia y podología.'
+      - 'Cobertura integral de embarazo y parto.'
+      - 'Planificación familiar (incluido DIU e implantación).'
+      - 'Tratamientos especiales (Laserterapia, tratamiento del dolor).'
+  des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
+    suptitle: 'Condiciones'
+    title: 'Un seguro privado para ir al médico sin esperas'
+    text: 'Con Adeslas Negocios tendréis acceso a la mejor sanidad privada, con asistencia ambulatoria y hospitalaria para que acudáis a un médico cuando lo necesitéis, sin listas de espera y en el horario que mejor le venga a tu pyme.'
+    drop:
+      drop1:
+        title: 'Mejor cuadro médico'
+        text: 'Adeslas Negocios te abre la puerta al mejor cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y 27 centros médicos de Adeslas Salud.'
+      drop2: 
+        title: 'Tarifa competitiva'
+        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de tus trabajadores. Desde sólo 45€/mes. Podrás pagar tu prima cada mes o si lo prefieres, beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
+      drop3:
+        title: 'Sin copagos'
+        text: 'En Adeslas Negocios te aseguras que pagarás lo mismo cada mes, sin copagos ni gastos extra, vayáis al médico cuanto vayáis y pidáis cuantas pruebas necesitéis.'
+      drop4: 
+        title: 'Sin trámites'
+        text: 'Con Adeslas Negocios podréis someteros a la mayoría de pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas. Con tu póliza recibiréis acceso al área privada para tramitarlo todo por vía telemática.'  
+      drop5:
+        title: 'Ventajas fiscales'
+        text: 'Ofrecer un seguro privado a tus trabajadores es una muy buena forma de fidelizar y hacer equipo y con ventajas fiscales para ambas partes.'
+      drop6:
+        title: 'Dental con descuento'
+        text: 'La tarifa de seguro dental para pymes es de 6 €/mes. Ahora sin embargo, te ofrecemos un descuento y podréis disfrutar de ambas coberturas por 49,50 €/mes.'  
+  desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
+    image: image.png
+  desc: # 6 titulo + descripcion
+    title: '¿Quieres recibir asistencia en la Clínica Universitaria de Navarra?'
+    text: 'Además de todas las coberturas incluidas en Adeslas Negocios, puedes contratar nuestro módulo complementario Plus Clínica Universitaria de Navarra.'
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
+    suptitle: 'Ventajas Negocios'
+    title: 'El servicio de la compañía líder a vuestra disposición'
+    text: ''
+    image: image.png
+    drop:
+      drop1:
+        title: '¿Para quién es Adeslas Negocios?'
+        text: 'Adeslas Negocios está pensado para pymes de menos de 5 trabajadores que buscan una buena asistencia sanitaria, rápida y sin horarios limitados para sus trabajadores y quieren asegurarse de no hacer frente a pagos extra si necesitan atención. Con Adeslas Negocios disfrutaréis de Adeslas Es Más, un servicio exclusivo.'
+      drop2:
+        title: '¿Hay límite de edad para contratar Adeslas Negocios?'
+        text: 'Adeslas Negocios se puede contratar hasta los 67 años, pero puede incluirse un asegurado de entre 67 y 70 si en la misma póliza hay tres asegurados de menos de 60 años.' 
+      drop3: 
+        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        text: 'Adeslas Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos especializados como las cirugías están sujetos a un periodo de carencia de 10 meses.'
+      drop4:
+        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
+        text: 'Si contratas Adeslas Negocios con Dental, tendrás las dos coberturas por 49,50€/mes por asegurado.'   
+  faq:    # 8 FAQ'S solo si no va en particulares
+    suptitle: 'FAQ''s'
+    title: Términos de interés'
+    elems:
+      faq1:
+        title: 'Copagos'
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos de un seguro. Adeslas Negocios no tiene copagos.'
+      faq2:
+        title: 'Cuestionario Médico'
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida o antecedentes médicos, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Negocios está sujeto a cuestionario médico previo.'
+      faq3: 
+        title: 'Carencias'
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura. En Adeslas Negocios existen carencias para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
+      faq4: 
+        title: 'Póliza y prima'
+        text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia. En Adeslas te ofrecemos total transparencia. La prima es la cuota que pagarás por tu seguro y que tendrás clara desde el primer día.'

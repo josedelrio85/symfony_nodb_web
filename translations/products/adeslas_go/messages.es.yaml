@@ -23,7 +23,7 @@ go:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    suptitle: 'Adeslas GO'
+    suptitle: 'Coberturas Adeslas GO'
     title: 'Acceso a los mejores especialistas cuando y como quieras'
     list:
       - 'Chequeo médico anual'
@@ -71,7 +71,7 @@ go:
     drop:
       drop1:
         title: '¿Para quién es Adeslas GO?'
-        text: 'Para personas o familias que deseen disfrutar de las comodidades de un seguro médico privado con asistencia ambulatoria, sin hospitalización, y al mejor precio. Personas que quieren tener un control de su estado de salud y acudan a algún especialista al año.'
+        text: 'Para personas o familias que deseen disfrutar de las comodidades de un seguro médico privado con asistencia ambulatoria, sin hospitalización, y al mejor precio. Personas que quieren tener un control de su estado de salud y acuden a algún especialista al año.'
       drop2:
         title: '¿Hay límite de edad para contratar Adeslas GO?'
         text: 'Adeslas GO se puede contratar hasta los 70 años, aunque puede incluirse a personas de más edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.'
@@ -90,99 +90,70 @@ go:
     elems:
       faq1:
         title: '¿Qué es un copago?'
-        text: 'Es un complemento que pagas cada vez que recurres a algunos actos médicos cubiertos en tu seguro y están concebidos para reducir las primas mensuales. En Adeslas GO los 3 primeros copagos de hasta 16 euros de cada año serán gratuitos y reduciremos un 25% el precio de todos a partir de tu segundo año. Pero vayas lo que vayas al médico, si tienes menos de 55 años, nunca pagarás más de 260 euros al año en copagos.'
+        text: 'Es un complemento que pagas cada vez que recurres a algunos actos médicos cubiertos en tu seguro y están concebidos para reducir las primas mensuales. En Adeslas GO los 3 primeros copagos de hasta 16 € de cada año serán gratuitos y reduciremos un 25% el precio de todos a partir de tu segundo año. Pero vayas lo que vayas al médico, si tienes menos de 55 años, nunca pagarás más de 260 euros al año en copagos.'
       faq2:
         title: '¿Qué es el test médico previo?'
-        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía recaba datos del paciente, como estilo de vida, antecedentes médicos, etc., e influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas GO no necesitas cubrir este test para contratar.'
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía recaba datos del paciente, como estilo de vida, antecedentes médicos, etc., que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas GO no necesitas cubrir este test para contratar.'
       faq3:
         title: '¿Qué son las carencias?'
-        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura. En Adeslas GO existen carencias de 3 meses para pruebas diagnósticas de alta tecnología.'
+        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura desde la contratación del seguro. En Adeslas GO existen carencias de 3 meses para pruebas diagnósticas de alta tecnología.'
       faq4:
         title: '¿Qué es la póliza? ¿Y la prima?'
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
-  # extra:
-  #   table:
-  #     column1:
-  #       title: 'De 18 a 30 años'
-  #       rows:
-  #         - 'Historia clínica y exploración general'
-  #         - 'Analítica'
-  #         - 'Electrocardiograma'
-  #         - 'Radiografía del tórax'
-  #         - 'Examen ginecológico con citología vaginal'
-  #         - 'Agudeza visual, audiometría y espirometría '
-  #         - 'Ecografía mamaria y mamografía'
-  #         - 'Ecografía abdominal'
-          
-  #     column2:
-  #       title: 'De 31 a 45 años'
-  #       rows:
-  #         - 'Historia clínica y exploración general'
-  #         - 'Analítica'
-  #         - 'Electrocardiograma'
-  #         - 'Radiografía del tórax'
-  #         - 'Examen ginecológico con citología vaginal'
-  #         - 'Agudeza visual, audiometría y espirometría '
-  #         - 'Ecografía mamaria y mamografía'
-  #         - 'Ecografía abdominal'
-  #         - 'Analítica por estudio de PSA (próstata), HDL, fosfatasa alcalina y hemorragias ocultas'
-  #         - 'Ecografía ginecológica'
-  #         - 'Ecografía prostática'
-  #         - ''
-  #     column3:
-  #       title: 'Desde 46 años'
-  #       rows:
-  #         - 'Historia clínica y exploración general'
-  #         - 'Analítica'
-  #         - 'Electrocardiograma'
-  #         - 'Radiografía del tórax'
-  #         - 'Examen ginecológico con citología vaginal'
-  #         - 'Agudeza visual, audiometría y espirometría '
-  #         - 'Ecografía mamaria y mamografía'
-  #         - 'Ecografía abdominal'
-  #         - 'Analítica por estudio de PSA (próstata), HDL, fosfatasa alcalina y hemorragias ocultas'
-  #         - 'Ecografía ginecológica'
-  #         - 'Ecografía prostática'
-  #     columns:
-  #       column1:
-  #         title: '18 a 30 <br/>años'
-  #         values:
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - false
-  #           - false
-  #           - false
-  #           - false
-  #           - false       
-  #       column2:
-  #         title: '31 a 45 <br/>años'
-  #         values:
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - false
-  #           - false
-  #           - false
-  #       column3:
-  #         title: '+46 <br/>años'
-  #         values:
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
-  #           - true
+  extra:
+    table:
+      rows:
+          - 'Historia clínica y exploración general'
+          - 'Analítica'
+          - 'Electrocardiograma'
+          - 'Radiografía del tórax'
+          - 'Examen ginecológico con citología vaginal'
+          - 'Agudeza visual, audiometría y espirometría '
+          - 'Ecografía mamaria y mamografía'
+          - 'Ecografía abdominal'
+          - 'Analítica por estudio de PSA (próstata), HDL, fosfatasa alcalina y hemorragias ocultas'
+          - 'Ecografía ginecológica'
+          - 'Ecografía prostática'
+      columns:
+        column1:
+          title: '18 a 30 <br/>años'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - false
+            - false
+            - false
+            - false
+            - false       
+        column2:
+          title: '31 a 45 <br/>años'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - false
+            - false
+            - false
+        column3:
+          title: '+46 <br/>años'
+          values:
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true
+            - true

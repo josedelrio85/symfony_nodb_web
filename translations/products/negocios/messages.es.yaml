@@ -31,7 +31,7 @@ negocios:
       - 'Hospitalización médica, quirúrgica, psiquiátrica, UVI, etc.'
       - 'Cirugía (General, Maxilofacial, Plástica Reparadora, Vascular).'
       - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
-      - 'Fisioterapia y podología'
+      - 'Fisioterapia y podología.'
       - 'Implantes y prótesis (internas).' 
       - 'Cobertura de embarazo y parto.'
       - 'Planificación familiar (incluido DIU e implantación).'
@@ -62,7 +62,7 @@ negocios:
     image: image.png
   desc: # 6 titulo + descripcion
     title: 'Completa tu seguro con cobertura por incapacidad temporal con un 30% de descuento'
-    text: 'Además de todas las coberturas incluidas en Adeslas Negocios, puedes contratar nuestro módulo complementario de Incapacidad Temporal para hacer frente a una baja, ahora ¡Con un 30% de descuento!. También puedes acceder a los módulos Plus Ginecología y Pediatría y Plus Clínica Universitaria de Navarra.'
+    text: 'Además de todas las coberturas incluidas en Adeslas Negocios, puedes contratar nuestro módulo complementario de Incapacidad Temporal para hacer frente a una baja, ahora, ¡con un 30% de descuento!. También puedes acceder a los módulos Plus Ginecología y Pediatría y Plus Clínica Universitaria de Navarra.'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
     suptitle: 'Ventajas Negocios'
     title: 'Asistencia médica de calidad en el horario que necesitas'
@@ -83,7 +83,7 @@ negocios:
         text: 'Si contratas un seguro dental a la vez que Adeslas Negocios, tendrás dos meses gratis. Generaremos dos pólizas distintas aplicando las bonificaciones a la contratación de ambas. El precio de tu seguro dental dependerá de cuántos beneficiarios tenga esa póliza. Desde 10,50€/mes con un asegurado hasta 25 €/mes con 5 o 6.'
       drop5:
         title: '¿Hay límite de edad para contratar Adeslas Negocios?'
-        text: 'Adeslas Negocios se puede contratar hasta los 70 años'   
+        text: 'Adeslas Negocios se puede contratar hasta los 70 años.'   
   faq:    # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
@@ -96,7 +96,7 @@ negocios:
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida o antecedentes médicos, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Negocios está sujeto a cuestionario médico previo.'
       faq3: 
         title: 'Carencias'
-        text: 'Son los períodos de espera para disfrutar de una determinada cobertura. En Adeslas Negocios existen carencias para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura a partir de la contratación. En Adeslas Negocios existen carencias para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
       faq4: 
         title: 'Póliza y prima'
         text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia. En Adeslas te ofrecemos total transparencia. La prima es la cuota que pagarás por tu seguro y que tendrás clara desde el primer día.'

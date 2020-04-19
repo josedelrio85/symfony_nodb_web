@@ -29,9 +29,17 @@ class ProductController extends AbstractController {
     $previous = $this->getPrevious();
     $img = null;
 
-    // dump($previous);
-    // dump($hero); 
-    // dump($productid); 
+    if ($previous === '/seguros-salud-empresa') {
+      $productid = 'negocios_menos5';
+    }
+
+    if ($previous === '/seguros-salud-empresa') {
+      $productid = 'negocios_extra_menos5';
+    }
+
+    dump($previous);
+    dump($hero); 
+    // dump($productid); die();
     // dump($request->getUri());
     
     // dump(parse_url($this->request->headers->get('referer'), PHP_URL_PATH));
@@ -86,7 +94,9 @@ class ProductController extends AbstractController {
           $img = 'image1';
         break;
         case 'negocios':
+        case 'negocios_menos5':
         case 'negocios_extra':
+        case 'negocios_extra_menos5':
           switch($previous) {
             case '/seguros-salud-empresa':
               $img = 'image1';
@@ -110,6 +120,7 @@ class ProductController extends AbstractController {
         default:
           $img = 'image1';
       }
+      // dump($img);die();
       if(is_null($img)){
         $img = "image1";
       }

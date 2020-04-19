@@ -29,13 +29,12 @@ plena_extra:
     list:
       - 'Planes de Prevención en Pediatría, Ginecología, Cardiología o Urología.'
       - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
+      - 'Hospitalización en habitación individual con cama para el acompañante.'
       - 'Cirugía, implantes y prótesis internas.'
       - 'Asistencia global a embarazo, parto y posparto.'
       - 'Asistencia para trasplantes.'
       - 'Tratamientos especiales.'
       - 'Pruebas diagnósticas, incluidas de alta tecnología.'
-      - 'Acelerador lineal de partículas.'
-      - 'Cirugía Quimioterápica.'
       - 'Litotricia Renal y diálisis.'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Condiciones Extra'
@@ -56,7 +55,7 @@ plena_extra:
         text: 'En Adeslas Plena Extra pagarás lo mismo cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'
       drop4:
         title: 'Pruebas sin autorización'
-        text: 'Con Adeslas Plena Extra, podrás someterte a la mayoría de pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas, una vez cumplido el periodo de carencia.'
+        text: 'Con Adeslas Plena Extra podrás someterte a la mayoría de pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas, una vez cumplido el periodo de carencia.'
       drop5:
         title: 'Pago mensual y descuentos'
         text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'

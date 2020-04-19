@@ -25,23 +25,23 @@ senior:
     suptitle: 'Coberturas Sénior'
     title: 'Amplio catálogo de servicios'
     list:
-      - 'Medicina General y Especialidades'
-      - 'Urgencias y atención hospitalaria en habitación individual'
-      - 'Atención médica y de enfermería a domicilio'
-      - 'Planes de prevención en cardiología, ginecología y urología'
-      - 'Pruebas diagnósticas de alta tecnología'
-      - 'Prótesis internas y prótesis quirúrgicas'
-      - 'Trasplantes de córnea y autotrasplantes de médula'
-      - 'Tratamiento del dolor'
-      - 'Ondas de Choque para Calcificaciones Musculotendinosas'
+      - 'Medicina General y Especialidades.'
+      - 'Urgencias y atención hospitalaria en habitación individual.'
+      - 'Atención médica y de enfermería a domicilio.'
+      - 'Planes de prevención en cardiología, ginecología y urología.'
+      - 'Pruebas diagnósticas de alta tecnología.'
+      - 'Prótesis internas y prótesis quirúrgicas.'
+      - 'Trasplantes de córnea y autotrasplantes de médula.'
+      - 'Tratamiento del dolor.'
+      - 'Ondas de Choque para Calcificaciones Musculotendinosas.'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Condiciones Sénior'
     title: 'Un asesor personal de salud para cuidarte'
-    text: 'Adeslas Seniors es el único seguro diseñado para mayores de 65 años del mercado, con una atención personalizada, amplias coberturas, adaptadas a tu edad y con copagos limitados. Desde el primer día tendrás un Asesor Personal en Salud, que diseñará un plan de acción personalizado para evaluar tu estado de salud y asesorará para asegurarte la mejor atención con especialistas.'
+    text: 'Adeslas Seniors es el único seguro diseñado para mayores de 65 años del mercado, con una atención personalizada, amplias coberturas, adaptadas a tu edad y con copagos limitados. Desde el primer día tendrás un Asesor Personal en Salud, que diseñará un plan de acción personalizado para evaluar tu estado de salud y te asesorará para asegurarte la mejor atención con especialistas.'
     drop:
       drop1:
         title: 'Amplia cartera de servicios'
-        text: 'Con Adeslas Seniors accederás a planes de prevención y de seguimiento dirigidos por tu Asesor Personal de Salud para aprovechar el mejor cuadro médico, con 43.000 profesionales de la sanidad privada sin apenas copagos'
+        text: 'Con Adeslas Seniors accederás a planes de prevención y de seguimiento dirigidos por tu Asesor Personal de Salud para aprovechar el mejor cuadro médico sin apenas copagos'
       drop2:
         title: 'Descuentos'
         text: 'Tendrás una atención médica adecuada a tu edad con coberturas Adeslas desde 60 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 3 o más asegurados. Y si quieres un seguro Dental, tendrás un 15% de  descuento.'
@@ -93,7 +93,7 @@ senior:
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cada vez que utilizas alguno de los servicios médicos de tu seguro. En Adeslas Sénior el esquema de copagos depende de si acudes al médico por indicación de tu Asesor Personal en Salud, con copagos ambulatorios reducidos y que nunca superarán los 260 €/año. Si amplías tu cuadro médico, pagarás copagos estándar. Por la asistencia hospitalaria, pagarás un máximo de 700€/año en el cuadro Adeslas y 2.000€ con otro proveedor.'
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los servicios médicos de tu seguro. En Adeslas Seniors el esquema de copagos depende de si acudes al médico por indicación de tu Asesor Personal en Salud, con copagos ambulatorios reducidos y que nunca superarán los 260 €/año. Si amplías tu cuadro médico, pagarás copagos estándar. Por la asistencia hospitalaria, pagarás un máximo de 700€/año en el cuadro Adeslas y 2.000€ con otro proveedor.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Seniors está sujeto a cuestionario médico previo.'

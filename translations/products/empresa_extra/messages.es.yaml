@@ -23,33 +23,33 @@ empresa_extra:
     suptitle: 'Coberturas'
     title: 'Atención extra'
     list: 
-      - 'Atención ambulatoria y Hospitalización'
+      - 'Atención ambulatoria y Hospitalización.'
       - 'Cirugía, implantes y prótesis internas.'
       - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
       - 'Tratamientos especiales (Laserterapia, tratamiento del dolor, etc).'
       - 'Fisioterapia y rehabilitación.'
-      - 'Planes de prevención en Cardiología, Obstetricia y Ginecología o Urología.'
+      - 'Planes de prevención en Cardiología, Ginecología o Urología.'
       - 'Cobertura completa de embarazo y parto.'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Condiciones extraordinarias'
     title: 'El seguro privado más completo y flexible'
-    text: 'Adeslas Extra Empresas es el seguro médico privado más flexible. Podrás elegir entre la cobertura del cuadro médico Adeslas, el mejor y más amplio, o elegir al profesional que desees en España y en cualquier país del mundo al que viajéis. También podréis combinar ambos y cubrir a una parte de la plantilla con el cuadro médico y reservar la libre elección para aquellos que viajen. '
+    text: 'Adeslas Extra Empresas es el seguro médico privado más flexible. Podréis elegir entre la cobertura del cuadro médico Adeslas, el mejor y más amplio, o elegir al profesional que deseéis en España y en cualquier país del mundo al que viajéis. También podréis combinar ambos y cubrir a una parte de los empleados con el cuadro médico y reservar la libre elección para aquellos que viajen. '
     drop:
       drop1:
         title: 'Total flexibilidad'
         text: 'Este es el seguro ideal para empleados que viajan menudo por negocios y necesitan protección. En Adeslas tendréis el mejor cuadro médico Adeslas, con más de 43.000 profesionales'
       drop2:
         title: 'Una póliza, 3 modelos'
-        text: 'Si deseais elegir a vuestro médico, os reembolsaremos el 80% de la factura. También podéis combinar el cuadro médico y la libre elección en una misma atención. '
+        text: 'Si deseáis elegir a vuestro médico, os reembolsaremos el 80% de la factura. También podéis combinar el cuadro médico y la libre elección en una misma atención. '
       drop3:
         title: 'Descuentos'
-        text: 'Con Adeslas Extra Empresas tendréis la mejor tarifa. Si contratáis también seguro dental sólo pagarás 68€/mes por asegurado. Puedes pagar tu prima al mes o lograr descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
+        text: 'Con Adeslas Extra Empresas tendréis la mejor tarifa. Si contratáis también seguro dental sólo pagaréis 68€/mes por asegurado. Podéis pagar vuestra prima al mes o lograr descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
       drop4:
         title: 'Sin Copagos'
-        text: 'En Adeslas Extra Negocios la prima será igual cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'      
+        text: 'En Adeslas Extra Empresas la prima será igual cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'      
       drop5: 
-        title:  beneficios fiscales'
-        text: 'Puedes escoger 2 esquemas con ventajas fiscales para ambas partes: Adhesión Obligatoria, y que la empresa asuma todo el coste de la póliza o la Adhesión Voluntaria, en la que tu empresa cubre parte del coste.' 
+        title: 'Beneficios fiscales'
+        text: 'Podéis escoger 2 esquemas con ventajas fiscales para ambas partes: Adhesión Obligatoria, y que la empresa asuma todo el coste de la póliza o la Adhesión Voluntaria, en la que la empresa cubre parte del coste.' 
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
     image: ''
   desc: # 6 titulo + descripcion
@@ -65,20 +65,17 @@ empresa_extra:
         title: '¿Para quién es Adeslas Extra Empresas?'
         text: 'Adeslas Extra Empresas está pensado para empresas de entre 5 y 99 trabajadores que buscan una atención de máxima calidad y absoluta confianza para su equipo en cualquier parte del mundo.'
       drop2:
-        title: '¿Para quién es Adeslas Extra Empresas?'
-        text: 'Adeslas Extra Empresas está pensado para empresas de entre 5 y 99 trabajadores que buscan una atención de máxima calidad y absoluta confianza para su equipo en cualquier parte del mundo.'
-      drop3:
         title: '¿Hay límite de edad para contratar Adeslas Extra Empresas?'
         text: 'Adeslas Extra Empresas se puede contratar hasta los 67 años, pero puede incluirse un asegurado que supere esa edad si en la misma póliza hay tres asegurados de menos de 60 años.'
-      drop4:
+      drop3:
         title: '¿Es necesario un cuestionario médico para los asegurados de Adeslas Empresas?'
-        text: 'Sí, salvo que el número de asegurados supere los 50 con el sistema de Adhesión Obligatoria y de 75 en Adhesión Voluntaria.'
-      drop5:
+        text: 'Sí, salvo que el número de asegurados supere los 50 con el sistema de Adhesión Obligatoria y los 75 en Adhesión Voluntaria.'
+      drop4:
         title: '¿Existen límites económicos para Adeslas Extra Empresas?'
-        text: 'Adeslas Extra Empresas tiene límites a los gastos cubiertos por reembolso hasta un total de 150.000 euros y límites parciales de los que te informaremos cuando quieras.'    
-      drop6: 
+        text: 'Adeslas Extra Empresas tiene límites a los gastos cubiertos por reembolso hasta un total de 150.000 € y límites parciales de los que te informaremos cuando quieras.'    
+      drop5: 
         title: '¿Pueden incluirse hijos y cónyuges?'
-        text:  'Adeslas Extra Empresas permite el acceso de familiares de empleados a la póliza en condiciones ventajosas'
+        text:  'Adeslas Extra Empresas permite el acceso de familiares de empleados a la póliza en condiciones ventajosas.'
   faq:    # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
@@ -91,4 +88,4 @@ empresa_extra:
          text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Extra Empresas está sujeto a cuestionario médico previo con excepciones a partir de 50 asegurados.'
       faq3:
          title: 'Carencias'
-         text: 'Son los períodos de espera para disfrutar de una determinada cobertura. En Adeslas Extra Empresas existen carencias para tratamientos que impliquen hospitalización, pero quedarán sin efecto si sois más de 12 asegurados.'
+         text: 'Son los períodos de espera para disfrutar de una determinada cobertura, a partir de la contratación. En Adeslas Extra Empresas existen carencias para tratamientos que impliquen hospitalización, pero quedarán sin efecto si sois más de 12 asegurados.'

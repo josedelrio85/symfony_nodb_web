@@ -26,42 +26,42 @@ plena:
     suptitle: 'Adeslas Plena'
     title: 'Cobertura global'
     list: 
-      - 'Medicina Preventiva en Pediatría, Ginecología, Cardiología o Urología'
-      - 'Cobertura total de embarazo y parto'
+      - 'Medicina Preventiva en Pediatría, Ginecología, Cardiología o Urología.'
+      - 'Cobertura total de embarazo y parto.'
       - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
-      - 'Cirugía, implantes y prótesis internas'
-      - 'Fisioterapia y podología bajo reembolso de gastos'
-      - 'Planificación familiar (incl. DIU e implantación)'
-      - 'Tratamientos especiales'
+      - 'Cirugía, implantes y prótesis internas.'
+      - 'Fisioterapia y podología bajo reembolso de gastos.'
+      - 'Planificación familiar (incl. DIU e implantación).'
+      - 'Tratamientos especiales.'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: 'Condiciones Plena'
     text: ''
     drop:
       drop1:
-        text: 'Cuidado integral'
-        title: 'Adeslas Plena es el seguro privado de salud que te garantiza la asistencia ambulatoria con acceso a todas las especialidades y la atención hospitalaria en habitación individual con cama para el acompañante.'
+        title: 'Cuidado integral'
+        text: 'Adeslas Plena es el seguro privado de salud que te garantiza la asistencia ambulatoria con acceso a todas las especialidades y la atención hospitalaria en habitación individual con cama para el acompañante.'
       drop2:
-        text: 'Tarifa'
-        title: 'Adeslas Plena ofrece un amplias coberturas desde 45 €/mes, y a partir de 4 asegurados tendrás un descuento del 10% por persona. Y si lo contratas con Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
+        title: 'Tarifa'
+        text: 'Adeslas Plena ofrece un amplias coberturas desde 45 €/mes, y a partir de 4 asegurados tendrás un descuento del 10% por persona. Y si lo contratas con Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
       drop3:
-        text: 'Copagos reducidos'
-        title: 'En Adeslas Plena los copagos por acceder a algunos servicios son reducidos, de una media de 4,5€'
+        title: 'Copagos reducidos'
+        text: 'En Adeslas Plena los copagos por acceder a algunos servicios son reducidos, de una media de 4,5€'
       drop4:
-        text: 'Pago mensual y descuentos'
-        title: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte del descuento por pago trimestral (2%), semestral (4%) o anual (6%).'
+        title: 'Pago mensual y descuentos'
+        text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte del descuento por pago trimestral (2%), semestral (4%) o anual (6%).'
       drop5:
-        text: 'Pruebas sin autorización'
-        title: 'Con Adeslas Plena, podrás someterte a pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas'
+        title: 'Pruebas sin autorización'
+        text: 'Con Adeslas Plena, podrás someterte a pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
-    text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena:'
+    text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena.'
     list:
     image: image.png
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
-    text: 'Puedes añadir a tu seguro mejoras con nuestro módulo complementario Plus Ginecología y Pediatría con un reembolso del 80% del coste. ¡Y también Plus Clínica Universitaria de Navarra!.'
+    text: 'Puedes añadir a tu seguro mejoras con nuestro módulo complementario Plus Ginecología y Pediatría con un reembolso del 80% del coste. ¡Y también el Plus Clínica Universitaria de Navarra!'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: 'Un seguro médico completo para toda la familia'
@@ -81,15 +81,12 @@ plena:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
         text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar sólo 3,55€/mes por persona.'
       drop5: 
-        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
+        title: '¿Puedo contratar Adeslas Plena si no tengo DNI o NIE?'
         text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'
       drop6:
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
         text: 'Adeslas Plena permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia: De los 3 meses, para pruebas diagnósticas de la más alta tecnología y hasta los 10 meses, para cirugías y hospitalizaciones, como el parto.'
       drop7:
-        title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar sólo 3,55€/mes por persona.'
-      drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: 'Los seguros de Adeslas Plena están cubiertos con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
   faq: # 8 FAQ'S solo si no va en particulares
@@ -101,7 +98,7 @@ plena:
         text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos del seguro. Con Adeslas Plena los copagos tienen un precio reducido, de una media de 5,50 euros'
       faq2:
         title: 'Cuestionario Médico'
-        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos,etc. e influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena está sujeto a cuestionario médico previo.'
+        text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos,etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena está sujeto a cuestionario médico previo.'
       faq3:
         title: 'Carencias'
         text: 'Es el período en el que todavía no se puede disfrutar de la cobertura tras la contratación. En Adeslas Plena están definidas, pero quedan sin efecto en caso de accidente o urgencia vital.'

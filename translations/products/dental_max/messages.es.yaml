@@ -63,7 +63,7 @@ dental_max:
         title: '¿Hay límite de edad para contratar Adeslas Dental MAX?'
         text: 'No. Adeslas Dental Max está pensado para las familias pero no hay límite de edad para los asegurados, incluso si es un niño, siempre que el tomador del seguro sea una persona mayor de 18 años.'
       drop3:
-        title: '¿¿Y si quiero asegurar a mi familia? ¿Hay límite de asegurados?'
+        title: '¿Y si quiero asegurar a mi familia? ¿Hay límite de asegurados?'
         text: 'No, puedes incluir en la misma póliza a 6 asegurados sin límite de edad.'
       drop4:
         title: '¿Qué me ofrece Dental MAX si necesito un tratamiento especial?'
@@ -86,9 +86,9 @@ dental_max:
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas Dental MAX no necesitas cubrir este test para contratar.'    
       faq4:
         title: '¿Qué son las carencias?'
-        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura. En Adeslas DENTAL MAX todas tus coberturas están claras desde el principio, sin carencias. Durante el primer año tendrás derecho a hasta 38 tratamientos sin coste añadido. Con tu primera renovación, accederás a un total de 48 servicios incluidos y en el tercer año tendrás 49 actos cubiertos.'
+        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura a partir de la contratación. En Adeslas DENTAL MAX todas tus coberturas están claras desde el principio, sin carencias. Durante el primer año tendrás derecho a hasta 38 tratamientos sin coste añadido. Con tu primera renovación, accederás a un total de 48 servicios incluidos y en el tercer año tendrás 49 actos cubiertos.'
       faq5:
-        title: '¿Qué es la Póliza? ¿Y la prima?'
+        title: '¿Qué es la póliza? ¿Y la prima?'
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas Dental MAX te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
   extra:
     table:
