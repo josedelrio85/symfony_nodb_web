@@ -11,10 +11,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let backvalue = null;
   let totalsteps = null;
   let actualsteps = 1;
+  let titlesection = document.querySelector('.product-config .text-header');
+  let previoustext = null;
 
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
+
+      titlesection.innerHTML = document.getElementById('fc_suptitle').value;
       
       fullScreenConfig.classList.add('active');
 
@@ -30,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         id = event.target.id;
       }
-      console.log(id);
+      // console.log(id);
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
@@ -68,7 +72,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         idfc = event.target.id;
       }
-      
+      // console.log(idfc);
+
+      // get the suptitle value for this fc and set it. also remember the previous title
+      let suptitle = document.getElementById('sc_suptitle_' + idfc).value;
+      previoustext = titlesection.innerHTML;
+      titlesection.innerHTML = suptitle;
+
       // if element has href attribute let's navigate
       let element = document.getElementById(idfc);
       if (element.getAttribute('href') !== null) {
@@ -145,6 +155,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       return
     }
     // console.log(backvalue);
+
+    // set the previous suptitle
+    let titlesection = document.querySelector('.product-config .text-header');
+    titlesection.innerHTML = previoustext;
 
     if (backvalue.includes('sc-')){
       // back to firstchildren, hide secondchildren

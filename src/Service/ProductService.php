@@ -32,6 +32,7 @@ class ProductService {
         $output[$el['name']]['name'] = $el['name'];
         $output[$el['name']]['steps'] = $el['steps'];
         $output[$el['name']]['icon'] = $el['icon'];
+        $output[$el['name']]['title'] = $el['title'];
         if(array_key_exists('path', $el)){
           $output[$el['name']]['path'] = $el['path'];
         }
@@ -45,11 +46,14 @@ class ProductService {
     $elements = $this->productConfig['products'];
     $output = [];
     foreach($elements as $el) {
+      $suptitle = $el['suptitle'];
       if(!is_null($el['children'])){
         foreach($el['children'] as $ch) {
-          // $output[$el['name']][] = $ch['name'];
+          $output[$el['name']]['suptitle'] = $suptitle;
+
           $output[$el['name']][$ch['name']]['name'] = $ch['name'];
           $output[$el['name']][$ch['name']]['icon'] = $ch['icon'];
+          $output[$el['name']][$ch['name']]['title'] = $ch['title'];
           if(array_key_exists('path', $ch)){
             $output[$el['name']][$ch['name']]['path'] = $ch['path'];
           }
@@ -65,12 +69,16 @@ class ProductService {
     foreach($elements as $el) {
       if(!is_null($el['children'])){
         foreach($el['children'] as $ch) {
+          $suptitle = $ch['suptitle'];
+
           if(!is_null($ch['children'])){
             foreach($ch['children'] as $r){
-              // $output[$ch['name']][] = $r['name'];
+              $output[$ch['name']]['suptitle'] = $suptitle;
+
               $output[$ch['name']][$r['name']]['name'] = $r['name'];
               $output[$ch['name']][$r['name']]['path'] = $r['path'];
               $output[$ch['name']][$r['name']]['icon'] = $r['icon'];
+              $output[$ch['name']][$r['name']]['title'] = $r['title'];
             }
           }
         }
