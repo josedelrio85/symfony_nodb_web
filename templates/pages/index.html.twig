@@ -12,7 +12,7 @@
     } %}
   </div>
 
-  <div class="container-fluid p-5 fade-in">
+  <div class="container-fluid py-5 fade-in">
     <div class="container">
       {% include 'components/configurator/configurator.html.twig' with {} %}
     </div>
@@ -22,11 +22,22 @@
       {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 3, padding_x: 0} %}
   </div>
 
-  <div class="container-fluid py-5 feature-cards-container mb-n5 fade-in" style="background-image: url({{ asset('build/images/adeslas_back_services_home.jpg') }})">
+  <div class="container-fluid py-5 feature-cards-container mb-n5 fade-in">
       {% include 'components/feature-cards/feature-cards.html.twig' with {
         cards: cards,
       } %}
   </div>
+
+  <div class="container-fluid py-5 feature-cards-container mb-n5 fade-in">
+      <div class="container pdf-section">
+        <div class="col-12">
+          <div class="row-bg"></div>
+        </div>
+      </div>
+  </div>
+
+
+
 {% endblock %}
 
 {% block javascripts %}

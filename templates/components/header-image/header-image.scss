@@ -1,3 +1,15 @@
 #header-image {
+
+    .row-bg {
+        height: 130px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include media-breakpoint-up(md) {
+            height: 360px;
+        }
+
+    }
   
 }
