@@ -7,9 +7,9 @@
           <div id="fc-{{key}}" class="d-none row">
             {% for child in product %}
               <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
-                <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex">
-                  <h5 class="text-light m-0 name">{{child.name}}</h5>
-                  <span class="icon {{child.icon}} text-light h5 mb-0"></span>
+                <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex">
+                  <h5 class=" m-0 name">{{child.name}}</h5>
+                  <span class="icon {{child.icon}} text-primary h5 mb-0"></span>
                 </div>
               </div>
             {% endfor %}
@@ -24,9 +24,9 @@
       <div id="sc-{{key}}" class="d-none row">
         {% for child in product %}
           <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" {% if child.path is defined %} href="{{ path(child.path) }}" {% endif %}>
-            <div class="inner justify-content-between bg-primary align-items-center p-4 mb-3 d-flex">
-              <h5 class="text-light m-0 name">{{child.name}}</h5>
-              <span class="icon {{child.icon}} text-light h5 mb-0"></span>
+            <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex">
+              <h5 class="m-0 name">{{child.name}}</h5>
+              <span class="icon {{child.icon}} text-primary h5 mb-0"></span>
             </div>
           </div>
         {% endfor %}

@@ -29,7 +29,11 @@
         height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center right;
+        background-position: 65%;
+
+        @include media-breakpoint-up(md) {
+            background-position: center right;
+        }
 
         &:before {
             content: '';
