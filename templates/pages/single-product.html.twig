@@ -78,7 +78,7 @@
         {% endif %}
       </div>
       <div class="col-4 d-none d-lg-block">
-        <div id="pincard">
+        <div id="pincard" style="width: 100%;">
           {% include 'components/product-single-card/product-single-card.html.twig' with {
             price_pre: "#{product}.price_with_details.price.pre" | trans | raw,
             price_quantity: "#{product}.price_with_details.price.quantity" | trans | raw,
