@@ -1,5 +1,5 @@
 .footer {
-    padding: 3rem .5rem;
+    padding: 3rem .5rem 6rem .5rem;
     color: $white;
     background: rgba(5,36,62,1);
     background: -moz-linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
@@ -9,6 +9,10 @@
     background: -ms-linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
     background: linear-gradient(45deg, rgba(5,36,62,1) 0%, rgba(1,142,203,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05243e', endColorstr='#018ecb', GradientType=1 );
+
+    @include media-breakpoint-up(md) {
+        padding: 3rem .5rem;
+    }
 
     a {
         color: $white;
@@ -28,8 +32,12 @@
         clear:  both;
         width: 100%;
         max-width: 300px;
-        margin: 1.25rem auto;
+        margin: 1.5rem auto;
         height: 1px;
         background: rgba($white, 0.2);
+
+        @include media-breakpoint-up(md) {
+            max-width: 100%;
+        }
     }
 }
