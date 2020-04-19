@@ -24,19 +24,19 @@ plena_vital:
       text: 'Llamadme'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
-    #suptitle: 'Adeslas Plena Vital'
-    #title: 'Coberturas'
-    #text: ''
-    #text2: ''
-    #list:
-    #   - 'Programas de Prevención en Pediatría, Ginecología, Cardiología o Urología'
-    #   - 'Embarazo y parto'
-    #   - 'Planificación familiar (incl. DIU e implantación)'
-    #   - 'Pruebas diagnósticas, también de alta tecnología'
-    #   - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica.'
-    #   - 'Cirugía, implantes y prótesis internas
-    #   - 'Fisioterapia y podología'
-    #   - 'Tratamientos especiales'
+    suptitle: 'Adeslas Plena Vital'
+    title: 'Coberturas'
+    text: ''
+    text2: ''
+    list:
+        - 'Programas de Prevención en Pediatría, Ginecología, Cardiología o Urología.'
+        - 'Embarazo y parto.'
+        - 'Planificación familiar (incl. DIU e implantación).'
+        - 'Pruebas diagnósticas, también de alta tecnología.'
+        - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica.'
+        - 'Cirugía, implantes y prótesis internas.'
+        - 'Fisioterapia y podología.'
+        - 'Tratamientos especiales.'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: ''
     title: 'Condiciones Plena Vital'
@@ -44,7 +44,7 @@ plena_vital:
     drop:
       drop1:
         title: 'Tarifas'
-        text: 'Adeslas Plena ofrece el más amplio catálogo de actos médicos desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
+        text: 'Adeslas Plena Vital ofrece el más amplio catálogo de actos médicos desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
       drop2:
         title: 'Calidad'
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud.'
@@ -52,20 +52,20 @@ plena_vital:
         title: 'Copagos limitados'
         text: 'En Adeslas Plena Vital pagarás una tarifa reducida al mes y copagos por algunas de tus coberturas de una media de 14,50€, pero nunca pagarás más de 300€ al año'
       drop4:
-        text: 'Pago mensual y descuentos'
-        title: 'En Adeslas podrás pagar tu prima cada mes pero puedes obtener descuentos por pago trimestral (2%), semestral (4%) o anual (6%).'
+        title: 'Pago mensual y descuentos'
+        text: 'En Adeslas podrás pagar tu prima cada mes pero puedes obtener descuentos por pago trimestral (2%), semestral (4%) o anual (6%).'
       drop5:
-        text: 'Pruebas sin autorización'
-        title: 'Con Adeslas Plena Vital, podrás someterte a pruebas diagnósticas de alta tecnología que tu médico solicite sin autorizaciones previas.'
+        title: 'Pruebas sin autorización'
+        text: 'Con Adeslas Plena Vital, podrás someterte a pruebas diagnósticas de alta tecnología que tu médico solicite sin autorizaciones previas.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
-    text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios, con asistencia ambulatoria, hospitalaria e incluso urgencias a domicilio si fuese necesario. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena Vital. Entre ellos:'
+    text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios, con asistencia ambulatoria, hospitalaria e incluso urgencias a domicilio si fuese necesario. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena Vital.'
     list:
     image: image.png
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir Pediatra o Ginecólogo?'
-    text: 'Además de todas las coberturas incluidas en Adeslas Plena Plus, puedes contratar nuestro módulo complementario Plus Ginecología y Pediatría y obtener el reembolso del 80% de los gastos. ¡Y también el Plus Clínica Universitaria de Navarra!'
+    text: 'Además de todas las coberturas incluidas en Adeslas Plena Vital, puedes contratar nuestro módulo complementario Plus Ginecología y Pediatría y obtener el reembolso del 80% de los gastos. ¡Y también el Plus Clínica Universitaria de Navarra!'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
     suptitle: ''
     title: 'Las ventajas del líder en seguros de salud'

@@ -26,12 +26,12 @@ empresa:
     suptitle: 'Adeslas Empresas'
     title: '100% Coberturas'
     list: 
-      - 'Atención ambulatoria y Hospitalización'
+      - 'Atención ambulatoria y Hospitalización.'
       - 'Cirugía, implantes y prótesis internas.'
       - 'Pruebas diagnósticas, incluidas las de alta tecnología.'
       - 'Tratamientos especiales (Laserterapia, tratamiento del dolor, etc).'
       - 'Fisioterapia y rehabilitación.'
-      - 'Planes de prevención en Cardiología, Obstetricia y Ginecología o Urología.'
+      - 'Planes de prevención en Cardiología, Ginecología o Urología.'
       - 'Cobertura completa de embarazo y parto.'
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Condiciones'
@@ -40,10 +40,10 @@ empresa:
     drop:
       drop1:
         title: 'Amplio catálogo de servicios'
-        text: 'Adeslas Empresas dispone del mejor cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial.'
+        text: 'Adeslas Empresas dispone del mejor cuadro médico, con más de 43.000 profesionales y 1.200 centros de atención médico-asistencial.'
       drop2:
         title: 'Flexibilidad'
-        text: 'Con Adeslas Empresas puedes escoger 2 esquemas: Adhesión Obligatoria, en el que tu empresa asume todo el coste de la póliza o la Adhesión Voluntaria, en la que tu empresa cubre parte del coste o a parte de la plantilla.'
+        text: 'Con Adeslas Empresas puedes escoger 2 esquemas: Adhesión Obligatoria, en el que tu empresa asume todo el coste de la póliza o Adhesión Voluntaria, con el que tu empresa cubre parte del coste o a parte de la plantilla.'
       drop3:
         title: 'La mejor tarifa'
         text: 'Adeslas Empresas te ofrece la máxima cobertura a una tarifa excepcional y única para todos tus trabajadores, si no superan los 67 años. Desde sólo 45€/mes. Y con el 15% de descuento en Dental, pagaréis por todo, 49,50€/mes.'
@@ -55,7 +55,7 @@ empresa:
         text: 'Si contratas Adeslas Empresas para más de 12 empleados podréis acceder a todas las coberturas sin carencias. Con tu póliza recibiréis acceso al área privada para realizar todos los trámites por teléfono o internet.'
       drop6:
         title: 'Ventajas fiscales'
-        text: 'Ofrecer un seguro privado a tus trabajadores es una buena forma de fidelizar y hacer equipo, pero también de retribuir su compromiso que aporta ventajas fiscales para ambas partes.'          
+        text: 'Ofrecer un seguro privado a tus trabajadores es una buena forma de fidelizar y hacer equipo, pero también retribuirás su compromiso con ventajas fiscales para ambas partes.'          
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
     image: image.png
   desc: # 6 titulo + descripcion
@@ -72,7 +72,7 @@ empresa:
         text: 'Adeslas Empresas está pensado para empresas de 5 a 99 trabajadores que buscan una buena asistencia sanitaria, rápida y sin pagos extraordinarios. Con Adeslas Empresas disfrutaréis de Adeslas Es Más, un servicio exclusivo de los asegurados Adeslas, que da acceso al área privada y servicios adicionales.'
       drop2:
         title: '¿Es necesario un cuestionario médico para los asegurados de Adeslas Empresas?'
-        text: '-Sí, salvo que el número de asegurados supere los 50 con el sistema de Adhesión Obligatoria y de 75 en Adhesión Voluntaria.'
+        text: '-Sí, salvo que el número de asegurados supere los 50 con el sistema de Adhesión Obligatoria y los 75 en Adhesión Voluntaria.'
       drop3:
         title: '¿Hay límite de edad para contratar Adeslas Empresas?'
         text: 'Adeslas Empresas se puede contratar hasta los 67 años, pero puede incluirse un asegurado que supere esa edad si en la misma póliza hay tres asegurados de menos de 60 años.'
@@ -97,7 +97,7 @@ empresa:
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Empresas está sujeto a cuestionario médico previo con excepciones a partir de 50 asegurados.'
       faq3:
         title: 'Carencias'
-        text: 'Son los períodos de espera para disfrutar de una determinada cobertura. En Adeslas Empresas, si sois más de 12 asegurados, quedarán sin efecto las carencias de 10 meses para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
+        text: 'Son los períodos de espera para disfrutar de una determinada cobertura desde la contratación. En Adeslas Empresas, si sois más de 12 asegurados, quedarán sin efecto las carencias de 10 meses para pruebas diagnósticas de alta tecnología, cirugía y hospitalización.'
       faq4:
         title: 'Póliza y prima'
-        text: 'La póliza es el contrato que os vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
+        text: 'La póliza es el contrato que os vincula con la compañía aseguradora y recoge todas las coberturas de las que disfrutaréis durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagaréis por el seguro y que tendréis clara desde el primer día.'
