@@ -6,14 +6,14 @@
 
 {% block body %}
 
+
   {% include 'components/product-single-hero/product-single-hero.html.twig' with {
     image: hero_image
   } %}
 
-  <div class="container-fluid container-lg px-3 px-md-0">
+  <div class="container-fluid container-lg">
     <div class="row">
-      <div class="col-12 col-lg-8 p-0">
-
+      <div class="col-12 col-lg-8">
         {# bullet lists without description #}
         {% if bullets_extra is not empty %}
             {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
