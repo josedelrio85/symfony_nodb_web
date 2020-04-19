@@ -13,10 +13,12 @@ class AppExtension extends AbstractExtension
   public function __construct(RequestStack $requestStack)
   {
     $this->requestStack = $requestStack;
-    $qarray = $this->requestStack->getCurrentRequest()->query->all();
-    if(!empty($qarray)){
-      $query = http_build_query($qarray);
-      $this->queryStr = (empty($query)) ? null : $query;
+    if (is_object($this->requestStack->getCurrentRequest())) {
+      $qarray = $this->requestStack->getCurrentRequest()->query->all();
+      if(!empty($qarray)){
+        $query = http_build_query($qarray);
+        $this->queryStr = (empty($query)) ? null : $query;
+      }
     }
   }
 

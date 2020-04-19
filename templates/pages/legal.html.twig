@@ -1,21 +1,21 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}{{"legal.title_detail" | trans}}{% endblock %}
+
 {% block meta_description %}<meta name="description" content="{{ "legal.meta_description" | trans }}">{% endblock %}
 
-{% block c2cPopup %}
-{% endblock %}
-
 {% block body %}
-    {# {% include 'components/page-header/page-header.html.twig' with {
-      title:           "legal.title"        | trans,
-      subtitle:        "legal.subtitle"     | trans,
-      backgroundImage: "legal.bg_image_top" | trans,
-    } %}
-   #}
-  <section class="">
-    {{ "legal.content" | trans | raw }}
-  </section>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {# <h3>{{ "legal.title_detail" | trans | raw }}</h3> #}
+
+          {{ "legal.content" | trans | raw }}
+        </div>
+      </div>
+    </div>
+  </div>
 
   {# {% include 'components/terms-popup/terms-popup.html.twig' %} #}
 

@@ -5,7 +5,7 @@ products:
     steps: 3
     icon: 'icon-adeslas_icon_salud'
     active: true
-    suptitle: '¿Qué tipo de seguro estás buscando?'
+    suptitle: 'Buscas un seguro de salud para…'
     children:
       familia:
         name: 'familia'
