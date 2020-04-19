@@ -2,10 +2,15 @@
 
     .product-btn {
         cursor: pointer;
+        transition: .2s all ease-in-out;
 
         .inner {
             box-shadow: $box-shadow-gen;
             border-radius: $border-radius-gen;
+        }
+
+        h5.name, .icon, > div {
+            transition: .2s all ease-in-out;
         }
 
         &:hover {
@@ -13,7 +18,7 @@
                 color: #ffffff!important;
             }
             > div {
-                background: #0097D7;
+                background: #0097D7 !important;
             }
         }
     }
@@ -23,4 +28,15 @@
             text-transform: uppercase;
         }
     }
+
+    @include media-breakpoint-up(lg) {
+        .fixed_height {
+            height: 95px;
+        }
+
+        .icon-fixed {
+            font-size: 1.4rem;
+        }
+    }
+
 }

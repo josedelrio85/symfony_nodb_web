@@ -130,7 +130,7 @@ class ProductController extends AbstractController {
     // dump($dropdown);die();
     // dump($faq);die();
     // dump($table);  die();
-
+    $uri = parse_url($request->getUri(), PHP_URL_PATH);
 
     return $this->render("pages/single-product.html.twig", [
       'product' => $productid,
@@ -143,7 +143,8 @@ class ProductController extends AbstractController {
       'dropdown_last' => $dropdown,
       'faq' => $faq,
       'table' => !empty($table) ? $table['table'] : null,
-    ]);
+      'product_value' => $uri,
+      ]);
   }
 
   private function getPrevious() {

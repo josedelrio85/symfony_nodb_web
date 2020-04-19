@@ -2,10 +2,12 @@
   <div class="card-body d-flex flex-column justify-content-between">
   <div>
     <h2 class="h1 text-primary text-header">{{ item.title | trans}}</h2>
-    <p class="h5 text-primary d-flex price">
+    <p class="h5 text-primary d-flex price align-items-center">
       <span class="price-from mt-2">{{ item.price.pre | trans}}</span>
       <span class="price-num mx-2 text-header">{{ item.price.quantity | trans}}</span>
-      <span class="euro-symbol"> {{ item.price.currency | trans}}</span>{{ item.price.period | trans}}
+      <span class="d-inline-block mt-3">
+        <span class="euro-symbol"> {{ item.price.currency | trans}}</span>{{ item.price.period | trans}}
+      </span>
     </p>
     {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 3, padding_x: 0} %}
     {% include 'components/bullet-list/bullet-list.html.twig' with { bullet_list_items: item.bullets } %}

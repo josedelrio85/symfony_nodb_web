@@ -64,9 +64,8 @@
 .click-to-call-desktop {
     top: 50%;
     right: 0;
-    // transform: translateY(-50%);
     transform: translateY(calc(-49.9% + 0px));
-    width: 305px;
+    width: 285px;
     border-radius: 10px 0 0 10px;
     box-shadow: $box-shadow-gen;
 

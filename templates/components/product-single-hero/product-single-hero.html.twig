@@ -32,34 +32,15 @@
   {# Hero section desktop #}
   <div class="container-fluid p-0 d-none d-lg-block mb-4 h-50 product-single-hero-desktop" 
    style="background-image:url({{ asset('build/images/'~ "#{image}") }})">
-      <div class="container h-50 px-0">
-      <div class="row align-items-center">
+      <div class="container h-50 px-0 py-5">
+      <div class="row">
         <div class="col-lg-7 col-xl-8 text-white">
-
-          {% include 'components/header-page-title/header-page-title.html.twig' with {
-              mini_header: '' | trans,
-              text_header: "#{product}.hero.title" | trans,
-              content_header: "#{product}.hero.subtitle" | trans,
-          } %}
-
-        </div>
-        <div class="col-lg-5 col-xl-4 my-3">
-          <div class="container-fluid">
-            <div id="triggerpincard"></div>
-            <div id="pincard">
-
-              {% include 'components/product-single-card/product-single-card.html.twig' with {
-                price_pre: "#{product}.price_with_details.price.pre" | trans | raw,
-                price_quantity: "#{product}.price_with_details.price.quantity" | trans | raw,
-                price_currency: "#{product}.price_with_details.price.currency" | trans | raw,
-                price_period: "#{product}.price_with_details.price.period" | trans | raw,
-                price_bullets: price_bullets,
-                cta_text: "#{product}.price_with_details.cta.text" | trans | raw,
-                cta_path: "#{product}.price_with_details.cta.path" | trans | raw
-              } %}
-
-            </div>
-          </div>
+          <div id="triggerpincard"></div>
+            {% include 'components/header-page-title/header-page-title.html.twig' with {
+                mini_header: '' | trans,
+                text_header: "#{product}.hero.title" | trans,
+                content_header: "#{product}.hero.subtitle" | trans,
+            } %}
         </div>
       </div>
     </div>

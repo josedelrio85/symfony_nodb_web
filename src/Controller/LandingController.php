@@ -33,13 +33,15 @@ class LandingController extends AbstractController {
     // dump($cards);
     // dump($product_cards); die();
     // dump($cards); dump($bullets_extra); die();
-
+    $uri = parse_url($request->getUri(), PHP_URL_PATH);
+    
     return $this->render("pages/landing-product.html.twig", [
       'landing' => $landing,
       'translator' => $translator,
       'cards' => $cards,
       'product_cards' => $product_cards,
       'bullets_extra' => $bullets_extra,
+      'landing_value' => $uri,
     ]);
   }
 }

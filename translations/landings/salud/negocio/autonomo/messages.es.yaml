@@ -13,8 +13,8 @@ autonomo:
     cards:
       card1:
         top: 'Desde'
-        middle: '47 €/mes'
-        bottom: ''
+        middle: '47 €'
+        bottom: 'al mes'
       card2:
         top: 'Hasta'
         middle: '2 meses gratis'

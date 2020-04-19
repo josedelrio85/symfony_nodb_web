@@ -143,6 +143,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     eventLabel: window.location.pathname === '/' ? 'index' : window.location.pathname ,
   }
 
+
+  // get values from route to set product / landing adeslas object values
+  let adeslas = {
+    landing: null,
+    product: null,
+  }
+  let lv = document.getElementById('landing-value');
+  if(lv !== undefined && lv !== null){
+    if (lv.value !== null && lv.value !== ''){
+      adeslas.landing = lv.value;
+    }
+  }
+  let pv = document.getElementById('product-value');
+  if(pv !== undefined && pv !== null){
+    if (pv.value !== null && pv.value !== ''){
+      adeslas.product = pv.value;
+    }
+  }
+
   let c2cpopup_desktop = document.querySelector('.click-to-call--body.c2cdesktop .call-me-now');
   c2cpopup_desktop.onclick = (e) => {
     e.preventDefault();
@@ -152,7 +171,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         sou_id: souid,
         phone: phone,
         smartcenter: smartcenter,
+        adeslas: adeslas,
       };
+      if(adeslas.product === null && adeslas.landing === null) {
+        delete dataLead.adeslas;
+      }
 
       c2c.launchC2C(dataLead, dataLayer);
     }
@@ -167,7 +190,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         sou_id: souid,
         phone: phone,
         smartcenter: smartcenter,
+        adeslas: adeslas,
       };
+      if(adeslas.product === null && adeslas.landing === null) {
+        delete dataLead.adeslas;
+      }
 
       c2c.launchC2C(dataLead, dataLayer);
     }
@@ -182,9 +209,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         sou_id: souid,
         phone: phone,
         smartcenter: smartcenter,
+        adeslas: adeslas,
       };
+      if(adeslas.product === null && adeslas.landing === null) {
+        delete dataLead.adeslas;
+      }
 
       c2c.launchC2C(dataLead, dataLayer);
+      $('#click-to-call-popup').modal('hide');
     }
   }
 
@@ -217,4 +249,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     return true;
   }
+
+  ////////////////////// SLIDER ////////////////////////////////////////////
+
+  let ctas = document.querySelectorAll('*[id^="cta-"]');
+  ctas.forEach((cv, ci, listObj) => {
+    cv.addEventListener('click', (event) => {
+      let id = event.target.id;
+      console.log(id);
+      let cta = document.getElementById(id);
+      let action = cta.getAttribute('data-action');
+      switch(action) {
+        case 'open-conf':
+          // simulate a click on salud box; amazing!
+          eventFire(document.getElementById('product-salud'), 'click');
+          break;
+        case 'open-c2c':
+          $('#click-to-call-popup').modal('show');
+          closeC2C();
+          break;
+      }
+    })
+  });
 });
+
+
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
