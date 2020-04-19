@@ -12,7 +12,7 @@
           <a class="btn btn-primary mt-2 font-weight-bold" style="color:#fff;"
           id="{{slide.cta.id}}" 
           {% if slide.cta.path != '' %}
-            href="{{slide.cta.path}}" 
+            {{ custom_routes(slide.cta.path | trans) }}
           {% endif %}
           {% if slide.cta.action != '' %}
             data-action="{{slide.cta.action}}" 
