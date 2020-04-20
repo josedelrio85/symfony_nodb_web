@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   $( window ).resize(function() {
     toggleC2cButton();
   });
-  
+
   // Fullscreen menu (decomment when we turn on menu links on header menu)
   // if($(".close-menu").length) {
   //   $(".close-menu").click(function(){
@@ -63,18 +63,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
       })
       .setClassToggle(this, "show")
       // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
-      
+
       controllerFade.addScene(sceneFade);
-      
+
     });
   }
 
+  //Pin card functionality
   if(document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();
+
     var scene = new ScrollMagic.Scene({
         triggerElement: '#triggerpincard',
         triggerHook: 0,
-        offset: 0.5
+        offset: 0.5,
+        duration: $('#pincard').parent().parent().height(),
     })
       .setClassToggle("body", "pinactive")
       .on('start', function () {
