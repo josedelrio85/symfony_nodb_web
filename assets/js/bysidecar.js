@@ -141,7 +141,8 @@ class bysidecar {
         // this.printOut(response);
 
         document.querySelectorAll('.ddi').forEach((ddi) => {
-          ddi.innerHTML = response.data.TELEFONO;
+          //Insert 1 space every 3 characters
+          ddi.innerHTML = response.data.TELEFONO.match(/.{3}/g).join(' ');
         });
 
         let hreftel = "tel:" + response.data.TELEFONO;
