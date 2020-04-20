@@ -5,7 +5,10 @@
                 <a {{ custom_routes("/") }}>
                   <div class="img d-block mx-auto" >
                       <div class="logo-desktop" >{{ source('@public_path'~asset('build/images/adeslas_logo_desktop_02.svg')) }}</div>
+                      {# <div class="logo-desktop" ><img srcset="{{ asset('build/images/adeslas_logo_desktop_02.svg') }}"></div> #}
+
                       <div class="logo-mobile" >{{ source('@public_path'~asset('build/images/adeslas_logo_mob_02.svg')) }}</div>
+                      {# <div class="logo-mobile" ><img srcset="{{ asset('build/images/adeslas_logo_mob_02.svg') }}"></div> #}
                   </div>
                 </a>
             </div>

@@ -4,6 +4,8 @@
       <div class="col-12">
         <div class="img footer-logo d-block mx-auto pb-4">
           {{ source('@public_path'~asset('build/images/adeslas_simple_logo_white.svg')) }}
+          {# <img srcset="{{ asset('build/images/adeslas_simple_logo_white.svg') }}"> #}
+
         </div>
         {# <a class="link" href="{{ "footer.legal.path" | trans }}">{{ "footer.legal.text" | trans | raw }}</a> |  #}
         <a class="link" {{ custom_routes("footer.legal.path" | trans) }}>{{ "footer.legal.text" | trans | raw }}</a> | 
