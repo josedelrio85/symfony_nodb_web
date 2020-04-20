@@ -1,6 +1,6 @@
 {% if bullet_list_items|length < 5 %}
 
-  <ul class="list-group list-group-flush bullet-list">
+  <ul class="list-group list-group-flush bullet-list text-left">
     {% for item in bullet_list_items %}
       <li class="list-group-item px-0">{{ item  | raw }}</li>
     {% endfor %}
@@ -13,7 +13,7 @@
   {% set half_array_1 = bullet_list_items|slice(0, half_array_length) %}
   {% set half_array_2 = bullet_list_items|slice(half_array_length, array_length) %}
 
-  <div class="container p-0">
+  <div class="container p-0 text-left">
     <div class="row">
       {% for item in half_array_1 %}
         <div class="col-12 col-md-6">
