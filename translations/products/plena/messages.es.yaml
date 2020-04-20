@@ -62,7 +62,6 @@ plena:
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
     text: 'Puedes añadir a tu seguro mejoras con nuestro módulo complementario Plus Ginecología y Pediatría con un reembolso del 80% del coste. ¡Y también el Plus Clínica Universitaria de Navarra!'
-    image: 'adeslas_hero_large_ficha_familia_plena.jpg'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: 'Un seguro médico completo para toda la familia'
@@ -106,3 +105,10 @@ plena:
       faq4:
         title: 'Póliza y prima'
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
+  divider:
+    section1: 
+      image1: 'adeslas_divider_ficha_familia_plena_01.jpg'
+      image2: 'adeslas_divider_ficha_individual_plena_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_familia_plena_02.jpg'
+      image2: 'adeslas_divider_ficha_individual_plena_02.jpg'

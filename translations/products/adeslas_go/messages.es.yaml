@@ -59,7 +59,6 @@ go:
     title: 'Una cobertura médica llena de ventajas'
     text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria para quien busca un seguro complementario con el que prevenir y tratar con rapidez cualquier problema de salud. Podrás consultar con un especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida.'
     list:
-    image: image.jpg
   desc: # 6 titulo + descripcion+ tabla
     title: 'Chequeo anual'
     text: 'Cuando contrates tu póliza tendrás acceso a un chequeo médico anual adaptado a tu edad con las siguientes pruebas:'
@@ -67,7 +66,10 @@ go:
     suptitle: 'Adeslas GO'
     title: 'Mucho más que un seguro médico'
     text: ''
-    image: image.jpg
+    image:
+      image1: 
+      image2: 
+        img2: 'adeslas_divider_ficha_individual_go_02.jpg'
     drop:
       drop1:
         title: '¿Para quién es Adeslas GO?'
@@ -157,3 +159,10 @@ go:
             - true
             - true
             - true
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_familia_go_01.jpg'
+      image2: 'adeslas_divider_ficha_individual_go_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_familia_go_02.jpg'
+      image2: 'adeslas_divider_ficha_individual_go_02.jpg'

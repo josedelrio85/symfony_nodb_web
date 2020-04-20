@@ -59,7 +59,6 @@ negocios_menos5:
         title: 'Dental con descuento'
         text: 'La tarifa de seguro dental para pymes es de 6 €/mes. Ahora sin embargo, te ofrecemos un descuento y podréis disfrutar de ambas coberturas por 49,50 €/mes.'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres recibir asistencia en la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas incluidas en Adeslas Negocios, puedes contratar nuestro módulo complementario Plus Clínica Universitaria de Navarra.'
@@ -67,7 +66,6 @@ negocios_menos5:
     suptitle: 'Ventajas Negocios'
     title: 'El servicio de la compañía líder a vuestra disposición'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Negocios?'
@@ -97,3 +95,10 @@ negocios_menos5:
       faq4: 
         title: 'Póliza y prima'
         text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia. En Adeslas te ofrecemos total transparencia. La prima es la cuota que pagarás por tu seguro y que tendrás clara desde el primer día.'
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_5empleados_negocio_01.jpg'
+      image2: 'adeslas_divider_ficha_autonomos_negocio_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_5empleados_negocio_02.jpg'
+      image2: 'adeslas_divider_ficha_autonomos_negocio_02.jpg'

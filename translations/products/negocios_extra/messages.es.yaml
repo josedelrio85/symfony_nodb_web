@@ -56,7 +56,6 @@ negocios_extra:
         title: 'Sin Copagos'
         text: 'En Adeslas Extra Negocios pagarás lo mismo cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas incluidas en Adeslas Extra Negocios, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra para someterte a algún tratamiento especial.'
@@ -64,7 +63,6 @@ negocios_extra:
     suptitle: 'Extra Ventajas'
     title: 'El mejor seguro a la carta en todo el mundo'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Extra Negocios?'
@@ -97,3 +95,10 @@ negocios_extra:
       faq4:
         title: 'Póliza y Prima'
         text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_5empleados_extra_negocio_01.jpg'
+      image2: 'adeslas_divider_ficha_autonomos_extra_negocio_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_5empleados_extra_negocio_02.jpg'
+      image2: 'adeslas_divider_ficha_autonomos_extra_negocio_02.jpg'

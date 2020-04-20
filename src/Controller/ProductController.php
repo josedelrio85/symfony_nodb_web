@@ -27,9 +27,7 @@ class ProductController extends AbstractController {
     $productid = $request->attributes->get('_route');
     $previous = $this->getPrevious();
     $img = null;
-
-    // dump($previous);
-    // dump($productid); 
+    $imgnumber = null;
 
     if ($previous === '/seguros-salud-empresa') {
       if ($productid === "negocios") {
@@ -40,9 +38,10 @@ class ProductController extends AbstractController {
       // dump($productid);
     }
 
-    $hero = $this->repo->getKeyDataProducts($productid, 'hero');
-    // dump($hero); 
-    // die();
+
+    $alldata = $this->repo->getMessages();
+    $dp = $alldata['products'][$productid];
+    $hero = $dp['hero'];
 
     if(is_null($previous)) {
       $hero_image = $hero['images']['image1'];
@@ -51,26 +50,26 @@ class ProductController extends AbstractController {
         case 'plena_plus':
           switch($previous) {
             case '/seguros-salud-familias':
-              $img = 'image1';
+              $imgnumber = '1';
             break;
             case '/seguros-salud-individual':
-              $img = 'image2';
+              $imgnumber = '2';
             break;
             case '/seguros-salud-embarazadas':
-              $img = 'image3';
+              $imgnumber = '3';
             break;
           }
         break;
         case 'plena_vital':
           switch($previous) {
             case '/seguros-salud-familias':
-              $img = 'image1';
+              $imgnumber = '1';
             break;
             case '/seguros-salud-individual':
-              $img = 'image2';
+              $imgnumber = '2';
             break;
             case '/seguros-salud-embarazadas':
-              $img = 'image3';
+              $imgnumber = '3';
             break;
           }
         break;
@@ -79,10 +78,10 @@ class ProductController extends AbstractController {
         case 'go':
           switch($previous) {
             case '/seguros-salud-familias':
-              $img = 'image1';
+              $imgnumber = '1';
             break;
             case '/seguros-salud-individual':
-              $img = 'image2';
+              $imgnumber = '2';
             break;
           }
         break;
@@ -90,7 +89,7 @@ class ProductController extends AbstractController {
         case 'senior':
         case 'dental_familia':
         case 'dental_max':
-          $img = 'image1';
+          $imgnumber = '1';
         break;
         case 'negocios':
         case 'negocios_menos5':
@@ -98,10 +97,10 @@ class ProductController extends AbstractController {
         case 'negocios_extra_menos5':
           switch($previous) {
             case '/seguros-salud-empresa':
-              $img = 'image1';
+              $imgnumber = '1';
             break;
             case '/seguros-salud-autonomos':
-              $img = 'image2';
+              $imgnumber = '2';
             break;
           }
         break;
@@ -109,38 +108,38 @@ class ProductController extends AbstractController {
         case 'empresa_extra':
           switch($previous) {
             case '/seguros-salud-empresa-extra':
-              $img = 'image1';
+              $imgnumber = '1';
             break;
             case '/seguros-salud-empresa':
-              $img = 'image2';
+              $imgnumber = '2';
             break;
           }
         break;
         default:
-          $img = 'image1';
+          $imgnumber = '1';
       }
-      if(is_null($img)){
-        $img = "image1";
+      if(is_null($imgnumber)){
+        $imgnumber = 1;
       }
+      $img = "image".$imgnumber;
       $hero_image = $hero['images'][$img];
     }
 
-    $price_bullets = $this->repo->getKeyDataProducts($productid,'price_with_details');
-    $bullets = $this->repo->getKeyDataProducts($productid,'bullets');
-    $des_with_dropdown = $this->repo->getKeyDataProducts($productid,'des_with_dropdown');
-    $desc_with_bullets = $this->repo->getKeyDataProducts($productid,'desc_with_bullets');
-    $dropdown = $this->repo->getKeyDataProducts($productid,'dropdown');
-    $faq = $this->repo->getKeyDataProducts($productid,'faq');
-    $table = $this->repo->getKeyDataProducts($productid,'extra');
-    $desc = $this->repo->getKeyDataProducts($productid,'desc');
-    // dump($desc);die();
-    // dump($price_bullets);die();
-    // dump($bullets);die();
-    // dump($des_with_dropdown);die();
-    // dump($desc_with_bullets);die();
-    // dump($dropdown);die();
-    // dump($faq);die();
-    // dump($table);  die();
+
+    $price_bullets = $dp['price_with_details'];
+    $bullets = $dp['bullets'];
+    $des_with_dropdown = $dp['des_with_dropdown'];
+    $desc_with_bullets = $dp['desc_with_bullets'];
+    $dropdown = $dp['dropdown'];
+    $faq = $dp['faq'];
+    $table = array_key_exists('extra', $dp) ? $dp['extra']['table'] : null;
+    $desc = $dp['desc'];
+    $divider = $dp[ 'divider'];
+    foreach($divider as $index => $a) {
+      $imgdivider[$index] = $a[$img];
+    };
+
+
     $uri = parse_url($request->getUri(), PHP_URL_PATH);
 
     return $this->render("pages/single-product.html.twig", [
@@ -153,9 +152,10 @@ class ProductController extends AbstractController {
       'desc_with_bullets' => $desc_with_bullets,
       'dropdown_last' => $dropdown,
       'faq' => $faq,
-      'table' => !empty($table) ? $table['table'] : null,
+      'table' => $table,
       'product_value' => $uri,
       'desc' => $desc,
+      'imgdivider' => $imgdivider,
     ]);
   }
 

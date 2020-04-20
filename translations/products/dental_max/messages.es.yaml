@@ -46,7 +46,6 @@ dental_max:
         title: 'Máximas facilidades'
         text: 'Elige entre pago mensual, bimensual, trimestral y anual y si necesitas tratamientos especiales, disfrutarás de un ahorro de hasta el 50% en precios y de un plan de financiación a tu medida.'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (antes tabla)
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
@@ -54,7 +53,6 @@ dental_max:
     suptitle: 'Dental MAX'
     title: 'Las ventajas de contratar con una compañía líder'
     text: 'Adeslas DENTAL MAX incluye una revisión bucodental completa gratis al año, que comprende la consulta, las pruebas diagnósticas necesarias y una limpieza anual. Todo valorado en más de 200€. '
-    image: image.jpg
     drop:
       drop1:
         title: '¿Qué es Adeslas Dental MAX?'
@@ -135,3 +133,8 @@ dental_max:
             - true
             - true
             - true
+  divider:
+    section1: 
+      image1: 'adeslas_divider_ficha_dental_max_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_dental_max_02.jpg'

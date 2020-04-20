@@ -23,7 +23,7 @@
           } %}
         {% endif %}
 
-        {% if table is not empty %}
+        {% if (table is not empty and product != "go") %}
           <div class="container-fluid px-0">
             <div class="container px-0">
               {% include 'components/product-features-table/product-features-table.html.twig' with {
@@ -48,11 +48,13 @@
             {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
               bullets_extra: desc_with_bullets,
             } %}
-
-            {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
-              image: desc_with_bullets.image
-            } %}
         {% endif %}
+
+
+        {% include 'components/image-divider/image-divider.html.twig' with {
+          image: imgdivider.section1
+        } %}
+
 
         {# Desc (title + desc + image) #}
         {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { 
@@ -60,8 +62,15 @@
           bg_grey: false,
         } %}
 
-
-
+        {% if (table is not empty and product == "go") %}
+          <div class="container-fluid px-0">
+            <div class="container px-0">
+              {% include 'components/product-features-table/product-features-table.html.twig' with {
+                array: table,
+              } %}
+            </div>
+          </div>
+        {% endif %}
 
         {# Dropdown + title and image divider #}
         {% if des_with_dropdown is not null %}
@@ -69,11 +78,12 @@
             dropdown: dropdown_last,
           } %}
           {# bg_grey: true, #}
-
-          {% include 'components/simple-divider-image/simple-divider-image.html.twig' with {
-            image: dropdown_last.image
-          } %}
         {% endif %}
+
+        {% include 'components/image-divider/image-divider.html.twig' with {
+          image: imgdivider.section2
+        } %}
+
       </div>
       <div class="col-4 d-none d-lg-block">
         <div id="pincard" style="width: 100%;">

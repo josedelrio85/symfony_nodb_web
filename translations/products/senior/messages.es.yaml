@@ -62,7 +62,6 @@ senior:
     title: 'Un plan a largo plazo para cuidarte'
     text: 'Adeslas Seniors te ofrece un plan a largo plazo para ayudar a cuidar de tu salud y a vivir una jubilación tranquila y activa en la que no tengas que preocuparte de nada más. Accederás a todas las especialidades y tratamientos que necesites.'
     list:
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
@@ -70,7 +69,6 @@ senior:
     suptitle: 'Ventajas Sénior'
     title: 'El seguro más completo y flexible'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Seniors?'
@@ -103,3 +101,8 @@ senior:
       faq4:
         title: 'Póliza y prima'
         text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_senior_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_senior_02.jpg'

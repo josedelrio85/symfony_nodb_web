@@ -51,7 +51,6 @@ empresa_extra:
         title: 'Beneficios fiscales'
         text: 'Podéis escoger 2 esquemas con ventajas fiscales para ambas partes: Adhesión Obligatoria, y que la empresa asuma todo el coste de la póliza o la Adhesión Voluntaria, en la que la empresa cubre parte del coste.' 
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: ''
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
@@ -59,7 +58,6 @@ empresa_extra:
     suptitle: 'Ventajas Extra'
     title: 'Un seguro a la carta válido allá donde lleguéis'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Extra Empresas?'
@@ -89,3 +87,10 @@ empresa_extra:
       faq3:
          title: 'Carencias'
          text: 'Son los períodos de espera para disfrutar de una determinada cobertura, a partir de la contratación. En Adeslas Extra Empresas existen carencias para tratamientos que impliquen hospitalización, pero quedarán sin efecto si sois más de 12 asegurados.'
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_99empleados_extra_empresa_01.jpg'
+      image2: 'adeslas_divider_ficha_gran_empresa_extra_empresa_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_99empleados_extra_empresa_02.jpg'
+      image2: 'adeslas_divider_ficha_gran_empresa_extra_empresa_02.jpg'
