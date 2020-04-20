@@ -44,12 +44,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   // Banner cookies //
-  // Check cookie
+  function getCookie(name) {
+      var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+      return v ? v[2] : null;
+  }
 
-  // Accept cookie
+  if(getCookie("cookies") == null) {
+    $('.cookies-banner').show();
+  }
+
   if($(".accept-cookies").length) {
     $(".accept-cookies").click(function(){
       document.cookie = "cookies=accepted";
+      $('.cookies-banner').hide();
     });
   }
 

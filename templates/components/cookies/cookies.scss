@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 999;
     padding: 1rem;
+    display: none;
 
     @include media-breakpoint-up(md) {
         padding: 2rem;
