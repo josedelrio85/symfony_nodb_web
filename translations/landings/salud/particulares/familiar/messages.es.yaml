@@ -1,7 +1,7 @@
 familiar:
   home:
     title: 'El mejor seguro médico para familias, ¡Ahora 2 meses gratis! | Adeslas'
-    meta_description: 'Descubre las mejores ofertas de seguros médicos para familias de Adeslas desde 16'20 €/mes. Un seguro médico adaptado a cada tipo de familia y a las necesidades y coberturas que deseas para asegurar la salud de los tuyos. ¡Ahora 2 meses gratis con Dental! ¡Entra y aprovecha la oferta!'
+    meta_description: 'Descubre las mejores ofertas de seguros médicos para familias de Adeslas desde 16,20 €/mes. Un seguro médico adaptado a cada tipo de familia y a las necesidades y coberturas que deseas para asegurar la salud de los tuyos. ¡Ahora 2 meses gratis con Dental! ¡Entra y aprovecha la oferta!'
   hero: # 1
     title: ''
     subtitle: ''
@@ -15,7 +15,7 @@ familiar:
         top: 'Desde 16,20 €/mes'
         middle: 'por persona'
         bottom: 'sin cuestionario médico'
-       card2:
+      card2:
         top: '2 meses gratis'
         middle: 'con seguro Dental'
         bottom: 'y descuentos desde 4 asegurados'  

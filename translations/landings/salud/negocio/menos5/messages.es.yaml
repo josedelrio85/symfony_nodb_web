@@ -39,7 +39,7 @@ menos5:
           path: '/seguro/adeslas-negocios'
         bullets:
           - 'Cobertura con cuadro médico'
-          - '<strong>Sin Copagos</strong>''
+          - '<strong>Sin Copagos</strong>'
           - 'Flexibilidad en modo de pago'
       product2:
         title: 'Adeslas Extra Negocios'
