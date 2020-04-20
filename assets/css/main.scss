@@ -5,6 +5,7 @@
 
 @import "type";
 @import "forms";
+@import "buttons";
 
 @import "~swiper/css/swiper.min";
 @import "modals";
@@ -35,6 +36,7 @@
 @import "components/header-separator.scss";
 @import "../../templates/components/click-to-call-privacy-modal/click-to-call-privacy-modal.scss";
 @import "../../templates/components/header-image/header-image.scss";
+@import "../../templates/components/cookies/cookies.scss";
 //Misc css
 .bg-grey {
   background: #FAFAFA;
