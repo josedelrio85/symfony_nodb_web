@@ -1,7 +1,7 @@
 dental:
   home:
-    title: 'Landing Dental'
-    meta_description: 'Landing Dental'
+    title: 'Adeslas | Descubre la mejor oferta de seguro dental desde 3,55 € / mes'
+    meta_description: 'Descubre las mejores ofertas de seguro dental que Adeslas te ofrece para asegurar tu sonrisa. Elige el tipo de seguro que mejor se adapta a las necesidades de tu familia. ¡Ahora, desde 3,55 €/mes! Aprovecha la oferta ¡Y paga sólo por lo que necesites!'
   hero: # 1
     title: ''
     subtitle: ''
@@ -9,11 +9,19 @@ dental:
   minicards: # 2 minicards + title + description
     title: 'El seguro dental más completo con las tarifas más bajas'
     suptitle: 'Adeslas Dental'
-    desc: ''
+    desc: 'Dos pólizas a escoger en función de la cobertura que desees'
     cards:
+      card1:
+        top: 'Sin copagos'
+        middle: 'y descuentos'
+        bottom: 'a partir del 2º asegurado'
+      card2:
+        top: 'Desde 3,55 €'
+        middle: 'al mes'
+        bottom: 'con los mejores especialistas'
   product_bullet: # 3 products with bullets + title + description
     title: 'Descubre la fórmula para cuidar tu sonrisa que más te conviene en 1 minuto'
-    suptitle: ''
+    suptitle: 'Adeslas Dental'
     desc: ''
     product:
       product1:
@@ -31,11 +39,13 @@ dental:
           path: '/seguro/adeslas-dental-max'
         bullets:
           - 'Sólo cobertura Dental'
+          - 'Reducimos tu prima 1€ por año'
+          - 'Más coberturas cada año'
       product2:
         title: 'Adeslas Dental Familia'
         price:
           pre: 'Desde'
-          quantity: '3,5'
+          quantity: '3,55'
           currency: '€'
           period: '/mes'
         cta:
@@ -46,10 +56,19 @@ dental:
           path: '/seguro/adeslas-dental-familia'
         bullets:
           - 'Cobertura Dental con Salud'
+          - 'Plan de salud bucodental sin carencias'
+          - '15% de descuento con tu seguro de salud'
   select: # 4 selector + title
-    title: ''
-    suptitle: ''
+    title: 'Consulta nuestro Cuadro Médico'
+    suptitle: 'Adeslas'
     select_txt: ''
-  desc: # 5 title + description
-    title: ''
+  desc: # 5 title + description + dropdowns
+    title: 'Resuelve tus dudas'
     text: ''
+    drop:
+      drop1:
+        title: '¿Qué formas de pago puedo escoger para mi prima de Adeslas Dental?'
+        text: 'En Adeslas Dental tienes total flexibilidad para pagar en periodos mensual, bimestral, trimestral, semestral y anual.'
+      drop2:
+        title: '¿Por qué Adeslas?'
+        text: 'Adeslas es la compañía líder en seguros de asistencia sanitaria y dental en España y cuenta con toda la solvencia del grupo SegurCaixa Adeslas.Por eso te ofrece un servicio integral, diferenciado y de calidad: <br>Más de 4.000 profesionales en plantilla.</br> <br>190 Clínicas Dentales propias, no franquiciadas, 100% Adeslas, líder en seguros dentales en toda España, equipadas con los últimos avances.</br> <br>Más de 1.000 clínicas dentales concertadas</br> <br>218 puntos de atención al público.</br>

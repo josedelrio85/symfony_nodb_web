@@ -1,7 +1,7 @@
 mas5:
   home:
-    title: 'Landing Empresas'
-    meta_description: 'Landing Empresas'
+    title: 'Nuevas ofertas de seguro médico de empresa. ¡Desde 45 €/mes! | Adeslas'
+    meta_description: 'Descubre las mejores ofertas de seguro médico de empresa en Adeslas sin copagos y a la medida de vuestras necesidades. Entra y aprovecha la oferta ¡Ahora desde 45 €/mes por empleado! Y con descuentos para contratar también seguro dental.'
   hero: # 1
     title: ''
     subtitle: ''
@@ -12,15 +12,15 @@ mas5:
     desc: 'La asistencia médica más profesional al mejor precio'
     cards:
       card1:
-        top: 'Desde'
-        middle: '45 €/mes'
-        bottom: 'por empleado'
+        top: 'Desde 45 €/mes'
+        middle: 'por empleado'
+        bottom: 'sin carencias'
       card2:
-        top: 'Ahora'
-        middle: '15% de descuento'
-        bottom: 'en Dental'
+        top: '15% de descuento'
+        middle: 'en Dental'
+        bottom: 'con el seguro de salud'
   product_bullet: # 3 products with bullets + title + description
-    title: 'Dos modelos adaptados a tus necesidades'
+    title: 'Dos modelos adaptados a vuestras necesidades'
     suptitle: 'Adeslas Empresas'
     desc: 'Elige la cobertura que más os conviene'
     product:
@@ -38,7 +38,7 @@ mas5:
           text: 'Saber más'
           path: '/seguro/adeslas-empresa'
         bullets:
-           - 'Cobertura completa con Cuadro Médico Adeslas Sin Copagos'
+           - 'Cobertura completa con Cuadro Médico Adeslas <strong>Sin Copagos</strong>'
            - 'Sin carencias a partir de 12 asegurados'
       product2:
         title: 'Adeslas Extra Empresas'
@@ -57,9 +57,9 @@ mas5:
           - 'Libre elección de médico en todo el mundo'
           - 'Tarifa única, sea cual sea la edad de tus empleados'
   select: # 4 selector + title
-    title: 'Consulta el Cuadro Médico Adeslas'
-    suptitle: 'Cobertura'
-    select_txt: 'Selecciona en qué provincia trabajáis'
+    title: 'Consulta nuestro Cuadro Médico'
+    suptitle: 'Cobertura Adeslas'
+    select_txt: ''
   desc: # 5 title + description
     title: ''
     text: ''

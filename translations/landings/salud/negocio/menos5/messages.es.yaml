@@ -1,7 +1,7 @@
 menos5:
   home:
-    title: 'Landing Pymes'
-    meta_description: 'Landing Pymes'
+    title: 'La más completa oferta de seguro médico para pymes. ¡Desde 45 €/mes!'
+    meta_description: 'La mejor oferta de seguros médicos para pymes, diseñada para satisfacer las necesidades de tus empleados. Tú decides qué cobertura se adapta más a vuestra forma de trabajar desde sólo 45 €/mes por empleado. ¡Entra ahora y aprovecha la oferta!'
   hero: # 1
     title: ''
     subtitle: ''
@@ -12,12 +12,12 @@ menos5:
     desc: 'Descubre el seguro médico que mejor se adapta a tu empresa'
     cards:
       card1:
-        top: 'Desde'
-        middle: '45 €/mes'
-        bottom: 'por empleado'
+        top: 'Desde 45 €/mes'
+        middle: 'por empleado'
+        bottom: 'sin copagos'
       card2:
-        top: 'Con Dental'
-        middle: 'Desde 49,50 €/mes'
+        top: 'Desde 49,50 €/mes'
+        middle: 'Con Dental'
         bottom: 'por empleado'
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige la póliza que se adapta a vuestra forma de trabajar'
@@ -38,7 +38,9 @@ menos5:
           text: 'Saber más'
           path: '/seguro/adeslas-negocios'
         bullets:
-          - 'La más amplia cobertura <strong>sin Copagos</strong>'
+          - 'Cobertura con cuadro médico'
+          - '<strong>Sin Copagos</strong>''
+          - 'Flexibilidad en modo de pago'
       product2:
         title: 'Adeslas Extra Negocios'
         price:
@@ -54,11 +56,12 @@ menos5:
           path: '/seguro/adeslas-negocios-extra'
         bullets:
           - 'Cobertura total con Cuadro Médico'
-          - 'O libre elección de médico en todo el mundo'
+          - 'Y libre elección de médico en todo el mundo'
+          - 'La atención más completa y flexible'
   select: # 4 selector + title
     title: 'Consulta el Cuadro Médico Adeslas'
     suptitle: 'Cobertura'
-    select_txt: 'Selecciona en qué provincia trabajáis'
+    select_txt: ''
   desc: # 5 title + description
     title: ''
     text: ''

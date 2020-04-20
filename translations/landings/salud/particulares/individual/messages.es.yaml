@@ -1,7 +1,7 @@
 individual:
   home:
-    title: 'Landing individual'
-    meta_description: 'Landing individual'
+    title: 'Nueva oferta de seguro médico para singles desde 16,20 €/mes | Adeslas'
+    meta_description: 'Conoce las mejores ofertas de seguro médico para singles con o sin hijos que buscan una atención médica a la medida de sus necesidades. Descubre las ofertas de Adeslas Salud y elige la que más se adapta a tu ritmo de vida. ¡Ahora desde 16,20 € al mes! ¡Aprovecha la oportunidad!'
   hero: # 1
     title: ''
     subtitle: ''
@@ -12,12 +12,16 @@ individual:
     desc: 'Descubre la protección Adeslas que va con tu ritmo de vida'
     cards:
       card1:
-        top: 'Desde'
-        middle: '16,20 €/mes'
-        bottom: 'y descuentos en Dental'
+        top: 'Desde 16,20 €/mes'
+        middle: 'Descuentos desde 2 asegurados'
+        bottom: 'y en seguro Dental'
+      card2:
+        top: 'La mejor cobertura'
+        middle: 'al precio'
+        bottom: 'que necesitas'  
   product_bullet: # 3 products with bullets + title + description
-    title: 'Coberturas a tu medida'
-    suptitle: 'Adeslas individual'
+    title: 'Atención a tu medida'
+    suptitle: 'Adeslas single'
     desc: 'Cuida tu salud con la garantía de la compañía líder y la póliza que mejor se adapta a tus necesidades'
     product:
       product1:
@@ -101,9 +105,9 @@ individual:
           - 'Libre elección de médico'
           - 'Cobertura dentro y fuera de España'
   select: # 4 selector + title
-    title: 'Consulta el Cuadro Médico Adeslas'
-    suptitle: ''
-    select_txt: 'Selecciona tu provincia'
+    title: 'Consulta nuestro Cuadro Médico'
+    suptitle: 'Adeslas'
+    select_txt: 'Descarga'
   desc: # 5 title + description
     title: ''
     text: ''
