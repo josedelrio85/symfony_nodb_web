@@ -23,7 +23,7 @@
           } %}
         {% endif %}
 
-        {% if table is not empty %}
+        {% if (table is not empty and product != "go") %}
           <div class="container-fluid px-0">
             <div class="container px-0">
               {% include 'components/product-features-table/product-features-table.html.twig' with {
@@ -60,6 +60,15 @@
           bg_grey: false,
         } %}
 
+        {% if (table is not empty and product == "go") %}
+          <div class="container-fluid px-0">
+            <div class="container px-0">
+              {% include 'components/product-features-table/product-features-table.html.twig' with {
+                array: table,
+              } %}
+            </div>
+          </div>
+        {% endif %}
 
 
 
