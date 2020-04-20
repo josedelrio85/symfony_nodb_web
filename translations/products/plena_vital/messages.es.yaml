@@ -2,7 +2,7 @@
 plena_vital:
   hero: # 1
     title: 'Adeslas Plena Vital: El seguro médico privado con cobertura total y la mejor tarifa'
-    subtitle1: ''
+    subtitle: ''
     images: 
       image1: 'adeslas_hero_large_ficha_familia_vital.jpg'
       image2: 'adeslas_hero_large_ficha_individual_vital.jpg'
