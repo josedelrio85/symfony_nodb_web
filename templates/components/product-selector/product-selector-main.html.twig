@@ -1,7 +1,11 @@
 <div class="product-selector">
-  <div id="mainelements" class="row">
+  <div id="mainelements" class="row justify-content-md-center">
     {% set len = mainelements|length %}
-    {% set tam = 12 / len  %}
+    {% if len == 2 %}
+      {% set tam = 4  %}
+    {% else %}
+      {% set tam = 12 / len  %}
+    {% endif %}
 
     {% for product in mainelements %}
       <div id="product-{{product.name}}" class="col-12 col-sm-6 col-md-{{tam}} mb-3 product-btn" 

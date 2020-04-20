@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     cv.addEventListener('click', (event) => {
 
       titlesection.innerHTML = document.getElementById('fc_suptitle').value;
-      
+
       fullScreenConfig.classList.add('active');
 
       // show first childrens div
@@ -46,15 +46,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         // show first childrens div
         firstchildrens.classList.remove('d-none');
-  
+
         // get id suffix to know what first child must show
         // childrenid = salud | dental | mascotas | decesos
         let childrenid = id.replace('product-','');
-  
+
         // initialize steps bar and get totalsteps count
         totalsteps = document.getElementById('steps-' + childrenid).value;
         fillProgressBar(totalsteps);
-  
+
         document.getElementById('fc-' + childrenid).classList.remove('d-none');
       }
     });
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         secondchildrens.classList.remove('d-none');
         // show elements of secondchildren div too
         secondchildrenelement.classList.remove('d-none');
-        
+
         updateSteps(true);
 
         backvalue = 'sc-' + idfc;
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         } else {
           idsc = event.target.id;
         }
-        
+
         // if element has href attribute let's navigate
         let element = document.getElementById(idsc);
         setTimeout((out) => {
