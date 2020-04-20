@@ -59,7 +59,7 @@ negocios:
         title: '2 meses gratis'
         text: 'Y si quieres cobertura dental, puedes acceder a ella desde 10,50 €/mes y te ahorrarás las dos primeras primas mensuales de tu seguro de salud.'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: 'Completa tu seguro con cobertura por incapacidad temporal con un 30% de descuento'
     text: 'Además de todas las coberturas incluidas en Adeslas Negocios, puedes contratar nuestro módulo complementario de Incapacidad Temporal para hacer frente a una baja, ahora, ¡con un 30% de descuento!. También puedes acceder a los módulos Plus Ginecología y Pediatría y Plus Clínica Universitaria de Navarra.'
@@ -67,7 +67,7 @@ negocios:
     suptitle: 'Ventajas Negocios'
     title: 'Asistencia médica de calidad en el horario que necesitas'
     text: ''
-    image: image.png
+    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Negocios?'

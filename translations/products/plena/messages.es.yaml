@@ -58,15 +58,16 @@ plena:
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
     text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena.'
     list:
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
     text: 'Puedes añadir a tu seguro mejoras con nuestro módulo complementario Plus Ginecología y Pediatría con un reembolso del 80% del coste. ¡Y también el Plus Clínica Universitaria de Navarra!'
+    image: 'adeslas_hero_large_ficha_familia_plena.jpg'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: ''
     title: 'Un seguro médico completo para toda la familia'
     text: ''
-    image: image.png
+    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Plena?'
