@@ -21,25 +21,6 @@
       } %}
   </div>
   {% endif %}
-      {# {% include 'components/header-titles/header-titles.html.twig' with {
-        mini_header: "#{landing}.minicards.suptitle" | trans,
-        text_header: "#{landing}.minicards.title" | trans,
-        content_header: "#{landing}.minicards.desc" | trans
-      } %}
-
-      <div class="container mb-5">
-        <div class="row">
-          {% for card in cards.cards %}
-            <div class="col-6">
-              {% include 'components/product-mini-card/product-mini-card.html.twig' with {
-                title: card.top,
-                subtitle: card.middle,
-                body: card.bottom,
-              } %}
-            </div>
-          {% endfor %}
-        </div>
-      </div> #}
     
   {% if bullets_extra is not empty %}
     <div class="container-fluid text-md-center max-w-750">
@@ -61,36 +42,35 @@
     </div>
   {% endif %}
 
-    {# Selector component #}
-    {# <div class="container mb-5">
-      <div class="row">
-        <div class="col-12">
-          {% include 'components/header-titles/header-titles.html.twig' with {
-            mini_header: 'DESTACADO',
-            text_header: 'Consulta nuestro cuadro médico',
-            content_header: ''
-          } %}
-          <select class="form-control form-control-lg mt-3">
-            <option>Selecciona provincia</option>
-            <option>A Coruña</option>
-            <option>Lugo</option>
-            <option>Ourense</option>
-            <option>Pontevedra</option>
-          </select>
-        </div>
+  {# Selector component #}
+  {# <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        {% include 'components/header-titles/header-titles.html.twig' with {
+          mini_header: 'DESTACADO',
+          text_header: 'Consulta nuestro cuadro médico',
+          content_header: ''
+        } %}
+        <select class="form-control form-control-lg mt-3">
+          <option>Selecciona provincia</option>
+          <option>A Coruña</option>
+          <option>Lugo</option>
+          <option>Ourense</option>
+          <option>Pontevedra</option>
+        </select>
       </div>
-    </div> #}
+    </div>
+  </div> #}
 
 
-    {% if landing == "mas100" %}
-      {% include 'components/row-button/row-button.html.twig' %}
-    {% endif %}
+  {% if landing == "mas100" %}
+    {% include 'components/row-button/row-button.html.twig' %}
+  {% endif %}
 
 
-    {# Simple divider line component #}
-    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
+  {# Simple divider line component #}
+  {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
 
-
-    {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
+  {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
 
 {% endblock %}

@@ -57,7 +57,6 @@ empresa:
         title: 'Ventajas fiscales'
         text: 'Ofrecer un seguro privado a tus trabajadores es una buena forma de fidelizar y hacer equipo, pero también retribuirás su compromiso con ventajas fiscales para ambas partes.'          
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
@@ -65,7 +64,6 @@ empresa:
     suptitle: 'Adeslas Empresas'
     title: 'Las ventajas de contratar con la compañía líder'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas empresas?'
@@ -101,3 +99,10 @@ empresa:
       faq4:
         title: 'Póliza y prima'
         text: 'La póliza es el contrato que os vincula con la compañía aseguradora y recoge todas las coberturas de las que disfrutaréis durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagaréis por el seguro y que tendréis clara desde el primer día.'
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_99empleados_empresa_01.jpg'
+      image2: 'adeslas_divider_ficha_gran_empresa_empresa_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_99empleados_empresa_02.jpg'
+      image2: 'adeslas_divider_ficha_gran_empresa_empresa_02.jpg'

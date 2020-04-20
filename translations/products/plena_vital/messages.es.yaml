@@ -62,11 +62,9 @@ plena_vital:
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
     text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios, con asistencia ambulatoria, hospitalaria e incluso urgencias a domicilio si fuese necesario. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena Vital.'
     list:
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir Pediatra o Ginecólogo?'
     text: 'Además de todas las coberturas incluidas en Adeslas Plena Vital, puedes contratar nuestro módulo complementario Plus Ginecología y Pediatría y obtener el reembolso del 80% de los gastos. ¡Y también el Plus Clínica Universitaria de Navarra!'
-    image: 'adeslas_hero_large_ficha_familia_vital.jpg'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
     suptitle: ''
     title: 'Las ventajas del líder en seguros de salud'
@@ -113,3 +111,12 @@ plena_vital:
       faq4:
         title: 'Póliza y prima'
         text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_familia_vital_01.jpg'
+      image2: 'adeslas_divider_ficha_individual_vital_01.jpg'
+      image3: 'adeslas_divider_ficha_embarazo_vital_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_familia_vital_02.jpg'
+      image2: 'adeslas_divider_ficha_individual_vital_02.jpg'
+      image3: 'adeslas_divider_ficha_embarazo_vital_02.jpg'

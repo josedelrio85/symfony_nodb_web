@@ -35,4 +35,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //       window.location.href = href;
 //     }, 1000);
 //   });
-// });
+});

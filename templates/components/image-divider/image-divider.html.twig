@@ -1,0 +1,10 @@
+{% if image is defined %}
+  {% if image is not null %}
+    <div class="container-fluid header-titles p-0 ">
+      <div class="container py-3 p-0">
+        <div class="slider-bg hero-title-desc" style="background-image:url({{ asset('build/images/'~ "#{image}") }});"></div>
+      </div>
+    </div>
+
+  {% endif %}
+{% endif %}
