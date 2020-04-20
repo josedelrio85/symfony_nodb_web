@@ -11,13 +11,15 @@
   {% include 'components/header-image/header-image.html.twig' with {
     image: "#{landing}.hero.image" | trans
   } %}
-  
+
   {# cards with title and description #}
-  <div class="container-fluid">
-    {% if cards is not null %}
+  {% if cards is not null %}
+  <div class="container-fluid text-md-center max-w-750">
       {% include 'super-components/cards/cards.html.twig' with {
         cards: cards,
       } %}
+  </div>
+  {% endif %}
       {# {% include 'components/header-titles/header-titles.html.twig' with {
         mini_header: "#{landing}.minicards.suptitle" | trans,
         text_header: "#{landing}.minicards.title" | trans,
@@ -37,24 +39,26 @@
           {% endfor %}
         </div>
       </div> #}
-    {% endif %}
+    
+  {% if bullets_extra is not empty %}
+    <div class="container-fluid text-md-center max-w-750">
+      {# bullet lists for gran empresa landing only #}
+          {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
+          bullets_extra: bullets_extra,
+        } %}
+    </div>
+  {% endif %}
 
+  {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 1} %}
 
-    {# bullet lists for gran empresa landing only #}
-    {% if bullets_extra is not empty %}
-        {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
-        bullets_extra: bullets_extra,
-      } %}
-    {% endif %}
-
-
-    {# Product cards  + title + description #}
-    {% if product_cards is not null %}
-        {% include 'super-components/product_cards/product_cards.html.twig' with {
-        product_cards: product_cards,
-      } %}
-    {% endif %}
-
+  {% if product_cards is not null %}
+    <div class="container-fluid text-md-center max-w-750">
+      {# Product cards  + title + description #}
+          {% include 'super-components/product_cards/product_cards.html.twig' with {
+          product_cards: product_cards,
+        } %}
+    </div>
+  {% endif %}
 
     {# Selector component #}
     {# <div class="container mb-5">
@@ -76,16 +80,14 @@
       </div>
     </div> #}
 
-    {# Simple divider line component #}
-    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
-
+  <div class="container-fluid text-md-center max-w-750"">
     {# SupertitleTitleSubtitle component #}
     {% include 'components/header-titles/header-titles.html.twig' with {
       mini_header: '',
       text_header: "#{landing}.desc.title" | trans,
       content_header: "#{landing}.desc.text" | trans
     } %}
-
+  </div>
     {# NOT USED IN LANDINGS #}
     {# Dropdwon + title + description #}
     {# {% if dropdown is not null %}
@@ -94,5 +96,4 @@
       } %}
     {% endif %} #}
 
-  </div>
 {% endblock %}
