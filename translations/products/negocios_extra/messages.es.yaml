@@ -1,5 +1,5 @@
-#adeslas_negocios_extra_menos5
-negocios_extra_menos5:
+#adeslas_negocios_extra
+negocios_extra:
   hero: # 1
     title: 'Adeslas Extra Negocios. El seguro médico para el autónomo que viaja al extranjero'
     subtitle: 'Tú escoges a quien te cuida en cualquier parte del mundo'
@@ -56,7 +56,7 @@ negocios_extra_menos5:
         title: 'Sin Copagos'
         text: 'En Adeslas Extra Negocios pagarás lo mismo cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres atención en la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas incluidas en Adeslas Extra Negocios, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra para someterte a algún tratamiento especial.'
@@ -64,7 +64,7 @@ negocios_extra_menos5:
     suptitle: 'Extra Ventajas'
     title: 'El mejor seguro a la carta en todo el mundo'
     text: ''
-    image: image.png
+    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Extra Negocios?'

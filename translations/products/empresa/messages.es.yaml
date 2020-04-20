@@ -57,7 +57,7 @@ empresa:
         title: 'Ventajas fiscales'
         text: 'Ofrecer un seguro privado a tus trabajadores es una buena forma de fidelizar y hacer equipo, pero también retribuirás su compromiso con ventajas fiscales para ambas partes.'          
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
@@ -65,7 +65,7 @@ empresa:
     suptitle: 'Adeslas Empresas'
     title: 'Las ventajas de contratar con la compañía líder'
     text: ''
-    image: image.png
+    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas empresas?'

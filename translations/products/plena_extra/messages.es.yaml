@@ -64,7 +64,7 @@ plena_extra:
     title: ''
     text: ''
     list: null
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres acudir a la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas de Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
@@ -72,7 +72,7 @@ plena_extra:
     suptitle: 'Ventajas Extra'
     title: 'El mejor seguro a la carta en todo el mundo'
     text: ''
-    image: image.png
+    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Plena Extra 150?'

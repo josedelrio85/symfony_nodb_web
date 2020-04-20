@@ -1,19 +1,19 @@
 cards:
-  title: 'Adeslas es más'
+  title: 'Adeslas es Más...'
   list:
     card1:
       title: 'Más prevención'
       icon: icon-adeslas_icon_prevencion
-      desc: 'Más ventajas que ponemos a tu servicio para mejorar tu bienestar y tu calidad de vida.'
+      desc: 'Más servicios que te ofrecemos para tener tu salud y bienestar bajo control.'
     card2:
-      title: 'Más atención'
+      title: 'Más asistencia'
       icon: icon-adeslas_icon_atencion
-      desc: 'Orientación médica telefónica para dudas sobre enfermedades, medicamentos, informes.'
+      desc: 'Servicios de orientación médica telefónica 24 horas para medicación o síntomas.'
     card3:
-      title: 'Más tranquilidad'
+      title: 'Más protección'
       icon: icon-adeslas_icon_tranquilidad
-      desc: 'Protección de pagos por desempleo: podrás mantener tu seguro médico hasta 12 meses.'
+      desc: 'Un servicio de protección de pagos por desempleo para que mantengas tu seguro hasta 12 meses.'
     card4:
-      title: 'Más ventajas'
+      title: 'Más descuentos'
       icon: icon-adeslas_icon_ventajas
-      desc: 'Descuentos y ventajas en más de 100 establecimientos de cuidado personal, deporte, ocio...'
+      desc: 'Descuentos y ofertas en más de 100 centros de cuidado personal, ocio, deporte, etc.'

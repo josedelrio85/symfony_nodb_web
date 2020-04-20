@@ -65,10 +65,11 @@ plena_plus:
     title: 'La mejor forma de cuidar de tu familia sin sorpresas'
     text: 'Adeslas Plena Plus te da la bienvenida a los mejores servicios de un seguro médico privado de calidad sin copagos. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas y asistencia a domicilio siempre con la misma tarifa.'
     list:
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
     text: 'Además de todas las coberturas, puedes contratar nuestro módulo complementario de Ginecología y Pediatría y obtener el reembolso del 80% de los gastos. ¡Y también el Plus Clínica Universitaria de Navarra!'
+    image: 'adeslas_hero_large_ficha_familia_plus.jpg'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
     suptitle: 'Ventajas'
     title: 'Un seguro cargado de ventajas'
@@ -98,7 +99,7 @@ plena_plus:
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: 'Los seguros de Adeslas Plena Plus están cubiertos por un plan de protección de pagos, en los que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
-    image: image.png
+    image: image.jpg
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'

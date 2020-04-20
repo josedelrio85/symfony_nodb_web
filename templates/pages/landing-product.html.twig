@@ -17,6 +17,7 @@
   <div class="container-fluid text-md-center max-w-750">
       {% include 'super-components/cards/cards.html.twig' with {
         cards: cards,
+        h2: false,
       } %}
   </div>
   {% endif %}
@@ -80,20 +81,16 @@
       </div>
     </div> #}
 
-  <div class="container-fluid text-md-center max-w-750">
-    {# SupertitleTitleSubtitle component #}
-    {% include 'components/header-titles/header-titles.html.twig' with {
-      mini_header: '',
-      text_header: "#{landing}.desc.title" | trans,
-      content_header: "#{landing}.desc.text" | trans
-    } %}
-  </div>
-    {# NOT USED IN LANDINGS #}
-    {# Dropdwon + title + description #}
-    {# {% if dropdown is not null %}
-      {% include 'super-components/dropdown/dropdown.html.twig' with {
-        dropdown: dropdown,
-      } %}
-    {% endif %} #}
+
+    {% if landing == "mas100" %}
+      {% include 'components/row-button/row-button.html.twig' %}
+    {% endif %}
+
+
+    {# Simple divider line component #}
+    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
+
+
+    {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
 
 {% endblock %}

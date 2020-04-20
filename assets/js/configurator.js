@@ -63,16 +63,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let fcdivs = document.querySelectorAll('*[id^="fc-"]');
   fcdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
+      // console.log(event);
       // get id of element clicked
       let idfc = null;
-      if(event.target.nodeName === "H5") {
+      if(event.target.nodeName === "H5" || event.target.nodeName === "SPAN") {
         idfc = event.target.parentNode.parentNode.id;
       } else if(event.target.classList.contains("justify-content-between")){
         idfc = event.target.parentNode.id;
       } else {
         idfc = event.target.id;
       }
-      // console.log(idfc);
 
       // get the suptitle value for this fc and set it. also remember the previous title
       let suptitle = document.getElementById('sc_suptitle_' + idfc).value;
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         // get id of element clicked
         let idsc = null;
-        if(event.target.nodeName === "H5") {
+        if(event.target.nodeName === "H5" || event.target.nodeName === "SPAN") {
           idsc = event.target.parentNode.parentNode.id;
         } else if(event.target.classList.contains("justify-content-between")){
           idsc = event.target.parentNode.id;
