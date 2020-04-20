@@ -27,7 +27,7 @@
           <div class="container-fluid px-0">
             <div class="container px-0">
               {% include 'components/product-features-table/product-features-table.html.twig' with {
-                array: null,
+                array: table,
               } %}
             </div>
           </div>
@@ -54,14 +54,12 @@
             } %}
         {% endif %}
 
-
-        {# Header titles #}
-        {% include 'components/header-titles/header-titles.html.twig' with {
+        {# Desc (title + desc + image) #}
+        {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { 
+          desc:desc,
           bg_grey: false,
-          mini_header: '',
-          text_header: "#{product}.desc.title" | trans | raw,
-          content_header: "#{product}.desc.text" | trans | raw,
         } %}
+
 
 
 
