@@ -43,6 +43,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     toggleC2cButton();
   });
 
+  // Banner cookies //
+  function getCookie(name) {
+      var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+      return v ? v[2] : null;
+  }
+
+  if(getCookie("cookies") == null) {
+    $('.cookies-banner').show();
+  }
+
+  if($(".accept-cookies").length) {
+    $(".accept-cookies").click(function(){
+      document.cookie = "cookies=accepted";
+      $('.cookies-banner').hide();
+    });
+  }
+
   // Fullscreen menu (decomment when we turn on menu links on header menu)
   // if($(".close-menu").length) {
   //   $(".close-menu").click(function(){

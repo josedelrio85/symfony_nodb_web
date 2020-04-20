@@ -10,17 +10,42 @@
         padding: 3rem 0;
     }
 
+    .swiper-button-next {
+        top: calc(50% - 25px);
+
+        &:after {
+            left: 17px;
+            top: 6px;
+        }
+    }
+
+    .swiper-button-prev {
+        top: calc(50% + 25px);
+        
+        &:after {
+            left: 13px;
+            top: 6px;
+        }
+    }
+
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
+        background: rgba(0,0,0,0.3);
+        border-radius: 99px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
 
         @include media-breakpoint-up(md) {
             display: block;
         }
 
         &:after {
-            font-size: 1.5rem;
+            position: absolute;
+            font-size: 1.2rem;
         }
+
     }
 
     .slider-bg {
@@ -60,7 +85,7 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        color: $primary;
+        color: $white;
     }
 
     .swiper-pagination-bullet {
@@ -102,6 +127,35 @@
 
     .description {
         max-width: 400px;
+    }
+
+    .container-next-prev {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(calc(-50% + 150px));
+        z-index: 3;
+        width: 60px !important;
+
+        @include media-breakpoint-up(md) {
+            transform: translateX(calc(-50% + 250px));
+        }
+
+        @include media-breakpoint-up(lg) {
+            transform: translateX(calc(-50% + 400px));
+        }
+
+        @include media-breakpoint-up(xl) {
+            transform: translateX(calc(-50% + 570px));
+        }
+
+        .container-next-prev-inner {
+            display: block;
+            height: 100%;
+            width: 60px;
+            position: relative;
+            float: right;
+        }
     }
 
     .btn {
