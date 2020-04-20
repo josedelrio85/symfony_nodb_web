@@ -29,10 +29,12 @@ class LandingController extends AbstractController {
     $cards = $this->repo->getKeyDataLandings($area, $landing, 'minicards');
     $product_cards = $this->repo->getKeyDataLandings($area, $landing,'product_bullet');
     $bullets_extra = $this->repo->getKeyDataLandings($area, $landing,'bullets_extra');
+    $desc = $this->repo->getKeyDataLandings($area, $landing,'desc');
     // dump($a); dump($landing); die();
     // dump($cards);
     // dump($product_cards); die();
     // dump($cards); dump($bullets_extra); die();
+    // dump($desc); die();
     $uri = parse_url($request->getUri(), PHP_URL_PATH);
     
     return $this->render("pages/landing-product.html.twig", [
@@ -42,6 +44,7 @@ class LandingController extends AbstractController {
       'product_cards' => $product_cards,
       'bullets_extra' => $bullets_extra,
       'landing_value' => $uri,
+      'desc' => $desc,
     ]);
   }
 }

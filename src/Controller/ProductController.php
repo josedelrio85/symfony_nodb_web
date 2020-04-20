@@ -25,24 +25,23 @@ class ProductController extends AbstractController {
   public function index(Request $request, TranslatorInterface $translator) {
     $this->request = $request;
     $productid = $request->attributes->get('_route');
-    $hero = $this->repo->getKeyDataProducts($productid, 'hero');
     $previous = $this->getPrevious();
     $img = null;
 
-    if ($previous === '/seguros-salud-empresa') {
-      $productid = 'negocios_menos5';
-    }
+    // dump($previous);
+    // dump($productid); 
 
     if ($previous === '/seguros-salud-empresa') {
-      $productid = 'negocios_extra_menos5';
+      if ($productid === "negocios") {
+        $productid = 'negocios_menos5';
+      }else if($productid === "negocios_extra") {
+        $productid = 'negocios_extra_menos5';
+      }
+      // dump($productid);
     }
 
-    dump($previous);
-    dump($hero); 
-    // dump($productid); die();
-    // dump($request->getUri());
-    
-    // dump(parse_url($this->request->headers->get('referer'), PHP_URL_PATH));
+    $hero = $this->repo->getKeyDataProducts($productid, 'hero');
+    // dump($hero); 
     // die();
 
     if(is_null($previous)) {
@@ -120,7 +119,6 @@ class ProductController extends AbstractController {
         default:
           $img = 'image1';
       }
-      // dump($img);die();
       if(is_null($img)){
         $img = "image1";
       }
@@ -134,6 +132,8 @@ class ProductController extends AbstractController {
     $dropdown = $this->repo->getKeyDataProducts($productid,'dropdown');
     $faq = $this->repo->getKeyDataProducts($productid,'faq');
     $table = $this->repo->getKeyDataProducts($productid,'extra');
+    $desc = $this->repo->getKeyDataProducts($productid,'desc');
+    // dump($desc);die();
     // dump($price_bullets);die();
     // dump($bullets);die();
     // dump($des_with_dropdown);die();
@@ -155,15 +155,14 @@ class ProductController extends AbstractController {
       'faq' => $faq,
       'table' => !empty($table) ? $table['table'] : null,
       'product_value' => $uri,
-      ]);
+      'desc' => $desc,
+    ]);
   }
 
   private function getPrevious() {
-    // $host = $this->request->getScheme(). "://" . $this->request->headers->get('host') .'/';
     $referer = $this->request->headers->get('referer');
 
     if(!empty($referer)) {
-      // $previous = str_replace($host, '', $referer);
       return parse_url($referer, PHP_URL_PATH);
     }
     return null;

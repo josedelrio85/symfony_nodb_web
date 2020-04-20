@@ -59,7 +59,7 @@ negocios_menos5:
         title: 'Dental con descuento'
         text: 'La tarifa de seguro dental para pymes es de 6 €/mes. Ahora sin embargo, te ofrecemos un descuento y podréis disfrutar de ambas coberturas por 49,50 €/mes.'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres recibir asistencia en la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas incluidas en Adeslas Negocios, puedes contratar nuestro módulo complementario Plus Clínica Universitaria de Navarra.'
@@ -67,7 +67,7 @@ negocios_menos5:
     suptitle: 'Ventajas Negocios'
     title: 'El servicio de la compañía líder a vuestra disposición'
     text: ''
-    image: image.png
+    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Negocios?'

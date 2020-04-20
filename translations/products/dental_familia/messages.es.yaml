@@ -62,7 +62,7 @@ dental_familia:
         title: 'Máximas facilidades'
         text: 'Elige entre pago mensual o bimensual, trimestral o anual'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.png
+    image: image.jpg
   desc: # 6 titulo + descripcion
     title: ''
     text: ''
@@ -70,7 +70,7 @@ dental_familia:
     suptitle: 'Ventajas Dental'
     title: 'El aval de la compañía líder'
     text: ''
-    image: image.png
+    image: image.jpg
     drop:
       drop1:
         title: '¿Qué es Adeslas Dental Familia?'

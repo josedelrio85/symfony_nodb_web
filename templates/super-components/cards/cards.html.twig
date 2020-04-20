@@ -1,8 +1,19 @@
-{% include 'components/header-titles/header-titles.html.twig' with {
-  mini_header:cards.suptitle,
-  text_header:cards.title,
-  content_header:cards.desc
-} %}
+{% if (cards.cards is not null or h2) %}
+
+  {% include 'components/header-titles/header-titles.html.twig' with {
+    mini_header:cards.suptitle,
+    text_header:cards.title,
+    content_header:cards.desc
+  } %}
+
+{% else %}
+
+  {% include 'components/header-titles/header-titles-h1.html.twig' with {
+    mini_header:cards.suptitle,
+    text_header:cards.title,
+    content_header:cards.desc
+  } %}
+{% endif %}
 
 <div class="container mb-5">
   <div class="row">
