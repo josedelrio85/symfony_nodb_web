@@ -1,0 +1,11 @@
+.btn-invert {
+    color: $primary;
+    background: $white;
+
+    &:hover {
+        color: $white;
+        background: $primary;
+        box-shadow: 0 0 3px $white;
+    }
+
+}

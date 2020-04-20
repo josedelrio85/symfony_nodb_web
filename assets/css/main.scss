@@ -5,6 +5,7 @@
 
 @import "type";
 @import "forms";
+@import "buttons";
 
 @import "~swiper/css/swiper.min";
 @import "modals";
@@ -37,6 +38,7 @@
 @import "../../templates/components/header-image/header-image.scss";
 @import "../../templates/super-components/hero-title-desc/hero-title-desc.scss";
 
+@import "../../templates/components/cookies/cookies.scss";
 //Misc css
 .bg-grey {
   background: #FAFAFA;

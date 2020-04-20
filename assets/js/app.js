@@ -43,6 +43,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     toggleC2cButton();
   });
 
+  // Banner cookies //
+  // Check cookie
+
+  // Accept cookie
+  if($(".accept-cookies").length) {
+    $(".accept-cookies").click(function(){
+      document.cookie = "cookies=accepted";
+    });
+  }
+
   // Fullscreen menu (decomment when we turn on menu links on header menu)
   // if($(".close-menu").length) {
   //   $(".close-menu").click(function(){
