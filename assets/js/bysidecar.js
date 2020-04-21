@@ -41,8 +41,28 @@ class bysidecar {
   }
 
   getGaClientId = () => {
-    let tracker = ga.getAll()[0];
-    return tracker.get('clientId');    
+    if (this.checkGaLoaded()) {
+      let tracker = ga.getAll()[0];
+      return tracker.get('clientId');
+    }
+    return null;
+  }
+
+  checkGaLoaded = () => {
+    if (this.counter > 5) {
+      throw new Error('Not supported!');
+    }
+
+    if (typeof ga !== 'function') {
+      this.counter += 1;
+      setTimeout(() => {
+        this.checkGaLoaded();
+      }, 1000);
+    } else {
+      this.counter = 0;
+      return true;
+    }
+    return false;
   }
 
   launchC2C = (obj, dataLayer) => {
@@ -66,8 +86,7 @@ class bysidecar {
       dni: '',
       smartcenter: false,
       observations: '',
-      // TODO uncomment when gtm script is activated
-      // ga_client_id: this.getGaClientId(),
+      ga_client_id: this.getGaClientId(),
       adeslas: null,
     };    
     this.compareObjects(obj, lead);
