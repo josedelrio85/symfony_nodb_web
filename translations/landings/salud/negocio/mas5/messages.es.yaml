@@ -32,7 +32,7 @@ mas5:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/path'
         more_info:
           text: 'Saber más'
@@ -48,7 +48,7 @@ mas5:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/path'
         more_info:
           text: 'Saber más'

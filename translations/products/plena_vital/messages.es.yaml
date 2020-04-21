@@ -1,8 +1,11 @@
 #adeslas_plena_vital
 plena_vital:
+  home:
+    title: 'El seguro médico con copagos limitados. Ahora 2 Meses GRATIS | Adeslas'
+    meta_description: 'Contrata ahora Adeslas Plena Vital y aprovecha la oferta limitada: ¡2 Meses gratis contratando un seguro Dental, también con descuento! La oferta de asistencia completa, ambulatoria y hospitalaria en habitación individual con cama para el acompañante ¡Desde 35 €/mes! ¡Entra e infórmate!'
   hero: # 1
     title: 'Adeslas Plena Vital: El seguro médico privado con cobertura total y la mejor tarifa'
-    subtitle: ''
+    subtitle1: 'Con copagos limitados por año'
     images: 
       image1: 'adeslas_hero_large_ficha_familia_vital.jpg'
       image2: 'adeslas_hero_large_ficha_individual_vital.jpg'
@@ -21,16 +24,15 @@ plena_vital:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Adeslas Plena Vital'
     title: 'Coberturas'
     text: ''
-    text2: ''
     list:
         - 'Programas de Prevención en Pediatría, Ginecología, Cardiología o Urología.'
-        - 'Embarazo y parto.'
+        - 'Cobertura global de embarazo y parto.'
         - 'Planificación familiar (incl. DIU e implantación).'
         - 'Pruebas diagnósticas, también de alta tecnología.'
         - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica.'

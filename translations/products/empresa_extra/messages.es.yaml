@@ -1,5 +1,8 @@
 #adeslas_empresa_extra
 empresa_extra:
+  home:
+    title: 'Un gran seguro médico de empresa con cobertura internacional | Adeslas'
+    meta_description: 'Adeslas Extra Empresas lo tiene todo. Un seguro médico con cobertura internacional que permite acceder a todos los servicios del Cuadro Médico Adeslas sin copagos, elegir médico libremente en todo el mundo o combinar ambos sistemas en un mismo acto médico. ¡Ahora con un 15% de descuento en Dental!'
   hero: # 1
     title: 'Adeslas Extra Empresas. Seguro médico a la carta en todo el mundo'
     subtitle: 'La mejor asistencia si parte de tu equipo viaja al extranjero'
@@ -17,7 +20,7 @@ empresa_extra:
         text: '15% Descuento'
         subtext: 'en dental'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Coberturas'

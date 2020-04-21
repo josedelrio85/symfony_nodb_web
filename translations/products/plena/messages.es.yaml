@@ -1,5 +1,8 @@
 #adeslas_plena
 plena:
+  home:
+    title: 'Adeslas | El seguro médico con copagos reducidos. Ahora 2 Meses GRATIS'
+    meta_description: 'Adeslas Plena, el mejor seguro médico ahora con una oferta limitada: ¡2 Meses gratis con un seguro Dental, también con descuento! No la dejes escapar! Entra y disfruta todas las coberturas con copagos reducidos: Hospitalización en habitación individual con cama para acompañante ¡Desde 45 €/mes!'
   hero: # 1
     title: 'Adeslas Plena: El seguro médico privado más completo con copagos reducidos'
     subtitle: ''
@@ -20,14 +23,14 @@ plena:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Adeslas Plena'
     title: 'Cobertura global'
     list: 
       - 'Medicina Preventiva en Pediatría, Ginecología, Cardiología o Urología.'
-      - 'Cobertura total de embarazo y parto.'
+      - 'Cobertura global de embarazo y parto.'
       - 'Hospitalización médica, quirúrgica, pediátrica, UVI, psiquiátrica, etc.'
       - 'Cirugía, implantes y prótesis internas.'
       - 'Fisioterapia y podología bajo reembolso de gastos.'
@@ -55,13 +58,13 @@ plena:
         text: 'Con Adeslas Plena, podrás someterte a pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
-    title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
-    text: 'Adeslas Plena Vital te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena.'
+    title: 'Toda la asistencia preventiva, de especialidades y cirugía'
+    text: 'Adeslas Plena te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena.'
     list:
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
     text: 'Puedes añadir a tu seguro mejoras con nuestro módulo complementario Plus Ginecología y Pediatría con un reembolso del 80% del coste. ¡Y también el Plus Clínica Universitaria de Navarra!'
-  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 2)
+  dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
     suptitle: ''
     title: 'Un seguro médico completo para toda la familia'
     text: ''

@@ -1,5 +1,8 @@
 #adeslas_negocios
 negocios:
+  home:
+    title: 'El seguro médico del autónomo. Desde 47 €/mes y sin copagos | Adeslas'
+    meta_description: 'Descubre Adeslas Negocios. ¡Ahora 2 meses Gratis si contratas con tu seguro dental! El seguro médico diseñado para el autónomo, sin copagos ni sorpresas. Desde 47 €/mes, todos los servicios de la compañía líder en seguros de salud. Entra y aprovecha la oferta ¡Es limitada!'
   hero: # 1
     title: 'Adeslas Negocios. La mejor asistencia médica para autónomos'
     subtitle: 'Atención ambulatoria y hospitalaria sin límites'
@@ -20,7 +23,7 @@ negocios:
         text: 'Sin Copagos'
         subtext: 'ni sorpresas'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Coberturas Negocios'

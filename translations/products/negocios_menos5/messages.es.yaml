@@ -1,5 +1,8 @@
 #adeslas_negocios_menos5
 negocios_menos5:
+  home:
+    title: 'Adeslas | El mejor seguro médico para la pyme ¡Ahora con descuentos!  '
+    meta_description: 'La mejor asistencia médica de la compañía líder en seguros de salud al mejor precio. ¡Desde 45/€ por persona! Aprovecha ahora los descuentos también en Dental para acceder a la mejor cobertura, sin copagos ni listas de espera. ¡Entra e infórmate!' 
   hero: # 1
     title: 'Adeslas Negocios. La mejor asistencia médica para la pyme sin copagos'
     subtitle: 'La más completa cobertura para ti y tus trabajadores'
@@ -20,7 +23,7 @@ negocios_menos5:
         text: 'Sin Copagos'
         subtext: 'ni sorpresas'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Coberturas Pymes'

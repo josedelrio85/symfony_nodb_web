@@ -1,5 +1,8 @@
 #adeslas_empresa
 empresa:
+  home:
+    title: 'Adeslas | Tu seguro médico de empresa sin carencias al mejor precio'
+    meta_description: 'Descubre Adeslas Empresas. Un completo seguro médico de empresa desde 45 €/mes sin copagos, ni carencias a partir de 12 empleados. La mejor atención médica con el Cuadro Médico Adeslas, líder en seguros de salud. ¡Ahora con un descuento del 15% en Dental! Aprovecha esta oferta limitada.'
   hero: # 1
     title: 'Adeslas empresas. El seguro médico para fidelizar a tu equipo'
     subtitle: 'Cobertura ambulatoria y hospitalaria sin límites ni copagos'
@@ -20,7 +23,7 @@ empresa:
         text: '15% Descuento'
         subtext: 'en Dental'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Adeslas Empresas'
