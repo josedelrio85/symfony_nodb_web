@@ -66,10 +66,6 @@ go:
     suptitle: 'Adeslas GO'
     title: 'Mucho más que un seguro médico'
     text: ''
-    image:
-      image1: 
-      image2: 
-        img2: 'adeslas_divider_ficha_individual_go_02.jpg'
     drop:
       drop1:
         title: '¿Para quién es Adeslas GO?'

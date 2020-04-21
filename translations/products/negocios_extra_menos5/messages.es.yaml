@@ -59,7 +59,6 @@ negocios_extra_menos5:
         title: 'Pruebas sin autorización'
         text: 'Con Adeslas Extra Negocios podréis someteros a la mayoría de pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas. Con tu póliza recibiréis acceso al área privada para tramitar lo que necesitéis de forma telemática.' 
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿ ¿Quieres contratar tu póliza con seguro dental?'
     text: 'Ahora puedes contratar Adeslas Extra Negocios con cobertura dental por sólo 68€/mes.'
@@ -67,7 +66,6 @@ negocios_extra_menos5:
     suptitle: 'Extra Ventajas'
     title: 'El mejor seguro a la carta en todo el mundo'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Extra Negocios?'

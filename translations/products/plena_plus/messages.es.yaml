@@ -97,7 +97,6 @@ plena_plus:
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: 'Los seguros de Adeslas Plena Plus están cubiertos por un plan de protección de pagos, en los que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
-    image: image.jpg
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'

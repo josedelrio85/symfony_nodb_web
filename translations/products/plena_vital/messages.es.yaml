@@ -69,7 +69,6 @@ plena_vital:
     suptitle: ''
     title: 'Las ventajas del líder en seguros de salud'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Plena Vital?'

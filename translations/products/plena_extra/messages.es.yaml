@@ -64,7 +64,6 @@ plena_extra:
     title: ''
     text: ''
     list: null
-    image: image.jpg
   desc: # 6 titulo + descripcion
     title: '¿Quieres acudir a la Clínica Universitaria de Navarra?'
     text: 'Además de todas las coberturas de Adeslas Plena Extra 150, puedes contratar nuestro módulo Plus Clínica Universitaria de Navarra y te reembolsaremos el 80% de los gastos.'
@@ -72,7 +71,6 @@ plena_extra:
     suptitle: 'Ventajas Extra'
     title: 'El mejor seguro a la carta en todo el mundo'
     text: ''
-    image: image.jpg
     drop:
       drop1:
         title: '¿Para quién es Adeslas Plena Extra 150?'
@@ -111,3 +109,10 @@ plena_extra:
       faq4:
         title: 'Póliza y prima'
         text: 'La póliza es el contrato que te vincula con tu compañía aseguradora y recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
+  divider: 
+    section1: 
+      image1: 'adeslas_divider_ficha_familia_extra_01.jpg'
+      image2: 'adeslas_divider_ficha_individual_extra_01.jpg'
+    section2: 
+      image1: 'adeslas_divider_ficha_familia_extra_02.jpg'
+      image2: 'adeslas_divider_ficha_individual_extra_02.jpg'
