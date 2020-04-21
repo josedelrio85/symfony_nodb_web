@@ -1,5 +1,8 @@
 #adeslas_negocios_extra
 negocios_extra:
+  home:
+    title: 'El seguro para los autónomos que quieren elegir a su médico | Adeslas'
+    meta_description: 'Descubre Adeslas Extra Negocios ahora ¡2 meses gratis si contratas dental!. Un seguro diseñado para los autónomos que desean elegir libremente su médico tanto en España como en el extranjero. Una cobertura sin copagos ni límites desde 79 €/mes. Aprovecha ahora la oferta y hazte con la mejor cobertura de salud y Dental, por un precio inmejorable.'
   hero: # 1
     title: 'Adeslas Extra Negocios. El seguro médico para el autónomo que viaja al extranjero'
     subtitle: 'Tú escoges a quien te cuida en cualquier parte del mundo'
@@ -20,7 +23,7 @@ negocios_extra:
         text: 'Sin Copagos'
         subtext: 'en el cuadro Adeslas'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Extra Coberturas'

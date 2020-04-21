@@ -32,7 +32,7 @@ embarazadas:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/seguro/adeslas-plena-vital'
         more_info:
           text: 'Saber más'
@@ -50,7 +50,7 @@ embarazadas:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/seguro/adeslas-plena-plus'
         more_info:
           text: 'Saber más'

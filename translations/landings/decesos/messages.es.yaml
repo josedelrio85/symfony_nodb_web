@@ -28,7 +28,7 @@ decesos:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/path'
         more_info:
           text: 'Saber más'
@@ -43,7 +43,7 @@ decesos:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/path'
         more_info:
           text: 'Saber más'

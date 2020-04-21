@@ -19,7 +19,7 @@ dental_familia:
         text: 'Una póliza única'
         subtext: 'con hasta 6 personas'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Dental Familia'
@@ -103,9 +103,10 @@ dental_familia:
         text: 'Es el período en el que todavía no se puede disfrutar de la cobertura tras la contratación del seguro. En Adeslas Dental Familia todas tus coberturas están claras desde el principio, sin carencias.'
       faq5:
         title: '¿Qué es una póliza? ¿Y la prima?'
-        text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas Dental Familia te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y la tendrás clara desde el primer día.'    
+        text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas Dental Familia te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y la tendrás clara desde el primer día.'
   divider: 
     section1: 
       image1: 'adeslas_divider_ficha_dental_famillia_01.jpg'
     section2: 
       image1: 'adeslas_divider_ficha_dental_famillia_02.jpg'
+      

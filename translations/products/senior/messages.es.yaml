@@ -1,5 +1,8 @@
 #adeslas_senior
 senior:
+  home:
+    title: 'El mejor seguro médico para mayores de 65. ¡15 Dto. Dental! | Adeslas'
+    meta_description: 'Disfruta de una jubilación tranquila con Adeslas Seniors, Desde 60 €/mes tendrás el mejor y más completo seguro para mayores de 65 años, con un plan de prevención y salud personalizado. ¡Ahora con un 15% de descuento en tu seguro Dental! Entra e infórmate de la mejor oferta del mercado.' 
   hero: # 1
     title: 'Adeslas Seniors. El único seguro médico para mayores de 65 con asesoría personalizada'
     subtitle: 'Plan de prevención adaptado a tu edad y copagos limitados'
@@ -13,13 +16,13 @@ senior:
       period: '/mes'
     bullets:
       bullet1:
-        text: 'Ahora Seguro Dental'
-        subtext: 'con 15% de descuento'
+        text: 'Ahora 15% de descuento'
+        subtext: 'en tu seguro Dental'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 3 asegurados'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Coberturas Sénior'
@@ -47,7 +50,7 @@ senior:
         text: 'Tendrás una atención médica adecuada a tu edad con coberturas Adeslas desde 60 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 3 o más asegurados. Y si quieres un seguro Dental, tendrás un 15% de  descuento.'
       drop3:
         title: 'Copagos limitados'
-        text: 'Con Adeslas Seniors no pagarás copagos por muchos de los actos médicos a los que te derive tu Asesor Personal de Salud, pero siempre estarán limitados a 260 euros al año. Si quieres acudir al especialista sin prescripción previa, podrás hacerlo con copagos estándar.'
+        text: 'Con Adeslas Seniors no pagarás copagos por muchos de los actos médicos a los que te derive tu Asesor Personal de Salud, pero en todo caso, estarán limitados a 260 euros al año. Si quieres acudir al especialista sin prescripción previa, podrás hacerlo con copagos estándar.'
       drop4:
         title: 'Calidad'
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas a tu servicio.'
@@ -56,7 +59,7 @@ senior:
         text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
       drop6:
         title: 'Tranquilidad, vayas donde vayas'
-        text: 'Con Adeslas Seniors tendrás asegurada la asistencia médica si sufres una enfermedad o accidente cuando estés de viaje en el extranjero. Cubriremos tus gastos hasta 12.000 euros'
+        text: 'Con Adeslas Seniors tendrás asegurada la asistencia médica si sufres una enfermedad o accidente cuando estés de viaje en el extranjero. Cubriremos tus gastos hasta 12.000 euros.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Un plan a largo plazo para cuidarte'
@@ -77,7 +80,7 @@ senior:
         title: '¿Hay límite de edad para contratar Adeslas Seniors?'
         text: 'Adeslas Seniors se puede contratar desde los 55 hasta los 84 años.'
       drop3:
-        title: '¿Puedo contratar Adeslas GO si no tengo DNI o NIE?'
+        title: '¿Puedo contratar Adeslas Seniors si no tengo DNI o NIE?'
         text: 'Sí, puedes contratar tu seguro médico con Adeslas Seniors. Sólo te hará falta el pasaporte.'
       drop4:
         title: '¿Por qué contratar mi seguro con Adeslas?'

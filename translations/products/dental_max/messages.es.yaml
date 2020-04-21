@@ -8,7 +8,7 @@ dental_max:
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: 8'
+      quantity: '8'
       currency: '€'
       period: '/mes'
     bullets:
@@ -19,12 +19,12 @@ dental_max:
         text: 'Descuentos'
         subtext: 'desde 2º asegurado'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
-  bullets: # 3 listado de bullets con titulo y supertitulo (no bullets: tabla)
+  bullets: # 3 tabla con titulo+ desc + supertitulo 
     suptitle: 'Adeslas Dental MAX'
     title: 'Coberturas Max'
-    list: 
+    text: 'Adeslas MAX incluye en sus coberturas hasta 38 actos médicos el primer año, que van creciendo a a la vez que se reduce tu tarifa:' 
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Adeslas Dental MAX'
     title: 'Mejores condiciones'
@@ -46,9 +46,9 @@ dental_max:
         title: 'Máximas facilidades'
         text: 'Elige entre pago mensual, bimensual, trimestral y anual y si necesitas tratamientos especiales, disfrutarás de un ahorro de hasta el 50% en precios y de un plan de financiación a tu medida.'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (antes tabla)
-  desc: # 6 titulo + descripcion
-    title: ''
-    text: ''
+  desc: # 6 titulo + descripcion (cinta contratación)
+    title: '¿Tienes dudas? ¿Quieres saber más sobre Dental MAX?'
+    text: 'Te llamamos o consúltanos sin compromiso'
   dropdown: # 7 listado de dropdowns con titulo + supertitulo + descripcion (igual que 4)
     suptitle: 'Dental MAX'
     title: 'Las ventajas de contratar con una compañía líder'
@@ -69,7 +69,7 @@ dental_max:
       drop5:
         title: '¿Necesito tener otro seguro  de salud Adeslas para disfrutar de Adeslas Dental MAX?'
         text: 'No. Adeslas Dental MAX es un seguro independiente que no está vinculado a ningún otro seguro de salud Adeslas.'  
-  faq:    # 8 FAQ'S solo si no va en particulares
+  faq:    # 8 FAQ'S 
     suptitle: 'FAQ''s'
     title: 'Términos frecuentes'
     elems:

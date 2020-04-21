@@ -1,5 +1,8 @@
 #adeslas_go_product
 go:
+  home:
+    title: 'El seguro médico más barato. ¡Ahora Desde 16,20 €/mes! | Adeslas'
+    meta_description: 'Descubre Adeslas GO. El seguro médico más barato ¡Ahora desde 16,20 €/mes! Entra y aprovecha la oferta: Un seguro con un chequeo médico anual y acceso a los mejores especialistas para prevenir cualquier problema de salud y cuidarte sin esperas al mejor precio.'
   hero: # 1
     title: 'Adeslas GO. El seguro médico para ir al especialista que necesites sin esperas'
     subtitle: 'Sin cuestionario previo.'
@@ -17,10 +20,10 @@ go:
         text: '3 primeros'
         subtext: 'copagos gratis'
       bullet2:
-        text: ''
-        subtext: ''
+        text: 'Chequeo anual'
+        subtext: 'adaptado a tu edad'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Coberturas Adeslas GO'

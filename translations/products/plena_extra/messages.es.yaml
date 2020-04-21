@@ -1,8 +1,11 @@
 #adeslas_plena_extra
 plena_extra:
+  home:
+    title: 'Adeslas | El seguro médico de cobertura internacional ¡2 Meses GRATIS!'
+    meta_description: 'Descubre Adeslas Plena Extra 150, el seguro con cobertura internacional que te permite elegir médico dentro y fuera de España. ¡Ahora 2 meses gratis con Dental! Todas las coberturas de una asistencia global de libre elección o en el Cuadro Médico Adeslas sin copagos. ¡Aprovecha la oferta limitada!'
   hero: # 1
     title: 'Adeslas Plena Extra 150. Un seguro médico para escoger a quién te cuida'
-    subtitle: 'Libre elección de especialista en todo el mundo'
+    subtitle: 'Libre elección de especialista y cobertura internacional'
     images: 
       image1: 'adeslas_hero_large_ficha_familia_extra.jpg'
       image2: 'adeslas_hero_large_ficha_individual_extra.jpg'
@@ -20,7 +23,7 @@ plena_extra:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Coberturas Extra'

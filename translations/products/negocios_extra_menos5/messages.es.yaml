@@ -1,5 +1,8 @@
 #adeslas_negocios_extra_menos5
 negocios_extra_menos5:
+  home:
+    title: 'Adeslas |¡Oferta! El seguro para pymes con cobertura en todo el mundo'
+    meta_description: 'Adeslas Extra Negocios para pymes es el seguro más flexible que desde 63,5 € ofrece la mayor cobertura en todo el mundo. Podréis disfrutar de una asistencia completa sin copagos con el cuadro médico Adeslas, compañía líder en seguros de salud o elegir médico libremente. ¡Infórmate de los descuentos!' 
   hero: # 1
     title: 'La mejor asistencia médica para ti y tu equipo en todo el mundo'
     subtitle: 'Un seguro de salud tan flexible como vuestras necesidades'
@@ -20,7 +23,7 @@ negocios_extra_menos5:
         text: 'Sin Copagos'
         subtext: 'en el cuadro Adeslas'
     cta:
-      text: 'Llamadme'
+      text: 'Contratar'
       path: '/path'
   bullets: # 3 listado de bullets con titulo y supertitulo
     suptitle: 'Extra Coberturas'
