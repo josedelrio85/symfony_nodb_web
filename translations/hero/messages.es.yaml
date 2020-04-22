@@ -1,6 +1,9 @@
 hero:
   slide1:
     image: adeslas_hero_large_home_slider_salud.jpg
+    image_desktopmini: adeslas_hero_large_home_slider_salud_desktopmini.jpg
+    image_tablet: adeslas_hero_large_home_slider_salud_tablet.jpg
+    image_mobile: adeslas_hero_large_home_slider_salud_mobile.jpg
     title: 'Salud'
     text: 'El seguro médico privado más completo al precio que necesitas'
     cta:
@@ -10,6 +13,9 @@ hero:
       action: 'open-conf'
   slide2:
     image: adeslas_hero_large_home_slider_dental.jpg
+    image_desktopmini: adeslas_hero_large_home_slider_salud.jpg
+    image_tablet: adeslas_hero_large_home_slider_salud_tablet.jpg
+    image_mobile: adeslas_hero_large_home_slider_salud_mobile.jpg
     title: 'Dental'
     text: 'La garantía de 4.000 profesionales de la salud dental cerca de ti'
     cta:
@@ -19,6 +25,11 @@ hero:
       action: ''
   slide3:
     image: adeslas_hero_large_home_slider_mascotas.jpg
+    image_desktopmini: adeslas_hero_large_home_slider_salud.jpg
+    image_tablet: adeslas_hero_large_home_slider_salud_tablet.jpg
+    image_mobile: adeslas_hero_large_home_slider_salud_mobile.jpg
+
+
     title: 'Mascotas'
     text: 'La mejor protección para que tu mascota y tú viváis con tranquilidad'
     cta:
@@ -28,6 +39,9 @@ hero:
       action: 'open-c2c'
   slide4:
     image: adeslas_hero_large_home_slider_decesos.jpg
+    image_desktopmini: adeslas_hero_large_home_slider_salud.jpg
+    image_tablet: adeslas_hero_large_home_slider_salud_tablet.jpg
+    image_mobile: adeslas_hero_large_home_slider_salud_mobile.jpg
     title: 'Decesos'
     text: 'El respaldo que necesitas para los momentos más delicados'
     cta:
