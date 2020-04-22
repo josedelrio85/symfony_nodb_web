@@ -1,0 +1,9 @@
+
+.row {
+  .margin-card {
+    @include media-breakpoint-down(md) {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }  
+  }
+}
