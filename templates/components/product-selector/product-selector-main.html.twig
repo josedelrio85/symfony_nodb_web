@@ -10,7 +10,7 @@
     {% for product in mainelements %}
       <div id="product-{{product.name}}" class="col-12 col-sm-6 col-md-{{tam}} mb-3 product-btn" 
         {% if product.path is defined %} {{ custom_routes(path(product.path)) }} {% endif %}>
-        <div class="inner d-flex justify-content-between align-items-center p-4"> {# fixed_height #}
+        <div class="inner d-flex justify-content-between align-items-center p-4 fixed_height">
           <h5 class="text-dark font-weight-bold m-0 name">{{product.title}}</h5>
           <span class="icon {{product.icon}} h5 mb-0 text-primary"></span>
           <input type="hidden" id="steps-{{product.name}}" value="{{product.steps}}"/>
