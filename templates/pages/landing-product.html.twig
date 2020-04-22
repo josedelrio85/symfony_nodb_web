@@ -9,7 +9,8 @@
 
   {# Hero image component #}
   {% include 'components/header-image/header-image.html.twig' with {
-    image: "#{landing}.hero.image" | trans
+    image: "#{landing}.hero.image" | trans,
+    image_title: "#{landing}.home.title" | trans,
   } %}
 
   {# cards with title and description #}

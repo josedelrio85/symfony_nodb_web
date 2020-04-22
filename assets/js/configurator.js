@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 500);
 
         setTimeout((out) => {
-          reset();
+          // reset();
           window.location.href = element.getAttribute('href');
         }, 2000);
       }
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 500);
 
         setTimeout((out) => {
-          reset();
+          // reset();
           window.location.href = element.getAttribute('href');
         }, 2000);
       });
