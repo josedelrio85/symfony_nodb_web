@@ -43,19 +43,12 @@ class i18nRepository{
       $products.'dental_familia',
       $products.'dental_max',
     ];
-    // $arr = [
-    //   $basedir.DIRECTORY_SEPARATOR.'salud',
-    //   $basedir.DIRECTORY_SEPARATOR.'dental',
-    //   $basedir.DIRECTORY_SEPARATOR.'decesos',
-    //   $basedir.DIRECTORY_SEPARATOR.'mascotas',
-    // ];
 
     $iterator = $finder->files()->in($arr);
     foreach ($iterator as $file) {
       $path = $file->getRealpath();
       $key = str_replace($basedir, '', $path);
       $exploded = explode(DIRECTORY_SEPARATOR, $key);
-      // dump($exploded);
 
       if(count($exploded) > 2){
         $mf = $exploded[1];
@@ -70,8 +63,6 @@ class i18nRepository{
         $this->productConfig = $z;
       }
     }
-    // dump($this->productConfig);
-    // die();
   }
 
   public function getMessages(){
@@ -89,7 +80,6 @@ class i18nRepository{
     }
     return [];
   }
-
 
   public function getKeyDataProducts($product, $key){
     $alldata = $this->productConfig['products'];

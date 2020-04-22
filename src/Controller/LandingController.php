@@ -25,23 +25,21 @@ class LandingController extends AbstractController {
 
     $landing = $request->attributes->get('_route');
     $area = $this->prodserv->getArea($landing);
-    $a = $this->repo->getMessages(); 
-    $cards = $this->repo->getKeyDataLandings($area, $landing, 'minicards');
-    $product_cards = $this->repo->getKeyDataLandings($area, $landing,'product_bullet');
-    $bullets_extra = $this->repo->getKeyDataLandings($area, $landing,'bullets_extra');
-    $desc = $this->repo->getKeyDataLandings($area, $landing,'desc');
-    // dump($a); dump($landing); die();
-    // dump($cards);
-    // dump($product_cards); die();
-    // dump($cards); dump($bullets_extra); die();
-    // dump($desc); die();
-    $uri = parse_url($request->getUri(), PHP_URL_PATH);
     
+    $alldata = $this->repo->getMessages();
+    $dl = $alldata['landings'][$area][$landing];
+    $cards = $dl['minicards'];
+    $product_bullet = $dl['product_bullet'];
+    $desc = $dl['desc'];
+    $bullets_extra = array_key_exists('bullets_extra', $dl) ? $dl['bullets_extra'] : null;
+    $uri = parse_url($request->getUri(), PHP_URL_PATH);
+    // dump($alldata); dump($dl); dump($cards); die();
+
     return $this->render("pages/landing-product.html.twig", [
       'landing' => $landing,
       'translator' => $translator,
       'cards' => $cards,
-      'product_cards' => $product_cards,
+      'product_cards' => $product_bullet,
       'bullets_extra' => $bullets_extra,
       'landing_value' => $uri,
       'desc' => $desc,

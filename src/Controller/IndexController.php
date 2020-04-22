@@ -23,21 +23,15 @@ class IndexController extends AbstractController {
 
   public function index(Request $request, TranslatorInterface $translator) {
 
-    $products = $this->prodserv->getProducts();
     $mainelements = $this->prodserv->getMain();
     $firstchildrens = $this->prodserv->getFirstChildren();
     $secondChildrens = $this->prodserv->getSecondChildren();
 
     $hero = $this->repo->getSimpleData('hero');
     $cards = $this->repo->getSimpleData('cards');
-
-    $route = $request->attributes->get('_route');
-    $uri = $request->server->get('REQUEST_URI');
     // dump($mainelements); dump($firstchildrens); dump($secondChildrens);die();
     
     return $this->render("pages/index.html.twig", [
-      'route'     => $route,
-      'uri'       => $uri,
       'translator' => $translator,
       'mainelements' => $mainelements,
       'firstchildrens' => $firstchildrens,
