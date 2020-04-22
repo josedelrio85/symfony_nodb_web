@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
+  let fullScreenLoader = document.querySelector('.fullscreen-loader');
 
   // let mainelements = document.querySelector('#mainelements');
   let firstchildrens = document.querySelector('#firstchildrens');
@@ -39,7 +40,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
         reset();
-        window.location.href = element.getAttribute('href');
+        setTimeout((out) => {
+          // show fullscreen loader
+          fullScreenLoader.classList.add('active');
+        }, 500);
+
+        setTimeout((out) => {
+          window.location.href = element.getAttribute('href');
+        }, 2000);
       } else {
 
         fullScreenConfig.classList.add('active');
@@ -84,15 +92,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
       if (element.getAttribute('href') !== null) {
         updateSteps(true);
 
-        // close telon
-        // setTimeout((out) => {
-        //   fullScreenConfig.classList.remove('active');
-        // }, 500);
+        setTimeout((out) => {
+          // close telon
+          // fullScreenConfig.classList.remove('active');
+          // show fullscreen loader
+          fullScreenLoader.classList.add('active');
+        }, 500);
 
         setTimeout((out) => {
           // reset();
           window.location.href = element.getAttribute('href');
-        }, 1000);
+        }, 2000);
       }
 
       let secondchildrenelement = document.getElementById('sc-' + idfc);
@@ -130,16 +140,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         // if element has href attribute let's navigate
         let element = document.getElementById(idsc);
-        
-        // close telon
-        // setTimeout((out) => {
-        //   fullScreenConfig.classList.remove('active');
-        // }, 500);
+        setTimeout((out) => {
+          // close telon
+          // fullScreenConfig.classList.remove('active');
+          // show fullscreen loader
+          fullScreenLoader.classList.add('active');
+        }, 500);
 
         setTimeout((out) => {
           // reset();
           window.location.href = element.getAttribute('href');
-        }, 1000);
+        }, 2000);
       });
     });
   });

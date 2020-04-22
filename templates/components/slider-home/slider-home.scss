@@ -1,13 +1,14 @@
 .swiper-home {
 
-    height: 450px;
-
-    @include media-breakpoint-up(md) {
-        height: 550px;
-    }
-
     .inner {
         padding: 3rem 0;
+    }
+
+    .slider-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
     }
 
     .swiper-button-next {

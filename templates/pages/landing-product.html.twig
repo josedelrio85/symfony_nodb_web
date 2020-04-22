@@ -9,7 +9,8 @@
 
   {# Hero image component #}
   {% include 'components/header-image/header-image.html.twig' with {
-    image: "#{landing}.hero.image" | trans
+    image: "#{landing}.hero.image" | trans,
+    image_title: "#{landing}.home.title" | trans,
   } %}
 
   {# cards with title and description #}
@@ -67,11 +68,25 @@
     {% include 'components/row-button/row-button.html.twig' %}
   {% endif %}
 
-  {# Simple divider line component (print only if there is another element next)#}
-  {% if desc.title != '' %}
+  {# Simple divider line component #}
+  {% if des_with_dropdown is not null or desc.title != '' %}
     {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
   {% endif %}
 
-  {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
+  {% if desc.title != '' %}
+    <div class="container-fluid text-md-center max-w-750">
+      {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
+    </div>
+  {% endif %}
+
+
+  {% if des_with_dropdown is not null %}
+    <div class="container-fluid max-w-750">
+    {% include 'super-components/dropdown/dropdown.html.twig' with {
+      dropdown: des_with_dropdown,
+    } %}
+    {# bg_grey: false, #}
+    </div>
+  {% endif %}
 
 {% endblock %}

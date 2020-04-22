@@ -4,6 +4,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 @import "type";
+@import "icons";
 @import "forms";
 @import "buttons";
 
@@ -37,8 +38,8 @@
 @import "../../templates/components/click-to-call-privacy-modal/click-to-call-privacy-modal.scss";
 @import "../../templates/components/header-image/header-image.scss";
 @import "../../templates/super-components/hero-title-desc/hero-title-desc.scss";
-
 @import "../../templates/components/cookies/cookies.scss";
+@import "../../templates/components/fullscreen-loader/fullscreen-loader.scss";
 //Misc css
 .bg-grey {
   background: #FAFAFA;

@@ -28,6 +28,9 @@
             text-transform: uppercase;
         }
     }
+    .fixed_height {
+        height: 80px;
+    }
 
     @include media-breakpoint-up(lg) {
         .fixed_height {

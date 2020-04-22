@@ -33,7 +33,8 @@ class LandingController extends AbstractController {
     $desc = $dl['desc'];
     $bullets_extra = array_key_exists('bullets_extra', $dl) ? $dl['bullets_extra'] : null;
     $uri = parse_url($request->getUri(), PHP_URL_PATH);
-    // dump($alldata); dump($dl); dump($cards); die();
+    $des_with_dropdown = array_key_exists('des_with_dropdown', $dl) ? $dl['des_with_dropdown'] : null;
+    // dump($alldata); dump($des_with_dropdown); die();
 
     return $this->render("pages/landing-product.html.twig", [
       'landing' => $landing,
@@ -43,6 +44,7 @@ class LandingController extends AbstractController {
       'bullets_extra' => $bullets_extra,
       'landing_value' => $uri,
       'desc' => $desc,
+      'des_with_dropdown' => $des_with_dropdown,
     ]);
   }
 }
