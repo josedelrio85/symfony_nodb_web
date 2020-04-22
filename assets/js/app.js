@@ -11,6 +11,15 @@ ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
+  //Header shadow on document scroll greater than 0
+  window.addEventListener('scroll', function() {
+    if (document.documentElement.scrollTop != 0) {
+      document.querySelector('.header').classList.add('shadow');
+    } else {
+      document.querySelector('.header').classList.remove('shadow');
+    }
+  });
+
   // Slider home
   var sliderHome = new Swiper('.swiper-home', {
     speed: 400,

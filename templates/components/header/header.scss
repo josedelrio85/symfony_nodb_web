@@ -96,6 +96,10 @@
         cursor: pointer;
     }
 
+    &.shadow {
+        box-shadow: $box-shadow-header;
+    }
+
 }
 
 .fullscreen-navigation {
