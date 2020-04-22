@@ -69,8 +69,19 @@
 
 
   {# Simple divider line component #}
-  {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
+  {% if des_with_dropdown is not null or desc.title != '' %}
+    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
+  {% endif %}
 
   {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
+
+  {% if des_with_dropdown is not null %}
+    <div class="container-fluid max-w-750">
+    {% include 'super-components/dropdown/dropdown.html.twig' with {
+      dropdown: des_with_dropdown,
+    } %}
+    {# bg_grey: false, #}
+    </div>
+  {% endif %}
 
 {% endblock %}
