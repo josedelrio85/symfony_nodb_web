@@ -67,9 +67,10 @@
     {% include 'components/row-button/row-button.html.twig' %}
   {% endif %}
 
-
-  {# Simple divider line component #}
-  {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
+  {# Simple divider line component (print only if there is another element next)#}
+  {% if desc.title != '' %}
+    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
+  {% endif %}
 
   {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
 
