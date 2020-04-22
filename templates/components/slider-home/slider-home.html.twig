@@ -28,11 +28,6 @@
             role="button">{{slide.cta.text}}</a> #}
           </div>
         </div>
-        {# <img class="w-100 img-slider-desktop" src="{{ asset('build/images/'~ "#{slide.image}") }}"/> <!-- desktop -->
-        <img class="w-100 img-slider-desktop-mini" src="{{ asset('build/images/'~ "#{slide.image_desktopmini}") }}"/> <!-- desktop mini -->
-        <img class="w-100 img-slider-tablet" src="{{ asset('build/images/'~ "#{slide.image_tablet}") }}"/> <!-- desktop mini -->
-        <img class="w-100 img-slider-mobile" src="{{ asset('build/images/'~ "#{slide.image_mobile}") }}"/> <!-- mobile --> #}
-
         <picture class="w-100">
             <source srcset="{{ asset('build/images/'~ "#{slide.image_mobile}") }}" media="(max-width: 576px)">
             <source srcset="{{ asset('build/images/'~ "#{slide.image_tablet}") }}" media="(max-width: 767px)">
@@ -40,8 +35,10 @@
             <source srcset="{{ asset('build/images/'~ "#{slide.image}") }}">
             <img class="w-100" srcset="{{ asset('build/images/'~ "#{slide.image}") }}">
         </picture>
-
-
+        {# <img class="w-100 img-slider-desktop" src="{{ asset('build/images/'~ "#{slide.image}") }}"/> <!-- desktop -->
+        <img class="w-100 img-slider-desktop-mini" src="{{ asset('build/images/'~ "#{slide.image_desktopmini}") }}"/> <!-- desktop mini -->
+        <img class="w-100 img-slider-tablet" src="{{ asset('build/images/'~ "#{slide.image_tablet}") }}"/> <!-- desktop mini -->
+        <img class="w-100 img-slider-mobile" src="{{ asset('build/images/'~ "#{slide.image_mobile}") }}"/> <!-- mobile --> #}
         {# <div class="slider-bg" style="background-image:url({{ asset('build/images/'~ "#{slide.image}") }})"></div> #}
         {# srcset="{{ asset('build/images/'~ "#{provider}.packs.#{pack_id}.image_pack_mobile" | trans) }}"> #}
       </a>
