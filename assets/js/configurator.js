@@ -84,13 +84,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       if (element.getAttribute('href') !== null) {
         updateSteps(true);
 
-        setTimeout((out) => {
-          // close telon
-          fullScreenConfig.classList.remove('active');
-        }, 500);
+        // close telon
+        // setTimeout((out) => {
+        //   fullScreenConfig.classList.remove('active');
+        // }, 500);
 
         setTimeout((out) => {
-          reset();
+          // reset();
           window.location.href = element.getAttribute('href');
         }, 1000);
       }
@@ -130,13 +130,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         // if element has href attribute let's navigate
         let element = document.getElementById(idsc);
-        setTimeout((out) => {
-          // close telon
-          fullScreenConfig.classList.remove('active');
-        }, 500);
+        
+        // close telon
+        // setTimeout((out) => {
+        //   fullScreenConfig.classList.remove('active');
+        // }, 500);
 
         setTimeout((out) => {
-          reset();
+          // reset();
           window.location.href = element.getAttribute('href');
         }, 1000);
       });

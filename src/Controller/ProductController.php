@@ -38,13 +38,13 @@ class ProductController extends AbstractController {
       // dump($productid);
     }
 
-
     $alldata = $this->repo->getMessages();
     $dp = $alldata['products'][$productid];
     $hero = $dp['hero'];
 
     if(is_null($previous)) {
-      $hero_image = $hero['images']['image1'];
+      $img = "image1";
+      $hero_image = $hero['images'][$img];
     } else {
       switch($productid) {
         case 'plena_plus':
