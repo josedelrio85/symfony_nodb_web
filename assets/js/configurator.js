@@ -40,7 +40,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
         reset();
-        window.location.href = element.getAttribute('href');
+        setTimeout((out) => {
+          // show fullscreen loader
+          fullScreenLoader.classList.add('active');
+        }, 500);
+
+        setTimeout((out) => {
+          window.location.href = element.getAttribute('href');
+        }, 2000);
       } else {
 
         fullScreenConfig.classList.add('active');
