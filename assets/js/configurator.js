@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         setTimeout((out) => {
           reset();
           window.location.href = element.getAttribute('href');
-        }, 1500);
+        }, 2000);
       }
 
       let secondchildrenelement = document.getElementById('sc-' + idfc);
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         setTimeout((out) => {
           reset();
           window.location.href = element.getAttribute('href');
-        }, 1500);
+        }, 2000);
       });
     });
   });
