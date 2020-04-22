@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
+  let fullScreenLoader = document.querySelector('.fullscreen-loader');
 
   // let mainelements = document.querySelector('#mainelements');
   let firstchildrens = document.querySelector('#firstchildrens');
@@ -86,13 +87,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         setTimeout((out) => {
           // close telon
-          fullScreenConfig.classList.remove('active');
+          // fullScreenConfig.classList.remove('active');
+          // show fullscreen loader
+          fullScreenLoader.classList.add('active');
         }, 500);
 
         setTimeout((out) => {
           reset();
           window.location.href = element.getAttribute('href');
-        }, 1000);
+        }, 1500);
       }
 
       let secondchildrenelement = document.getElementById('sc-' + idfc);
@@ -132,13 +135,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let element = document.getElementById(idsc);
         setTimeout((out) => {
           // close telon
-          fullScreenConfig.classList.remove('active');
+          // fullScreenConfig.classList.remove('active');
+          // show fullscreen loader
+          fullScreenLoader.classList.add('active');
         }, 500);
 
         setTimeout((out) => {
           reset();
           window.location.href = element.getAttribute('href');
-        }, 1000);
+        }, 1500);
       });
     });
   });
