@@ -32,7 +32,9 @@
     </div>
   {% endif %}
 
-  {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 1} %}
+  {% if product_cards is not null %}
+    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 1} %}
+  {% endif %}
 
   {% if product_cards is not null %}
     <div class="container-fluid text-md-center max-w-750">
