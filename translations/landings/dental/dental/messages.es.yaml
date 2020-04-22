@@ -62,7 +62,11 @@ dental:
     title: 'Consulta nuestro Cuadro Médico'
     suptitle: 'Adeslas'
     select_txt: ''
-  desc: # 5 title + description + dropdowns
+  desc: # 5 title + description
+    title: ''
+    text: ''
+  des_with_dropdown: # 6 title + description + dropdowns
+    suptitle: ''
     title: 'Resuelve tus dudas'
     text: ''
     drop:
