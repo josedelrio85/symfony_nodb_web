@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ctas.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
       let id = event.target.id;
-      console.log(id);
+      // console.log(id);
       let cta = document.getElementById(id);
       let action = cta.getAttribute('data-action');
       switch(action) {
