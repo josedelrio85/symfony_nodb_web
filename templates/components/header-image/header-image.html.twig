@@ -1,13 +1,8 @@
 <div id="header-image" class="container-fluid mb-5">
   <div class="row">
     <div class="col-12 px-0">
-
-      <div class="row-bg" style="background-image: url({{ asset('build/images/'~ "#{image}") }})"></div>
-
+      <div class="row-bg" {% if image_title is defined %} title="{{ image_title }}" {% endif %} style="background-image: url({{ asset('build/images/'~ "#{image}") }})"></div>
       {# <img class="w-100" src="{{ asset('build/images/'~ "#{image}") }}" class="img-fluid" alt=""> #}
-
-
-
     </div>
   </div>
 </div>
