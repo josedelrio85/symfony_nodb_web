@@ -1,0 +1,10 @@
+
+.product-selector,
+.feature-cards {
+
+    .icon {
+        @include media-breakpoint-down(sm) {
+            font-size: 1.875rem;
+        }
+    }
+}
