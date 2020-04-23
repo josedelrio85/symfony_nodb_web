@@ -145,6 +145,7 @@ class ProductController extends AbstractController {
     return $this->render("pages/single-product.html.twig", [
       'product' => $productid,
       'translator' => $translator,
+      'referer' => $previous,
       'hero_image' => $hero_image,
       'price_bullets' => $price_bullets['bullets'],
       'bullets_extra' => $bullets,

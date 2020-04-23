@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-adeslas_icon_back:before {
+  content: "\eb26";
+}
+.icon-adeslas_menu_mob_arrow_down:before {
+  content: "\eb24";
+}
+.icon-adeslas_menu_mob_arrow_up:before {
+  content: "\eb25";
+}
+.icon-adeslas_menu_burguer:before {
+  content: "\eb23";
+}
 .icon-adeslas_icon_atencion:before {
   content: "\eb09";
   color: #0097d7;

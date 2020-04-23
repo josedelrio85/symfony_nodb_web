@@ -15,6 +15,8 @@
   <div class="container-fluid container-lg">
     <div class="row">
       <div class="col-12 col-lg-8">
+
+        {% include 'components/back-button/back-button.html.twig' with { referer: referer } %}
       
         {# bullet lists without description #}
         {% if bullets_extra is not empty %}
