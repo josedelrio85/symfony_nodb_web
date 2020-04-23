@@ -2,6 +2,14 @@ import { analitycs } from './analitycs';
 
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
+  //Hide configurator loader if user come from browser back button
+  window.onpageshow = function(event) {
+    if (event.persisted) {
+      if($(".fullscreen-loader").hasClass("active")) {
+        $(".fullscreen-loader").removeClass("active");
+      }
+    }
+  };
 
   let closeButton = document.querySelector('.close-button');
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
