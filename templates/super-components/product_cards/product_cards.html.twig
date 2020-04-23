@@ -7,9 +7,13 @@
 
 <div class="container pb-5 max-w-750">
   <div class="row">
-    {% for item in product_cards.product %}
+    {% for key, item in product_cards.product %}
       <div class="col-12 col-md-6 mb-4">
-        {% include 'components/product-card/product-card.html.twig' with { product: item } %}
+        {% include 'components/product-card/product-card.html.twig' with { 
+          product: item, 
+          parent: product_cards.suptitle, 
+          index: key,
+        } %}
       </div>
     {% endfor %}
   </div>

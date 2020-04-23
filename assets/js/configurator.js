@@ -1,3 +1,4 @@
+import { analitycs } from './analitycs';
 
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -13,6 +14,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let actualsteps = 1;
   let titlesection = document.querySelector('.product-config .text-header');
   let previoustext = null;
+  let childrenid = null;
+  let idfc = null;
+  let idsc = null;
+  let dataposition = null;
+  let anlt_data = {
+    position: null,
+    mc: null,
+    fc: null,
+    sc: null,
+  }
+
+  let anlt = new analitycs();
+
+  let anlt = new analitycs();
 
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
@@ -29,6 +44,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         id = event.target.id;
       }
+
+      // get id suffix to know what first child must show
+      // childrenid = salud | dental | mascotas | decesos
+      childrenid = id.replace('product-','');
+
+      // analytics
+      anlt_data = {
+        position: document.getElementById(id).getAttribute('data-position'),
+        mc: childrenid,
+      }
+      anlt.configurator(anlt_data);
 
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
@@ -51,10 +77,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // show first childrens div
         firstchildrens.classList.remove('d-none');
 
-        // get id suffix to know what first child must show
-        // childrenid = salud | dental | mascotas | decesos
-        let childrenid = id.replace('product-','');
-
         // initialize steps bar and get totalsteps count
         totalsteps = document.getElementById('steps-' + childrenid).value;
         fillProgressBar(totalsteps);
@@ -68,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   fcdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
       // get id of element clicked
-      let idfc = null;
       if(event.target.nodeName === "H5" || event.target.nodeName === "SPAN") {
         idfc = event.target.parentNode.parentNode.id;
       } else if(event.target.classList.contains("justify-content-between")){
@@ -76,6 +97,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         idfc = event.target.id;
       }
+
+      // analytics
+      anlt_data = {
+        position: document.getElementById(idfc).getAttribute('data-position'),
+        mc:childrenid,
+        fc: idfc,
+      }
+      anlt.configurator(anlt_data);
 
       // get the suptitle value for this fc and set it. also remember the previous title
       let suptitle = document.getElementById('sc_suptitle_' + idfc).value;
@@ -118,11 +147,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   scdivs.forEach((cv, ci, listObj) => {
     cv.childNodes.forEach((e, f, g) => {
       e.addEventListener('click', (event) => {
-
         updateSteps(true);
 
         // get id of element clicked
-        let idsc = null;
         if(event.target.nodeName === "H5" || event.target.nodeName === "SPAN") {
           idsc = event.target.parentNode.parentNode.id;
         } else if(event.target.classList.contains("justify-content-between")){
@@ -130,6 +157,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         } else {
           idsc = event.target.id;
         }
+        
+        // analytics
+        anlt_data = {
+          position: document.getElementById(idsc).getAttribute('data-position'),
+          mc:childrenid,
+          fc: idfc,
+          sc: idsc,
+        }
+        anlt.configurator(anlt_data);
 
         // if element has href attribute let's navigate
         let element = document.getElementById(idsc);

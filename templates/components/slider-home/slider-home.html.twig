@@ -5,20 +5,12 @@
     <!-- Slides -->
     {% for slide in slides %}
     <div class="swiper-slide">
-      <a class="slider-link" {% if slide.cta.path != '' %} {{ custom_routes(slide.cta.path | trans) }} {% endif %}>
-        <div class="container h-100"  id="{{slide.cta.id}}" {% if slide.cta.action != '' %} data-action="{{slide.cta.action}}"  {% endif %}>
+      <a class="slider-link"
+       {% if slide.cta.path != '' %} {{ custom_routes(slide.cta.path | trans) }} {% endif %}>
+        <div class="container h-100" id="{{slide.cta.id}}" 
+        {% if slide.cta.action != '' %} data-action="{{slide.cta.action}}" {% endif %}
+        {% if slide.cta.position != '' %} data-position="{{ slide.cta.position }}" {% endif %}>
           <div class="inner">
-            {# <h2 class="display-4 text-header text-white">{{slide.title}}</h2>
-            <p class="description text-white">{{slide.text}}</p> #}
-            {# <a class="btn btn-primary mt-2 font-weight-bold" style="color:#fff;"
-            id="{{slide.cta.id}}" 
-            {% if slide.cta.path != '' %}
-              {{ custom_routes(slide.cta.path | trans) }}
-            {% endif %}
-            {% if slide.cta.action != '' %}
-              data-action="{{slide.cta.action}}" 
-            {% endif %}
-            role="button">{{slide.cta.text}}</a> #}
           </div>
         </div>
         <picture class="w-100">
@@ -28,12 +20,6 @@
             <source srcset="{{ asset('build/images/'~ "#{slide.image}") }}">
             <img class="w-100" srcset="{{ asset('build/images/'~ "#{slide.image}") }}">
         </picture>
-        {# <img class="w-100 img-slider-desktop" src="{{ asset('build/images/'~ "#{slide.image}") }}"/> <!-- desktop -->
-        <img class="w-100 img-slider-desktop-mini" src="{{ asset('build/images/'~ "#{slide.image_desktopmini}") }}"/> <!-- desktop mini -->
-        <img class="w-100 img-slider-tablet" src="{{ asset('build/images/'~ "#{slide.image_tablet}") }}"/> <!-- desktop mini -->
-        <img class="w-100 img-slider-mobile" src="{{ asset('build/images/'~ "#{slide.image_mobile}") }}"/> <!-- mobile --> #}
-        {# <div class="slider-bg" style="background-image:url({{ asset('build/images/'~ "#{slide.image}") }})"></div> #}
-        {# srcset="{{ asset('build/images/'~ "#{provider}.packs.#{pack_id}.image_pack_mobile" | trans) }}"> #}
       </a>
     </div>
 

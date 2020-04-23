@@ -33,6 +33,7 @@ class ProductService {
         $output[$el['name']]['steps'] = $el['steps'];
         $output[$el['name']]['icon'] = $el['icon'];
         $output[$el['name']]['title'] = $el['title'];
+        $output[$el['name']]['position'] = $el['position'];
         if(array_key_exists('path', $el)){
           $output[$el['name']]['path'] = $el['path'];
         }
@@ -54,6 +55,8 @@ class ProductService {
           $output[$el['name']][$ch['name']]['name'] = $ch['name'];
           $output[$el['name']][$ch['name']]['icon'] = $ch['icon'];
           $output[$el['name']][$ch['name']]['title'] = $ch['title'];
+          $output[$el['name']][$ch['name']]['position'] = $ch['position'];
+
           if(array_key_exists('path', $ch)){
             $output[$el['name']][$ch['name']]['path'] = $ch['path'];
           }
@@ -79,6 +82,7 @@ class ProductService {
               $output[$ch['name']][$r['name']]['path'] = $r['path'];
               $output[$ch['name']][$r['name']]['icon'] = $r['icon'];
               $output[$ch['name']][$r['name']]['title'] = $r['title'];
+              $output[$ch['name']][$r['name']]['position'] = $r['position'];
             }
           }
         }
