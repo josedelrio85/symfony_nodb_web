@@ -27,8 +27,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   let anlt = new analitycs();
 
-  let anlt = new analitycs();
-
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
