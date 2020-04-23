@@ -1,7 +1,7 @@
 menos5:
   home:
-    title: 'La más completa oferta de seguro médico para pymes. ¡Desde 45 €/mes!'
-    meta_description: 'La mejor oferta de seguros médicos para pymes, diseñada para satisfacer las necesidades de tus empleados. Tú decides qué cobertura se adapta más a vuestra forma de trabajar desde sólo 45 €/mes por empleado. ¡Entra ahora y aprovecha la oferta!'
+    title: 'La más completa oferta de seguro médico para pymes. ¡Desde 39 €/mes!'
+    meta_description: 'La mejor oferta de seguros médicos para pymes, diseñada para satisfacer las necesidades de tus empleados. Tú decides qué cobertura se adapta más a vuestra forma de trabajar desde sólo 39 €/mes por empleado. ¡Entra ahora y aprovecha la oferta!'
   hero: # 1
     title: ''
     subtitle: ''
@@ -12,11 +12,11 @@ menos5:
     desc: 'Descubre el seguro médico que mejor se adapta a tu empresa'
     cards:
       card1:
-        top: 'Desde 45 €/mes'
+        top: 'Desde 39 €/mes'
         middle: 'por empleado'
         bottom: 'sin copagos'
       card2:
-        top: 'Desde 49,50 €/mes'
+        top: 'Desde 42,90 €/mes'
         middle: 'Con Dental'
         bottom: 'por empleado'
   product_bullet: # 3 products with bullets + title + description
@@ -28,7 +28,7 @@ menos5:
         title: 'Adeslas Negocios'
         price:
           pre: 'Desde'
-          quantity: '45'
+          quantity: '39'
           currency: '€'
           period: '/mes'
         cta:
@@ -45,7 +45,7 @@ menos5:
         title: 'Adeslas Extra Negocios'
         price:
           pre: 'Desde'
-          quantity: '63,50'
+          quantity: '55,04'
           currency: '€'
           period: '/mes'
         cta:
@@ -55,7 +55,7 @@ menos5:
           text: 'Saber más'
           path: '/seguro/adeslas-negocios-extra'
         bullets:
-          - 'Cobertura total con Cuadro Médico'
+          - 'Asistencia global con Cuadro Médico'
           - 'Y libre elección de médico en todo el mundo'
           - 'La atención más completa y flexible'
   select: # 4 selector + title
