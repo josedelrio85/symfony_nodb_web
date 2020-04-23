@@ -324,6 +324,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     cv.addEventListener('click', (event) => {
       event.preventDefault();
 
+      let href = event.target.parentNode.href;
       let position = event.target.parentNode.getAttribute('data-index');
       position = position.replace('product','');
       let data = {

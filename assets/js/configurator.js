@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let childrenid = null;
   let idfc = null;
   let idsc = null;
-  let dataposition = null;
   let anlt_data = {
     position: null,
     mc: null,
