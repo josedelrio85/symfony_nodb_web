@@ -1,7 +1,7 @@
 #adeslas_dental_familia
 dental_familia:
   hero: # 1
-    title: 'Adeslas Dental. Asegura la sonrisa de tu familia con los mejores especialistas'
+    title: 'Adeslas Dental Familia. Asegura la sonrisa de tu familia con los mejores especialistas'
     subtitle: 'Un plan de salud dental desde el primer día, sin copagos ni carencias'
     images: 
       image1: 'adeslas_hero_large_ficha_dental_familia.jpg'
@@ -38,7 +38,7 @@ dental_familia:
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Condiciones'
     title: 'Un plan de prevención bucodental al mejor precio'
-    text: 'Con Adeslas Dental Familia accederás a un plan de prevención y educación bucodental para lo tuyos con los mejores especialistas y las mejores tarifas del mercado. Y todo con una prima única que reduce el coste por asegurado hasta los 3,55€/mes'
+    text: 'Adeslas Dental Familia es una póliza exclusiva para los asegurados de Adeslas Salud con la que accederás a un plan de prevención y educación bucodental para los tuyos. Los mejores especialistas y las mejores tarifas del mercado al servicio de tu familia. Y todo con una prima única que reduce el coste por asegurado hasta los 3,55€/mes.'
     drop:
       drop1:
         title: 'Amplia cobertura'
@@ -51,7 +51,7 @@ dental_familia:
         text: 'Adeslas Dental Familia te da la bienvenida con un plan de salud bucodental sin carencias ni copagos. Podrás acudir a tu clínica Dental Adeslas y pedir tu revisión gratuita el primer día.'
       drop4:
         title: 'Tratamientos especiales'
-        text: 'Nuestro sistema de franquicias te permitirá acceder a tratamientos especiales con hasta un 50% de ahorro en nuestras Clínicas Dentales Adeslas'
+        text: 'Nuestro sistema de franquicias te permitirá acceder a tratamientos especiales con hasta un 50% de ahorro en nuestras Clínicas Dentales Adeslas.'
       drop5:
         title: '100% profesionalidad'
         text: 'Más de 4.000 profesionales colegiados, 1.600 odontólogos, 190 Clínicas Dentales 100% Adeslas a tu servicio en las que te ofrecemos los tratamientos de cualquier especialidad que necesites.'
@@ -74,8 +74,8 @@ dental_familia:
         title: '¿Qué es Adeslas Dental Familia?'
         text: 'Un seguro dental privado con amplias coberturas y condiciones especiales sólo reservadas a las personas que contraten un seguro de salud Adeslas: Un descuento del 15% sobre la tarifa mensual, que va de los 8,93€ al mes con un solo asegurado, hasta los 21,25€ al mes en una prima única para entre 5 y 6 asegurados. Por eso con los descuentos y el número máximo de asegurados, puedes llegar a pagar sólo 3,5€ al mes por asegurado.'
       drop2:
-        title: '¿Hay algún límite de edad para contratar Adeslas Dental Familia?'
-        text: 'No. Adeslas Dental Familia está pensado para las familias pero no hay límite de edad para los asegurados, incluso si es un niño, siempre que el tomador del seguro sea una persona mayor de 18 años, como alguno de los padres.'  
+        title: '¿Puedo contratar este seguro sólo para mi hijo?'
+        text: 'Sí. Adeslas Dental Familia está pensado para las familias pero se puede contratar para una sola persona, incluso si es un niño, siempre que el tomador del seguro sea una persona mayor de 18 años, como alguno de los padres. Además, no existe límite de edad para contratar.'  
       drop3:
         title: '¿Y si quiero asegurar a mi familia? ¿Hay límite de asegurados?'
         text: 'No, puedes incluir en la misma póliza hasta a 6 personas.'

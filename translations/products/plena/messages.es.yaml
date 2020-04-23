@@ -55,7 +55,7 @@ plena:
         text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte del descuento por pago trimestral (2%), semestral (4%) o anual (6%).'
       drop5:
         title: 'Pruebas sin autorización'
-        text: 'Con Adeslas Plena, podrás someterte a pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas'
+        text: 'Con Adeslas Plena podrás someterte a algunas pruebas diagnósticas que te pida tu médico sin autorización previa.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Toda la asistencia preventiva, de especialidades y cirugía'
@@ -74,7 +74,7 @@ plena:
         text: 'Adeslas Plena está pensado para personas o familias que buscan un seguro médico con el que ganar tranquilidad. Una asistencia completa con una tarifa ajustada a las necesidades de un uso moderado del seguro.'
       drop2:
         title: '¿Hay límite de edad para contratar Adeslas Plena?'
-        text: '-Adeslas Plena se puede contratar hasta los 70 años, aunque puede incluirse a personas de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.'
+        text: 'Adeslas Plena se puede contratar hasta los 70 años, aunque puede incluirse a personas de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.'
       drop3:
         title: '¿Puedo contratar este servicio sólo para mis hijos?'
         text: 'Sí. Adeslas Plena puede contratarse para una única persona, que puede ser un menor siempre que el tomador sea mayor de 18 años.'

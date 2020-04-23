@@ -2,7 +2,7 @@
 empresa:
   home:
     title: 'Adeslas | Tu seguro médico de empresa sin carencias al mejor precio'
-    meta_description: 'Descubre Adeslas Empresas. Un completo seguro médico de empresa desde 45 €/mes sin copagos, ni carencias a partir de 12 empleados. La mejor atención médica con el Cuadro Médico Adeslas, líder en seguros de salud. ¡Ahora con un descuento del 15% en Dental! Aprovecha esta oferta limitada.'
+    meta_description: 'Descubre Adeslas Empresas. Un completo seguro médico de empresa desde 39 €/mes sin copagos, ni carencias a partir de 12 empleados. La mejor atención médica con el Cuadro Médico Adeslas, líder en seguros de salud. ¡Ahora con un descuento del 15% en Dental! Aprovecha esta oferta limitada.'
   hero: # 1
     title: 'Adeslas empresas. El seguro médico para fidelizar a tu equipo'
     subtitle: 'Cobertura ambulatoria y hospitalaria sin límites ni copagos'
@@ -12,7 +12,7 @@ empresa:
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: '45'
+      quantity: '39'
       currency: '€'
       period: '/mes'
     bullets:
@@ -49,7 +49,7 @@ empresa:
         text: 'Con Adeslas Empresas puedes escoger 2 esquemas: Adhesión Obligatoria, en el que tu empresa asume todo el coste de la póliza o Adhesión Voluntaria, con el que tu empresa cubre parte del coste o a parte de la plantilla.'
       drop3:
         title: 'La mejor tarifa'
-        text: 'Adeslas Empresas te ofrece la máxima cobertura a una tarifa excepcional y única para todos tus trabajadores, si no superan los 67 años. Desde sólo 45€/mes. Y con el 15% de descuento en Dental, pagaréis por todo, 49,50€/mes.'
+        text: 'Adeslas Empresas te ofrece la máxima cobertura a una tarifa excepcional y única para todos tus trabajadores, si no superan los 67 años. Desde sólo 39€/mes. Y con el 15% de descuento en Dental, pagaréis por todo, 42,90€/mes.'
       drop4:
         title: 'Sin Copagos'
         text: 'En Adeslas Empresas pagarás lo mismo cada mes, el importe de tu prima mensual, sin copagos ni gastos extra, hagáis el uso que hagáis de los servicios del seguro.'
@@ -85,7 +85,7 @@ empresa:
         text: 'Adeslas Empresas permite el acceso de familiares de empleados a la póliza en condiciones ventajosas.'        
       drop6:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text: 'Si contratas Adeslas Empresas con Dental, la tarifa será de 49,50€/mes por asegurado.'
+        text: 'Si contratas Adeslas Empresas con Dental, la tarifa será de 42,90€/mes por asegurado.'
   faq:    # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'

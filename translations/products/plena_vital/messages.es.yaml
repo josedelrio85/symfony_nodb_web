@@ -5,7 +5,7 @@ plena_vital:
     meta_description: 'Contrata ahora Adeslas Plena Vital y aprovecha la oferta limitada: ¡2 Meses gratis contratando un seguro Dental, también con descuento! La oferta de asistencia completa, ambulatoria y hospitalaria en habitación individual con cama para el acompañante ¡Desde 35 €/mes! ¡Entra e infórmate!'
   hero: # 1
     title: 'Adeslas Plena Vital: El seguro médico privado con cobertura total y la mejor tarifa'
-    subtitle1: 'Con copagos limitados por año'
+    subtitle: 'Con copagos limitados por año'
     images: 
       image1: 'adeslas_hero_large_ficha_familia_vital.jpg'
       image2: 'adeslas_hero_large_ficha_individual_vital.jpg'
@@ -52,13 +52,13 @@ plena_vital:
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud.'
       drop3:
         title: 'Copagos limitados'
-        text: 'En Adeslas Plena Vital pagarás una tarifa reducida al mes y copagos por algunas de tus coberturas de una media de 14,50€, pero nunca pagarás más de 300€ al año'
+        text: 'En Adeslas Plena Vital pagarás una tarifa reducida al mes y copagos por algunas de tus coberturas de una media de 14,50€, pero nunca pagarás más de 300€ al año.'
       drop4:
         title: 'Pago mensual y descuentos'
         text: 'En Adeslas podrás pagar tu prima cada mes pero puedes obtener descuentos por pago trimestral (2%), semestral (4%) o anual (6%).'
       drop5:
-        title: 'Pruebas sin autorización'
-        text: 'Con Adeslas Plena Vital, podrás someterte a pruebas diagnósticas de alta tecnología que tu médico solicite sin autorizaciones previas.'
+        title: 'Gestión de autorizaciones'
+        text: 'Con Adeslas Plena Vital podrás someterte a algunas de las pruebas diagnósticas que tu médico solicite sin autorización previa y las podrás tramitar todas fácilmente por vía telemática.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
@@ -79,7 +79,7 @@ plena_vital:
         title: '¿Hay límite de edad para contratar Adeslas Plena Vital?'
         text: 'Adeslas Plena se puede contratar hasta los 70 años, aunque puedes incluir a personas de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.'
       drop3:
-        title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
+        title: '¿Puedo contratar este seguro sólo para mi hijo?'
         text: 'Sí. Adeslas Plena Vital puede contratarse para una única persona, que puede ser un menor siempre que el tomador sea mayor de 18 años'
       drop4:
         title: '¿Qué cobertura tengo si estoy embarazada?'
