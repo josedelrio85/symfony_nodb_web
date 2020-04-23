@@ -1,0 +1,11 @@
+.back-button {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .icon-adeslas_icon_back {
+    font-size:40px;
+    color: $primary;
+  }
+}
