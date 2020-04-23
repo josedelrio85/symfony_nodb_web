@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let fullScreenConfig = document.querySelector('.fullscreen-product-config');
   let fullScreenLoader = document.querySelector('.fullscreen-loader');
 
-  // let mainelements = document.querySelector('#mainelements');
   let firstchildrens = document.querySelector('#firstchildrens');
   let secondchildrens = document.getElementById('secondchildrens');
   let backvalue = null;
@@ -21,11 +20,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       titlesection.innerHTML = document.getElementById('fc_suptitle').value;
 
-      fullScreenConfig.classList.add('active');
-
-      // show first childrens div
-      firstchildrens.classList.remove('d-none');
-
       // be careful when more elements are added to the card, maybe the id is not caputred properly
       let id = null;
       if(event.target.nodeName === 'H5' || event.target.nodeName === "SPAN") {
@@ -35,11 +29,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
         id = event.target.id;
       }
-      // console.log(id);
+
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
-        reset();
         setTimeout((out) => {
           // show fullscreen loader
           fullScreenLoader.classList.add('active');
@@ -47,8 +40,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         setTimeout((out) => {
           window.location.href = element.getAttribute('href');
+          // reset();
         }, 2000);
       } else {
+        // show first childrens div
+        firstchildrens.classList.remove('d-none');
 
         fullScreenConfig.classList.add('active');
 
@@ -71,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let fcdivs = document.querySelectorAll('*[id^="fc-"]');
   fcdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
-      // console.log(event);
       // get id of element clicked
       let idfc = null;
       if(event.target.nodeName === "H5" || event.target.nodeName === "SPAN") {
@@ -93,8 +88,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         updateSteps(true);
 
         setTimeout((out) => {
-          // close telon
-          // fullScreenConfig.classList.remove('active');
           // show fullscreen loader
           fullScreenLoader.classList.add('active');
         }, 500);
@@ -141,15 +134,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // if element has href attribute let's navigate
         let element = document.getElementById(idsc);
         setTimeout((out) => {
-          // close telon
-          // fullScreenConfig.classList.remove('active');
           // show fullscreen loader
           fullScreenLoader.classList.add('active');
         }, 500);
 
         setTimeout((out) => {
-          // reset();
           window.location.href = element.getAttribute('href');
+          // reset();
         }, 2000);
       });
     });
@@ -193,6 +184,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     actualsteps = 1;
 
     fullScreenConfig.classList.remove('active');
+    fullScreenLoader.classList.remove('active');
 
     // hide all elements
     firstchildrens.classList.add('d-none');
