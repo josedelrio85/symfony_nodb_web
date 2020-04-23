@@ -9,18 +9,18 @@ products:
     children:
       familia:
         name: 'familia'
-        title: 'Mí o mi familia'
+        title: 'Particular'
         icon: 'icon-adeslas_icon_individual'
-        suptitle: 'Quiero un seguro de salud para...'
+        suptitle: 'Quiero un seguro de salud...'
         children:
           individual:
             name: 'individual'
-            title: 'Mí'
+            title: 'Individual'
             path: 'individual'
             icon: 'icon-adeslas_icon_individual'
           familiar:
             name: 'familiar'
-            title: 'Mi familia'
+            title: 'Familiar'
             path: 'familiar'
             icon: 'icon-adeslas_icon_famila'
           mayores:
@@ -35,13 +35,13 @@ products:
             icon: 'icon-adeslas_icon_embarazadas'
       negocio:
         name: 'negocio'
-        title: 'Mi negocio'
+        title: 'Negocio'
         icon: 'icon-adeslas_icon_gran_empresa'
-        suptitle: '¿Cuantos empleados tiene tu negocio?'
+        suptitle: '¿Cuántos empleados tiene tu negocio?'
         children:
           autonomo:
             name: 'autonomo'
-            title: '1, soy autónomo'
+            title: 'Soy un autónomo'
             path: 'autonomo'
             icon: 'icon-adeslas_icon_autonomos'
           menos5:
