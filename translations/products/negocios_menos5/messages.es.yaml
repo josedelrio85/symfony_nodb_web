@@ -2,7 +2,7 @@
 negocios_menos5:
   home:
     title: 'Adeslas | El mejor seguro médico para la pyme ¡Ahora con descuentos!  '
-    meta_description: 'La mejor asistencia médica de la compañía líder en seguros de salud al mejor precio. ¡Desde 45/€ por persona! Aprovecha ahora los descuentos también en Dental para acceder a la mejor cobertura, sin copagos ni listas de espera. ¡Entra e infórmate!' 
+    meta_description: 'La mejor asistencia médica de la compañía líder en seguros de salud al mejor precio. ¡Desde 39/€ por persona! Aprovecha ahora los descuentos también en Dental para acceder a la mejor cobertura, sin copagos ni listas de espera. ¡Entra e infórmate!' 
   hero: # 1
     title: 'Adeslas Negocios. La mejor asistencia médica para la pyme sin copagos'
     subtitle: 'La más completa cobertura para ti y tus trabajadores'
@@ -12,13 +12,13 @@ negocios_menos5:
   price_with_details: # 2 caja con precio y bullets
     price:
       pre: 'Desde'
-      quantity: '45'
+      quantity: '39'
       currency: '€'
       period: '/mes'
     bullets:
       bullet1:
         text: 'Con Dental'
-        subtext: 'por 49,50 €/mes'
+        subtext: 'por 42,90 €/mes'
       bullet2:
         text: 'Sin Copagos'
         subtext: 'ni sorpresas'
@@ -48,19 +48,19 @@ negocios_menos5:
         text: 'Adeslas Negocios te abre la puerta al mejor cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y 27 centros médicos de Adeslas Salud.'
       drop2: 
         title: 'Tarifa competitiva'
-        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de tus trabajadores. Desde sólo 45€/mes. Podrás pagar tu prima cada mes o si lo prefieres, beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
+        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de tus trabajadores. Desde sólo 39€/mes. Podrás pagar tu prima cada mes o si lo prefieres, beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
       drop3:
         title: 'Sin copagos'
         text: 'En Adeslas Negocios te aseguras que pagarás lo mismo cada mes, sin copagos ni gastos extra, vayáis al médico cuanto vayáis y pidáis cuantas pruebas necesitéis.'
       drop4: 
         title: 'Sin trámites'
-        text: 'Con Adeslas Negocios podréis someteros a la mayoría de pruebas diagnósticas de alta tecnología sin trámites o autorizaciones previas. Con tu póliza recibiréis acceso al área privada para tramitarlo todo por vía telemática.'  
+        text: 'Con Adeslas Negocios podréis someteros a muchas de las pruebas diagnósticas sin trámites o autorizaciones previas. Con la póliza recibiréis acceso al área privada para tramitarlo todo por vía telemática.'  
       drop5:
         title: 'Ventajas fiscales'
         text: 'Ofrecer un seguro privado a tus trabajadores es una muy buena forma de fidelizar y hacer equipo y con ventajas fiscales para ambas partes.'
       drop6:
         title: 'Dental con descuento'
-        text: 'La tarifa de seguro dental para pymes es de 6 €/mes. Ahora sin embargo, te ofrecemos un descuento y podréis disfrutar de ambas coberturas por 49,50 €/mes.'  
+        text: 'La tarifa de seguro dental para pymes es de 6 €/mes. Ahora sin embargo, te ofrecemos un descuento y podréis disfrutar de ambas coberturas por 42,90 €/mes.'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
   desc: # 6 titulo + descripcion
     title: '¿Quieres recibir asistencia en la Clínica Universitaria de Navarra?'
@@ -81,10 +81,10 @@ negocios_menos5:
         text: 'Adeslas Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos especializados como las cirugías están sujetos a un periodo de carencia de 10 meses.'
       drop4:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text: 'Si contratas Adeslas Negocios con Dental, tendrás las dos coberturas por 49,50€/mes por asegurado.'   
+        text: 'Si contratas Adeslas Negocios con Dental, tendrás las dos coberturas por 42,90€/mes por asegurado.'   
   faq:    # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
-    title: Términos de interés'
+    title: 'Términos de interés'
     elems:
       faq1:
         title: 'Copagos'
