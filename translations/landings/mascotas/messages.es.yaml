@@ -5,6 +5,7 @@ mascotas:
   hero: # 1
     title: ''
     subtitle: ''
+    image: 'adeslas_hero_small_landing_autonomos.png'
   minicards: # 2 minicards + title + description
     title: ''
     suptitle: ''

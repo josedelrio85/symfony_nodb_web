@@ -5,12 +5,14 @@ products:
     steps: 3
     icon: 'icon-adeslas_icon_salud'
     active: true
+    position: 1
     suptitle: 'Buscas un seguro de salud para…'
     children:
       familia:
         name: 'familia'
         title: 'Particular'
         icon: 'icon-adeslas_icon_individual'
+        position: 1
         suptitle: 'Quiero un seguro de salud...'
         children:
           individual:
@@ -18,25 +20,30 @@ products:
             title: 'Individual'
             path: 'individual'
             icon: 'icon-adeslas_icon_individual'
+            position: 1
           familiar:
             name: 'familiar'
             title: 'Familiar'
             path: 'familiar'
             icon: 'icon-adeslas_icon_famila'
+            position: 2
           mayores:
             name: 'mayores65'
             title: 'Mayores de 65'
             path: 'senior'
             icon: 'icon-adeslas_icon_65'
+            position: 3
           embarazada:
             name: 'embarazadas'
             title: 'Quiero quedarme embarazada'
             path: 'embarazadas'
             icon: 'icon-adeslas_icon_embarazadas'
+            position: 4
       negocio:
         name: 'negocio'
         title: 'Negocio'
         icon: 'icon-adeslas_icon_gran_empresa'
+        position: 2
         suptitle: '¿Cuántos empleados tiene tu negocio?'
         children:
           autonomo:
@@ -44,21 +51,25 @@ products:
             title: 'Soy un autónomo'
             path: 'autonomo'
             icon: 'icon-adeslas_icon_autonomos'
+            position: 1
           menos5:
             name: 'menos5'
             title: 'Menos de 5 empleados'
             path: 'menos5'
             icon: 'icon-adeslas_icon_-5_empleados'
+            position: 2
           mas5:
             name: 'mas5'
             title: 'Entre 5 y 99 empleados'
             path: 'mas5'
             icon: 'icon-adeslas_icon_5-99_empleados'
+            position: 3
           mas100:
             name: 'mas100'
             title: 'Más de 100 empleados'
             path: 'mas100'
             icon: 'icon-adeslas_icon_gran_empresa'
+            position: 4
   dental:
     name: 'dental'
     steps: 2
@@ -66,6 +77,7 @@ products:
     icon: 'icon-adeslas_icon_dental'
     path: 'dental'
     active: true
+    position: 2
     suptitle: ''
     children:
       # cobdental:
@@ -83,6 +95,7 @@ products:
     icon: 'icon-adeslas_icon_mascotas'
     path: 'mascotas'
     active: false
+    position: 3
     suptitle: ''
     children:
   decesos:
@@ -92,5 +105,6 @@ products:
     icon: 'icon-adeslas_icon_decesos'
     path: 'decesos'
     active: false
+    position: 4
     suptitle: ''
     children:

@@ -10,113 +10,67 @@ class analitycs {
       ecommerce: {
         promoClick: {
           promotions: [{
-            id: '13',                 // ID de la campaña
-            name: 'salud',            // Lugar donde se visualiza (home-slider | home-body | salud | salud-particulares | ......)
-            creative: 'particulares', // Nombre de la creatividad
-            position: '1',            // Posición que ocupa dentro del slider o de la página
+            name: null,            // Lugar donde se visualiza (home-slider | home-body | salud | salud-particulares | ......)
+            // creative: 'particulares', // Nombre de la creatividad
+            position: null,            // Posición que ocupa dentro del slider o de la página
           }]
         }
       }
     };
+
+    this.dataconf = {
+      event: 'virtual_page',
+      pageName: null,
+    }
   }
 
 
   slider = (data) => {
-    console.log(data);
-
-    this.dataclick.eventLbl = data.label;
-    this.dataclick.ecommerce.promoClick.promotions.id = data.id;
-    this.dataclick.ecommerce.promoClick.promotions.name = data.name;
-    this.dataclick.ecommerce.promoClick.promotions.creative = data.creative;
-    this.dataclick.ecommerce.promoClick.promotions.position = data.position;
+    this.dataclick.eventLbl = 'slider';
+    this.dataclick.ecommerce.promoClick.promotions[0].name = data.name;
+    this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
     
-    console.log(this.dataclick)
-    // this.push(this.dataclick);
+    this.push(this.dataclick);
   }
 
   configurator = (data) => {
-    console.log(data);
+    let pageName = data.mc;
+    if (data.fc !== null && data.fc != undefined) {
+      pageName += "/" + data.fc;
+    }
+    if (data.sc !== null && data.sc != undefined) {
+      pageName += "/" + data.sc;
+    }
 
-    this.dataclick.eventLbl = data.label;
-    this.dataclick.ecommerce.promoClick.promotions.id = data.id;
-    this.dataclick.ecommerce.promoClick.promotions.name = data.name;
-    this.dataclick.ecommerce.promoClick.promotions.creative = data.creative;
-    this.dataclick.ecommerce.promoClick.promotions.position = data.position;
+    this.dataconf.pageName = "/vpv/" + pageName;
+    this.push(this.dataconf);
 
-    console.log(this.dataclick)
-    // this.push(this.dataclick);  
+    //////////////////////////////////////////
+
+    this.dataclick.eventLbl = pageName;
+    this.dataclick.ecommerce.promoClick.promotions[0].name = pageName;
+    this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
+    this.push(this.dataclick);
   }
 
   productCard = (data) => {
-    console.log(data);
-
     this.dataclick.eventLbl = data.label;
-    this.dataclick.ecommerce.promoClick.promotions.id = data.id;
-    this.dataclick.ecommerce.promoClick.promotions.name = data.name;
-    this.dataclick.ecommerce.promoClick.promotions.creative = data.creative;
-    this.dataclick.ecommerce.promoClick.promotions.position = data.position;
+    this.dataclick.ecommerce.promoClick.promotions[0].name = data.name;
+    this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
 
-    console.log(this.dataclick)
-    // this.push(this.dataclick);  
+    this.push(this.dataclick);
   }
 
   push = (data) => {
+    console.log(data);
     window.dataLayer = window.dataLayer || [];
-
-    window.dataLayer.push({data});
-
-    console.log(window.dataLayer);
+    if (process.env.PRODUCTION) {
+      window.dataLayer.push({data});
+    }
+    // console.log(window.dataLayer);
   }
 }
 
 export {
   analitycs,
 };
-
-
-dataLayer.push({
-  'event': 'eventoEC',
-  'eventCat': 'ecommerce',
-  'eventAct': 'promocionClick',
-  'eventLbl': 'home-body', //Nombre de la promoción donde se ha hecho click
-  'ecommerce': {
-  'promoClick': {
-  'promotions': [{
-  'id': '123', //ID de la campaña
-  'name': 'home-body', //Lugar donde se visualiza (home-slider | home-body | salud | salud-particulares | ......)
-  'creative': 'salud', //Nombre de la creatividad
-  'position': '1', //Posición que ocupa dentro del slider o de la página
-  }]
-  }
-  }
-  });
-  
-
-  dataLayer.push({
-    'eventLbl': 'salud', //Nombre de la promoción donde se ha hecho click
-    'ecommerce': {
-      'promoClick': {
-        'promotions': [{
-          'id': '13', //ID de la campaña
-          'name': 'salud', //Lugar donde se visualiza (home-slider | home-body | salud | salud-particulares | ......)
-          'creative': 'particulares', //Nombre de la creatividad
-          'position': '1', //Posición que ocupa dentro del slider o de la página
-        }]
-      }
-    }
-  });
-
-dataLayer.push({
-
-  'eventLbl': 'quedarme embarazada', //Nombre de la promoción donde se ha hecho click
-  'ecommerce': {
-  'promoClick': {
-  'promotions': [{
-    'id': '1234567', //ID de la campaña
-    'name': 'quedarme embarazada', //Lugar donde se visualiza (home-slider | home-body | salud | salud-particulares | ...)
-    'creative': 'adeslas plena vital', //Nombre de la creatividad
-    'position': '1', //Posición que ocupa dentro del slider o de la página
-  }]
-  }
-}
-});

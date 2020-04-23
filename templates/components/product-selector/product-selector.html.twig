@@ -9,7 +9,8 @@
             {% for child in product %}
               {% if child is iterable %}
                 <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" 
-                {% if child.path is defined %} {{ custom_routes(path(child.path)) }} {% endif %}>
+                {% if child.path is defined %} {{ custom_routes(path(child.path)) }} {% endif %}
+                {% if child.position is defined %} data-position = "{{ child.position }}" {% endif %}>
                   <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex fixed_height">
                     <h5 class="m-0 name">{{child.title}}</h5>
                     <span class="icon {{child.icon}} text-primary h5 mb-0"></span>
@@ -30,7 +31,8 @@
         {% for child in product %}
           {% if child is iterable %}  
             <div id="{{child.name}}" class="inner col-12  col-sm-6 col-md-3 product-btn mb-2" 
-            {% if child.path is defined %} {{ custom_routes(path(child.path)) }} {% endif %}>
+            {% if child.path is defined %} {{ custom_routes(path(child.path)) }} {% endif %}
+            {% if child.position is defined %} data-position = "{{ child.position }}" {% endif %}>
               <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex fixed_height">
                 <h5 class="m-0 name">{{child.title | raw}} </h5>
                 <span class="icon {{child.icon}} text-primary h5 mb-0 icon-fixed"></span>

@@ -11,6 +11,7 @@ hero:
       text: 'Saber más'
       path: ''
       action: 'open-conf'
+      position: 1
   slide2:
     image: adeslas_hero_large_home_slider_dental.jpg
     image_desktopmini: adeslas_hero_large_home_slider_dental_desktopmini.jpg
@@ -23,6 +24,7 @@ hero:
       text: 'Saber más'
       path: '/seguros-dentales'
       action: ''
+      position: 2
   slide3:
     image: adeslas_hero_large_home_slider_mascotas.jpg
     image_desktopmini: adeslas_hero_large_home_slider_mascotas_desktopmini.jpg
@@ -35,6 +37,7 @@ hero:
       text: 'Saber más'
       path: ''
       action: 'open-c2c'
+      position: 3
   slide4:
     image: adeslas_hero_large_home_slider_decesos.jpg
     image_desktopmini: adeslas_hero_large_home_slider_decesos_desktopmini.jpg
@@ -47,3 +50,4 @@ hero:
       text: 'Saber más'
       path: ''
       action: 'open-c2c'
+      position: 4

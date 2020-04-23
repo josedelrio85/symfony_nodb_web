@@ -1,12 +1,11 @@
 import '../css/app.css';
 import 'bootstrap';
 import Swiper from 'swiper';
-import { bysidecar } from './bysidecar';
-// import * as ScrollMagic from 'ScrollMagic';
 import { TweenMax, TimelineMax } from '../../node_modules/gsap/src/all.js';
 import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
-// import '../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
+import { bysidecar } from './bysidecar';
+import { analitycs } from './analitycs';
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -161,6 +160,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   let c2c = new bysidecar();
+  let anlt = new analitycs();
   let phone = null;
   let smartcenter = process.env.PRODUCTION;
   let souid = parseInt(process.env.SOUID, 10);
@@ -172,12 +172,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     eventLabel: window.location.pathname === '/' ? 'index' : window.location.pathname ,
   }
 
-
   // get values from route to set product / landing adeslas object values
   let adeslas = {
     landing: null,
     product: null,
   }
+
   let lv = document.getElementById('landing-value');
   if(lv !== undefined && lv !== null){
     if (lv.value !== null && lv.value !== ''){
@@ -189,13 +189,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (pv.value !== null && pv.value !== ''){
       adeslas.product = pv.value;
     }
-  }
-
-  const dataLayer = {
-    event: "event",
-    eventCategory: "cmb",
-    eventAction: "click",
-    eventLabel: window.location.pathname,
   }
 
   let c2cpopup_desktop = document.querySelector('.click-to-call--body.c2cdesktop .call-me-now');
@@ -289,22 +282,57 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ////////////////////// SLIDER ////////////////////////////////////////////
 
   let ctas = document.querySelectorAll('*[id^="cta-"]');
+
   ctas.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
+      event.preventDefault();
+
       let id = event.target.id;
-      // console.log(id);
       let cta = document.getElementById(id);
       let action = cta.getAttribute('data-action');
+      let data = {
+        name: id.replace('cta-', ''),
+        position: cta.getAttribute('data-position'),
+      };
       switch(action) {
         case 'open-conf':
+          anlt.slider(data);
+
           // simulate a click on salud box; amazing!
           eventFire(document.getElementById('product-salud'), 'click');
           break;
         case 'open-c2c':
+          anlt.slider(data);
+
           $('#click-to-call-popup').modal('show');
           closeC2C();
           break;
+        default:
+          anlt.slider(data);
+
+          window.location.href = event.target.parentNode.href;
+          break;
       }
+    })
+  });
+
+  ////////////////////// MORE-INFO ////////////////////////////////////////////
+
+  let moreinfo = document.querySelectorAll('.more-info');
+
+  moreinfo.forEach((cv, ci, listObj) => {
+    cv.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      let position = event.target.parentNode.getAttribute('data-index');
+      position = position.replace('product','');
+      let data = {
+        label: event.target.parentNode.getAttribute('data-parent'),
+        name: event.target.parentNode.getAttribute('data-title'),
+        position: position,
+      };
+      anlt.productCard(data);
+      window.location.href = href;
     })
   });
 });
