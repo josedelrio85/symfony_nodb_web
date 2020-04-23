@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         triggerElement: '#triggerpincard',
         triggerHook: 0,
         offset: 0.5,
-        duration: $('#pincard').parent().parent().height(),
+        duration: $('#pincard').closest('div.row').height() - $('#pincard').height(),
     })
       .setClassToggle("body", "pinactive")
       .on('start', function () {
