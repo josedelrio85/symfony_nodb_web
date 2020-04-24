@@ -9,16 +9,16 @@ decesos:
   minicards: # 2 minicards + title + description
     title: 'Adeslas Decesos. Nos ocupamos de tu familia en el momento más delicado'
     suptitle: 'Asegura la tranquilidad de los tuyos y deja todos los trámites en las mejores manos'
-    desc: 'Tú eliges qué protección deseas para no pagar más de lo que necesitas'
+    desc: 'Tú eliges qué protección deseas para pagar sólo por lo que necesitas'
     cards:
       card1:
         top: 'Cobertura integral'
         middle: 'de gastos y gestiones'
-        bottom: 'adaptada a lo que necesitas'
+        bottom: 'adaptada a lo que buscas'
       card2:
         top: 'El seguro más completo'
         middle: 'servicios en vida'
-        bottom: 'y apoyo jurídico, económico y psicológico'  
+        bottom: 'con apoyo jurídico, económico y psicológico'  
   product_bullet: # 3 products with bullets + title + description
   select: # 4 selector + title
     title: ''
@@ -26,19 +26,19 @@ decesos:
     select_txt: ''
   desc: # 3 titulo + supertitulo + descripcion+ tabla
     suptitle: 'Adeslas Decesos'
-    title: 'La garantía de contar con el mejor respaldo y al mejor precio'
-    text: 'En Adeslas te ofrecemos un seguro de decesos completo, sin cuestionario médico y con la mejor tarifa de España para que te asegures de que nos ocuparemos de los gastos y trámites necesarios en caso de tu familia afronte un fallecimiento. Una asistencia que dejará en nuestras manos los gastos pero también el apoyo emocional, jurídico y administrativo que tu familia necesite: <br> En Adeslas disponemos de diferentes modalidades de seguro de decesos con amplias coberturas que te permitirán incluso acceder a servicios en vida, como asistencia en viaje, consultas de salud o asesoría jurídica y psicológica.'
+    title: 'La garantía de contar con el mejor respaldo al mejor precio'
+    text: 'En Adeslas te ofrecemos un seguro de decesos completo, sin cuestionario médico y con la mejor tarifa de España para que te asegures de que nos ocuparemos de los gastos y trámites necesarios en caso de tu familia afronte un fallecimiento. Una asistencia que dejará en nuestras manos los gastos pero también el apoyo emocional, jurídico y administrativo que tu familia necesite. <br> En Adeslas disponemos de diferentes modalidades de seguro de decesos con amplias coberturas, incluso para acceder a servicios en vida, como asistencia en viaje, consultas de salud o asesoría jurídica y psicológica.'
   des_with_dropdown: # 5 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Adeslas Decesos'
     title: 'El seguro más completo con las condiciones claras'
     text: ''
     drop:
       drop1:
-        title: '¿Estoy asegurado para toda la vida?'
-        text: 'Sí. Tu póliza tiene carácter vitalicio, por lo que una vez contratada, la mantendremos hasta el final salvo que decidas finalizar el contrato y rescatar tu seguro o se produzca el impago de la póliza.'
+        title: '¿Hasta cuándo estoy asegurado?'
+        text: 'Sí. Tu póliza tiene carácter vitalicio, por lo que una vez contratada, la mantendremos activa salvo que decidas finalizar el contrato y rescatar tu seguro, se produzca el impago de la póliza o el fallecimiento.'
       drop2:
         title: '¿Qué modalidades de pago existen?'
-        text: 'Cada una de las tres pólizas que ofrecemos tienen una modalidad de pago prevista. Adeslas Prima Única sólo permite una única forma de pago. Decesos Completo permite el establecimiento de una prima periódica nivelada, en la que pagarás un poco más tras los primeros años de contratación y el importe se reducirá con el tiempo. Decesos Todo Previsto tiene una prima periódica y la posibilidad de pago fraccionado con recargos.'
+        text: 'Cada una de las tres pólizas que ofrecemos tienen una modalidad de pago prevista. Adeslas Prima Única permite una única forma de pago. Decesos Completo permite el establecimiento de una prima periódica nivelada, en la que pagarás un poco más tras los primeros años de contratación y el importe se reducirá con el tiempo. Decesos Todo Previsto tiene una prima periódica y la posibilidad de pago fraccionado por periodos inferiores al año con recargos.'
       drop3:
         title: '¿Tengo que incluirme en el seguro?'
         text: 'No es necesario. Puedes contratar una póliza familiar que te incluya con hasta 15 asegurados o incluso asegurar a tu familia en varias pólizas y elegir una localidad de sepelio diferente para cada una.'
@@ -47,29 +47,28 @@ decesos:
         text: 'Sí. Decesos Prima Única puede contratarse a partir de los 65 años. Decesos Completo puede suscribirse hasta los 70 años y Decesos Todo Previstos, hasta 65 años.'
       drop5: 
         title: '¿Cuál será mi capital asegurado?'
-        text: 'El Capital asegurado se establece de forma automática en función del coste de sepelio en la localidad que selecciones y es destinado a la cobertura del servicio de decesos.'
+        text: 'El Capital asegurado se establece de forma automática en función del coste del servicio fúnebre en la localidad que selecciones y es destinado a la cobertura del sepelio.'
   extra: # Incluir en 3
     table:
       suptitle: ''
       title: ''
       rows:
         - 'Servicio funerario completo'
-        - 'Sepelio especial para gestantes o bebés de hasta 1 mes'
-        - 'Testamento y asesoría en testamento vital'
+        - 'Sepelio especial para gestantes <br>o bebés de hasta 1 mes'
+        - 'Testamento y asesoría <br>en testamento vital'
         - 'Traslado nacional' 
-        - 'Traslado internacional con gastos 1 acompañante'
-        - 'Traslado internacional con gastos familia y apoyo'
-        - 'Asistencia psicológica en fallecimiento por accidente'
-        - 'Asistencia psicológica en fallecimiento de menor'
-        - 'Asistencia jurídica telefónica para solución de trámites'
-        - 'Trámites gestoría certificados y pensiones en caso de accidente'
-        - 'Posibilidad de rescate del seguro'
-        - 'Packs complementarios (Extracción y depósito ADN,<br>Beca de estudios, plus gastos y borrado huella digital)</br>'
-        - 'Servicios en vida (Att. viaje, 2ªop. médica, asesoría<br> jurídica integral, asist. psicológica, nutricional y de duelo).</br>'
+        - 'Traslado internacional <br>con gastos 1 acompañante'
+        - 'Traslado internacional <br>con gastos familia y apoyo'
+        - 'Asist. psicológica <br>en fallecimiento por accidente'
+        - 'Asist. psicológica <br>en fallecimiento de menor'
+        - 'Asist. jurídica telefónica <br>para solución de trámites'
+        - 'Trámites gestoría certificados <br>y pensiones (accidente)'
+        - 'Posibilidad de rescate <br>del seguro'
+        - 'Packs complementarios <br>(Extracción y depósito ADN, <br>Beca de estudios,plus gastos  <br>y borrado huella digital)'
+        - 'Servicios en vida <br>(Att. viaje, 2ªop. médica, <br>asesoría jurídica integral, <br>asist. psicológica, <br>nutricional y de duelo).'
       columns:
         column1:
-          title: 'Decesos Prima Única'
-          desc: '1 asegurado por póliza'
+          title: 'Decesos Prima Única <br>1 asegurado por póliza</br>'
           values:
             - true
             - false
@@ -85,8 +84,7 @@ decesos:
             - false
             - false
         column2:
-          title: 'Decesos Completo'
-          # desc: 'Hasta 15 asegurados'
+          title: 'Decesos Completo <br>Hasta 15 asegurados</br>'
           values:
             - true
             - false
@@ -102,8 +100,7 @@ decesos:
             - true
             - false
         column3:
-          title: 'Decesos Todo Previstos'
-          # desc: 'Hasta 15 asegurados'
+          title: 'Decesos Todo Previstos <br>Hasta 15 asegurados</br>'
           values:
             - true 
             - true
