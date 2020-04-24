@@ -7,8 +7,8 @@ decesos:
     subtitle: ''
     image: 'adeslas_hero_large_ficha_decesos.jpg'
   minicards: # 2 minicards + title + description
-    title: 'Adeslas Decesos. Nos ocupamos de tu familia en el momento más delicado'
-    suptitle: 'Asegura la tranquilidad de los tuyos y deja todos los trámites en las mejores manos'
+    title: 'Nos ocupamos de tu familia en el momento más delicado'
+    suptitle: 'Adeslas Decesos'
     desc: 'Tú eliges qué protección deseas para pagar sólo por lo que necesitas'
     cards:
       card1:
