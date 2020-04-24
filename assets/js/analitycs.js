@@ -24,13 +24,12 @@ class analitycs {
     }
   }
 
-
   slider = (data) => {
     this.dataclick.eventLbl = 'slider';
     this.dataclick.ecommerce.promoClick.promotions[0].name = data.name;
     this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
     
-    this.push(this.dataclick);
+    this.populateClick(this.dataclick);
   }
 
   configurator = (data) => {
@@ -43,14 +42,14 @@ class analitycs {
     }
 
     this.dataconf.pageName = "/vpv/" + pageName;
-    this.push(this.dataconf);
+    this.populateConf(this.dataconf);
 
     //////////////////////////////////////////
 
     this.dataclick.eventLbl = pageName;
     this.dataclick.ecommerce.promoClick.promotions[0].name = pageName;
     this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
-    this.push(this.dataclick);
+    this.populateClick(this.dataclick);
   }
 
   productCard = (data) => {
@@ -58,19 +57,35 @@ class analitycs {
     this.dataclick.ecommerce.promoClick.promotions[0].name = data.name;
     this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
 
-    this.push(this.dataclick);
+    this.populateClick(this.dataclick);
   }
 
-  // try to only use param properties, not all the object
-  push = (data) => {
-    console.log(data);
+  populateConf = (data) => {
     window.dataLayer = window.dataLayer || [];
-    if (process.env.PRODUCTION) {
-      window.dataLayer.push({data});
-    }
-    // window.dataLayer.push({data});
+    window.dataLayer.push({
+      event: 'virtual_page',
+      pageName: data.pageName,
+    });
+    console.log(window.dataLayer);
+  }
 
-    // console.log(window.dataLayer);
+  populateClick = (data) => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'eventoEC',
+      eventCat: 'ecommerce',
+      eventAct: 'promocionClick',
+      eventLbl: data.eventLbl,
+      ecommerce: {
+        promoClick: {
+          promotions: [{
+            name: data.ecommerce.promoClick.promotions[0].name,
+            position: data.ecommerce.promoClick.promotions[0].position,
+          }]
+        }
+      }
+    });
+    console.log(window.dataLayer);
   }
 }
 
