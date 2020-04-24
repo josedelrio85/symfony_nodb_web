@@ -35,8 +35,8 @@ hero:
     cta:
       id: 'cta-mascotas'
       text: 'Saber más'
-      path: ''
-      action: 'open-c2c'
+      path: '/seguros-mascotas'
+      action: ''
       position: 3
   slide4:
     image: adeslas_hero_large_home_slider_decesos.jpg
@@ -48,6 +48,6 @@ hero:
     cta:
       id: 'cta-decesos'
       text: 'Saber más'
-      path: ''
-      action: 'open-c2c'
+      path: '/seguros-decesos'
+      action: ''
       position: 4
