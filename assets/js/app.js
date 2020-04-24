@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // Banner cookies //
   function getCookie(name) {
-      var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-      return v ? v[2] : null;
+    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+    return v ? v[2] : null;
   }
 
   if(getCookie("cookies") == null) {
@@ -251,10 +251,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   function validationFields(parent) {
-    // dev
-    // document.querySelector(parent +' .form-control').value = '665932355';
-    // document.querySelector(parent +' .form-check-input').checked = true;
-
     let text = document.querySelector(parent +' .call-me-now-validation-error');
     if(!c2c.getLandingCommander().checkPhone(document.querySelector(parent +' .form-control').value)){
       text.classList.remove('d-none');

@@ -94,7 +94,7 @@ products:
     title: 'Mascotas'
     icon: 'icon-adeslas_icon_mascotas'
     path: 'mascotas'
-    active: false
+    active: true
     position: 3
     suptitle: ''
     children:
@@ -104,7 +104,7 @@ products:
     title: 'Decesos'
     icon: 'icon-adeslas_icon_decesos'
     path: 'decesos'
-    active: false
+    active: true
     position: 4
     suptitle: ''
     children:
