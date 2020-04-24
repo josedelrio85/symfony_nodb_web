@@ -5,6 +5,7 @@
 {% block meta_description %}<meta name="description" content="{{ "#{landing}.home.meta_description" | trans }}">{% endblock %}
 
 {% block body %}
+
   <input type="hidden" id="landing-value" value="{{landing_value}}" />
 
   {# Hero image component #}
@@ -22,24 +23,15 @@
         } %}
     </div>
   {% endif %}
-    
-  {% if bullets_extra is not empty %}
-    <div class="container-fluid text-md-center max-w-750">
-      {# bullet lists for gran empresa landing only #}
-          {% include 'super-components/bullets_extra/bullets_extra.html.twig' with {
-          bullets_extra: bullets_extra,
-        } %}
-    </div>
-  {% endif %}
 
   {% if product_cards is not null %}
     {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 1} %}
   {% endif %}
 
+  {# Product cards  + title + description #}
   {% if product_cards is not null %}
     <div class="container-fluid text-md-center" style="background-image: url({{ asset('build/images/adeslas_landing_back_prize_boxes.jpg') }});background-size:contain;background-position:bottom;background-repeat:no-repeat;">
-      {# Product cards  + title + description #}
-          {% include 'super-components/product_cards/product_cards.html.twig' with {
+        {% include 'super-components/product_cards/product_cards.html.twig' with {
           product_cards: product_cards,
         } %}
     </div>
@@ -65,37 +57,27 @@
     </div>
   </div> #}
 
-
-  {% if landing == "mas100" %}
-    {% include 'components/row-button/row-button.html.twig' %}
-  {% endif %}
-
-  {# Simple divider line component #}
-  {% if des_with_dropdown is not null or desc.title != '' %}
-    {% include 'components/simple-divider-line/simple-divider-line.html.twig' with {margin_y: 5, padding_x: 3} %}
-  {% endif %}
-
-  {% if desc.title != '' %}
-    <div class="container-fluid text-md-center max-w-750">
-      {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc } %}
-    </div>
-
-    {% if landing == "decesos" %}
-      <div class="container-fluid text-md-center max-w-750">
-        <div class="container px-0">
-          {% include 'components/product-features-table/product-features-table.html.twig' with {
-            array: table,
-          } %}
-        </div>
-      </div>
-    {% endif %}
-  {% endif %}
+  <div class="container-fluid text-md-center max-w-750" style="margin-top:35px;">
+    {% include 'super-components/table_title/table_title.html.twig' with { table:table } %}
+  </div>
 
   {% if des_with_dropdown is not null %}
-    {# <div class="container-fluid max-w-750"> #}
     <div class="container-fluid text-md-center max-w-750" style="margin-top:35px;">
       {% include 'super-components/dropdown/dropdown.html.twig' with {
         dropdown: des_with_dropdown,
+      } %}
+      {# bg_grey: false, #}
+    </div>
+  {% endif %}
+
+  {# {% if desc_extra is not null %}
+    {% include 'super-components/hero-title-desc/hero-title-desc.html.twig' with { desc:desc_extra } %}
+  {% endif %} #}
+
+  {% if des_with_dropdown_extra is not null %}
+    <div class="container-fluid text-md-center max-w-750">
+      {% include 'super-components/dropdown/dropdown.html.twig' with {
+        dropdown: des_with_dropdown_extra,
       } %}
       {# bg_grey: false, #}
     </div>
