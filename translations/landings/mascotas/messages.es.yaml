@@ -20,9 +20,9 @@ mascotas:
         middle: 'de indemnización'
         bottom: 'sin documentar el valor de la mascota'
   product_bullet: # 3 products with bullets + title + description
-    title: 'Las mejores coberturas del mercado al mejor precio'
+    title: 'Las mejores coberturas del mercado con las tarifas más bajas'
     suptitle: 'Adeslas Mascotas'
-    desc: 'Adeslas te ofrece los mejores servicios de un seguro de mascotas en dos modalidades con las mejores garantías del mercado. ¡Elige la tuya!'
+    desc: 'Adeslas te ofrece los mejores servicios de un seguro de mascotas en dos modalidades con las mejores garantías que puedas encontrar. ¡Elige la tuya!'
     product:
       product1:
         title: 'Mascotas Básica'
@@ -32,14 +32,14 @@ mascotas:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/path'
         more_info:
           text: ''
           path: ''
         bullets:
           - 'Indemnización por robo y accidente'
-          - 'Misma tarifa para todas razas y edades'
+          - 'Misma tarifa para todas las razas y edades'
           - 'Responsabilidad Civil por hasta 200.000 €'
       product2:
         title: 'Mascotas Completa'
@@ -49,14 +49,14 @@ mascotas:
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Llamadme'
+          text: 'Contratar'
           path: '/path'
         more_info:
           text: ''
           path: ''
         bullets:
-          - 'Robo, accidente y enfermedad'
-          - 'Asistencia veterinaria sin límites y vacunas'
+          - 'Indemnización por robo, accidente y enfermedad'
+          - 'Asistencia veterinaria sin límites y vacunas incluidas'
           - 'Urgencias 24 horas'
   select: # 4 selector + title
     title: ''
@@ -74,7 +74,7 @@ mascotas:
         title: 'Veterinario gratis'
         text: 'Con Adeslas Mascotas Completa tendrás consultas y revisiones veterinarias sin coste adicional y en las vacunas obligatorias sólo pagarás unas tasas de unos 5 euros.'
       drop2:
-        title: 'Todas las razas'
+        title: 'Tarifa plana'
         text: 'Aseguramos con la misma tarifa todas las razas, incluidas las de perros potencialmente peligrosas con una responsabilidad civil de hasta 200.000€ ante daños materiales y corporales a terceros.'
       drop3:
         title: 'La más alta garantía'
@@ -114,7 +114,7 @@ mascotas:
   extra: # Incluir en 4
     table:
       suptitle: 'Adeslas Mascotas'
-      title: 'La mejor protección al precio que necesitas'
+      title: 'Un gran servicio al precio que necesitas'
       rows:
         - 'Fallecimiento por accidente: Hasta 1.000 €'
         - 'Robo: Hasta 800 €'
