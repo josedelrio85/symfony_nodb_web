@@ -1,59 +1,63 @@
 mascotas:
   home:
-    title: 'Landing mascotas'
-    meta_description: 'Landing mascotas'
+    title: 'El mejor seguro de mascotas desde 5,74 €/mes. Todas las razas y edades'
+    meta_description: 'Indemnización por robo, accidente o enfermedad y cobertura de Responsabilidad Civil con hasta 200.000 €, incluso para perros de razas potencialmente peligrosas (ppp). ¡Descubre la oferta exclusiva Adeslas Mascotas ahora! Un seguro con tarifa plana que ofrece las más amplias garantías del mercado.'
   hero: # 1
     title: ''
     subtitle: ''
-    image: 'adeslas_hero_small_landing_autonomos.png'
-  minicards: # 2 minicards + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    image: 'adeslas_hero_large_ficha_mascotas.jpg'
+  minicards: # 2 minicards + title + description'
+    title: 'La protección para disfrutar de tu mascota con total tranquilidad'
+    suptitle: 'Adeslas Mascotas'
+    desc: 'Un seguro para todas las razas de perros y gatos de cualquier edad al mejor precio'
     cards:
       card1:
-        top: ''
-        middle: ''
-        bottom: ''
+        top: 'Desde 5,74 €/mes'
+        middle: 'Todas las razas'
+        bottom: 'y perros potencialmente peligrosos'
       card2:
-        top: ''
-        middle: ''
-        bottom: ''
+        top: 'Hasta 400 euros'
+        middle: 'de indemnización'
+        bottom: 'sin documentar el valor de la mascota'
   product_bullet: # 3 products with bullets + title + description
-    title: ''
-    suptitle: ''
-    desc: ''
+    title: 'Las mejores coberturas del mercado al mejor precio'
+    suptitle: 'Adeslas Mascotas'
+    desc: 'Adeslas te ofrece los mejores servicios de un seguro de mascotas en dos modalidades con las mejores garantías del mercado. ¡Elige la tuya!'
     product:
       product1:
-        title: ''
+        title: 'Mascotas Básica'
         price:
-          pre: 'Desde'
-          quantity: ''
+          pre: 'Por sólo'
+          quantity: '5,74'
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Contratar'
+          text: 'Llamadme'
           path: '/path'
         more_info:
-          text: 'Saber más'
-          path: '/path'
+          text: ''
+          path: ''
         bullets:
-          -
+          - 'Indemnización por robo y accidente'
+          - 'Misma tarifa para todas razas y edades'
+          - 'Responsabilidad Civil por hasta 200.000 €'
       product2:
-        title: ''
+        title: 'Mascotas Completa'
         price:
-          pre: 'Desde'
-          quantity: ''
+          pre: 'Por'
+          quantity: '24,28'
           currency: '€'
           period: '/mes'
         cta:
-          text: 'Contratar'
+          text: 'Llamadme'
           path: '/path'
         more_info:
-          text: 'Saber más'
-          path: '/path'
+          text: ''
+          path: ''
         bullets:
-          -
+          - 'Robo, accidente y enfermedad'
+          - 'Asistencia veterinaria sin límites y vacunas'
+          - 'Urgencias 24 horas'
   select: # 4 selector + title
     title: ''
     suptitle: ''
@@ -61,3 +65,97 @@ mascotas:
   desc: # 5 title + description
     title: ''
     text: ''
+  des_with_dropdown: # [extra 1] listado de dropdowns con titulo + supertitulo + descripcion
+    suptitle: 'Adeslas Mascotas'
+    title: 'Condiciones Exclusivas'
+    text: 'Una cobertura frente al robo, enfermedad o accidente de tu perro o gato y que responde por tu responsabilidad civil con hasta 200.000 euros por los daños que pueda ocasionar, sea o no de una raza potencialmente peligrosa. Además, en la modalidad completa incluimos la asistencia veterinaria en más de 300 clínicas.'
+    drop:
+      drop1:
+        title: 'Veterinario gratis'
+        text: 'Con Adeslas Mascotas Completa tendrás consultas y revisiones veterinarias sin coste adicional y en las vacunas obligatorias sólo pagarás unas tasas de unos 5 euros.'
+      drop2:
+        title: 'Todas las razas'
+        text: 'Aseguramos con la misma tarifa todas las razas, incluidas las de perros potencialmente peligrosas con una responsabilidad civil de hasta 200.000€ ante daños materiales y corporales a terceros.'
+      drop3:
+        title: 'La más alta garantía'
+        text: 'Ofrecemos la mejor garantía del mercado con una indemnización de 400 euros sin necesidad de documentar el valor de tu mascota.'
+      drop4:
+        title: 'Protección inmediata'
+        text: 'Podrás contratar el seguro para tu fiel amigo en 2 minutos sin cuestionario médico previo y con efectividad inmediata, sin carencias, siempre que tenga microchip.'
+      drop5:
+        title: 'Todas las edades'
+        text: 'Contratarás el seguro para tu mascota desde los 3 meses hasta los 9 años pero nosotros mantendremos su protección sin límites de edad.'   
+      drop6:
+        title: 'Pago flexible'
+        text: 'Tú eliges la forma de pago que más se ajusta a tus necesidades: mensual, trimestral, semestral o anual, sin recargos.' 
+  desc_extra: # [extra 2] title + description
+    title: '¿Quieres saber más sobre Adeslas Mascotas?'
+    text: 'Te llamamos para informarte sin compromiso'
+  des_with_dropdown_extra: # [extra 3] listado de dropdowns con titulo + supertitulo + descripcion
+    suptitle: 'Adeslas Mascotas'
+    title: 'Las ventajas de asegurar con Adeslas'
+    text: ''
+    drop:
+      drop1:
+        title: 'Las mejores condiciones que vas a encontrar'
+        text: 'Adeslas Mascotas es el mejor seguro del mercado para tu fiel amigo porque:'
+        list:
+         - 'Ofrecemos la mejor tarifa'
+         - 'Sin cuestionario médico, sin límites de razas o edad ni carencias'
+         - 'Cobertura de la responsabilidad civil para perros de razas potencialmente peligrosas'
+         - 'Adeslas Mascotas Completa es la única póliza que cubre el fallecimiento por enfermedad'
+         - 'El mayor capital asegurado (400 €) sin necesidad de documentar el valor de tu mascota'
+      drop2:
+        title: '¿Qué pasará si mi mascota tiene un accidente o enfermedad?'
+        text: 'Tendrás un número de teléfono al que llamar 24 horas y 365 días para consultar la incidencia y derivarte al veterinario de urgencia más cercano. La asistencia Veterinaria está disponible los 365 días y las 24 horas del día. '
+      drop3:
+        title: 'Regalo inmediato'
+        text: 'Si contratas Adeslas Mascotas Completa te enviaremos un cheque regalo de 50€. Consúltanos las condiciones.'   
+  extra: # Incluir en 4
+    table:
+      suptitle: 'Adeslas Mascotas'
+      title: 'La mejor protección al precio que necesitas'
+      rows:
+        - 'Fallecimiento por accidente: Hasta 1.000 €'
+        - 'Robo: Hasta 800 €'
+        - 'Responsabilidad civil: Hasta 200.000 €'
+        - 'Fallecimiento por enfermedad: Hasta 1.000 €'
+        - 'Asistencia telefónica de urgencias 24 horas'
+        - 'Asistencia veterinaria en más de 300 clínicas'
+        - 'Consultas veterinarias sin límites'
+        - 'Revisiones'
+        - 'Vacunaciones obligatorias (excepto tasas)'
+        - 'Descuentos en servicios especiales. (castración, limpiezas, etc.)'
+        - 'Sin carencias'
+        - 'Carencias en fallecimiento por enfermedad (6 M)'
+      columns:
+        column1:
+          title: 'Mascotas Básica. 5,74 €/mes'
+          values:
+            - true
+            - true
+            - true
+            - false
+            - false
+            - false
+            - false
+            - false
+            - false
+            - false
+            - true
+            - false
+        column2:
+          title: 'Mascotas Completa. 24,28 €/mes'
+          values:
+            - true
+            - true 
+            - true
+            - true
+            - true  
+            - true
+            - true
+            - true
+            - true
+            - true
+            - false
+            - true
