@@ -32,8 +32,6 @@ class i18nRepository{
       $products.'plena_plus',
       $products.'plena_vital',
       $products.'senior',
-      $products.'decesos',
-      $products.'mascotas',
       $products.'negocios',
       $products.'negocios_menos5',
       $products.'negocios_extra',

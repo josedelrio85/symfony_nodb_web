@@ -90,6 +90,8 @@ dental_max:
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas Dental MAX te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
   extra:
     table:
+      suptitle: ''
+      title: ''
       rows:
             - '35 actos médicos'
             - '3 pruebas diagnósticas'

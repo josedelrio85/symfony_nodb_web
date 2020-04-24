@@ -61,12 +61,15 @@ class analitycs {
     this.push(this.dataclick);
   }
 
+  // try to only use param properties, not all the object
   push = (data) => {
     console.log(data);
     window.dataLayer = window.dataLayer || [];
     if (process.env.PRODUCTION) {
       window.dataLayer.push({data});
     }
+    // window.dataLayer.push({data});
+
     // console.log(window.dataLayer);
   }
 }

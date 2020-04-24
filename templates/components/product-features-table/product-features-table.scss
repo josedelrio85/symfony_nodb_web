@@ -24,11 +24,11 @@
     color: #E02020;
   }
   thead th:first-child {
-    width: 40%;
+    width: 35%;
   }
-  @include media-breakpoint-up(lg) {
-    thead th:first-child {
-      width: 60%;
-    }
-  }
+  // @include media-breakpoint-up(lg) {
+  //   thead th:first-child {
+  //     width: 35%;
+  //   }
+  // }
 }

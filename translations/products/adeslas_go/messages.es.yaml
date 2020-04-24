@@ -103,6 +103,8 @@ go:
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
   extra:
     table:
+      suptitle: ''
+      title: ''
       rows:
           - 'Historia clínica y exploración general'
           - 'Analítica'

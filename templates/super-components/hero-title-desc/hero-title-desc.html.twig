@@ -9,8 +9,13 @@
   {% endif %}
 {% endif %}
 
+{% set suptitle = '' %}
+{% if desc.suptitle is defined %}
+  {% set suptitle = desc.suptitle %}
+{% endif %}
+
 {% include 'components/header-titles/header-titles.html.twig' with {
-  mini_header: '',
+  mini_header: suptitle,
   text_header: desc.title,
   content_header: desc.text
 } %}
