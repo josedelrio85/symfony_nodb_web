@@ -1,0 +1,13 @@
+{% include 'components/header-titles/header-titles.html.twig' with {
+  mini_header: table.suptitle,
+  text_header:  table.title,
+  content_header: '',
+} %}
+
+<div class="container-fluid px-0">
+  <div class="container px-0">
+    {% include 'components/product-features-table/product-features-table.html.twig' with {
+      array: table,
+    } %}
+  </div>
+</div>
