@@ -35,19 +35,19 @@ decesos:
     drop:
       drop1:
         title: '¿Hasta cuándo estoy asegurado?'
-        text: 'Sí. Tu póliza tiene carácter vitalicio, por lo que una vez contratada, la mantendremos activa salvo que decidas finalizar el contrato y rescatar tu seguro, se produzca el impago de la póliza o el fallecimiento.'
+        text: 'Tu póliza tiene carácter vitalicio, por lo que una vez contratada, la mantendremos activa salvo que decidas finalizar el contrato y rescatar tu seguro, se produzca el impago de la póliza o el fallecimiento.'
       drop2:
         title: '¿Qué modalidades de pago existen?'
-        text: 'Cada una de las tres pólizas que ofrecemos tienen una modalidad de pago prevista. Adeslas Prima Única permite una única forma de pago. Decesos Completo permite el establecimiento de una prima periódica nivelada, en la que pagarás un poco más tras los primeros años de contratación y el importe se reducirá con el tiempo. Decesos Todo Previsto tiene una prima periódica y la posibilidad de pago fraccionado por periodos inferiores al año con recargos.'
+        text: 'Cada una de las tres pólizas que ofrecemos tienen una modalidad de pago prevista. Adeslas Prima Única permite una única forma de pago. Decesos Completo permite el establecimiento de una prima periódica nivelada, en la que pagarás un poco más tras los primeros años de contratación y el importe se reducirá con el tiempo. Decesos Todo Previstos tiene una prima periódica y la posibilidad de pago fraccionado por periodos inferiores al año, aunque con recargos.'
       drop3:
         title: '¿Tengo que incluirme en el seguro?'
         text: 'No es necesario. Puedes contratar una póliza familiar que te incluya con hasta 15 asegurados o incluso asegurar a tu familia en varias pólizas y elegir una localidad de sepelio diferente para cada una.'
       drop4:
         title: '¿Hay límite de edad para contratar alguna de las pólizas?'
-        text: 'Sí. Decesos Prima Única puede contratarse a partir de los 65 años. Decesos Completo puede suscribirse hasta los 70 años y Decesos Todo Previstos, hasta 65 años.'
+        text: 'Sí. Decesos Prima Única puede contratarse a partir de los 65 años. Decesos Completo puede suscribirse hasta los 70 años y Decesos Todo Previstos, hasta los 65 años.'
       drop5: 
         title: '¿Cuál será mi capital asegurado?'
-        text: 'El Capital asegurado se establece de forma automática en función del coste del servicio fúnebre en la localidad que selecciones y es destinado a la cobertura del sepelio.'
+        text: 'El capital asegurado se establece de forma automática en función del coste del servicio fúnebre en la localidad que selecciones y es destinado a la cobertura del sepelio.'
   extra: # Incluir en 3
     table:
       suptitle: ''

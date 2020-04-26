@@ -98,19 +98,13 @@ mascotas:
     drop:
       drop1:
         title: 'Las mejores condiciones que vas a encontrar'
-        text: 'Adeslas Mascotas es el mejor seguro del mercado para tu fiel amigo porque:'
-        list:
-         - 'Ofrecemos la mejor tarifa'
-         - 'Sin cuestionario médico, sin límites de razas o edad ni carencias'
-         - 'Cobertura de la responsabilidad civil para perros de razas potencialmente peligrosas'
-         - 'Adeslas Mascotas Completa es la única póliza que cubre el fallecimiento por enfermedad'
-         - 'El mayor capital asegurado (400 €) sin necesidad de documentar el valor de tu mascota'
+        text: 'Adeslas Mascotas es el mejor seguro del mercado para tu fiel amigo porque:<br>Ofrecemos la mejor tarifa</br><br>Sin cuestionario médico, sin límites de razas o edad ni carencias</br> <br>Cobertura de la responsabilidad civil para perros de razas potencialmente peligrosas</br> <br>Adeslas Mascotas Completa es la única póliza que cubre el fallecimiento por enfermedad</br> <br>Ofrecemos el mayor capital asegurado (400 €) sin necesidad de documentar el valor de tu mascota.'
       drop2:
         title: '¿Qué pasará si mi mascota tiene un accidente o enfermedad?'
-        text: 'Tendrás un número de teléfono al que llamar 24 horas y 365 días para consultar la incidencia y derivarte al veterinario de urgencia más cercano. La asistencia Veterinaria está disponible los 365 días y las 24 horas del día. '
+        text: 'Tendrás un número de teléfono al que llamar los 365 días y las 24 horas para consultar la incidencia. Te derivaremos al veterinario de urgencia más cercano. La asistencia Veterinaria está disponible los 365 días y las 24 horas del día.'
       drop3:
         title: 'Regalo inmediato'
-        text: 'Si contratas Adeslas Mascotas Completa te enviaremos un cheque regalo de 50€. Consúltanos las condiciones.'   
+        text: 'Si contratas Adeslas Mascotas Completa, te enviaremos un cheque regalo de 50€. Consúltanos las condiciones.'   
   extra: # Incluir en 4
     table:
       suptitle: 'Adeslas Mascotas'
@@ -130,7 +124,7 @@ mascotas:
         - 'Carencias en fallecimiento por enfermedad (6 M)'
       columns:
         column1:
-          title: 'Mascotas Básica. 5,74 €/mes'
+          title: 'Mascotas Básica. <br>5,74 €/mes'
           values:
             - true
             - true
@@ -145,7 +139,7 @@ mascotas:
             - true
             - false
         column2:
-          title: 'Mascotas Completa. 24,28 €/mes'
+          title: 'Mascotas Completa. <br>24,28 €/mes'
           values:
             - true
             - true 
