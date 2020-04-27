@@ -1,4 +1,5 @@
 import { analitycs } from './analitycs';
+import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -264,21 +265,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
   ///////////////////////////////////////////////////////////////////////////
 
+  // view|scroll events
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if(entry.isIntersecting === true){
-      console.log(entry);
-
-      //   let idob = entry.target.id;
-      //   getDataSlider(idob)
-      //     .then((result) => {
-      //       anlt.sliderScroll(result);
-      //     })
-      //     .catch((error) => { console.log(error); });
+        getDataConfigurator()
+          .then((result) => {
+            anlt.configuratorScroll(result);
+          })
+          .catch((error) => { console.log(error); });
       }
     });
   },
-  {rootMargin: "0px 0px -200px 0px"});
+  {rootMargin: "0px 0px -100px 0px"});
 
   observer.observe(document.querySelector('.product-selector'));
 });
@@ -286,9 +285,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 function getDataConfigurator() {
   const urlEndPoint = '/data-configurator';
 
-
   return new Promise((resolve, reject) => {
-    landingCommander.makePostRequestFormData(params, urlEndPoint)
+    landingCommander.makePostRequestFormData({}, urlEndPoint)
     .then((result) => {
       resolve(result);
     })
