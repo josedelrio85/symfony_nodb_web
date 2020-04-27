@@ -39,11 +39,12 @@ class analitycs {
 
   sliderScroll = (data) => {
     this.dataclick.eventLbl = 'home-slider';
-    this.dataclick.ecommerce.promoView.promotions[0].name = 'home-slider';
-    this.dataclick.ecommerce.promoView.promotions[0].creative = data.id;
-    this.dataclick.ecommerce.promoView.promotions[0].position = data.position;
-    // delete this.dataclick.ecommerce.promoClick;
-    
+    let promo = {
+      name : 'home-slider',
+      creative : data.id,
+      position : data.position,
+    }
+    this.dataclick.ecommerce.promoView.promotions.push(promo);
     this.populateScroll(this.dataclick);
   }
 
@@ -215,6 +216,7 @@ class analitycs {
   }
 
   populateScroll = (data) => {
+    console.log(data);
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'eventoEC',
@@ -224,11 +226,7 @@ class analitycs {
       noInteraction: true,
       ecommerce: {
         promoView: {
-          promotions: [{
-            name: data.ecommerce.promoView.promotions[0].name,
-            creative: data.ecommerce.promoView.promotions[0].creative,
-            position: data.ecommerce.promoView.promotions[0].position,
-          }]
+          promotions: data.ecommerce.promoView.promotions,
         }
       }
     });
