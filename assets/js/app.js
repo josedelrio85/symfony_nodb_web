@@ -369,8 +369,6 @@ function eventFire(el, etype){
 
 function getDataSlider(slide) {
   const urlEndPoint = '/data-slider';
-  // console.log(slide);
-
   let params = {
     slide: slide,
   }

@@ -9,18 +9,10 @@ class analitycs {
       eventLbl: null,                 // Nombre de la promoción donde se ha hecho click
       ecommerce: {
         promoClick: {
-          promotions: [{
-            name: null,             // Lugar donde se visualiza (home-slider | home-body | salud | salud-particulares | ......)
-            creative: null,         // Nombre de la creatividad
-            position: null,         // Posición que ocupa dentro del slider o de la página
-          }]
+          promotions: []
         },
         promoView: {
-          promotions: [{
-            name: null,             // Lugar donde se visualiza (home-slider | home-body | salud | salud-particulares | ......)
-            creative: null,         // Nombre de la creatividad
-            position: null,         // Posición que ocupa dentro del slider o de la página
-          }]
+          promotions: []
         },
       }
     };
@@ -45,11 +37,12 @@ class analitycs {
 
   sliderScroll = (data) => {
     this.dataclick.eventLbl = 'home-slider';
-    this.dataclick.ecommerce.promoView.promotions[0].name = 'home-slider';
-    this.dataclick.ecommerce.promoView.promotions[0].creative = data.id;
-    this.dataclick.ecommerce.promoView.promotions[0].position = data.position;
-    // delete this.dataclick.ecommerce.promoClick;
-    
+    let promo = {
+      name : 'home-slider',
+      creative : data.id,
+      position : data.position,
+    }
+    this.dataclick.ecommerce.promoView.promotions.push(promo);
     this.populateScroll(this.dataclick);
   }
 
@@ -78,6 +71,7 @@ class analitycs {
   }
 
   configuratorScroll = (data) => {
+    console.log(data);
     let pageName = data.mc;
     if (data.fc !== null && data.fc != undefined) {
       pageName += "/" + data.fc;
@@ -87,15 +81,17 @@ class analitycs {
     }
 
     this.dataclick.eventLbl = 'home-body';
-    data.array.forEach(d => {
-      let promo = {
-        name : 'home-body',
-        creative : 'a',
-        position : d.position,
-      }
-      this.dataclick.ecommerce.promoClick.promotions.push(promo);
+    Object.keys(data).forEach(key => {
+      if (typeof data[key] === 'object') {
+        let promo = {
+          name : 'home-body',
+          creative : data[key].creative,
+          position : data[key].position,
+        }
+        this.dataclick.ecommerce.promoView.promotions.push(promo);
+      };
     });
-    this.populateClick(this.dataclick);
+    this.populateScroll(this.dataclick);
   }
 
   productCard = (data) => {
@@ -139,6 +135,7 @@ class analitycs {
   }
 
   populateScroll = (data) => {
+    console.log(data);
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'eventoEC',
@@ -148,11 +145,7 @@ class analitycs {
       noInteraction: true,
       ecommerce: {
         promoView: {
-          promotions: [{
-            name: data.ecommerce.promoView.promotions[0].name,
-            creative: data.ecommerce.promoView.promotions[0].creative,
-            position: data.ecommerce.promoView.promotions[0].position,
-          }]
+          promotions: data.ecommerce.promoView.promotions,
         }
       }
     });
