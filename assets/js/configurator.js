@@ -59,7 +59,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         position: document.getElementById(id).getAttribute('data-position'),
         mc: childrenid,
       }
-      anlt.configurator(anlt_data);
+      // avoid to launch this event when slider click is fired
+      if (event.explicitOriginalTarget.id !== 'cta-salud'){
+        anlt.configurator(anlt_data);
+      }
 
       // if element has href attribute let's navigate
       let element = document.getElementById(id);

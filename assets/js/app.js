@@ -287,9 +287,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let cta = document.getElementById(id);
       let action = cta.getAttribute('data-action');
       let data = {
-        name: id.replace('cta-', ''),
+        // name: id.replace('cta-', ''),
+        creative: id.replace('cta-', ''),
         position: cta.getAttribute('data-position'),
       };
+      console.log(data);
       switch(action) {
         case 'open-conf':
           anlt.slider(data);
