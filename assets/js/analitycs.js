@@ -37,6 +37,16 @@ class analitycs {
     this.populateScroll(scroll);
   }
 
+  sliderScroll = (data) => {
+    this.dataclick.eventLbl = 'home-slider';
+    this.dataclick.ecommerce.promoView.promotions[0].name = 'home-slider';
+    this.dataclick.ecommerce.promoView.promotions[0].creative = data.id;
+    this.dataclick.ecommerce.promoView.promotions[0].position = data.position;
+    // delete this.dataclick.ecommerce.promoClick;
+    
+    this.populateScroll(this.dataclick);
+  }
+
   configurator = (data) => {
     let pageName = data.mc;
     if (data.fc !== null && data.fc != undefined) {
@@ -202,6 +212,27 @@ class analitycs {
     // console.log("dataLayer");
     // console.log(window.dataLayer);
     // console.log("---------------");
+  }
+
+  populateScroll = (data) => {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'eventoEC',
+      eventCat: 'ecommerce',
+      eventAct: 'promocionImpresion',
+      eventLbl: data.eventLbl,
+      noInteraction: true,
+      ecommerce: {
+        promoView: {
+          promotions: [{
+            name: data.ecommerce.promoView.promotions[0].name,
+            creative: data.ecommerce.promoView.promotions[0].creative,
+            position: data.ecommerce.promoView.promotions[0].position,
+          }]
+        }
+      }
+    });
+    console.log(window.dataLayer);
   }
 }
 
