@@ -6,7 +6,8 @@ form:
   desc: 'Te llamamos gratis <br>de lunes a viernes de 9 a 21h'
   fields:
     phone: 'Tu teléfono'
-    privacy: 'He leído y acepto la <a href="/privacidad" data-toggle="modal" data-target="#c2cTermsModal">política de privacidad</a>'
+    # privacy: 'He leído y acepto la <a href="/privacidad" data-toggle="modal" data-target="#c2cTermsModal">política de privacidad</a>'
+    privacy: 'He leído y acepto la <a href="/privacidad" data-toggle="modal" data-target="#c2cTermsModal">política de privacidad</a> y consiento el tratamiento de mis datos personales para todas las finalidades contenidas en la misma'
   cta:
     text: 'Llamadme'
     path: ''
