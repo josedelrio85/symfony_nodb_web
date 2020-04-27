@@ -59,9 +59,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         position: document.getElementById(id).getAttribute('data-position'),
         mc: childrenid,
       }
+
       // avoid to launch this event when slider click is fired
       if (event.explicitOriginalTarget.id !== 'cta-salud'){
         anlt.configurator(anlt_data);
+        // anlt.configuratorScroll(anlt_data);
       }
 
       // if element has href attribute let's navigate
@@ -261,31 +263,35 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelector(".bar").style.width = 100/steps + "%";
   }
   ///////////////////////////////////////////////////////////////////////////
+
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting === true){
+      console.log(entry);
+
+      //   let idob = entry.target.id;
+      //   getDataSlider(idob)
+      //     .then((result) => {
+      //       anlt.sliderScroll(result);
+      //     })
+      //     .catch((error) => { console.log(error); });
+      }
+    });
+  },
+  {rootMargin: "0px 0px -200px 0px"});
+
+  observer.observe(document.querySelector('.product-selector'));
 });
 
+function getDataConfigurator() {
+  const urlEndPoint = '/data-configurator';
 
-// function getData(id) {
-//   const urlEndPoint = '/first-children';
-//   console.log(id);
 
-//   let params = {
-//     element: id.replace('product-',''),
-//   }
-
-//   return new Promise((resolve, reject) => {
-//     landingCommander.makePostRequestFormData(params, urlEndPoint)
-//     .then((result) => {
-//       resolve(result);
-//     })
-//     .catch((error) => {reject(error);})
-//   });
-// }
-
-// // getData(id)
-// //   .then((result) => {
-// //     console.log(result.response);
-// //     let mainproducts = document.getElementById('mainproducts');
-// //     mainproducts.classList.add('d-none');
-// //     document.getElementById('level2').innerHTML = result.response;
-// //   })
-// //   .catch((error) => { console.log(error); });
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData(params, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
