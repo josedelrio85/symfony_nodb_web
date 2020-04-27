@@ -20,6 +20,12 @@ Encore
     })
 
     .copyFiles({
+      from: './assets/images-mailing',
+      to: 'images-mailing/[path][name].[ext]',
+      pattern: /\.(png|jpg|jpeg|pdf|svg)$/
+    })
+
+    .copyFiles({
       from: './assets/fonts',
       to: 'fonts/[path][name].[ext]',
       pattern: /\.(woff|woff2|ttf)$/
