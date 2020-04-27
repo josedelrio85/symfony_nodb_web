@@ -6,6 +6,7 @@ import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import { bysidecar } from './bysidecar';
 import { analitycs } from './analitycs';
+import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -291,7 +292,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         creative: id.replace('cta-', ''),
         position: cta.getAttribute('data-position'),
       };
-      console.log(data);
+
       switch(action) {
         case 'open-conf':
           anlt.slider(data);
@@ -313,6 +314,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     })
   });
+
+  // view|scroll events
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting === true){
+        let idob = entry.target.id;
+        getDataSlider(idob)
+          .then((result) => {
+            anlt.sliderScroll(result);
+          })
+          .catch((error) => { console.log(error); });
+      }
+    });
+  },
+  {rootMargin: "0px 0px -200px 0px"});
+
+  document.querySelectorAll('*[id^="cta-"]').forEach(slide => {observer.observe(slide)});
 
   ////////////////////// MORE-INFO ////////////////////////////////////////////
 
@@ -346,3 +364,23 @@ function eventFire(el, etype){
     el.dispatchEvent(evObj);
   }
 }
+
+
+
+function getDataSlider(slide) {
+  const urlEndPoint = '/data-slider';
+  // console.log(slide);
+
+  let params = {
+    slide: slide,
+  }
+
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData(params, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
+
