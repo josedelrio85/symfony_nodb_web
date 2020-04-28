@@ -2,7 +2,7 @@
 empresa_extra:
   home:
     title: 'Un gran seguro médico de empresa con cobertura internacional | Adeslas'
-    meta_description: 'Adeslas Extra Empresas lo tiene todo. Un seguro médico con cobertura internacional que permite acceder a todos los servicios del Cuadro Médico Adeslas sin copagos, elegir médico libremente en todo el mundo o combinar ambos sistemas en un mismo acto médico. ¡Ahora con un 15% de descuento en Dental!'
+    meta_description: 'Adeslas Extra Empresas lo tiene todo. Un seguro médico con cobertura internacional que permite acceder a todos los servicios del Cuadro Médico Adeslas sin copagos, elegir médico libremente en todo el mundo o combinar ambos sistemas en una misma atención. ¡Ahora con un 15% de descuento en Dental!'
   hero: # 1
     title: 'Adeslas Extra Empresas. Seguro médico a la carta en todo el mundo'
     subtitle: 'La mejor asistencia si parte de tu equipo viaja al extranjero'
@@ -83,7 +83,7 @@ empresa_extra:
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cuando disfrutas de determinados actos médicos de un seguro. En Adeslas Extra Empresas no existen copagos, sólo pagarás el 20% de los servicios médicos que elijáis fuera del cuadro médico Adeslas, dentro de la opción de reembolso.'
+        text: 'Es un complemento que pagas cuando disfrutas de algunas coberturas de un seguro. En Adeslas Extra Empresas no existen copagos, sólo pagarás el 20% de los servicios médicos que elijáis fuera del cuadro médico Adeslas, dentro de la opción de reembolso.'
       faq2:
          title: 'Cuestionario Médico'
          text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc., que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Extra Empresas está sujeto a cuestionario médico previo con excepciones a partir de 50 asegurados.'

@@ -51,7 +51,7 @@ negocios_extra_menos5:
         text: 'Adeslas tieneel mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees.'
       drop3:
         title: '3 modelos en una única póliza'
-        text: 'Si prefieres elegir a tu médico, te reembolsaremos el 80% de tu factura. También puedes combinar el cuadro médico y la libre elección en mismo acto médico. Por ejemplo, una cirugía en un hospital Adeslas y un especialista de tu confianza.'
+        text: 'Si prefieres elegir a tu médico, te reembolsaremos el 80% de tu factura. También puedes combinar el cuadro médico y la libre elección en una misma atención médica. Por ejemplo, una cirugía en un hospital Adeslas y un especialista de tu confianza.'
       drop4:
         title: 'Descuentos'
         text: 'Con Adeslas Extra Negocios accederéis a un enorme abanico de coberturas desde 55,04€/mes por persona. Con Adeslas Extra Negocios puedes pagar tu prima al mes o disfrutar de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
@@ -81,14 +81,14 @@ negocios_extra_menos5:
         text: 'Adeslas Extra Negocios tiene límites a los gastos cubiertos por reembolso hasta un total de 150.000 € y límites parciales de los que te informaremos cuando quieras sin compromiso.'
       drop4:
         title: '¿Podremos disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Extra Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos especializados como las cirugías están sujetos a un periodo de carencia de 10 meses.' 
+        text: 'Adeslas Extra Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunas coberturas específicas, como las cirugías, están sujetas a un periodo de carencia de 10 meses.' 
   faq:    # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cada vez que utilizas determinados actos médicos de un seguro. En Adeslas Extra Negocios no existen copagos, sólo pagarás el 20% de los servicios médicos que elijáis fuera del cuadro médico, dentro de la opción de reembolso.'
+        text: 'Es un complemento que pagas cada vez que utilizas determinados servicios de un seguro. En Adeslas Extra Negocios no existen copagos, sólo pagarás el 20% de los servicios médicos que elijáis fuera del cuadro médico, dentro de la opción de reembolso.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida o antecedentes médicos, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Extra Negocios está sujeto a cuestionario médico previo.'  

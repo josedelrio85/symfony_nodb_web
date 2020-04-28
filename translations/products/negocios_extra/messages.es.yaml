@@ -51,7 +51,7 @@ negocios_extra:
         text: 'Adeslas dispone del mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees.'
       drop3:
         title: '3 modelos en una única póliza'
-        text: 'Si prefieres elegir a tu médico, te reembolsaremos el 80% de tu factura. También puedes combinar el cuadro médico y la libre elección en mismo acto médico. Por ejemplo, una cirugía en un hospital Adeslas y un especialista de tu confianza.'
+        text: 'Si prefieres elegir a tu médico, te reembolsaremos el 80% de tu factura. También puedes combinar el cuadro médico y la libre elección en una misma atención. Por ejemplo, una cirugía en un hospital Adeslas y un especialista de tu confianza.'
       drop4:
         title: 'Descuentos'
         text: 'Adeslas Extra Negocios tienes una tarifa desde 79 €/mes, pero si contratas un seguro dental tendrás tu seguro médico 2 meses gratis y un 15% de descuento en Dental. Puedes pagar tu prima al mes o disfrutar de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
@@ -72,7 +72,7 @@ negocios_extra:
         text: 'Adeslas Extra Negocios está pensado para profesionales que desean una atención de máxima calidad y absoluta confianza con libertad de elección o para quienes viajan a menudo al extranjero por trabajo y necesitan una asistencia con la misma calidad en cualquier parte del mundo. Disfrutarás además de Adeslas Es Más, un servicio exclusivo que da acceso al área privada para la gestión telemática de todos tus trámites y a servicios adicionales.'
       drop2:
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Extra Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para cirugías y hospitalizaciones.'
+        text: 'Adeslas Extra Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunas coberturas están sujetas a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para cirugías y hospitalizaciones.'
       drop3:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
         text: 'El precio de tu seguro dental es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluyas en tu póliza dental, con lo que podrías acceder a descuentos adicionales.'
@@ -88,7 +88,7 @@ negocios_extra:
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cada vez que utilizas determinados actos médicos de un seguro. En Adeslas Extra Negocios no existen copagos, sólo pagarás el 20% de los servicios médicos de tu elección, dentro de la opción de reembolso.'
+        text: 'Es un complemento que pagas cada vez que utilizas determinados servicios de un seguro. En Adeslas Extra Negocios no existen copagos, sólo pagarás el 20% de los servicios médicos de tu elección, dentro de la opción de reembolso.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario  vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida o antecedentes médicos, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Extra Negocios está sujeto a cuestionario médico previo.'  
