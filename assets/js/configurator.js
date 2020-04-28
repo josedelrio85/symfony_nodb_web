@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           mc: childrenid,
         }
         anlt.configurator(anlt_data);
-        // anlt.configuratorScroll(anlt_data);
       }
       
       getDataConfiguratorFC()

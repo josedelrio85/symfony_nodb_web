@@ -38,14 +38,18 @@ class analitycs {
   }
 
   sliderScroll = (data) => {
-    this.dataclick.eventLbl = 'home-slider';
+    let scroll = {
+      eventLbl: 'home-slider',
+      promotions: [],
+    };
     let promo = {
       name : 'home-slider',
       creative : data.id,
       position : data.position,
     }
-    this.dataclick.ecommerce.promoView.promotions.push(promo);
-    this.populateScroll(this.dataclick);
+    scroll.promotions.push(promo);
+    // console.log("sliderScroll");
+    this.populateScroll(scroll);
   }
 
   configurator = (data) => {
@@ -216,8 +220,6 @@ class analitycs {
   }
 
   populateScroll = (data) => {
-    console.log(data);
-    window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'eventoEC',
       eventCat: 'ecommerce',
@@ -226,11 +228,15 @@ class analitycs {
       noInteraction: true,
       ecommerce: {
         promoView: {
-          promotions: data.ecommerce.promoView.promotions,
+          promotions: data.promotions,
         }
       }
     });
-    console.log(window.dataLayer);
+    // console.log("data");
+    // console.log(data);
+    // console.log("dataLayer");
+    // console.log(window.dataLayer);
+    // console.log("---------------");
   }
 }
 
