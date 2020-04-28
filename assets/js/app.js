@@ -352,6 +352,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       window.location.href = href;
     })
   });
+
 });
 
 
@@ -364,8 +365,6 @@ function eventFire(el, etype){
     el.dispatchEvent(evObj);
   }
 }
-
-
 
 function getDataSlider(slide) {
   const urlEndPoint = '/data-slider';

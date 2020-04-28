@@ -61,4 +61,68 @@ class AsyncController extends AbstractController {
     }
     return new JsonResponse(array());
   }
+
+  public function dataConfiguratorFC() {
+    $fc = $this->prodserv->getFirstChildren();
+
+    if(!empty($fc)){
+      $fcs = [];
+      foreach($fc['salud'] as $k => $f) {
+        if(is_array($f)) {
+          $arr = [
+            'creative' => $f['name'],
+            'position' => $f['position'],
+          ];
+          $fcs[$k] = $arr;
+        }
+      }
+      return new JsonResponse($fcs);
+    }
+    return new JsonResponse(array());
+  }
+
+  public function dataConfiguratorSC(Request $request) {
+    $key = $request->get("fc");
+
+    $sc = $this->prodserv->getSecondChildren();
+    if(!empty($sc)){
+      $scs = [];
+      foreach($sc[$key] as $k => $s) {
+        if(is_array($s)) {
+          $arr = [
+            'name' => $key,
+            'creative' => $s['name'],
+            'position' => $s['position'],
+          ];
+          $scs[$k] = $arr;
+        }
+      }
+      return new JsonResponse($scs);
+    }
+    return new JsonResponse(array());
+  }
+
+  public function dataProduct(Request $request) {
+    $key =  $request->get("product");
+    $area =  $request->get("area");
+    $landing =  $request->get("landing");
+
+    if(!is_null($key) || !empty($key)) {
+      $simple_landing = ['mascotas', 'decesos'];
+      if(in_array($landing, $simple_landing)){
+        $product_bullet = $this->repo->getMessages()['landings'][$landing]['product_bullet'];
+      } else {
+        $product_bullet = $this->repo->getKeyDataLandings($area, $landing, 'product_bullet');
+      }
+      $products = $product_bullet['product'];
+      $prod = array_key_exists($key, $products) ? $products[$key] : null;
+      $pd = [
+        'name' => $landing,
+        'creative' => $prod['title'],
+        'position' => str_replace('product', '', $key),
+      ];
+      return new JsonResponse($pd);
+    }
+    return new JsonResponse(array());
+  }
 }
