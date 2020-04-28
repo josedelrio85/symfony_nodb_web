@@ -285,6 +285,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       event.preventDefault();
 
       let id = event.target.id;
+      console.log(id);
       let cta = document.getElementById(id);
       let action = cta.getAttribute('data-action');
       let data = {
@@ -295,7 +296,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       switch(action) {
         case 'open-conf':
           anlt.slider(data);
-
+          document.getElementById('explicitOriginalTarget').value = 1;
+          
           // simulate a click on salud box; amazing!
           eventFire(document.getElementById('product-salud'), 'click');
           break;

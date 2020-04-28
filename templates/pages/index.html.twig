@@ -5,6 +5,7 @@
 {% block meta_description %}<meta name="description" content="{{ "home.meta_description" | trans }}">{% endblock %}
 
 {% block body %}
+  <input type="hidden" value="0" id="explicitOriginalTarget" />
 
   <div class="container-fluid p-0 fade-in">
     {% include 'components/slider-home/slider-home.html.twig' with {
@@ -35,9 +36,6 @@
         </div>
       </div>
   </div>
-
-
-
 {% endblock %}
 
 {% block javascripts %}
