@@ -57,7 +57,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       // analytics
       // avoid to launch this event when slider click is fired
-      if (event.explicitOriginalTarget.id !== 'cta-salud'){
+      // explicitOriginalTarget is a flag to know if the "click" event
+      // comes from the slider or the configurator. We simulate a click 
+      // on "Salud" box in app.js [slider section] when we make a click 
+      // int "Salud" slider and we not want to launch
+      // an event because the box was not really clicked
+      if(document.getElementById('explicitOriginalTarget').value == 0){
         let anlt_data = {
           position: document.getElementById(id).getAttribute('data-position'),
           mc: childrenid,
@@ -84,6 +89,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           // reset();
         }, 2000);
       } else {
+
+        document.getElementById('explicitOriginalTarget').value = 0;
+
         // show first childrens div
         firstchildrens.classList.remove('d-none');
 
