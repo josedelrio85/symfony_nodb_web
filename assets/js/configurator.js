@@ -56,16 +56,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
       childrenid = id.replace('product-','');
 
       // analytics
-      anlt_data = {
-        position: document.getElementById(id).getAttribute('data-position'),
-        mc: childrenid,
-      }
-
       // avoid to launch this event when slider click is fired
       if (event.explicitOriginalTarget.id !== 'cta-salud'){
+        let anlt_data = {
+          position: document.getElementById(id).getAttribute('data-position'),
+          mc: childrenid,
+        }
         anlt.configurator(anlt_data);
-        // anlt.configuratorScroll(anlt_data);
       }
+      
+      getDataConfiguratorFC()
+      .then((result) => {
+        anlt.configuratorScrollFC(result);
+      })
+      .catch((error) => { console.log(error); });
 
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
@@ -110,12 +114,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
 
       // analytics
-      anlt_data = {
+      let anlt_data = {
         position: document.getElementById(idfc).getAttribute('data-position'),
         mc:childrenid,
         fc: idfc,
       }
+      console.log("configurator fc");
       anlt.configurator(anlt_data);
+      getDataConfiguratorSC(idfc)
+        .then((result) => {
+          anlt.configuratorScrollSC(result);
+        })
+        .catch((error) => { console.log(error); });
 
       // get the suptitle value for this fc and set it. also remember the previous title
       let suptitle = document.getElementById('sc_suptitle_' + idfc).value;
@@ -176,7 +186,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
           fc: idfc,
           sc: idsc,
         }
-        anlt.configurator(anlt_data);
+      console.log("configurator sc");
+      anlt.configurator(anlt_data);
 
         // if element has href attribute let's navigate
         let element = document.getElementById(idsc);
@@ -287,6 +298,32 @@ function getDataConfigurator() {
 
   return new Promise((resolve, reject) => {
     landingCommander.makePostRequestFormData({}, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
+
+function getDataConfiguratorFC() {
+  const urlEndPoint = '/data-configurator-fc';
+
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData({}, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
+
+function getDataConfiguratorSC(idfc) {
+  const urlEndPoint = '/data-configurator-sc';
+  let params = {
+    fc: idfc,
+  }
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData(params, urlEndPoint)
     .then((result) => {
       resolve(result);
     })

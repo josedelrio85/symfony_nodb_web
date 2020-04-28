@@ -150,6 +150,18 @@ configurator:
    path: /data-configurator
    controller: App\Controller\AsyncController::dataConfigurator
 
+configurator-fc:
+   path: /data-configurator-fc
+   controller: App\Controller\AsyncController::dataConfiguratorFC
+
+configurator-sc:
+   path: /data-configurator-sc
+   controller: App\Controller\AsyncController::dataConfiguratorSC
+  
+product:
+   path: /data-product
+   controller: App\Controller\AsyncController::dataProduct
+ 
 ##################### DEV #####################
 
 test:

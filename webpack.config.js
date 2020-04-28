@@ -45,6 +45,7 @@ Encore
     .addEntry('app', './assets/js/app.js')
     .addEntry('configurator', './assets/js/configurator.js')
     .addEntry('ddi', './assets/js/ddi.js')
+    .addEntry('landing_products', './assets/js/landing_products.js')
     .addEntry('md5', './assets/js/md5.js')
     
     .enableSingleRuntimeChunk()

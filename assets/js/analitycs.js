@@ -1,49 +1,40 @@
 
 class analitycs {
-  
-  constructor() {
-    this.dataclick = {
-      event: 'eventoEC',
-      eventCat: 'ecommerce',
-      eventAct: 'promocionClick',
-      eventLbl: null,                 // Nombre de la promoción donde se ha hecho click
-      ecommerce: {
-        promoClick: {
-          promotions: []
-        },
-        promoView: {
-          promotions: []
-        },
-      }
-    };
 
-    this.dataconf = {
-      event: 'virtual_page',
-      pageName: null,
-    }
+  constructor() {
+    window.dataLayer = window.dataLayer || [];
   }
 
   slider = (data) => {
-    console.log(data);
-    this.dataclick.eventLbl = 'home-slider';
-    this.dataclick.ecommerce.promoClick.promotions[0].name = 'home-slider';
-    this.dataclick.ecommerce.promoClick.promotions[0].creative = data.creative;
-    this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
-    // delete this.dataclick.ecommerce.promoView;
-    // delete this.dataclick.noInteraction;
-    
-    this.populateClick(this.dataclick);
+    let click = {
+      eventLbl: 'home-slider',
+      promotions: [],
+    };
+
+    let promo = {
+      name : 'home-slider',
+      creative : data.creative,
+      position : data.position,
+    }
+    click.promotions.push(promo);
+
+    // console.log("slider");
+    this.populateClick(click);
   }
 
   sliderScroll = (data) => {
-    this.dataclick.eventLbl = 'home-slider';
+    let scroll = {
+      eventLbl: 'home-slider',
+      promotions: [],
+    };
     let promo = {
       name : 'home-slider',
       creative : data.id,
       position : data.position,
     }
-    this.dataclick.ecommerce.promoView.promotions.push(promo);
-    this.populateScroll(this.dataclick);
+    scroll.promotions.push(promo);
+    // console.log("sliderScroll");
+    this.populateScroll(scroll);
   }
 
   configurator = (data) => {
@@ -55,32 +46,33 @@ class analitycs {
       pageName += "/" + data.sc;
     }
 
-    this.dataconf.pageName = "/vpv/" + pageName;
-    this.populateConf(this.dataconf);
+    let clickconf = {
+      event: 'virtual_page',
+      pageName: "/vpv/" + pageName,
+    }
+    // console.log("configurator vpv");
+    this.populateConf(clickconf);
 
     //////////////////////////////////////////
 
-    this.dataclick.eventLbl = 'home-body';
-    this.dataclick.ecommerce.promoClick.promotions[0].name = 'home-body';
-    this.dataclick.ecommerce.promoClick.promotions[0].creative = pageName;
-    this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
-    // delete this.dataclick.ecommerce.promoView;
-    // delete this.dataclick.noInteraction;
+    let click = {
+      eventLbl: 'home-body',
+      promotions: [{
+        name : data.eventLbl,
+        creative : pageName,
+        position : data.position,
+      }],
+    };
 
-    this.populateClick(this.dataclick);
+    // console.log("configurator");
+    this.populateClick(click);
   }
 
   configuratorScroll = (data) => {
-    console.log(data);
-    let pageName = data.mc;
-    if (data.fc !== null && data.fc != undefined) {
-      pageName += "/" + data.fc;
-    }
-    if (data.sc !== null && data.sc != undefined) {
-      pageName += "/" + data.sc;
-    }
-
-    this.dataclick.eventLbl = 'home-body';
+    let scroll = {
+      eventLbl: 'home-body',
+      promotions: [],
+    };
     Object.keys(data).forEach(key => {
       if (typeof data[key] === 'object') {
         let promo = {
@@ -88,34 +80,92 @@ class analitycs {
           creative : data[key].creative,
           position : data[key].position,
         }
-        this.dataclick.ecommerce.promoView.promotions.push(promo);
+        scroll.promotions.push(promo);
       };
     });
-    this.populateScroll(this.dataclick);
+    // console.log("configuratorScroll");
+    this.populateScroll(scroll);
+  }
+
+  configuratorScrollFC = (data) => {
+    let scroll = {
+      eventLbl: null,
+      promotions: [],
+    };
+    Object.keys(data).forEach(key => {
+      if (typeof data[key] === 'object') {
+        let promo = {
+          name : data[key].creative,
+          creative : data[key].creative,
+          position : data[key].position,
+        }
+        scroll.eventLbl = promo.name;
+        scroll.promotions.push(promo);
+      };
+    });
+    // console.log("configuratorScrollFC");
+    this.populateScroll(scroll);
+  }
+
+  configuratorScrollSC = (data) => {
+    let scroll = {
+      eventLbl: null,
+      promotions: [],
+    };
+    Object.keys(data).forEach(key => {
+      if (typeof data[key] === 'object') {
+        let promo = {
+          name : data[key].name,
+          creative : data[key].creative,
+          position : data[key].position,
+        }
+        scroll.eventLbl = data[key].name;
+        scroll.promotions.push(promo);
+      };
+    });
+    // console.log("configuratorScrollSC");
+    this.populateScroll(scroll);
+  }
+
+  productScroll = (data) => {
+    let scroll = {
+      eventLbl: null,
+      promotions: [],
+    };
+    let promo = {
+      name : data.name,
+      creative : data.creative,
+      position : data.position,
+    }
+    scroll.eventLbl = data.name;
+    scroll.promotions.push(promo);
+
+    // console.log("productScroll");
+    this.populateScroll(scroll);
   }
 
   productCard = (data) => {
-    this.dataclick.eventLbl = data.label;
-    this.dataclick.ecommerce.promoClick.promotions[0].name = data.name;
-    this.dataclick.ecommerce.promoClick.promotions[0].creative = data.creative;
-    this.dataclick.ecommerce.promoClick.promotions[0].position = data.position;
-    // delete this.dataclick.ecommerce.promoView;
-    // delete this.dataclick.noInteraction;
 
-    this.populateClick(this.dataclick);
+    let click = {
+      eventLbl: data.label,
+      promotions: [{
+        name : data.name,
+        creative : data.creative,
+        position : data.position,
+      }],
+    };
+    // console.log("productCard");
+    this.populateClick(click);
   }
 
   populateConf = (data) => {
-    window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'virtual_page',
       pageName: data.pageName,
     });
-    // console.log(window.dataLayer);
   }
 
   populateClick = (data) => {
-    window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'eventoEC',
       eventCat: 'ecommerce',
@@ -123,20 +173,18 @@ class analitycs {
       eventLbl: data.eventLbl,
       ecommerce: {
         promoClick: {
-          promotions: [{
-            name: data.ecommerce.promoClick.promotions[0].name,
-            creative: data.ecommerce.promoClick.promotions[0].creative,
-            position: data.ecommerce.promoClick.promotions[0].position,
-          }]
+          promotions: data.promotions,
         }
       }
     });
-    console.log(window.dataLayer);
+    // console.log("data");
+    // console.log(data);
+    // console.log("dataLayer");
+    // console.log(window.dataLayer);
+    // console.log("---------------");
   }
 
   populateScroll = (data) => {
-    console.log(data);
-    window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: 'eventoEC',
       eventCat: 'ecommerce',
@@ -145,11 +193,15 @@ class analitycs {
       noInteraction: true,
       ecommerce: {
         promoView: {
-          promotions: data.ecommerce.promoView.promotions,
+          promotions: data.promotions,
         }
       }
     });
-    console.log(window.dataLayer);
+    // console.log("data");
+    // console.log(data);
+    // console.log("dataLayer");
+    // console.log(window.dataLayer);
+    // console.log("---------------");
   }
 }
 
