@@ -31,8 +31,6 @@ class IndexController extends AbstractController {
     $cards = $this->repo->getSimpleData('cards');
     // dump($mainelements); dump($firstchildrens); dump($secondChildrens);die();
     
-    // $this->dataConfigurator();
-
     return $this->render("pages/index.html.twig", [
       'translator' => $translator,
       'mainelements' => $mainelements,
@@ -42,5 +40,4 @@ class IndexController extends AbstractController {
       'cards' => $cards,
     ]);
   }
-
 }

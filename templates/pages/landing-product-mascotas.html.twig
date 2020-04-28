@@ -5,8 +5,9 @@
 {% block meta_description %}<meta name="description" content="{{ "#{landing}.home.meta_description" | trans }}">{% endblock %}
 
 {% block body %}
-
   <input type="hidden" id="landing-value" value="{{landing_value}}" />
+  <input type="hidden" id="area_hid" value="{{area}}" />
+  <input type="hidden" id="landing_hid" value="{{landing}}" />
 
   {# Hero image component #}
   {% include 'components/header-image/header-image.html.twig' with {
@@ -83,4 +84,10 @@
     </div>
   {% endif %}
 
+{% endblock %}
+
+
+{% block javascripts %}
+  {{ parent() }}
+  {{ encore_entry_script_tags('landing_products') }}
 {% endblock %}
