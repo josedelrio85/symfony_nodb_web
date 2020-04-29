@@ -106,9 +106,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         duration: $('#pincard').closest('div.row').height() - $('#pincard').height(),
     })
       .setClassToggle("body", "pinactive")
-      .on('start', function () {
-          // console.log("passed trigger");
-      })
+      .on('start', function () {})
       // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
       .setPin("#pincard");
 
@@ -285,7 +283,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       event.preventDefault();
 
       let id = event.target.id;
-      console.log(id);
       let cta = document.getElementById(id);
       let action = cta.getAttribute('data-action');
       let data = {
@@ -297,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         case 'open-conf':
           anlt.slider(data);
           document.getElementById('explicitOriginalTarget').value = 1;
-          
+
           // simulate a click on salud box; amazing!
           eventFire(document.getElementById('product-salud'), 'click');
           break;

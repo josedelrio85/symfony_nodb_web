@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         mc:childrenid,
         fc: idfc,
       }
-      console.log("configurator fc");
       anlt.configurator(anlt_data);
       getDataConfiguratorSC(idfc)
         .then((result) => {
@@ -194,7 +193,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           fc: idfc,
           sc: idsc,
         }
-      console.log("configurator sc");
       anlt.configurator(anlt_data);
 
         // if element has href attribute let's navigate
@@ -223,7 +221,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       reset();
       return
     }
-    // console.log(backvalue);
 
     // set the previous suptitle
     let titlesection = document.querySelector('.product-config .text-header');
