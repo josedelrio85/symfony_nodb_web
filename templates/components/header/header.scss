@@ -1,5 +1,5 @@
 .header {
-    height: 70px;
+    height: 90px;
     background-color: $white;
     position: fixed;
     top: 0;
@@ -99,7 +99,23 @@
     &.shadow {
         box-shadow: $box-shadow-header;
     }
-
+    .subheader {
+        background-color: $primary;
+        span {
+            font-family: $font-family-sans-serif;
+            color: $white;
+            height: initial;
+        }
+        a:hover {
+            text-decoration:none;
+        }
+    }
+    .ddi-text {
+        font-size: 0.7rem;
+        @include media-breakpoint-up(sm) {
+            font-size: 1rem;
+        }
+    }
 }
 
 .fullscreen-navigation {
