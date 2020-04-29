@@ -1,3 +1,6 @@
 .header-separator {
-    height: 70px;
+    height: 120px;
+    @include media-breakpoint-up(md) {
+        height: 100px;
+    }
 }
