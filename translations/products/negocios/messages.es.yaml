@@ -78,7 +78,7 @@ negocios:
         text: 'Sí. Sólo te hará falta el pasaporte, pero tendrás que estar dado de alta en el Régimen Especial de Autónomos.' 
       drop3: 
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para cirugías y hospitalizaciones.'
+        text: 'Adeslas Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos tratamientos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para cirugías y hospitalizaciones.'
       drop4:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
         text: 'Si contratas un seguro dental a la vez que Adeslas Negocios, tendrás dos meses gratis. Generaremos dos pólizas distintas aplicando las bonificaciones a la contratación de ambas. El precio de tu seguro dental dependerá de cuántos beneficiarios tenga esa póliza. Desde 10,50€/mes con un asegurado hasta 25 €/mes con 5 o 6.'
@@ -91,7 +91,7 @@ negocios:
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos de un seguro. Adeslas Negocios no tiene copagos.'
+        text: 'Es un complemento que pagas cada vez que utilizas determinados servicios de un seguro médico. Adeslas Negocios no tiene copagos.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida o antecedentes médicos, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Negocios está sujeto a cuestionario médico previo.'

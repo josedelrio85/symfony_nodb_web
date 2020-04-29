@@ -89,7 +89,7 @@ plena_extra:
         text: 'Adeslas Plena Extra 150 tiene límites a los gastos cubiertos por reembolso hasta un total de 150.000 euros y con sublímites, de los que te informaremos cuando quieras sin compromiso. La asistencia ambulatoria y quirúrgica tiene como límite los 40.000 euros al año y el parto, 5.000 €.'
       drop5: 
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Plena Extra 150 permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para intervenciones quirúrgicas y hospitalizaciones.'
+        text: 'Adeslas Plena Extra 150 permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunas coberturas están sujetas a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para intervenciones quirúrgicas y hospitalizaciones.'
       drop6:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
         text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluyas en tu póliza, con lo que podrías acceder a descuentos adicionales.'
@@ -102,7 +102,7 @@ plena_extra:
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cada vez que utilizas algunos actos médicos cubiertos por la póliza de un seguro médico. En Adeslas Plena Extra 150 no existen copagos.'
+        text: 'Es un complemento que pagas cada vez que utilizas determinados servicios incluidos en una póliza de un seguro médico. En Adeslas Plena Extra 150 no existen copagos.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos,etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena Extra 150 está sujeto a cuestionario médico.'

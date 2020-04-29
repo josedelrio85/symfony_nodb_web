@@ -24,7 +24,7 @@ dental_max:
   bullets: # 3 tabla con titulo+ desc + supertitulo 
     suptitle: 'Adeslas Dental MAX'
     title: 'Coberturas Max'
-    text: 'Adeslas MAX incluye en sus coberturas hasta 38 actos médicos el primer año, que van creciendo a a la vez que se reduce tu tarifa:' 
+    text: 'Adeslas MAX incluye en sus coberturas hasta 38 tipos de servicios el primer año, que van creciendo a a la vez que se reduce tu tarifa:' 
   des_with_dropdown: # 4 listado de dropdowns con titulo + supertitulo + descripcion
     suptitle: 'Adeslas Dental MAX'
     title: 'Mejores condiciones'
@@ -35,7 +35,7 @@ dental_max:
         text: 'Cada año de renovación bajamos tu prima 1€ hasta un máximo de 6€ por asegurado al mes y cuantos más asegurados tenga tu póliza, el precio será más bajo.'
       drop2:
         title: 'Más coberturas'
-        text: '38 actos médicos incluidos el primer año y nuevas coberturas en Odontopediatría y Periodoncia cada año hasta un total de 49 actos, incluidos medios de diagnóstico de alta tecnología.'
+        text: '38 tratamientos incluidos el primer año y nuevas coberturas en Odontopediatría y Periodoncia cada año hasta un total de 49 actos, incluidos medios de diagnóstico de alta tecnología.'
       drop3:
         title: 'Máxima calidad'
         text: 'Más de 4.000 profesionales, 1.600 odontólogos, 190 Clínicas Dentales 100% Adeslas en las que te ofrecemos todos los tratamientos de cualquier especialidad que necesites.'
@@ -56,7 +56,7 @@ dental_max:
     drop:
       drop1:
         title: '¿Qué es Adeslas Dental MAX?'
-        text: 'Un seguro dental privado con amplias coberturas desde el primer día y desde sólo 8€ al mes por asegurado. Con cada año de renovación, te rebajamos 1€ por asegurado al mes y durante los primeros 3 verás aumentadas tus coberturas, hasta un máximo de 49 actos médicos sin coste añadido en las Clínicas Adeslas Dental.'
+        text: 'Un seguro dental privado con amplias coberturas desde el primer día y desde sólo 8€ al mes por asegurado. Con cada año de renovación, te rebajamos 1€ por asegurado al mes y durante los primeros 3 verás aumentadas tus coberturas, hasta un máximo de 49 tipos de servicios sin coste añadido en las Clínicas Adeslas Dental.'
       drop2:
         title: '¿Hay límite de edad para contratar Adeslas Dental MAX?'
         text: 'No. Adeslas Dental Max está pensado para las familias pero no hay límite de edad para los asegurados, incluso si es un niño, siempre que el tomador del seguro sea una persona mayor de 18 años.'
@@ -75,10 +75,10 @@ dental_max:
     elems:
       faq1:
         title: '¿Qué es un copago'
-        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos de un seguro. En Adeslas DENTAL MAX no existen copagos, las coberturas aumentan año a año durante los 3 primeros años.'
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los servicios de un seguro. En Adeslas DENTAL MAX no existen copagos, las coberturas aumentan año a año durante los 3 primeros años.'
       faq2:
         title: '¿Qué es una franquicia?'
-        text: 'Es la cantidad que el asegurado debe pagar por acceder a determinados actos médicos derivados de tratamientos especiales. A partir de esa cantidad, la compañía se hace cargo el resto del coste.'
+        text: 'Es la cantidad que el asegurado debe pagar por acceder a determinadas consultas o servicios derivados de tratamientos especiales. A partir de esa cantidad, la compañía se hace cargo el resto del coste.'
       faq3:
         title: '¿Qué es el cuestionario médico previo?'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas Dental MAX no necesitas cubrir este test para contratar.'    
@@ -93,7 +93,7 @@ dental_max:
       suptitle: ''
       title: ''
       rows:
-            - '35 actos médicos'
+            - '35 coberturas médicas'
             - '3 pruebas diagnósticas'
             - 'Estudio Radiología 3D:'
             - 'Estudio Tomográfico (TAC), una arcada'

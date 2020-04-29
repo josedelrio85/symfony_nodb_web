@@ -89,7 +89,7 @@ plena_plus:
         text: 'Sí, puedes contratar tu seguro médico con Adeslas Plena Plus. Sólo te hará falta el pasaporte.'
       drop5:
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Plena Plus permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para intervenciones quirúrgicas y hospitalizaciones.'
+        text: 'Adeslas Plena Plus permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Hay coberturas sujetas a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para intervenciones quirúrgicas y hospitalizaciones.'
       drop6:
         title: 'Cuánto pagaré si contrato mi póliza y un seguro dental?'
         text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar hasta 3,55 €/mes por persona.'
@@ -105,7 +105,7 @@ plena_plus:
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos. En Adeslas Plena Plus no hay copagos.'
+        text: 'Es un complemento que pagas cada vez que utilizas algunos servicios de un seguro médico. En Adeslas Plena Plus no hay copagos.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena Plus está sujeto a cuestionario médico previo.'

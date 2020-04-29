@@ -46,7 +46,7 @@ plena_vital:
     drop:
       drop1:
         title: 'Tarifas'
-        text: 'Adeslas Plena Vital ofrece el más amplio catálogo de actos médicos desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
+        text: 'Adeslas Plena Vital ofrece el más amplio catálogo de asistencias médicas desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
       drop2:
         title: 'Calidad'
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud.'
@@ -86,7 +86,7 @@ plena_vital:
         text: 'Con Adeslas Plena Vital tendrás cubiertas todas tus necesidades; las pruebas prenatales, el test de ADN en sangre materna, la preparación y asistencia al parto y postparto, tanto para ti como para tu bebé. El <strong>parto</strong> es una hospitalización más, por lo que tiene una <strong>carencia de 10 meses</strong> desde la contratación de la póliza.'
       drop5: 
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Plena Vital permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia.'
+        text: 'Adeslas Plena Vital permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunas coberturas están sujetas a períodos de carencia.'
       drop6:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
         text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluya, con lo que podrías llegar a pagar hasta 3,55€/mes por persona.'
@@ -102,7 +102,7 @@ plena_vital:
     elems:
       faq1:
         title: 'Copago'
-        text: 'Es un complemento que pagas cada vez que utilizas algunos actos médicos. En Adeslas Plena Vital los copagos tienen un precio reducido, de una media de 14,50 euros, pero están limitados a 300€/ año.'
+        text: 'Es un complemento que pagas cada vez que utilizas determinados servicios de un seguro médico. En Adeslas Plena Vital los copagos tienen un precio reducido, de una media de 14,50 euros, y están limitados a 300€/ año.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc.que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena Vital está sujeto a cuestionario médico previo.'

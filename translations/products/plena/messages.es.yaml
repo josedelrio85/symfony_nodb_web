@@ -86,7 +86,7 @@ plena:
         text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'
       drop6:
         title: '¿Puedo disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Plena permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos están sujetos a períodos de carencia: De los 3 meses, para pruebas diagnósticas de la más alta tecnología y hasta los 10 meses, para cirugías y hospitalizaciones, como el parto.'
+        text: 'Adeslas Plena permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunas coberturas están sujetas a períodos de carencia: De los 3 meses, para pruebas diagnósticas de la más alta tecnología y hasta los 10 meses, para cirugías y hospitalizaciones, como el parto.'
       drop7:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
         text: 'Los seguros de Adeslas Plena están cubiertos con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
@@ -96,7 +96,7 @@ plena:
     elems:
       faq1:
         title: 'Copago'
-        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos del seguro. Con Adeslas Plena los copagos tienen un precio reducido, de una media de 5,50 euros'
+        text: 'Es un complemento que pagas cada vez que determinados servicios de un seguro médico. Con Adeslas Plena los copagos tienen un precio reducido, de una media de 5,50 euros'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos en el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos,etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Plena está sujeto a cuestionario médico previo.'

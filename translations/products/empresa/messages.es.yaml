@@ -79,7 +79,7 @@ empresa:
         text: 'Adeslas Empresas se puede contratar hasta los 67 años, pero puede incluirse un asegurado que supere esa edad si en la misma póliza hay tres asegurados de menos de 60 años.'
       drop4:
         title: '¿Podremos disfrutar de todas las coberturas desde el primer día?'
-        text: 'Adeslas Empresas permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos actos médicos especializados como las cirugías están sujetos a un periodo de carencia de 10 meses, pero si sois más de 12, se eliminarán todas.'
+        text: 'Adeslas Empresas permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos servicios específicos como las cirugías están sujetos a un periodo de carencia de 10 meses, pero si sois más de 12, se eliminarán todas.'
       drop5:
         title: '¿Pueden incluirse hijos y cónyuges?'
         text: 'Adeslas Empresas permite el acceso de familiares de empleados a la póliza en condiciones ventajosas.'        
@@ -92,7 +92,7 @@ empresa:
     elems:
       faq1:
         title: 'Copagos'
-        text: 'Es un complemento que pagas cada vez que utilizas alguno de los actos médicos de un seguro. Adeslas Empresas no tiene copagos.'
+        text: 'Es un complemento que pagas cada vez que utilizas alguno de los servicios de un seguro. Adeslas Empresas no tiene copagos.'
       faq2:
         title: 'Cuestionario Médico'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc, que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. Adeslas Empresas está sujeto a cuestionario médico previo con excepciones a partir de 50 asegurados.'

@@ -91,7 +91,7 @@ go:
     elems:
       faq1:
         title: '¿Qué es un copago?'
-        text: 'Es un complemento que pagas cada vez que recurres a algunos actos médicos cubiertos en tu seguro y están concebidos para reducir las primas mensuales. En Adeslas GO los 3 primeros copagos de hasta 16 € de cada año serán gratuitos y reduciremos un 25% el precio de todos a partir de tu segundo año. Pero vayas lo que vayas al médico, si tienes menos de 55 años, nunca pagarás más de 260 euros al año en copagos.'
+        text: 'Es un complemento que pagas cada vez que recurres a algunos servicios de tu seguro y están concebidos para reducir las primas mensuales. En Adeslas GO los 3 primeros copagos de hasta 16 € de cada año serán gratuitos y reduciremos un 25% el precio de todos a partir de tu segundo año. Pero vayas lo que vayas al médico, si tienes menos de 55 años, nunca pagarás más de 260 euros al año en copagos.'
       faq2:
         title: '¿Qué es el test médico previo?'
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía recaba datos del paciente, como estilo de vida, antecedentes médicos, etc., que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas GO no necesitas cubrir este test para contratar.'
