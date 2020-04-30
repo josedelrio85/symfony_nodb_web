@@ -324,7 +324,7 @@ function getDataConfiguratorSC(idfc) {
     fc: idfc,
   }
   return new Promise((resolve, reject) => {
-    landingCommander.makePostRequestFormData({}, urlEndPoint)
+    landingCommander.makePostRequestFormData(params, urlEndPoint)
     .then((result) => {
       resolve(result);
     })

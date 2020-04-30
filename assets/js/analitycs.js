@@ -105,6 +105,26 @@ class analitycs {
     Object.keys(data).forEach(key => {
       if (typeof data[key] === 'object') {
         let promo = {
+          name : 'home-body',
+          creative : data[key].creative,
+          position : data[key].position,
+        }
+        scroll.promotions.push(promo);
+      };
+    });
+    // console.log("configuratorScroll");
+    // console.log(scroll);
+    this.populateScroll(scroll);
+  }
+
+  configuratorScrollFC = (data) => {
+    let scroll = {
+      eventLbl: null,
+      promotions: [],
+    };
+    Object.keys(data).forEach(key => {
+      if (typeof data[key] === 'object') {
+        let promo = {
           name: 'salud',
           creative: data[key].creative,
           position: data[key].position,
@@ -191,26 +211,6 @@ class analitycs {
         }
       }
     });
-  }
-
-  populateScroll = (data) => {
-    window.dataLayer.push({
-      event: 'eventoEC',
-      eventCat: 'ecommerce',
-      eventAct: 'promocionImpresion',
-      eventLbl: data.eventLbl,
-      noInteraction: true,
-      ecommerce: {
-        promoView: {
-          promotions: data.promotions,
-        }
-      }
-    });
-    // console.log("data");
-    // console.log(data);
-    // console.log("dataLayer");
-    // console.log(window.dataLayer);
-    // console.log("---------------");
   }
 
   populateScroll = (data) => {

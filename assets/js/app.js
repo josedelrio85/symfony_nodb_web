@@ -290,6 +290,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         creative: id.replace('cta-', ''),
         position: cta.getAttribute('data-position'),
       };
+
       switch(action) {
         case 'open-conf':
           anlt.slider(data);
