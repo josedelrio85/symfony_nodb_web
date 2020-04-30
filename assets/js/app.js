@@ -332,25 +332,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   ////////////////////// MORE-INFO ////////////////////////////////////////////
 
-  let moreinfo = document.querySelectorAll('.more-info');
-
-  moreinfo.forEach((cv, ci, listObj) => {
-    cv.addEventListener('click', (event) => {
-      event.preventDefault();
-
-      let href = event.target.parentNode.href;
-      let position = event.target.parentNode.getAttribute('data-index');
-      position = position.replace('product','');
-      let data = {
-        label: event.target.parentNode.getAttribute('data-parent'),
-        name: event.target.parentNode.getAttribute('data-title'),
-        position: position,
-      };
-      anlt.productCard(data);
-      window.location.href = href;
-    })
-  });
-
 });
 
 

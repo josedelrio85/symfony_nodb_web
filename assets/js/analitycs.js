@@ -53,34 +53,28 @@ class analitycs {
   }
 
   configurator = (data) => {
-    let pageName = data.mc;
-    if (data.fc !== null && data.fc != undefined) {
-      pageName += "/" + data.fc;
-    }
-    if (data.sc !== null && data.sc != undefined) {
-      pageName += "/" + data.sc;
-    }
-
     let clickconf = {
       event: 'virtual_page',
-      pageName: "/vpv/" + pageName,
+      pageName: "/vpv/" + data.vpv,
     }
-    // console.log("configurator vpv");
-    this.populateConf(clickconf);
 
     //////////////////////////////////////////
-
     let click = {
-      eventLbl: 'home-body',
+      eventLbl: data.eventLbl,
       promotions: [{
-        name : data.eventLbl,
-        creative : pageName,
+        name : data.name,
+        creative : data.creative,
         position : data.position,
       }],
     };
 
     // console.log("configurator");
+    // console.log(click);
     this.populateClick(click);
+
+    if (data.sc == null || data.sc == undefined){
+      this.populateConf(clickconf);
+    }
   }
 
   configuratorScroll = (data) => {
@@ -99,6 +93,7 @@ class analitycs {
       };
     });
     // console.log("configuratorScroll");
+    // console.log(scroll);
     this.populateScroll(scroll);
   }
 
@@ -110,15 +105,16 @@ class analitycs {
     Object.keys(data).forEach(key => {
       if (typeof data[key] === 'object') {
         let promo = {
-          name : data[key].creative,
-          creative : data[key].creative,
-          position : data[key].position,
+          name: 'salud',
+          creative: data[key].creative,
+          position: data[key].position,
         }
         scroll.eventLbl = promo.name;
         scroll.promotions.push(promo);
       };
     });
     // console.log("configuratorScrollFC");
+    // console.log(scroll);
     this.populateScroll(scroll);
   }
 
@@ -130,15 +126,16 @@ class analitycs {
     Object.keys(data).forEach(key => {
       if (typeof data[key] === 'object') {
         let promo = {
-          name : data[key].name,
+          name : 'salud-' + data[key].name,
           creative : data[key].creative,
           position : data[key].position,
         }
-        scroll.eventLbl = data[key].name;
+        scroll.eventLbl = promo.name;
         scroll.promotions.push(promo);
       };
     });
     // console.log("configuratorScrollSC");
+    // console.log(scroll);
     this.populateScroll(scroll);
   }
 
@@ -152,24 +149,26 @@ class analitycs {
       creative : data.creative,
       position : data.position,
     }
-    scroll.eventLbl = data.name;
+    scroll.eventLbl = data.eventLbl;
     scroll.promotions.push(promo);
 
-    // console.log("productScroll");
+    console.log("productScroll");
+    console.log(scroll);
     this.populateScroll(scroll);
   }
 
   productCard = (data) => {
 
     let click = {
-      eventLbl: data.label,
+      eventLbl: data.eventLbl,
       promotions: [{
         name : data.name,
         creative : data.creative,
         position : data.position,
       }],
     };
-    // console.log("productCard");
+    console.log("productCard");
+    console.log(click);
     this.populateClick(click);
   }
 
@@ -192,11 +191,6 @@ class analitycs {
         }
       }
     });
-    // console.log("data");
-    // console.log(data);
-    // console.log("dataLayer");
-    // console.log(window.dataLayer);
-    // console.log("---------------");
   }
 
   populateScroll = (data) => {
@@ -232,11 +226,6 @@ class analitycs {
         }
       }
     });
-    // console.log("data");
-    // console.log(data);
-    // console.log("dataLayer");
-    // console.log(window.dataLayer);
-    // console.log("---------------");
   }
 }
 
