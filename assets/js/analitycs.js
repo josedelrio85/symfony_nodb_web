@@ -152,8 +152,8 @@ class analitycs {
     scroll.eventLbl = data.eventLbl;
     scroll.promotions.push(promo);
 
-    console.log("productScroll");
-    console.log(scroll);
+    // console.log("productScroll");
+    // console.log(scroll);
     this.populateScroll(scroll);
   }
 
@@ -167,8 +167,8 @@ class analitycs {
         position : data.position,
       }],
     };
-    console.log("productCard");
-    console.log(click);
+    // console.log("productCard");
+    // console.log(click);
     this.populateClick(click);
   }
 
