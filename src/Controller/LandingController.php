@@ -38,6 +38,11 @@ class LandingController extends AbstractController {
 
     $cards = $dl['minicards'];
     $product_bullet = $dl['product_bullet'];
+    if(!is_null($product_bullet)){
+      $prod_chunked = array_chunk($product_bullet['product'], 2, true);
+      $product_bullet['prod_chunked'] = $prod_chunked;
+    }
+
     $desc = $dl['desc'];
     $bullets_extra = array_key_exists('bullets_extra', $dl) ? $dl['bullets_extra'] : null;
     $uri = parse_url($request->getUri(), PHP_URL_PATH);

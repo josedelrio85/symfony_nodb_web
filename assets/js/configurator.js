@@ -51,22 +51,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // childrenid = salud | dental | mascotas | decesos
       childrenid = id.replace('product-','');
 
-      // analytics
-      let anlt_data = {
-        eventLbl: (eot == 1) ? 'home-slider' : 'home-body',
-        name: (eot == 1) ? 'home-slider' : 'home-body',
-        creative: childrenid,
-        position: document.getElementById(id).getAttribute('data-position'),
-        vpv: childrenid,
-      }
-      anlt.configurator(anlt_data);
-
-      getDataConfiguratorFC()
-        .then((result) => {
-          anlt.configuratorScrollFC(result);
-        })
-        .catch((error) => { console.log(error); });
-
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
@@ -79,6 +63,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
           window.location.href = element.getAttribute('href');
         }, 2000);
       } else {
+
+        ////////////// analytics ///////////////////////////////////////////////
+        let anlt_data = {
+          eventLbl: (eot == 1) ? 'home-slider' : 'home-body',
+          name: (eot == 1) ? 'home-slider' : 'home-body',
+          creative: childrenid,
+          position: document.getElementById(id).getAttribute('data-position'),
+          vpv: childrenid,
+        }
+        if (eot == 0) {
+          anlt.configurator(anlt_data);
+        }
+
+        getDataConfiguratorFC()
+          .then((result) => {
+            anlt.configuratorScrollFC(result);
+          })
+          .catch((error) => { console.log(error); });
+        ////////////////////////////////////////////////////////////////////////
 
         document.getElementById('explicitOriginalTarget').value = 0;
 
@@ -281,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if(entry.isIntersecting === true){
-        getDataConfigurator()
+      getDataConfigurator()
           .then((result) => {
             anlt.configuratorScroll(result);
           })

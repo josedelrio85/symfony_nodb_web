@@ -1,11 +1,11 @@
-{# {{dump(product_cards)}} #}
+
 {% include 'components/header-titles/header-titles.html.twig' with {
   mini_header: product_cards.suptitle,
   text_header: product_cards.title,
   content_header: product_cards.desc
 } %}
 
-<div class="container pb-5 max-w-750">
+{# <div class="container pb-5 max-w-750">
   <div class="row">
     {% for key, item in product_cards.product %}
       <div class="col-12 col-md-6 mb-4">
@@ -17,4 +17,22 @@
       </div>
     {% endfor %}
   </div>
+</div> #}
+
+
+<div class="container pb-5 max-w-750">
+  {% for k, i in product_cards.prod_chunked %}
+    <div class="row" id="product-row-{{k}}">
+      {% for key, item in i %}
+        <div class="col-12 col-md-6 mb-4">
+          {% include 'components/product-card/product-card.html.twig' with { 
+            product: item, 
+            parent: product_cards.suptitle, 
+            index: key,
+          } %}
+        </div>
+      {% endfor %}
+    </div>
+
+  {% endfor %}
 </div>

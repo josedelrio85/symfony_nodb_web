@@ -164,17 +164,41 @@ class analitycs {
       eventLbl: null,
       promotions: [],
     };
-    let promo = {
-      name : data.name,
-      creative : data.creative,
-      position : data.position,
-    }
     scroll.eventLbl = data.eventLbl;
-    scroll.promotions.push(promo);
+    data.products.forEach((d) => {
+      let promo = {
+        name : d.name,
+        creative : d.creative,
+        position : d.position,
+      }
+      scroll.promotions.push(promo);
+    });
 
     // console.log("productScroll");
     // console.log(scroll);
     this.populateScroll(scroll);
+  }
+
+  productScrollArray = (elements) => {
+    let scroll = {
+      eventLbl: null,
+      promotions: [],
+    };
+
+    elements.forEach(data => {
+      let promo = {
+        name : data.name,
+        creative : data.creative,
+        position : data.position,
+      }
+      scroll.eventLbl = data.eventLbl;
+      scroll.promotions.push(promo);
+    });
+
+
+    console.log("productScroll");
+    console.log(scroll);
+    // this.populateScroll(scroll);
   }
 
   productCard = (data) => {

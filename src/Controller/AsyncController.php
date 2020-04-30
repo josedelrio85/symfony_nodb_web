@@ -103,26 +103,60 @@ class AsyncController extends AbstractController {
   }
 
   public function dataProduct(Request $request) {
-    $key =  $request->get("product");
     $area =  $request->get("area");
     $landing =  $request->get("landing");
+    $prod1 =  $request->get("product1");
+    $prod2 =  $request->get("product2");
+    $output = [];
 
-    if(!is_null($key) || !empty($key)) {
-      $simple_landing = ['mascotas', 'decesos'];
-      if(in_array($landing, $simple_landing)){
-        $product_bullet = $this->repo->getMessages()['landings'][$landing]['product_bullet'];
-      } else {
-        $product_bullet = $this->repo->getKeyDataLandings($area, $landing, 'product_bullet');
-      }
-      $products = $product_bullet['product'];
-      $prod = array_key_exists($key, $products) ? $products[$key] : null;
-      $pd = [
-        'name' => $landing,
-        'creative' => $prod['title'],
-        'position' => str_replace('product', '', $key),
-      ];
-      return new JsonResponse($pd);
+    $simple_landing = ['mascotas', 'decesos'];
+    if(in_array($landing, $simple_landing)){
+      $product_bullet = $this->repo->getMessages()['landings'][$landing]['product_bullet'];
+    } else {
+      $product_bullet = $this->repo->getKeyDataLandings($area, $landing, 'product_bullet');
     }
-    return new JsonResponse(array());
+    $products = $product_bullet['product'];
+
+    $product1 = array_key_exists($prod1, $products) ? $products[$prod1] : null;
+
+    $pd1 = [
+      'name' => $landing,
+      'creative' => $product1['title'],
+      'position' => str_replace('product', '', $prod1),
+    ];
+    $output["product1"] = $pd1;
+
+    
+    if($prod2 !== ""){
+      $product2 = array_key_exists($prod2, $products) ? $products[$prod2] : null;
+      $pd2 = [
+        'name' => $landing,
+        'creative' => $product2['title'],
+        'position' => str_replace('product', '', $prod2),
+      ];
+      $output["product2"] = $pd2;
+    }
+
+    return new JsonResponse($output);
+  }
+
+
+  function old() {
+        // if(!is_null($key) || !empty($key)) {
+    //   $simple_landing = ['mascotas', 'decesos'];
+    //   if(in_array($landing, $simple_landing)){
+    //     $product_bullet = $this->repo->getMessages()['landings'][$landing]['product_bullet'];
+    //   } else {
+    //     $product_bullet = $this->repo->getKeyDataLandings($area, $landing, 'product_bullet');
+    //   }
+    //   $products = $product_bullet['product'];
+    //   $prod = array_key_exists($key, $products) ? $products[$key] : null;
+    //   $pd = [
+    //     'name' => $landing,
+    //     'creative' => $prod['title'],
+    //     'position' => str_replace('product', '', $key),
+    //   ];
+    //   return new JsonResponse($pd);
+    // }
   }
 }
