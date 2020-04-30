@@ -6,7 +6,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let anlt = new analitycs();
 
   let area = document.getElementById('area_hid').value;
+  let family = document.getElementById('family_hid').value;
   let landing = document.getElementById('landing_hid').value;
+  let moreinfo = document.querySelectorAll('.more-info');
+
+  moreinfo.forEach((cv, ci, listObj) => {
+    cv.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      let href = event.target.parentNode.href;
+      let position = event.target.parentNode.getAttribute('data-index');
+      position = position.replace('product','');
+      // event.target.parentNode.getAttribute('data-parent')
+      let name = area + '-' + family + '-' + landing;
+
+      let data = {
+        eventLbl: name,
+        name: name,
+        creative: event.target.parentNode.getAttribute('data-title'),
+        position: position,
+      };
+      anlt.productCard(data);
+      window.location.href = href;
+    })
+  });
 
   // view|scroll events
   let observerproduct = new IntersectionObserver((entries, observer) => {
@@ -19,7 +42,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         getDataProduct(params)
           .then((result) => {
-            anlt.productScroll(result);
+            let name = area + '-' + family + '-' + result.name;
+            let data = {
+              eventLbl: name,
+              name: name,
+              creative: result.creative,
+              position: result.position,
+            };
+            anlt.productScroll(data);
           })
           .catch((error) => { console.log(error); });
       }

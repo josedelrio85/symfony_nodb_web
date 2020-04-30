@@ -26,19 +26,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let childrenid = null;
   let idfc = null;
   let idsc = null;
-  let anlt_data = {
-    position: null,
-    mc: null,
-    fc: null,
-    sc: null,
-  }
 
   let anlt = new analitycs();
+  let eot = null;
 
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
-
+      
+      eot = document.getElementById('explicitOriginalTarget').value;
       titlesection.innerHTML = document.getElementById('fc_suptitle').value;
 
       // be careful when more elements are added to the card, maybe the id is not caputred properly
@@ -56,25 +52,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
       childrenid = id.replace('product-','');
 
       // analytics
-      // avoid to launch this event when slider click is fired
-      // explicitOriginalTarget is a flag to know if the "click" event
-      // comes from the slider or the configurator. We simulate a click 
-      // on "Salud" box in app.js [slider section] when we make a click 
-      // int "Salud" slider and we not want to launch
-      // an event because the box was not really clicked
-      if(document.getElementById('explicitOriginalTarget').value == 0){
-        let anlt_data = {
-          position: document.getElementById(id).getAttribute('data-position'),
-          mc: childrenid,
-        }
-        anlt.configurator(anlt_data);
+      let anlt_data = {
+        eventLbl: (eot == 1) ? 'home-slider' : 'home-body',
+        name: (eot == 1) ? 'home-slider' : 'home-body',
+        creative: childrenid,
+        position: document.getElementById(id).getAttribute('data-position'),
+        vpv: childrenid,
       }
-      
+      anlt.configurator(anlt_data);
+
       getDataConfiguratorFC()
-      .then((result) => {
-        anlt.configuratorScrollFC(result);
-      })
-      .catch((error) => { console.log(error); });
+        .then((result) => {
+          anlt.configuratorScrollFC(result);
+        })
+        .catch((error) => { console.log(error); });
 
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
@@ -86,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         setTimeout((out) => {
           window.location.href = element.getAttribute('href');
-          // reset();
         }, 2000);
       } else {
 
@@ -112,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let fcdivs = document.querySelectorAll('*[id^="fc-"]');
   fcdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
+      
       // get id of element clicked
       if(event.target.nodeName === "H5" || event.target.nodeName === "SPAN") {
         idfc = event.target.parentNode.parentNode.id;
@@ -123,11 +114,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       // analytics
       let anlt_data = {
+        eventLbl: childrenid,
+        name: childrenid,
+        creative: idfc,
         position: document.getElementById(idfc).getAttribute('data-position'),
-        mc:childrenid,
-        fc: idfc,
+        vpv: childrenid + '/' + idfc,
       }
       anlt.configurator(anlt_data);
+      
       getDataConfiguratorSC(idfc)
         .then((result) => {
           anlt.configuratorScrollSC(result);
@@ -150,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 500);
 
         setTimeout((out) => {
-          // reset();
           window.location.href = element.getAttribute('href');
         }, 2000);
       }
@@ -175,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   scdivs.forEach((cv, ci, listObj) => {
     cv.childNodes.forEach((e, f, g) => {
       e.addEventListener('click', (event) => {
+        
         updateSteps(true);
 
         // get id of element clicked
@@ -187,24 +181,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         
         // analytics
-        anlt_data = {
+        let anlt_data = {
+          eventLbl: 'salud-' + idfc,
+          name: 'salud-' + idfc,
+          creative: idsc,
           position: document.getElementById(idsc).getAttribute('data-position'),
-          mc:childrenid,
-          fc: idfc,
-          sc: idsc,
+          sc: 'salud',
+          vpv: 'salud/' + idfc + '/' + idsc,
         }
-      anlt.configurator(anlt_data);
+        anlt.configurator(anlt_data);
 
-        // if element has href attribute let's navigate
-        let element = document.getElementById(idsc);
+
         setTimeout((out) => {
           // show fullscreen loader
           fullScreenLoader.classList.add('active');
         }, 500);
 
+        // if element has href attribute let's navigate
+        let element = document.getElementById(idsc);
         setTimeout((out) => {
           window.location.href = element.getAttribute('href');
-          // reset();
         }, 2000);
       });
     });

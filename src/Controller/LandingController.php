@@ -24,7 +24,9 @@ class LandingController extends AbstractController {
   public function index(Request $request, TranslatorInterface $translator) {
 
     $landing = $request->attributes->get('_route');
-    $area = $this->prodserv->getArea($landing);
+    $data = $this->prodserv->getArea($landing);
+    $area = $data['area'];
+    $family = $data['family'];
 
     $alldata = $this->repo->getMessages();
     $simple_landing = ['mascotas', 'decesos'];
@@ -47,6 +49,7 @@ class LandingController extends AbstractController {
 
     return $this->render("pages/landing-product{$especial}.html.twig", [
       'area' => $area,
+      'family' => $family,
       'landing' => $landing,
       'translator' => $translator,
       'cards' => $cards,

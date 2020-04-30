@@ -93,28 +93,35 @@ class ProductService {
 
   public function getArea($sc) {
     $elements = $this->productConfig['products'];
-    $output = [];
+    $output = [
+      'area' => null,
+      'family' => null,
+    ];
     foreach($elements as $el) {
       if(!is_null($el['children'])){
         foreach($el['children'] as $ch) {
           if(!is_null($ch['children'])){
             foreach($ch['children'] as $r){
               // print $sc."<br>"; print $r['name']."<br>"; print "-----<br>";
-              if ($sc === $r['name']) {
-                return $el['name'];
+              if ($sc === $r['name']) {                
+                $output['area'] = $el['name'];
+                $output['family'] = $ch['name'];
               }
             }
           } else {
             if ($sc === $ch['name']) {
-              return $el['name'];
+              $output['area'] = $el['name'];
+              $output['family'] = $el['name'];
             }
           }
         }
       } else {
-          if ($sc === $el['name']) {
-          return $el['name'];
+        if ($sc === $el['name']) {
+          $output['area'] = $el['name'];
+          $output['family'] = $el['name'];
         }
       }
     }
+    return $output;
   }
 }
