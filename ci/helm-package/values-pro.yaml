@@ -46,6 +46,9 @@ ingress:
     - host: adeslas.contratar.es
       paths: 
         - /
+    - host: www.adeslas.contratar.es
+      paths: 
+        - /
     - host: adeslas.bysidecar.me
       paths: 
         - /
@@ -53,6 +56,9 @@ ingress:
     - secretName: tls-adeslas-contratar-es
       hosts:
         - adeslas.contratar.es
+    - secretName: tls-www-adeslas-contratar-es
+      hosts:
+        - www.adeslas.contratar.es
     - secretName: tls-adeslas-bysidecar-me
       hosts:
         - adeslas.bysidecar.me
