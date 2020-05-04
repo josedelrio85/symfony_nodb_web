@@ -41,7 +41,8 @@
   {% endif %}
 
   {% if product_cards is not null %}
-    <div class="container-fluid text-md-center" style="background-image: url({{ asset('build/images/adeslas_landing_back_prize_boxes.jpg') }});background-size:contain;background-position:bottom;background-repeat:no-repeat;">
+    {# <div class="container-fluid text-md-center" style="background-image: url({{ asset('build/images/adeslas_landing_back_prize_boxes.jpg') }});background-size:contain;background-position:bottom;background-repeat:no-repeat;"> #}
+    <div class="container-fluid text-md-center" style="background-image: url({{ asset('build/images/'~ "#{product_cards.image}") }});background-size:contain;background-position:bottom;background-repeat:no-repeat;">
       {# Product cards  + title + description #}
           {% include 'super-components/product_cards/product_cards.html.twig' with {
           product_cards: product_cards,

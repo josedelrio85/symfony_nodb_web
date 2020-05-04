@@ -23,6 +23,7 @@ autonomo:
     title: '¿Qué tipo de cobertura quieres?'
     suptitle: 'Adeslas Autónomos'
     desc: 'Elige el seguro médico que necesitas'
+    image: 'Back_autonomo.jpg'
     product:
       product1:
         title: 'Adeslas Negocios'

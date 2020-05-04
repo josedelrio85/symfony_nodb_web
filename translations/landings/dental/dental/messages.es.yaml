@@ -23,6 +23,7 @@ dental:
     title: 'Descubre la fórmula para cuidar tu sonrisa que más te conviene en 1 minuto'
     suptitle: 'Adeslas Dental'
     desc: ''
+    image: 'Back_dental.jpg'
     product:
       product1:
         title: 'Adeslas Dental MAX'

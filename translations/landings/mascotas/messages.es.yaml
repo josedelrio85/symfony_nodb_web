@@ -23,6 +23,7 @@ mascotas:
     title: 'Las mejores coberturas del mercado con las tarifas más bajas'
     suptitle: 'Adeslas Mascotas'
     desc: 'Adeslas te ofrece los mejores servicios de un seguro de mascotas en dos modalidades con las mejores garantías que puedas encontrar. ¡Elige la tuya!'
+    image: 'Back_mascotas.jpg'
     product:
       product1:
         title: 'Mascotas Básica'
