@@ -51,6 +51,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // childrenid = salud | dental | mascotas | decesos
       childrenid = id.replace('product-','');
 
+
+      ////////////// analytics ///////////////////////////////////////////////
+      let anlt_data = {
+        eventLbl: (eot == 1) ? 'home-slider' : 'home-body',
+        name: (eot == 1) ? 'home-slider' : 'home-body',
+        creative: childrenid,
+        position: document.getElementById(id).getAttribute('data-position'),
+        vpv: childrenid,
+        eot: eot,
+        lastchild: false,
+      }
+
+      
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
@@ -59,22 +72,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
           fullScreenLoader.classList.add('active');
         }, 500);
 
+        anlt_data.eot = 0;
+        anlt_data.lastchild = true;
+        anlt.configurator(anlt_data);
+
         setTimeout((out) => {
-          window.location.href = element.getAttribute('href');
+          // window.location.href = element.getAttribute('href');
         }, 2000);
       } else {
 
-        ////////////// analytics ///////////////////////////////////////////////
-        let anlt_data = {
-          eventLbl: (eot == 1) ? 'home-slider' : 'home-body',
-          name: (eot == 1) ? 'home-slider' : 'home-body',
-          creative: childrenid,
-          position: document.getElementById(id).getAttribute('data-position'),
-          vpv: childrenid,
-        }
-        if (eot == 0) {
-          anlt.configurator(anlt_data);
-        }
+        ////////////// analytics //////////////////////////////////////////////
+        anlt.configurator(anlt_data);
 
         getDataConfiguratorFC()
           .then((result) => {
@@ -122,6 +130,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         creative: idfc,
         position: document.getElementById(idfc).getAttribute('data-position'),
         vpv: childrenid + '/' + idfc,
+        eot: 0,
+        lastchild: false,
       }
       anlt.configurator(anlt_data);
       
@@ -189,8 +199,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           name: 'salud-' + idfc,
           creative: idsc,
           position: document.getElementById(idsc).getAttribute('data-position'),
-          sc: 'salud',
           vpv: 'salud/' + idfc + '/' + idsc,
+          eot: 0,
+          lastchild: true,
         }
         anlt.configurator(anlt_data);
 

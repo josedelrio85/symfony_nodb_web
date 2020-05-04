@@ -68,11 +68,15 @@ class analitycs {
       }],
     };
 
-    // console.log("configurator");
-    // console.log(click);
-    this.populateClick(click);
+    if (data.eot === 0){
+      // console.log("configurator click");
+      // console.log(click);
+      this.populateClick(click);
+    }
 
-    if (data.sc == null || data.sc == undefined){
+    if (!data.lastchild) {
+      // console.log("configurator conf");
+      // console.log(clickconf);
       this.populateConf(clickconf);
     }
   }
