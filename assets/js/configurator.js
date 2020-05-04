@@ -209,8 +209,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           lastchild: true,
         }
         anlt.configurator(anlt_data);
-        // anlt.configuratorVirtual(anlt_data);
-
 
         setTimeout((out) => {
           // show fullscreen loader

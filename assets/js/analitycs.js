@@ -63,8 +63,8 @@ class analitycs {
     };
 
     if (data.eot === 0 || data.eot === null){
-      console.log("configurator click");
-      console.log(click);
+      // console.log("configurator click");
+      // console.log(click);
       this.populateClick(click);
     }
   }
@@ -76,8 +76,8 @@ class analitycs {
     }
 
     if (!data.lastchild) {
-      console.log("configurator conf");
-      console.log(clickconf);
+      // console.log("configurator conf");
+      // console.log(clickconf);
       this.populateConf(clickconf);
     }
   }
