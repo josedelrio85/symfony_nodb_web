@@ -43,10 +43,6 @@ dental:
    path: /seguros-dentales
    controller: App\Controller\LandingController::index
 
-# dentalysalud:
-#    path: /seguros-dentales
-#    controller: App\Controller\LandingController::index
-
 # mascotas
 mascotas:
    path: /seguros-mascotas
@@ -116,19 +112,6 @@ empresa_extra:
    path: /seguro/adeslas-empresa_extra
    controller: App\Controller\ProductController::index
 
-
-#decesos
-# decesos:
-#   path: /seguro/adeslas-decesos
-#   controller: App\Controller\ProductController::index
-
-
-#mascotas
-# mascotas:
-#   path: /seguro/adeslas-mascotas
-#   controller: App\Controller\ProductController::index
-
-
 # dental 
 dental_max:
    path: /seguro/adeslas-dental-max
@@ -157,6 +140,28 @@ condiciones:
    path: /condiciones
    controller: App\Controller\ConditionsController::index
 
+##################### ASYNC #####################
+
+slider:
+   path: /data-slider
+   controller: App\Controller\AsyncController::dataSlider
+
+configurator:
+   path: /data-configurator
+   controller: App\Controller\AsyncController::dataConfigurator
+
+configurator-fc:
+   path: /data-configurator-fc
+   controller: App\Controller\AsyncController::dataConfiguratorFC
+
+configurator-sc:
+   path: /data-configurator-sc
+   controller: App\Controller\AsyncController::dataConfiguratorSC
+  
+product:
+   path: /data-product
+   controller: App\Controller\AsyncController::dataProduct
+ 
 ##################### DEV #####################
 
 test:

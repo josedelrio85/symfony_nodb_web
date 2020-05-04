@@ -6,6 +6,7 @@ import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 import { bysidecar } from './bysidecar';
 import { analitycs } from './analitycs';
+import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -105,9 +106,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         duration: $('#pincard').closest('div.row').height() - $('#pincard').height(),
     })
       .setClassToggle("body", "pinactive")
-      .on('start', function () {
-          // console.log("passed trigger");
-      })
+      .on('start', function () {})
       // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
       .setPin("#pincard");
 
@@ -287,12 +286,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
       let cta = document.getElementById(id);
       let action = cta.getAttribute('data-action');
       let data = {
-        name: id.replace('cta-', ''),
+        // name: id.replace('cta-', ''),
+        creative: id.replace('cta-', ''),
         position: cta.getAttribute('data-position'),
       };
+
       switch(action) {
         case 'open-conf':
           anlt.slider(data);
+          document.getElementById('explicitOriginalTarget').value = 1;
 
           // simulate a click on salud box; amazing!
           eventFire(document.getElementById('product-salud'), 'click');
@@ -312,26 +314,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
   });
 
+  // view|scroll events
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting === true){
+        let idob = entry.target.id;
+        getDataSlider(idob)
+          .then((result) => {
+            anlt.sliderScroll(result);
+          })
+          .catch((error) => { console.log(error); });
+      }
+    });
+  },
+  {rootMargin: "0px 0px -200px 0px"});
+
+  document.querySelectorAll('*[id^="cta-"]').forEach(slide => {observer.observe(slide)});
+
   ////////////////////// MORE-INFO ////////////////////////////////////////////
 
-  let moreinfo = document.querySelectorAll('.more-info');
-
-  moreinfo.forEach((cv, ci, listObj) => {
-    cv.addEventListener('click', (event) => {
-      event.preventDefault();
-
-      let href = event.target.parentNode.href;
-      let position = event.target.parentNode.getAttribute('data-index');
-      position = position.replace('product','');
-      let data = {
-        label: event.target.parentNode.getAttribute('data-parent'),
-        name: event.target.parentNode.getAttribute('data-title'),
-        position: position,
-      };
-      anlt.productCard(data);
-      window.location.href = href;
-    })
-  });
 });
 
 
@@ -344,3 +345,19 @@ function eventFire(el, etype){
     el.dispatchEvent(evObj);
   }
 }
+
+function getDataSlider(slide) {
+  const urlEndPoint = '/data-slider';
+  let params = {
+    slide: slide,
+  }
+
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData(params, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
+

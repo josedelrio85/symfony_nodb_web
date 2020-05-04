@@ -24,7 +24,9 @@ class LandingController extends AbstractController {
   public function index(Request $request, TranslatorInterface $translator) {
 
     $landing = $request->attributes->get('_route');
-    $area = $this->prodserv->getArea($landing);
+    $data = $this->prodserv->getArea($landing);
+    $area = $data['area'];
+    $family = $data['family'];
 
     $alldata = $this->repo->getMessages();
     $simple_landing = ['mascotas', 'decesos'];
@@ -33,10 +35,14 @@ class LandingController extends AbstractController {
     } else {
       $dl = $alldata['landings'][$area][$landing];
     }
-    // dump($alldata); dump($area); dump($landing); dump($dl); die();
 
     $cards = $dl['minicards'];
     $product_bullet = $dl['product_bullet'];
+    if(!is_null($product_bullet)){
+      $prod_chunked = array_chunk($product_bullet['product'], 2, true);
+      $product_bullet['prod_chunked'] = $prod_chunked;
+    }
+
     $desc = $dl['desc'];
     $bullets_extra = array_key_exists('bullets_extra', $dl) ? $dl['bullets_extra'] : null;
     $uri = parse_url($request->getUri(), PHP_URL_PATH);
@@ -44,12 +50,11 @@ class LandingController extends AbstractController {
     $desc_extra = array_key_exists('desc_extra', $dl) ? $dl['desc_extra'] : null;
     $des_with_dropdown_extra = array_key_exists('des_with_dropdown_extra', $dl) ? $dl['des_with_dropdown_extra'] : null;
     $table = array_key_exists('extra', $dl) ? $dl['extra']['table'] : null;
-    // dump($alldata); dump($des_with_dropdown); die();
-    // dump($alldata); dump($desc_extra); dump($des_with_dropdown_extra); dump($table); die();
-
     $especial = $landing === "mascotas" ? "-".$landing: null;
 
     return $this->render("pages/landing-product{$especial}.html.twig", [
+      'area' => $area,
+      'family' => $family,
       'landing' => $landing,
       'translator' => $translator,
       'cards' => $cards,

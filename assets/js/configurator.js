@@ -1,4 +1,5 @@
 import { analitycs } from './analitycs';
+import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -25,19 +26,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let childrenid = null;
   let idfc = null;
   let idsc = null;
-  let anlt_data = {
-    position: null,
-    mc: null,
-    fc: null,
-    sc: null,
-  }
 
   let anlt = new analitycs();
+  let eot = null;
 
   let productdivs = document.querySelectorAll('*[id^="product-"]');
   productdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
-
+      
+      eot = document.getElementById('explicitOriginalTarget').value;
       titlesection.innerHTML = document.getElementById('fc_suptitle').value;
 
       // be careful when more elements are added to the card, maybe the id is not caputred properly
@@ -54,13 +51,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // childrenid = salud | dental | mascotas | decesos
       childrenid = id.replace('product-','');
 
-      // analytics
-      anlt_data = {
-        position: document.getElementById(id).getAttribute('data-position'),
-        mc: childrenid,
-      }
-      anlt.configurator(anlt_data);
 
+      ////////////// analytics ///////////////////////////////////////////////
+      let anlt_data = {
+        eventLbl: (eot == 1) ? 'home-slider' : 'home-body',
+        name: (eot == 1) ? 'home-slider' : 'home-body',
+        creative: childrenid,
+        position: document.getElementById(id).getAttribute('data-position'),
+        vpv: childrenid,
+        eot: 0,
+        lastchild: false,
+      }
+
+      
       // if element has href attribute let's navigate
       let element = document.getElementById(id);
       if (element.getAttribute('href') !== null) {
@@ -69,11 +72,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
           fullScreenLoader.classList.add('active');
         }, 500);
 
+        anlt_data.eot = 0;
+        anlt_data.lastchild = true;
+        anlt.configurator(anlt_data);
+        anlt.configuratorVirtual(anlt_data);
+
         setTimeout((out) => {
           window.location.href = element.getAttribute('href');
-          // reset();
         }, 2000);
       } else {
+
+        ////////////// analytics //////////////////////////////////////////////
+        if(eot == 0) {
+          anlt.configurator(anlt_data);
+        }
+        anlt.configuratorVirtual(anlt_data);
+
+        getDataConfiguratorFC()
+          .then((result) => {
+            anlt.configuratorScrollFC(result);
+          })
+          .catch((error) => { console.log(error); });
+        ////////////////////////////////////////////////////////////////////////
+
+        document.getElementById('explicitOriginalTarget').value = 0;
+
         // show first childrens div
         firstchildrens.classList.remove('d-none');
 
@@ -94,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let fcdivs = document.querySelectorAll('*[id^="fc-"]');
   fcdivs.forEach((cv, ci, listObj) => {
     cv.addEventListener('click', (event) => {
+      
       // get id of element clicked
       if(event.target.nodeName === "H5" || event.target.nodeName === "SPAN") {
         idfc = event.target.parentNode.parentNode.id;
@@ -104,12 +128,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
 
       // analytics
-      anlt_data = {
+      let anlt_data = {
+        eventLbl: childrenid,
+        name: childrenid,
+        creative: idfc,
         position: document.getElementById(idfc).getAttribute('data-position'),
-        mc:childrenid,
-        fc: idfc,
+        vpv: childrenid + '/' + idfc,
+        eot: 0,
+        lastchild: false,
       }
       anlt.configurator(anlt_data);
+      anlt.configuratorVirtual(anlt_data);
+      
+      getDataConfiguratorSC(idfc)
+        .then((result) => {
+          anlt.configuratorScrollSC(result);
+        })
+        .catch((error) => { console.log(error); });
 
       // get the suptitle value for this fc and set it. also remember the previous title
       let suptitle = document.getElementById('sc_suptitle_' + idfc).value;
@@ -127,7 +162,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 500);
 
         setTimeout((out) => {
-          // reset();
           window.location.href = element.getAttribute('href');
         }, 2000);
       }
@@ -152,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   scdivs.forEach((cv, ci, listObj) => {
     cv.childNodes.forEach((e, f, g) => {
       e.addEventListener('click', (event) => {
+        
         updateSteps(true);
 
         // get id of element clicked
@@ -164,24 +199,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         
         // analytics
-        anlt_data = {
+        let anlt_data = {
+          eventLbl: 'salud-' + idfc,
+          name: 'salud-' + idfc,
+          creative: idsc,
           position: document.getElementById(idsc).getAttribute('data-position'),
-          mc:childrenid,
-          fc: idfc,
-          sc: idsc,
+          vpv: 'salud/' + idfc + '/' + idsc,
+          eot: 0,
+          lastchild: true,
         }
         anlt.configurator(anlt_data);
 
-        // if element has href attribute let's navigate
-        let element = document.getElementById(idsc);
         setTimeout((out) => {
           // show fullscreen loader
           fullScreenLoader.classList.add('active');
         }, 500);
 
+        // if element has href attribute let's navigate
+        let element = document.getElementById(idsc);
         setTimeout((out) => {
           window.location.href = element.getAttribute('href');
-          // reset();
         }, 2000);
       });
     });
@@ -198,7 +235,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       reset();
       return
     }
-    // console.log(backvalue);
 
     // set the previous suptitle
     let titlesection = document.querySelector('.product-config .text-header');
@@ -258,31 +294,58 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.querySelector(".bar").style.width = 100/steps + "%";
   }
   ///////////////////////////////////////////////////////////////////////////
+
+  // view|scroll events
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting === true){
+      getDataConfigurator()
+          .then((result) => {
+            anlt.configuratorScroll(result);
+          })
+          .catch((error) => { console.log(error); });
+      }
+    });
+  },
+  {rootMargin: "0px 0px -100px 0px"});
+
+  observer.observe(document.querySelector('.product-selector'));
 });
 
+function getDataConfigurator() {
+  const urlEndPoint = '/data-configurator';
 
-// function getData(id) {
-//   const urlEndPoint = '/first-children';
-//   console.log(id);
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData({}, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
 
-//   let params = {
-//     element: id.replace('product-',''),
-//   }
+function getDataConfiguratorFC() {
+  const urlEndPoint = '/data-configurator-fc';
 
-//   return new Promise((resolve, reject) => {
-//     landingCommander.makePostRequestFormData(params, urlEndPoint)
-//     .then((result) => {
-//       resolve(result);
-//     })
-//     .catch((error) => {reject(error);})
-//   });
-// }
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData({}, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
 
-// // getData(id)
-// //   .then((result) => {
-// //     console.log(result.response);
-// //     let mainproducts = document.getElementById('mainproducts');
-// //     mainproducts.classList.add('d-none');
-// //     document.getElementById('level2').innerHTML = result.response;
-// //   })
-// //   .catch((error) => { console.log(error); });
+function getDataConfiguratorSC(idfc) {
+  const urlEndPoint = '/data-configurator-sc';
+  let params = {
+    fc: idfc,
+  }
+  return new Promise((resolve, reject) => {
+    landingCommander.makePostRequestFormData(params, urlEndPoint)
+    .then((result) => {
+      resolve(result);
+    })
+    .catch((error) => {reject(error);})
+  });
+}
