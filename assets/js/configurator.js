@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         creative: childrenid,
         position: document.getElementById(id).getAttribute('data-position'),
         vpv: childrenid,
-        eot: eot,
+        eot: 0,
         lastchild: false,
       }
 
@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         anlt_data.eot = 0;
         anlt_data.lastchild = true;
         anlt.configurator(anlt_data);
+        anlt.configuratorVirtual(anlt_data);
 
         setTimeout((out) => {
           window.location.href = element.getAttribute('href');
@@ -82,7 +83,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } else {
 
         ////////////// analytics //////////////////////////////////////////////
-        anlt.configurator(anlt_data);
+        if(eot == 0) {
+          anlt.configurator(anlt_data);
+        }
+        anlt.configuratorVirtual(anlt_data);
 
         getDataConfiguratorFC()
           .then((result) => {
@@ -134,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         lastchild: false,
       }
       anlt.configurator(anlt_data);
+      anlt.configuratorVirtual(anlt_data);
       
       getDataConfiguratorSC(idfc)
         .then((result) => {
@@ -204,6 +209,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           lastchild: true,
         }
         anlt.configurator(anlt_data);
+        // anlt.configuratorVirtual(anlt_data);
 
 
         setTimeout((out) => {

@@ -53,12 +53,6 @@ class analitycs {
   }
 
   configurator = (data) => {
-    let clickconf = {
-      event: 'virtual_page',
-      pageName: "/vpv/" + data.vpv,
-    }
-
-    //////////////////////////////////////////
     let click = {
       eventLbl: data.eventLbl,
       promotions: [{
@@ -68,15 +62,22 @@ class analitycs {
       }],
     };
 
-    if (data.eot === 0){
-      // console.log("configurator click");
-      // console.log(click);
+    if (data.eot === 0 || data.eot === null){
+      console.log("configurator click");
+      console.log(click);
       this.populateClick(click);
+    }
+  }
+
+  configuratorVirtual = (data) => {
+    let clickconf = {
+      event: 'virtual_page',
+      pageName: "/vpv/" + data.vpv,
     }
 
     if (!data.lastchild) {
-      // console.log("configurator conf");
-      // console.log(clickconf);
+      console.log("configurator conf");
+      console.log(clickconf);
       this.populateConf(clickconf);
     }
   }
