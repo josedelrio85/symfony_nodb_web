@@ -23,6 +23,7 @@ individual:
     title: 'Atención a tu medida'
     suptitle: 'Adeslas single'
     desc: 'Cuida tu salud con la garantía de la compañía líder y la póliza que mejor se adapta a tus necesidades'
+    image: 'Back_individual.jpg'
     product:
       product1:
         title: 'Adeslas GO'

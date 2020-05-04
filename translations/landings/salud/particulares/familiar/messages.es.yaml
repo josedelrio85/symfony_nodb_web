@@ -23,6 +23,7 @@ familiar:
     title: 'Elige el seguro que mejor se adapta a vosotros'
     suptitle: 'Adeslas familias'
     desc: 'En Adeslas te ofrecemos la mejor asistencia médica y distintas ofertas a la medida de todo tipo de familias'
+    image: 'Back_familia.jpg'
     product:
       product1:
         title: 'Adeslas GO'

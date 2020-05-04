@@ -23,6 +23,7 @@ menos5:
     title: 'Elige la póliza que se adapta a vuestra forma de trabajar'
     suptitle: 'Adeslas Pymes'
     desc: ''
+    image: 'Back_pymes.jpg'
     product:
       product1:
         title: 'Adeslas Negocios'

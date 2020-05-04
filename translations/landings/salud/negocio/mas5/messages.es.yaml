@@ -23,6 +23,7 @@ mas5:
     title: 'Dos modelos adaptados a vuestras necesidades'
     suptitle: 'Adeslas Empresas'
     desc: 'Elige la cobertura que más os conviene'
+    image: 'Back_empresa.jpg'
     product:
       product1:
         title: 'Adeslas Empresas'
