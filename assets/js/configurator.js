@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         anlt.configurator(anlt_data);
 
         setTimeout((out) => {
-          // window.location.href = element.getAttribute('href');
+          window.location.href = element.getAttribute('href');
         }, 2000);
       } else {
 
