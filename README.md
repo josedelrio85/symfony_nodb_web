@@ -23,6 +23,17 @@ export PATH="$HOME/.symfony/bin:$PATH"
 #Or install it globally on your system:
 mv /home/jose/.symfony/bin/symfony /usr/local/bin/symfony
 ```
+Create the project
+
+```bash
+symfony new adeslas-web
+```
+
+- TIP: if you have problems with permission using composer, try this: 
+
+```bash
+sudo chown -R $USER ~/.composer
+```
 
 ### Install composer depenencies
 
