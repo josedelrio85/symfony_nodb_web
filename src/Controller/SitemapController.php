@@ -26,11 +26,12 @@ class SitemapController extends AbstractController {
       ];
 
       if(!in_array($exploded[1], $candidates)){
-        $el =['loc' => $path, 'changefreq' => 'weekly', 'priority' => '1.0'];    
-        array_push($urls, $el);
+        if(strpos($exploded[1], 'data-') === false){
+          $el =['loc' => $path, 'changefreq' => 'weekly', 'priority' => '1.0'];    
+          array_push($urls, $el);
+        }
       }
     }
-
     $xml = $this->render('pages/sitemap.xml.twig', [
       'urls' => $urls,
       'hostname' => $request->getHost(),
