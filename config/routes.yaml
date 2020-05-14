@@ -161,13 +161,7 @@ configurator-sc:
 product:
    path: /data-product
    controller: App\Controller\AsyncController::dataProduct
- 
-##################### DEV #####################
 
-test:
-   path: /test
-   controller: App\Controller\TestController::index
-
-single-product:
-   path: single-product
-   controller: App\Controller\SingleProductController::index
+sitemap:
+   path: /sitemap
+   controller: App\Controller\SitemapController::index
