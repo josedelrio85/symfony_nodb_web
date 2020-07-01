@@ -12,6 +12,7 @@
               mini_header: '' | trans,
               text_header: "#{product}.hero.title" | trans,
               content_header: "#{product}.hero.subtitle" | trans,
+              h1: false,
             } %}
             {% include 'components/product-single-card/product-single-card.html.twig' with {
               price_pre: "#{product}.price_with_details.price.pre" | trans | raw,
@@ -40,6 +41,7 @@
                 mini_header: '' | trans,
                 text_header: "#{product}.hero.title" | trans,
                 content_header: "#{product}.hero.subtitle" | trans,
+                h1: true,
             } %}
         </div>
       </div>
