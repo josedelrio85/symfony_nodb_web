@@ -393,7 +393,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   });
 
-  var $PRODUCTTABLEBUTTONCLOSE = $('.table-button-close-container .table-button-close .table-button');
+  var $productTableButtonClose = $('.table-button-close-container .table-button-close .table-button');
 
   $productTableButtonClose.on('click', function (e) {
 
