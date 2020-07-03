@@ -4,14 +4,20 @@
     <div class="row">
       <div class="col-12">
         {% if mini_header %}
-          <h6 class="mini-header">
+          <span class="h6 d-block mini-header">
             {{ mini_header }}
-          </h6>
+          </span>
         {% endif %}
         {% if text_header %}
-          <h2 class="text-header">
-            {{ text_header }}
-          </h2>
+          {% if heading_small == false %}
+            <h2 class="text-header">
+              {{ text_header }}
+            </h2>
+          {% else %}
+            <h3 class="h2 text-header">
+              {{ text_header }}
+            </h3>
+          {% endif %}
         {% endif %}
         {% if content_header %}
           <p>

@@ -12,7 +12,7 @@
         {% if product.path is defined %} {{ custom_routes(path(product.path)) }} {% endif %}
         {% if product.position is defined %} data-position = "{{ product.position }}" {% endif %}>
         <div class="inner d-flex justify-content-between align-items-center p-4 fixed_height">
-          <h5 class="text-dark font-weight-bold m-0 name">{{product.title}}</h5>
+          <span class="h5 d-block text-dark font-weight-bold m-0 name">{{product.title}}</span>
           <span class="icon {{product.icon}} h5 mb-0 text-primary"></span>
           <input type="hidden" id="steps-{{product.name}}" value="{{product.steps}}"/>
         </div>

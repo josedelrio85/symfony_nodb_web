@@ -12,7 +12,7 @@
                 {% if child.path is defined %} {{ custom_routes(path(child.path)) }} {% endif %}
                 {% if child.position is defined %} data-position = "{{ child.position }}" {% endif %}>
                   <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex fixed_height">
-                    <h5 class="m-0 name">{{child.title}}</h5>
+                    <span class="h5 d-block m-0 name">{{child.title}}</span>
                     <span class="icon {{child.icon}} text-primary h5 mb-0"></span>
                   </div>
                 </div>
@@ -34,7 +34,7 @@
             {% if child.path is defined %} {{ custom_routes(path(child.path)) }} {% endif %}
             {% if child.position is defined %} data-position = "{{ child.position }}" {% endif %}>
               <div class="inner justify-content-between bg-white align-items-center p-4 mb-3 d-flex fixed_height">
-                <h5 class="m-0 name">{{child.title | raw}} </h5>
+                <span class="h5 d-block m-0 name">{{child.title | raw}} </span>
                 <span class="icon {{child.icon}} text-primary h5 mb-0 icon-fixed"></span>
               </div>
             </div>
