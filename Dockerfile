@@ -24,6 +24,7 @@ ADD ./ci/conf/fpm-pool.conf /usr/local/etc/php-fpm.d/zzz_custom.conf
 ADD ./ci/conf/nginx.conf /etc/nginx/nginx.conf
 
 ENV SOUID 77
+ENV APP_ENV prod
 ENV PRODUCTION true
 RUN echo "$env"
 RUN if [ "$env" == "pro" ] ; then \
