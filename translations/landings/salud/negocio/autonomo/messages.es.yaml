@@ -17,8 +17,8 @@ autonomo:
         bottom: 'ni sorpresas'
       card2:
         top: '2 meses gratis'
-        middle: 'en tu seguro de salud'
-        bottom: 'si contratas Dental'
+        middle: 'en tu seguro'
+        bottom: 'si contratas Salud'
   product_bullet: # 3 products with bullets + title + description
     title: '¿Qué tipo de cobertura quieres?'
     suptitle: 'Adeslas Autónomos'
@@ -40,7 +40,7 @@ autonomo:
           path: '/seguro/adeslas-negocios'
         bullets:
           - 'Cobertura global <strong>Sin Copagos</strong>'
-          - 'Ahora 2 meses gratis con Dental'
+          - 'Ahora 2 meses gratis con Salud'
           - 'Los mejores profesionales a tu servicio'
       product2:
         title: 'Adeslas Extra Negocios'

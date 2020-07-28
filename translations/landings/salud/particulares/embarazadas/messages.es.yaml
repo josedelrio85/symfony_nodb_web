@@ -1,7 +1,7 @@
 embarazadas:
   home:
     title: 'Seguro de Salud para Embarazadas ⇨ 35€/mes | Adeslas'
-    meta_description: 'Consulta las mejores ofertas de seguro médico para embarazadas que te ofrece Adeslas. ¡Ahora 2 meses gratis si contratas seguro dental! Disfruta de una cobertura global del embarazo y del parto. ¡Entra e infórmate! ¡Oferta limitada!'
+    meta_description: 'Consulta las mejores ofertas de seguro médico para embarazadas que te ofrece Adeslas. ¡Ahora 2 meses gratis si contratas seguro de salud! Disfruta de una cobertura global del embarazo y del parto. ¡Entra e infórmate! ¡Oferta limitada!'
   hero: # 1
     title: ''
     subtitle: ''
@@ -13,7 +13,7 @@ embarazadas:
     cards:
       card1:
         top: '2 meses gratis'
-        middle: 'si contratas Dental'
+        middle: 'si contratas Salud'
         bottom: 'con descuento desde 2 asegurados'
       card2:
         top: '10% de descuento'

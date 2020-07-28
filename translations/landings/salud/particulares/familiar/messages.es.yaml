@@ -17,7 +17,7 @@ familiar:
         bottom: 'sin cuestionario médico'
       card2:
         top: '2 meses gratis'
-        middle: 'con seguro Dental'
+        middle: 'con seguro de Salud'
         bottom: 'y descuentos desde 4 asegurados'  
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige el seguro que mejor se adapta a vosotros'
@@ -59,7 +59,7 @@ familiar:
           - 'Copagos limitados'
           - 'Cobertura médica y hospitalaria'
           - '10% descuento desde 4 asegurados'
-          - '2 meses gratis con Dental'
+          - '2 meses gratis con Salud'
       product3:
         title: 'Adeslas Plena'
         price:
@@ -77,7 +77,7 @@ familiar:
           - 'Copagos reducidos'
           - 'Asistencia ambulatoria y hospitalaria'
           - '10% descuento desde 4 asegurados'
-          - '2 meses gratis con Dental'
+          - '2 meses gratis con Salud'
       product4:
         title: 'Adeslas Plena Plus'
         price:
@@ -95,7 +95,7 @@ familiar:
           - '<strong>Sin copagos</strong>'
           - 'Cobertura global, también hospitalaria'
           - 'Descuentos desde 4 asegurados'
-          - '2 meses gratis con Dental'
+          - '2 meses gratis con Salud'
       product5:
         title: 'Adeslas Plena Extra 150'
         price:
@@ -113,7 +113,7 @@ familiar:
           - 'Libre elección de médico en todo el mundo'
           - 'Cobertura global, también en cuadro Adeslas'
           - 'Descuentos desde 4 asegurados'
-          - '2 meses gratis con Dental'
+          - '2 meses gratis con Salud'
   select: # 4 selector + title
     title: 'Consulta nuestro Cuadro Médico'
     suptitle: 'Adeslas'

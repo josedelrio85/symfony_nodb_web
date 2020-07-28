@@ -2,7 +2,7 @@
 plena_extra:
   home:
     title: 'Adeslas | El seguro médico de cobertura internacional ¡2 Meses GRATIS!'
-    meta_description: 'Descubre Adeslas Plena Extra 150, el seguro con cobertura internacional que te permite elegir médico dentro y fuera de España. ¡Ahora 2 meses gratis con Dental! Todas las coberturas de una asistencia global de libre elección o en el Cuadro Médico Adeslas sin copagos. ¡Aprovecha la oferta limitada!'
+    meta_description: 'Descubre Adeslas Plena Extra 150, el seguro con cobertura internacional que te permite elegir médico dentro y fuera de España. ¡Ahora 2 meses gratis con Salud! Todas las coberturas de una asistencia global de libre elección o en el Cuadro Médico Adeslas sin copagos. ¡Aprovecha la oferta limitada!'
   hero: # 1
     title: 'Adeslas Plena Extra 150. Un seguro médico para escoger a quién te cuida'
     subtitle: 'Libre elección de especialista y cobertura internacional'
@@ -18,7 +18,7 @@ plena_extra:
     bullets:
       bullet1:
         text: '2 meses gratis'
-        subtext: 'con Dental'
+        subtext: 'con Salud'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
@@ -49,7 +49,7 @@ plena_extra:
         text: 'Adeslas Plena Extra 150 es el seguro ideal para las familias que quieren escoger a su especialista. Siempre podrás acogerte a la asistencia de calidad del cuadro médico Adeslas con una cobertura completa sin copagos o combinar ambos modelos con un reembolso del 80% de los gastos de libre elección.'
       drop1:
         title: 'Descuentos'
-        text: 'Con Adeslas Plena Extra accedes a un enorme abanico de posibilidades y coberturas desde 79 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 4 o más asegurados. Y si contratas con Dental, tendrás tu seguro médico privado 2 meses gratis.'
+        text: 'Con Adeslas Plena Extra accedes a un enorme abanico de posibilidades y coberturas desde 79 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 4 o más asegurados. Y si contratas Salud, tendrás tu seguro médico privado 2 meses gratis.'
       drop2:
         title: 'Calidad'
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees con total libertad.'

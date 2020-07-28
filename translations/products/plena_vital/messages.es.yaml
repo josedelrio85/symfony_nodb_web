@@ -2,7 +2,7 @@
 plena_vital:
   home:
     title: 'El seguro médico con copagos limitados. Ahora 2 Meses GRATIS | Adeslas'
-    meta_description: 'Contrata ahora Adeslas Plena Vital y aprovecha la oferta limitada: ¡2 Meses gratis contratando un seguro Dental, también con descuento! La oferta de asistencia completa, ambulatoria y hospitalaria en habitación individual con cama para el acompañante ¡Desde 35 €/mes! ¡Entra e infórmate!'
+    meta_description: 'Contrata ahora Adeslas Plena Vital y aprovecha la oferta limitada: ¡2 Meses gratis contratando Salud, también con descuento! La oferta de asistencia completa, ambulatoria y hospitalaria en habitación individual con cama para el acompañante ¡Desde 35 €/mes! ¡Entra e infórmate!'
   hero: # 1
     title: 'Adeslas Plena Vital: El seguro médico privado con cobertura total y la mejor tarifa'
     subtitle: 'Con copagos limitados por año'
@@ -19,7 +19,7 @@ plena_vital:
     bullets:
       bullet1:
         text: '2 meses gratis'
-        subtext: 'con Dental'
+        subtext: 'con Salud'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
@@ -46,7 +46,7 @@ plena_vital:
     drop:
       drop1:
         title: 'Tarifas'
-        text: 'Adeslas Plena Vital ofrece el más amplio catálogo de asistencias médicas desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
+        text: 'Adeslas Plena Vital ofrece el más amplio catálogo de asistencias médicas desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Salud, tu seguro médico privado, <strong>2 meses gratis</strong>.'
       drop2:
         title: 'Calidad'
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud.'
