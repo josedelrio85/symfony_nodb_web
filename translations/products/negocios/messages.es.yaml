@@ -2,7 +2,7 @@
 negocios:
   home:
     title: 'El seguro médico del autónomo. Desde 47 €/mes y sin copagos | Adeslas'
-    meta_description: 'Descubre Adeslas Negocios. ¡Ahora 2 meses Gratis si contratas con tu seguro dental! El seguro médico diseñado para el autónomo, sin copagos ni sorpresas. Desde 47 €/mes, todos los servicios de la compañía líder en seguros de salud. Entra y aprovecha la oferta ¡Es limitada!'
+    meta_description: 'Descubre Adeslas Negocios. ¡Ahora 2 meses Gratis si contratas con tu seguro de Salud! El seguro médico diseñado para el autónomo, sin copagos ni sorpresas. Desde 47 €/mes, todos los servicios de la compañía líder en seguros de salud. Entra y aprovecha la oferta ¡Es limitada!'
   hero: # 1
     title: 'Adeslas Negocios. La mejor asistencia médica para autónomos'
     subtitle: 'Atención ambulatoria y hospitalaria sin límites'
@@ -18,7 +18,7 @@ negocios:
     bullets:
       bullet1:
         text: '2 meses gratis'
-        subtext: 'con Dental'
+        subtext: 'con Salud'
       bullet2:
         text: 'Sin Copagos'
         subtext: 'ni sorpresas'
@@ -48,7 +48,7 @@ negocios:
         text: 'Adeslas Negocios te abre la puerta al mejor cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y 27 centros médicos de Adeslas Salud.'
       drop2: 
         title: 'La mejor tarifa'
-        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de un trabajador por cuenta propia. Desde sólo 47€/mes. Y ahora si contratas Dental, disfrutarás de tu seguro médico privado <strong>2 meses gratis</strong>.'
+        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de un trabajador por cuenta propia. Desde sólo 47€/mes. Y ahora si contratas Salud, disfrutarás de tu seguro médico privado <strong>2 meses gratis</strong>.'
       drop3:
         title: 'Sin Copagos'
         text: 'En Adeslas Negocios pagarás lo mismo cada mes, tu prima mensual, sin copagos ni sorpresas, vayas al médico las veces que quieras y pidas cuantas pruebas necesites.'

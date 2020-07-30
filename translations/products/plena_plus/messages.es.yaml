@@ -19,7 +19,7 @@ plena_plus:
     bullets:
       bullet1:
         text: '2 meses gratis'
-        subtext: 'con Dental'
+        subtext: 'con Salud'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
@@ -49,7 +49,7 @@ plena_plus:
         text: 'Adeslas Plena Plus es el seguro ideal para cuidarte porque te garantiza una atención inmediata ante cualquier problema de salud. Y en todas las hospitalizaciones disfrutarás de una habitación individual con cama para el acompañante.'
       drop2:
         title: 'Descuentos'
-        text: 'Con Adeslas Plena Plus accedes a todas las coberturas del catálogo de servicios Adeslas desde sólo 55 €/mes. Con una póliza familiar de 4 o más asegurados tendrás un 10% de descuento por persona. Y si contratas Dental, tu seguro médico <strong>2 meses gratis</strong>'
+        text: 'Con Adeslas Plena Plus accedes a todas las coberturas del catálogo de servicios Adeslas desde sólo 55 €/mes. Con una póliza familiar de 4 o más asegurados tendrás un 10% de descuento por persona. Y si contratas Salud, tu seguro médico <strong>2 meses gratis</strong>'
       drop3:
         title: 'Sin copagos'
         text: 'En Adeslas Plena Plus te aseguras que pagarás lo mismo cada mes, el importe de tu prima mensual, sin copagos ni gastos extra, vayas al médico las veces que vayas y pidas cuantas pruebas necesites.'

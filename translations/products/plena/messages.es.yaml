@@ -2,7 +2,7 @@
 plena:
   home:
     title: 'Adeslas | El seguro médico con copagos reducidos. Ahora 2 Meses GRATIS'
-    meta_description: 'Adeslas Plena, el mejor seguro médico ahora con una oferta limitada: ¡2 Meses gratis con un seguro Dental, también con descuento! No la dejes escapar! Entra y disfruta todas las coberturas con copagos reducidos: Hospitalización en habitación individual con cama para acompañante ¡Desde 45 €/mes!'
+    meta_description: 'Adeslas Plena, el mejor seguro médico ahora con una oferta limitada: ¡2 Meses gratis contratando Salud, también con descuento! No la dejes escapar! Entra y disfruta todas las coberturas con copagos reducidos: Hospitalización en habitación individual con cama para acompañante ¡Desde 45 €/mes!'
   hero: # 1
     title: 'Adeslas Plena: El seguro médico privado más completo con copagos reducidos'
     subtitle: ''
@@ -18,7 +18,7 @@ plena:
     bullets:
       bullet1:
         text: '2 meses gratis'
-        subtext: 'con Dental'
+        subtext: 'con Salud'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'

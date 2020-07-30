@@ -4,7 +4,7 @@
   <url>
     {% set loc = url.loc %}
     {% if url.loc|replace({hostname:''}) == url.loc %}
-      {% set loc = "http://" ~ hostname ~ url.loc %}
+      {% set loc = "https://" ~ hostname ~ url.loc %}
     {% endif %}
 
     <loc>{{loc}}</loc>
