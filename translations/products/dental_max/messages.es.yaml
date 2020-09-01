@@ -16,8 +16,8 @@ dental_max:
         text: 'Cada año'
         subtext: 'Bajamos 1€ tu tarifa'
       bullet2:
-        text: 'Descuentos'
-        subtext: 'desde 2º asegurado'
+        text: 'Te devolvemos 25€'
+        subtext: 'por asegurado'
     cta:
       text: 'Contratar'
       path: '/path'
