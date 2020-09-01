@@ -18,7 +18,7 @@ familiar:
       card2:
         top: 'Consulta online y APP'
         middle: 'para controlar tu salud'
-        bottom: 'y descuentos desde 4 asegurados'  
+        bottom: ''  
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige el seguro que mejor se adapta a vosotros'
     suptitle: 'Adeslas familias'

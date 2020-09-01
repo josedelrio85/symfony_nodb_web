@@ -14,7 +14,7 @@ embarazadas:
       card1:
         top: 'Te devolvemos hasta 150€'
         middle: 'por asegurado si contratas Dental'
-        bottom: 'y con descuento desde 2 asegurados'
+        bottom: ''
       card2:
         top: '10% de descuento'
         middle: 'en todas las pólizas'

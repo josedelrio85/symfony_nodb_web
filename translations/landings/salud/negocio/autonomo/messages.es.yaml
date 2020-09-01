@@ -16,7 +16,7 @@ autonomo:
         middle: 'sin copagos'
         bottom: 'ni sorpresas'
       card2:
-        top: 'Te devolvemos hast 150€'
+        top: 'Te devolvemos hasta 150€'
         middle: 'si contratas también Dental'
         bottom: ''
   product_bullet: # 3 products with bullets + title + description
@@ -56,7 +56,7 @@ autonomo:
           text: 'Saber más'
           path: '/seguro/adeslas-negocios-extra'
         bullets:
-          - 'Flexilidad: Cuadro médico o libre elección'
+          - 'Flexibilidad: Cuadro médico o libre elección'
           - 'Te devolvemos hasta 150€ si contratas Dental'
           - 'Cobertura global dentro y fuera de España <strong>Sin Copagos</strong>'
   select: # 4 selector + title
