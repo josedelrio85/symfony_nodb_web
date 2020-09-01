@@ -95,36 +95,36 @@ class bysidecar {
 
     landingCommander.makePostRequest(lead, urlEndPoint)
       .then((result) => {
-          this.landcom.isOnTime(lead.sou_id)
-            .then((onTime) => {
+        this.landcom.isOnTime(lead.sou_id)
+          .then((onTime) => {
 
-              if (!onTime) {
-                // We are not on time, let's get the campaign timetable
-                this.landcom.getWeekByCampaign(lead.sou_id)
-                  .then((bsnHours) => {
-                    const bh = this.landcom.printBusinessHours(bsnHours);
-                    this.response.handleBusinessHoursInfo(bh);
-                  })
-                  .catch(e => this.throwError(e));
-              }
+            if (!onTime) {
+              // We are not on time, let's get the campaign timetable
+              this.landcom.getWeekByCampaign(lead.sou_id)
+                .then((bsnHours) => {
+                  const bh = this.landcom.printBusinessHours(bsnHours);
+                  this.response.handleBusinessHoursInfo(bh);
+                })
+                .catch(e => this.throwError(e));
+            }
 
-              // we are on time, let's show info about the call phone to the user or other stuff
-              if (onTime && result.smartcenter) {
-                this.response.showPopup(false);
-                this.landcom.callStateTracking(lead.phone, (state) => {
-                  const message = this.landcom.getMessageStateCall(state);
-                  this.response.handleStateCallMessage(state, message);
-                });
-              } else {
-                this.response.responseWeWontCall();
-              }
-            })
-            .catch(e => this.throwError(e));
+            // we are on time, let's show info about the call phone to the user or other stuff
+            if (onTime && result.smartcenter) {
+              this.response.showPopup(false);
+              this.landcom.callStateTracking(lead.phone, (state) => {
+                const message = this.landcom.getMessageStateCall(state);
+                this.response.handleStateCallMessage(state, message);
+              });
+            } else {
+              this.response.responseWeWontCall();
+            }
+          })
+          .catch(e => this.throwError(e));
 
-          dataLayer.phoneHash = window.md5(lead.phone);
-          dataLayer.idLead = result.message;
-          this.printOut(dataLayer);
-          this.populateDatalayer(dataLayer);
+        dataLayer.phoneHash = window.md5(lead.phone);
+        dataLayer.idLead = result.message;
+        this.printOut(dataLayer);
+        this.populateDatalayer(dataLayer);
       })
       .catch(e => {
         this.response.responseWeWontCall();

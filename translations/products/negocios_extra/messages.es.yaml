@@ -17,8 +17,8 @@ negocios_extra:
       period: '/mes'
     bullets:
       bullet1:
-        text: 'Ahora, 2 meses gratis'
-        subtext: 'con Salud'
+        text: 'Te devolvemos hasta 150€'
+        subtext: 'por asegurado con Dental'
       bullet2:
         text: 'Sin Copagos'
         subtext: 'en el cuadro Adeslas'
@@ -48,16 +48,19 @@ negocios_extra:
         text: 'Con Adeslas Extra Negocios puedes elegir en todo momento quien cuida de tu salud. Un seguro a la carta hecho a tu medida.'
       drop2:
         title: 'Calidad'
-        text: 'Adeslas dispone del mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees.'
+        text: 'Adeslas dispone del mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees.Y ahora, tendrás acceso a la mayor parte del Cuadro Médico Adeslas online (por videollamada, teleconsulta, chat de orientación médica, etc.).'
       drop3:
         title: '3 modelos en una única póliza'
         text: 'Si prefieres elegir a tu médico, te reembolsaremos el 80% de tu factura. También puedes combinar el cuadro médico y la libre elección en una misma atención. Por ejemplo, una cirugía en un hospital Adeslas y un especialista de tu confianza.'
       drop4:
         title: 'Descuentos'
-        text: 'Adeslas Extra Negocios tienes una tarifa desde 79 €/mes, pero si contratas un seguro de Salud tendrás tu seguro médico 2 meses gratis y un 15% de descuento en Dental. Puedes pagar tu prima al mes o disfrutar de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
+        text: 'Adeslas Extra Negocios tienes una tarifa desde 79 €/mes, pero si contratas un seguro Dental, te devolvemos hasta 150 € por asegurado y disfrutarás de un 15% de descuento en Dental. Puedes pagar tu prima al mes o disfrutar de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%). Además nos comprometemos a mantener el precio de tu prima en la segunda renovación.'
       drop5:
         title: 'Sin Copagos'
         text: 'En Adeslas Extra Negocios pagarás lo mismo cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'
+      drop6:
+        title: 'Protección de pagos'
+        text: 'Con tu póliza Adeslas Extra Negocios tendrás acceso a un plan de protección de pagos para cubrir imprevistos, como un accidente, con el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
   desc: # 6 titulo + descripcion
     title: '¿Quieres atención en la Clínica Universitaria de Navarra?'

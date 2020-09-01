@@ -1,11 +1,11 @@
 #adeslas_senior
 senior:
   home:
-    title: 'El mejor seguro médico para mayores de 65. ¡15 Dto. Dental! | Adeslas'
+    title: 'El mejor seguro médico para mayores de 65. ¡15% Dto. Dental! | Adeslas'
     meta_description: 'Disfruta de una jubilación tranquila con Adeslas Seniors, Desde 60 €/mes tendrás el mejor y más completo seguro para mayores de 65 años, con un plan de prevención y salud personalizado. ¡Ahora con un 15% de descuento en tu seguro Dental! Entra e infórmate de la mejor oferta del mercado.' 
   hero: # 1
-    title: 'Adeslas Seniors. El único seguro médico para mayores de 65 con asesoría personalizada'
-    subtitle: 'Plan de prevención adaptado a tu edad y copagos limitados'
+    title: ''
+    subtitle: ''
     images: 
       image1: 'adeslas_hero_large_ficha_senior.jpg'
   price_with_details: # 2 caja con precio y bullets
@@ -16,8 +16,8 @@ senior:
       period: '/mes'
     bullets:
       bullet1:
-        text: 'Ahora 15% de descuento'
-        subtext: 'en tu seguro Dental'
+        text: 'Te devolvemos hasta 150€'
+        subtext: 'por asegurado con Dental'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 3 asegurados'
@@ -47,13 +47,13 @@ senior:
         text: 'Con Adeslas Seniors accederás a planes de prevención y de seguimiento dirigidos por tu Asesor Personal de Salud para aprovechar el mejor cuadro médico sin apenas copagos'
       drop2:
         title: 'Descuentos'
-        text: 'Tendrás una atención médica adecuada a tu edad con coberturas Adeslas desde 60 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 3 o más asegurados. Y si quieres un seguro Dental, tendrás un 15% de  descuento.'
+        text: 'Tendrás una atención médica adecuada a tu edad con coberturas Adeslas desde 60 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 3 o más asegurados. Y si lo contratas con un seguro Dental, te devolvemos hasta 150 € por asegurado y nos comprometemos a mantener el precio de tu prima en la primera renovación.'
       drop3:
         title: 'Copagos limitados'
         text: 'Con Adeslas Seniors no pagarás copagos por muchas de las asistencias médicas a las que te derive tu Asesor Personal de Salud, pero en todo caso, estarán limitados a 260 euros al año. Si quieres acudir al especialista sin prescripción previa, podrás hacerlo con copagos estándar.'
       drop4:
         title: 'Calidad'
-        text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas a tu servicio.'
+        text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas a tu servicio. Y ahora tendrás acceso a la mayor parte del Cuadro Médico Adeslas por videollamada, teleconsulta, chat de orientación médica, receta electrónica privada y autorizaciones online.'
       drop5:
         title: 'Pago mensual'
         text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
@@ -87,7 +87,7 @@ senior:
         text: 'Adeslas tiene el mejor y más amplio cuadro médico con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. Adeslas es la compañía líder en seguros de salud con más de 5 millones de asegurados y las encuestas de satisfacción de nuestros clientes nos dan una puntuación media de un 8,13 sobre 10.'
       drop5: 
         title: '¿Y si sufro un imprevisto y no puedo hacer frente a mi prima?'
-        text: 'Adeslas Seniors está cubierto por un plan de protección de pagos, con el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios'
+        text: 'Adeslas Seniors está cubierto por un plan de protección de pagos, con el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios. Estas condiciones están vigentes para afectados por ERTEs derivados del Covid-19.'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'

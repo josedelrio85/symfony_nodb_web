@@ -1,8 +1,8 @@
 #adeslas_plena
 plena:
   home:
-    title: 'Adeslas | El seguro médico con copagos reducidos. Ahora 2 Meses GRATIS'
-    meta_description: 'Adeslas Plena, el mejor seguro médico ahora con una oferta limitada: ¡2 Meses gratis contratando Salud, también con descuento! No la dejes escapar! Entra y disfruta todas las coberturas con copagos reducidos: Hospitalización en habitación individual con cama para acompañante ¡Desde 45 €/mes!'
+    title: 'Adeslas | El seguro médico con copagos reducidos.'
+    meta_description: 'Adeslas Plena, el mejor seguro médico ahora con una oferta limitada: ¡Te devolvemos hasta 150€ por asegurado con Dental. No la dejes escapar! Entra y disfruta todas las coberturas con copagos reducidos: Hospitalización en habitación individual con cama para acompañante ¡Desde 45 €/mes!'
   hero: # 1
     title: 'Adeslas Plena: El seguro médico privado más completo con copagos reducidos'
     subtitle: ''
@@ -17,8 +17,8 @@ plena:
       period: '/mes'
     bullets:
       bullet1:
-        text: '2 meses gratis'
-        subtext: 'con Salud'
+        text: 'Te devolvemos hasta 150€'
+        subtext: 'por asegurado con Dental'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
@@ -46,7 +46,7 @@ plena:
         text: 'Adeslas Plena es el seguro privado de salud que te garantiza la asistencia ambulatoria con acceso a todas las especialidades y la atención hospitalaria en habitación individual con cama para el acompañante.'
       drop2:
         title: 'Tarifa'
-        text: 'Adeslas Plena ofrece un amplias coberturas desde 45 €/mes, y a partir de 4 asegurados tendrás un descuento del 10% por persona. Y si lo contratas con Dental, tu seguro médico privado, <strong>2 meses gratis</strong>.'
+        text: 'Adeslas Plena te ofrece amplias coberturas desde 45 €/mes, y a partir de 4 asegurados tendrás un descuento del 10% por persona. Y si lo contratas con Dental, <strong>te devolvemos hasta 150€ por persona</strong> y nos comprometemos a mantener el precio de tu prima en la primera renovación.'
       drop3:
         title: 'Copagos reducidos'
         text: 'En Adeslas Plena los copagos por acceder a algunos servicios son reducidos, de una media de 4,5€'
@@ -58,8 +58,8 @@ plena:
         text: 'Con Adeslas Plena podrás someterte a algunas pruebas diagnósticas que te pida tu médico sin autorización previa.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
-    title: 'Toda la asistencia preventiva, de especialidades y cirugía'
-    text: 'Adeslas Plena te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti y tener cubiertos tratamientos asistenciales y quirúrgicos de una asistencia Plena.'
+    title: 'Medicina preventiva, de especialidades, cirugía y asistencia online'
+    text: 'Adeslas Plena te brinda acceso a la sanidad privada de calidad y con todos los servicios. Podrás pedir cita en todas las especialidades del cuadro médico Adeslas en el horario que mejor se adapte a ti con la cobertura en tratamientos asistenciales y quirúrgicos de una asistencia Plena. Y además, tendrás acceso a la mayor parte del cuadro médico Adeslas por videollamada, teleconsulta, chat de orientación médica, receta electrónica privada y autorizaciones online.'
     list:
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir libremente Pediatra o Ginecólogo?'
@@ -89,7 +89,7 @@ plena:
         text: 'Adeslas Plena permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunas coberturas están sujetas a períodos de carencia: De los 3 meses, para pruebas diagnósticas de la más alta tecnología y hasta los 10 meses, para cirugías y hospitalizaciones, como el parto.'
       drop7:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
-        text: 'Los seguros de Adeslas Plena están cubiertos con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
+        text: 'Los seguros de Adeslas Plena están cubiertos con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios. Estas condiciones están vigentes para afectados por ERTEs derivados del Covid-19.'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: ''
     title: 'Términos frecuentes'

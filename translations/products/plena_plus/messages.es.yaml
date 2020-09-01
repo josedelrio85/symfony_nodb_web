@@ -1,7 +1,7 @@
 #plena_plus
 plena_plus:
   home:
-    title: 'El mejor seguro médico Sin Copagos. ¡Y ahora 2 Meses GRATIS! | Adeslas'
+    title: 'El mejor seguro médico Sin Copagos. | Adeslas'
     meta_description: 'Disfruta 2 meses gratis del mejor y más completo seguro médico Sin Copagos desde 55 €/mes. Contrata ahora y accede a un seguro médico con medicina primaria y hospitalaria sin límites. Especialidades y cobertura integral del embarazo y el parto en habitación individual con cama para el acompañante.' 
   hero: # 1
     title: 'Adeslas Plena Plus'
@@ -18,8 +18,8 @@ plena_plus:
       period: '/mes'
     bullets:
       bullet1:
-        text: '2 meses gratis'
-        subtext: 'con Salud'
+        text: 'Te devolvemos hasta 150€'
+        subtext: 'por asegurado con Dental'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
@@ -49,7 +49,7 @@ plena_plus:
         text: 'Adeslas Plena Plus es el seguro ideal para cuidarte porque te garantiza una atención inmediata ante cualquier problema de salud. Y en todas las hospitalizaciones disfrutarás de una habitación individual con cama para el acompañante.'
       drop2:
         title: 'Descuentos'
-        text: 'Con Adeslas Plena Plus accedes a todas las coberturas del catálogo de servicios Adeslas desde sólo 55 €/mes. Con una póliza familiar de 4 o más asegurados tendrás un 10% de descuento por persona. Y si contratas Salud, tu seguro médico <strong>2 meses gratis</strong>'
+        text: 'Con Adeslas Plena Plus accedes a todas las coberturas del catálogo de servicios Adeslas desde sólo 55 €/mes. Con una póliza familiar de 4 o más asegurados tendrás un 10% de descuento por persona. Y si contratas tu póliza con Dental, <strong>te devolvemos hasta 150 € por persona</strong> asegurada en tu póliza y nos comprometemos a mantener el precio de tu prima en la primera renovación.'
       drop3:
         title: 'Sin copagos'
         text: 'En Adeslas Plena Plus te aseguras que pagarás lo mismo cada mes, el importe de tu prima mensual, sin copagos ni gastos extra, vayas al médico las veces que vayas y pidas cuantas pruebas necesites.'
@@ -65,7 +65,7 @@ plena_plus:
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: 'Cobertura Plus'
     title: 'La mejor forma de cuidar de tu familia sin sorpresas'
-    text: 'Adeslas Plena Plus te da la bienvenida a los mejores servicios de un seguro médico privado de calidad sin copagos. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas y asistencia a domicilio siempre con la misma tarifa.'
+    text: 'Adeslas Plena Plus te da la bienvenida a los mejores servicios de un seguro médico privado de calidad sin copagos. Atención ambulatoria, hospitalaria, urgencias, pruebas diagnósticas y asistencia a domicilio siempre con la misma tarifa. Y ahora, tendrás acceso a la mayor parte del Cuadro Médico Adeslas por videollamada, teleconsulta, chat de orientación médica, receta electrónica privada y autorizaciones online.'
     list:
   desc: # 6 titulo + descripcion
     title: '¿Quieres elegir a tu Ginecólogo o Pediatra?'
@@ -98,7 +98,7 @@ plena_plus:
         text: 'Adeslas Plena Plus se puede contratar hasta los 70 años, aunque puede incluirse a personas mayores de esta edad en una póliza familiar si hay al menos 3 asegurados de menos de 60 años.'
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
-        text: 'Los seguros de Adeslas Plena Plus están cubiertos por un plan de protección de pagos, en los que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
+        text: 'Los seguros de Adeslas Plena Plus están cubiertos por un plan de protección de pagos, en los que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios. Estas condiciones están vigentes para afectados por ERTEs derivados del Covid-19.'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'

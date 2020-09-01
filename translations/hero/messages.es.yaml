@@ -51,3 +51,16 @@ hero:
       path: '/seguros-decesos'
       action: ''
       position: 4
+  slide5:
+    image: adeslas_hero_large_home_slider_senior.jpg
+    image_desktopmini: adeslas_hero_large_home_slider_senior_desktopmini.jpg
+    image_tablet: adeslas_hero_large_home_slider_senior_tablet.jpg
+    image_mobile: adeslas_hero_large_home_slider_senior_mobile.jpg
+    title: 'senior'
+    text: 'El respaldo que necesitas para los momentos más delicados'
+    cta:
+      id: 'cta-senior'
+      text: 'Saber más'
+      path: '/seguro/adeslas-senior'
+      action: ''
+      position: 5

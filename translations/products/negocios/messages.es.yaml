@@ -2,7 +2,7 @@
 negocios:
   home:
     title: 'El seguro médico del autónomo. Desde 47 €/mes y sin copagos | Adeslas'
-    meta_description: 'Descubre Adeslas Negocios. ¡Ahora 2 meses Gratis si contratas con tu seguro de Salud! El seguro médico diseñado para el autónomo, sin copagos ni sorpresas. Desde 47 €/mes, todos los servicios de la compañía líder en seguros de salud. Entra y aprovecha la oferta ¡Es limitada!'
+    meta_description: 'Descubre Adeslas Negocios. El seguro médico diseñado para el autónomo, sin copagos ni sorpresas. Desde 47 €/mes, todos los servicios de la compañía líder en seguros de salud. Entra y aprovecha la oferta ¡Es limitada!'
   hero: # 1
     title: 'Adeslas Negocios. La mejor asistencia médica para autónomos'
     subtitle: 'Atención ambulatoria y hospitalaria sin límites'
@@ -17,8 +17,8 @@ negocios:
       period: '/mes'
     bullets:
       bullet1:
-        text: '2 meses gratis'
-        subtext: 'con Salud'
+        text: 'Te devolvemos hasta 150€'
+        subtext: 'si contratas también Dental'
       bullet2:
         text: 'Sin Copagos'
         subtext: 'ni sorpresas'
@@ -44,11 +44,11 @@ negocios:
     text: 'Con Adeslas Negocios tendrás acceso a la mejor sanidad privada para poder acudir a un médico cuando lo necesites, sin listas de espera y en el horario que mejor le venga a tu negocio. Y si necesitas ingresar en un hospital tendrás una habitación individual con cama para el acompañante.'
     drop:
       drop1:
-        title: 'Mejores profesionales'
-        text: 'Adeslas Negocios te abre la puerta al mejor cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y 27 centros médicos de Adeslas Salud.'
+        title: 'Los mejores profesionales'
+        text: 'Adeslas Negocios te abre la puerta al mejor cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y 27 centros médicos de Adeslas Salud. Y tendrás acceso a la mayor parte del Cuadro Médico Adeslas online (videollamada, teleconsulta, chat de orientación médica, etc.).'
       drop2: 
         title: 'La mejor tarifa'
-        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de un trabajador por cuenta propia. Desde sólo 47€/mes. Y ahora si contratas Salud, disfrutarás de tu seguro médico privado <strong>2 meses gratis</strong>.'
+        text: 'Adeslas Negocios te ofrece una tarifa excepcional y adaptada a las necesidades de un trabajador por cuenta propia desde sólo 47€/mes. Y ahora si lo contratas con Dental, te devolvemos hasta 150 € por asegurado.Además, mantendremos el precio de tu prima en la primera renovación.'
       drop3:
         title: 'Sin Copagos'
         text: 'En Adeslas Negocios pagarás lo mismo cada mes, tu prima mensual, sin copagos ni sorpresas, vayas al médico las veces que quieras y pidas cuantas pruebas necesites.'
@@ -59,8 +59,8 @@ negocios:
         title: 'Pago flexible y descuentos'
         text: 'En Adeslas podrás pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
       drop6:
-        title: '2 meses gratis'
-        text: 'Y si quieres cobertura dental, puedes acceder a ella desde 10,50 €/mes y te ahorrarás las dos primeras primas mensuales de tu seguro de salud.'  
+        title: 'Protección de pagos'
+        text: 'Con tu póliza Adeslas Negocios tendrás acceso a un plan de protección de pagos para cubrir imprevistos, como un accidente, con el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses.'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción (no va)
   desc: # 6 titulo + descripcion
     title: 'Completa tu seguro con cobertura por incapacidad temporal con un 30% de descuento'
@@ -81,7 +81,7 @@ negocios:
         text: 'Adeslas Negocios permite el acceso a la asistencia ambulatoria y hospitalaria desde el primer día. Algunos tratamientos están sujetos a períodos de carencia, que van desde los 3 meses, en pruebas diagnósticas de la más alta tecnología, hasta los 10 meses para cirugías y hospitalizaciones.'
       drop4:
         title: '¿Cuánto pagaré si contrato mi póliza y un seguro dental?'
-        text: 'Si contratas un seguro dental a la vez que Adeslas Negocios, tendrás dos meses gratis. Generaremos dos pólizas distintas aplicando las bonificaciones a la contratación de ambas. El precio de tu seguro dental dependerá de cuántos beneficiarios tenga esa póliza. Desde 10,50€/mes con un asegurado hasta 25 €/mes con 5 o 6.'
+        text: 'Si contratas un seguro dental a la vez que Adeslas Negocios, te devolvemos 150 € por persona asegurada en tu póliza. Generaremos dos pólizas distintas aplicando las bonificaciones a la contratación de ambas. El precio de tu seguro dental dependerá de cuántos beneficiarios tenga esa póliza: Desde 10,50€/mes con un asegurado hasta 25 €/mes con 5 o 6.'
       drop5:
         title: '¿Hay límite de edad para contratar Adeslas Negocios?'
         text: 'Adeslas Negocios se puede contratar hasta los 70 años.'   
