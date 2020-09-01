@@ -17,11 +17,11 @@ go:
       period: '/mes'
     bullets:
       bullet1:
-        text: '3 primeros'
-        subtext: 'copagos gratis'
+        text: 'Te devolvemos 25€'
+        subtext: 'por asegurado el 1er año'
       bullet2:
-        text: 'Chequeo anual'
-        subtext: 'adaptado a tu edad'
+        text: '3 copagos gratuitos'
+        subtext: '25% dto. 2º año'
     cta:
       text: 'Contratar'
       path: '/path'
@@ -59,8 +59,8 @@ go:
         text: 'Puedes pagar tu prima de Adeslas GO cada mes. Si pagas por trimestre, tendrás un 2% de descuento; un 4%, al semestre y un 6% si el pago es anual'  
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: 'Adeslas GO'
-    title: 'Una cobertura médica llena de ventajas'
-    text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria para quien busca un seguro complementario con el que prevenir y tratar con rapidez cualquier problema de salud. Podrás consultar con un especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida.'
+    title: 'Cobertura médica, también online'
+    text: 'Adeslas GO te ofrece la mejor cobertura ambulatoria para quien busca un seguro complementario con el que prevenir y tratar con rapidez cualquier problema de salud. Podrás consultar con un especialista sin esperas y a la hora que mejor se adapte a tu ritmo de vida. Con Adeslas tendrás acceso además a la App Salud y Bienestar, con orientación médica online, videoconsultas, planes de salud y de hábitos saludables que te darán puntos canjeables por regalos.'
     list:
   desc: # 6 titulo + descripcion+ tabla
     title: 'Chequeo anual'

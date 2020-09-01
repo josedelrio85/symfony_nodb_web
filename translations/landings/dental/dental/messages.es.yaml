@@ -7,7 +7,7 @@ dental:
     subtitle: ''
     image: 'adeslas_hero_small_landing_dental.jpg'
   minicards: # 2 minicards + title + description
-    title: 'El seguro dental más completo con las tarifas más bajas'
+    title: 'El mejor seguro dental con las tarifas más bajas'
     suptitle: 'Adeslas Dental'
     desc: 'Dos pólizas a escoger en función de la cobertura que desees'
     cards:
@@ -40,8 +40,8 @@ dental:
           path: '/seguro/adeslas-dental-max'
         bullets:
           - 'Sólo cobertura Dental'
-          - 'Reducimos tu prima 1€ por año'
-          - 'Más coberturas cada año'
+          - 'Te devolvemos 25€ el primer año'
+          - 'Más coberturas y menos prima cada año'
       product2:
         title: 'Adeslas Dental Familia'
         price:

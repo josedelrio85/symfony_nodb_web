@@ -1,20 +1,20 @@
 embarazadas:
   home:
     title: 'Seguro de Salud para Embarazadas ⇨ 35€/mes | Adeslas'
-    meta_description: 'Consulta las mejores ofertas de seguro médico para embarazadas que te ofrece Adeslas. ¡Ahora 2 meses gratis si contratas seguro de salud! Disfruta de una cobertura global del embarazo y del parto. ¡Entra e infórmate! ¡Oferta limitada!'
+    meta_description: 'Consulta las mejores ofertas de seguro médico para embarazadas que te ofrece Adeslas. Disfruta de una cobertura global del embarazo y del parto. ¡Entra e infórmate! ¡Oferta limitada!'
   hero: # 1
     title: ''
     subtitle: ''
-    image: 'adeslas_hero_small_landing_embarazo.png'
+    image: 'adeslas_hero_small_landing_embarazo.jpg'
   minicards: # 2 minicards + title + description
     title: 'La mejor oferta de seguros médicos para el embarazo y el parto'
     suptitle: 'Adeslas embarazadas'
     desc: 'Las más completas coberturas para embarazadas, adaptadas a tus necesidades.'
     cards:
       card1:
-        top: '2 meses gratis'
-        middle: 'si contratas Salud'
-        bottom: 'con descuento desde 2 asegurados'
+        top: 'Te devolvemos hasta 150€'
+        middle: 'por asegurado si contratas Dental'
+        bottom: 'y con descuento desde 2 asegurados'
       card2:
         top: '10% de descuento'
         middle: 'en todas las pólizas'
@@ -43,6 +43,7 @@ embarazadas:
           - 'Reproducción Asistida en condiciones especiales'
           - 'Habitación individual con cama para el acompañante'
           - 'Copagos limitados'
+          - 'Te devolvemos hasta 150€ por asegurado con Dental'
       product2:
         title: 'Adeslas Plena Plus'
         price:
@@ -62,6 +63,7 @@ embarazadas:
           - 'Reproducción Asistida en condiciones especiales'
           - 'Habitación individual con cama para el acompañante'
           - 'Teléfono 24 horas de asistencia a la embarazada'
+          - 'Te devolvemos hasta 150€ por asegurado con Dental'
   select: # 4 selector + title
     title: 'Consulta nuestro cuadro médico'
     suptitle: 'Adeslas'

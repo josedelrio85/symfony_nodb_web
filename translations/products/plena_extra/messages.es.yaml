@@ -1,8 +1,8 @@
 #adeslas_plena_extra
 plena_extra:
   home:
-    title: 'Adeslas | El seguro médico de cobertura internacional ¡2 Meses GRATIS!'
-    meta_description: 'Descubre Adeslas Plena Extra 150, el seguro con cobertura internacional que te permite elegir médico dentro y fuera de España. ¡Ahora 2 meses gratis con Salud! Todas las coberturas de una asistencia global de libre elección o en el Cuadro Médico Adeslas sin copagos. ¡Aprovecha la oferta limitada!'
+    title: 'Adeslas | El seguro médico de cobertura internacional'
+    meta_description: 'Descubre Adeslas Plena Extra 150, el seguro con cobertura internacional que te permite elegir médico dentro y fuera de España. Todas las coberturas de una asistencia global de libre elección o en el Cuadro Médico Adeslas sin copagos. ¡Aprovecha la oferta limitada!'
   hero: # 1
     title: 'Adeslas Plena Extra 150. Un seguro médico para escoger a quién te cuida'
     subtitle: 'Libre elección de especialista y cobertura internacional'
@@ -17,8 +17,8 @@ plena_extra:
       period: '/mes'
     bullets:
       bullet1:
-        text: '2 meses gratis'
-        subtext: 'con Salud'
+        text: 'Te devolvemos hasta 150€'
+        subtext: 'por asegurado con Dental'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
@@ -49,7 +49,7 @@ plena_extra:
         text: 'Adeslas Plena Extra 150 es el seguro ideal para las familias que quieren escoger a su especialista. Siempre podrás acogerte a la asistencia de calidad del cuadro médico Adeslas con una cobertura completa sin copagos o combinar ambos modelos con un reembolso del 80% de los gastos de libre elección.'
       drop1:
         title: 'Descuentos'
-        text: 'Con Adeslas Plena Extra accedes a un enorme abanico de posibilidades y coberturas desde 79 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 4 o más asegurados. Y si contratas Salud, tendrás tu seguro médico privado 2 meses gratis.'
+        text: 'Con Adeslas Plena Extra accedes a un enorme abanico de posibilidades y coberturas desde 79 €/mes. Puedes beneficiarte de un descuento del 10% si contratas una póliza familiar con 4 o más asegurados. Y si contratas tu seguro de salud con Dental, <strong>te devolvemos hasta 150€ por persona</strong> asegurada en tu póliza y nos comprometemos a mantener el precio de tu prima en la primera renovación.'
       drop2:
         title: 'Calidad'
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial y más de 300 clínicas concertadas. A estos, unirás los que tú desees con total libertad.'
@@ -57,8 +57,8 @@ plena_extra:
         title: 'Sin Copagos'
         text: 'En Adeslas Plena Extra pagarás lo mismo cada mes por los servicios del Cuadro Médico Adeslas, sin copagos ni límites al número de consultas o pruebas diagnósticas.'
       drop4:
-        title: 'Trámite de autorizaciones'
-        text: 'Con Adeslas Plena Extra podrás someterte a muchas pruebas diagnósticas sin autorizaciones previas y podrás tramitar todas sencillamente por vía telemática.'
+        title: 'Los más amplios servicios de salud a tu alcance'
+        text: 'Adeslas Plena Extra 150 es mucho más que un seguro médico privado, es un traje a medida. Podrás disfrutar de la cobertura global del cuadro médico Adeslas o elegir con total libertad al profesional que desees consultar en cualquier país del mundo. Y ahora tendrás acceso a la mayor parte del Cuadro Médico Adeslas online, por videollamada, teleconsulta, o chat.'
       drop5:
         title: 'Pago mensual y descuentos'
         text: 'En Adeslas puedes pagar tu prima cada mes o beneficiarte de los descuentos del pago trimestral (2%), semestral (4%) o anual (6%).'
@@ -95,7 +95,7 @@ plena_extra:
         text: 'El precio de tu seguro Adeslas Dental Familia es de 8,93€ por persona, ya que al contratarlo a la vez que tu seguro de salud, disfrutarás de un 15% de descuento. La tarifa es más baja cuantos más asegurados incluyas en tu póliza, con lo que podrías acceder a descuentos adicionales.'
       drop7:
         title: '¿Y si sufro un imprevisto y no puedo hacer frente a mi prima?'
-        text: 'Adeslas Plena Extra 150 está cubierto con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
+        text: 'Adeslas Plena Extra 150 está cubierto con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses en caso de fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios. Estas condiciones están vigentes para afectados por ERTEs derivados del Covid-19.'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos de interés'

@@ -5,7 +5,7 @@ familiar:
   hero: # 1
     title: ''
     subtitle: ''
-    image: 'adeslas_hero_small_landing_familia.png'
+    image: 'adeslas_hero_small_landing_familia.jpg'
   minicards: # 2 minicards + title + description
     title: 'Un seguro médico para cuidar de tu familia y pagar sólo por lo que necesitas'
     suptitle: 'Adeslas familias'
@@ -16,8 +16,8 @@ familiar:
         middle: 'por persona'
         bottom: 'sin cuestionario médico'
       card2:
-        top: '2 meses gratis'
-        middle: 'con seguro de Salud'
+        top: 'Consulta online y APP'
+        middle: 'para controlar tu salud'
         bottom: 'y descuentos desde 4 asegurados'  
   product_bullet: # 3 products with bullets + title + description
     title: 'Elige el seguro que mejor se adapta a vosotros'
@@ -40,8 +40,9 @@ familiar:
           path: '/seguro/adeslas-go'
         bullets:
           - 'Sin cuestionario médico'
+          - 'Te devolvemos 25€ por persona el primer año'
           - 'Cobertura ambulatoria'
-          - '3 primeros copagos gratis'
+          - '3 copagos gratis y 25% dto. el segundo año'
       product2:
         title: 'Adeslas Plena Vital'
         price:
@@ -57,9 +58,9 @@ familiar:
           path: '/seguro/adeslas-plena-vital'
         bullets:
           - 'Copagos limitados'
+          - 'Te devolvemos hasta 150€ por asegurado con Dental'
           - 'Cobertura médica y hospitalaria'
           - '10% descuento desde 4 asegurados'
-          - '2 meses gratis con Salud'
       product3:
         title: 'Adeslas Plena'
         price:
@@ -75,9 +76,9 @@ familiar:
           path: '/seguro/adeslas-plena'
         bullets:
           - 'Copagos reducidos'
+          - 'Te devolvemos hasta 150€ por asegurado con Dental'
           - 'Asistencia ambulatoria y hospitalaria'
           - '10% descuento desde 4 asegurados'
-          - '2 meses gratis con Salud'
       product4:
         title: 'Adeslas Plena Plus'
         price:
@@ -93,9 +94,9 @@ familiar:
           path: '/seguro/adeslas-plena-plus'
         bullets:
           - '<strong>Sin copagos</strong>'
+          - 'Te devolvemos hasta 150€ por asegurado con Dental'
           - 'Cobertura global, también hospitalaria'
           - 'Descuentos desde 4 asegurados'
-          - '2 meses gratis con Salud'
       product5:
         title: 'Adeslas Plena Extra 150'
         price:
@@ -111,9 +112,9 @@ familiar:
           path: '/seguro/adeslas-plena-extra'
         bullets:
           - 'Libre elección de médico en todo el mundo'
+          - 'Te devolvemos hasta 150€ por asegurado con Dental'
           - 'Cobertura global, también en cuadro Adeslas'
           - 'Descuentos desde 4 asegurados'
-          - '2 meses gratis con Salud'
   select: # 4 selector + title
     title: 'Consulta nuestro Cuadro Médico'
     suptitle: 'Adeslas'

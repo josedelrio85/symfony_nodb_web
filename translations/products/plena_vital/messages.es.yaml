@@ -5,7 +5,7 @@ plena_vital:
     meta_description: 'Contrata ahora Adeslas Plena Vital y aprovecha la oferta limitada: ¡2 Meses gratis contratando Salud, también con descuento! La oferta de asistencia completa, ambulatoria y hospitalaria en habitación individual con cama para el acompañante ¡Desde 35 €/mes! ¡Entra e infórmate!'
   hero: # 1
     title: 'Adeslas Plena Vital: El seguro médico privado con cobertura total y la mejor tarifa'
-    subtitle: 'Con copagos limitados por año'
+    subtitle: 'Y copagos limitados por año'
     images: 
       image1: 'adeslas_hero_large_ficha_familia_vital.jpg'
       image2: 'adeslas_hero_large_ficha_individual_vital.jpg'
@@ -18,8 +18,8 @@ plena_vital:
       period: '/mes'
     bullets:
       bullet1:
-        text: '2 meses gratis'
-        subtext: 'con Salud'
+        text: 'Te devolvemos hasta 150€'
+        subtext: 'por asegurado con Dental'
       bullet2:
         text: '10% de descuento'
         subtext: 'a partir de 4 asegurados'
@@ -46,7 +46,7 @@ plena_vital:
     drop:
       drop1:
         title: 'Tarifas'
-        text: 'Adeslas Plena Vital ofrece el más amplio catálogo de asistencias médicas desde sólo 35 €/mes. Además, a partir de 4 asegurados tendrás un descuento del 10%. Y si contratas Salud, tu seguro médico privado, <strong>2 meses gratis</strong>.'
+        text: 'Adeslas Plena Vital te ofrece el más amplio catálogo de asistencias médicas desde sólo 35 €/mes. Si lo contratas con Dental, <strong>te devolvemos hasta 150€ por persona</strong> asegurada en tu póliza y nos comprometemos a mantener el precio de tu prima en la primera renovación. Además, a partir de 4 asegurados tendrás un descuento del 10%.'
       drop2:
         title: 'Calidad'
         text: 'Adeslas tiene el mejor y más amplio cuadro médico, con más de 43.000 profesionales, 1.200 centros de atención médico-asistencial, más de 300 clínicas concertadas y 27 centros médicos de Adeslas Salud.'
@@ -57,8 +57,8 @@ plena_vital:
         title: 'Pago mensual y descuentos'
         text: 'En Adeslas podrás pagar tu prima cada mes pero puedes obtener descuentos por pago trimestral (2%), semestral (4%) o anual (6%).'
       drop5:
-        title: 'Gestión de autorizaciones'
-        text: 'Con Adeslas Plena Vital podrás someterte a algunas de las pruebas diagnósticas que tu médico solicite sin autorización previa y las podrás tramitar todas fácilmente por vía telemática.'
+        title: 'Salud digital y autorizaciones'
+        text: 'Acceso a la mayor parte del cuadro médico Adeslas por videollamada, teleconsulta, chat de orientación médica, receta electrónica privada y autorizaciones online.'
   desc_with_bullets: # 5 listado de bullets con titulo + supertitulo + descripción
     suptitle: ''
     title: 'Medicina preventiva, asistencial y quirúrgica de calidad'
@@ -95,7 +95,7 @@ plena_vital:
         text: 'Sí, puedes contratar tu seguro médico con Adeslas. Sólo te hará falta el pasaporte.'
       drop8:
         title: '¿Y si me quedo en el paro y no puedo hacer frente a mi prima?'
-        text: 'Adeslas Plena Vital está cubierto con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses por fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios.'
+        text: 'Adeslas Plena Vital está cubierto con un plan de protección de pagos, en el que la compañía te mantendrá tu cobertura durante un máximo de 6 meses en caso de incapacidad temporal o desempleo, o durante 12 meses por fallecimiento o incapacidad permanente absoluta, cuando la póliza incluya dos o más beneficiarios. Estas condiciones están vigentes para afectados por ERTEs derivados del COVID-19.'
   faq: # 8 FAQ'S solo si no va en particulares
     suptitle: 'FAQ''s'
     title: 'Términos frecuentes'

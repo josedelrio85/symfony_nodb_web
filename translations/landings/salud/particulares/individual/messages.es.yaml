@@ -40,7 +40,8 @@ individual:
           path: '/seguro/adeslas-go'
         bullets:
           - 'Asistencia médica ambulatoria'
-          - 'Sin cuestionario médico previo' 
+          - 'Sin cuestionario médico previo'
+          - 'Te devolvemos 25€ el primer año' 
       product2:
         title: 'Adeslas Plena Vital'
         price:
@@ -57,6 +58,7 @@ individual:
         bullets:
           - 'Asistencia ambulatoria y hospitalaria'
           - 'Copagos limitados'
+          - 'Te devolvemos hasta 150€ por asegurado'
       product3:
         title: 'Adeslas Plena'
         price:
@@ -72,7 +74,8 @@ individual:
           path: '/seguro/adeslas-plena'
         bullets:
           - 'Asistencia médica y especialidades'
-          - 'Copagos reducidos'    
+          - 'Copagos reducidos'
+          - 'Te devolvemos hasta 150€ por asegurado'    
       product4:
         title: 'Adeslas Plena Plus'
         price:
@@ -88,7 +91,8 @@ individual:
           path: '/seguro/adeslas-plena-plus'
         bullets:
           - 'Asistencia ambulatoria y hospitalaria'
-          - '<strong>Sin copagos</strong>'    
+          - '<strong>Sin copagos</strong>'
+          - 'Te devolvemos hasta 150€ por asegurado'    
       product5:
         title: 'Adeslas Plena Extra 150'
         price:
@@ -105,6 +109,7 @@ individual:
         bullets:
           - 'Libre elección de médico'
           - 'Cobertura dentro y fuera de España'
+          - 'Te devolvemos hasta 150€ por asegurado'
   select: # 4 selector + title
     title: 'Consulta nuestro Cuadro Médico'
     suptitle: 'Adeslas'

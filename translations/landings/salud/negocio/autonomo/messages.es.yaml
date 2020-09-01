@@ -16,9 +16,9 @@ autonomo:
         middle: 'sin copagos'
         bottom: 'ni sorpresas'
       card2:
-        top: '2 meses gratis'
-        middle: 'en tu seguro'
-        bottom: 'si contratas Salud'
+        top: 'Te devolvemos hast 150€'
+        middle: 'si contratas también Dental'
+        bottom: ''
   product_bullet: # 3 products with bullets + title + description
     title: '¿Qué tipo de cobertura quieres?'
     suptitle: 'Adeslas Autónomos'
@@ -40,8 +40,8 @@ autonomo:
           path: '/seguro/adeslas-negocios'
         bullets:
           - 'Cobertura global <strong>Sin Copagos</strong>'
-          - 'Ahora 2 meses gratis con Salud'
-          - 'Los mejores profesionales a tu servicio'
+          - 'Te devolvemos hasta 150€ si contratas Dental'
+          - 'Mantenemos tu precio en la primera renovación'
       product2:
         title: 'Adeslas Extra Negocios'
         price:
@@ -57,8 +57,8 @@ autonomo:
           path: '/seguro/adeslas-negocios-extra'
         bullets:
           - 'Flexilidad: Cuadro médico o libre elección'
-          - 'Cobertura global dentro y fuera de España'
-          - '<strong>Sin copagos</strong>'
+          - 'Te devolvemos hasta 150€ si contratas Dental'
+          - 'Cobertura global dentro y fuera de España <strong>Sin Copagos</strong>'
   select: # 4 selector + title
     title: 'Consulta nuestro Cuadro Médico'
     suptitle: 'Adeslas'
