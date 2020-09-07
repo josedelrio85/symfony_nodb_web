@@ -1,18 +1,29 @@
 import '../css/app.css';
 import 'bootstrap';
 import Swiper from 'swiper';
-import { TweenMax, TimelineMax } from '../../node_modules/gsap/src/all.js';
+import {
+  TweenMax,
+  TimelineMax
+} from '../../node_modules/gsap/src/all.js';
 import ScrollMagic from '../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
-import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
-import { bysidecar } from './bysidecar';
-import { analitycs } from './analitycs';
-import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
+import {
+  ScrollMagicPluginGsap
+} from "scrollmagic-plugin-gsap";
+import {
+  bysidecar
+} from './bysidecar';
+import {
+  analitycs
+} from './analitycs';
+import {
+  landingCommander
+} from '../../node_modules/@bysidecar/landing_commander/dist/main';
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 
   //Header shadow on document scroll greater than 0
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     if (document.documentElement.scrollTop != 0) {
       document.querySelector('.header').classList.add('shadow');
     } else {
@@ -24,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var sliderHome = new Swiper('.swiper-home', {
     speed: 400,
     pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -36,10 +47,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   // C2C on screen resize
   toggleC2cButton();
+
   function toggleC2cButton() {
     let screenWidth = window.innerWidth;
 
-    if( screenWidth < 1720 ) {
+    if (screenWidth < 1720) {
       document.querySelector('.click-to-call-btn').classList.add('c2c-size-open');
       document.querySelector('.click-to-call-desktop').classList.add('c2c-collapsed');
     } else {
@@ -48,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-  $( window ).resize(function() {
+  $(window).resize(function () {
     toggleC2cButton();
   });
 
@@ -58,12 +70,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     return v ? v[2] : null;
   }
 
-  if(getCookie("cookies") == null) {
+  if (getCookie("cookies") == null) {
     $('.cookies-banner').show();
   }
 
-  if($(".accept-cookies").length) {
-    $(".accept-cookies").click(function(){
+  if ($(".accept-cookies").length) {
+    $(".accept-cookies").click(function () {
       document.cookie = "cookies=accepted";
       $('.cookies-banner').hide();
     });
@@ -79,15 +91,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //   });
   // }
 
-  if(document.querySelector('.fade-in')) {
-    $('.fade-in').each(function(){
+  if (document.querySelector('.fade-in')) {
+    $('.fade-in').each(function () {
       var controllerFade = new ScrollMagic.Controller();
       var sceneFade = new ScrollMagic.Scene({
-        triggerElement: this,
-        triggerHook: 0.8,
-        reverse: false
-      })
-      .setClassToggle(this, "show")
+          triggerElement: this,
+          triggerHook: 0.8,
+          reverse: false
+        })
+        .setClassToggle(this, "show")
       // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
 
       controllerFade.addScene(sceneFade);
@@ -96,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   //Pin card functionality
-  if(document.getElementById('pincard')) {
+  if (document.getElementById('pincard')) {
     var controller = new ScrollMagic.Controller();
 
     var scene = new ScrollMagic.Scene({
@@ -104,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         triggerHook: 0,
         offset: 0.5,
         duration: $('#pincard').closest('div.row').height() - $('#pincard').height(),
-    })
+      })
       .setClassToggle("body", "pinactive")
       .on('start', function () {})
       // .addIndicators({ name: "pin scene", colorEnd: "#FFFFFF" })
@@ -113,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     controller.addScene(scene);
 
     //Recalculate pin position on resize device screen
-    window.onresize = function() {
+    window.onresize = function () {
       scene.removePin(true);
       scene.setPin('#pincard');
       scene.refresh();
@@ -144,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   C2cMobileHeader.addEventListener('click', (event) => {
-    if(C2cMobile.classList.contains('c2c-mobile-open')) {
+    if (C2cMobile.classList.contains('c2c-mobile-open')) {
       C2cMobile.classList.remove('c2c-mobile-open');
       document.querySelector('.click-to-call-mobile .close-c2c').classList.add('d-none');
     } else {
@@ -168,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     event: "event",
     eventCategory: "cmb",
     eventAction: "click",
-    eventLabel: window.location.pathname === '/' ? 'index' : window.location.pathname ,
+    eventLabel: window.location.pathname === '/' ? 'index' : window.location.pathname,
   }
 
   // get values from route to set product / landing adeslas object values
@@ -178,14 +190,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 
   let lv = document.getElementById('landing-value');
-  if(lv !== undefined && lv !== null){
-    if (lv.value !== null && lv.value !== ''){
+  if (lv !== undefined && lv !== null) {
+    if (lv.value !== null && lv.value !== '') {
       adeslas.landing = lv.value;
     }
   }
   let pv = document.getElementById('product-value');
-  if(pv !== undefined && pv !== null){
-    if (pv.value !== null && pv.value !== ''){
+  if (pv !== undefined && pv !== null) {
+    if (pv.value !== null && pv.value !== '') {
       adeslas.product = pv.value;
     }
   }
@@ -194,14 +206,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   c2cpopup_desktop.onclick = (e) => {
     e.preventDefault();
 
-    if(validationFields(".click-to-call--body.c2cdesktop")){
+    if (validationFields(".click-to-call--body.c2cdesktop")) {
       const dataLead = {
         sou_id: souid,
         phone: phone,
         smartcenter: smartcenter,
         adeslas: adeslas,
       };
-      if(adeslas.product === null && adeslas.landing === null) {
+      if (adeslas.product === null && adeslas.landing === null) {
         delete dataLead.adeslas;
       }
 
@@ -213,20 +225,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   c2cpopup_mobile.onclick = (e) => {
     e.preventDefault();
 
-    if(validationFields(".click-to-call--body.c2cmobile")){
+    if (validationFields(".click-to-call--body.c2cmobile")) {
       const dataLead = {
         sou_id: souid,
         phone: phone,
         smartcenter: smartcenter,
         adeslas: adeslas,
       };
-      if(adeslas.product === null && adeslas.landing === null) {
+      if (adeslas.product === null && adeslas.landing === null) {
         delete dataLead.adeslas;
       }
 
       c2c.launchC2C(dataLead, dataLayer);
 
-      if(C2cMobile.classList.contains('c2c-mobile-open')) {
+      if (C2cMobile.classList.contains('c2c-mobile-open')) {
         C2cMobile.classList.remove('c2c-mobile-open');
         document.querySelector('.click-to-call-mobile .close-c2c').classList.add('d-none');
       }
@@ -237,14 +249,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   c2cpopup_modal.onclick = (e) => {
     e.preventDefault();
 
-    if(validationFields(".click-to-call--body.c2cmodal")){
+    if (validationFields(".click-to-call--body.c2cmodal")) {
       const dataLead = {
         sou_id: souid,
         phone: phone,
         smartcenter: smartcenter,
         adeslas: adeslas,
       };
-      if(adeslas.product === null && adeslas.landing === null) {
+      if (adeslas.product === null && adeslas.landing === null) {
         delete dataLead.adeslas;
       }
 
@@ -255,25 +267,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   function validationFields(parent) {
-    let text = document.querySelector(parent +' .call-me-now-validation-error');
-    if(!c2c.getLandingCommander().checkPhone(document.querySelector(parent +' .form-control').value)){
+    let text = document.querySelector(parent + ' .call-me-now-validation-error');
+    if (!c2c.getLandingCommander().checkPhone(document.querySelector(parent + ' .form-control').value)) {
       text.classList.remove('d-none');
       text.textContent = "El número de teléfono no es válido";
       return;
     }
 
-    if(!checkCheckbox(document.querySelector(parent +' .form-check-input'))){
+    if (!checkCheckbox(document.querySelector(parent + ' .form-check-input'))) {
       text.classList.remove('d-none');
       text.textContent = "Debes aceptar la política de privacidad";
       return;
     }
-    phone = document.querySelector(parent +' .form-control').value;
+    phone = document.querySelector(parent + ' .form-control').value;
     text.classList.add('d-none');
     return true;
   }
 
   function checkCheckbox(checkBox) {
-    if (checkBox.checked == false){
+    if (checkBox.checked == false) {
       return false;
     }
     return true;
@@ -296,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         position: cta.getAttribute('data-position'),
       };
 
-      switch(action) {
+      switch (action) {
         case 'open-conf':
           anlt.slider(data);
           document.getElementById('explicitOriginalTarget').value = 1;
@@ -322,26 +334,83 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // view|scroll events
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if(entry.isIntersecting === true){
+      if (entry.isIntersecting === true) {
         let idob = entry.target.id;
         getDataSlider(idob)
           .then((result) => {
             anlt.sliderScroll(result);
           })
-          .catch((error) => { console.log(error); });
+          .catch((error) => {
+            console.log(error);
+          });
       }
     });
-  },
-  {rootMargin: "0px 0px -200px 0px"});
+  }, {
+    rootMargin: "0px 0px -200px 0px"
+  });
 
-  document.querySelectorAll('*[id^="cta-"]').forEach(slide => {observer.observe(slide)});
+  document.querySelectorAll('*[id^="cta-"]').forEach(slide => {
+    observer.observe(slide)
+  });
 
   ////////////////////// MORE-INFO ////////////////////////////////////////////
 
+  ////////////////////// DYNAMIC TABLES ON MOBILE //////////////////////////////////////
+  var $productTableButton = $('.product-features-table-header-mobile .table-button');
+  var $productTableName;
+
+  $productTableButton.each(function () {
+
+    var $elem = $(this);
+
+    $elem.on('click', function (e) {
+
+      /* Get button text */
+      $productTableName = $elem.find('.table-button--title').text();
+
+      /* Hide all table buttons */
+      $elem.addClass('hide');
+      $elem.siblings().addClass('hide');
+
+      /* Send text to table close buttons (top of the rows) and show */
+      var $tableButtonClose = $elem.parents('.product-features-table-header-mobile-container').children('.table-button-close-container');
+      var $tableButtonCloseTitle = $tableButtonClose.find('.table-button--title');
+      $tableButtonClose.addClass('active');
+      $tableButtonCloseTitle.html($productTableName);
+
+      /* Show table */
+      var index = $elem.index();
+
+      /* Columns */
+      var $productTable = $elem.parents('.product-features-table-header-mobile-container').next();
+      
+      $productTable.find('tr>th:nth-child(' + (index + 2) + ')').addClass('active');
+      $productTable.find('tr>td:nth-child(' + (index + 2) + ')').addClass('active');
+
+      /* Table*/
+      $productTable.addClass('active');
+    })
+
+  });
+
+  var $productTableButtonClose = $('.table-button-close-container .table-button-close .table-button');
+
+  $productTableButtonClose.on('click', function (e) {
+
+    /* Hide content */
+    var self = $(this);
+    self.parents('.table-button-close-container').removeClass('active');
+    self.parents('.table-button-close-container').parents('.product-features-table-header-mobile-container').parents('.container').find('.table').removeClass('active');
+    self.parents('.table-button-close-container').parents('.product-features-table-header-mobile-container').find('.table-button').removeClass('hide');
+
+    setTimeout(function(){ 
+      self.parents('.table-button-close-container').parents('.product-features-table-header-mobile-container').parents('.container').find('.table th, .table td').removeClass('active');
+     }, 1000);
+  });
+
 });
 
-
-function eventFire(el, etype){
+function eventFire(el, etype) {
   if (el.fireEvent) {
     el.fireEvent('on' + etype);
   } else {
@@ -359,10 +428,11 @@ function getDataSlider(slide) {
 
   return new Promise((resolve, reject) => {
     landingCommander.makePostRequestFormData(params, urlEndPoint)
-    .then((result) => {
-      resolve(result);
-    })
-    .catch((error) => {reject(error);})
+      .then((result) => {
+        resolve(result);
+      })
+      .catch((error) => {
+        reject(error);
+      })
   });
 }
-
