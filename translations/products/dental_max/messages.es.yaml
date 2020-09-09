@@ -35,7 +35,7 @@ dental_max:
         text: 'Cada año de renovación bajamos tu prima 1€ hasta un máximo de 6€ por asegurado al mes y cuantos más asegurados tenga tu póliza, el precio será más bajo.'
       drop2:
         title: 'Más coberturas'
-        text: '38 tratamientos incluidos el primer año y nuevas coberturas en Odontopediatría y Periodoncia cada año hasta un total de 49 actos, incluidos medios de diagnóstico de alta tecnología.'
+        text: '38 tratamientos incluidos el primer año y nuevas coberturas en Odontopediatría y Periodoncia cada año hasta un total de 49 servicios, incluidos medios de diagnóstico de alta tecnología.'
       drop3:
         title: 'Máxima calidad'
         text: 'Más de 4.000 profesionales, 1.600 odontólogos, 190 Clínicas Dentales 100% Adeslas en las que te ofrecemos todos los tratamientos de cualquier especialidad que necesites.'
@@ -84,7 +84,7 @@ dental_max:
         text: 'Es un cuestionario vinculado a la contratación de pólizas de seguros médicos con el que la compañía solicita conocer datos del paciente, como estilo de vida, antecedentes médicos, etc. que influyen en el cálculo del riesgo que se cubre y el precio de la póliza. En Adeslas Dental MAX no necesitas cubrir este test para contratar.'    
       faq4:
         title: '¿Qué son las carencias?'
-        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura a partir de la contratación. En Adeslas DENTAL MAX todas tus coberturas están claras desde el principio, sin carencias. Durante el primer año tendrás derecho a hasta 38 tratamientos sin coste añadido. Con tu primera renovación, accederás a un total de 48 servicios incluidos y en el tercer año tendrás 49 actos cubiertos.'
+        text: 'Es el período en el que todavía no se puede disfrutar de la cobertura a partir de la contratación. En Adeslas DENTAL MAX todas tus coberturas están claras desde el principio, sin carencias. Durante el primer año tendrás derecho a hasta 38 tratamientos sin coste añadido. Con tu primera renovación, accederás a un total de 48 servicios incluidos y en el tercer año tendrás 49 tratamientos cubiertos.'
       faq5:
         title: '¿Qué es la póliza? ¿Y la prima?'
         text: 'La póliza es el contrato que firmas con tu compañía aseguradora y que recoge todas las coberturas de las que disfrutarás durante el periodo de vigencia y las personas aseguradas. En Adeslas Dental MAX te ofrecemos total transparencia. La prima es la cuota mensual que pagarás por tu seguro y que tendrás clara desde el primer día.'
@@ -98,7 +98,7 @@ dental_max:
             - 'Estudio Radiología 3D:'
             - 'Estudio Tomográfico (TAC), una arcada'
             - 'Estudio Tomográfico (TAC), dos arcadas'
-            - '10 actos odontopediátricos'
+            - '10 servicios odontopediátricos'
             - '1 tratamiento periodontal'
             - 'Mantenimiento periodontal'  
       columns: 
