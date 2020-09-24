@@ -5,6 +5,8 @@ import { landingCommander } from '../../node_modules/@bysidecar/landing_commande
 document.addEventListener("DOMContentLoaded", function(event) {
   //Hide configurator loader if user come from browser back button
   window.onpageshow = function(event) {
+    console.log("event.persisted");
+    console.log(event.persisted);
     if (event.persisted) {
       if($(".fullscreen-loader").hasClass("active")) {
         $(".fullscreen-loader").removeClass("active");
