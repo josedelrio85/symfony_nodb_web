@@ -364,12 +364,13 @@ function hideFullscreenSafari() {
   var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
 
   if(isSafari){
-    if($(".fullscreen-loader").hasClass("active")) {
-      $(".fullscreen-loader").removeClass("active");
-    }
+    // if($(".fullscreen-loader").hasClass("active")) {
+    //   $(".fullscreen-loader").removeClass("active");
+    // }
   
-    if($(".fullscreen-product-config").hasClass("active")) {
-      $(".fullscreen-product-config").removeClass("active");
-    }
+    // if($(".fullscreen-product-config").hasClass("active")) {
+    //   $(".fullscreen-product-config").removeClass("active");
+    // }
+    window.location.reload();
   }
 }
