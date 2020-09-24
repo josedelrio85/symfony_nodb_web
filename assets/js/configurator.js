@@ -1,11 +1,24 @@
 import { analitycs } from './analitycs';
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
+// testing | hack for Safari browser, force to reload when back button is fired
+window.addEventListener('pageshow', function(event) {
+  console.log('pageshow -> event.persisted');
+  console.log(event.persisted);
+  if (event.persisted) {
+    console.log('Page was loaded from cache.');
+    // window.location.reload();
+    if($(".fullscreen-loader").hasClass("active")) {
+      $(".fullscreen-loader").removeClass("active");
+    }
+  }
+});
+
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
   //Hide configurator loader if user come from browser back button
   window.onpageshow = function(event) {
-    console.log("event.persisted");
+    console.log("DOMContentLoaded -> event.persisted");
     console.log(event.persisted);
     if (event.persisted) {
       if($(".fullscreen-loader").hasClass("active")) {
