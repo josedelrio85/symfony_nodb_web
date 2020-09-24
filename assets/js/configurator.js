@@ -1,6 +1,13 @@
 import { analitycs } from './analitycs';
 import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
 
+// hack for Safari browser, force to hide fullscreen div's when back button is fired
+window.addEventListener('pageshow', function(event) {
+  if (event.persisted) {
+    hideFullscreenSafari();
+  }
+});
+
 //////////////////////  CONFIGURATOR   /////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function(event) {
   //Hide configurator loader if user come from browser back button
@@ -78,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         anlt.configuratorVirtual(anlt_data);
 
         setTimeout((out) => {
+          hideFullscreenSafari();
           window.location.href = element.getAttribute('href');
         }, 2000);
       } else {
@@ -162,6 +170,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }, 500);
 
         setTimeout((out) => {
+          hideFullscreenSafari();
           window.location.href = element.getAttribute('href');
         }, 2000);
       }
@@ -218,6 +227,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // if element has href attribute let's navigate
         let element = document.getElementById(idsc);
         setTimeout((out) => {
+          hideFullscreenSafari();
           window.location.href = element.getAttribute('href');
         }, 2000);
       });
@@ -348,4 +358,19 @@ function getDataConfiguratorSC(idfc) {
     })
     .catch((error) => {reject(error);})
   });
+}
+
+function hideFullscreenSafari() {
+  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+  if(isSafari){
+    // if($(".fullscreen-loader").hasClass("active")) {
+    //   $(".fullscreen-loader").removeClass("active");
+    // }
+  
+    // if($(".fullscreen-product-config").hasClass("active")) {
+    //   $(".fullscreen-product-config").removeClass("active");
+    // }
+    window.location.reload();
+  }
 }
