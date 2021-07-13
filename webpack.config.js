@@ -41,7 +41,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('main', './assets/css/main.scss')
-    .addEntry('bysidecar', './assets/js/bysidecar.js')
+    .addEntry('josedelrio85', './assets/js/josedelrio85.js')
     .addEntry('app', './assets/js/app.js')
     .addEntry('configurator', './assets/js/configurator.js')
     .addEntry('ddi', './assets/js/ddi.js')
@@ -93,7 +93,7 @@ Encore
      .configureDefinePlugin(options => {
        if (Encore.isProduction()) {
         options['process.env'] = {
-          LEADS_URL:               JSON.stringify(process.env.LEADS_URL),
+          CELLS_URL:               JSON.stringify(process.env.CELLS_URL),
           SOUID:                   JSON.stringify(process.env.SOUID),
           PRODUCTION:              process.env.PRODUCTION,
         };
@@ -106,7 +106,7 @@ Encore
         }
 
         options['process.env'] = {
-          LEADS_URL:               JSON.stringify(env.parsed.LEADS_URL),
+          CELLS_URL:               JSON.stringify(env.parsed.CELLS_URL),
           SOUID:                   JSON.stringify(env.parsed.SOUID),
           PRODUCTION:              env.parsed.PRODUCTION,
         };

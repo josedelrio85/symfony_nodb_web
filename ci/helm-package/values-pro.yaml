@@ -49,7 +49,7 @@ ingress:
     - host: www.adeslas.contratar.es
       paths: 
         - /
-    - host: adeslas.bysidecar.me
+    - host: adeslas.josedelrio85.me
       paths: 
         - /
   tls:
@@ -59,17 +59,17 @@ ingress:
     - secretName: tls-www-adeslas-contratar-es
       hosts:
         - www.adeslas.contratar.es
-    - secretName: tls-adeslas-bysidecar-me
+    - secretName: tls-adeslas-josedelrio85-me
       hosts:
-        - adeslas.bysidecar.me
+        - adeslas.josedelrio85.me
   
 env:
 - name: APP_ENV
   value: prod
 - name: APP_SECRET
   value: 50546dcc902d9a99ff22bfbde163628c1843912a
-- name: LEADS_URL
-  value: https://leads.bysidecar.me/lead/store/
+- name: CELLS_URL
+  value: https://cells.josedelrio85.me/lead/store/
 - name: SOUID
   value: "77"
 

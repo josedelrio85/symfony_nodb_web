@@ -28,9 +28,9 @@ ENV APP_ENV prod
 ENV PRODUCTION true
 RUN echo "$env"
 RUN if [ "$env" == "pro" ] ; then \
-    export LEADS_URL="https://leads.bysidecar.me/lead/store/" ; \
+    export CELLS_URL="https://cells.josedelrio85.me/lead/store/" ; \
     else \
-    export LEADS_URL="https://leads-pre.bysidecar.me/lead/store/"; \
+    export CELLS_URL="https://CELLS-pre.josedelrio85.me/lead/store/"; \
     fi \
   && composer install \
   && npm install \

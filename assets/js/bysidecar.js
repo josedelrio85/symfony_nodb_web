@@ -4,10 +4,10 @@
 /* eslint no-prototype-builtins: "error" */
 /* eslint-disable import/prefer-default-export */
 
-import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
+import { landingCommander } from '../../node_modules/@josedelrio85/landing_commander/dist/main';
 import { responseC2C } from './response_c2c';
 
-class bysidecar {
+class josedelrio85 {
   constructor() {
     this.landcom = new landingCommander();
     const locale = this.getLocale();
@@ -67,7 +67,7 @@ class bysidecar {
 
   launchC2C = (obj, dataLayer) => {
     const paramsUrl = this.landcom.getParametersURL();
-    const urlEndPoint = process.env.LEADS_URL;
+    const urlEndPoint = process.env.CELLS_URL;
 
     // sou_id value must be set in obj param
     const lead = {
@@ -188,8 +188,8 @@ class bysidecar {
 
   getProvider = () => {
     const adeslas = [
-      'adeslas-pre.bysidecar.me',
-      'adeslas.bysidecar.me',
+      'adeslas-pre.josedelrio85.me',
+      'adeslas.josedelrio85.me',
       'adeslas.contratar.es',
       'www.adeslas.contratar.es',
     ];
@@ -198,5 +198,5 @@ class bysidecar {
 }
 
 export {
-  bysidecar,
+  josedelrio85,
 };

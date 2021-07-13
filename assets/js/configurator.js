@@ -1,5 +1,5 @@
 import { analitycs } from './analitycs';
-import { landingCommander } from '../../node_modules/@bysidecar/landing_commander/dist/main';
+import { landingCommander } from '../../node_modules/@josedelrio85/landing_commander/dist/main';
 
 // hack for Safari browser, force to hide fullscreen div's when back button is fired
 window.addEventListener('pageshow', function(event) {

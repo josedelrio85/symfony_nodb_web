@@ -2,7 +2,7 @@
   "name": "adeslas-web",
   "version": "1.0.0",
   "description": "Adeslas web project",
-  "main": "bysidecar.js",
+  "main": "josedelrio85.js",
   "directories": {
     "test": "tests"
   },
@@ -22,9 +22,9 @@
     "adeslas",
     "c2c",
     "landing",
-    "bysidecar"
+    "josedelrio85"
   ],
-  "author": "Bysidecar",
+  "author": "josedelrio85",
   "license": "ISC",
   "devDependencies": {
     "@symfony/webpack-encore": "^0.27.0",
@@ -40,7 +40,7 @@
     "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
-    "@bysidecar/landing_commander": "^1.0.28",
+    "@josedelrio85/landing_commander": "^1.0.28",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "gsap": "^3.2.6",

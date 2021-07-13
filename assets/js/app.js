@@ -10,14 +10,14 @@ import {
   ScrollMagicPluginGsap
 } from "scrollmagic-plugin-gsap";
 import {
-  bysidecar
-} from './bysidecar';
+  josedelrio85
+} from './josedelrio85';
 import {
   analitycs
 } from './analitycs';
 import {
   landingCommander
-} from '../../node_modules/@bysidecar/landing_commander/dist/main';
+} from '../../node_modules/@josedelrio85/landing_commander/dist/main';
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax);
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     C2cSide.classList.add('c2c-size-open');
   }
 
-  let c2c = new bysidecar();
+  let c2c = new josedelrio85();
   let anlt = new analitycs();
   let phone = null;
   let smartcenter = process.env.PRODUCTION;
